@@ -1,0 +1,28 @@
+{
+    "name": "niketa",
+    "displayName": "niketa",
+    "description": "light themes collection",
+    "version": "0.0.1",
+    "publisher": "selfrefactor",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "scripts": {
+        "de":"commit"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "niketa",
+                "uiTheme": "vs",
+                "path": "./themes/niketa-color-theme.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "commit-message": "https://github.com/selfrefactor/commit-message#3.0.1"
+    }
+}
