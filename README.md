@@ -2,4 +2,4 @@
 
 Dark/Light VSCode Theme
 
-![niketa](niketa.jpg)
+![niketa](https://github.com/selfrefactor/niketa/raw/master/niketa.jpg)

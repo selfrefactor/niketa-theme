@@ -1,7 +1,7 @@
 {
-    "name": "niketa",
-    "displayName": "niketa",
-    "description": "light themes collection",
+    "name": "Niketa-theme",
+    "displayName": "Niketa Theme",
+    "description": "light/dark theme",
     "version": "0.0.1",
     "publisher": "selfrefactor",
     "scripts": {
@@ -13,6 +13,14 @@
     "categories": [
         "Themes"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/selfrefactor/niketa.git"
+    },
+    "bugs": {
+        "url": "https://github.com/selfrefactor/niketa/issues"
+    },
+    "icon": "niketa.jpg",
     "contributes": {
         "themes": [
             {
