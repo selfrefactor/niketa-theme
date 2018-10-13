@@ -4,21 +4,26 @@
     "description": "light themes collection",
     "version": "0.0.1",
     "publisher": "selfrefactor",
+    "scripts": {
+        "de":"commit"
+    },
     "engines": {
         "vscode": "^1.27.0"
     },
     "categories": [
         "Themes"
     ],
-    "scripts": {
-        "de":"commit"
-    },
     "contributes": {
         "themes": [
             {
-                "label": "niketa",
+                "label": "Niketa",
                 "uiTheme": "vs",
                 "path": "./themes/niketa-color-theme.json"
+            },
+            {
+                "label": "Niketa",
+                "uiTheme": "vs-dark",
+                "path": "./themes/niketa-dark-color-theme.json"
             }
         ]
     },
