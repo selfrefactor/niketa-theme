@@ -1,7 +1,7 @@
 {
     "name": "Niketa-theme",
     "displayName": "Niketa Theme",
-    "description": "light/dark theme",
+    "description": "Light/Dark themes",
     "version": "0.1.0",
     "publisher": "selfrefactor",
     "scripts": {
@@ -24,14 +24,19 @@
     "contributes": {
         "themes": [
             {
-                "label": "Niketa",
+                "label": "NiketaLight",
                 "uiTheme": "vs",
-                "path": "./themes/niketa-color-theme.json"
+                "path": "./themes/niketa-light.json"
             },
             {
-                "label": "Niketa",
+                "label": "NiketaLightSecond",
+                "uiTheme": "vs",
+                "path": "./themes/niketa-light-second.json"
+            },
+            {
+                "label": "NiketaDark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/niketa-dark-color-theme.json"
+                "path": "./themes/niketa-dark.json"
             }
         ]
     },
