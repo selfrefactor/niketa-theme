@@ -42,6 +42,26 @@
         "label": "NiketaDark",
         "uiTheme": "vs-dark",
         "path": "./themes/niketa-dark.json"
+      },
+      {
+        "label": "NiketaAbsent",
+        "uiTheme": "vs-dark",
+        "path": "./imported/absent.json"
+      },
+      {
+        "label": "NiketaJumperLight",
+        "uiTheme": "vs",
+        "path": "./imported/jumperLight.json"
+      },
+      {
+        "label": "NiketaHorizon",
+        "uiTheme": "vs-dark",
+        "path": "./imported/horizon.json"
+      },
+      {
+        "label": "NiketaEverset",
+        "uiTheme": "vs-dark",
+        "path": "./imported/everset.json"
       }
     ]
   },
@@ -58,6 +78,6 @@
     "string-fn": "^1.7.0"
   },
   "commitMessage": {
-    "workInProgress": "import themes script"
+    "workInProgress": ""
   }
 }

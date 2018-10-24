@@ -76,6 +76,12 @@ export async function rabbitHole (){
     {themes}
   )
 
+  writeJsonSync(
+    LOCATION,
+    newPackageJson,
+    {spaces: 2}
+  )
+
   return newPackageJson.contributes.themes
 }
 
