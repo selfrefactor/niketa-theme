@@ -10,7 +10,7 @@ export function toRawUrl(url){
     .s( ([a,b]) => ([
         remove('https://github.com/', a),
         b
-    ])
+    ]))
     .s(join('/'))
     .s(prepend(rawHead))
 }

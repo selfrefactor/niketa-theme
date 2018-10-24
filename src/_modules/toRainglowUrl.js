@@ -1,5 +1,4 @@
 import { multiline } from 'rambdax'
-import { kebabCase } from "string-fn";
 const rawHead = 'https://raw.githubusercontent.com/'
 
 export function toRainglowUrl(tag){
@@ -9,7 +8,7 @@ export function toRainglowUrl(tag){
     vscode
     master
     themes
-    ${kebabCase(tag)}.json
+    ${tag}.json
   `,'/')
 }
 
