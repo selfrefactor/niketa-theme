@@ -1,11 +1,17 @@
+import { is } from 'rambdax'
 import {rabbitHole} from './rabbitHole'
 
 test('', async  () => {
+  const schema = {
+    label: 'string',
+    uiTheme: ['vs','vs-dark'],
+    path: 'string',
+  }  
 
-  const result = await rabbitHole()
-  
+  const themes = await rabbitHole()
+
   expect(
-    result
+    is(themes)([schema])
   ).toBe(true)
 })
 

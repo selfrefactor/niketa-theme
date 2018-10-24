@@ -1,11 +1,12 @@
 import {rainglow, others} from '../data.json'
-import { mapAsync, map, headObject } from 'rambdax'
+import { mapAsync, change } from 'rambdax'
 import {toRainglowUrl} from './toRainglowUrl'
 import {requestThemeJson} from './requestThemeJson'
 import {toRawUrl} from './toRawUrl'
 import {pascalCase, dotCase, camelCase} from 'string-fn'
-import { writeJsonSync } from 'fs-extra'
+import { writeJsonSync, readJsonSync } from 'fs-extra'
 
+const LOCATION = `${process.cwd()}/package.json`
 const NIKETA = 'Niketa'
 
 export async function rabbitHole (){
@@ -50,8 +51,11 @@ export async function rabbitHole (){
     }
     const fileName = camelCase(x.name)
     const filePath = `./imported/${fileName}.json`
-    // writeJsonSync(filePath, newData)
-
+    writeJsonSync(
+      filePath, 
+      newData, 
+      {spaces: 2}
+    )
     return {
       label,
       uiTheme,
@@ -59,6 +63,38 @@ export async function rabbitHole (){
     }
   })
 
-  return packageJsonData
+  const packageJson = readJsonSync(LOCATION)
+
+  const themes = [
+    ...getNiketaData(),
+    ...packageJsonData
+  ]
+
+  const newPackageJson = change(
+    packageJson,
+    'contributes', 
+    {themes}
+  )
+
+  return newPackageJson.contributes.themes
 }
 
+function getNiketaData(){
+  return [
+    {
+      "label": "NiketaLight",
+      "uiTheme": "vs",
+      "path": "./themes/niketa-light.json"
+    },
+    {
+      "label": "NiketaLightSecond",
+      "uiTheme": "vs",
+      "path": "./themes/niketa-light-second.json"
+    },
+    {
+      "label": "NiketaDark",
+      "uiTheme": "vs-dark",
+      "path": "./themes/niketa-dark.json"
+    }
+  ]
+}
