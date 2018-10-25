@@ -2,7 +2,7 @@ import { ok } from 'rambdax'
 import request from 'request-promise'
 const rawHead = 'https://raw.githubusercontent.com/'
 
-export const schema = {name:'string', type:'string'}
+export const schema = {name:'string'}
 
 export async function requestThemeJson(url){
     try {

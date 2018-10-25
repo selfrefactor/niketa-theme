@@ -93,9 +93,9 @@ function getNiketaData(){
       "path": "./themes/niketa-light.json"
     },
     {
-      "label": "NiketaLightSecond",
+      "label": "NiketaYellow",
       "uiTheme": "vs",
-      "path": "./themes/niketa-light-second.json"
+      "path": "./themes/niketa-yellow.json"
     },
     {
       "label": "NiketaDark",
