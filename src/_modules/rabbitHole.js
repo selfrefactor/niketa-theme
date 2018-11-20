@@ -1,6 +1,7 @@
-import {rainglow, others} from '../data.json'
+import {rainglow, others, base16} from '../data.json'
 import { mapAsync, change } from 'rambdax'
 import {toRainglowUrl} from './toRainglowUrl'
+import {toBase16Url} from './toBase16Url'
 import {requestThemeJson} from './requestThemeJson'
 import {toRawUrl} from './toRawUrl'
 import {pascalCase, dotCase, camelCase} from 'string-fn'
@@ -22,6 +23,19 @@ export async function rabbitHole (){
       }
     }
   )(rainglow)
+  
+  const base16List = await mapAsync(
+    async x=> {
+      const data = await requestThemeJson(
+        toBase16Url(x)
+      )
+      
+      return {
+        data,
+        name: dotCase(x),
+      }
+    }
+  )(base16)
 
   const othersList = await mapAsync(
     async ([name, url]) => {
@@ -36,7 +50,8 @@ export async function rabbitHole (){
     }
   )(Object.entries(others))
 
-  const list = [...rainglowList, ...othersList]
+  
+  const list = [...rainglowList, ...base16List, ...othersList]
   
   const packageJsonData = list.map(x => {
     const uiTheme = x.data.type === 'light' ?

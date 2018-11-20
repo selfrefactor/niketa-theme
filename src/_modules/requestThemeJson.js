@@ -12,7 +12,7 @@ export async function requestThemeJson(url){
 
         return content
     } catch (error) {
-        console.log(error);
+        console.log(error, url);
         
         return false
     }
