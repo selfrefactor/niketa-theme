@@ -40,7 +40,8 @@ export async function rabbitHole (){
   const othersList = await mapAsync(
     async ([name, url]) => {
       const data = await requestThemeJson(
-        toRawUrl(url)
+        toRawUrl(url),
+        name
       )
 
       return {

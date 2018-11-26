@@ -1,14 +1,20 @@
-import { ok } from 'rambdax'
+import { pass } from 'rambdax'
 import request from 'request-promise'
-const rawHead = 'https://raw.githubusercontent.com/'
 
 export const schema = {name:'string'}
 
-export async function requestThemeJson(url){
+export async function requestThemeJson(url, fallbackName){
     try {
         const response = await request(url)
         const content = JSON.parse(response)
-        ok(content)(schema)
+        
+        if(!pass(content)(schema) && !fallbackName){
+            throw new Error('no name')
+        }
+
+        if(!pass(content)(schema) && fallbackName){
+            content.name = fallbackName
+        }
 
         return content
     } catch (error) {

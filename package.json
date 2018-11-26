@@ -1,5 +1,5 @@
 {
-  "name": "Niketa-theme",
+  "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
   "version": "0.5.0",
@@ -7,10 +7,10 @@
   "publisher": "selfrefactor",
   "scripts": {
     "test": "jest src",
-    "build": "node dist/index.js",
+    "start": "node dist/index.js",
     "de": "commit",
     "watch": "parcel watch src/index.js --target node --out-file index.js",
-    "start": "parcel build src/index.js --target node --out-file index.js"
+    "build": "parcel build src/index.js --target node --out-file index.js"
   },
   "engines": {
     "vscode": "^1.27.0"
@@ -74,11 +74,6 @@
         "path": "./imported/absent.json"
       },
       {
-        "label": "NiketaSpearmintContrast",
-        "uiTheme": "vs-dark",
-        "path": "./imported/spearmintContrast.json"
-      },
-      {
         "label": "NiketaYitzchok",
         "uiTheme": "vs-dark",
         "path": "./imported/yitzchok.json"
@@ -109,11 +104,6 @@
         "path": "./imported/harmonicLight.json"
       },
       {
-        "label": "NiketaRailscastsLight",
-        "uiTheme": "vs",
-        "path": "./imported/railscastsLight.json"
-      },
-      {
         "label": "NiketaOceanLight",
         "uiTheme": "vs",
         "path": "./imported/oceanLight.json"
@@ -129,9 +119,9 @@
         "path": "./imported/tomorrowDark.json"
       },
       {
-        "label": "NiketaMochaDark",
+        "label": "NiketaNebula",
         "uiTheme": "vs-dark",
-        "path": "./imported/mochaDark.json"
+        "path": "./imported/nebula.json"
       },
       {
         "label": "NiketaPlastic",
@@ -148,16 +138,12 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "commit-message": "https://github.com/selfrefactor/commit-message#3.0.1",
     "fs-extra": "^7.0.0",
     "jest": "^23.6.0",
     "parcel-bundler": "^1.10.3",
-    "rambdax": "^0.15.1",
+    "rambdax": "^0.24.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "string-fn": "^1.7.0"
-  },
-  "commitMessage": {
-    "workInProgress": ""
+    "string-fn": "^1.8.0"
   }
 }

@@ -1,8 +1,7 @@
-import { multiline } from 'rambdax'
-const rawHead = 'https://raw.githubusercontent.com/'
+import { glue } from 'rambdax'
 
 export function toRainglowUrl(tag){
-  return multiline(`
+  return glue(`
     https://raw.githubusercontent.com
     rainglow
     vscode

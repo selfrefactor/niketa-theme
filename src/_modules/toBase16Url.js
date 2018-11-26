@@ -1,8 +1,7 @@
-import { multiline } from 'rambdax'
-const rawHead = 'https://raw.githubusercontent.com/'
+import { glue } from 'rambdax'
 
 export function toBase16Url(tag){
-  return multiline(`
+  return glue(`
     https://raw.githubusercontent.com
     riesinger
     base16-vscode
