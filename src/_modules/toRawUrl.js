@@ -7,10 +7,10 @@ export function toRawUrl(url){
 
   return url
     .s(split('/blob/'))
-    .s( ([a,b]) => ([
-        remove('https://github.com/', a),
-        b
-    ]))
+    .s(([ a, b ]) => [
+      remove('https://github.com/', a),
+      b,
+    ])
     .s(join('/'))
     .s(prepend(rawHead))
 }

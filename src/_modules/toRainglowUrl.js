@@ -7,7 +7,7 @@ export function toRainglowUrl(tag){
     vscode
     master
     themes
-    ${tag}.json
-  `,'/')
+    ${ tag }.json
+  `, '/')
 }
 

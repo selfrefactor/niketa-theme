@@ -7,7 +7,7 @@ export function toBase16Url(tag){
     base16-vscode
     master
     themes
-    ${tag}.json
-  `,'/')
+    ${ tag }.json
+  `, '/')
 }
 
