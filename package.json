@@ -8,7 +8,6 @@
   "scripts": {
     "test": "jest src",
     "start": "node dist/index.js",
-    "de": "commit",
     "watch": "parcel watch src/index.js --target node --out-file index.js",
     "build": "parcel build src/index.js --target node --out-file index.js"
   },
@@ -82,6 +81,31 @@
         "label": "NiketaPeacocksInSpace",
         "uiTheme": "vs-dark",
         "path": "./imported/peacocksInSpace.json"
+      },
+      {
+        "label": "NiketaCaveLight",
+        "uiTheme": "vs",
+        "path": "./imported/caveLight.json"
+      },
+      {
+        "label": "NiketaLakeLight",
+        "uiTheme": "vs",
+        "path": "./imported/lakeLight.json"
+      },
+      {
+        "label": "NiketaSeaLight",
+        "uiTheme": "vs",
+        "path": "./imported/seaLight.json"
+      },
+      {
+        "label": "NiketaDesertDark",
+        "uiTheme": "vs-dark",
+        "path": "./imported/desertDark.json"
+      },
+      {
+        "label": "NiketaSpaceDark",
+        "uiTheme": "vs-dark",
+        "path": "./imported/spaceDark.json"
       },
       {
         "label": "NiketaAtelierlakesideLight",
