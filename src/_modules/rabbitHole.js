@@ -1,11 +1,12 @@
-import { rainglow, others, base16, base2 } from '../data.json'
 import { mapAsync, change } from 'rambdax'
-import { toRainglowUrl } from './toRainglowUrl'
+import { multiThemeFetcher } from './multiThemeFetcher'
+import { pascalCase, dotCase, camelCase } from 'string-fn'
+import { rainglow, others, base16, base2 } from '../data.json'
+import { requestThemeJson } from './requestThemeJson'
 import { toBase16Url } from './toBase16Url'
 import { toBase2Url } from './toBase2Url'
-import { requestThemeJson } from './requestThemeJson'
+import { toRainglowUrl } from './toRainglowUrl'
 import { toRawUrl } from './toRawUrl'
-import { pascalCase, dotCase, camelCase } from 'string-fn'
 import { writeJsonSync, readJsonSync } from 'fs-extra'
 
 const LOCATION = `${ process.cwd() }/package.json`
@@ -77,7 +78,11 @@ export async function rabbitHole() {
 
   const packageJson = readJsonSync(LOCATION)
 
-  const themes = [ ...getNiketaData(), ...packageJsonData ]
+  const themes = [ 
+    ...getNiketaData(), 
+    ...packageJsonData,
+    ...multiThemeFetcher()
+  ]
 
   const newPackageJson = change(packageJson, 'contributes', { themes })
 
@@ -104,12 +109,12 @@ function getNiketaData() {
       path    : './themes/niketa-dark.json',
     },
     {
-      label   : 'Gruvbox Light Hard',
+      label   : 'NiketaGruvboxHard',
       uiTheme : 'vs',
       path    : './themes/light-hard.tmTheme',
     },
     {
-      label   : 'Gruvbox Light Soft',
+      label   : 'NiketaGruvboxLight',
       uiTheme : 'vs',
       path    : './themes/light-soft.tmTheme',
     },
