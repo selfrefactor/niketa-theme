@@ -118,5 +118,15 @@ function getNiketaData() {
       uiTheme : 'vs',
       path    : './themes/light-soft.tmTheme',
     },
+    {
+      label   : 'NiketaPredawn',
+      uiTheme : 'vs-dark',
+      path    : './themes/predawn.tmTheme',
+    },
+    {
+      label   : 'NiketaEarth',
+      uiTheme : 'vs-dark',
+      path    : './themes/earth.tmTheme',
+    }
   ]
 }
