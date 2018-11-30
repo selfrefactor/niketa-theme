@@ -103,5 +103,15 @@ function getNiketaData() {
       uiTheme : 'vs-dark',
       path    : './themes/niketa-dark.json',
     },
+    {
+      label   : 'Gruvbox Light Hard',
+      uiTheme : 'vs',
+      path    : './themes/light-hard.tmTheme',
+    },
+    {
+      label   : 'Gruvbox Light Soft',
+      uiTheme : 'vs',
+      path    : './themes/light-soft.tmTheme',
+    },
   ]
 }
