@@ -124,6 +124,21 @@ function getNiketaData() {
       path    : './themes/predawn.tmTheme',
     },
     {
+      label   : 'NiketaPopDark',
+      uiTheme : 'vs-dark',
+      path    : './themes/niketa-pop-dark.json',
+    },
+    {
+      label   : 'NiketaNineties',
+      uiTheme : 'vs',
+      path    : './themes/niketa-nineties.json',
+    },
+    {
+      label   : 'NiketaPopLight',
+      uiTheme : 'vs',
+      path    : './themes/niketa-pop-light.json',
+    },
+    {
       label   : 'NiketaEarth',
       uiTheme : 'vs-dark',
       path    : './themes/earth.tmTheme',
