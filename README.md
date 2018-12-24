@@ -16,7 +16,27 @@ As there are over 50 themes inside `Niketa`, it is heavy task to publish all the
 
 ### Atelier Lakeside
 
-![Atelierlakeside](https://github.com/selfrefactor/niketa-theme/blob/master/screens/atelier.lakeside.png?raw=true)
+![atelierlakeside](https://github.com/selfrefactor/niketa-theme/blob/master/screens/atelier.lakeside.png?raw=true)
+
+### Bold
+
+![bold](https://github.com/selfrefactor/niketa-theme/blob/master/screens/bold.png?raw=true)
+
+### BoxUK
+
+![box](https://github.com/selfrefactor/niketa-theme/blob/master/screens/box.uk.png?raw=true)
+
+### Cave
+
+![cave](https://github.com/selfrefactor/niketa-theme/blob/master/screens/cave.png?raw=true)
+
+### Default
+
+![default](https://github.com/selfrefactor/niketa-theme/blob/master/screens/default.png?raw=true)
+
+### Nineties
+
+![nineties](https://github.com/selfrefactor/niketa-theme/blob/master/screens/nineties.png?raw=true)
 
 ## Name
 
