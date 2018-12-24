@@ -30,9 +30,9 @@ As there are over 50 themes inside `Niketa`, it is heavy task to publish all the
 
 ![cave](https://github.com/selfrefactor/niketa-theme/blob/master/screens/cave.png?raw=true)
 
-### Default
+### DefaultLight
 
-![default](https://github.com/selfrefactor/niketa-theme/blob/master/screens/default.png?raw=true)
+![default](https://github.com/selfrefactor/niketa-theme/blob/master/screens/default.light.png?raw=true)
 
 ### Nineties
 
