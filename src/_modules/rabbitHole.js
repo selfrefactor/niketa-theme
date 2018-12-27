@@ -142,6 +142,29 @@ function getNiketaData() {
       label   : 'NiketaEarth',
       uiTheme : 'vs-dark',
       path    : './themes/earth.tmTheme',
-    }
+    },
+    {
+      label   : 'NiketaArgon',
+      uiTheme : 'vs-dark',
+      path    : './themes/argon.json',
+    },
+    // Imported from Dainty
+    // Auy mirage, Dark +, Prettier
+    ///////////////////////////
+    {
+      label   : 'NiketaOasis',
+      uiTheme : 'vs-dark',
+      path    : './themes/oasis.json',
+    },
+    {
+      label   : 'NiketaPlus',
+      uiTheme : 'vs-dark',
+      path    : './themes/plus.json',
+    },
+    {
+      label   : 'NiketaPrettier',
+      uiTheme : 'vs-dark',
+      path    : './themes/prettier.json',
+    },
   ]
 }
