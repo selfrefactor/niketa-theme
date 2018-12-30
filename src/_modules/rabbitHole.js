@@ -12,7 +12,7 @@ import { writeJsonSync, readJsonSync } from 'fs-extra'
 const LOCATION = `${ process.cwd() }/package.json`
 const NIKETA = 'Niketa'
 
-export async function rabbitHole() {
+export async function rabbitHole(){
   const rainglowList = await mapAsync(async x => {
     const data = await requestThemeJson(toRainglowUrl(x))
 
@@ -78,10 +78,10 @@ export async function rabbitHole() {
 
   const packageJson = readJsonSync(LOCATION)
 
-  const themes = [ 
-    ...getNiketaData(), 
+  const themes = [
+    ...getNiketaData(),
     ...packageJsonData,
-    ...multiThemeFetcher()
+    ...multiThemeFetcher(),
   ]
 
   const newPackageJson = change(packageJson, 'contributes', { themes })
@@ -91,7 +91,7 @@ export async function rabbitHole() {
   return newPackageJson.contributes.themes
 }
 
-function getNiketaData() {
+function getNiketaData(){
   return [
     {
       label   : 'NiketaLight',
@@ -165,6 +165,13 @@ function getNiketaData() {
       label   : 'NiketaPrettier',
       uiTheme : 'vs-dark',
       path    : './themes/prettier.json',
+    },
+    // Noctis Uva ft Winter is comming
+    ///////////////////////////
+    {
+      label   : 'NiketaAnt',
+      uiTheme : 'vs-dark',
+      path    : './themes/ant.json',
     },
   ]
 }

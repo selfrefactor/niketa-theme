@@ -38,6 +38,11 @@
         "path": "./themes/niketa-yellow.json"
       },
       {
+        "label": "NiketaAnt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ant.json"
+      },
+      {
         "label": "NiketaDark",
         "uiTheme": "vs-dark",
         "path": "./themes/niketa-dark.json"
@@ -334,5 +339,10 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "string-fn": "^1.8.0"
+  },
+  "commitMessage": {
+    "feature": [
+      "theme"
+    ]
   }
 }
