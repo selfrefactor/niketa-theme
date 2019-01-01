@@ -129,6 +129,11 @@ function getNiketaData(){
       path    : './themes/niketa-pop-dark.json',
     },
     {
+      label   : 'NiketaNinetiesBlue',
+      uiTheme : 'vs-dark',
+      path    : './themes/nineties-blue.json',
+    },
+    {
       label   : 'NiketaNineties',
       uiTheme : 'vs',
       path    : './themes/niketa-nineties.json',
