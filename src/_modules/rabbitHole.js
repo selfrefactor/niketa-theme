@@ -178,5 +178,12 @@ function getNiketaData(){
       uiTheme : 'vs-dark',
       path    : './themes/ant.json',
     },
+    // Cameo dark+
+    ///////////////////////////
+    {
+      label   : 'NiketaBee',
+      uiTheme : 'vs-dark',
+      path    : './themes/bee.json',
+    },
   ]
 }
