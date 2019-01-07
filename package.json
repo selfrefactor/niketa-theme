@@ -63,24 +63,9 @@
         "path": "./themes/niketa-pop-light.json"
       },
       {
-        "label": "NiketaArgon",
-        "uiTheme": "vs-dark",
-        "path": "./themes/argon.json"
-      },
-      {
         "label": "NiketaOasis",
         "uiTheme": "vs-dark",
         "path": "./themes/oasis.json"
-      },
-      {
-        "label": "NiketaPlus",
-        "uiTheme": "vs-dark",
-        "path": "./themes/plus.json"
-      },
-      {
-        "label": "NiketaPrettier",
-        "uiTheme": "vs-dark",
-        "path": "./themes/prettier.json"
       },
       {
         "label": "NiketaAnt",
@@ -88,9 +73,9 @@
         "path": "./themes/ant.json"
       },
       {
-        "label": "NiketaBee",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bee.json"
+        "label": "NiketaPaper",
+        "uiTheme": "vs",
+        "path": "./themes/paper.tmTheme"
       },
       {
         "label": "NiketaAbsent",
@@ -151,11 +136,6 @@
         "label": "NiketaSolarizedLight",
         "uiTheme": "vs",
         "path": "./imported/solarizedLight.json"
-      },
-      {
-        "label": "NiketaTomorrowDark",
-        "uiTheme": "vs-dark",
-        "path": "./imported/tomorrowDark.json"
       },
       {
         "label": "NiketaNature",
@@ -223,14 +203,14 @@
         "path": "./themes/mellow.tmTheme"
       },
       {
-        "label": "NiketaZeusSublimeText",
-        "uiTheme": "vs-dark",
-        "path": "./themes/zeus-sublime-text.tmTheme"
-      },
-      {
         "label": "NiketaAzure",
         "uiTheme": "vs-dark",
         "path": "./themes/azure.tmTheme"
+      },
+      {
+        "label": "NiketaBold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bold.tmTheme"
       }
     ]
   },
@@ -247,7 +227,8 @@
   },
   "commitMessage": {
     "feature": [
-      "theme"
+      "theme",
+      "build"
     ]
   }
 }

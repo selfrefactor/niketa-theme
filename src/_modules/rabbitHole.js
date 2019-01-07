@@ -143,5 +143,12 @@ function getNiketaData(){
       uiTheme : 'vs-dark',
       path    : './themes/ant.json',
     },
+    // Paper White
+    // ============================================
+    {
+      label: "NiketaPaper",
+      uiTheme: "vs",
+      path: "./themes/paper.tmTheme"
+    }
   ]
 }
