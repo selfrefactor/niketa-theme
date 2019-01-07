@@ -128,28 +128,13 @@ function getNiketaData(){
       uiTheme : 'vs',
       path    : './themes/niketa-pop-light.json',
     },
-    {
-      label   : 'NiketaArgon',
-      uiTheme : 'vs-dark',
-      path    : './themes/argon.json',
-    },
     // Imported from Dainty
-    // Auy mirage, Dark +, Prettier
+    // Auy mirage
     ///////////////////////////
     {
       label   : 'NiketaOasis',
       uiTheme : 'vs-dark',
       path    : './themes/oasis.json',
-    },
-    {
-      label   : 'NiketaPlus',
-      uiTheme : 'vs-dark',
-      path    : './themes/plus.json',
-    },
-    {
-      label   : 'NiketaPrettier',
-      uiTheme : 'vs-dark',
-      path    : './themes/prettier.json',
     },
     // Noctis Uva ft Winter is comming
     ///////////////////////////
@@ -157,13 +142,6 @@ function getNiketaData(){
       label   : 'NiketaAnt',
       uiTheme : 'vs-dark',
       path    : './themes/ant.json',
-    },
-    // Cameo dark+
-    ///////////////////////////
-    {
-      label   : 'NiketaBee',
-      uiTheme : 'vs-dark',
-      path    : './themes/bee.json',
     },
   ]
 }

@@ -1,59 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-Humble Night
 ======================================================================
- A minimalistic dark color theme for Sublime Text theme by weop.
-
- Copyright (c) 2016 weop. https://github.com/weop
- Released under the MIT License <http://opensource.org/licenses/MIT>
+Bold
+======================================================================
+A Sublime Text 2 / Textmate theme.
+Copyright (c) 2014 Dayle Rees.
+Released under the MIT License <http://opensource.org/licenses/MIT>
+======================================================================
+Find more themes at : https://github.com/daylerees/colour-schemes
+======================================================================
 -->
 <plist version="1.0">
 <dict>
     <key>name</key>
-    <string>Humble Night</string>
+    <string>Bold</string>
     <key>settings</key>
     <array>
         <dict>
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#171C20</string>
+                <string>#2a2626</string>
                 <key>caret</key>
                 <string>#f8f8f0</string>
                 <key>foreground</key>
-                <string>#ccc</string>
+                <string>#ffffff</string>
                 <key>invisibles</key>
                 <string>#3b3a32</string>
                 <key>lineHighlight</key>
-                <string>#1B2126</string>
+                <string>#393434</string>
                 <key>selection</key>
-                <string>#5AC480</string>
+                <string>#3D8E91</string>
                 <key>selectionForeground</key>
                 <string>#ffffff</string>
                 <key>findHighlight</key>
-                <string>#5AC480</string>
+                <string>#ffe792</string>
                 <key>findHighlightForeground</key>
-                <string>#eee</string>
+                <string>#000000</string>
                 <key>selectionBorder</key>
                 <string>#222218</string>
                 <key>activeGuide</key>
                 <string>#9d550fb0</string>
 
                 <key>bracketsForeground</key>
-                <string>#eee</string>
+                <string>#3D8E91</string>
                 <key>bracketsOptions</key>
                 <string>underline</string>
 
                 <key>bracketContentsForeground</key>
-                <string>#8C8C8C</string>
+                <string>#F0624B</string>
                 <key>bracketContentsOptions</key>
                 <string>underline</string>
 
-                <key>tagsForeground</key>
-                <string>#5AC480</string>
                 <key>tagsOptions</key>
-                <string>underline</string>
+                <string>stippled_underline</string>
             </dict>
         </dict>
         <dict>
@@ -64,7 +65,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#333940</string>
+                <string>#534b4b</string>
             </dict>
         </dict>
         <dict>
@@ -75,7 +76,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#5AC480</string>
+                <string>#F7A21B</string>
             </dict>
         </dict>
         <dict>
@@ -86,7 +87,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ecf0f1</string>
+                <string>#F7A21B</string>
             </dict>
         </dict>
 
@@ -98,7 +99,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#3498db</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -109,7 +110,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#9b59b6</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -119,8 +120,8 @@ Humble Night
             <string>variable</string>
             <key>settings</key>
             <dict>
-                <key>foreground</key>
-                <string>#559BD3</string>
+                <key>fontStyle</key>
+                <string></string>
             </dict>
         </dict>
         <dict>
@@ -131,7 +132,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ecf0f1</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -144,7 +145,7 @@ Humble Night
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#559BD3</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -154,8 +155,10 @@ Humble Night
             <string>storage.type</string>
             <key>settings</key>
             <dict>
+                <key>fontStyle</key>
+                <string></string>
                 <key>foreground</key>
-                <string>#D85653</string>
+                <string>#3D8E91</string>
             </dict>
         </dict>
         <dict>
@@ -168,7 +171,7 @@ Humble Night
                 <key>fontStyle</key>
                 <string>underline</string>
                 <key>foreground</key>
-                <string>#EFCC48</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -178,8 +181,10 @@ Humble Night
             <string>entity.other.inherited-class</string>
             <key>settings</key>
             <dict>
+                <key>fontStyle</key>
+                <string>italic underline</string>
                 <key>foreground</key>
-                <string>#ECD377</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -189,8 +194,10 @@ Humble Night
             <string>entity.name.function</string>
             <key>settings</key>
             <dict>
+                <key>fontStyle</key>
+                <string></string>
                 <key>foreground</key>
-                <string>#EFCC48</string>
+                <string>#B4B7AD</string>
             </dict>
         </dict>
         <dict>
@@ -200,8 +207,10 @@ Humble Night
             <string>variable.parameter</string>
             <key>settings</key>
             <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
                 <key>foreground</key>
-                <string>#D85653</string>
+                <string></string>
             </dict>
         </dict>
         <dict>
@@ -214,7 +223,7 @@ Humble Night
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#687482</string>
+                <string>#3D8E91</string>
             </dict>
         </dict>
         <dict>
@@ -227,18 +236,7 @@ Humble Night
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#687482</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>Tag Punctuations</string>
-            <key>scope</key>
-            <string>punctuation.definition.tag.begin, punctuation.definition.tag.end</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#687482</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -251,7 +249,7 @@ Humble Night
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#559BD3</string>
+                <string>#3D8E91</string>
             </dict>
         </dict>
         <dict>
@@ -264,7 +262,7 @@ Humble Night
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#559BD3</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -274,8 +272,10 @@ Humble Night
             <string>support.type, support.class</string>
             <key>settings</key>
             <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
                 <key>foreground</key>
-                <string>#1abc9c</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -285,8 +285,8 @@ Humble Night
             <string>support.other.variable</string>
             <key>settings</key>
             <dict>
-                <key>foreground</key>
-                <string>#559BD3</string>
+                <key>fontStyle</key>
+                <string></string>
             </dict>
         </dict>
         <dict>
@@ -296,8 +296,12 @@ Humble Night
             <string>invalid</string>
             <key>settings</key>
             <dict>
+                <key>background</key>
+                <string>#00a8c6</string>
+                <key>fontStyle</key>
+                <string></string>
                 <key>foreground</key>
-                <string>#DE3932</string>
+                <string>#f8f8f0</string>
             </dict>
         </dict>
         <dict>
@@ -307,8 +311,10 @@ Humble Night
             <string>invalid.deprecated</string>
             <key>settings</key>
             <dict>
+                <key>background</key>
+                <string>#00a8c6</string>
                 <key>foreground</key>
-                <string>#DE3932</string>
+                <string>#f8f8f0</string>
             </dict>
         </dict>
         <dict>
@@ -319,7 +325,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ffffff</string>
+                <string>#F7A21B</string>
             </dict>
         </dict>
 
@@ -342,7 +348,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#e74c3c</string>
+                <string>#00A8C6</string>
             </dict>
         </dict>
         <dict>
@@ -353,7 +359,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#1abc9c</string>
+                <string>#A6E22E</string>
             </dict>
         </dict>
         <dict>
@@ -364,7 +370,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#3498db</string>
+                <string>#E6DB74</string>
             </dict>
         </dict>
 
@@ -374,7 +380,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#8FBE00A</string>
+                <string>#8FBE00A0</string>
             </dict>
         </dict>
         <dict>
@@ -392,7 +398,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ecf0f1</string>
+                <string>#6b6161</string>
             </dict>
         </dict>
         <dict>
@@ -401,7 +407,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ffffff</string>
+                <string>#F7A21B</string>
             </dict>
         </dict>
         <dict>
@@ -410,7 +416,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#8C8C8C</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
         <dict>
@@ -419,7 +425,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ffffff</string>
+                <string>#F7A21B</string>
             </dict>
         </dict>
         <dict>
@@ -441,7 +447,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#B0B0B0</string>
+                <string>#ffffff</string>
             </dict>
         </dict>
         <dict>
@@ -452,7 +458,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#C4C4C4</string>
+                <string>#3D8E91</string>
             </dict>
         </dict>
         <dict>
@@ -463,7 +469,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#EFCC48</string>
+                <string>#ffffff</string>
                 <key>fontStyle</key>
                 <string>normal</string>
             </dict>
@@ -476,7 +482,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#E75F64</string>
+                <string></string>
                 <key>fontStyle</key>
                 <string>normal</string>
             </dict>
@@ -489,7 +495,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#B0B0B0</string>
+                <string>#F7A21B</string>
                 <key>fontStyle</key>
                 <string>italic</string>
             </dict>
@@ -504,7 +510,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#8C8C8C</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
 
@@ -516,7 +522,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#eeeeee</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
 
@@ -528,7 +534,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ffffff</string>
+                <string>#F7A21B</string>
             </dict>
         </dict>
 
@@ -540,7 +546,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#eeeeee</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
 
@@ -552,7 +558,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#eeeeee</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
 
@@ -564,7 +570,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#eeeeee</string>
+                <string>#F0624B</string>
             </dict>
         </dict>
 
@@ -576,7 +582,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#C4C4C4</string>
+                <string>#3D8E91</string>
                 <key>fontStyle</key>
                 <string>italic</string>
             </dict>
@@ -590,7 +596,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#C4C4C4</string>
+                <string>#3D8E91</string>
             </dict>
         </dict>
 
@@ -638,7 +644,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#e74c3c</string>
+                <string>#e61f44</string>
             </dict>
         </dict>
         <dict>
@@ -649,7 +655,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#1abc9c</string>
+                <string>#a7da1e</string>
             </dict>
         </dict>
         <dict>
@@ -660,7 +666,7 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#f1c40f</string>
+                <string>#f7b83d</string>
             </dict>
         </dict>
         <dict>
@@ -671,9 +677,11 @@ Humble Night
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ECD377</string>
+                <string>#B4B7AD</string>
             </dict>
         </dict>
     </array>
+    <key>uuid</key>
+    <string>114c3050-111d-8b8d-dd83-0b99ccebd246</string>
 </dict>
 </plist>
