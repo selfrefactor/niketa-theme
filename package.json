@@ -38,11 +38,6 @@
         "path": "./themes/niketa-yellow.json"
       },
       {
-        "label": "NiketaDark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/niketa-dark.json"
-      },
-      {
         "label": "NiketaGruvboxHard",
         "uiTheme": "vs",
         "path": "./themes/light-hard.tmTheme"
@@ -51,16 +46,6 @@
         "label": "NiketaGruvboxLight",
         "uiTheme": "vs",
         "path": "./themes/light-soft.tmTheme"
-      },
-      {
-        "label": "NiketaPredawn",
-        "uiTheme": "vs-dark",
-        "path": "./themes/predawn.tmTheme"
-      },
-      {
-        "label": "NiketaPopDark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/niketa-pop-dark.json"
       },
       {
         "label": "NiketaNinetiesBlue",
@@ -76,11 +61,6 @@
         "label": "NiketaPopLight",
         "uiTheme": "vs",
         "path": "./themes/niketa-pop-light.json"
-      },
-      {
-        "label": "NiketaEarth",
-        "uiTheme": "vs-dark",
-        "path": "./themes/earth.tmTheme"
       },
       {
         "label": "NiketaArgon",
@@ -113,24 +93,9 @@
         "path": "./themes/bee.json"
       },
       {
-        "label": "NiketaBoldLight",
-        "uiTheme": "vs",
-        "path": "./imported/boldLight.json"
-      },
-      {
-        "label": "NiketaKiwiLight",
-        "uiTheme": "vs",
-        "path": "./imported/kiwiLight.json"
-      },
-      {
-        "label": "NiketaMonzoLight",
-        "uiTheme": "vs",
-        "path": "./imported/monzoLight.json"
-      },
-      {
-        "label": "NiketaTetraLight",
-        "uiTheme": "vs",
-        "path": "./imported/tetraLight.json"
+        "label": "NiketaAbsent",
+        "uiTheme": "vs-dark",
+        "path": "./imported/absent.json"
       },
       {
         "label": "NiketaJumperLight",
@@ -138,19 +103,14 @@
         "path": "./imported/jumperLight.json"
       },
       {
-        "label": "NiketaAbsent",
-        "uiTheme": "vs-dark",
-        "path": "./imported/absent.json"
+        "label": "NiketaKiwiLight",
+        "uiTheme": "vs",
+        "path": "./imported/kiwiLight.json"
       },
       {
-        "label": "NiketaYitzchok",
-        "uiTheme": "vs-dark",
-        "path": "./imported/yitzchok.json"
-      },
-      {
-        "label": "NiketaPeacocksInSpace",
-        "uiTheme": "vs-dark",
-        "path": "./imported/peacocksInSpace.json"
+        "label": "NiketaTetraLight",
+        "uiTheme": "vs",
+        "path": "./imported/tetraLight.json"
       },
       {
         "label": "NiketaCaveLight",
@@ -161,16 +121,6 @@
         "label": "NiketaLakeLight",
         "uiTheme": "vs",
         "path": "./imported/lakeLight.json"
-      },
-      {
-        "label": "NiketaSeaLight",
-        "uiTheme": "vs",
-        "path": "./imported/seaLight.json"
-      },
-      {
-        "label": "NiketaDesertDark",
-        "uiTheme": "vs-dark",
-        "path": "./imported/desertDark.json"
       },
       {
         "label": "NiketaSpaceDark",
@@ -188,19 +138,9 @@
         "path": "./imported/defaultLight.json"
       },
       {
-        "label": "NiketaSolarizedLight",
-        "uiTheme": "vs",
-        "path": "./imported/solarizedLight.json"
-      },
-      {
         "label": "NiketaHarmonicLight",
         "uiTheme": "vs",
         "path": "./imported/harmonicLight.json"
-      },
-      {
-        "label": "NiketaOceanLight",
-        "uiTheme": "vs",
-        "path": "./imported/oceanLight.json"
       },
       {
         "label": "NiketaOceanDark",
@@ -208,14 +148,14 @@
         "path": "./imported/oceanDark.json"
       },
       {
+        "label": "NiketaSolarizedLight",
+        "uiTheme": "vs",
+        "path": "./imported/solarizedLight.json"
+      },
+      {
         "label": "NiketaTomorrowDark",
         "uiTheme": "vs-dark",
         "path": "./imported/tomorrowDark.json"
-      },
-      {
-        "label": "NiketaMoonlight",
-        "uiTheme": "vs-dark",
-        "path": "./imported/moonlight.json"
       },
       {
         "label": "NiketaNature",
@@ -226,11 +166,6 @@
         "label": "NiketaSubliminal",
         "uiTheme": "vs-dark",
         "path": "./imported/subliminal.json"
-      },
-      {
-        "label": "NiketaMirage",
-        "uiTheme": "vs-dark",
-        "path": "./imported/mirage.json"
       },
       {
         "label": "NiketaMister",
@@ -253,39 +188,24 @@
         "path": "./imported/plastic.json"
       },
       {
-        "label": "NiketaHorizon",
-        "uiTheme": "vs-dark",
-        "path": "./imported/horizon.json"
-      },
-      {
         "label": "NiketaAfterglow",
         "uiTheme": "vs-dark",
         "path": "./themes/afterglow.tmTheme"
       },
       {
-        "label": "NiketaAzure",
-        "uiTheme": "vs-dark",
-        "path": "./themes/azure.tmTheme"
-      },
-      {
-        "label": "NiketaBetterJs",
-        "uiTheme": "vs-dark",
-        "path": "./themes/better-js.tmTheme"
-      },
-      {
-        "label": "NiketaBirdsOfParadise",
-        "uiTheme": "vs-dark",
-        "path": "./themes/birds-of-paradise.tmTheme"
-      },
-      {
-        "label": "NiketaBold",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bold.tmTheme"
-      },
-      {
         "label": "NiketaBoxUk",
         "uiTheme": "vs",
         "path": "./themes/box-uk.tmTheme"
+      },
+      {
+        "label": "NiketaCake",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cake.tmTheme"
+      },
+      {
+        "label": "NiketaGithub",
+        "uiTheme": "vs",
+        "path": "./themes/github.tmTheme"
       },
       {
         "label": "NiketaGrunge",
@@ -298,19 +218,9 @@
         "path": "./themes/humble.tmTheme"
       },
       {
-        "label": "NiketaJuicy",
-        "uiTheme": "vs-dark",
-        "path": "./themes/juicy.tmTheme"
-      },
-      {
         "label": "NiketaKoralGreen",
         "uiTheme": "vs-dark",
         "path": "./themes/koral-green.tmTheme"
-      },
-      {
-        "label": "NiketaMarsPeacock",
-        "uiTheme": "vs-dark",
-        "path": "./themes/mars-peacock.tmTheme"
       },
       {
         "label": "NiketaMellow",
@@ -323,14 +233,14 @@
         "path": "./themes/zeus-sublime-text.tmTheme"
       },
       {
-        "label": "NiketaCake",
+        "label": "NiketaAzure",
         "uiTheme": "vs-dark",
-        "path": "./themes/cake.tmTheme"
+        "path": "./themes/azure.tmTheme"
       },
       {
-        "label": "NiketaGithub",
-        "uiTheme": "vs",
-        "path": "./themes/github.tmTheme"
+        "label": "NiketaBold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bold.tmTheme"
       }
     ]
   },
