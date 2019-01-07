@@ -104,6 +104,16 @@ function getNiketaData(){
       path    : './themes/niketa-yellow.json',
     },
     {
+      label   : 'NiketaDark',
+      uiTheme : 'vs-dark',
+      path    : './themes/niketa-dark.json',
+    },
+    {
+      label   : 'NiketaDark',
+      uiTheme : 'vs-dark',
+      path    : './themes/niketa-dark.json',
+    },
+    {
       label   : 'NiketaGruvboxHard',
       uiTheme : 'vs',
       path    : './themes/light-hard.tmTheme',
@@ -112,6 +122,16 @@ function getNiketaData(){
       label   : 'NiketaGruvboxLight',
       uiTheme : 'vs',
       path    : './themes/light-soft.tmTheme',
+    },
+    {
+      label   : 'NiketaPredawn',
+      uiTheme : 'vs-dark',
+      path    : './themes/predawn.tmTheme',
+    },
+    {
+      label   : 'NiketaPopDark',
+      uiTheme : 'vs-dark',
+      path    : './themes/niketa-pop-dark.json',
     },
     {
       label   : 'NiketaNinetiesBlue',
@@ -127,6 +147,11 @@ function getNiketaData(){
       label   : 'NiketaPopLight',
       uiTheme : 'vs',
       path    : './themes/niketa-pop-light.json',
+    },
+    {
+      label   : 'NiketaEarth',
+      uiTheme : 'vs-dark',
+      path    : './themes/earth.tmTheme',
     },
     {
       label   : 'NiketaArgon',
