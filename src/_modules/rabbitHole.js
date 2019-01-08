@@ -123,19 +123,6 @@ function getNiketaData(){
       uiTheme : 'vs',
       path    : './themes/niketa-nineties.json',
     },
-    {
-      label   : 'NiketaPopLight',
-      uiTheme : 'vs',
-      path    : './themes/niketa-pop-light.json',
-    },
-    // Imported from Dainty
-    // Auy mirage
-    ///////////////////////////
-    {
-      label   : 'NiketaOasis',
-      uiTheme : 'vs-dark',
-      path    : './themes/oasis.json',
-    },
     // Noctis Uva ft Winter is comming
     ///////////////////////////
     {
