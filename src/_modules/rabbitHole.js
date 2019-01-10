@@ -93,6 +93,36 @@ export async function rabbitHole(){
 
 function getNiketaData(){
   return [
+    // It doesn't need to prepend Niketa
+    // as it is variation of Bubblegum
+    // ============================================
+    {
+      label   : 'BubbleBaboon',
+      uiTheme : 'vs',
+      path    : './themes/bubble-baboon.json',
+    },
+    {
+      "label"   : "BubbleBear",
+      "uiTheme" : "vs",
+      "path"    : "./themes/bubble-bear.json"
+    },
+    {
+      label   : 'BubbleBee',
+      uiTheme : 'vs',
+      path    : './themes/bubble-bee.json',
+    },
+    {
+      "label"   : "BubbleBull",
+      "uiTheme" : "vs",
+      "path"    : "./themes/bubble-bull.json"
+    },
+    {
+      "label"   : "BubbleButterfly",
+      "uiTheme" : "vs",
+      "path"    : "./themes/bubble-butterfly.json"
+    },
+    // END_BUBBLEGUM
+    // ============================================
     {
       label   : 'NiketaLight',
       uiTheme : 'vs',
