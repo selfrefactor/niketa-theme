@@ -42,11 +42,13 @@ export function createTheme({
   }
 
   const exportedLabels = labels.map(
-    (label, i) => {
-      publishTheme(partialJson[ i ].path, label, base)
-    }
+    (label, i) => publishTheme(
+      partialJson[ i ].path, 
+      label, 
+      base
+    )
   )
-  console.log({exportedLabels})
+  console.log({ exportedLabels })
   const packageJsonPartial = exportedLabels.map(
     label => ({
       label,
