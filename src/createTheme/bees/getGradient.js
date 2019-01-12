@@ -11,8 +11,11 @@ const parseGradient = input => {
   )
 }
 
-export function getGradientAnt(from, to){
-
+export function getGradientBee(from, to){
+  console.log({
+    from,
+    to,
+  })
   let gradient = gradStop({
     stops       : 5,
     inputFormat : 'hex',
