@@ -116,33 +116,12 @@ var _path = require("path");
 
 var _fs = require("fs");
 
-const BASE = (0, _path.resolve)(__dirname, '../');
-console.log({
-  BASE
-});
+const BASE = (0, _path.resolve)(__dirname, '..');
 
 function readJsonAnt(filePath) {
   const resolvedPath = (0, _path.resolve)(BASE, filePath);
   const content = (0, _fs.readFileSync)(resolvedPath).toString();
   return JSON.parse(content);
-}
-},{}],"createTheme/ants/writeJson.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.writeJsonAnt = writeJsonAnt;
-
-var _path = require("path");
-
-var _fs = require("fs");
-
-const BASE = (0, _path.resolve)(__dirname, '../');
-
-function writeJsonAnt(filePath, obj) {
-  const resolvedPath = (0, _path.resolve)(BASE, filePath);
-  (0, _fs.writeFileSync)(resolvedPath, JSON.stringify(obj));
 }
 },{}],"createTheme/ants/gradStop.js":[function(require,module,exports) {
 !function a(b, c, d) {
@@ -462,16 +441,23 @@ const parseGradient = input => {
   return (0, _rambdax.map)(val => Number(val.trim()), (0, _rambdax.split)(',', str));
 };
 
-function getGradientBee(from, to) {
-  console.log({
-    from,
-    to
-  });
-  let gradient = gradStop({
-    stops: 5,
-    inputFormat: 'hex',
-    colorArray: [from, to]
-  });
+function getGradientBee(from, to, levels = 5) {
+  let gradient;
+
+  try {
+    gradient = gradStop({
+      stops: levels,
+      inputFormat: 'hex',
+      colorArray: [from, to]
+    });
+  } catch (e) {
+    console.log({
+      from,
+      to
+    });
+    throw e;
+  }
+
   gradient = gradient.map(val => parseGradient(val));
   gradient = gradient.map(val => `#${rgbHex(...val)}`);
   return gradient;
@@ -492,8 +478,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 function createThemeBee(rules, originTheme) {
   const keys = Object.keys(rules);
-  return (0, _rambdax.range)(0, keys.length).map(i => {
-    let newThemeColors = {};
+  return (0, _rambdax.range)(0, rules[keys[0]].length).map(i => {
+    const newThemeColors = {};
     keys.forEach(path => {
       newThemeColors[path] = rules[path][i];
     });
@@ -501,6 +487,24 @@ function createThemeBee(rules, originTheme) {
       colors: _objectSpread({}, originTheme.colors, newThemeColors)
     });
   });
+}
+},{}],"createTheme/ants/writeJson.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.writeJsonAnt = writeJsonAnt;
+
+var _path = require("path");
+
+var _fs = require("fs");
+
+const BASE = (0, _path.resolve)(__dirname, '..');
+
+function writeJsonAnt(filePath, obj) {
+  const resolvedPath = (0, _path.resolve)(BASE, filePath);
+  (0, _fs.writeFileSync)(resolvedPath, JSON.stringify(obj, null, 2));
 }
 },{}],"createTheme/bees/saveTheme.js":[function(require,module,exports) {
 "use strict";
@@ -510,19 +514,38 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.saveThemeBee = saveThemeBee;
 
-var _path = require("path");
-
-var _fs = require("fs");
+var _writeJson = require("../ants/writeJson");
 
 var _stringFn = require("string-fn");
 
 const namesHash = ['baboon', 'bear', 'bee', 'bull', 'butterfly', 'cell', 'deep'];
 
 function saveThemeBee(theme, i) {
-  const output = (0, _path.resolve)(__dirname, `../output/${(0, _stringFn.titleCase)(namesHash[i])}`);
-  (0, _fs.writeFileSync)(output, JSON.stringify(theme));
+  const label = (0, _stringFn.titleCase)(namesHash[i]);
+  (0, _writeJson.writeJsonAnt)(`./src/createTheme/output/${label}.json`, theme);
+  return label;
 }
-},{}],"createTheme/index.js":[function(require,module,exports) {
+},{"../ants/writeJson":"createTheme/ants/writeJson.js"}],"createTheme/bees/publishTheme.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.publishTheme = publishTheme;
+
+var _stringFn = require("string-fn");
+
+var _readJson = require("../ants/readJson");
+
+var _writeJson = require("../ants/writeJson");
+
+function publishTheme(source, label, base) {
+  const name = (0, _stringFn.titleCase)(`${base}${label}`);
+  const theme = (0, _readJson.readJsonAnt)(source);
+  (0, _writeJson.writeJsonAnt)(`./themes/${name}.json`, theme);
+  return name;
+}
+},{"../ants/readJson":"createTheme/ants/readJson.js","../ants/writeJson":"createTheme/ants/writeJson.js"}],"createTheme/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -534,38 +557,66 @@ var _rambdax = require("rambdax");
 
 var _readJson = require("./ants/readJson");
 
-var _writeJson = require("./ants/writeJson");
-
 var _getGradient = require("./bees/getGradient");
 
 var _createTheme = require("./bees/createTheme");
 
 var _saveTheme = require("./bees/saveTheme");
 
-function createTheme(filePath, rules, mode = 'light') {
+var _publishTheme = require("./bees/publishTheme");
+
+function createTheme({
+  filePath,
+  rules,
+  levels = 5,
+  mode = 'light',
+  base = false,
+  labels
+}) {
   (0, _rambdax.ok)(_readJson.readJsonAnt, rules)(String, Object);
   const originTheme = (0, _readJson.readJsonAnt)(filePath);
-  const rulesWithColors = (0, _rambdax.map)(([from, to]) => (0, _getGradient.getGradientBee)(from, to), rules);
+  const rulesWithColors = (0, _rambdax.map)(([from, to]) => (0, _getGradient.getGradientBee)(from, to, levels), rules);
   const newThemes = (0, _createTheme.createThemeBee)(rulesWithColors, originTheme);
-  const labels = newThemes.map(_saveTheme.saveThemeBee);
-  const exportedLabels = labels.map(label => ({
+  const tempLabels = newThemes.map(_saveTheme.saveThemeBee);
+  const partialJson = tempLabels.map(label => ({
+    label: `Ant${label}`,
+    uiTheme: mode === 'light' ? 'vs' : 'vs-dark',
+    path: `./src/createTheme/output/${label}.json`
+  }));
+
+  if (!base) {
+    return console.log(JSON.stringify(partialJson, null, 2));
+  }
+
+  const exportedLabels = labels.map((label, i) => {
+    (0, _publishTheme.publishTheme)(partialJson[i].path, label, base);
+  });
+  const packageJsonPartial = exportedLabels.map(label => ({
     label,
     uiTheme: mode === 'light' ? 'vs' : 'vs-dark',
-    path: `./dist/createTheme/output/${label}.json`
+    path: `./themes/${label}.json`
   }));
-  console.log(exportedLabels);
+  console.log(JSON.stringify(packageJsonPartial, null, 2));
 }
-},{"./ants/readJson":"createTheme/ants/readJson.js","./ants/writeJson":"createTheme/ants/writeJson.js","./bees/getGradient":"createTheme/bees/getGradient.js","./bees/createTheme":"createTheme/bees/createTheme.js","./bees/saveTheme":"createTheme/bees/saveTheme.js"}],"createTheme/prove.js":[function(require,module,exports) {
+},{"./ants/readJson":"createTheme/ants/readJson.js","./bees/getGradient":"createTheme/bees/getGradient.js","./bees/createTheme":"createTheme/bees/createTheme.js","./bees/saveTheme":"createTheme/bees/saveTheme.js","./bees/publishTheme":"createTheme/bees/publishTheme.js"}],"createTheme/prove.js":[function(require,module,exports) {
 "use strict";
 
 var _ = require("./");
 
 const filePath = './themes/izorra.json';
 const rules = {
-  'activityBar.background': ['#ece3e7', '#ecf3e1'],
-  'activityBar.foreground': ['#076b6b', '#03aaaa']
+  'editor.wordHighlightBackground': ['#DDE6E0', '#faaaaa'],
+  'editor.selectionBackground': ['#DDE6E0', '#fafafa'],
+  'editor.selectionHighlightBackground': ['#87A190', '#faaaaa'],
+  'editor.background': ['#fffdfe', '#E5F5EB']
 };
-(0, _.createTheme)(filePath, rules);
+(0, _.createTheme)({
+  filePath,
+  rules,
+  levels: 3,
+  base: 'bee',
+  labels: ['kangroo', 'solid', 'wall']
+});
 },{"./":"createTheme/index.js"}],"index.js":[function(require,module,exports) {
 // process.env.DISABLE_LOG_FLAG === 'true'
 console.log = process.env.DISABLE_LOG_FLAG === 'true' ? () => {} : console.log;

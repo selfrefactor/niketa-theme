@@ -1,6 +1,5 @@
-import { resolve } from 'path'
-import { writeFileSync } from 'fs'
-import { titleCase } from 'string-fn';
+import { writeJsonAnt } from '../ants/writeJson'
+import { titleCase } from 'string-fn'
 
 const namesHash = [
   'baboon',
@@ -12,13 +11,12 @@ const namesHash = [
   'deep',
 ]
 
-export function saveThemeBee(theme,i){
-  const output = resolve(
-    __dirname,
-    `../output/${titleCase(namesHash[i])}`
+export function saveThemeBee(theme, i){
+  const label = titleCase(namesHash[ i ])
+  writeJsonAnt(
+    `./src/createTheme/output/${ label }.json`,
+    theme
   )
-  writeFileSync(
-    output,
-    JSON.stringify(theme)
-  )
+
+  return label
 }

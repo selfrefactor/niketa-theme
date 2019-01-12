@@ -1,36 +1,60 @@
 import { map, ok } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
-import { writeJsonAnt } from './ants/writeJson'
 import { getGradientBee } from './bees/getGradient'
 import { createThemeBee } from './bees/createTheme'
 import { saveThemeBee } from './bees/saveTheme'
+import { publishTheme } from './bees/publishTheme'
 
-export function createTheme(
-  filePath, 
-  rules, 
-  mode = 'light'
-){
+export function createTheme({
+  filePath,
+  rules,
+  levels = 5,
+  mode = 'light',
+  base = false,
+  labels,
+}){
   ok(readJsonAnt, rules)(
     String, Object
   )
   const originTheme = readJsonAnt(filePath)
   const rulesWithColors = map(
-    ([ from, to ]) => getGradientBee(from, to),
+    ([ from, to ]) => getGradientBee(from, to, levels),
     rules
   )
-  
+
   const newThemes = createThemeBee(
-      rulesWithColors,
-      originTheme,
+    rulesWithColors,
+    originTheme,
   )
-  const labels = newThemes.map(saveThemeBee)
-  
-  const exportedLabels = labels.map(
+  const tempLabels = newThemes.map(saveThemeBee)
+
+  const partialJson = tempLabels.map(
     label => ({
-      label,
-      uiTheme: mode === 'light'? 'vs' : 'vs-dark',
-      path: `./dist/createTheme/output/${label}.json`
+      label   : `Ant${ label }`,
+      uiTheme : mode === 'light' ? 'vs' : 'vs-dark',
+      path    : `./src/createTheme/output/${ label }.json`,
     })
   )
-  console.log(exportedLabels)
+  if (!base){
+    return console.log(
+      JSON.stringify(partialJson, null, 2)
+    )
+  }
+
+  const exportedLabels = labels.map(
+    (label, i) => {
+      publishTheme(partialJson[ i ].path, label, base)
+    }
+  )
+  const packageJsonPartial = exportedLabels.map(
+    label => ({
+      label,
+      uiTheme : mode === 'light' ? 'vs' : 'vs-dark',
+      path    : `./themes/${ label }.json`,
+    })
+  )
+
+  console.log(
+    JSON.stringify(packageJsonPartial, null, 2)
+  )
 }

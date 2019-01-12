@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { writeFileSync } from 'fs'
 
-const BASE = resolve(__dirname, '../')
+const BASE = resolve(__dirname, '..')
 
 export function writeJsonAnt(filePath, obj){
   const resolvedPath = resolve(
@@ -10,6 +10,6 @@ export function writeJsonAnt(filePath, obj){
   )
   writeFileSync(
     resolvedPath,
-    JSON.stringify(obj)
+    JSON.stringify(obj, null, 2)
   )
 }

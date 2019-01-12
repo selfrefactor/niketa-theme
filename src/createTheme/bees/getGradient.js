@@ -11,16 +11,21 @@ const parseGradient = input => {
   )
 }
 
-export function getGradientBee(from, to){
-  console.log({
-    from,
-    to,
-  })
-  let gradient = gradStop({
-    stops       : 5,
-    inputFormat : 'hex',
-    colorArray  : [ from, to ],
-  })
+export function getGradientBee(from, to, levels = 5){
+  let gradient
+  try {
+    gradient = gradStop({
+      stops       : levels,
+      inputFormat : 'hex',
+      colorArray  : [ from, to ],
+    })
+  } catch (e){
+    console.log({
+      from,
+      to,
+    })
+    throw e
+  }
   gradient = gradient.map(val => parseGradient(val))
   gradient = gradient.map(val => `#${ rgbHex(...val) }`)
 
