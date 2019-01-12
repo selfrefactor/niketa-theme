@@ -5,7 +5,13 @@ import { writeJsonAnt } from '../ants/writeJson'
 export function publishTheme(source, label, base){
   const name = pascalCase(`${ base }.${ label }`)
   const theme = readJsonAnt(source)
-  writeJsonAnt(`./themes/${ name }.json`, theme)
+  writeJsonAnt(
+    `./themes/${ name }.json`,
+    {
+      ...theme,
+      name
+    }
+  )
 
   return name
 }

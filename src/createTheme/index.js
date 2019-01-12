@@ -43,8 +43,8 @@ export function createTheme({
 
   const exportedLabels = labels.map(
     (label, i) => publishTheme(
-      partialJson[ i ].path, 
-      label, 
+      partialJson[ i ].path,
+      label,
       base
     )
   )

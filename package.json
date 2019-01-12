@@ -28,29 +28,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "AntBaboon",
+        "label": "BeeKangaroo",
         "uiTheme": "vs",
-        "path": "./src/createTheme/output/Baboon.json"
+        "path": "./themes/BeeKangaroo.json"
       },
       {
-        "label": "AntBear",
+        "label": "BeeSolid",
         "uiTheme": "vs",
-        "path": "./src/createTheme/output/Bear.json"
+        "path": "./themes/BeeSolid.json"
       },
       {
-        "label": "AntBee",
+        "label": "BeeWall",
         "uiTheme": "vs",
-        "path": "./src/createTheme/output/Bee.json"
-      },
-      {
-        "label": "AntBull",
-        "uiTheme": "vs",
-        "path": "./src/createTheme/output/Bull.json"
-      },
-      {
-        "label": "AntButterfly",
-        "uiTheme": "vs",
-        "path": "./src/createTheme/output/Butterfly.json"
+        "path": "./themes/BeeWall.json"
       },
       {
         "label": "NiketaLight",

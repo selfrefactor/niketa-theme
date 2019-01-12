@@ -539,10 +539,16 @@ var _readJson = require("../ants/readJson");
 
 var _writeJson = require("../ants/writeJson");
 
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function publishTheme(source, label, base) {
   const name = (0, _stringFn.pascalCase)(`${base}.${label}`);
   const theme = (0, _readJson.readJsonAnt)(source);
-  (0, _writeJson.writeJsonAnt)(`./themes/${name}.json`, theme);
+  (0, _writeJson.writeJsonAnt)(`./themes/${name}.json`, _objectSpread({}, theme, {
+    name
+  }));
   return name;
 }
 },{"../ants/readJson":"createTheme/ants/readJson.js","../ants/writeJson":"createTheme/ants/writeJson.js"}],"createTheme/index.js":[function(require,module,exports) {
@@ -616,7 +622,7 @@ const rules = {
   rules,
   levels: 3,
   base: 'bee',
-  labels: ['kangroo', 'solid', 'wall']
+  labels: ['kangaroo', 'solid', 'wall']
 });
 },{"./":"createTheme/index.js"}],"index.js":[function(require,module,exports) {
 // process.env.DISABLE_LOG_FLAG === 'true'

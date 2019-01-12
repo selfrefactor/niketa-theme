@@ -13,6 +13,6 @@ createTheme({
   rules,
   levels : 3,
   base   : 'bee',
-  labels : [ 'kangroo', 'solid', 'wall' ],
+  labels : [ 'kangaroo', 'solid', 'wall' ],
 })
 
