@@ -2,6 +2,7 @@ import { resolve } from 'path'
 import { readFileSync } from 'fs'
 
 const BASE = resolve(__dirname, '../')
+console.log({ BASE })
 
 export function readJsonAnt(filePath){
   const resolvedPath = resolve(

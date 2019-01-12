@@ -117,11 +117,32 @@ var _path = require("path");
 var _fs = require("fs");
 
 const BASE = (0, _path.resolve)(__dirname, '../');
+console.log({
+  BASE
+});
 
 function readJsonAnt(filePath) {
   const resolvedPath = (0, _path.resolve)(BASE, filePath);
   const content = (0, _fs.readFileSync)(resolvedPath).toString();
   return JSON.parse(content);
+}
+},{}],"createTheme/ants/writeJson.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.writeJsonAnt = writeJsonAnt;
+
+var _path = require("path");
+
+var _fs = require("fs");
+
+const BASE = (0, _path.resolve)(__dirname, '../');
+
+function writeJsonAnt(filePath, obj) {
+  const resolvedPath = (0, _path.resolve)(BASE, filePath);
+  (0, _fs.writeFileSync)(resolvedPath, JSON.stringify(obj));
 }
 },{}],"createTheme/ants/gradStop.js":[function(require,module,exports) {
 !function a(b, c, d) {
@@ -513,20 +534,28 @@ var _rambdax = require("rambdax");
 
 var _readJson = require("./ants/readJson");
 
+var _writeJson = require("./ants/writeJson");
+
 var _getGradient = require("./bees/getGradient");
 
 var _createTheme = require("./bees/createTheme");
 
 var _saveTheme = require("./bees/saveTheme");
 
-function createTheme(filePath, rules) {
+function createTheme(filePath, rules, mode = 'light') {
   (0, _rambdax.ok)(_readJson.readJsonAnt, rules)(String, Object);
   const originTheme = (0, _readJson.readJsonAnt)(filePath);
   const rulesWithColors = (0, _rambdax.map)(([from, to]) => (0, _getGradient.getGradientBee)(from, to), rules);
   const newThemes = (0, _createTheme.createThemeBee)(rulesWithColors, originTheme);
-  newThemes.forEach(_saveTheme.saveThemeBee);
+  const labels = newThemes.map(_saveTheme.saveThemeBee);
+  const exportedLabels = labels.map(label => ({
+    label,
+    uiTheme: mode === 'light' ? 'vs' : 'vs-dark',
+    path: `./dist/createTheme/output/${label}.json`
+  }));
+  console.log(exportedLabels);
 }
-},{"./ants/readJson":"createTheme/ants/readJson.js","./bees/getGradient":"createTheme/bees/getGradient.js","./bees/createTheme":"createTheme/bees/createTheme.js","./bees/saveTheme":"createTheme/bees/saveTheme.js"}],"createTheme/prove.js":[function(require,module,exports) {
+},{"./ants/readJson":"createTheme/ants/readJson.js","./ants/writeJson":"createTheme/ants/writeJson.js","./bees/getGradient":"createTheme/bees/getGradient.js","./bees/createTheme":"createTheme/bees/createTheme.js","./bees/saveTheme":"createTheme/bees/saveTheme.js"}],"createTheme/prove.js":[function(require,module,exports) {
 "use strict";
 
 var _ = require("./");
