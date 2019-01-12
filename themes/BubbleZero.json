@@ -1,8 +1,8 @@
 {
-  "name": "BubbleBull",
+  "name": "BubbleZero",
   "type": "light",
   "colors": {
-    "editor.background": "#DDE6E0",
+    "editor.background": "#ddebdd",
     "terminal.background": "#F7F7F7",
     "gitDecoration.untrackedResourceForeground": "#2dbde9",
     "gitDecoration.modifiedResourceForeground": "#b768f8",
@@ -21,7 +21,11 @@
     "activityBar.background": "#dcf2ff",
     "activityBarBadge.background": "#e048a6",
     "activityBarBadge.foreground": "#eaf5fa",
-    "statusBar.background": "#32a9ee"
+    "statusBar.background": "#32a9ee",
+    "editor.selectionBackground": "#a9e3c8",
+    "editor.selectionHighlightBackground": "#51636d",
+    "editor.wordHighlightBackground": "#e2e4f8",
+    "editor.lineHighlightBackground": "#aad5dd"
   },
   "tokenColors": [
     {
@@ -122,7 +126,6 @@
         "support.function"
       ],
       "settings": {
-        //"fontStyle": "bold",
         "foreground": "#0080CC"
       }
     },
@@ -134,7 +137,6 @@
         "support.class"
       ],
       "settings": {
-        //"fontStyle": "bold",
         "foreground": "#D81B83"
       }
     },

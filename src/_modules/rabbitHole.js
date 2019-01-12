@@ -94,6 +94,21 @@ export async function rabbitHole(){
 function getNiketaData(){
   return [
     {
+      label   : 'BubbleLies',
+      uiTheme : 'vs',
+      path    : './themes/BubbleLies.json',
+    },
+    {
+      label   : 'BubbleOrder',
+      uiTheme : 'vs',
+      path    : './themes/BubbleOrder.json',
+    },
+    {
+      label   : 'BubbleZero',
+      uiTheme : 'vs',
+      path    : './themes/BubbleZero.json',
+    },
+    {
       label   : 'BeeKangaroo',
       uiTheme : 'vs',
       path    : './themes/BeeKangaroo.json',
@@ -129,11 +144,6 @@ function getNiketaData(){
       label   : 'NiketaLight',
       uiTheme : 'vs',
       path    : './themes/niketa-light.json',
-    },
-    {
-      label   : 'NiketaYellow',
-      uiTheme : 'vs',
-      path    : './themes/niketa-yellow.json',
     },
     {
       label   : 'NiketaGruvboxHard',

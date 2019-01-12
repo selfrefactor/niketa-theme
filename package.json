@@ -28,29 +28,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "AntBull",
+        "label": "BubbleLies",
         "uiTheme": "vs",
-        "path": "./src/createTheme/output/Bull.json"
+        "path": "./themes/BubbleLies.json"
       },
       {
-        "label": "AntButterfly",
+        "label": "BubbleOrder",
         "uiTheme": "vs",
-        "path": "./src/createTheme/output/Butterfly.json"
+        "path": "./themes/BubbleOrder.json"
       },
       {
-        "label": "AntBaboon",
+        "label": "BubbleZero",
         "uiTheme": "vs",
-        "path": "./src/createTheme/output/Baboon.json"
-      },
-      {
-        "label": "AntBear",
-        "uiTheme": "vs",
-        "path": "./src/createTheme/output/Bear.json"
-      },
-      {
-        "label": "AntBee",
-        "uiTheme": "vs",
-        "path": "./src/createTheme/output/Bee.json"
+        "path": "./themes/BubbleZero.json"
       },
       {
         "label": "CircusLove",
@@ -71,11 +61,6 @@
         "label": "NiketaLight",
         "uiTheme": "vs",
         "path": "./themes/niketa-light.json"
-      },
-      {
-        "label": "NiketaYellow",
-        "uiTheme": "vs",
-        "path": "./themes/niketa-yellow.json"
       },
       {
         "label": "NiketaGruvboxHard",
