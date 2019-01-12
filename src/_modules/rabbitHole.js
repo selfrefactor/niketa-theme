@@ -94,47 +94,34 @@ export async function rabbitHole(){
 function getNiketaData(){
   return [
     {
-      "label": "BeeKangaroo",
-      "uiTheme": "vs",
-      "path": "./themes/BeeKangaroo.json"
-    },
-    {
-      "label": "BeeSolid",
-      "uiTheme": "vs",
-      "path": "./themes/BeeSolid.json"
-    },
-    {
-      "label": "BeeWall",
-      "uiTheme": "vs",
-      "path": "./themes/BeeWall.json"
-    }
-    // It doesn't need to prepend Niketa
-    // as it is variation of Bubblegum
-    // ============================================
-    {
-      label   : 'BubbleBaboon',
+      label   : 'BeeKangaroo',
       uiTheme : 'vs',
-      path    : './themes/bubble-baboon.json',
+      path    : './themes/BeeKangaroo.json',
     },
     {
-      "label"   : "BubbleBear",
-      "uiTheme" : "vs",
-      "path"    : "./themes/bubble-bear.json"
-    },
-    {
-      label   : 'BubbleBee',
+      label   : 'BeeSolid',
       uiTheme : 'vs',
-      path    : './themes/bubble-bee.json',
+      path    : './themes/BeeSolid.json',
     },
     {
-      "label"   : "BubbleBull",
-      "uiTheme" : "vs",
-      "path"    : "./themes/bubble-bull.json"
+      label   : 'BeeWall',
+      uiTheme : 'vs',
+      path    : './themes/BeeWall.json',
     },
     {
-      "label"   : "BubbleButterfly",
-      "uiTheme" : "vs",
-      "path"    : "./themes/bubble-butterfly.json"
+      label   : 'CircusLove',
+      uiTheme : 'vs',
+      path    : './themes/CircusLove.json',
+    },
+    {
+      label   : 'CircusMine',
+      uiTheme : 'vs',
+      path    : './themes/CircusMine.json',
+    },
+    {
+      label   : 'CircusSeparate',
+      uiTheme : 'vs',
+      path    : './themes/CircusSeparate.json',
     },
     // END_BUBBLEGUM
     // ============================================
@@ -178,9 +165,9 @@ function getNiketaData(){
     // Paper White
     // ============================================
     {
-      label: "NiketaPaper",
-      uiTheme: "vs",
-      path: "./themes/paper.tmTheme"
-    }
+      label   : 'NiketaPaper',
+      uiTheme : 'vs',
+      path    : './themes/paper.tmTheme',
+    },
   ]
 }

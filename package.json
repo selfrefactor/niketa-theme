@@ -28,19 +28,44 @@
   "contributes": {
     "themes": [
       {
-        "label": "BeeKangaroo",
+        "label": "AntBull",
         "uiTheme": "vs",
-        "path": "./themes/BeeKangaroo.json"
+        "path": "./src/createTheme/output/Bull.json"
       },
       {
-        "label": "BeeSolid",
+        "label": "AntButterfly",
         "uiTheme": "vs",
-        "path": "./themes/BeeSolid.json"
+        "path": "./src/createTheme/output/Butterfly.json"
       },
       {
-        "label": "BeeWall",
+        "label": "AntBaboon",
         "uiTheme": "vs",
-        "path": "./themes/BeeWall.json"
+        "path": "./src/createTheme/output/Baboon.json"
+      },
+      {
+        "label": "AntBear",
+        "uiTheme": "vs",
+        "path": "./src/createTheme/output/Bear.json"
+      },
+      {
+        "label": "AntBee",
+        "uiTheme": "vs",
+        "path": "./src/createTheme/output/Bee.json"
+      },
+      {
+        "label": "CircusLove",
+        "uiTheme": "vs",
+        "path": "./themes/CircusLove.json"
+      },
+      {
+        "label": "CircusMine",
+        "uiTheme": "vs",
+        "path": "./themes/CircusMine.json"
+      },
+      {
+        "label": "CircusSeparate",
+        "uiTheme": "vs",
+        "path": "./themes/CircusSeparate.json"
       },
       {
         "label": "NiketaLight",
