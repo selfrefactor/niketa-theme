@@ -582,6 +582,9 @@ function createTheme({
   (0, _rambdax.ok)(_readJson.readJsonAnt, rules)(String, Object);
   const originTheme = (0, _readJson.readJsonAnt)(filePath);
   const rulesWithColors = (0, _rambdax.map)(([from, to]) => (0, _getGradient.getGradientBee)(from, to, levels), rules);
+  console.log({
+    rulesWithColors
+  });
   const newThemes = (0, _createTheme.createThemeBee)(rulesWithColors, originTheme);
   const tempLabels = newThemes.map(_saveTheme.saveThemeBee);
   const partialJson = tempLabels.map(label => ({
@@ -612,10 +615,10 @@ var _ = require("./");
 
 const filePath = './themes/izorra.json';
 const rules = {
-  'editor.wordHighlightBackground': ['#DDE6E0', '#faaaaa'],
+  'editor.wordHighlightBackground': ['#DDE6E0', '#E2E4F8'],
   'editor.selectionBackground': ['#DDE6E0', '#fafafa'],
   'editor.selectionHighlightBackground': ['#87A190', '#faaaaa'],
-  'editor.background': ['#fffdfe', '#E5F5EB']
+  'editor.background': ['#f2ebe3', '#E5F5EB']
 };
 (0, _.createTheme)({
   filePath,

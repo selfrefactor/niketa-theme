@@ -21,6 +21,7 @@ export function createTheme({
     ([ from, to ]) => getGradientBee(from, to, levels),
     rules
   )
+  console.log({ rulesWithColors })
 
   const newThemes = createThemeBee(
     rulesWithColors,

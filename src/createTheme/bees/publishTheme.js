@@ -9,7 +9,7 @@ export function publishTheme(source, label, base){
     `./themes/${ name }.json`,
     {
       ...theme,
-      name
+      name,
     }
   )
 
