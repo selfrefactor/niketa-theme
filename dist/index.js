@@ -540,7 +540,7 @@ var _readJson = require("../ants/readJson");
 var _writeJson = require("../ants/writeJson");
 
 function publishTheme(source, label, base) {
-  const name = (0, _stringFn.titleCase)(`${base}${label}`);
+  const name = (0, _stringFn.titleCase)(`${base}.${label}`);
   const theme = (0, _readJson.readJsonAnt)(source);
   (0, _writeJson.writeJsonAnt)(`./themes/${name}.json`, theme);
   return name;
@@ -590,6 +590,9 @@ function createTheme({
 
   const exportedLabels = labels.map((label, i) => {
     (0, _publishTheme.publishTheme)(partialJson[i].path, label, base);
+  });
+  console.log({
+    exportedLabels
   });
   const packageJsonPartial = exportedLabels.map(label => ({
     label,

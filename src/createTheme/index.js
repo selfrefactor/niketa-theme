@@ -46,6 +46,7 @@ export function createTheme({
       publishTheme(partialJson[ i ].path, label, base)
     }
   )
+  console.log({exportedLabels})
   const packageJsonPartial = exportedLabels.map(
     label => ({
       label,
