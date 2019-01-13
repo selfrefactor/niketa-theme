@@ -10,74 +10,10 @@ import { toRawUrl } from './toRawUrl'
 import { writeJsonSync, readJsonSync } from 'fs-extra'
 
 const LOCATION = `${ process.cwd() }/package.json`
-const NIKETA = 'Niketa'
 
-export async function rabbitHole(){
-  const rainglowList = await mapAsync(async x => {
-    const data = await requestThemeJson(toRainglowUrl(x))
-
-    return {
-      data,
-      name : dotCase(x),
-    }
-  })(rainglow)
-
-  const base16List = await mapAsync(async x => {
-    const data = await requestThemeJson(toBase16Url(x))
-
-    return {
-      data,
-      name : dotCase(x),
-    }
-  })(base16)
-
-  const base2List = await mapAsync(async x => {
-    const data = await requestThemeJson(toBase2Url(x))
-
-    return {
-      data,
-      name : dotCase(x),
-    }
-  })(base2)
-
-  const othersList = await mapAsync(async ([ name, url ]) => {
-    const data = await requestThemeJson(toRawUrl(url), name)
-
-    return {
-      data,
-      name : dotCase(name),
-    }
-  })(Object.entries(others))
-
-  const list = [
-    ...rainglowList,
-    ...base2List,
-    ...base16List,
-    ...othersList,
-  ]
-
-  const packageJsonData = list.map(x => {
-    const uiTheme = x.data.type === 'light' ? 'vs' : 'vs-dark'
-
-    const label = pascalCase(`${ NIKETA }.${ x.name }`)
-
-    const newData = {
-      ...x.data,
-      name : label,
-    }
-    const fileName = camelCase(x.name)
-    const filePath = `./imported/${ fileName }.json`
-    writeJsonSync(filePath, newData, { spaces : 2 })
-
-    return {
-      label,
-      uiTheme,
-      path : filePath,
-    }
-  })
-
+export async function rabbitHole(dev = true){
   const packageJson = readJsonSync(LOCATION)
-
+  
   const themes = [
     ...getNiketaData(),
     ...packageJsonData,
@@ -94,36 +30,6 @@ export async function rabbitHole(){
 function getNiketaData(){
   return [
     {
-      label   : 'BubbleLies',
-      uiTheme : 'vs',
-      path    : './themes/BubbleLies.json',
-    },
-    {
-      label   : 'BubbleOrder',
-      uiTheme : 'vs',
-      path    : './themes/BubbleOrder.json',
-    },
-    {
-      label   : 'BubbleZero',
-      uiTheme : 'vs',
-      path    : './themes/BubbleZero.json',
-    },
-    {
-      label   : 'BeeKangaroo',
-      uiTheme : 'vs',
-      path    : './themes/BeeKangaroo.json',
-    },
-    {
-      label   : 'BeeSolid',
-      uiTheme : 'vs',
-      path    : './themes/BeeSolid.json',
-    },
-    {
-      label   : 'BeeWall',
-      uiTheme : 'vs',
-      path    : './themes/BeeWall.json',
-    },
-    {
       label   : 'CircusLove',
       uiTheme : 'vs',
       path    : './themes/CircusLove.json',
@@ -132,52 +38,8 @@ function getNiketaData(){
       label   : 'CircusMine',
       uiTheme : 'vs',
       path    : './themes/CircusMine.json',
-    },
-    {
-      label   : 'CircusSeparate',
-      uiTheme : 'vs',
-      path    : './themes/CircusSeparate.json',
-    },
-    // END_BUBBLEGUM
-    // ============================================
-    {
-      label   : 'NiketaLight',
-      uiTheme : 'vs',
-      path    : './themes/niketa-light.json',
-    },
-    {
-      label   : 'NiketaGruvboxHard',
-      uiTheme : 'vs',
-      path    : './themes/light-hard.tmTheme',
-    },
-    {
-      label   : 'NiketaGruvboxLight',
-      uiTheme : 'vs',
-      path    : './themes/light-soft.tmTheme',
-    },
-    {
-      label   : 'NiketaNinetiesBlue',
-      uiTheme : 'vs-dark',
-      path    : './themes/nineties-blue.json',
-    },
-    {
-      label   : 'NiketaNineties',
-      uiTheme : 'vs',
-      path    : './themes/niketa-nineties.json',
-    },
-    // Noctis Uva ft Winter is comming
-    ///////////////////////////
-    {
-      label   : 'NiketaAnt',
-      uiTheme : 'vs-dark',
-      path    : './themes/ant.json',
-    },
-    // Paper White
-    // ============================================
-    {
-      label   : 'NiketaPaper',
-      uiTheme : 'vs',
-      path    : './themes/paper.tmTheme',
-    },
+    }
   ]
 }
+
+
