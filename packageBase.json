@@ -26,43 +26,7 @@
   },
   "icon": "files/circus.love.png",
   "contributes": {
-    "themes": [
-      {
-        "label": "BaboonAnt",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonAnt.json"
-      },
-      {
-        "label": "BaboonBee",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonBee.json"
-      },
-      {
-        "label": "BaboonCell",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonCell.json"
-      },
-      {
-        "label": "BaboonDeep",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonDeep.json"
-      },
-      {
-        "label": "BaboonFigure",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonFigure.json"
-      },
-      {
-        "label": "BaboonGlamour",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonGlamour.json"
-      },
-      {
-        "label": "BaboonHit",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonHit.json"
-      }
-    ]
+    "themes": []
   },
   "devDependencies": {
     "rgb-hex": "^2.1.0",
@@ -80,6 +44,6 @@
       "build",
       "bee"
     ],
-    "workInProgress": ""
+    "workInProgress": "final stage"
   }
 }

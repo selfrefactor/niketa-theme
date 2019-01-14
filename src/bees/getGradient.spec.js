@@ -7,4 +7,3 @@ test('get gradient', () => {
     getGradientBee('#fafafa', '#4a4a4a')
   ).toEqual(expected)
 })
-

@@ -10,7 +10,6 @@ export function writeJsonAnt(filePath, obj){
     BASE,
     filePath
   )
-  console.log({resolvedPath})
   writeFileSync(
     resolvedPath,
     JSON.stringify(obj, null, 2)

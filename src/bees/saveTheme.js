@@ -1,5 +1,5 @@
 import { writeJsonAnt } from '../ants/writeJson'
-import { titleCase } from 'string-fn'
+import { pascalCase } from 'string-fn'
 
 const BASE = 'baboon'
 
@@ -19,7 +19,7 @@ const namesHash = [
 ]
 
 export function saveThemeBee(theme, i){
-  const label = titleCase(`${ BASE }.${ namesHash[ i ] }`)
+  const label = pascalCase(`${ BASE }.${ namesHash[ i ] }`)
   writeJsonAnt(
     `./baboon/${ label }.json`,
     theme
