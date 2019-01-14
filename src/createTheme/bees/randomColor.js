@@ -1,4 +1,4 @@
-import { random } from 'rambdax'
+import { random, tail } from 'rambdax'
 import { applyDistanceAnt } from '../ants/applyDistance';
 
 export function randomColorBee({
@@ -6,7 +6,8 @@ export function randomColorBee({
   numberChanges, 
   distance
 }){
-  const newColor = color
+  let newColor = [...tail(color)]
+
   const randomIndexes = []
   while(numberChanges > 0){
     const randomInstance = random(0,5)
@@ -17,11 +18,12 @@ export function randomColorBee({
   }
 
   randomIndexes.forEach(randomIndex => {
+    console.log({newColor})
     newColor[randomIndex] = applyDistanceAnt(
-      color[randomIndex], 
+      newColor[randomIndex], 
       distance
     )
   })
 
-  return newColor
+  return newColor.join('')
 }
