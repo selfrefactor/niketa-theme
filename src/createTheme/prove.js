@@ -5,7 +5,7 @@ const rules = {
   'editor.background'                   : [ '#DDEEF0', '#ddebdd' ],
   // 'editor.background'                   : [ '#DDEEF0', '#ECEDF3' ],
   // 'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
-  'editor.selectionBackground'        : [ '#DDE6E0', '#C8D8E2' ],
+  'editor.selectionBackground'          : [ '#DDE6E0', '#C8D8E2' ],
   'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
   'editor.wordHighlightBackground'      : [ '#DDE6E0', '#E2E4F8' ],
   'editor.selectionBackground'          : [ '#D9E3C8', '#a9E3C8' ],
@@ -25,21 +25,29 @@ const rules = {
   // 'tab.inactiveForeground'              : [ '#440b0b', '#443' ],
 }
 
+/**
+ * If random is {} then both colors from above
+ * are used to generate the themes
+ *
+ * If random is { change: 2, distance: 7, index:0}
+ * this means change 2 digits with 7 distance from the first color
+ */
 
 export function proveCreateTheme(){
   createTheme({
-    // Random defines if we want to use
-    // only the properties of `rules` 
-    // so it knows which one to randomize
     // ============================================
-    // random: { change: 2, distance: 7},
-    random: {},
+    random : {
+      change   : 2,
+      distance : 7,
+      index    : 0,
+    },
+    // random: {},
     filePath,
     rules,
     // Always used
     // ============================================
-    levels : 7,
-    publish: {},
+    levels  : 7,
+    publish : {},
     // Uncomment only on publishing
     // ============================================
     // If random is set, then index is respected
