@@ -28,39 +28,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "BaboonAnt",
+        "label": "CircusLove",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonAnt.json"
+        "path": "./themes/CircusLove.json"
       },
       {
-        "label": "BaboonBee",
+        "label": "CircusMine",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonBee.json"
+        "path": "./themes/CircusMine.json"
       },
       {
-        "label": "BaboonCell",
+        "label": "BubbleMore",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonCell.json"
-      },
-      {
-        "label": "BaboonDeep",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonDeep.json"
-      },
-      {
-        "label": "BaboonFigure",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonFigure.json"
-      },
-      {
-        "label": "BaboonGlamour",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonGlamour.json"
-      },
-      {
-        "label": "BaboonHit",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonHit.json"
+        "path": "./themes/BubbleMore.json"
       }
     ]
   },
@@ -80,6 +60,6 @@
       "build",
       "bee"
     ],
-    "workInProgress": ""
+    "workInProgress": "final stage"
   }
 }

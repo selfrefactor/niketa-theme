@@ -1,11 +1,11 @@
-import { partialCurry, pass, map, ok, equals } from 'rambdax'
+import { partialCurry, pass, pluck, map, ok, equals } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
 import { getGradientBee } from './bees/getGradient'
 import { createThemeBee } from './bees/createTheme'
 import { randomColorBee } from './bees/randomColor'
-import { saveThemeBee } from './bees/saveTheme'
-import { publishTheme } from './bees/publishTheme'
+import { saveThemeBee, namesHash } from './bees/saveTheme'
 import { writeJsonAnt } from './ants/writeJson'
+import { pascalCase } from 'string-fn'
 
 function getRulesWithColors({
   levels,
@@ -43,15 +43,49 @@ function getRulesWithColors({
   )
 }
 
-function finalizeTempMode(partialJson){
+function publishTheme({ index, name }){
+  const tempName = pascalCase(`baboon.${ namesHash[ index ] }`)
+  const theme = readJsonAnt(
+    `./baboon/${ tempName }.json`
+  )
+  const exported = readJsonAnt(
+    'exported.json'
+  )
+  const themeName = pascalCase(name)
+  const themePath = `./themes/${ themeName }.json`
+
+  if(
+    !pluck('label', exported).includes(themeName)
+  ){
+    exported.push({
+      label   : themeName,
+      uiTheme : 'vs',
+      path    : themePath,
+    })
+  }
+
+  writeJsonAnt(
+    'exported.json',
+    exported
+  )
+  saveToPackageJson(exported)
+
+  theme.name = themeName
+  writeJsonAnt(
+    themePath,
+    theme
+  )
+}
+
+function saveToPackageJson(partialJson){
   const packageJson = readJsonAnt(
     'packageBase.json'
   )
-  const devJson = {
+  const newPackageJson = {
     ...packageJson,
     contributes : { themes : partialJson },
   }
-  writeJsonAnt('package.json', devJson)
+  writeJsonAnt('package.json', newPackageJson)
 }
 
 export function createTheme({
@@ -61,6 +95,7 @@ export function createTheme({
   publish,
   levels,
 }){
+  if (!equals({}, publish)) return publishTheme(publish)
   ok(filePath, levels)(String, Number)
   ok(random, rules, publish)(Object)
   const originTheme = readJsonAnt(filePath)
@@ -74,17 +109,16 @@ export function createTheme({
     originTheme,
   )
   const tempLabels = newThemes.map(saveThemeBee)
-  console.log({ tempLabels })
-  const partialJson = tempLabels.map(
+
+  const devJson = tempLabels.map(
     label => ({
       label,
       uiTheme : 'vs',
       path    : `./baboon/${ label }.json`,
     })
   )
-  if (equals({}, publish)){
-    return finalizeTempMode(partialJson)
-  }
+
+  saveToPackageJson(devJson)
 }
 
 // if (!base){

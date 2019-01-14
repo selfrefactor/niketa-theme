@@ -22,12 +22,11 @@ test('createTheme', () => {
     filePath,
     rules,
     levels  : 7,
-    publish : {},
-    // publish: {
-    //   index: 4,
-    //   base   : 'bubble',
-    //   labels : [ 'lies', 'order', 'zero' ],
-    // }
+    // publish : {},
+    publish : {
+      index : 4,
+      name  : 'bubble.more',
+    },
   })
 
   console.log({ result })

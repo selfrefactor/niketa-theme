@@ -33,8 +33,7 @@ const rules = {
  * this means change 2 digits with 7 distance from the first color
  */
 
-
- /**
+/**
   * Publish is incompatible with most of arguments,
   * as it will take baboon themes and export them
   */
