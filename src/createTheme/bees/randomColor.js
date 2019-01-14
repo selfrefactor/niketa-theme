@@ -7,8 +7,8 @@ export function randomColorBee({
   distance,
 }){
   const newColor = [ ...tail(color) ]
-
   const randomIndexes = []
+
   while (numberChanges > 0){
     const randomInstance = random(0, 5)
     if (!randomIndexes.includes(randomInstance)){
@@ -18,11 +18,13 @@ export function randomColorBee({
   }
 
   randomIndexes.forEach(randomIndex => {
-    newColor[ randomIndex ] = applyDistanceAnt(
+    const newChunk = applyDistanceAnt(
       newColor[ randomIndex ],
       distance
     )
+
+    newColor[ randomIndex ] = newChunk
   })
 
-  return newColor.join('')
+  return `#${ newColor.join('') }`
 }

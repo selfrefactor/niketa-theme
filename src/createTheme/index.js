@@ -25,19 +25,21 @@ function getRulesWithColors({
     }
   )
   const newRules = map(
-    ([ from, to ], prop) => {
+    ([ from, to ]) => {
       const newFrom = randomColor({ color : from })
       const newTo = randomColor({ color : to })
       if (random.indexes.length === 2) return [ newFrom, newTo ]
-      if(random.indexes.includes(1)) return [from, newTo]
+      if (random.indexes.includes(1)) return [ from, newTo ]
 
-      return [newFrom, to]
+      return [ newFrom, to ]
     },
     rules
   )
-  console.log('D8E9F0')
 
-  return newRules
+  return map(
+    ([ from, to ]) => getGradientBee(from, to, levels),
+    newRules
+  )
 }
 
 export function createTheme({
@@ -55,7 +57,6 @@ export function createTheme({
     levels,
     rules,
   })
-  // console.log({ rulesWithColors })
 }
 
 // const newThemes = createThemeBee(

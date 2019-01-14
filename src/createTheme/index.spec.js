@@ -15,7 +15,7 @@ test('createTheme', () => {
     random : {
       changes  : 2,
       distance : 5,
-      indexes  : [ 0 ],
+      indexes  : [ 0, 1 ],
       // index    : [0,1],
     },
     // random: {},
@@ -32,3 +32,4 @@ test('createTheme', () => {
 
   console.log({ result })
 })
+

@@ -2,7 +2,7 @@ import { randomColorBee } from './randomColor'
 
 test('random color', () => {
   const result = randomColorBee({
-    color         : '#4a397d',
+    color         : '#cfd5dd',
     numberChanges : 2,
     distance      : 5,
   })
