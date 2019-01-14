@@ -57,12 +57,12 @@ export function createTheme({
     levels,
     rules,
   })
+  const newThemes = createThemeBee(
+    rulesWithColors,
+    originTheme,
+  )
 }
 
-// const newThemes = createThemeBee(
-//   rulesWithColors,
-//   originTheme,
-// )
 // const tempLabels = newThemes.map(saveThemeBee)
 
 // const partialJson = tempLabels.map(

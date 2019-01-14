@@ -19,9 +19,9 @@ const namesHash = [
 ]
 
 export function saveThemeBee(theme, i){
-  const label = titleCase(`${BASE}.${namesHash[ i ]}`)
+  const label = titleCase(`${ BASE }.${ namesHash[ i ] }`)
   writeJsonAnt(
-    `./src/createTheme/output/${ label }.json`,
+    `./baboon/${ label }.json`,
     theme
   )
 
