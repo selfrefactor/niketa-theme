@@ -24,24 +24,9 @@
   "bugs": {
     "url": "https://github.com/selfrefactor/niketa-theme/issues"
   },
-  "icon": "screens/default.light.png",
+  "icon": "files/circus.love.png",
   "contributes": {
     "themes": [
-      {
-        "label": "BubbleLies",
-        "uiTheme": "vs",
-        "path": "./themes/BubbleLies.json"
-      },
-      {
-        "label": "BubbleOrder",
-        "uiTheme": "vs",
-        "path": "./themes/BubbleOrder.json"
-      },
-      {
-        "label": "BubbleZero",
-        "uiTheme": "vs",
-        "path": "./themes/BubbleZero.json"
-      },
       {
         "label": "CircusLove",
         "uiTheme": "vs",
@@ -51,178 +36,17 @@
         "label": "CircusMine",
         "uiTheme": "vs",
         "path": "./themes/CircusMine.json"
-      },
-      {
-        "label": "CircusSeparate",
-        "uiTheme": "vs",
-        "path": "./themes/CircusSeparate.json"
-      },
-      {
-        "label": "NiketaLight",
-        "uiTheme": "vs",
-        "path": "./themes/niketa-light.json"
-      },
-      {
-        "label": "NiketaGruvboxHard",
-        "uiTheme": "vs",
-        "path": "./themes/light-hard.tmTheme"
-      },
-      {
-        "label": "NiketaGruvboxLight",
-        "uiTheme": "vs",
-        "path": "./themes/light-soft.tmTheme"
-      },
-      {
-        "label": "NiketaNinetiesBlue",
-        "uiTheme": "vs-dark",
-        "path": "./themes/nineties-blue.json"
-      },
-      {
-        "label": "NiketaNineties",
-        "uiTheme": "vs",
-        "path": "./themes/niketa-nineties.json"
-      },
-      {
-        "label": "NiketaAnt",
-        "uiTheme": "vs-dark",
-        "path": "./themes/ant.json"
-      },
-      {
-        "label": "NiketaPaper",
-        "uiTheme": "vs",
-        "path": "./themes/paper.tmTheme"
-      },
-      {
-        "label": "NiketaAbsent",
-        "uiTheme": "vs-dark",
-        "path": "./imported/absent.json"
-      },
-      {
-        "label": "NiketaJumperLight",
-        "uiTheme": "vs",
-        "path": "./imported/jumperLight.json"
-      },
-      {
-        "label": "NiketaKiwiLight",
-        "uiTheme": "vs",
-        "path": "./imported/kiwiLight.json"
-      },
-      {
-        "label": "NiketaTetraLight",
-        "uiTheme": "vs",
-        "path": "./imported/tetraLight.json"
-      },
-      {
-        "label": "NiketaCaveLight",
-        "uiTheme": "vs",
-        "path": "./imported/caveLight.json"
-      },
-      {
-        "label": "NiketaSpaceDark",
-        "uiTheme": "vs-dark",
-        "path": "./imported/spaceDark.json"
-      },
-      {
-        "label": "NiketaAtelierlakesideLight",
-        "uiTheme": "vs",
-        "path": "./imported/atelierlakesideLight.json"
-      },
-      {
-        "label": "NiketaDefaultLight",
-        "uiTheme": "vs",
-        "path": "./imported/defaultLight.json"
-      },
-      {
-        "label": "NiketaOceanDark",
-        "uiTheme": "vs-dark",
-        "path": "./imported/oceanDark.json"
-      },
-      {
-        "label": "NiketaSolarizedLight",
-        "uiTheme": "vs",
-        "path": "./imported/solarizedLight.json"
-      },
-      {
-        "label": "NiketaNature",
-        "uiTheme": "vs",
-        "path": "./imported/nature.json"
-      },
-      {
-        "label": "NiketaSubliminal",
-        "uiTheme": "vs-dark",
-        "path": "./imported/subliminal.json"
-      },
-      {
-        "label": "NiketaMister",
-        "uiTheme": "vs",
-        "path": "./imported/mister.json"
-      },
-      {
-        "label": "NiketaNebula",
-        "uiTheme": "vs-dark",
-        "path": "./imported/nebula.json"
-      },
-      {
-        "label": "NiketaPlastic",
-        "uiTheme": "vs-dark",
-        "path": "./imported/plastic.json"
-      },
-      {
-        "label": "NiketaAfterglow",
-        "uiTheme": "vs-dark",
-        "path": "./themes/afterglow.tmTheme"
-      },
-      {
-        "label": "NiketaBoxUk",
-        "uiTheme": "vs",
-        "path": "./themes/box-uk.tmTheme"
-      },
-      {
-        "label": "NiketaCake",
-        "uiTheme": "vs-dark",
-        "path": "./themes/cake.tmTheme"
-      },
-      {
-        "label": "NiketaGithub",
-        "uiTheme": "vs",
-        "path": "./themes/github.tmTheme"
-      },
-      {
-        "label": "NiketaGrunge",
-        "uiTheme": "vs-dark",
-        "path": "./themes/grunge.tmTheme"
-      },
-      {
-        "label": "NiketaKoralGreen",
-        "uiTheme": "vs-dark",
-        "path": "./themes/koral-green.tmTheme"
-      },
-      {
-        "label": "NiketaMellow",
-        "uiTheme": "vs-dark",
-        "path": "./themes/mellow.tmTheme"
-      },
-      {
-        "label": "NiketaAzure",
-        "uiTheme": "vs-dark",
-        "path": "./themes/azure.tmTheme"
-      },
-      {
-        "label": "NiketaBold",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bold.tmTheme"
       }
     ]
   },
   "devDependencies": {
+    "rgb-hex": "^2.1.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "fs-extra": "^7.0.0",
     "jest": "^23.6.0",
     "parcel-bundler": "^1.10.3",
     "rambdax": "^1.6.3",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.2",
     "string-fn": "^1.8.0"
   },
   "commitMessage": {
@@ -231,8 +55,5 @@
       "build"
     ],
     "workInProgress": ""
-  },
-  "dependencies": {
-    "rgb-hex": "^2.1.0"
   }
 }
