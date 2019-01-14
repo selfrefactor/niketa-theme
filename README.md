@@ -6,7 +6,7 @@ Light VSCode Themes
 
 ## Screens
 
-Kept as reference
+CircusLove
 
 ![atelierlakeside](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.love.png?raw=true)
 
