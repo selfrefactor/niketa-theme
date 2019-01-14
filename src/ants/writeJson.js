@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { writeFileSync } from 'fs'
+import { outputFileSync } from 'fs-extra'
 
 const BASE = process.env.NODE_ENV === 'test' ?
   '/home/s/repos/y/niketa-theme/' :
@@ -10,7 +10,7 @@ export function writeJsonAnt(filePath, obj){
     BASE,
     filePath
   )
-  writeFileSync(
+  outputFileSync(
     resolvedPath,
     JSON.stringify(obj, null, 2)
   )

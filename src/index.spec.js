@@ -3,7 +3,7 @@ import { createTheme } from './'
 const base = '/home/s/repos/y/niketa-theme/bases'
 const filePath = `${ base }/niketa-yellow.json`
 const rules = {
-  'editor.background'                   : [ '#DDEEF0', '#ddebdd' ],
+  'editor.background'                   : [ '#C9DDE9', '#DBE3D6' ],
   'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
   'editor.selectionBackground'          : [ '#DDE6E0', '#C8D8E2' ],
   'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
@@ -12,20 +12,19 @@ const rules = {
 test('createTheme', () => {
   const result = createTheme({
     // ============================================
-    random : {
-      changes  : 2,
-      distance : 5,
-      indexes  : [ 0, 1 ],
-      // index    : [0,1],
-    },
-    // random: {},
+    // random : {
+    //   changes  : 1,
+    //   distance : 6,
+    //   indexes  : [ 0, 1 ],
+    // },
+    random  : {},
     filePath,
     rules,
-    levels  : 7,
+    levels  : 12,
     // publish : {},
     publish : {
-      index : 4,
-      name  : 'bubble.more',
+      index : 8,
+      name  : 'aqua.shake',
     },
   })
 

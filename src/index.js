@@ -45,6 +45,7 @@ function getRulesWithColors({
 
 function publishTheme({ index, name }){
   const tempName = pascalCase(`baboon.${ namesHash[ index ] }`)
+  console.log({ tempName })
   const theme = readJsonAnt(
     `./baboon/${ tempName }.json`
   )
@@ -54,7 +55,7 @@ function publishTheme({ index, name }){
   const themeName = pascalCase(name)
   const themePath = `./themes/${ themeName }.json`
 
-  if(
+  if (
     !pluck('label', exported).includes(themeName)
   ){
     exported.push({
@@ -98,6 +99,7 @@ export function createTheme({
   if (!equals({}, publish)) return publishTheme(publish)
   ok(filePath, levels)(String, Number)
   ok(random, rules, publish)(Object)
+
   const originTheme = readJsonAnt(filePath)
   const rulesWithColors = getRulesWithColors({
     random,
@@ -120,29 +122,3 @@ export function createTheme({
 
   saveToPackageJson(devJson)
 }
-
-// if (!base){
-//   return console.log(
-//     JSON.stringify(partialJson, null, 2)
-//   )
-// }
-
-// const exportedLabels = labels.map(
-//   (label, i) => publishTheme(
-//     partialJson[ i ].path,
-//     label,
-//     base
-//   )
-// )
-// console.log({ exportedLabels })
-// const packageJsonPartial = exportedLabels.map(
-//   label => ({
-//     label,
-//     uiTheme : mode === 'light' ? 'vs' : 'vs-dark',
-//     path    : `./themes/${ label }.json`,
-//   })
-// )
-
-// console.log(
-//   JSON.stringify(packageJsonPartial, null, 2)
-// )
