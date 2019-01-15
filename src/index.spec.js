@@ -12,29 +12,46 @@ const rules = {
 
 test('createTheme', () => {
   const singleColorBase = {
-    'editor.background'                   : '#E1E0C5',
-    'activityBar.background'              : '#cfd5dd',
-    'editor.selectionBackground'          : '#C8D8E2',
-    'editor.selectionHighlightBackground' : '#51636D',
+    "editor.foreground": "#6688cc",
+    "activityBar.background": "#cfd5dd",
+    "editor.background": "#F9F6F1",
+    // "editor.background": ["#ede8e1","#e7dfb1"],
+    "editor.selectionBackground": "#50aaef",
+    "editor.lineHighlightBackground": "#cfd5dd",
+    "editorBracketMatch.background": "#2084d0",
+    "editorBracketMatch.border": "#440b0b",
+    "editorGroupHeader.tabsBackground": "#E3D9BB",
+    "editorGutter.background": "#EADE9C",
+    "editorLineNumber.foreground": "#c2aa4d",
+    "scrollbarSlider.background": "#cfd5dd",
+    "scrollbarSlider.hoverBackground": "#979788",
+    "sideBar.background": "#cfd5dd",
+    "statusBar.background": "#cfd5dd",
+    "tab.activeForeground": "#440b0b",
+    "tab.border": "#cfd5dd",
+    "tab.inactiveBackground": "#cfd5dd",
+    "tab.inactiveForeground": "#440b0b",
+    "editor.selectionHighlightBackground": "#87a190"
   }
   const singleColor = createRulesBee(singleColorBase)
 
   createTheme({
     // random  : {},
-    random : {
-      changes  : 1,
-      distance : 6,
-      indexes  : [ 1 ],
-    },
+    // random : {
+    //   changes  : 4,
+    //   distance : 3,
+    //   indexes  : [ 1 ],
+    // },
     filePath,
     rules: singleColor,
     levels  : 12,
-    // publish : {},
+    publish : {},
     publish : {
-      index : 1,
-      name  : 'aqua.family',
+      index : 0,
+      name  : 'aqua.ant',
     },
   })
+  // cell glamour
 })
 
 test.skip('createTheme', () => {
