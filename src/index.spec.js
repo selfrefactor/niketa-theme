@@ -1,5 +1,5 @@
 import { createTheme } from './'
-import { createRulesBee } from './bees/createRules';
+import { createRulesBee } from './bees/createRules'
 
 const base = '/home/s/repos/y/niketa-theme/bases'
 const filePath = `${ base }/niketa-yellow.json`
@@ -12,43 +12,43 @@ const rules = {
 
 test('createTheme', () => {
   const singleColorBase = {
-    "editor.foreground": "#6688cc",
-    "activityBar.background": "#cfd5dd",
-    "editor.background": "#F9F6F1",
+    'editor.foreground'                   : '#6688cc',
+    'activityBar.background'              : '#cfd5dd',
+    'editor.background'                   : [ '#F9F6F1', '#d6d6c6' ],
     // "editor.background": ["#ede8e1","#e7dfb1"],
-    "editor.selectionBackground": "#50aaef",
-    "editor.lineHighlightBackground": "#cfd5dd",
-    "editorBracketMatch.background": "#2084d0",
-    "editorBracketMatch.border": "#440b0b",
-    "editorGroupHeader.tabsBackground": "#E3D9BB",
-    "editorGutter.background": "#EADE9C",
-    "editorLineNumber.foreground": "#c2aa4d",
-    "scrollbarSlider.background": "#cfd5dd",
-    "scrollbarSlider.hoverBackground": "#979788",
-    "sideBar.background": "#cfd5dd",
-    "statusBar.background": "#cfd5dd",
-    "tab.activeForeground": "#440b0b",
-    "tab.border": "#cfd5dd",
-    "tab.inactiveBackground": "#cfd5dd",
-    "tab.inactiveForeground": "#440b0b",
-    "editor.selectionHighlightBackground": "#87a190"
+    'editor.selectionBackground'          : '#50aaef',
+    'editor.lineHighlightBackground'      : '#cfd5dd',
+    'editorBracketMatch.background'       : '#2084d0',
+    'editorBracketMatch.border'           : '#440b0b',
+    'editorGroupHeader.tabsBackground'    : '#E3D9BB',
+    'editorGutter.background'             : '#EADE9C',
+    'editorLineNumber.foreground'         : '#c2aa4d',
+    'scrollbarSlider.background'          : '#cfd5dd',
+    'scrollbarSlider.hoverBackground'     : '#979788',
+    'sideBar.background'                  : '#cfd5dd',
+    'statusBar.background'                : '#cfd5dd',
+    'tab.activeForeground'                : '#440b0b',
+    'tab.border'                          : '#cfd5dd',
+    'tab.inactiveBackground'              : '#cfd5dd',
+    'tab.inactiveForeground'              : '#440b0b',
+    'editor.selectionHighlightBackground' : '#87a190',
   }
   const singleColor = createRulesBee(singleColorBase)
 
   createTheme({
     // random  : {},
-    // random : {
-    //   changes  : 4,
-    //   distance : 3,
-    //   indexes  : [ 1 ],
-    // },
+    random : {
+      changes  : 1,
+      distance : 5,
+      indexes  : [ 0 ],
+    },
     filePath,
-    rules: singleColor,
+    rules   : singleColor,
     levels  : 12,
-    publish : {},
+    // publish : {},
     publish : {
-      index : 0,
-      name  : 'aqua.ant',
+      index : 10,
+      name  : 'aqua.back',
     },
   })
   // cell glamour
