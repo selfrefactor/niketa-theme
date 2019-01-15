@@ -1,4 +1,4 @@
-import { partialCurry, pass, pluck, map, ok, equals } from 'rambdax'
+import { partialCurry, pluck, map, ok, equals } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
 import { getGradientBee } from './bees/getGradient'
 import { createThemeBee } from './bees/createTheme'
@@ -12,7 +12,7 @@ function getRulesWithColors({
   random,
   rules,
 }){
-  if (!pass(random)({ changes : Number })){
+  if (!random){
     return map(
       ([ from, to ]) => getGradientBee(from, to, levels),
       rules
@@ -25,6 +25,8 @@ function getRulesWithColors({
       numberChanges : random.changes,
     }
   )
+  ok(random)({ changes : Number })
+
   const newRules = map(
     ([ from, to ]) => {
       const newFrom = randomColor({ color : from })
@@ -89,6 +91,24 @@ function saveToPackageJson(partialJson){
   writeJsonAnt('package.json', newPackageJson)
 }
 
+export function createPaletteTheme({
+  filePath,
+  rules,
+  random,
+  publish,
+  levels,
+}){
+  ok(filePath, levels)(String, Number)
+  ok(rules)(Object)
+
+  const originTheme = readJsonAnt(filePath)
+  const rulesWithColors = getRulesWithColors({
+    random,
+    levels,
+    rules,
+  })
+}
+
 export function createTheme({
   filePath,
   rules,
@@ -98,7 +118,7 @@ export function createTheme({
 }){
   if (!equals({}, publish)) return publishTheme(publish)
   ok(filePath, levels)(String, Number)
-  ok(random, rules, publish)(Object)
+  ok(rules)(Object)
 
   const originTheme = readJsonAnt(filePath)
   const rulesWithColors = getRulesWithColors({

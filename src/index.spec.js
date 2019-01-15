@@ -1,8 +1,10 @@
-import { createTheme } from './'
+import { createTheme, createPaletteTheme } from './'
 import { createRulesBee } from './bees/createRules'
 
 const base = '/home/s/repos/y/niketa-theme/bases'
-const filePath = `${ base }/izorra.json`
+const palette = '/home/s/repos/y/niketa-theme/palettes'
+const filePath = `${ base }/niketa-yellow.json`
+const filePathPalette = `${ palette }/niketa-yellow.json`
 const rules = {
   'editor.background'                   : [ '#C9DDE9', '#DBE3D6' ],
   'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
@@ -10,7 +12,34 @@ const rules = {
   'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
 }
 
-test('createTheme', () => {
+test('palette', () => {
+  const singleColorBase = {
+    COLOR_0: "#ece3e7",
+    COLOR_1: "#cfd5aa",
+    COLOR_2: "#64b6b6",
+    COLOR_3: "#88385b",
+    COLOR_4: "#076b6b",
+    COLOR_5: "#4b1034",
+  }
+  const singleColor = createRulesBee(singleColorBase)
+
+  createTheme({
+    random : {
+      changes  : 1,
+      distance : 3,
+      indexes  : [ 1 ],
+    },
+    filePath,
+    rules   : singleColor,
+    levels  : 12,
+    // publish : {
+    //   index : 0,
+    //   name  : 'curious.sea',
+    // },
+  })
+})
+
+test.skip('createTheme', () => {
   const singleColorBase = {
     "activityBar.background": ["#ece3e7",'#e9fbe2'],
 		"activityBar.foreground": "#076b6b",
@@ -28,29 +57,24 @@ test('createTheme', () => {
 		"editor.findRangeHighlightBackground": "#fffd7a41",
 		"editor.foreground": "#4b1034",
   }
-  const singleColorBasex = {
-    'editor.background'                   : [ '#e9fbe2', '#d6d6c6' ],
-    // "editor.background": ["#ede8e1","#e7dfb1"],
-  }
   const singleColor = createRulesBee(singleColorBase)
 
   createTheme({
     // random  : {},
-    random : {
-      changes  : 1,
-      distance : 3,
-      indexes  : [ 0,1 ],
-    },
+    // random : {
+    //   changes  : 1,
+    //   distance : 3,
+    //   indexes  : [ 0,1 ],
+    // },
     filePath,
     rules   : singleColor,
     levels  : 12,
-    // publish : {},
-    publish : {
-      index : 0,
-      name  : 'curious.sea',
-    },
+    publish : {},
+    // publish : {
+    //   index : 0,
+    //   name  : 'curious.sea',
+    // },
   })
-  // cell glamour
 })
 
 test.skip('createTheme', () => {
@@ -73,3 +97,8 @@ test.skip('createTheme', () => {
 
   console.log({ result })
 })
+
+// const singleColorBasex = {
+//   'editor.background'                   : [ '#e9fbe2', '#d6d6c6' ],
+//   // "editor.background": ["#ede8e1","#e7dfb1"],
+// }
