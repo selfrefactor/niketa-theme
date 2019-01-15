@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
-  "version": "1.4.1",
+  "version": "1.4.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -41,6 +41,16 @@
         "label": "AquaShake",
         "uiTheme": "vs",
         "path": "./themes/AquaShake.json"
+      },
+      {
+        "label": "AquaCinema",
+        "uiTheme": "vs",
+        "path": "./themes/AquaCinema.json"
+      },
+      {
+        "label": "AquaFamily",
+        "uiTheme": "vs",
+        "path": "./themes/AquaFamily.json"
       }
     ]
   },
