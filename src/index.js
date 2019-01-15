@@ -1,5 +1,7 @@
-import { partialCurry, pluck, map, ok, equals } from 'rambdax'
+import { partialCurry, pluck, map, ok, equals, range, replace } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
+import { changeColorAnt } from './ants/changeColor'
+import { readFileSync } from 'fs'
 import { getGradientBee } from './bees/getGradient'
 import { createThemeBee } from './bees/createTheme'
 import { randomColorBee } from './bees/randomColor'
@@ -91,15 +93,51 @@ function saveToPackageJson(partialJson){
   writeJsonAnt('package.json', newPackageJson)
 }
 
+function createPaletteRule(prop, colorBase){
+  const modes = [
+    'DARK',
+    'DARKER',
+    'LIGHT',
+    'LIGHTER',
+  ]
+  const willReturn = {
+    prop: colorBase
+  }
+  modes.forEach(mode => {
+    const newColor = changeColorAnt(colorBase, mode)
+
+    willReturn[`${prop}_${mode}`] = newColor
+  })
+
+  return willReturn
+}
+
+function boringPaletteTheme(filePath, rules){
+  const rulesKeys = Object.keys(rules)
+  let content = readFileSync(filePath).toString()
+
+  range(0,rulesKeys.length).forEach(i => {
+    const prop = rulesKeys[i]
+    const colorBase = rules[prop][0]
+    const paletteRule = createPaletteRule(prop, colorBase)
+    console.log(paletteRule)
+  })
+  
+}
 export function createPaletteTheme({
   filePath,
   rules,
   random,
   publish,
+  boring,
   levels,
 }){
   ok(filePath, levels)(String, Number)
   ok(rules)(Object)
+  if(boring) return boringPaletteTheme(
+    filePath,
+    rules
+  )
 
   const originTheme = readJsonAnt(filePath)
   const rulesWithColors = getRulesWithColors({

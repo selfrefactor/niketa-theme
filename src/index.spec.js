@@ -23,7 +23,8 @@ test('palette', () => {
   }
   const singleColor = createRulesBee(singleColorBase)
 
-  createTheme({
+  createPaletteTheme({
+    boring: true,
     random : {
       changes  : 1,
       distance : 3,
