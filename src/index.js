@@ -1,11 +1,11 @@
 import { partialCurry, pluck, map, ok, equals, range, replace } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
 import { changeColorAnt } from './ants/changeColor'
-import { readFileSync } from 'fs'
+import { readFileSync, writeFileSync } from 'fs-extra'
 import { getGradientBee } from './bees/getGradient'
 import { createThemeBee } from './bees/createTheme'
 import { randomColorBee } from './bees/randomColor'
-import { saveThemeBee, namesHash } from './bees/saveTheme'
+import { saveThemeBee, namesHash, savePaletteThemeBee } from './bees/saveTheme'
 import { writeJsonAnt } from './ants/writeJson'
 import { pascalCase } from 'string-fn'
 
@@ -94,25 +94,34 @@ function saveToPackageJson(partialJson){
 }
 
 function createPaletteRule(prop, colorBase){
+  const willReturn = {}
   const modes = [
-    'DARK',
     'DARKER',
-    'LIGHT',
     'LIGHTER',
+    'DARK',
+    'LIGHT',
   ]
-  const willReturn = {
-    prop: colorBase
-  }
   modes.forEach(mode => {
     const newColor = changeColorAnt(colorBase, mode)
 
     willReturn[`${prop}_${mode}`] = newColor
   })
 
+  willReturn[prop] = colorBase
   return willReturn
 }
 
-function boringPaletteTheme(filePath, rules){
+function applyPaletteBee(content, paletteRule){
+  Object.keys(paletteRule).forEach(ruleKey => {
+    const appliableColor = paletteRule[ruleKey]
+    const regex = new RegExp(ruleKey,'g')
+    content = replace(regex, appliableColor, content)
+  })
+
+  return content
+}
+
+function singlePaletteTheme({filePath, rules, nameIndex}){
   const rulesKeys = Object.keys(rules)
   let content = readFileSync(filePath).toString()
 
@@ -120,10 +129,12 @@ function boringPaletteTheme(filePath, rules){
     const prop = rulesKeys[i]
     const colorBase = rules[prop][0]
     const paletteRule = createPaletteRule(prop, colorBase)
-    console.log(paletteRule)
+    content = applyPaletteBee(content, paletteRule)
   })
-  
+  savePaletteThemeBee(content, nameIndex)
+  // writeFileSync(`${__dirname}/palette.json`, content)
 }
+
 export function createPaletteTheme({
   filePath,
   rules,
@@ -134,10 +145,11 @@ export function createPaletteTheme({
 }){
   ok(filePath, levels)(String, Number)
   ok(rules)(Object)
-  if(boring) return boringPaletteTheme(
+  if(boring) return singlePaletteTheme({
     filePath,
-    rules
-  )
+    rules,
+    nameIndex: 0
+  })
 
   const originTheme = readJsonAnt(filePath)
   const rulesWithColors = getRulesWithColors({

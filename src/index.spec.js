@@ -14,15 +14,17 @@ const rules = {
 
 test('palette', () => {
   const singleColorBase = {
-    COLOR_0: "#ece3e7",
-    COLOR_1: "#cfd5aa",
-    COLOR_2: "#64b6b6",
-    COLOR_3: "#88385b",
-    COLOR_4: "#076b6b",
-    COLOR_5: "#4b1034",
+    COLOR_BACK: "#ede8e1",
+    COLOR_SECONDARY: "#ccd5d1",
+    COLOR_0: "#aa769b",
+    COLOR_1: "#9aa61b",
+    COLOR_2: "#1a769b",
+    COLOR_3: "#5a245f",
+    COLOR_4: "#fa5989",
+    COLOR_5: "#1fa654",
   }
+  
   const singleColor = createRulesBee(singleColorBase)
-
   createPaletteTheme({
     boring: true,
     random : {
@@ -30,13 +32,9 @@ test('palette', () => {
       distance : 3,
       indexes  : [ 1 ],
     },
-    filePath,
+    filePath: filePathPalette,
     rules   : singleColor,
     levels  : 12,
-    // publish : {
-    //   index : 0,
-    //   name  : 'curious.sea',
-    // },
   })
 })
 
