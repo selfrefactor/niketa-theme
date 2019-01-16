@@ -47,6 +47,7 @@ function singlePaletteTheme({filePath, rules, rate}){
   savePaletteThemeBee(content, 0)
 }
 
+
 export function createPaletteTheme({
   filePath,
   rules,

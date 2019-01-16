@@ -19,6 +19,6 @@ test('palette', () => {
     filePath,
     rules,
     rate: 0.05,
-    // publishName: 'angry.cat'
+    publishName: 'angry.cat'
   })
 })

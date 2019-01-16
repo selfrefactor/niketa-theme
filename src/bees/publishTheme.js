@@ -2,8 +2,10 @@ import { pluck } from 'rambdax'
 import { pascalCase } from 'string-fn'
 import { readJsonAnt } from '../ants/readJson'
 import { writeJsonAnt } from '../ants/writeJson'
+import { saveToPackageJsonAnt } from '../ants/saveToPackageJson'
+import { namesHash } from './saveTheme'
 
-export function publishTheme({ index, name }){
+export function publishThemeBee(name, index){
   const tempName = pascalCase(`baboon.${ namesHash[ index ] }`)
   console.log('publish',tempName)
   const theme = readJsonAnt(
@@ -29,7 +31,7 @@ export function publishTheme({ index, name }){
     'exported.json',
     exported
   )
-  saveToPackageJson(exported)
+  saveToPackageJsonAnt(exported)
 
   theme.name = themeName
   writeJsonAnt(
