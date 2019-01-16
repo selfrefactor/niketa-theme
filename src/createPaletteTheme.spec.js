@@ -3,11 +3,10 @@ import {  createPaletteTheme } from './createPaletteTheme'
 const base = '/home/s/repos/y/niketa-theme/palettes'
 const filePath = `${ base }/niketa-yellow.json`
 
-
 test('palette', () => {
   const rules = {
     COLOR_BACK: "#fafafa",
-    COLOR_SECONDARY: "#D3D4D0",
+    COLOR_SECONDARY: "#DEE5E0",
     COLOR_0: "#aa769b",
     COLOR_1: "#85483D",
     COLOR_2: "#F26153",
@@ -20,6 +19,6 @@ test('palette', () => {
     filePath,
     rules,
     rate: 0.05,
-    publishName: 'angry.cat'
+    // publishName: 'angry.cat'
   })
 })

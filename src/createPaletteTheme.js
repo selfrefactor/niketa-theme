@@ -1,97 +1,10 @@
-import { partialCurry, pluck, map, ok, equals, range, replace } from 'rambdax'
-import { readJsonAnt } from './ants/readJson'
+import {  ok, range, replace } from 'rambdax'
 import { changeColorAnt } from './ants/changeColor'
 import { readFileSync } from 'fs-extra'
+import { publishThemeBee } from './bees/publishTheme'
+import { savePaletteThemeBee } from './bees/saveTheme'
+import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { getGradientBee } from './bees/getGradient'
-import { createThemeBee } from './bees/createTheme'
-import { randomColorBee } from './bees/randomColor'
-import { saveThemeBee, namesHash, savePaletteThemeBee } from './bees/saveTheme'
-import { writeJsonAnt } from './ants/writeJson'
-import { pascalCase } from 'string-fn'
-
-function getRulesWithColors({
-  levels,
-  random,
-  rules,
-}){
-  if (!random){
-    return map(
-      ([ from, to ]) => getGradientBee(from, to, levels),
-      rules
-    )
-  }
-  const randomColor = partialCurry(
-    randomColorBee,
-    {
-      distance      : random.distance,
-      numberChanges : random.changes,
-    }
-  )
-  ok(random)({ changes : Number })
-
-  const newRules = map(
-    ([ from, to ]) => {
-      const newFrom = randomColor({ color : from })
-      const newTo = randomColor({ color : to })
-      if (random.indexes.length === 2) return [ newFrom, newTo ]
-      if (random.indexes.includes(1)) return [ from, newTo ]
-
-      return [ newFrom, to ]
-    },
-    rules
-  )
-
-  return map(
-    ([ from, to ]) => getGradientBee(from, to, levels),
-    newRules
-  )
-}
-
-function publishTheme({ index, name }){
-  const tempName = pascalCase(`baboon.${ namesHash[ index ] }`)
-  console.log({ tempName })
-  const theme = readJsonAnt(
-    `./baboon/${ tempName }.json`
-  )
-  const exported = readJsonAnt(
-    'exported.json'
-  )
-  const themeName = pascalCase(name)
-  const themePath = `./themes/${ themeName }.json`
-
-  if (
-    !pluck('label', exported).includes(themeName)
-  ){
-    exported.push({
-      label   : themeName,
-      uiTheme : 'vs',
-      path    : themePath,
-    })
-  }
-
-  writeJsonAnt(
-    'exported.json',
-    exported
-  )
-  saveToPackageJson(exported)
-
-  theme.name = themeName
-  writeJsonAnt(
-    themePath,
-    theme
-  )
-}
-
-function saveToPackageJson(partialJson){
-  const packageJson = readJsonAnt(
-    'packageBase.json'
-  )
-  const newPackageJson = {
-    ...packageJson,
-    contributes : { themes : partialJson },
-  }
-  writeJsonAnt('package.json', newPackageJson)
-}
 
 function createPaletteRule(prop, colorBase, rate){
   const willReturn = {}
@@ -134,41 +47,6 @@ function singlePaletteTheme({filePath, rules, rate}){
   savePaletteThemeBee(content, 0)
 }
 
-function publishTheme(name, index){
-  const tempName = pascalCase(`baboon.${ namesHash[ index ] }`)
-  console.log({ tempName })
-  const theme = readJsonAnt(
-    `./baboon/${ tempName }.json`
-  )
-  const exported = readJsonAnt(
-    'exported.json'
-  )
-  const themeName = pascalCase(name)
-  const themePath = `./themes/${ themeName }.json`
-
-  if (
-    !pluck('label', exported).includes(themeName)
-  ){
-    exported.push({
-      label   : themeName,
-      uiTheme : 'vs',
-      path    : themePath,
-    })
-  }
-
-  writeJsonAnt(
-    'exported.json',
-    exported
-  )
-  saveToPackageJson(exported)
-
-  theme.name = themeName
-  writeJsonAnt(
-    themePath,
-    theme
-  )
-}
-
 export function createPaletteTheme({
   filePath,
   rules,
@@ -186,7 +64,9 @@ export function createPaletteTheme({
     uiTheme : 'vs',
     path    : `./baboon/BaboonAnt.json`,
   }]
-  saveToPackageJson(devJson)
+  saveToPackageJsonAnt(devJson)
+  
   if(!publishName) return
-  publishTheme(publishName, 0)
+  publishThemeBee(publishName, 0)
 }
+
