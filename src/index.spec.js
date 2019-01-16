@@ -13,7 +13,7 @@ const rules = {
 }
 
 test('palette', () => {
-  const singleColorBase = {
+  const singleColor = {
     COLOR_BACK: "#ede8e1",
     COLOR_SECONDARY: "#ccd5d1",
     COLOR_0: "#aa769b",
@@ -24,17 +24,11 @@ test('palette', () => {
     COLOR_5: "#1fa654",
   }
   
-  const singleColor = createRulesBee(singleColorBase)
   createPaletteTheme({
-    boring: true,
-    random : {
-      changes  : 1,
-      distance : 3,
-      indexes  : [ 1 ],
-    },
     filePath: filePathPalette,
     rules   : singleColor,
     levels  : 12,
+    publishName: 'angry.cat'
   })
 })
 

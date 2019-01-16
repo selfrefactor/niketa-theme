@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
-  "version": "1.7.0",
+  "version": "1.4.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -61,18 +61,22 @@
         "label": "CuriousSea",
         "uiTheme": "vs",
         "path": "./themes/CuriousSea.json"
+      },
+      {
+        "label": "AngryCat",
+        "uiTheme": "vs",
+        "path": "./themes/AngryCat.json"
       }
     ]
   },
   "devDependencies": {
+    "rgb-hex": "^2.1.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "color": "^3.1.0",
     "fs-extra": "^7.0.0",
     "jest": "^23.6.0",
     "parcel-bundler": "^1.10.3",
     "rambdax": "^1.6.3",
-    "rgb-hex": "^2.1.0",
     "string-fn": "^1.8.0"
   },
   "commitMessage": {
@@ -81,6 +85,6 @@
       "build",
       "bee"
     ],
-    "workInProgress": ""
+    "workInProgress": "final stage"
   }
 }
