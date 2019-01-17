@@ -1,10 +1,11 @@
-import {  ok, range, replace, map } from 'rambdax'
+import {  ok, range, replace, map, init, last } from 'rambdax'
 import { changeColorAnt } from './ants/changeColor'
 import { readFileSync } from 'fs-extra'
 import { publishThemeBee } from './bees/publishTheme'
 import { savePaletteThemeBee } from './bees/saveTheme'
 import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { getGradientBee } from './bees/getGradient'
+import colors from '../colors.json'
 
 function createPaletteRule(prop, colorBase, rate){
   const willReturn = {}
@@ -83,17 +84,21 @@ function isGradientMode(rules){
     }
   )(rules)
 
-  return true
+  return flag
 }
 
 const createGradientRules = map(
   x => Array.isArray(x) ? x : [x,x] 
 )
+
 const getRulesWithGradients = (rules, levels) => map(
   ([ from, to ]) => getGradientBee(from, to, levels)
 )(rules)
 
-function simplePalette({
+// Rules of type COLOR_1: #facafc
+// Only one dev theme is created
+// ============================================
+function simpleMode({
   filePath,
   rules,
   rate,
@@ -111,19 +116,14 @@ function simplePalette({
   saveToPackageJsonAnt(devJson)
 }
 
-export function createPaletteTheme({
+// Rules of type COLOR_1: ['#542331', '#42aeac']
+// ============================================
+function gradientMode({
   filePath,
   rules,
   rate,
-  levels = 4,
-  publishName,
-  publishIndex = 0
+  levels,
 }){
-  ok(filePath, rules)(String, Object)
-  
-  if(publishName) return publishThemeBee(publishName, publishIndex)
-  if(!isGradientMode(rules)) return simplePalette(arguments[0])
-  
   const gradientRules = createGradientRules(rules)
   const rulesWithGradients = getRulesWithGradients(gradientRules, levels)   
   const devJson = createPaletteThemeBee({
@@ -133,5 +133,60 @@ export function createPaletteTheme({
   })
 
   saveToPackageJsonAnt(devJson)
+}
+
+function applyPredefinedColors(tag){
+  const parentKey = init(tag.split('_')).join('_')
+  const index = last(tag.split('_'))
+  const parent = colors[parentKey]
+  if(!parent){
+    console.log(`NO SUCH TAG ${tag} | FALLBACK TO #434343`)
+    return '#434343'
+  }
+  const appliableColor = parent[index]
+  if(!appliableColor){
+    console.log(`EMPTY COLOR ${tag} | FALLBACK TO #2a13a3`)
+    return '#2a13a3'
+  }
+  return appliableColor
+}
+
+// Rules of type COLOR_1: ['DARK_1', 'BLUE_7']
+// ============================================
+function complexMode({
+  rules,
+  rate, 
+  levels,
+  filePath
+}){
+  const rulesWithColors = map(
+    ([from, to]) => ([
+      applyPredefinedColors(from),
+      applyPredefinedColors(to),
+    ])
+  )(rules)
+
+  return gradientMode({
+    filePath, 
+    rules: rulesWithColors, 
+    rate, 
+    levels
+  })
+}
+
+export function createPaletteTheme({
+  complex,
+  filePath,
+  rules,
+  publishName,
+  publishIndex = 0
+}){
+  ok(filePath, rules)(String, Object)
+  
+  if(publishName) return publishThemeBee(publishName, publishIndex)
+  if(complex) return complexMode(arguments[0])
+  if(!isGradientMode(rules)) return simpleMode(arguments[0])
+  
+  return gradientMode(arguments[0])
 }
 

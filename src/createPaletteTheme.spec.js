@@ -6,49 +6,50 @@ const filePath = `${ base }/more.json`
 // const filePath = `${ base }/niketa-yellow.json`
 
 
-test.skip('palette with predefined colors', () => {
+test('palette with predefined colors', () => {
   
   const rules = {
     COLOR_BACK: [
-      "LIGHT_2",
-      "LIGHT_7"
+      "BACK_2",
+      "BACK_5",
     ],
     COLOR_SECONDARY: [
-      "LIGHT_2",
-      "LIGHT_7"
+      "SECONDARY_0",
+      "SECONDARY_2",
     ],
     COLOR_0: [
-      "LIGHT_2",
-      "LIGHT_7"
+      "DARK_RED_0",
+      "PINK_1",
     ],
     COLOR_1: [
-      "LIGHT_2",
-      "LIGHT_7"
+      "DARK_GREEN_0",
+      "RANDOM_1",
     ], 
     COLOR_2: [
-      "LIGHT_2",
-      "LIGHT_7"
+      "GREEN_2",
+      "PINK_3",
     ], 
     COLOR_3: [
-      "LIGHT_2",
-      "LIGHT_7"
+      "NAVY_0",
+      "DARK_GREEN_2",
     ], 
     COLOR_4: [
-      "LIGHT_2",
-      "LIGHT_7"
+      "RANDOM_0",
+      "BROWN_0",
     ], 
     COLOR_5: [
-      "LIGHT_2",
-      "LIGHT_7"
+      "LIGHT_BLUE_1",
+      "GREEN_0",
     ], 
   }
 
   createPaletteTheme({
+    complex: true,
     filePath,
     rules,
     levels: 12,
     rate: 0.09,
-    publishName: 'brave.bat',
+    publishName: 'brave.whisky',
     publishIndex: 6
   })
 })
