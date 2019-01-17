@@ -3,9 +3,9 @@
 ## Background
 
 ```txt
-#eae3cd
 #e7e7e7
 #e9fbe2
+#eae3cd
 #ebe6d9
 #ede8e1
 #f9f6f1

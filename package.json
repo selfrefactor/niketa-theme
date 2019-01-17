@@ -28,24 +28,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "BaboonAnt",
+        "label": "CircusLove",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonAnt.json"
+        "path": "./themes/CircusLove.json"
       },
       {
-        "label": "BaboonBee",
+        "label": "AngryCat",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonBee.json"
+        "path": "./themes/AngryCat.json"
       },
       {
-        "label": "BaboonCell",
+        "label": "AngryHomer",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonCell.json"
-      },
-      {
-        "label": "BaboonDeep",
-        "uiTheme": "vs",
-        "path": "./baboon/BaboonDeep.json"
+        "path": "./themes/AngryHomer.json"
       }
     ]
   },

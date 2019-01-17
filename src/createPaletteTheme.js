@@ -97,7 +97,6 @@ function simplePalette({
   filePath,
   rules,
   rate,
-  publishName
 }){
   singlePaletteTheme({
     filePath,
@@ -110,8 +109,6 @@ function simplePalette({
     path    : `./baboon/BaboonAnt.json`,
   }]
   saveToPackageJsonAnt(devJson)
-  if(!publishName) return
-  publishThemeBee(publishName, 0)
 }
 
 export function createPaletteTheme({
@@ -119,12 +116,14 @@ export function createPaletteTheme({
   rules,
   rate,
   levels = 4,
-  publishName
+  publishName,
+  publishIndex = 0
 }){
   ok(filePath, rules)(String, Object)
-  if(!isGradientMode(rules)){
-    return simplePalette(arguments[0])
-  }
+  
+  if(publishName) return publishThemeBee(publishName, publishIndex)
+  if(!isGradientMode(rules)) return simplePalette(arguments[0])
+  
   const gradientRules = createGradientRules(rules)
   const rulesWithGradients = getRulesWithGradients(gradientRules, levels)   
   const devJson = createPaletteThemeBee({
