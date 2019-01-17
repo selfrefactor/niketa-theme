@@ -1,6 +1,8 @@
 # Niketa
 
-Light VSCode Themes with internal theme generator(which can be reused)
+7 Light VSCode Themes
+
+> The repo contains also internal theme generator used for creation of the themes
 
 ## Screens
 
@@ -23,6 +25,10 @@ Angry Neighbour
 Brave Bat
 
 ![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.bat.png?raw=true)
+
+Brave Whisky
+
+![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.whisky.png?raw=true)
 
 Circus Love
 
