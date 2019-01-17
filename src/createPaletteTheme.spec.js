@@ -14,10 +14,10 @@ test('palette', () => {
     COLOR_SECONDARY: ["#ede8e1","#eae3cd"],
     COLOR_0: ["#d52484","#d52484"],
     COLOR_1: ["#105e62","#69779b"],
-    COLOR_2: ["#e14594", "#f85e9f"],
+    COLOR_2: ["#729d39", "#f85e9f"],
     COLOR_3: ["#2a6171", "#009f9d"],
-    COLOR_4: ["#7045af", "#6d70c6"],
-    COLOR_5: ["#7ed3b2", "#105e62"],
+    COLOR_4: ["#841818", "#ae7c7c"],
+    COLOR_5: ["#23a393", "#587850"],
   }
 
 
@@ -26,8 +26,8 @@ test('palette', () => {
     rules,
     levels: 12,
     rate: 0.09,
-    publishName: 'angry.dog',
-    publishIndex: 6
+    // publishName: 'brave.bat',
+    // publishIndex: 6
   })
 })
 
