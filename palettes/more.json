@@ -7,7 +7,7 @@
 		"editor.selectionBackground": "#ffe0e0",
 		"editor.lineHighlightBackground": "COLOR_SECONDARY",
 		"editorBracketMatch.background": "COLOR_5_DARKER",
-		"editorBracketMatch.border": "COLOR_2_DARKER",
+		"editorBracketMatch.border": "COLOR_4_DARKER",
 		"editorGroupHeader.tabsBackground":"COLOR_BACK_DARK",
 		"editorGutter.background": "COLOR_BACK",
 		"editorLineNumber.foreground": "COLOR_SECONDARY_DARKER",
@@ -21,6 +21,18 @@
 		"tab.inactiveForeground":"COLOR_BACK_LIGHTER"
 	},
 	"tokenColors": [
+		{
+			"name": "Language Constants",
+			"scope": [
+				"constant.language",
+				"support.constant",
+				"variable.language"
+			],
+			"settings": {
+				"foreground": "COLOR_4",
+				"fontStyle": "bold"
+			}
+		},
 		{
 			"SK":"const let for",
 			"name": "Storage types",
@@ -36,10 +48,11 @@
 			}
 		},
 		{
+			"SK": "function SK",
 			"scope": "entity.name.function,support.function.dom.js",
 			"settings": {
 				"fontStyle": "underline",
-				"foreground": "COLOR_4"
+				"foreground": "COLOR_1_LIGHT"
 			}
 		},
 		{
@@ -83,7 +96,8 @@
 			"name": "Keywords",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "COLOR_1"
+				"foreground": "COLOR_1",
+				"fontStyle":"bold"
 			}
 		},
 		{
@@ -312,7 +326,7 @@
 			"name": "Tag names",
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "COLOR_2_LIGHT"
+				"foreground": "COLOR_2_DARKER"
 			}
 		},
 		{

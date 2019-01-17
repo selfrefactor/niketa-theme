@@ -9,27 +9,28 @@ const filePath = `${ base }/more.json`
 test('palette', () => {
   
   const rules = {
+    // COLOR_BACK: "#fafafa",
     COLOR_BACK: ["#fafafa","#f9f6f1"],
-    COLOR_SECONDARY: ["#ede8e1","#eaeaea"],
-    COLOR_0: ["#DF897A", "#DF697A"],
-    // COLOR_0: ["#aa769b", "#DF897A"],
-    COLOR_1: ["#105e62","#13446F"],
-    COLOR_2: ["#8fbbaf","#69779b"],
-    COLOR_3: ["#BA8858", "#b5525c"],
-    // COLOR_4: ["#34a7b2", "#1467b2"],
-    COLOR_4: ["#3CD9BC","#34a7b2"],
-    COLOR_5: ["#DE1758", "#d33682"],
+    COLOR_SECONDARY: ["#ede8e1","#eae3cd"],
+    COLOR_0: ["#d52484","#d52484"],
+    COLOR_1: ["#105e62","#69779b"],
+    COLOR_2: ["#e14594", "#f85e9f"],
+    COLOR_3: ["#2a6171", "#009f9d"],
+    COLOR_4: ["#7045af", "#6d70c6"],
+    COLOR_5: ["#7ed3b2", "#105e62"],
   }
+
 
   createPaletteTheme({
     filePath,
     rules,
     levels: 12,
-    rate: 0.1,
-    publishName: 'angry.neighbour',
-    publishIndex: 9
+    rate: 0.09,
+    publishName: 'angry.dog',
+    publishIndex: 6
   })
 })
+
 
 test.skip('palette', () => {
   const rules = {
