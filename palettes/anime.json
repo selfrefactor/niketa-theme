@@ -2,23 +2,23 @@
 	"name": "_Palette",
 	"type": "light",
 	"colors": {
-		"activityBar.background": "COLOR_SECONDARY",
 		"editor.background": "COLOR_BACK",
-		"editor.selectionBackground": "COLOR_BACK_DARK",
-		"editor.lineHighlightBackground": "COLOR_SECONDARY_DARK",
-		"editorBracketMatch.background": "COLOR_3",
-		"editorBracketMatch.border": "COLOR_4",
-		"editorGroupHeader.tabsBackground":"COLOR_SECONDARY_LIGHT",
+		"activityBar.background": "COLOR_SECONDARY",
+		"editor.selectionBackground": "COLOR_BACK_DARKER",
+		"editor.lineHighlightBackground": "COLOR_SECONDARY_DARKER",
+		"editorBracketMatch.background": "COLOR_5_DARKER",
+		"editorBracketMatch.border": "COLOR_2_DARKER",
+		"editorGroupHeader.tabsBackground":"COLOR_BACK_DARK",
 		"editorGutter.background": "COLOR_BACK",
-		"editorLineNumber.foreground": "COLOR_BACK_DARKER",
+		"editorLineNumber.foreground": "COLOR_SECONDARY_DARKER",
 		"scrollbarSlider.background": "COLOR_SECONDARY",
-		"scrollbarSlider.hoverBackground": "COLOR_3_DARKER",
-		"sideBar.background": "COLOR_SECONDARY",
-		"statusBar.background": "COLOR_SECONDARY", 
-		"tab.activeForeground":"COLOR_4",
-		"tab.border": "COLOR_SECONDARY",
-		"tab.inactiveBackground":"COLOR_SECONDARY",
-		"tab.inactiveForeground":"COLOR_4"
+		"scrollbarSlider.hoverBackground": "COLOR_SECONDARY_DARKER",
+		"sideBar.background": "COLOR_SECONDARY_DARK",
+		"statusBar.background": "COLOR_SECONDARY_DARK", 
+		"tab.activeForeground":"COLOR_SECAONDARY_DARK",
+		"tab.border": "COLOR_SECONDARY_LIGHT",
+		"tab.inactiveBackground":"COLOR_SECONDARY_LIGHTER",
+		"tab.inactiveForeground":"COLOR_BACK_LIGHTER"
 	},
 	"tokenColors": [
 		{
@@ -30,23 +30,33 @@
 			}
 		},
 		{
+			"SK": "todo",
 			"scope": "entity.name.function.method",
 			"settings": {
-				"foreground": "COLOR_3"
+				"foreground": "COLOR_1"
 			}
 		},
 		{
+			"SK": "function SK(){}",
 			"scope": "entity.name.function,support.function.dom.js",
 			"settings": {
 				"fontStyle": "underline",
-				"foreground": "COLOR_4"
+				"foreground": "COLOR_2"
+			}
+		},
+		{
+			"SK": "const a = TRUE",
+			"scope": "constant.language.boolean,constant.language.boolean.false.ts,constant.language.boolean.true.ts",
+			"settings": {
+				"fontStyle":	"bold",
+				"foreground": "COLOR_4_DARKER"
 			}
 		},
 		{
 			"name": "Numbers",
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "COLOR_5_LIGHT"
+				"foreground": "COLOR_3"
 			}
 		},
 		{
@@ -54,7 +64,7 @@
 			"scope": "constant.language",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "COLOR_3"
+				"foreground": "COLOR_4"
 			}
 		},
 		{
@@ -62,28 +72,28 @@
 			"scope": "variable.parameter",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "COLOR_0_DARK"
+				"foreground": "COLOR_5"
 			}
 		},
 		{
 			"name": "Library functions",
 			"scope": "support.function",
 			"settings": {
-				"foreground": "COLOR_4"
+				"foreground": "COLOR_0_DARK"
 			}
 		},
 		{
 			"name": "Variables",
 			"scope": "variable",
 			"settings": {
-				"foreground": "COLOR_3"
+				"foreground": "COLOR_1_DARKER"
 			}
 		},
 		{
 			"name": "Keywords",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "COLOR_1"
+				"foreground": "COLOR_2_DARK"
 			}
 		},
 		{
@@ -93,118 +103,111 @@
 				"constant.other"
 			],
 			"settings": {
-				"foreground": "COLOR_3"
+				"foreground": "COLOR_3_DARKER"
 			}
 		},
 		{
 			"scope": "invalid",
 			"settings": {
-				"foreground": "COLOR_5"
+				"foreground": "COLOR_4_LIGHT"
 			}
 		},
 		{
 			"scope": "variable.other.readwrite,variable.other.readwrite.js,variable.other.readwrite.ts,variable.other.readwrite.tsx,variable.other.object.js,punctuation.accessor.js",
 			"settings": {
-				"foreground": "COLOR_2"
+				"foreground": "COLOR_5_DARKER"
 			}
 		},
 		{
 			"scope": "variable.other.property.js",
 			"settings": {
-				"foreground": "COLOR_2_DARKER"
+				"foreground": "COLOR_0_DARKER"
 			}
 		},
 		{
 			"scope": "keyword.control.at-rule.import.scss,keyword.control.module.js,keyword.operator.accessor",
 			"settings": {
-				"foreground": "COLOR_5"
+				"foreground": "COLOR_1_DARK"
 			}
 		},
 		{
 			"scope": "keyword.control.import.js,keyword.control.from.js,keyword.control.export.js,keyword.control.default.js,support.type.object.module.ts",
 			"settings": {
-				"foreground": "COLOR_5_LIGHTER"
+				"foreground": "COLOR_2_DARKER"
 			}
 		},
 		{
 			"scope": "string.template",
 			"settings": {
-				"foreground": "COLOR_3_LIGHTER"
+				"foreground": "COLOR_3_DARK"
 			}
 		},
 		{
 			"scope": "string.quoted.single.js,string.quoted.single.scss,string.quoted.single.attribute-value.scss,string.quoted.single.json,string.quoted.single.ts",
 			"settings": {
-				"foreground": "COLOR_3_LIGHTER"
+				"foreground": "COLOR_4_DARKER"
 			}
 		},
 		{
 			"scope": "string.quoted.double.js,string.quoted.double.scss,string.quoted.double.attribute-value.scss,string.quoted.double.json,string.quoted.double.ts",
 			"settings": {
-				"foreground": "COLOR_3_LIGHTER"
+				"foreground": "COLOR_5_DARK"
 			}
 		},
 		{
 			"scope": "constant.other.object.key.js,meta.object-literal.key.js,support.type.property-name.json,meta.object-literal.key.ts,variable.other.property.ts",
 			"settings": {
-				"foreground": "COLOR_4_DARKER"
+				"foreground": "COLOR_0_LIGHT"
 			}
 		},
 		{
 			"scope": "support.class.builtin.js",
 			"settings": {
-				"foreground": "COLOR_3_DARK"
+				"foreground": "COLOR_1_LIGHTER"
 			}
 		},
 
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "COLOR_5_DARKER"
+				"foreground": "COLOR_2_LIGHT"
 			}
 		},
 		{
 			"scope": "comment.block.documentation",
 			"settings": {
-				"foreground": "COLOR_5_LIGHT"
+				"foreground": "COLOR_3_LIGHTER"
 			}
 		},
 		{
 			"scope": "comment.line.double-slash,punctuation.definition.comment.scss,comment.line.scss",
 			"settings": {
-				"foreground": "COLOR_5_DARKER"
+				"foreground": "COLOR_4_LIGHT"
 			}
 		},
 		{
 			"scope": "punctuation.definition.comment.html",
 			"settings": {
-				"foreground": "COLOR_2"
+				"foreground": "COLOR_5_LIGHTER"
 			}
 		},
 		{
 			"scope": "comment.block.html",
 			"settings": {
-				"foreground": "COLOR_SECONDARY_DARKER"
+				"foreground": "COLOR_5_DARKER"
 			}
 		},
 		{
 			"scope": "variable.language.this,storage.type.function.js,keyword.control.flow.js,support.variable.dom.js,support.variable.property.dom.js,support.function.promise.ts,keyword.control.flow.ts",
 			"settings": {
-				"foreground": "COLOR_3"
+				"foreground": "COLOR_4"
 			}
 		},
 		{
 			"scope": "constant.language.null.js",
 			"settings": {
 				"fontStyle":	"bold",
-				"foreground": "COLOR_3_DARK"
-			}
-		},
-		{
-			"scope": "constant.language.boolean,constant.language.boolean.false.ts,constant.language.boolean.true.ts",
-			"settings": {
-				"fontStyle":	"bold",
-				"foreground": "COLOR_0_DARKER"
+				"foreground": "COLOR_5_DARK"
 			}
 		},
 		{

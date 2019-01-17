@@ -1,28 +1,33 @@
 import {  createPaletteTheme } from './createPaletteTheme'
 
 const base = '/home/s/repos/y/niketa-theme/palettes'
-const filePath = `${ base }/niketa-yellow.json`
+const filePath = `${ base }/more.json`
+// const filePath = `${ base }/anime.json`
+// const filePath = `${ base }/niketa-yellow.json`
 
 
 test('palette', () => {
+  
   const rules = {
     COLOR_BACK: ["#fafafa","#f9f6f1"],
-    COLOR_SECONDARY: ["#DEE5E0", "#ede8e1"],
-    COLOR_0: ["#aa769b", "#440b0b"],
-    COLOR_1: "#85483D",
-    COLOR_2: ["#F26153", "#d33682"],
-    COLOR_3: ["#BA8858", "#c2aa4d"],
-    COLOR_4: ["#21A68D","#00AFD6"],
-    COLOR_5: "#5E7A5E",
+    COLOR_SECONDARY: ["#ede8e1","#eaeaea"],
+    COLOR_0: ["#DF897A", "#DF697A"],
+    // COLOR_0: ["#aa769b", "#DF897A"],
+    COLOR_1: ["#105e62","#13446F"],
+    COLOR_2: ["#8fbbaf","#69779b"],
+    COLOR_3: ["#BA8858", "#b5525c"],
+    // COLOR_4: ["#34a7b2", "#1467b2"],
+    COLOR_4: ["#3CD9BC","#34a7b2"],
+    COLOR_5: ["#DE1758", "#d33682"],
   }
-  
+
   createPaletteTheme({
     filePath,
     rules,
     levels: 12,
     rate: 0.1,
-    publishName: 'angry.homer',
-    publishIndex: 7
+    publishName: 'angry.neighbour',
+    publishIndex: 9
   })
 })
 
