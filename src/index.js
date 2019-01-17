@@ -132,7 +132,6 @@ function singlePaletteTheme({filePath, rules, nameIndex}){
     content = applyPaletteBee(content, paletteRule)
   })
   savePaletteThemeBee(content, nameIndex)
-  // writeFileSync(`${__dirname}/palette.json`, content)
 }
 
 export function createPaletteTheme({

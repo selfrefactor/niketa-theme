@@ -4,7 +4,7 @@
   "colors": {
     "editor.background": "#ebe4d0",
     "activityBar.background": "#e8e3ce",
-    "editor.selectionBackground": "#ffe0e0",
+    "editor.selectionBackground": "#ffdbe0",
     "editor.lineHighlightBackground": "#e8e3ce",
     "editorBracketMatch.background": "#6CB8BF",
     "editorBracketMatch.border": "#915858",
@@ -15,10 +15,11 @@
     "scrollbarSlider.hoverBackground": "#CFC498",
     "sideBar.background": "#DBD4B3",
     "statusBar.background": "#DBD4B3",
-    "tab.activeForeground": "COLOR_SECAONDARY_DARK",
-    "tab.border": "#F5F2E9",
-    "tab.inactiveBackground": "#FFFFFF",
-    "tab.inactiveForeground": "#FFFFFF"
+    "tab.activeForeground": "#0D6F61",
+    "tab.activeBackground": "#CFC498",
+    "tab.inactiveForeground": "#0D6F61",
+    "tab.inactiveBackground": "#DBD4B3",
+    "tab.border": "#DBD4B3"
   },
   "tokenColors": [
     {

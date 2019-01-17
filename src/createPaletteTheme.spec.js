@@ -17,6 +17,10 @@ test('palette with predefined colors', () => {
       "SECONDARY_0",
       "SECONDARY_2",
     ],
+    COLOR_SELECTION: [
+      "SELECTION_0",
+      "SELECTION_1",
+    ],
     COLOR_0: [
       "DARK_RED_0",
       "PINK_1",
@@ -49,10 +53,11 @@ test('palette with predefined colors', () => {
     rules,
     levels: 12,
     rate: 0.09,
-    publishName: 'brave.whisky',
-    publishIndex: 6
+    // publishName: 'brave.whisky',
+    // publishIndex: 6
   })
 })
+
 
 test.skip('palette', () => {
   

@@ -4,7 +4,7 @@
 	"colors": {
 		"editor.background": "COLOR_BACK",
 		"activityBar.background": "COLOR_SECONDARY",
-		"editor.selectionBackground": "#ffe0e0",
+		"editor.selectionBackground": "COLOR_SELECTION",
 		"editor.lineHighlightBackground": "COLOR_SECONDARY",
 		"editorBracketMatch.background": "COLOR_5_DARKER",
 		"editorBracketMatch.border": "COLOR_4_DARKER",
@@ -15,10 +15,11 @@
 		"scrollbarSlider.hoverBackground": "COLOR_SECONDARY_DARKER",
 		"sideBar.background": "COLOR_SECONDARY_DARK",
 		"statusBar.background": "COLOR_SECONDARY_DARK", 
-		"tab.activeForeground":"COLOR_SECAONDARY_DARK",
-		"tab.border": "COLOR_SECONDARY_LIGHT",
-		"tab.inactiveBackground":"COLOR_SECONDARY_LIGHTER",
-		"tab.inactiveForeground":"COLOR_BACK_LIGHTER"
+		"tab.activeForeground":"COLOR_1_LIGHT",
+		"tab.activeBackground":"COLOR_SECONDARY_DARKER",
+		"tab.inactiveForeground":"COLOR_1_LIGHT",
+		"tab.inactiveBackground":"COLOR_SECONDARY_DARK",
+		"tab.border": "COLOR_SECONDARY_DARK"
 	},
 	"tokenColors": [
 		{
