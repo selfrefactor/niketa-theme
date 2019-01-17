@@ -20,7 +20,7 @@ Angry Homer
 
 Angry Neighbour
 
-![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/angry.neihgbour.png?raw=true)
+![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/angry.neighbour.png?raw=true)
 
 Brave Bat
 
