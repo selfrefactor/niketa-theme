@@ -12,7 +12,7 @@ const rules = {
   'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
 }
 
-test('palette', () => {
+test.skip('palette', () => {
   const singleColor = {
     COLOR_BACK: "#ede8e1",
     COLOR_SECONDARY: "#ccd5d1",

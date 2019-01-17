@@ -2,23 +2,23 @@
   "name": "BaboonAnt",
   "type": "light",
   "colors": {
-    "activityBar.background": "#DEE5E0",
-    "editor.background": "#fafafa",
-    "editor.selectionBackground": "#EDEDED",
+    "activityBar.background": "#dee5e0",
+    "editor.background": "#ede8e1",
+    "editor.selectionBackground": "#E4DDD3",
     "editor.lineHighlightBackground": "#D1DBD4",
-    "editorBracketMatch.background": "#BA8858",
-    "editorBracketMatch.border": "#21A68D",
+    "editorBracketMatch.background": "#ba8858",
+    "editorBracketMatch.border": "#21a68d",
     "editorGroupHeader.tabsBackground": "#EBEFEC",
-    "editorGutter.background": "#fafafa",
-    "editorLineNumber.foreground": "#E1E1E1",
-    "scrollbarSlider.background": "#DEE5E0",
+    "editorGutter.background": "#ede8e1",
+    "editorLineNumber.foreground": "#DCD2C4",
+    "scrollbarSlider.background": "#dee5e0",
     "scrollbarSlider.hoverBackground": "#AF7A48",
-    "sideBar.background": "#DEE5E0",
-    "statusBar.background": "#DEE5E0",
-    "tab.activeForeground": "#21A68D",
-    "tab.border": "#DEE5E0",
-    "tab.inactiveBackground": "#DEE5E0",
-    "tab.inactiveForeground": "#21A68D"
+    "sideBar.background": "#dee5e0",
+    "statusBar.background": "#dee5e0",
+    "tab.activeForeground": "#21a68d",
+    "tab.border": "#dee5e0",
+    "tab.inactiveBackground": "#dee5e0",
+    "tab.inactiveForeground": "#21a68d"
   },
   "tokenColors": [
     {
@@ -32,14 +32,14 @@
     {
       "scope": "entity.name.function.method",
       "settings": {
-        "foreground": "#BA8858"
+        "foreground": "#ba8858"
       }
     },
     {
       "scope": "entity.name.function,support.function.dom.js",
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#21A68D"
+        "foreground": "#21a68d"
       }
     },
     {
@@ -54,7 +54,7 @@
       "scope": "constant.language",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#BA8858"
+        "foreground": "#ba8858"
       }
     },
     {
@@ -69,21 +69,21 @@
       "name": "Library functions",
       "scope": "support.function",
       "settings": {
-        "foreground": "#21A68D"
+        "foreground": "#21a68d"
       }
     },
     {
       "name": "Variables",
       "scope": "variable",
       "settings": {
-        "foreground": "#BA8858"
+        "foreground": "#ba8858"
       }
     },
     {
       "name": "Keywords",
       "scope": "keyword",
       "settings": {
-        "foreground": "#85483D"
+        "foreground": "#85483d"
       }
     },
     {
@@ -93,19 +93,19 @@
         "constant.other"
       ],
       "settings": {
-        "foreground": "#BA8858"
+        "foreground": "#ba8858"
       }
     },
     {
       "scope": "invalid",
       "settings": {
-        "foreground": "#5E7A5E"
+        "foreground": "#5e7a5e"
       }
     },
     {
       "scope": "variable.other.readwrite,variable.other.readwrite.js,variable.other.readwrite.ts,variable.other.readwrite.tsx,variable.other.object.js,punctuation.accessor.js",
       "settings": {
-        "foreground": "#F26153"
+        "foreground": "#f26153"
       }
     },
     {
@@ -117,7 +117,7 @@
     {
       "scope": "keyword.control.at-rule.import.scss,keyword.control.module.js,keyword.operator.accessor",
       "settings": {
-        "foreground": "#5E7A5E"
+        "foreground": "#5e7a5e"
       }
     },
     {
@@ -177,7 +177,7 @@
     {
       "scope": "punctuation.definition.comment.html",
       "settings": {
-        "foreground": "#F26153"
+        "foreground": "#f26153"
       }
     },
     {
@@ -189,7 +189,7 @@
     {
       "scope": "variable.language.this,storage.type.function.js,keyword.control.flow.js,support.variable.dom.js,support.variable.property.dom.js,support.function.promise.ts,keyword.control.flow.ts",
       "settings": {
-        "foreground": "#BA8858"
+        "foreground": "#ba8858"
       }
     },
     {
@@ -235,7 +235,7 @@
       "scope": "support.type.property-name.scss,support.type.property-name.css",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#BA8858"
+        "foreground": "#ba8858"
       }
     },
     {

@@ -138,8 +138,6 @@ function singlePaletteTheme({filePath, rules, nameIndex}){
 export function createPaletteTheme({
   filePath,
   rules,
-  random,
-  publish,
   boring,
   levels,
 }){
@@ -149,13 +147,6 @@ export function createPaletteTheme({
     filePath,
     rules,
     nameIndex: 0
-  })
-
-  const originTheme = readJsonAnt(filePath)
-  const rulesWithColors = getRulesWithColors({
-    random,
-    levels,
-    rules,
   })
 }
 
