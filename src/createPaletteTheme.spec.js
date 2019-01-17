@@ -20,14 +20,13 @@ test('palette', () => {
     COLOR_5: ["#23a393", "#587850"],
   }
 
-
   createPaletteTheme({
     filePath,
     rules,
     levels: 12,
     rate: 0.09,
-    // publishName: 'brave.bat',
-    // publishIndex: 6
+    publishName: 'brave.bat',
+    publishIndex: 6
   })
 })
 
