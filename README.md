@@ -1,8 +1,6 @@
 # Niketa
 
-Light VSCode Themes
-
-> Huge collection of light themes
+Light VSCode Themes with internal theme generator(which can be reused)
 
 ## Screens
 
