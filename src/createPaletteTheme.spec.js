@@ -10,40 +10,40 @@ test('palette with predefined colors', () => {
   
   const rules = {
     COLOR_BACK: [
-      "BACK_2",
-      "BACK_5",
+      "BACK_1",
+      "BACK_9",
     ],
     COLOR_SECONDARY: [
-      "SECONDARY_0",
       "SECONDARY_2",
+      "SECONDARY_1",
     ],
     COLOR_SELECTION: [
       "SELECTION_0",
       "SELECTION_1",
     ],
     COLOR_0: [
-      "DARK_RED_0",
-      "PINK_1",
+      "DARK_RED_4",
+      "DARK_PINK_3",
     ],
     COLOR_1: [
-      "DARK_GREEN_0",
-      "RANDOM_1",
+      "DARK_3",
+      "TEAL_4",
     ], 
     COLOR_2: [
-      "GREEN_2",
+      "GREY_0",
       "PINK_3",
     ], 
     COLOR_3: [
       "NAVY_0",
-      "DARK_GREEN_2",
+      "NAVY_5",
     ], 
     COLOR_4: [
-      "RANDOM_0",
-      "BROWN_0",
+      "ORANGE_0",
+      "DARK_BROWN_1",
     ], 
     COLOR_5: [
-      "LIGHT_BLUE_1",
-      "GREEN_0",
+      "GREEN_2",
+      "DARK_GREEN_8",
     ], 
   }
 
@@ -53,9 +53,9 @@ test('palette with predefined colors', () => {
     filePath,
     rules,
     levels: 12,
-    rate: 0.09,
-    // publishName: 'brave.whisky',
-    // publishIndex: 6
+    rate: 0.07,
+    publishName: 'brave.brother',
+    publishIndex: 8
   })
 })
 
