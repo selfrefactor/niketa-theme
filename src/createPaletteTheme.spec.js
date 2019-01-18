@@ -6,13 +6,20 @@ const filePath = `${ base }/more.json`
 // const filePath = `${ base }/niketa-yellow.json`
 
 
+// TODO
+// ability to pass blue.light.1 instead of BLUE_LIGHT_1
+// ============================================
 test('palette with predefined colors', () => {
   
   const rules = {
     COLOR_BACK: [
-      "BACK_1",
-      "BACK_9",
+      "BACK_11",
+      "SECONDARY_2",
     ],
+    // COLOR_BACK: [
+    //   "BACK_1",
+    //   "BACK_4",
+    // ],
     COLOR_SECONDARY: [
       "SECONDARY_2",
       "SECONDARY_1",
@@ -22,28 +29,28 @@ test('palette with predefined colors', () => {
       "SELECTION_1",
     ],
     COLOR_0: [
-      "DARK_RED_4",
-      "DARK_PINK_3",
-    ],
-    COLOR_1: [
-      "DARK_3",
-      "TEAL_4",
+      "DARK_RED_1",
+      "LIGHT_RED_3",
     ], 
+    COLOR_1: [
+      "BLUE_2",
+      "DARK_BLUE_4",
+    ],
     COLOR_2: [
-      "GREY_0",
-      "PINK_3",
+      "ORANGE_6",
+      "LIGHT_PINK_2",
     ], 
     COLOR_3: [
-      "NAVY_0",
-      "NAVY_5",
+      "PINK_4",
+      "DARK_PINK_3",
     ], 
     COLOR_4: [
-      "ORANGE_0",
-      "DARK_BROWN_1",
+      "DARK_GREEM_0",
+      "GREEN_0",
     ], 
     COLOR_5: [
-      "GREEN_2",
-      "DARK_GREEN_8",
+      "ORANGE_0",
+      "ORANGE_6",
     ], 
   }
 
@@ -53,9 +60,9 @@ test('palette with predefined colors', () => {
     filePath,
     rules,
     levels: 12,
-    rate: 0.07,
-    publishName: 'brave.brother',
-    publishIndex: 8
+    rate: 0.05,
+    publishName: 'brave.mistery',
+    publishIndex: 3
   })
 })
 
