@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -71,6 +71,11 @@
         "label": "BraveMistery",
         "uiTheme": "vs",
         "path": "./themes/BraveMistery.json"
+      },
+      {
+        "label": "CircusPeople",
+        "uiTheme": "vs",
+        "path": "./themes/CircusPeople.json"
       }
     ]
   },

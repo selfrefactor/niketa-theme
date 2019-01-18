@@ -14,15 +14,15 @@ test('palette with predefined colors', () => {
   const rules = {
     COLOR_BACK: [
       "BACK_11",
-      "SECONDARY_2",
+      "SECONDARY_0",
     ],
     // COLOR_BACK: [
     //   "BACK_1",
     //   "BACK_4",
     // ],
     COLOR_SECONDARY: [
+      "SECONDARY_3",
       "SECONDARY_2",
-      "SECONDARY_1",
     ],
     COLOR_SELECTION: [
       "SELECTION_0",
@@ -34,35 +34,35 @@ test('palette with predefined colors', () => {
     ], 
     COLOR_1: [
       "BLUE_2",
-      "DARK_BLUE_4",
+      "DARK_3",
     ],
     COLOR_2: [
-      "ORANGE_6",
-      "LIGHT_PINK_2",
+      "BROWN_1",
+      "LIGHT_PINK_0",
     ], 
     COLOR_3: [
       "PINK_4",
       "DARK_PINK_3",
     ], 
     COLOR_4: [
-      "DARK_GREEM_0",
+      "DARK_GREEN_8",
       "GREEN_0",
     ], 
     COLOR_5: [
-      "ORANGE_0",
-      "ORANGE_6",
+      "LIGHT_BROWN_0",
+      "LIGHT_RED_0",
     ], 
   }
 
   createPaletteTheme({
-    showList:true,
+    // showList:true,
     complex: true,
     filePath,
     rules,
     levels: 12,
     rate: 0.05,
-    publishName: 'brave.mistery',
-    publishIndex: 3
+    publishName: 'circus.people',
+    publishIndex: 4
   })
 })
 

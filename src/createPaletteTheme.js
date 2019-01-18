@@ -6,6 +6,7 @@ import { publishThemeBee } from './bees/publishTheme'
 import { savePaletteThemeBee } from './bees/saveTheme'
 import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { getGradientBee } from './bees/getGradient'
+import { constantCase } from 'string-fn'
 import colors from '../colors.json'
 
 function createPaletteRule(prop, colorBase, rate){
@@ -166,7 +167,7 @@ function complexMode({
       applyPredefinedColors(to),
     ])
   )(rules)
-
+  
   return gradientMode({
     filePath, 
     rules: rulesWithColors, 
