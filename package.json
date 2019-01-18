@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
-  "version": "2.6.0",
+  "version": "2.5.1",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -28,39 +28,64 @@
   "contributes": {
     "themes": [
       {
-        "label": "CircusLove",
+        "label": "BaboonAnt",
         "uiTheme": "vs",
-        "path": "./themes/CircusLove.json"
+        "path": "./baboon/BaboonAnt.json"
       },
       {
-        "label": "AngryCat",
+        "label": "BaboonBee",
         "uiTheme": "vs",
-        "path": "./themes/AngryCat.json"
+        "path": "./baboon/BaboonBee.json"
       },
       {
-        "label": "AngryHomer",
+        "label": "BaboonCell",
         "uiTheme": "vs",
-        "path": "./themes/AngryHomer.json"
+        "path": "./baboon/BaboonCell.json"
       },
       {
-        "label": "AngryNeighbour",
+        "label": "BaboonDeep",
         "uiTheme": "vs",
-        "path": "./themes/AngryNeighbour.json"
+        "path": "./baboon/BaboonDeep.json"
       },
       {
-        "label": "AngryDog",
+        "label": "BaboonFigure",
         "uiTheme": "vs",
-        "path": "./themes/AngryDog.json"
+        "path": "./baboon/BaboonFigure.json"
       },
       {
-        "label": "BraveBat",
+        "label": "BaboonGlamour",
         "uiTheme": "vs",
-        "path": "./themes/BraveBat.json"
+        "path": "./baboon/BaboonGlamour.json"
       },
       {
-        "label": "BraveWhisky",
+        "label": "BaboonHit",
         "uiTheme": "vs",
-        "path": "./themes/BraveWhisky.json"
+        "path": "./baboon/BaboonHit.json"
+      },
+      {
+        "label": "BaboonJessy",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonJessy.json"
+      },
+      {
+        "label": "BaboonQuote",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonQuote.json"
+      },
+      {
+        "label": "BaboonVesi",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonVesi.json"
+      },
+      {
+        "label": "BaboonTrauma",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonTrauma.json"
+      },
+      {
+        "label": "BaboonSalome",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonSalome.json"
       }
     ]
   },

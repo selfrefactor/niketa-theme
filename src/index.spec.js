@@ -1,10 +1,8 @@
-import { createTheme, createPaletteTheme } from './'
+import { createTheme } from './'
 import { createRulesBee } from './bees/createRules'
 
 const base = '/home/s/repos/y/niketa-theme/bases'
-const palette = '/home/s/repos/y/niketa-theme/palettes'
-const filePath = `${ base }/niketa-yellow.json`
-const filePathPalette = `${ palette }/niketa-yellow.json`
+const filePath = `${ base }/BraveWhisky.json`
 const rules = {
   'editor.background'                   : [ '#C9DDE9', '#DBE3D6' ],
   'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
@@ -12,86 +10,56 @@ const rules = {
   'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
 }
 
-test.skip('palette', () => {
-  const singleColor = {
-    COLOR_BACK: "#ede8e1",
-    COLOR_SECONDARY: "#ccd5d1",
-    COLOR_0: "#aa769b",
-    COLOR_1: "#9aa61b",
-    COLOR_2: "#1a769b",
-    COLOR_3: "#5a245f",
-    COLOR_4: "#fa5989",
-    COLOR_5: "#1fa654",
-  }
-  
-  createPaletteTheme({
-    filePath: filePathPalette,
-    rules   : singleColor,
-    levels  : 12,
-    publishName: 'angry.cat'
-  })
-})
-
 test.skip('createTheme', () => {
   const singleColorBase = {
-    "activityBar.background": ["#ece3e7",'#e9fbe2'],
-		"activityBar.foreground": "#076b6b",
-		"activityBarBadge.background": "#88385b",
-		"badge.background": "#64b6b6",
-		"button.background": "#88385b",
-		"diffEditor.insertedTextBackground": "#00ffbf25",
-		"diffEditor.removedTextBackground": "#ff000d17",
-		"dropdown.background": "#ffffff",
-		"dropdown.foreground": "#076b6b",
-		"dropdown.listBackground": "#ffffff",
-		"editor.background": "#fffdfe",
-		"editor.findMatchBackground": "#fffd7a",
-		"editor.findMatchHighlightBackground": "#fffd7a94",
-		"editor.findRangeHighlightBackground": "#fffd7a41",
-		"editor.foreground": "#4b1034",
+    "editor.background": ["#f2ede0","#faede0"],
+    "activityBar.background": "#e3e4d7",
+    "editor.selectionBackground": "#ffe0e0",
+    "editor.lineHighlightBackground": "#e3e4d7",
+    "editorBracketMatch.background": "#55978B",
+    "editorBracketMatch.border": "#7C3939",
+    "editorGroupHeader.tabsBackground": "#E6DCC2",
+    "editorGutter.background": "#f2ede0",
+    "editorLineNumber.foreground": "#C2C4A7",
+    "scrollbarSlider.background": "#e3e4d7",
+    "scrollbarSlider.hoverBackground": "#C2C4A7",
+    "sideBar.background": "#D2D4BF",
+    "statusBar.background": "#D2D4BF",
+    "tab.activeForeground": "#4E5F52",
+    "tab.activeBackground": "#C2C4A7",
+    "tab.inactiveForeground": "#4E5F52",
+    "tab.inactiveBackground": "#D2D4BF",
+    "tab.border": "#D2D4BF"
   }
   const singleColor = createRulesBee(singleColorBase)
 
   createTheme({
-    // random  : {},
-    // random : {
-    //   changes  : 1,
-    //   distance : 3,
-    //   indexes  : [ 0,1 ],
-    // },
+    random : {
+      changes  : 1,
+      distance : 5,
+      indexes  : [ 0,1 ],
+    },
     filePath,
     rules   : singleColor,
     levels  : 12,
-    publish : {},
-    // publish : {
-    //   index : 0,
-    //   name  : 'curious.sea',
-    // },
+    // publishName : '',
+    // publishIndex : 5,
   })
 })
 
-test.skip('createTheme', () => {
+test('createTheme', () => {
   const result = createTheme({
-    // random : {
-    //   changes  : 1,
-    //   distance : 6,
-    //   indexes  : [ 0, 1 ],
-    // },
-    random  : {},
+    random : {
+      changes  : 1,
+      distance : 6,
+      indexes  : [ 0, 1 ],
+    },
     filePath,
     rules,
     levels  : 12,
-    // publish : {},
-    publish : {
-      index : 8,
-      name  : 'aqua.shake',
-    },
+    // publishName : '',
+    // publishIndex : 5,
   })
 
   console.log({ result })
 })
-
-// const singleColorBasex = {
-//   'editor.background'                   : [ '#e9fbe2', '#d6d6c6' ],
-//   // "editor.background": ["#ede8e1","#e7dfb1"],
-// }
