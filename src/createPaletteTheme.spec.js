@@ -48,6 +48,7 @@ test('palette with predefined colors', () => {
   }
 
   createPaletteTheme({
+    showList:true,
     complex: true,
     filePath,
     rules,

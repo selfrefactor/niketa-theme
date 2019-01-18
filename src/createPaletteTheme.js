@@ -1,5 +1,6 @@
 import {  ok, range, replace, map, init, last } from 'rambdax'
 import { changeColorAnt } from './ants/changeColor'
+import { listImportedColorsAnt } from './ants/listImportedColors'
 import { readFileSync } from 'fs-extra'
 import { publishThemeBee } from './bees/publishTheme'
 import { savePaletteThemeBee } from './bees/saveTheme'
@@ -175,6 +176,7 @@ function complexMode({
 }
 
 export function createPaletteTheme({
+  showList,
   complex,
   filePath,
   rules,
@@ -182,8 +184,9 @@ export function createPaletteTheme({
   publishIndex = 0
 }){
   ok(filePath, rules)(String, Object)
-  
+  if(showList) listImportedColorsAnt().forEach(console.log)
   if(publishName) return publishThemeBee(publishName, publishIndex)
+  
   if(complex) return complexMode(arguments[0])
   if(!isGradientMode(rules)) return simpleMode(arguments[0])
   
