@@ -97,7 +97,7 @@
     "jest": "^23.6.0",
     "parcel-bundler": "^1.10.3",
     "rambdax": "^1.6.3",
-    "string-fn": "^1.8.0"
+    "string-fn": "^2.0.0"
   },
   "commitMessage": {
     "feature": [
@@ -105,6 +105,6 @@
       "build",
       "bee"
     ],
-    "workInProgress": "allow dot case"
+    "workInProgress": ""
   }
 }
