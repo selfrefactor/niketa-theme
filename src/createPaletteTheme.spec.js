@@ -12,21 +12,21 @@ const filePath = `${ base }/more.json`
 test('palette with predefined colors', () => {
   
   const rules = {
-    COLOR_BACK: [
-      "BACK_11",
-      "SECONDARY_0",
-    ],
     // COLOR_BACK: [
-    //   "BACK_1",
-    //   "BACK_4",
+    //   "BACK_11",
+    //   "SECONDARY_0",
     // ],
+    COLOR_BACK: [
+      "BACK_4",
+      "BACK_7",
+    ],
     COLOR_SECONDARY: [
       "SECONDARY_3",
       "SECONDARY_2",
     ],
     COLOR_SELECTION: [
-      "SELECTION_0",
       "SELECTION_1",
+      "SELECTION_0",
     ],
     COLOR_0: [
       "DARK_RED_1",
@@ -34,10 +34,10 @@ test('palette with predefined colors', () => {
     ], 
     COLOR_1: [
       "BLUE_2",
-      "DARK_3",
+      "grey.4",
     ],
     COLOR_2: [
-      "BROWN_1",
+      "navy.2",
       "LIGHT_PINK_0",
     ], 
     COLOR_3: [
@@ -60,9 +60,9 @@ test('palette with predefined colors', () => {
     filePath,
     rules,
     levels: 12,
-    rate: 0.05,
-    publishName: 'circus.people',
-    publishIndex: 4
+    rate: 0.08,
+    // publishName: 'circus.people',
+    // publishIndex: 4
   })
 })
 

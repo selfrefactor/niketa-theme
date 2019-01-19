@@ -6,7 +6,6 @@ import { publishThemeBee } from './bees/publishTheme'
 import { savePaletteThemeBee } from './bees/saveTheme'
 import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { getGradientBee } from './bees/getGradient'
-import { constantCase } from 'string-fn'
 import colors from '../colors.json'
 
 function createPaletteRule(prop, colorBase, rate){
@@ -153,6 +152,18 @@ function applyPredefinedColors(tag){
   return appliableColor
 }
 
+function normalize(rules){
+  const willReturn = {}
+  map(
+    (x, key) => willReturn[key] = [
+      replace('.', '_', x[0]).toUpperCase(),
+      replace('.', '_', x[1]).toUpperCase(),
+    ]
+  )(rules)
+
+  return willReturn
+}
+
 // Rules of type COLOR_1: ['DARK_1', 'BLUE_7']
 // ============================================
 function complexMode({
@@ -166,7 +177,7 @@ function complexMode({
       applyPredefinedColors(from),
       applyPredefinedColors(to),
     ])
-  )(rules)
+  )(normalize(rules))
   
   return gradientMode({
     filePath, 
