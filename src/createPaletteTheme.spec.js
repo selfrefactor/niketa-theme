@@ -1,72 +1,60 @@
 import {  createPaletteTheme } from './createPaletteTheme'
 
 const base = '/home/s/repos/y/niketa-theme/palettes'
-const filePath = `${ base }/more.json`
-// const filePath = `${ base }/anime.json`
-// const filePath = `${ base }/niketa-yellow.json`
+const filePath = `${ base }/even.json`
 
 
-// TODO
-// ability to pass blue.light.1 instead of BLUE_LIGHT_1
-// ============================================
 test('palette with predefined colors', () => {
-  
   const rules = {
-    // COLOR_BACK: [
-    //   "BACK_11",
-    //   "SECONDARY_0",
-    // ],
     COLOR_BACK: [
+      "BACK_8",
       "BACK_0",
-      "BACK_6",
     ],
     COLOR_SECONDARY: [
-      "SECONDARY_3",
       "SECONDARY_2",
+      "SECONDARY_1",
     ],
     COLOR_SELECTION: [
       "SELECTION_0",
       "SELECTION_2",
     ],
-    COLOR_1: [
-      "orange.0",
-      // "dark.purple.0",
-      // "brown.6",
-      "dark.brown.0",
-    ], 
     COLOR_0: [
-      "brown.5",
-      // "dark.blue.3",
-      "light.red.3",
+      "teal.4",
+      "dark.red.5",
     ],
-    COLOR_3: [
-      "dark.red.4",
-      "orange.2",
-      // "ochra.0",
+    COLOR_1: [
+      "orange.6",
+      "purple.2",
     ], 
     COLOR_2: [
-      "blue.0",
-      "teal.4",
-    ], 
-    COLOR_5: [
-      "dark.green.8",
+      "teal.3",
       "dark.pink.3",
     ], 
+    COLOR_3: [
+      "green.5",
+      "teal.4",
+    ], 
     COLOR_4: [
-      "brown.0",
-      "red.0",
+      "dark.3",
+      "dark.green.4",
+    ], 
+    COLOR_5: [
+      "pink.4",
+      "light.blue.5",
     ], 
   }
 
+  
   createPaletteTheme({
-    showList:true,
+    // showList:true,
     complex: true,
     filePath,
     rules,
     levels:12,
-    rate: 0.1,
-    publishName: 'advanced.mice',
-    publishIndex: 3
+    rate: 0.025,
+    // publishName: 'circus.love',
+    // publishName: 'advanced.mice',
+    // publishIndex: 8
   })
 })
 
