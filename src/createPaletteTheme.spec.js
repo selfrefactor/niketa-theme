@@ -3,7 +3,6 @@ import {  createPaletteTheme } from './createPaletteTheme'
 const base = '/home/s/repos/y/niketa-theme/palettes'
 const filePath = `${ base }/even.json`
 
-
 test('palette with predefined colors', () => {
   const rules = {
     COLOR_BACK: [
@@ -19,34 +18,34 @@ test('palette with predefined colors', () => {
       "SELECTION_2",
     ],
     COLOR_0: [
-      "teal.4",
+      "dark.red.5",
       "dark.red.5",
     ],
     COLOR_1: [
-      "orange.6",
-      "purple.2",
+      "yellow.1",
+      "yellow.1",
     ], 
     COLOR_2: [
-      "teal.3",
-      "dark.pink.3",
+      "dark.blue.2",
+      "dark.blue.2"
     ], 
     COLOR_3: [
       "green.5",
-      "teal.4",
+      "green.5",
     ], 
     COLOR_4: [
-      "dark.3",
-      "dark.green.4",
+      "dark.purple.0",
+      "dark.purple.0",
     ], 
     COLOR_5: [
-      "pink.4",
-      "light.blue.5",
+      "grey.3",
+      "grey.3",
     ], 
   }
 
   
   createPaletteTheme({
-    // showList:true,
+    showList:true,
     complex: true,
     filePath,
     rules,
@@ -61,7 +60,6 @@ test('palette with predefined colors', () => {
 test.skip('palette', () => {
   
   const rules = {
-    // COLOR_BACK: "#fafafa",
     COLOR_BACK: ["#fafafa","#f9f6f1"],
     COLOR_SECONDARY: ["#ede8e1","#eae3cd"],
     COLOR_0: ["#d52484","#d52484"],
@@ -77,8 +75,8 @@ test.skip('palette', () => {
     rules,
     levels: 12,
     rate: 0.09,
-    publishName: 'brave.bat',
-    publishIndex: 6
+    // publishName: 'brave.bat',
+    // publishIndex: 6
   })
 })
 
