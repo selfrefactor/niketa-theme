@@ -17,55 +17,54 @@ test('palette with predefined colors', () => {
     //   "SECONDARY_0",
     // ],
     COLOR_BACK: [
-      "BACK_4",
+      "BACK_5",
       "BACK_7",
     ],
     COLOR_SECONDARY: [
+      "SECONDARY_0",
       "SECONDARY_3",
-      "SECONDARY_2",
     ],
     COLOR_SELECTION: [
       "SELECTION_1",
       "SELECTION_0",
     ],
     COLOR_0: [
-      "DARK_RED_1",
-      "LIGHT_RED_3",
+      "dark.pink.3",
+      "grey.4",
     ], 
     COLOR_1: [
-      "BLUE_2",
-      "grey.4",
+      "pink.1",
+      "dark.purple.2",
     ],
     COLOR_2: [
-      "navy.2",
-      "LIGHT_PINK_0",
+      "orange.2",
+      "ochra.0",
     ], 
     COLOR_3: [
-      "PINK_4",
-      "DARK_PINK_3",
+      "brown.0",
+      "teal.2",
     ], 
     COLOR_4: [
-      "DARK_GREEN_8",
-      "GREEN_0",
+      "dark.blue.4",
+      "dark.red.5",
     ], 
     COLOR_5: [
-      "LIGHT_BROWN_0",
-      "LIGHT_RED_0",
+      "teal.5",
+      "light.green.2",
     ], 
   }
 
   createPaletteTheme({
-    // showList:true,
+    showList:true,
     complex: true,
     filePath,
     rules,
     levels: 12,
-    rate: 0.08,
-    // publishName: 'circus.people',
-    // publishIndex: 4
+    rate: 0.05,
+    publishName: 'circus.habits',
+    publishIndex: 6
   })
 })
-
 
 test.skip('palette', () => {
   

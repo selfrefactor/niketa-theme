@@ -14,5 +14,6 @@ export function listImportedColorsAnt(){
       `${key} - ${len - 1}`
     )
   })
-  return holder
+
+  return holder.sort((a,b) => a > b ? 1 : -1)
 }

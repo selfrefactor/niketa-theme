@@ -156,8 +156,8 @@ function normalize(rules){
   const willReturn = {}
   map(
     (x, key) => willReturn[key] = [
-      replace('.', '_', x[0]).toUpperCase(),
-      replace('.', '_', x[1]).toUpperCase(),
+      replace(/\./g, '_', x[0]).toUpperCase(),
+      replace(/\./g, '_', x[1]).toUpperCase(),
     ]
   )(rules)
 
@@ -196,7 +196,7 @@ export function createPaletteTheme({
   publishIndex = 0
 }){
   ok(filePath, rules)(String, Object)
-  if(showList) listImportedColorsAnt().forEach(console.log)
+  if(showList) console.log(listImportedColorsAnt())
   if(publishName) return publishThemeBee(publishName, publishIndex)
   
   if(complex) return complexMode(arguments[0])
