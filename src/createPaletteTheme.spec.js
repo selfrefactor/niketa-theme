@@ -17,40 +17,44 @@ test('palette with predefined colors', () => {
     //   "SECONDARY_0",
     // ],
     COLOR_BACK: [
-      "BACK_5",
-      "BACK_7",
+      "BACK_0",
+      "BACK_6",
     ],
     COLOR_SECONDARY: [
-      "SECONDARY_0",
       "SECONDARY_3",
+      "SECONDARY_2",
     ],
     COLOR_SELECTION: [
-      "SELECTION_1",
       "SELECTION_0",
+      "SELECTION_2",
     ],
-    COLOR_0: [
-      "dark.pink.3",
-      "grey.4",
-    ], 
     COLOR_1: [
-      "pink.1",
-      "dark.purple.2",
+      "orange.0",
+      // "dark.purple.0",
+      // "brown.6",
+      "dark.brown.0",
+    ], 
+    COLOR_0: [
+      "brown.5",
+      // "dark.blue.3",
+      "light.red.3",
     ],
-    COLOR_2: [
-      "orange.2",
-      "ochra.0",
-    ], 
     COLOR_3: [
-      "brown.0",
-      "teal.2",
+      "dark.red.4",
+      "orange.2",
+      // "ochra.0",
     ], 
-    COLOR_4: [
-      "dark.blue.4",
-      "dark.red.5",
+    COLOR_2: [
+      "blue.0",
+      "teal.4",
     ], 
     COLOR_5: [
-      "teal.5",
-      "light.green.2",
+      "dark.green.8",
+      "dark.pink.3",
+    ], 
+    COLOR_4: [
+      "brown.0",
+      "red.0",
     ], 
   }
 
@@ -59,10 +63,10 @@ test('palette with predefined colors', () => {
     complex: true,
     filePath,
     rules,
-    levels: 12,
-    rate: 0.05,
-    publishName: 'circus.habits',
-    publishIndex: 6
+    levels:12,
+    rate: 0.1,
+    publishName: 'advanced.mice',
+    publishIndex: 3
   })
 })
 

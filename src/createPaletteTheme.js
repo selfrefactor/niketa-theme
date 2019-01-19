@@ -123,7 +123,7 @@ function gradientMode({
   filePath,
   rules,
   rate,
-  levels,
+  levels = 12,
 }){
   const gradientRules = createGradientRules(rules)
   const rulesWithGradients = getRulesWithGradients(gradientRules, levels)   
@@ -169,7 +169,7 @@ function normalize(rules){
 function complexMode({
   rules,
   rate, 
-  levels,
+  levels = 12,
   filePath
 }){
   const rulesWithColors = map(
