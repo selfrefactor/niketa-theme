@@ -13,12 +13,13 @@
 		"editorLineNumber.foreground": "COLOR_BACK_DARKER",
 		"scrollbarSlider.background": "COLOR_SECONDARY",
 		"scrollbarSlider.hoverBackground": "COLOR_3_DARKER",
-		"sideBar.background": "COLOR_SECONDARY",
-		"statusBar.background": "COLOR_SECONDARY", 
-		"tab.activeForeground":"COLOR_4",
-		"tab.border": "COLOR_SECONDARY",
+		"sideBar.background": "COLOR_SECONDARY_DARK",
+		"statusBar.background": "COLOR_SECONDARY_DARKEST", 
+		"tab.activeForeground":"COLOR_1",
+		"tab.activeBackground":"COLOR_SECONDARY_DARKEST",
+		"tab.inactiveForeground":"COLOR_1_LIGHT",
 		"tab.inactiveBackground":"COLOR_SECONDARY",
-		"tab.inactiveForeground":"COLOR_4"
+		"tab.border": "COLOR_SECONDARY_DARK"
 	},
 	"tokenColors": [
 		{
