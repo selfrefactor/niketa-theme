@@ -6,56 +6,57 @@ const filePath = `${ base }/even.json`
 test('palette with predefined colors', () => {
   const rules = {
     COLOR_BACK: [
-      "BACK_8",
-      "BACK_0",
+      "#e4e1e1",
+      "BACK_1",
     ],
     COLOR_SECONDARY: [
       "SECONDARY_2",
-      "SECONDARY_1",
+      "SECONDARY_5",
     ],
     COLOR_SELECTION: [
       "SELECTION_0",
       "SELECTION_2",
     ],
     COLOR_0: [
-      "dark.red.5",
-      "dark.red.5",
+      "dark.3",
+      "#4289B1",
     ],
     COLOR_1: [
-      "yellow.1",
-      "yellow.1",
-    ], 
+      "#525050",
+      "#54a620",
+    ],
     COLOR_2: [
-      "dark.blue.2",
-      "dark.blue.2"
+      "light.blue.2",
+      "#188859",
     ], 
     COLOR_3: [
-      "green.5",
-      "green.5",
+      "#C46493",
+      "#C46493",
     ], 
     COLOR_4: [
-      "dark.purple.0",
-      "dark.purple.0",
+      "#880E4F",
+      "#880E4F",
     ], 
     COLOR_5: [
-      "grey.3",
-      "grey.3",
+      "#f38b80",
+      "#d52484",
     ], 
   }
 
   
   createPaletteTheme({
-    showList:true,
+    // showList:true,
     complex: true,
     filePath,
     rules,
     levels:12,
-    rate: 0.025,
-    // publishName: 'circus.love',
-    // publishName: 'advanced.mice',
-    // publishIndex: 8
+    rate: 0.04,
+    publishName: 'circus.love',
+    publishName: 'advanced.engine',
+    publishIndex: 8
   })
 })
+
 
 test.skip('palette', () => {
   

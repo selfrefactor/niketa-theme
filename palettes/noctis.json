@@ -171,7 +171,7 @@
            "constant.other.table-name"
         ],
         "settings": {
-           "foreground": "COLOR_1"
+           "foreground": "COLOR_0"
         }
      },
      {
@@ -218,7 +218,7 @@
            "source.haskell storage.type"
         ],
         "settings": {
-           "foreground": "COLOR_0"
+           "foreground": "COLOR_1"
         }
      },
      {
@@ -392,13 +392,13 @@
            "source.objc entity.name.tag"
         ],
         "settings": {
-          "foreground": "COLOR_0_LIGHT"
+          "foreground": "COLOR_3"
         }
      },
      {
         "scope": ["invalid", "invalid.illegal"],
         "settings": {
-           "foreground": "#e3541c"
+           "foreground": "COLOR_3"
         }
      },
      {

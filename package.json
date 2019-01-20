@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
-  "version": "3.1.1",
+  "version": "3.1.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -86,6 +86,11 @@
         "label": "CircusLove",
         "uiTheme": "vs",
         "path": "./themes/CircusLove.json"
+      },
+      {
+        "label": "AdvancedEngine",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedEngine.json"
       }
     ]
   },

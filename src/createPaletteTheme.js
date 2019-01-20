@@ -141,8 +141,9 @@ function applyPredefinedColors(tag){
   const index = last(tag.split('_'))
   const parent = colors[parentKey]
   if(!parent){
-    console.log(`NO SUCH TAG ${tag} | FALLBACK TO #434343`)
-    return '#434343'
+    // Rules of type COLOR_1: [dark.1, #433433]
+    // ============================================
+    return tag
   }
   const appliableColor = parent[index]
   if(!appliableColor){
