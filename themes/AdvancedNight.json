@@ -1,25 +1,25 @@
 {
-  "name": "BaboonFigure",
+  "name": "AdvancedNight",
   "type": "light",
   "colors": {
-    "editor.background": "#bbb9a2",
-    "activityBar.background": "#d0bcb5",
-    "editor.selectionBackground": "#ffc8cc",
-    "editor.lineHighlightBackground": "#d0bcb5",
+    "editor.background": "#b3b19c",
+    "activityBar.background": "#b3b7b0",
+    "editor.selectionBackground": "#ffb1b8",
+    "editor.lineHighlightBackground": "#b3b7b0",
     "editorBracketMatch.background": "#532157",
     "editorBracketMatch.border": "#AB3574",
-    "editorGroupHeader.tabsBackground": "#B5B39A",
-    "editorGutter.background": "#bbb9a2",
-    "editorLineNumber.foreground": "#C4ABA2",
-    "scrollbarSlider.background": "#d0bcb5",
-    "scrollbarSlider.hoverBackground": "#C4ABA2",
-    "sideBar.background": "#CAB3AB",
-    "statusBar.background": "#BEA298",
-    "tab.activeForeground": "#542978",
-    "tab.activeBackground": "#BEA298",
-    "tab.inactiveForeground": "#572B7D",
-    "tab.inactiveBackground": "#d0bcb5",
-    "tab.border": "#CAB3AB"
+    "editorGroupHeader.tabsBackground": "#ADAB94",
+    "editorGutter.background": "#b3b19c",
+    "editorLineNumber.foreground": "#A5A9A1",
+    "scrollbarSlider.background": "#b3b7b0",
+    "scrollbarSlider.hoverBackground": "#A5A9A1",
+    "sideBar.background": "#ACB0A8",
+    "statusBar.background": "#9DA299",
+    "tab.activeForeground": "#7f404d",
+    "tab.activeBackground": "#9DA299",
+    "tab.inactiveForeground": "#844350",
+    "tab.inactiveBackground": "#b3b7b0",
+    "tab.border": "#ACB0A8"
   },
   "tokenColors": [
     {
@@ -39,13 +39,13 @@
       "name": "Storage types",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#2C718B"
+        "foreground": "#2F586F"
       }
     },
     {
       "scope": "entity.name.function.method",
       "settings": {
-        "foreground": "#d23335"
+        "foreground": "#e44d46"
       }
     },
     {
@@ -53,7 +53,7 @@
       "scope": "entity.name.function",
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#572B7D"
+        "foreground": "#844350"
       }
     },
     {
@@ -61,7 +61,7 @@
       "scope": "support.function.dom.js",
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#2A6D85"
+        "foreground": "#2D556B"
       }
     },
     {
@@ -84,21 +84,21 @@
       "scope": "variable.parameter",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#327F9D"
+        "foreground": "#35637D"
       }
     },
     {
       "name": "Library functions",
       "scope": "support.function",
       "settings": {
-        "foreground": "#3e5c7e"
+        "foreground": "#7c50a1"
       }
     },
     {
       "name": "Variables",
       "scope": "variable",
       "settings": {
-        "foreground": "#4D266E"
+        "foreground": "#753B47"
       }
     },
     {
@@ -128,7 +128,7 @@
     {
       "scope": "variable.other.readwrite",
       "settings": {
-        "foreground": "#C52B2D"
+        "foreground": "#E13931"
       }
     },
     {
@@ -140,7 +140,7 @@
     {
       "scope": "variable.other.property.js",
       "settings": {
-        "foreground": "#d23335"
+        "foreground": "#e44d46"
       }
     },
     {
@@ -165,13 +165,13 @@
     {
       "scope": "string.quoted.single.js,string.quoted.single.scss,string.quoted.single.attribute-value.scss,string.quoted.single.json,string.quoted.single.ts",
       "settings": {
-        "foreground": "#3e5c7e"
+        "foreground": "#7c50a1"
       }
     },
     {
       "scope": "string.quoted.double.js,string.quoted.double.scss,string.quoted.double.attribute-value.scss,string.quoted.double.json,string.quoted.double.ts",
       "settings": {
-        "foreground": "#2A6D85"
+        "foreground": "#2D556B"
       }
     },
     {
@@ -207,33 +207,33 @@
     {
       "scope": "punctuation.definition.comment.html",
       "settings": {
-        "foreground": "#3e5c7e"
+        "foreground": "#7c50a1"
       }
     },
     {
       "scope": "comment.block.html",
       "settings": {
-        "foreground": "#C4ABA2"
+        "foreground": "#A5A9A1"
       }
     },
     {
       "scope": "variable.language.this,storage.type.function.js,keyword.control.flow.js,support.variable.dom.js,support.variable.property.dom.js,support.function.promise.ts,keyword.control.flow.ts",
       "settings": {
-        "foreground": "#2e7691"
+        "foreground": "#315c74"
       }
     },
     {
       "scope": "constant.language.null.js",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#CD2D2F"
+        "foreground": "#E2433C"
       }
     },
     {
       "scope": "constant.language.boolean,constant.language.boolean.false.ts,constant.language.boolean.true.ts",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#542978"
+        "foreground": "#7f404d"
       }
     },
     {
@@ -251,7 +251,7 @@
     {
       "scope": "variable.other.class.js",
       "settings": {
-        "foreground": "#CD2D2F"
+        "foreground": "#E2433C"
       }
     },
     {
@@ -265,7 +265,7 @@
       "scope": "support.type.property-name.scss,support.type.property-name.css",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#d23335"
+        "foreground": "#e44d46"
       }
     },
     {
@@ -295,7 +295,7 @@
     {
       "scope": "variable.language.constructor",
       "settings": {
-        "foreground": "#307B97",
+        "foreground": "#336079",
         "fontStyle": "underline"
       }
     },
@@ -309,7 +309,7 @@
       "name": "Storage",
       "scope": "storage",
       "settings": {
-        "foreground": "#395574"
+        "foreground": "#724A94"
       }
     },
     {
@@ -326,7 +326,7 @@
       ],
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#512773"
+        "foreground": "#7A3D4A"
       }
     },
     {
@@ -341,7 +341,7 @@
       "name": "Tag names",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#2A6D85"
+        "foreground": "#2D556B"
       }
     },
     {

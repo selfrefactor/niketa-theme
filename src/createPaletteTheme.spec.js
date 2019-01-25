@@ -6,43 +6,44 @@ const filePath = `${ base }/even.json`
 test('palette with predefined colors', () => {
   const rules = {
     COLOR_BACK: [
-      "#e4e1e1",
-      "BACK_1",
+      "BACK_16",
+      "#adac98",
     ],
     COLOR_SECONDARY: [
-      "SECONDARY_2",
-      "SECONDARY_5",
+      "SECONDARY_0",
+      "SECONDARY_7",
     ],
     COLOR_SELECTION: [
       "SELECTION_0",
       "SELECTION_2",
     ],
     COLOR_0: [
-      "dark.3",
-      "#4289B1",
+      "blue.3",
+      "dark.blue.1",
     ],
     COLOR_1: [
-      "#525050",
-      "#54a620",
-    ],
-    COLOR_2: [
-      "light.blue.2",
-      "#188859",
+      "dark.purple.4",
+      "brown.3",
     ], 
+    COLOR_2: [
+      "dark.green.8",
+      "purple.1",
+    ],
     COLOR_3: [
-      "#C46493",
-      "#C46493",
+      "dark.red.2",
+      "orange.5"
     ], 
     COLOR_4: [
-      "#880E4F",
-      "#880E4F",
+      "#ba3a7e",
+      "#ba3a7e",
+      // "navy.2",
+      // "dark.pink.0",
     ], 
     COLOR_5: [
-      "#f38b80",
-      "#d52484",
+      "dark.purple.3",
+      "dark.purple.3",
     ], 
   }
-
   
   createPaletteTheme({
     // showList:true,
@@ -51,8 +52,7 @@ test('palette with predefined colors', () => {
     rules,
     levels:12,
     rate: 0.04,
-    publishName: 'circus.love',
-    publishName: 'advanced.engine',
+    publishName: 'advanced.night',
     publishIndex: 8
   })
 })

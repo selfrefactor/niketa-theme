@@ -11,6 +11,7 @@ import colors from '../colors.json'
 function createPaletteRule(prop, colorBase, rate){
   const willReturn = {}
   const modes = [
+    'DARKEST',
     'DARKER',
     'LIGHTER',
     'DARK',
