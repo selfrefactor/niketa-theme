@@ -6,42 +6,40 @@ const filePath = `${ base }/even.json`
 test('palette with predefined colors', () => {
   const rules = {
     COLOR_BACK: [
-      "BACK_16",
-      "#adac98",
+      "#d8d5c9",
+      "#d8d5c9",
     ],
     COLOR_SECONDARY: [
-      "SECONDARY_0",
+      "SECONDARY_9",
       "SECONDARY_7",
     ],
     COLOR_SELECTION: [
-      "SELECTION_0",
       "SELECTION_2",
+      "SELECTION_1",
     ],
     COLOR_0: [
-      "blue.3",
-      "dark.blue.1",
-    ],
-    COLOR_1: [
-      "dark.purple.4",
-      "brown.3",
+      "dark.green.0",
+      "purple.3",
     ], 
+    COLOR_1: [
+      "brown.1",
+      "brown.0",
+    ],
     COLOR_2: [
-      "dark.green.8",
-      "purple.1",
+      "blue.2",
+      "light.blue.7",
     ],
     COLOR_3: [
-      "dark.red.2",
-      "orange.5"
+      "green.7",
+      "green.7",
     ], 
     COLOR_4: [
-      "#ba3a7e",
-      "#ba3a7e",
-      // "navy.2",
-      // "dark.pink.0",
+      "dark.pink.6",
+      "dark.pink.6",
     ], 
     COLOR_5: [
-      "dark.purple.3",
-      "dark.purple.3",
+      "dark.green.3",
+      "dark.green.3",
     ], 
   }
   
@@ -52,8 +50,8 @@ test('palette with predefined colors', () => {
     rules,
     levels:12,
     rate: 0.04,
-    publishName: 'advanced.night',
-    publishIndex: 8
+    publishName: 'advanced.owl',
+    publishIndex: 4
   })
 })
 
