@@ -39,6 +39,19 @@ Circus Love
 I admit the name of the themes seems too lazy. This is on purpose as my goal is to generate useful light themes, not to create meaningful names.
 I did it as if I were a jazz musican, i.e. totally nonsense.
 
+```
+group themes by background:
+
+
+`Advanced` for bright early day themes
+
+`Brave` for mild themes
+
+`Circus`  for darker mild themes
+
+`Niketa` for after sunset themes
+```
+
 ## Name
 
 Niketa is the name I gave to my dog. On this picture, she is about 90 days:
