@@ -1,6 +1,6 @@
 # Niketa
 
-7 Light VSCode Themes
+15 Light VSCode Themes
 
 > The repo contains also internal theme generator used for creation of the themes
 
