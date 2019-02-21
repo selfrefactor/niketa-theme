@@ -8,7 +8,6 @@ const rules = {
   'editor.selectionBackground'          : [ '#DDE6E0', '#C8D8E2' ],
   'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
   'editor.wordHighlightBackground'      : [ '#DDE6E0', '#E2E4F8' ],
-  'editor.selectionBackground'          : [ '#D9E3C8', '#a9E3C8' ],
   'editor.lineHighlightBackground'      : [ '#cfd5dd', '#aad5dd' ],
   // 'editorBracketMatch.background'       : [ '#00ff00', '#00ff00' ],
   // 'editorBracketMatch.border'           : [ '#00ff00', '#00ff00' ],

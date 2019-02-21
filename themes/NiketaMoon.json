@@ -1,31 +1,31 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "BaboonAnt",
+  "name": "NiketaMoon",
   "type": "dark",
   "colors": {
     "editor.background": "#c1bcae",
-    "activityBar.background": "#dee5e0",
+    "activityBar.background": "#d9dedb",
     "editor.selectionBackground": "#ffe0e0",
-    "editor.lineHighlightBackground": "#dee5e0",
-    "editorBracketMatch.background": "#B21722",
-    "editorBracketMatch.border": "#F257C7",
+    "editor.lineHighlightBackground": "#d9dedb",
+    "editorBracketMatch.background": "#AC1721",
+    "editorBracketMatch.border": "#D05286",
     "editorGroupHeader.tabsBackground": "#BBB5A6",
     "editorGutter.background": "#c1bcae",
-    "editorLineNumber.foreground": "#CAD5CD",
-    "scrollbarSlider.background": "#dee5e0",
-    "scrollbarSlider.hoverBackground": "#CAD5CD",
-    "sideBar.background": "#D4DDD7",
-    "statusBar.background": "#C0CDC4",
-    "tab.inactiveForeground": "#528C50",
-    "tab.inactiveBackground": "#F2F5F3",
-    "tab.activeForeground": "#236C9A_LIGHTER",
+    "editorLineNumber.foreground": "#C6CEC9",
+    "scrollbarSlider.background": "#d9dedb",
+    "scrollbarSlider.hoverBackground": "#C6CEC9",
+    "sideBar.background": "#D0D6D2",
+    "statusBar.background": "#BDC6C0",
+    "tab.inactiveForeground": "#488C79",
+    "tab.inactiveBackground": "#ECEEED",
+    "tab.activeForeground": "#1D6CAA_LIGHTER",
     "tab.activeBackground": "#c1bcae",
     "tab.border": "#c1bcae"
   },
   "tokenColors": [
     {
       "settings": {
-        "foreground": "#2470a0"
+        "foreground": "#1e70b1"
       }
     },
     {
@@ -36,7 +36,7 @@
         "comment.block.documentation punctuation.definition.bracket"
       ],
       "settings": {
-        "foreground": "#c11925"
+        "foreground": "#bb1924"
       }
     },
     {
@@ -58,7 +58,7 @@
         "constant.other.database-name"
       ],
       "settings": {
-        "foreground": "#f472d0"
+        "foreground": "#d56694"
       }
     },
     {
@@ -105,7 +105,7 @@
         "entity.other.attribute-name.pseudo-element.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "#440b0b"
+        "foreground": "#6a3a29"
       }
     },
     {
@@ -148,7 +148,7 @@
         "source.objc"
       ],
       "settings": {
-        "foreground": "#4c824a"
+        "foreground": "#438270"
       }
     },
     {
@@ -170,7 +170,7 @@
         "constant.other.table-name"
       ],
       "settings": {
-        "foreground": "#f4581c"
+        "foreground": "#ed8655"
       }
     },
     {
@@ -217,7 +217,7 @@
         "source.haskell storage.type"
       ],
       "settings": {
-        "foreground": "#2470a0"
+        "foreground": "#1e70b1"
       }
     },
     {
@@ -257,7 +257,7 @@
         "punctuation.definition.storage.type.objc"
       ],
       "settings": {
-        "foreground": "#F257C7"
+        "foreground": "#D05286"
       }
     },
     {
@@ -272,7 +272,7 @@
         "entity.name.import.go"
       ],
       "settings": {
-        "foreground": "#B21722"
+        "foreground": "#AC1721"
       }
     },
     {
@@ -288,7 +288,7 @@
         "markup.inline.raw punctuation.definition.raw"
       ],
       "settings": {
-        "foreground": "#410B0B"
+        "foreground": "#663827"
       }
     },
     {
@@ -302,7 +302,7 @@
         "keyword.operator.nullable-type"
       ],
       "settings": {
-        "foreground": "#467844"
+        "foreground": "#3E7867"
       }
     },
     {
@@ -325,7 +325,7 @@
         "meta.class.body.groovy meta.method.body.java storage.type.groovy"
       ],
       "settings": {
-        "foreground": "#216793"
+        "foreground": "#1C67A3"
       }
     },
     {
@@ -352,7 +352,7 @@
         "keyword.operator.function.infix.haskell punctuation.definition.entity.haskell"
       ],
       "settings": {
-        "foreground": "#EF4B0C"
+        "foreground": "#EB753E"
       }
     },
     {
@@ -391,7 +391,7 @@
         "source.objc entity.name.tag"
       ],
       "settings": {
-        "foreground": "#440b0b"
+        "foreground": "#6a3a29"
       }
     },
     {
@@ -400,7 +400,7 @@
         "invalid.illegal"
       ],
       "settings": {
-        "foreground": "#440b0b"
+        "foreground": "#6a3a29"
       }
     },
     {

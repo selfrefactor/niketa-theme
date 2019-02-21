@@ -1,45 +1,49 @@
 import {  createPaletteTheme } from './createPaletteTheme'
 
 const base = '/home/s/repos/y/niketa-theme/palettes'
-const filePath = `${ base }/even.json`
+const filePath = `${ base }/noctis.json`
+// const filePath = `${ base }/more.json`
 
 test('palette with predefined colors', () => {
   const rules = {
     COLOR_BACK: [
-      "#d8d5c9",
-      "#d8d5c9",
+      "#c1bcae",
+      "#c1bcae",
     ],
     COLOR_SECONDARY: [
-      "SECONDARY_9",
+      "SECONDARY_6",
       "SECONDARY_7",
     ],
     COLOR_SELECTION: [
-      "SELECTION_2",
-      "SELECTION_1",
+      "SELECTION_0",
+      "SELECTION_0",
     ],
     COLOR_0: [
-      "dark.green.0",
-      "purple.3",
+      "orange.3",
+      "light.yellow.1",
     ], 
     COLOR_1: [
-      "brown.1",
-      "brown.0",
+      'dark.blue.3',
+    "#1470d0",
+    // "#a470a0",
+      // "orange.0",
+      // "red.3",
     ],
     COLOR_2: [
-      "blue.2",
-      "light.blue.7",
+      "#4c824a",
+      "blue.3",
     ],
     COLOR_3: [
-      "green.7",
-      "green.7",
+      "dark.brown.3",
+      "brown.2",
     ], 
     COLOR_4: [
-      "dark.pink.6",
-      "dark.pink.6",
+      "pink.1",
+      "brown.3",
     ], 
     COLOR_5: [
-      "dark.green.3",
-      "dark.green.3",
+      "dark.red.2",
+      "dark.red.4",
     ], 
   }
   
@@ -50,7 +54,7 @@ test('palette with predefined colors', () => {
     rules,
     levels:12,
     rate: 0.04,
-    publishName: 'advanced.owl',
+    publishName: 'niketa.moon',
     publishIndex: 4
   })
 })
