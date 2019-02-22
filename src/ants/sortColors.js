@@ -15,5 +15,10 @@ export function sortColors(){
     sortedColors[key] = newColor
   })
 
-  writeJsonAnt('colors.json', sortedColors)
+  writeJsonAnt(
+    'colors.json', 
+    sortedColors
+  )
+
+  return sortedColors
 }
