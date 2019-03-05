@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
-  "version": "3.11.0",
+  "version": "4.0.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -78,14 +78,19 @@
         "path": "./themes/CircusPeople.json"
       },
       {
+        "label": "CircusWhisky",
+        "uiTheme": "vs",
+        "path": "./themes/CircusWhisky.json"
+      },
+      {
         "label": "CircusBrother",
         "uiTheme": "vs",
         "path": "./themes/CircusBrother.json"
       },
       {
-        "label": "CircusWhiskey",
+        "label": "NiketaBear",
         "uiTheme": "vs",
-        "path": "./themes/CircusWhiskey.json"
+        "path": "./themes/NiketaBear.json"
       },
       {
         "label": "NiketaNight",
@@ -93,9 +98,9 @@
         "path": "./themes/NiketaNight.json"
       },
       {
-        "label": "NiketaBear",
+        "label": "NiketaOwl",
         "uiTheme": "vs",
-        "path": "./themes/NiketaBear.json"
+        "path": "./themes/NiketaOwl.json"
       },
       {
         "label": "NiketaMoon",

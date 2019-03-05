@@ -1,13 +1,29 @@
 import { pluck } from 'rambdax'
+import { resolve } from 'path'
+import { readFileSync, writeFileSync } from 'fs'
 import { pascalCase } from 'string-fn'
 import { readJsonAnt } from '../ants/readJson'
 import { writeJsonAnt } from '../ants/writeJson'
 import { saveToPackageJsonAnt } from '../ants/saveToPackageJson'
 import { namesHash } from './saveTheme'
 
+function keepStateAnt(themeName){
+  const source = readFileSync(
+    resolve(
+      __dirname,
+      '../createPaletteTheme.spec.js'
+    )
+  ).toString()
+  const destination = resolve(
+    __dirname,
+    `../../files/states/${ themeName }.js`
+  )
+  writeFileSync(destination, source)
+}
+
 export function publishThemeBee(name, index){
   const tempName = pascalCase(`baboon.${ namesHash[ index ] }`)
-  console.log('publish',tempName)
+  console.log('publish', tempName)
   const theme = readJsonAnt(
     `./baboon/${ tempName }.json`
   )
@@ -16,6 +32,7 @@ export function publishThemeBee(name, index){
   )
   const themeName = pascalCase(name)
   const themePath = `./themes/${ themeName }.json`
+  keepStateAnt(themeName)
 
   if (
     !pluck('label', exported).includes(themeName)
