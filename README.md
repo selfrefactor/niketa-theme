@@ -57,3 +57,9 @@ group themes by background:
 Niketa is the name I gave to my dog. On this picture, she is about 90 days:
 
 ![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.jpg?raw=true)
+
+## Trending
+
+Time - 05.03.2019
+
+![trending](https://github.com/selfrefactor/niketa-theme/blob/master/files/trending.png?raw=true)
