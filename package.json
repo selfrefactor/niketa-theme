@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "icon": "files/circus.love.png",
   "contributes": {
-    "themes":[
+    "themes": [
       {
         "label": "AdvancedBat",
         "uiTheme": "vs",
