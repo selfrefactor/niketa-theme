@@ -14,7 +14,7 @@ import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { getGradientBee } from './bees/getGradient'
 
 const UNDERLINE = '.UNDERLINE'
-
+const extensions = [ '.jsx', '.ts', '.tsx' ]
 function saveAnt(label, data){
   const output = resolve(
     __dirname,
@@ -63,6 +63,22 @@ export function base(label){
             },
           }
           tokenColors.push(tokenColor)
+
+          if (syntaxInstance.endsWith('.js')){
+            const plainSyntaxInstance = remove('.js', syntaxInstance)
+
+            extensions.forEach(extension => {
+              const tokenColorExtension = {
+                name     : `${ plainSyntaxInstance }${ extension }`,
+                scope    : `${ plainSyntaxInstance }${ extension }`,
+                settings : {
+                  ...underline,
+                  foreground : randomShade(color),
+                },
+              }
+              tokenColors.push(tokenColorExtension)
+            })
+          }
         })
     })
 
