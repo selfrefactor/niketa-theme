@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
 
 import { camelCase } from 'string-fn'
-import { baseData, baseBase } from '../palettes/baseData'
+import { baseData, baseBase, all } from '../palettes/baseData'
 
 import { switcher, random, remove } from 'rambdax'
 import { changeColorAnt } from './ants/changeColor'
@@ -36,9 +36,66 @@ export function randomShade(color){
   return shade
 }
 
-export function baseRandom(label){
-  return label
+export function randomColor(){
+  const indexSeed = random(1, 100)
 
+  const index = switcher(indexSeed)
+    .is(x => x > 78, '1')
+    .is(x => x > 54, '2')
+    .is(x => x > 34, '3')
+    .is(x => x > 18, '4')
+    .default('5')
+
+  return `COLOR_${ index }`
+}
+
+export function randomUnderline(){
+  return random(1, 100) > 88 ?
+    { fontStyle : 'underline' } :
+    {}
+}
+
+export function baseRandom(label){
+  const tokenColors = []
+
+  all.forEach(syntaxInstanceRaw => {
+    const underline = syntaxInstanceRaw.endsWith(UNDERLINE) ?
+      { fontStyle : 'underline' } :
+      {}
+    const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
+    const color = randomColor()
+    const tokenColor = {
+      name     : syntaxInstance,
+      scope    : syntaxInstance,
+      settings : {
+        ...underline,
+        foreground : randomShade(color),
+      },
+    }
+    tokenColors.push(tokenColor)
+
+    if (syntaxInstance.endsWith('.js')){
+      const plainSyntaxInstance = remove('.js', syntaxInstance)
+
+      extensions.forEach(extension => {
+        const tokenColorExtension = {
+          name     : `${ plainSyntaxInstance }${ extension }`,
+          scope    : `${ plainSyntaxInstance }${ extension }`,
+          settings : {
+            ...underline,
+            foreground : randomShade(color),
+          },
+        }
+        tokenColors.push(tokenColorExtension)
+      })
+    }
+  })
+
+  const themeBase = {
+    ...baseBase,
+    tokenColors,
+  }
+  saveAnt(`random.${ label }`, themeBase)
 }
 
 export function base(label){
