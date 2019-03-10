@@ -1,5 +1,6 @@
 import { resolve } from 'path'
-import { writeFileSync } from 'fs'
+import { outputFileSync } from 'fs-extra'
+
 import { camelCase } from 'string-fn'
 import { baseData, baseBase } from '../palettes/baseData'
 
@@ -19,7 +20,7 @@ function saveAnt(label, data){
     __dirname,
     `../palettes/generated/${ camelCase(label) }.json`
   )
-  writeFileSync(output, JSON.stringify(data, null, 2))
+  outputFileSync(output, JSON.stringify(data, null, 2))
 }
 
 export function randomShade(color){
@@ -49,25 +50,25 @@ export function base(label){
       syntaxInstances
         .forEach(syntaxInstanceRaw => {
           const underline = syntaxInstanceRaw.endsWith(UNDERLINE) ?
-            {"fontStyle": "underline"} :
+            { fontStyle : 'underline' } :
             {}
           const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
-          
+
           const tokenColor = {
-            "name": syntaxInstance,
-            "scope": syntaxInstance,
-            "settings": {
+            name     : syntaxInstance,
+            scope    : syntaxInstance,
+            settings : {
               ...underline,
-              "foreground": randomShade(color)
-            }
+              foreground : randomShade(color),
+            },
           }
-          tokenColors.push(tokenColor)  
+          tokenColors.push(tokenColor)
         })
     })
 
   const themeBase = {
     ...baseBase,
-    tokenColors
+    tokenColors,
   }
   saveAnt(label, themeBase)
 }

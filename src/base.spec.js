@@ -6,6 +6,5 @@ test('happy', () => {
 
 test('random shade', () => {
   const result = 'foobar'.split('').map(randomShade)
-  console.log({ result })
-
+  // console.log({ result })
 })
