@@ -1,0 +1,437 @@
+{
+  "name": "_Palette",
+  "type": "light",
+  "colors": {
+    "editor.background": "COLOR_BACK",
+    "activityBar.background": "COLOR_SECONDARY",
+    "editor.selectionBackground": "COLOR_SELECTION",
+    "editor.lineHighlightBackground": "COLOR_SECONDARY",
+    "editorBracketMatch.background": "COLOR_5_DARKER",
+    "editorBracketMatch.border": "COLOR_4_DARKER",
+    "editorGroupHeader.tabsBackground": "COLOR_BACK_DARK",
+    "editorGutter.background": "COLOR_BACK",
+    "editorLineNumber.foreground": "COLOR_SECONDARY_DARKER",
+    "scrollbarSlider.background": "COLOR_SECONDARY",
+    "scrollbarSlider.hoverBackground": "COLOR_SECONDARY_DARKER",
+    "sideBar.background": "COLOR_SECONDARY_DARK",
+    "statusBar.background": "COLOR_SECONDARY_DARKEST",
+    "tab.inactiveForeground": "COLOR_1_LIGHTER",
+    "tab.inactiveBackground": "COLOR_SECONDARY_DARKEST",
+    "tab.activeForeground": "COLOR_1_DARK",
+    "tab.activeBackground": "COLOR_BACK",
+    "tab.border": "COLOR_BACK"
+  },
+  "tokenColors": [
+    {
+      "name": "storage.type",
+      "scope": "storage.type",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.italic",
+      "scope": "markup.italic",
+      "settings": {
+        "foreground": "COLOR_0_DARKER"
+      }
+    },
+    {
+      "name": "entity.name.tag",
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.language.this",
+      "scope": "variable.language.this",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.function.dom.js",
+      "scope": "support.function.dom.js",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.language.constructor",
+      "scope": "variable.language.constructor",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "entity.name.class",
+      "scope": "entity.name.class",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.type",
+      "scope": "entity.name.type",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.function",
+      "scope": "entity.name.function",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "COLOR_1_DARK"
+      }
+    },
+    {
+      "name": "variable",
+      "scope": "variable",
+      "settings": {
+        "foreground": "COLOR_1_DARKER"
+      }
+    },
+    {
+      "name": "constant.language.boolean",
+      "scope": "constant.language.boolean",
+      "settings": {
+        "foreground": "COLOR_1_LIGHT"
+      }
+    },
+    {
+      "name": "constant.language.boolean.false.ts",
+      "scope": "constant.language.boolean.false.ts",
+      "settings": {
+        "foreground": "COLOR_1_LIGHTER"
+      }
+    },
+    {
+      "name": "constant.language.boolean.true.ts",
+      "scope": "constant.language.boolean.true.ts",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.language.null.js",
+      "scope": "constant.language.null.js",
+      "settings": {
+        "foreground": "COLOR_1_DARKER"
+      }
+    },
+    {
+      "name": "variable.parameter",
+      "scope": "variable.parameter",
+      "settings": {
+        "foreground": "COLOR_2_LIGHTER"
+      }
+    },
+    {
+      "name": "support.function",
+      "scope": "support.function",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "string.quoted.single.js",
+      "scope": "string.quoted.single.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "string.quoted.single.json",
+      "scope": "string.quoted.single.json",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "string.quoted.single.ts",
+      "scope": "string.quoted.single.ts",
+      "settings": {
+        "foreground": "COLOR_2_LIGHT"
+      }
+    },
+    {
+      "name": "support.type.object.console.js",
+      "scope": "support.type.object.console.js",
+      "settings": {
+        "foreground": "COLOR_2_LIGHT"
+      }
+    },
+    {
+      "name": "support.function.console.js",
+      "scope": "support.function.console.js",
+      "settings": {
+        "foreground": "COLOR_2_LIGHT"
+      }
+    },
+    {
+      "name": "markup.quote",
+      "scope": "markup.quote",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.class.js",
+      "scope": "variable.other.class.js",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.other.object.key.js",
+      "scope": "constant.other.object.key.js",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.function.method",
+      "scope": "entity.name.function.method",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.object-literal.key.js",
+      "scope": "meta.object-literal.key.js",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.object-literal.key.ts",
+      "scope": "meta.object-literal.key.ts",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "string.template",
+      "scope": "string.template",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.type.property-name.json",
+      "scope": "support.type.property-name.json",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.property.js",
+      "scope": "variable.other.property.js",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.property.ts",
+      "scope": "variable.other.property.ts",
+      "settings": {
+        "foreground": "COLOR_3_DARK"
+      }
+    },
+    {
+      "name": "support.constant",
+      "scope": "support.constant",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.character",
+      "scope": "constant.character",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.language",
+      "scope": "constant.language",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.other",
+      "scope": "constant.other",
+      "settings": {
+        "foreground": "COLOR_4_DARKER"
+      }
+    },
+    {
+      "name": "comment",
+      "scope": "comment",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.italic",
+      "scope": "markup.italic",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "comment.block.documentation",
+      "scope": "comment.block.documentation",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "comment.line.double-slash",
+      "scope": "comment.line.double-slash",
+      "settings": {
+        "foreground": "COLOR_4_LIGHTER"
+      }
+    },
+    {
+      "name": "punctuation.accessor.js",
+      "scope": "punctuation.accessor.js",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.language",
+      "scope": "variable.language",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.object.js",
+      "scope": "variable.other.object.js",
+      "settings": {
+        "foreground": "COLOR_4_DARKER"
+      }
+    },
+    {
+      "name": "variable.other.readwrite",
+      "scope": "variable.other.readwrite",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.js",
+      "scope": "variable.other.readwrite.js",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.ts",
+      "scope": "variable.other.readwrite.ts",
+      "settings": {
+        "foreground": "COLOR_4_LIGHTER"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.tsx",
+      "scope": "variable.other.readwrite.tsx",
+      "settings": {
+        "foreground": "COLOR_4_DARKER"
+      }
+    },
+    {
+      "name": "entity.other.inherited-class",
+      "scope": "entity.other.inherited-class",
+      "settings": {
+        "foreground": "COLOR_5"
+      }
+    },
+    {
+      "name": "support.class.builtin.js",
+      "scope": "support.class.builtin.js",
+      "settings": {
+        "foreground": "COLOR_5_DARKER"
+      }
+    },
+    {
+      "name": "keyword.control.module.js",
+      "scope": "keyword.control.module.js",
+      "settings": {
+        "foreground": "COLOR_5_LIGHTER"
+      }
+    },
+    {
+      "name": "keyword.operator.accessor",
+      "scope": "keyword.operator.accessor",
+      "settings": {
+        "foreground": "COLOR_5"
+      }
+    },
+    {
+      "name": "invalid",
+      "scope": "invalid",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "COLOR_5"
+      }
+    },
+    {
+      "name": "constant.numeric",
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "COLOR_5"
+      }
+    },
+    {
+      "name": "keyword",
+      "scope": "keyword",
+      "settings": {
+        "foreground": "COLOR_5_LIGHTER"
+      }
+    },
+    {
+      "name": "keyword.control.import.js",
+      "scope": "keyword.control.import.js",
+      "settings": {
+        "foreground": "COLOR_5"
+      }
+    },
+    {
+      "name": "keyword.control.from.js",
+      "scope": "keyword.control.from.js",
+      "settings": {
+        "foreground": "COLOR_5_DARKER"
+      }
+    },
+    {
+      "name": "keyword.control.export.js",
+      "scope": "keyword.control.export.js",
+      "settings": {
+        "foreground": "COLOR_5"
+      }
+    },
+    {
+      "name": "keyword.control.default.js",
+      "scope": "keyword.control.default.js",
+      "settings": {
+        "foreground": "COLOR_5_LIGHT"
+      }
+    },
+    {
+      "name": "support.type.object.module.ts",
+      "scope": "support.type.object.module.ts",
+      "settings": {
+        "foreground": "COLOR_5_DARK"
+      }
+    }
+  ]
+}
