@@ -5,15 +5,15 @@ const filePath = `${ base }/generated/foo.json`
 const filePathRandom = `${ base }/generated/randomFoo.json`
 
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#f9f7f5', '#f9f6f1' ],
-  COLOR_SECONDARY : [ '#ebe5d6', '#eae3cd' ],
+  COLOR_BACK      : [ '#f1f1f1', '#f9f6f1' ],
+  COLOR_SECONDARY : [ '#e2e2e0', '#eae3cd' ],
   COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
-  COLOR_0         : [ '#46758D', '#46753D' ],
-  COLOR_1         : [ '#9a4e4e', '#C22178' ],
-  COLOR_2         : [ '#729d39', '#7e735f' ],
-  COLOR_3         : [ '#9a4e4e', '#d3644c' ],
-  COLOR_4         : [ '#8e1f2f', '#1c2c5b' ],
-  COLOR_5         : [ '#006064', '#880e4f' ],
+  COLOR_0         : [ '#3C7BAA', '#46753D' ],
+  COLOR_1         : [ '#56942F', '#C22178' ],
+  COLOR_2         : [ '#1D8A6E', '#1D8A6E' ],
+  COLOR_3         : [ '#d3644b', '#d3644c' ],
+  COLOR_4         : [ '#BD5387', '#1D8A6E' ],
+  COLOR_5         : [ '#880e4f', '#880e4f' ],
 }
 
 const rulesWithOneColor = {
@@ -72,7 +72,7 @@ test('palette with predefined colors', () => {
   createPaletteTheme({
     // showList:true,
     complex  : false,
-    filePath : filePathRandom,
+    filePath : filePath,
     rules    : rulesWithTwoColors,
     levels   : 12,
     rate     : 0.06,
@@ -80,4 +80,3 @@ test('palette with predefined colors', () => {
     // publishIndex : 4,
   })
 })
-
