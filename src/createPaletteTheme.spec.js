@@ -8,12 +8,12 @@ const rulesWithTwoColors = {
   COLOR_BACK      : [ '#f1f1f1', '#f9f6f1' ],
   COLOR_SECONDARY : [ '#e2e2e0', '#eae3cd' ],
   COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
-  COLOR_0         : [ '#3C7BAA', '#46753D' ],
-  COLOR_1         : [ '#56942F', '#C22178' ],
-  COLOR_2         : [ '#1D8A6E', '#1D8A6E' ],
-  COLOR_3         : [ '#d3644b', '#d3644c' ],
-  COLOR_4         : [ '#BD5387', '#1D8A6E' ],
-  COLOR_5         : [ '#880e4f', '#880e4f' ],
+  COLOR_0         : [ '#2B8FB3', '#46753D' ],
+  COLOR_1         : [ '#a0512c', '#C22178' ],
+  COLOR_2         : [ '#41544C', '#1D8A6E' ],
+  COLOR_3         : [ '#5a245f', '#d3644c' ],
+  COLOR_4         : [ '#D65686', '#1D8A6E' ],
+  COLOR_5         : [ '#f26c17', '#880e4f' ],
 }
 
 const rulesWithOneColor = {
