@@ -2,16 +2,9 @@ import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
 
 import { camelCase } from 'string-fn'
-import { baseData, baseBase, all } from '../palettes/baseData'
+import { baseData, baseBase, all } from '../palettes/baseDataFoo'
 
 import { switcher, random, remove } from 'rambdax'
-import { changeColorAnt } from './ants/changeColor'
-import { listImportedColorsAnt } from './ants/listImportedColors'
-import { readFileSync } from 'fs-extra'
-import { publishThemeBee } from './bees/publishTheme'
-import { savePaletteThemeBee } from './bees/saveTheme'
-import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
-import { getGradientBee } from './bees/getGradient'
 
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]

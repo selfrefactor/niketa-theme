@@ -1,11 +1,11 @@
 export const COLOR_0 = [
+  'support.constant',
   'entity.name.tag.UNDERLINE',
-  'markup.italic',
   'punctuation.accessor.js',
   'source.js',
   'storage.modifier.js',
-  'storage.type',
   'string.quoted.single.js',
+  'variable.other.readwrite.js',
   'support.function.dom.js',
   'support.variable.property.js',
   'variable.language.constructor.UNDERLINE',
@@ -13,26 +13,28 @@ export const COLOR_0 = [
 ]
 
 export const COLOR_1 = [
-  'constant.language.boolean',
+  'variable.other.readwrite',
   'constant.language.null.js',
   'entity.name.class.UNDERLINE',
   'entity.name.function.UNDERLINE',
-  'entity.name.type.UNDERLINE',
   'markup.heading.markdown',
   'punctuation.separator.comma.js',
   'support.variable.property.js',
   'support.type.primitive.js',
+  'meta.brace.square.js',
+  'variable.other.class.js',
+  'constant.other.object.key.js',
   'variable',
 ]
 
 export const COLOR_2 = [
+  'variable.language',
+  'entity.name.type.UNDERLINE',
   'variable.parameter',
   'support.function',
-  'meta.import.js',
   'meta.object-literal.key.js',
   'meta.paragraph.markdown',
   'entity.other.attribute-name.js',
-  'string.quoted.single.js',
   'string.quoted.single.json',
   'support.class.promise.js',
   'support.type.object.console.js',
@@ -41,39 +43,35 @@ export const COLOR_2 = [
 ]
 
 export const COLOR_3 = [
+  'storage.type',
+  'variable.other.object.js',
   'markup.quote',
+  'meta.import.js',
   'meta.tag.js',
   'meta.parameters.js',
-  // 'punctuation.definition.parameters.begin.js',
-  // 'punctuation.definition.parameters.end.js',
-  'meta.brace.square.js',
-  'variable.other.class.js',
-  'constant.other.object.key.js',
-  'entity.name.function.method',
+  'string.quoted.single.js',
   'meta.object-literal.key.js',
   'string.template',
+  'entity.name.function.method',
   'support.type.property-name.json',
   'variable.other.property.js',
 ]
 
 export const COLOR_4 = [
-  'support.constant',
+  'markup.italic',
   'punctuation.separator.parameter.js',
   'constant.character',
-  'constant.language',
   'constant.other',
   'comment',
   'markup.italic',
   'comment.block.documentation',
   'comment.line.double-slash',
   'punctuation.accessor.js',
-  'variable.language',
-  'variable.other.object.js',
-  'variable.other.readwrite',
-  'variable.other.readwrite.js',
 ]
 
 export const COLOR_5 = [
+  'constant.language',
+  'constant.language.boolean',
   'punctuation.separator.key-value.js',
   'storage.modifier.async.js',
   'meta.brace.round.js',
