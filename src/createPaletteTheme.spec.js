@@ -2,18 +2,22 @@ import { createPaletteTheme } from './createPaletteTheme'
 
 const base = '/home/s/repos/y/niketa-theme/palettes'
 const filePath = `${ base }/generated/foo.json`
-const filePathRandom = `${ base }/generated/randomBar.json`
+const filePathRandom = [
+  `${ base }/generated/randomFoo.json`,
+  `${ base }/generated/randomBar.json`,
+  `${ base }/generated/randomBaz.json`,
+]
 
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#f9f6ec', '#f9f1dc' ],
-  COLOR_SECONDARY : [ '#e8e7e0', '#eae3cd' ],
+  COLOR_BACK      : [ '#f9f6f2', '#f9f1dc' ],
+  COLOR_SECONDARY : [ '#eae9e8', '#4a535d' ],
   COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
-  COLOR_0         : [ '#085b60', '#46753D' ],
-  COLOR_1         : [ '#BE5588', '#a22178' ],
-  COLOR_2         : [ '#633258', '#fD8A6E' ],
-  COLOR_3         : [ '#588859', '#13644c' ],
-  COLOR_4         : [ '#94233D', '#fD8A6E' ],
-  COLOR_5         : [ '#4086ad', '#880e4f' ],
+  COLOR_0         : [ '#35b0b3', '#46753D' ],
+  COLOR_1         : [ '#985155', '#a22178' ],
+  COLOR_2         : [ '#2c6c96', '#85483d' ],
+  COLOR_3         : [ '#D95361', '#13644c' ],
+  COLOR_4         : [ '#567c73', '#95a5a6' ],
+  COLOR_5         : [ '#c0266e', '#880e4f' ],
 }
 
 const rulesWithOneColor = {
@@ -72,7 +76,7 @@ test('happy', () => {
   createPaletteTheme({
     // showList:true,
     complex  : false,
-    filePath : filePath,
+    filePath : filePathRandom[ 2 ],
     rules    : rulesWithTwoColors,
     levels   : 12,
     rate     : 0.07,

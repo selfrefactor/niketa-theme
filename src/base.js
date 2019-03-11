@@ -55,7 +55,7 @@ export function baseRandom(label){
       color,
       syntaxInstance,
       underline,
-      tokenColors
+      tokenColors,
     })
   })
 

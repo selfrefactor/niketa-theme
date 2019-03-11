@@ -73,6 +73,7 @@ export const COLOR_4 = [
 ]
 
 export const COLOR_5 = [
+  'punctuation.definition.parameters.begin.js',
   'constant.language',
   'constant.language.boolean',
   'punctuation.separator.key-value.js',
