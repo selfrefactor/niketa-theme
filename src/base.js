@@ -42,12 +42,6 @@ export function randomColor(){
   return `COLOR_${ index }`
 }
 
-export function randomUnderline(){
-  return random(1, 100) > 88 ?
-    { fontStyle : 'underline' } :
-    {}
-}
-
 export function baseRandom(label){
   const tokenColors = []
 
@@ -57,31 +51,12 @@ export function baseRandom(label){
       {}
     const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
     const color = randomColor()
-    const tokenColor = {
-      name     : syntaxInstance,
-      scope    : syntaxInstance,
-      settings : {
-        ...underline,
-        foreground : randomShade(color),
-      },
-    }
-    tokenColors.push(tokenColor)
-
-    if (syntaxInstance.endsWith('.js')){
-      const plainSyntaxInstance = remove('.js', syntaxInstance)
-
-      extensions.forEach(extension => {
-        const tokenColorExtension = {
-          name     : `${ plainSyntaxInstance }${ extension }`,
-          scope    : `${ plainSyntaxInstance }${ extension }`,
-          settings : {
-            ...underline,
-            foreground : randomShade(color),
-          },
-        }
-        tokenColors.push(tokenColorExtension)
-      })
-    }
+    pushToTokenColors({
+      color,
+      syntaxInstance,
+      underline,
+      tokenColors
+    })
   })
 
   const themeBase = {
