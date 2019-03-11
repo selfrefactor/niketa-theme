@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Light/Dark themes",
-  "version": "5.6.0",
+  "version": "5.4.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -28,84 +28,64 @@
   "contributes": {
     "themes": [
       {
-        "label": "AdvancedBat",
+        "label": "BaboonAnt",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedBat.json"
+        "path": "./baboon/BaboonAnt.json"
       },
       {
-        "label": "AdvancedCat",
+        "label": "BaboonBee",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedCat.json"
+        "path": "./baboon/BaboonBee.json"
       },
       {
-        "label": "AdvancedDog",
+        "label": "BaboonCell",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedDog.json"
+        "path": "./baboon/BaboonCell.json"
       },
       {
-        "label": "AdvancedEngine",
+        "label": "BaboonDeep",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedEngine.json"
+        "path": "./baboon/BaboonDeep.json"
       },
       {
-        "label": "AdvancedMystery",
+        "label": "BaboonFigure",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedMystery.json"
+        "path": "./baboon/BaboonFigure.json"
       },
       {
-        "label": "BraveLove",
+        "label": "BaboonGlamour",
         "uiTheme": "vs",
-        "path": "./themes/BraveLove.json"
+        "path": "./baboon/BaboonGlamour.json"
       },
       {
-        "label": "BraveHomer",
+        "label": "BaboonHit",
         "uiTheme": "vs",
-        "path": "./themes/BraveHomer.json"
+        "path": "./baboon/BaboonHit.json"
       },
       {
-        "label": "BraveHabits",
+        "label": "BaboonJessy",
         "uiTheme": "vs",
-        "path": "./themes/BraveHabits.json"
+        "path": "./baboon/BaboonJessy.json"
       },
       {
-        "label": "BraveNeighbour",
+        "label": "BaboonQuote",
         "uiTheme": "vs",
-        "path": "./themes/BraveNeighbour.json"
+        "path": "./baboon/BaboonQuote.json"
       },
       {
-        "label": "CircusPeople",
+        "label": "BaboonVesi",
         "uiTheme": "vs",
-        "path": "./themes/CircusPeople.json"
+        "path": "./baboon/BaboonVesi.json"
       },
       {
-        "label": "CircusWhisky",
+        "label": "BaboonTrauma",
         "uiTheme": "vs",
-        "path": "./themes/CircusWhisky.json"
+        "path": "./baboon/BaboonTrauma.json"
       },
       {
-        "label": "CircusBrother",
+        "label": "BaboonSalome",
         "uiTheme": "vs",
-        "path": "./themes/CircusBrother.json"
-      },
-      {
-        "label": "NiketaBear",
-        "uiTheme": "vs",
-        "path": "./themes/NiketaBear.json"
-      },
-      {
-        "label": "NiketaNight",
-        "uiTheme": "vs",
-        "path": "./themes/NiketaNight.json"
-      },
-      {
-        "label": "NiketaOwl",
-        "uiTheme": "vs",
-        "path": "./themes/NiketaOwl.json"
-      },
-      {
-        "label": "NiketaMoon",
-        "uiTheme": "vs",
-        "path": "./themes/NiketaMoon.json"
+        "path": "./baboon/BaboonSalome.json"
       }
     ]
   },

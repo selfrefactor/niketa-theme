@@ -1,5 +1,6 @@
 export const COLOR_0 = [
   'support.constant',
+  'punctuation.definition.template-expression.begin.js',
   'entity.name.tag.UNDERLINE',
   'punctuation.accessor.js',
   'source.js',
@@ -7,7 +8,6 @@ export const COLOR_0 = [
   'source.scss',
   'storage.modifier.js',
   'string.quoted.single.js',
-  'variable.other.readwrite.js',
   'support.function.dom.js',
   'support.variable.property.js',
   'variable.language.constructor.UNDERLINE',
@@ -16,7 +16,6 @@ export const COLOR_0 = [
 
 export const COLOR_1 = [
   'meta.selector.css',
-  'variable.other.readwrite',
   'constant.language.null.js',
   'entity.name.class.UNDERLINE',
   'entity.name.function.UNDERLINE',
@@ -27,7 +26,6 @@ export const COLOR_1 = [
   'meta.brace.square.js',
   'variable.other.class.js',
   'constant.other.object.key.js',
-  'variable',
 ]
 
 export const COLOR_2 = [
@@ -63,6 +61,7 @@ export const COLOR_3 = [
 
 export const COLOR_4 = [
   'markup.italic',
+  'meta.template.expression.js',
   'punctuation.separator.parameter.js',
   'constant.character',
   'constant.other',

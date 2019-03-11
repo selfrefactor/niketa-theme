@@ -4,7 +4,7 @@ import { outputFileSync } from 'fs-extra'
 import { camelCase } from 'string-fn'
 import { baseData, baseBase, all } from '../palettes/baseData'
 
-import { switcher, random, remove } from 'rambdax'
+import { switcher, random, remove, replace } from 'rambdax'
 
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
@@ -91,6 +91,47 @@ export function baseRandom(label){
   saveAnt(`random.${ label }`, themeBase)
 }
 
+function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
+  const tokenColor = {
+    name     : syntaxInstance,
+    scope    : syntaxInstance,
+    settings : {
+      ...underline,
+      foreground : randomShade(color),
+    },
+  }
+  tokenColors.push(tokenColor)
+
+  if (syntaxInstance.endsWith('.js')){
+    const plainSyntaxInstance = remove('.js', syntaxInstance)
+
+    extensions.forEach(extension => {
+      const tokenColorExtension = {
+        name     : `${ plainSyntaxInstance }${ extension }`,
+        scope    : `${ plainSyntaxInstance }${ extension }`,
+        settings : {
+          ...underline,
+          foreground : randomShade(color),
+        },
+      }
+      tokenColors.push(tokenColorExtension)
+    })
+  }
+  if (syntaxInstance.endsWith('.begin.js')){
+    const endSyntaxInstance = replace(
+      '.begin.js',
+      '.end.js',
+      syntaxInstance
+    )
+    pushToTokenColors({
+      syntaxInstance : endSyntaxInstance,
+      underline,
+      tokenColors,
+      color,
+    })
+  }
+}
+
 export function base(label){
   const tokenColors = []
 
@@ -99,36 +140,18 @@ export function base(label){
 
       syntaxInstances
         .forEach(syntaxInstanceRaw => {
+
           const underline = syntaxInstanceRaw.endsWith(UNDERLINE) ?
             { fontStyle : 'underline' } :
             {}
           const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
 
-          const tokenColor = {
-            name     : syntaxInstance,
-            scope    : syntaxInstance,
-            settings : {
-              ...underline,
-              foreground : randomShade(color),
-            },
-          }
-          tokenColors.push(tokenColor)
-
-          if (syntaxInstance.endsWith('.js')){
-            const plainSyntaxInstance = remove('.js', syntaxInstance)
-
-            extensions.forEach(extension => {
-              const tokenColorExtension = {
-                name     : `${ plainSyntaxInstance }${ extension }`,
-                scope    : `${ plainSyntaxInstance }${ extension }`,
-                settings : {
-                  ...underline,
-                  foreground : randomShade(color),
-                },
-              }
-              tokenColors.push(tokenColorExtension)
-            })
-          }
+          pushToTokenColors({
+            syntaxInstance,
+            underline,
+            color,
+            tokenColors,
+          })
         })
     })
 

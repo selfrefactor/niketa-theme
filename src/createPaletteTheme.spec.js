@@ -5,15 +5,15 @@ const filePath = `${ base }/generated/foo.json`
 const filePathRandom = `${ base }/generated/randomBar.json`
 
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#f1f1f1', '#f9f6f1' ],
-  COLOR_SECONDARY : [ '#e2e2e0', '#eae3cd' ],
+  COLOR_BACK      : [ '#f9f6ec', '#f9f1dc' ],
+  COLOR_SECONDARY : [ '#e8e7e0', '#eae3cd' ],
   COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
-  COLOR_0         : [ '#2B8FB3', '#46753D' ],
-  COLOR_1         : [ '#a0512c', '#a22178' ],
-  COLOR_2         : [ '#d14076', '#fD8A6E' ],
-  COLOR_3         : [ '#880e4f', '#13644c' ],
-  COLOR_4         : [ '#46753D', '#fD8A6E' ],
-  COLOR_5         : [ '#f26c17', '#880e4f' ],
+  COLOR_0         : [ '#085b60', '#46753D' ],
+  COLOR_1         : [ '#BE5588', '#a22178' ],
+  COLOR_2         : [ '#633258', '#fD8A6E' ],
+  COLOR_3         : [ '#588859', '#13644c' ],
+  COLOR_4         : [ '#94233D', '#fD8A6E' ],
+  COLOR_5         : [ '#4086ad', '#880e4f' ],
 }
 
 const rulesWithOneColor = {
@@ -67,8 +67,7 @@ const rulesComplex = {
   ],
 }
 
-
-test('palette with predefined colors', () => {
+test('happy', () => {
 
   createPaletteTheme({
     // showList:true,
