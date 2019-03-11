@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
 
 import { camelCase } from 'string-fn'
-import { baseData, baseBase, all } from '../palettes/baseDataFoo'
+import { baseData, baseBase, all } from '../palettes/baseData'
 
 import { switcher, random, remove } from 'rambdax'
 

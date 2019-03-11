@@ -16,7 +16,6 @@ const rulesWithTwoColors = {
   COLOR_5         : [ '#f26c17', '#880e4f' ],
 }
 
-
 const rulesWithOneColor = {
   COLOR_BACK      : '#f9f7f5',
   COLOR_SECONDARY : '#ebe5d6',
@@ -68,6 +67,7 @@ const rulesComplex = {
   ],
 }
 
+
 test('palette with predefined colors', () => {
 
   createPaletteTheme({
@@ -76,7 +76,7 @@ test('palette with predefined colors', () => {
     filePath : filePath,
     rules    : rulesWithTwoColors,
     levels   : 12,
-    rate     : 0.06,
+    rate     : 0.07,
     // publishName  : 'niketa.moon',
     // publishIndex : 4,
   })
