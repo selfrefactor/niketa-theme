@@ -5,7 +5,7 @@ test('happy', () => {
 })
 
 test('random', () => {
-  [ 'foo', 'bar', 'baz' ].map(x => baseRandom(x))
+  [ 'foo', 'bar', 'baz','x','y','z' ].map(x => baseRandom(x))
 })
 
 test('random shade', () => {
