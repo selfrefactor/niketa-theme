@@ -35,6 +35,7 @@ export const COLOR_2 = [
   'support.function',
   'source.json',
   'meta.object-literal.key.js',
+  'variable.other.constant.js',
   'meta.paragraph.markdown',
   'entity.other.attribute-name.js',
   'string.quoted.single.json',
