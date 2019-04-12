@@ -20,6 +20,7 @@ const rulesWithTwoColors = {
   COLOR_5         : [ '#C50E36', '#ae7c7c' ],
 }
 
+
 const rulesWithOneColor = {
   COLOR_BACK      : '#f9f7f5',
   COLOR_SECONDARY : '#ebe5d6',
@@ -75,11 +76,11 @@ test('happy', () => {
 
   createPaletteTheme({
     // showList:true,
-    complex  : false,
-    filePath : filePathRandom[ 0 ],
-    rules    : rulesWithTwoColors,
-    levels   : 12,
-    rate     : 0.07,
+    complex      : false,
+    filePath     : filePathRandom[ 0 ],
+    rules        : rulesWithTwoColors,
+    levels       : 12,
+    rate         : 0.07,
     publishName  : 'circus.people',
     publishIndex : 2,
   })

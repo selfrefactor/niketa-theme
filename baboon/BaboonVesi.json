@@ -23,6 +23,13 @@
   },
   "tokenColors": [
     {
+      "name": "variable.other.constant.js",
+      "scope": "variable.other.constant.js",
+      "settings": {
+        "foreground": "#2F564C"
+      }
+    },
+    {
       "name": "support.constant",
       "scope": "support.constant",
       "settings": {
