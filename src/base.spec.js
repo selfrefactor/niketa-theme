@@ -1,11 +1,11 @@
 import { base, baseRandom, randomShade } from './base'
 
 test('happy', () => {
-  base('foo')
+  base('boring')
 })
 
 test('random', () => {
-  [ 'foo', 'bar', 'baz', 'x', 'y', 'z' ].map(x => baseRandom(x))
+  [ 'first', 'second', 'third', 'x', 'y', 'z' ].map(x => baseRandom(x))
 })
 
 test('random shade', () => {
