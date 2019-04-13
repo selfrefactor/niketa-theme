@@ -26,6 +26,22 @@
 
 ![advanced.mystery](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.mystery.png?raw=true)
 
+### Brave Habits
+
+![Brave Habits](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.habits.png?raw=true)
+
+### Brave Homer
+
+![Brave Homer](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.homer.png?raw=true)
+
+### Brave Love
+
+![Brave Love](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.love.png?raw=true)
+
+### Brave Neighbour
+
+![Brave Neighbour](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.neighbour.png?raw=true)
+
 ### Niketa Bear
 
 ![niketa.bear](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.bear.png?raw=true)
