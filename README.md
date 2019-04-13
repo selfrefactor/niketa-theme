@@ -6,35 +6,27 @@
 
 ## Screens
 
-Angry Cat
+### Advanced Bat
 
-![angrycat](https://github.com/selfrefactor/niketa-theme/blob/master/files/angry.cat.png?raw=true)
+![advanced.bat](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.bat.png?raw=true)
 
-Angry Dog
+### Advanced Cat
 
-![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/angry.dog.png?raw=true)
+![advanced.cat](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.cat.png?raw=true)
 
-Angry Homer
+### Advanced Dog
 
-![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/angry.homer.png?raw=true)
+![advanced.dog](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.dog.png?raw=true)
 
-Angry Neighbour
+### Advanced Engine
 
-![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/angry.neighbour.png?raw=true)
+![advanced.engine](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.engine.png?raw=true)
 
-Brave Bat
+### Advanced Mystery
 
-![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.bat.png?raw=true)
+![advanced.mystery](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.mystery.png?raw=true)
 
-Brave Whisky
-
-![bravebat](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.whisky.png?raw=true)
-
-Circus Love
-
-![circuslove](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.love.png?raw=true)
-
-Niketa Bear
+### Niketa Bear
 
 ![niketa.bear](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.bear.png?raw=true)
 
