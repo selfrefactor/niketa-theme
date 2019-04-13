@@ -34,6 +34,10 @@ Circus Love
 
 ![circuslove](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.love.png?raw=true)
 
+Niketa Bear
+
+![niketa.bear](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.bear.png?raw=true)
+
 ## Naming conventions
 
 I admit the name of the themes seems too lazy. This is on purpose as my goal is to generate useful light themes, not to create meaningful names.
