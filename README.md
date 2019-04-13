@@ -42,6 +42,18 @@
 
 ![Brave Neighbour](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.neighbour.png?raw=true)
 
+### Circus Brother
+
+![circus.brother](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.brother.png?raw=true)
+
+### Circus People
+
+![circus.People](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.people.png?raw=true)
+
+### Circus Whisky
+
+![circus.whisky](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.whisky.png?raw=true)
+
 ### Niketa Bear
 
 ![niketa.bear](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.bear.png?raw=true)
