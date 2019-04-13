@@ -4,7 +4,7 @@ test('happy', () => {
   base('boring')
 })
 
-test('random', () => {
+test.skip('random', () => {
   [ 'first', 'second', 'third', 'x', 'y', 'z' ].map(x => baseRandom(x))
 })
 

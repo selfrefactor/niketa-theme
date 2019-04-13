@@ -82,11 +82,11 @@ test('happy', () => {
 
   createPaletteTheme({
     // showList:true,
-    complex  : false,
-    filePath : filePathRandom[ 1 ],
-    rules    : rulesWithTwoColors,
-    levels   : 12,
-    rate     : 0.07,
+    complex      : false,
+    filePath     : filePathRandom[ 1 ],
+    rules        : rulesWithTwoColors,
+    levels       : 12,
+    rate         : 0.07,
     publishName  : 'niketa.bear',
     publishIndex : 1,
   })
