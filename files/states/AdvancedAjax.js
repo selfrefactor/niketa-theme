@@ -39,45 +39,60 @@ const rulesWithOneColor = {
   COLOR_5         : '#8e1f2f',
 }
 
-const TARGET1 = 'SECONDARY_9'
-const TARGET2 = 'DARK_BROWN_1'
+const TARGET_INDEX = 6
+
+const TARGETS = [
+  ['light.yellow.2', 'dark.purple.1'],
+  ['grey.0', 'dark.brown.2'],
+  ['dark.purple.3', 'secondary.9'],
+  ['back.13', 'back.3'],
+  ['pink.2', 'dark.pink.3'],
+  ['green.2', 'dark.green.3'],
+  ['dark.purple.1', 'purple.2'],
+]
+
+function fetchTarget(mode){
+  const [whenZero, whenOne] = TARGETS[TARGET_INDEX]
+
+  return mode === 0 ? whenZero : whenOne
+}
 
 const rulesComplexWithTargets = {
   COLOR_BACK : [
-    'BACK_6',
-    'BACK_16',
+    'BACK_12',
+    'BACK_12',
   ],
   COLOR_SECONDARY : [
-    'SECONDARY_2',
-    'SECONDARY_7',
+    'SECONDARY_8',
+    'SECONDARY_8',
   ],
   COLOR_SELECTION : [
-    'SELECTION_0',
-    'SELECTION_1',
+    'SELECTION_2',
+    'SELECTION_2',
   ],
   COLOR_0 : [
     'navy.2',
-    TARGET1,
+    fetchTarget(0),
   ],
   COLOR_1 : [
-    'brown.8',
-    TARGET1,
+    'grey.5',
+    fetchTarget(1),
   ],
   COLOR_2 : [
-    'blue.3',
-    TARGET2,
+    'dark.blue.0',
+    fetchTarget(0),
   ],
   COLOR_3 : [
-    'dark.green.2',
-    TARGET2,
+    'light.red.0',
+    fetchTarget(1),
   ],
   COLOR_4 : [
-    'orange.4',
-    TARGET2,
+    'teal.2',
+    fetchTarget(0),
   ],
   COLOR_5 : [
-    'dark.pink.2',
-    TARGET1,
+    'ochra.2',
+    fetchTarget(1),
   ],
 }
 
@@ -125,11 +140,11 @@ test('happy', () => {
   createPaletteTheme({
     showList:false,
     complex      : true,
-    filePath     : filePathRandom[ 4 ],
+    filePath     : filePathRandom[ 0 ],
     rules        : rulesComplexWithTargets,
     levels       : 12,
     rate         : 0.073,
     publishName  : 'advanced.ajax',
-    publishIndex : 0,
+    publishIndex : 3,
   })
 })
