@@ -1,6 +1,6 @@
 # Niketa
 
-15 Light VSCode Themes
+16 Light VSCode Themes
 
 > The repo contains also internal theme generator used for creation of the themes
 
@@ -93,7 +93,15 @@ Niketa is the name I gave to my dog. On this picture, she is about 90 days:
 
 ![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.jpg?raw=true)
 
-## Trending
+## Develop
+
+I build the themes by running `createPalleteTheme.spec.js` with `publish` flag set to `false`. I change the colors and I check among the 12 generated variations.
+
+## Dark themes
+
+If somebody cares for dark themes, just submit PR with this request and I'd create a few(or you can build a theme on your own and submit actual PR).
+
+## Trending log
 
 Time - 18.04.2019
 
