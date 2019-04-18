@@ -44,8 +44,6 @@ export const COLOR_3 = [
   'markup.quote',
   'meta.tag.js',
   'meta.parameters.js',
-  // 'punctuation.definition.parameters.begin.js',
-  // 'punctuation.definition.parameters.end.js',
   'meta.brace.square.js',
   'variable.other.class.js',
   'constant.other.object.key.js',
@@ -135,3 +133,6 @@ export const all = [
   ...COLOR_4,
   ...COLOR_5,
 ]
+
+// 'punctuation.definition.parameters.begin.js',
+// 'punctuation.definition.parameters.end.js',

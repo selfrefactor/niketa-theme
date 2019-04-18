@@ -72,7 +72,7 @@
 
 ## Naming conventions
 
-I admit the name of the themes seems dubious. My theory is that I just replace foo, bar, baz with their equally irrelevant substitutes.
+I admit the naming of the themes seems dubious. I just replaced foo, bar, baz with their equally irrelevant substitutes.
 
 ```
 group themes by background:
