@@ -42,6 +42,10 @@
 
 ![Brave Neighbour](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.neighbour.png?raw=true)
 
+### Circus Ajax
+
+![circus.brother](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.ajax.png?raw=true)
+
 ### Circus Brother
 
 ![circus.brother](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.brother.png?raw=true)
@@ -68,8 +72,7 @@
 
 ## Naming conventions
 
-I admit the name of the themes seems too lazy. This is on purpose as my goal is to generate useful light themes, not to create meaningful names.
-I did it as if I were a jazz musican, i.e. totally nonsense.
+I admit the name of the themes seems dubious. My theory is that I just replace foo, bar, baz with their equally irrelevant substitutes.
 
 ```
 group themes by background:
@@ -92,6 +95,10 @@ Niketa is the name I gave to my dog. On this picture, she is about 90 days:
 
 ## Trending
 
-Time - 05.03.2019
+Time - 18.04.2019
 
 ![trending](https://github.com/selfrefactor/niketa-theme/blob/master/files/trending.png?raw=true)
+
+Time - 05.03.2019
+
+![trending](https://github.com/selfrefactor/niketa-theme/blob/master/files/trending.march.png?raw=true)
