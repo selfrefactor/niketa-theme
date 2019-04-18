@@ -2,7 +2,7 @@ import importedColors from '../../colors.json'
 import { writeJsonAnt } from './writeJson.js'
 import hexSorter from 'hexsorter'
 
-export function sortColors(){
+export function sortColorsAnt(){
   const keys = Object.keys(importedColors)
   const sortedColors = {}
   keys.forEach(key => {

@@ -1,6 +1,6 @@
-import { sortColors } from './sortColors'
+import { sortColorsAnt } from './sortColors'
 
 test('', () => {
-  const result = sortColors()
+  const result = sortColorsAnt()
   console.log({result})
 })
