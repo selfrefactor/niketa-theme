@@ -11,30 +11,6 @@ const filePathRandom = [
   `${ base }/generated/randomZ.json`,
 ]
 
-const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#d8d5c9', '#d8d5c9' ],
-  COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
-  COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
-  COLOR_0         : [ '#218aaf', fetchTarget(0) ],
-  COLOR_1         : [ '#C55E33', fetchTarget(0) ],
-  COLOR_2         : [ '#24A058', fetchTarget(0) ],
-  COLOR_3         : [ '#5a245f', fetchTarget(0) ],
-  COLOR_4         : [ '#8e1f2f', fetchTarget(0) ],
-  COLOR_5         : [ '#AB3574', fetchTarget(0) ],
-}
-
-const rulesWithOneColor = {
-  COLOR_BACK      : '#f9f7f5',
-  COLOR_SECONDARY : '#ebe5d6',
-  COLOR_SELECTION : '#a1a1a1',
-  COLOR_0         : '#46758D',
-  COLOR_1         : '#9a4e4e',
-  COLOR_2         : '#aa769b',
-  COLOR_3         : '#880e4f',
-  COLOR_4         : '#7e735f',
-  COLOR_5         : '#8e1f2f',
-}
-
 const TARGET_INDEX = 6
 
 const TARGETS = [
@@ -51,6 +27,47 @@ function fetchTarget(mode){
   const [whenZero, whenOne] = TARGETS[TARGET_INDEX]
 
   return mode === 0 ? whenZero : whenOne
+}
+
+function fetchTargetComplex(mode){
+  const colors = readJsonAnt('colors.json')
+  const [whenZero, whenOne] = TARGETS[TARGET_INDEX]
+
+  const colorKeyRaw = mode === 0 ? whenZero : whenOne
+
+  console.log(colors);
+  throw 'sd' 
+  const colorKey = constantCase(colorKeyRaw)
+  const [num] = [...colorKeyRaw].filter(x => x*1 === Number(x))
+
+  const actualColor = color[colorKey][String(num)]
+
+  return actualColor
+}
+
+
+const rulesWithTwoColors = {
+  COLOR_BACK      : [ '#f1f1db', '#f1f1db' ],
+  COLOR_SECONDARY : [ '#C4C0A7', '#cfccb7' ],
+  COLOR_SELECTION : [ fetchTargetComplex(0), '#eae3cd' ],
+  COLOR_0         : [ '#218aaf', fetchTargetComplex(0) ],
+  COLOR_1         : [ '#C55E33', fetchTargetComplex(1) ],
+  COLOR_2         : [ '#24A058', fetchTargetComplex(0) ],
+  COLOR_3         : [ '#5a245f', fetchTargetComplex(1) ],
+  COLOR_4         : [ '#8e1f2f', fetchTargetComplex(1) ],
+  COLOR_5         : [ '#AB3574', fetchTargetComplex(0) ],
+}
+
+const rulesWithOneColor = {
+  COLOR_BACK      : '#f9f7f5',
+  COLOR_SECONDARY : '#ebe5d6',
+  COLOR_SELECTION : '#a1a1a1',
+  COLOR_0         : '#46758D',
+  COLOR_1         : '#9a4e4e',
+  COLOR_2         : '#aa769b',
+  COLOR_3         : '#880e4f',
+  COLOR_4         : '#7e735f',
+  COLOR_5         : '#8e1f2f',
 }
 
 const rulesComplexWithTargets = {
