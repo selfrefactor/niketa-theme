@@ -11,20 +11,16 @@ const filePathRandom = [
   `${ base }/generated/randomZ.json`,
 ]
 
-const TARGET = '#35495f'
-
 const rulesWithTwoColors = {
   COLOR_BACK      : [ '#d8d5c9', '#d8d5c9' ],
   COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
   COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
-  COLOR_0         : [ '#218aaf', TARGET ],
-  COLOR_1         : [ '#C55E33', TARGET ],
-  COLOR_2         : [ '#24A058', TARGET ],
-  COLOR_3         : [ '#5a245f', TARGET ],
-  // COLOR_3         : [ '#80cbc4', TARGET ],
-  COLOR_4         : [ '#8e1f2f', TARGET ],
-  // COLOR_4         : [ '#2C6576', TARGET ],
-  COLOR_5         : [ '#AB3574', TARGET ],
+  COLOR_0         : [ '#218aaf', fetchTarget(0) ],
+  COLOR_1         : [ '#C55E33', fetchTarget(0) ],
+  COLOR_2         : [ '#24A058', fetchTarget(0) ],
+  COLOR_3         : [ '#5a245f', fetchTarget(0) ],
+  COLOR_4         : [ '#8e1f2f', fetchTarget(0) ],
+  COLOR_5         : [ '#AB3574', fetchTarget(0) ],
 }
 
 const rulesWithOneColor = {
@@ -45,7 +41,7 @@ const TARGETS = [
   ['light.yellow.2', 'dark.purple.1'],
   ['grey.0', 'dark.brown.2'],
   ['dark.purple.3', 'secondary.9'],
-  ['back.13', 'back.3'],
+  ['back.13', 'back.3'],2
   ['pink.2', 'dark.pink.3'],
   ['green.2', 'dark.green.3'],
   ['dark.purple.1', 'purple.2'],
@@ -144,7 +140,7 @@ test('happy', () => {
     rules        : rulesComplexWithTargets,
     levels       : 12,
     rate         : 0.073,
-    publishName  : 'advanced.ajax',
-    publishIndex : 3,
+    // publishName  : 'advanced.ajax',
+    // publishIndex : 3,
   })
 })
