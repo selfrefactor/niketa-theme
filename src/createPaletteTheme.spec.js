@@ -45,17 +45,16 @@ function fetchTargetComplex(mode){
   return actualColor
 }
 
-
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#f1f1db', '#f1f1db' ],
-  COLOR_SECONDARY : [ '#C4C0A7', '#cfccb7' ],
+  COLOR_BACK      : [ '#f1f1dd', '#f6f6d6' ],
+  COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
   COLOR_SELECTION : [ fetchTargetComplex(0), '#eae3cd' ],
-  COLOR_0         : [ '#218aaf', fetchTargetComplex(0) ],
-  COLOR_1         : [ '#C55E33', fetchTargetComplex(1) ],
-  COLOR_2         : [ '#24A058', fetchTargetComplex(0) ],
-  COLOR_3         : [ '#5a245f', fetchTargetComplex(1) ],
-  COLOR_4         : [ '#8e1f2f', fetchTargetComplex(1) ],
-  COLOR_5         : [ '#AB3574', fetchTargetComplex(0) ],
+  COLOR_0         : [ '#cd7c55', fetchTargetComplex(0) ],
+  COLOR_1         : [ '#36456F', fetchTargetComplex(1) ],
+  COLOR_2         : [ '#79753C', fetchTargetComplex(0) ],
+  COLOR_3         : [ '#c83a71', fetchTargetComplex(1) ],
+  COLOR_4         : [ '#3EA8C4', fetchTargetComplex(1) ],
+  COLOR_5         : [ '#C50E36', fetchTargetComplex(0) ],
 }
 
 const rulesWithOneColor = {
