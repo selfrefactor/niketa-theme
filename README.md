@@ -101,6 +101,10 @@ I build the themes by running `createPalleteTheme.spec.js` with `publish` flag s
 
 If somebody cares for dark themes, just submit PR with this request and I'd create a few(or you can build a theme on your own and submit actual PR).
 
+## TODO
+
+Update screen of CircusPeople
+
 ## Trending log
 
 Time - 18.04.2019

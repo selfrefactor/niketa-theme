@@ -16,12 +16,14 @@ const filePathRandom = [
   `${ base }/generated/randomJones.json`,
 ]
 
-const PALLETE_INDEX = 8
+const PALLETE_INDEX = 0
 const PALLETE_RANDOM_FLAG = true
 const RATE = 0.068
-const TARGET_INDEX = 0
+const TARGET_INDEX = 2
 
 const TARGETS = [
+  [ 'teal.1', 'teal.1' ],
+  [ 'dark.blue.8', 'blue.8' ],
   [ 'dark.green.10', 'dark.blue.2' ],
   [ 'navy.4', 'dark.blue.2' ],
   [ 'light.red.0', 'red.0' ],
@@ -93,39 +95,39 @@ const rulesWithOneColor = {
 
 const rulesComplexWithTargets = {
   COLOR_BACK : [
-    'BACK_12',
-    'BACK_12',
+    'BACK_9',
+    'BACK_17',
   ],
   COLOR_SECONDARY : [
-    'SECONDARY_8',
-    'SECONDARY_8',
+    'SECONDARY_2',
+    'SECONDARY_9',
   ],
   COLOR_SELECTION : [
-    'SELECTION_2',
+    'SELECTION_1',
     'SELECTION_2',
   ],
   COLOR_0 : [
-    'navy.2',
+    'red.2',
     fetchTarget(0),
   ],
   COLOR_1 : [
-    'grey.5',
+    'dark.red.8',
     fetchTarget(1),
   ],
   COLOR_2 : [
-    'dark.blue.0',
+    'dark.blue.3',
     fetchTarget(0),
   ],
   COLOR_3 : [
-    'light.red.0',
+    'dark.purple.4',
     fetchTarget(1),
   ],
   COLOR_4 : [
-    'teal.2',
+    'brown.8',
     fetchTarget(0),
   ],
   COLOR_5 : [
-    'ochra.2',
+    'orange.1',
     fetchTarget(1),
   ],
 }
@@ -177,10 +179,10 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       filePathRandom[ PALLETE_INDEX ] :
       filePath,
-    rules  : rulesWithTwoColors,
+    rules  : rulesComplexWithTargets,
     levels : 22,
     rate   : RATE,
-    publishName  : 'circus.people',
-    publishIndex : 1,
+    // publishName  : 'circus.people',
+    // publishIndex : 1,
   })
 })
