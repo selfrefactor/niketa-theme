@@ -4,8 +4,10 @@ test('happy', () => {
   base('boring')
 })
 
+const LIST = [ 'first', 'second', 'third', 'x', 'y', 'z', 'john', 'paul', 'jones' ]
+
 test.skip('random', () => {
-  [ 'first', 'second', 'third', 'x', 'y', 'z' ].map(x => baseRandom(x))
+  LIST.map(x => baseRandom(x))
 })
 
 test('random shade', () => {

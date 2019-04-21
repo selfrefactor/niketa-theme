@@ -30,6 +30,7 @@ export const COLOR_1 = [
 
 export const COLOR_2 = [
   'variable.language',
+  'constant.language',
   'entity.name.type.UNDERLINE',
   'variable.parameter',
   'support.function',
@@ -47,11 +48,11 @@ export const COLOR_2 = [
 
 export const COLOR_3 = [
   'storage.type',
+  'constant.other',
   'variable.other.object.js',
   'markup.quote',
   'meta.import.js',
   'meta.tag.js',
-  'meta.parameters.js',
   'string.quoted.single.js',
   'meta.object-literal.key.js',
   'string.template',
@@ -64,9 +65,10 @@ export const COLOR_4 = [
   'markup.italic',
   'meta.template.expression.js',
   'punctuation.separator.parameter.js',
+  'meta.parameters.js',
   'constant.character',
-  'constant.other',
   'comment',
+  'keyword',
   'markup.italic',
   'comment.block.documentation',
   'comment.line.double-slash',
@@ -75,7 +77,6 @@ export const COLOR_4 = [
 
 export const COLOR_5 = [
   'punctuation.definition.parameters.begin.js',
-  'constant.language',
   'constant.language.boolean',
   'punctuation.separator.key-value.js',
   'storage.modifier.async.js',
@@ -87,7 +88,6 @@ export const COLOR_5 = [
   'keyword.operator.accessor',
   'invalid.UNDERLINE',
   'constant.numeric',
-  'keyword',
   'meta.var.expr.js',
   'keyword.control.import.js',
   'keyword.control.from.js',
