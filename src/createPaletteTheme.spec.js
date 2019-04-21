@@ -16,10 +16,10 @@ const filePathRandom = [
   `${ base }/generated/randomJones.json`,
 ]
 
-const PALLETE_INDEX = 0
+const PALLETE_INDEX = 4
 const PALLETE_RANDOM_FLAG = true
 const RATE = 0.068
-const TARGET_INDEX = 2
+const TARGET_INDEX = 1
 
 const TARGETS = [
   [ 'teal.1', 'teal.1' ],
@@ -95,8 +95,8 @@ const rulesWithOneColor = {
 
 const rulesComplexWithTargets = {
   COLOR_BACK : [
+    'BACK_7',
     'BACK_9',
-    'BACK_17',
   ],
   COLOR_SECONDARY : [
     'SECONDARY_2',
@@ -107,7 +107,7 @@ const rulesComplexWithTargets = {
     'SELECTION_2',
   ],
   COLOR_0 : [
-    'red.2',
+    'teal.1',
     fetchTarget(0),
   ],
   COLOR_1 : [
@@ -119,15 +119,15 @@ const rulesComplexWithTargets = {
     fetchTarget(0),
   ],
   COLOR_3 : [
-    'dark.purple.4',
+    'blue.1',
     fetchTarget(1),
   ],
   COLOR_4 : [
-    'brown.8',
+    'navy.7',
     fetchTarget(0),
   ],
   COLOR_5 : [
-    'orange.1',
+    'brown.1',
     fetchTarget(1),
   ],
 }
@@ -182,7 +182,7 @@ test('happy', () => {
     rules  : rulesComplexWithTargets,
     levels : 22,
     rate   : RATE,
-    // publishName  : 'circus.people',
-    // publishIndex : 1,
+    publishName  : 'circus.people',
+    publishIndex : 4,
   })
 })
