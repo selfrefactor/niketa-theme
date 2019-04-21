@@ -1,6 +1,6 @@
 # Niketa
 
-16 Light VSCode Themes
+17 Light VSCode Themes
 
 > The repo contains also internal theme generator used for creation of the themes
 
@@ -21,6 +21,10 @@
 ### Advanced Engine
 
 ![advanced.engine](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.engine.png?raw=true)
+
+### Advanced Hook
+
+> coming
 
 ### Advanced Mystery
 
@@ -51,6 +55,8 @@
 ![circus.brother](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.brother.png?raw=true)
 
 ### Circus People
+
+> update coming
 
 ![circus.People](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.people.png?raw=true)
 
@@ -100,10 +106,6 @@ I build the themes by running `createPalleteTheme.spec.js` with `publish` flag s
 ## Dark themes
 
 If somebody cares for dark themes, just submit PR with this request and I'd create a few(or you can build a theme on your own and submit actual PR).
-
-## TODO
-
-Update screen of CircusPeople
 
 ## Trending log
 
