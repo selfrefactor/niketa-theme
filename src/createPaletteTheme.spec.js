@@ -74,15 +74,15 @@ function translate(colorKeyRaw){
 }
 
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#f1f1dd', '#f6f6d6' ],
-  COLOR_SECONDARY : [ translate('secondary.8'), '#a6aBaF' ],
+  COLOR_BACK      : [ '#d8d5c9', '#d8d5c9' ],
+  COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
   COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
-  COLOR_0         : [ '#3EA8C4', fetchTargetComplex(0) ],
-  COLOR_1         : [ translate('pink.1'), fetchTargetComplex(1) ],
-  COLOR_2         : [ '#cd7c55', fetchTargetComplex(1) ],
-  COLOR_3         : [ '#79753C', fetchTargetComplex(0) ],
-  COLOR_4         : [ '#c83a71', fetchTargetComplex(0) ],
-  COLOR_5         : [ '#3EA8C4', fetchTargetComplex(1) ],
+  COLOR_0         : [ '#218aaf', fetchTargetComplex(0) ],
+  COLOR_1         : [ '#C55E33', fetchTargetComplex(1) ],
+  COLOR_2         : [ translate('navy.5'), fetchTargetComplex(1) ],
+  COLOR_3         : [ '#5a245f', fetchTargetComplex(0) ],
+  COLOR_4         : [ '#8e1f2f', fetchTargetComplex(0) ],
+  COLOR_5         : [ '#AB3574', fetchTargetComplex(1) ],
 }
 
 const rulesWithOneColor = {
@@ -185,10 +185,10 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       filePathRandom[ PALLETE_INDEX ] :
       filePath,
-    rules        : rulesComplexWithTargets,
+    rules        : rulesWithTwoColors,
     levels       : 22,
     rate         : RATE,
-    publishName  : 'advanced.hook',
-    publishIndex : 4,
+    publishName  : 'niketa.bear',
+    publishIndex : 2,
   })
 })
