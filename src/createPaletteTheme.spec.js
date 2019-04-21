@@ -179,9 +179,9 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       filePathRandom[ PALLETE_INDEX ] :
       filePath,
-    rules  : rulesComplexWithTargets,
-    levels : 22,
-    rate   : RATE,
+    rules        : rulesComplexWithTargets,
+    levels       : 22,
+    rate         : RATE,
     publishName  : 'circus.people',
     publishIndex : 4,
   })
