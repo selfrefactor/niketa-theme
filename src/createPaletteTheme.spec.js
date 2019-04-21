@@ -16,12 +16,13 @@ const filePathRandom = [
   `${ base }/generated/randomJones.json`,
 ]
 
-const PALLETE_INDEX = 4
+const PALLETE_INDEX = 7
 const PALLETE_RANDOM_FLAG = true
 const RATE = 0.068
-const TARGET_INDEX = 1
+const TARGET_INDEX = 0
 
 const TARGETS = [
+  [ 'dark.pink.7', 'navy.7' ],
   [ 'teal.1', 'teal.1' ],
   [ 'dark.blue.8', 'blue.8' ],
   [ 'dark.green.10', 'dark.blue.2' ],
@@ -72,10 +73,10 @@ function translateColor(colorKeyRaw){
 const rulesWithTwoColors = {
   COLOR_BACK      : [ '#f1f1dd', '#f6f6d6' ],
   COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
-  COLOR_SELECTION : [ fetchTargetComplex(0), '#eae3cd' ],
-  COLOR_0         : [ '#cd7c55', fetchTargetComplex(0) ],
-  COLOR_1         : [ translateColor('dark.purple.1'), fetchTargetComplex(0) ],
-  COLOR_2         : [ '#36456F', fetchTargetComplex(1) ],
+  COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
+  COLOR_0         : [ '#3EA8C4', fetchTargetComplex(0) ],
+  COLOR_1         : [ translateColor('pink.1'), fetchTargetComplex(0) ],
+  COLOR_2         : [ '#cd7c55', fetchTargetComplex(1) ],
   COLOR_3         : [ '#79753C', fetchTargetComplex(0) ],
   COLOR_4         : [ '#c83a71', fetchTargetComplex(1) ],
   COLOR_5         : [ '#3EA8C4', fetchTargetComplex(1) ],
@@ -179,7 +180,7 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       filePathRandom[ PALLETE_INDEX ] :
       filePath,
-    rules        : rulesComplexWithTargets,
+    rules        : rulesWithTwoColors,
     levels       : 22,
     rate         : RATE,
     publishName  : 'circus.people',
