@@ -18,10 +18,11 @@ const filePathRandom = [
 
 const PALLETE_INDEX = 6
 const PALLETE_RANDOM_FLAG = false
-const RATE = 0.072
+const RATE = 0.045
 const TARGET_INDEX = 0
 
 const TARGETS = [
+  [ 'dark.brown.3', 'random.2' ],
   [ 'dark.0', 'grey.5' ],
   [ 'dark.red.6', 'dark.pink.7' ],
   [ 'dark.green.10', 'dark.purple.4' ],
@@ -99,41 +100,39 @@ const rulesWithOneColor = {
 
 const rulesComplexWithTargets = {
   COLOR_BACK : [
-    'BACK_0',
-    'BACK_0',
-    // 'light.yellow.2',
+    '#c1bcae',
+    '#c1bcae',
   ],
   COLOR_SECONDARY : [
-    'SECONDARY_5',
-    'SECONDARY_4',
+    'secondary.8',
+    'secondary.8',
   ],
   COLOR_SELECTION : [
     'SELECTION_1',
     'SELECTION_2',
   ],
   COLOR_0 : [
-    'teal.1',
+    'orange.6',
     fetchTarget(0),
   ],
   COLOR_1 : [
-    'grey.5',
+    'dark.blue.1',
     fetchTarget(0),
   ],
   COLOR_2 : [
-    'orange.4',
+    '#4c824a',
     fetchTarget(1),
   ],
   COLOR_3 : [
-    'dark.blue.0',
+    'brown.1',
     fetchTarget(1),
   ],
   COLOR_4 : [
-    'red.2',
-    // 'secondary.9',
-    fetchTarget(0),
+    '#9B6397',
+    '#1B6397',
   ],
   COLOR_5 : [
-    'teal.7',
+    'dark.red.8',
     fetchTarget(1),
   ],
 }
@@ -192,3 +191,4 @@ test('happy', () => {
     publishIndex : 2,
   })
 })
+

@@ -43,7 +43,6 @@ const TARGETS = [
   [ 'secondary.7', 'purple.2' ],
 ]
 
-
 function fetchTarget(mode){
   const [ whenZero, whenOne ] = TARGETS[ TARGET_INDEX ]
 
@@ -130,7 +129,7 @@ const rulesComplexWithTargets = {
   ],
   COLOR_4 : [
     '#9B6397',
-    '#1B6397'
+    '#1B6397',
   ],
   COLOR_5 : [
     'dark.red.8',
@@ -185,11 +184,11 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       filePathRandom[ PALLETE_INDEX ] :
       filePath,
-    rules        : rulesComplexWithTargets,
+    rules        : rulesWithTwoColors,
     levels       : 22,
     rate         : RATE,
-    publishName  : 'niketa.moon',
-    publishIndex : 5,
+    publishName  : 'niketa.bear',
+    publishIndex : 2,
   })
 })
 
