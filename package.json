@@ -7,8 +7,6 @@
   "publisher": "selfrefactor",
   "scripts": {
     "test": "jest src",
-    "start": "node dist/index.js",
-    "watch": "parcel watch src/index.js --target node",
     "build": "parcel build src/index.js --target node"
   },
   "engines": {

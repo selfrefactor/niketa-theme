@@ -19,7 +19,7 @@ const filePathRandom = [
 const PALLETE_INDEX = 7
 const PALLETE_RANDOM_FLAG = true
 const RATE = 0.068
-const TARGET_INDEX = 0
+const TARGET_INDEX = 8
 
 const TARGETS = [
   [ 'dark.pink.7', 'navy.7' ],
@@ -59,7 +59,7 @@ function fetchTargetComplex(mode){
   return actualColor
 }
 
-function translateColor(colorKeyRaw){
+function translate(colorKeyRaw){
   const colors = readJsonAnt('colors.json')
 
   const colorKey = constantCase(colorKeyRaw)
@@ -72,13 +72,13 @@ function translateColor(colorKeyRaw){
 
 const rulesWithTwoColors = {
   COLOR_BACK      : [ '#f1f1dd', '#f6f6d6' ],
-  COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
+  COLOR_SECONDARY : [ translate('secondary.8'), '#a6aBaF' ],
   COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
   COLOR_0         : [ '#3EA8C4', fetchTargetComplex(0) ],
-  COLOR_1         : [ translateColor('pink.1'), fetchTargetComplex(0) ],
+  COLOR_1         : [ translate('pink.1'), fetchTargetComplex(1) ],
   COLOR_2         : [ '#cd7c55', fetchTargetComplex(1) ],
   COLOR_3         : [ '#79753C', fetchTargetComplex(0) ],
-  COLOR_4         : [ '#c83a71', fetchTargetComplex(1) ],
+  COLOR_4         : [ '#c83a71', fetchTargetComplex(0) ],
   COLOR_5         : [ '#3EA8C4', fetchTargetComplex(1) ],
 }
 
@@ -100,8 +100,8 @@ const rulesComplexWithTargets = {
     'BACK_9',
   ],
   COLOR_SECONDARY : [
-    'SECONDARY_2',
-    'SECONDARY_9',
+    'SECONDARY_8',
+    'SECONDARY_6',
   ],
   COLOR_SELECTION : [
     'SELECTION_1',
@@ -183,7 +183,7 @@ test('happy', () => {
     rules        : rulesWithTwoColors,
     levels       : 22,
     rate         : RATE,
-    publishName  : 'circus.people',
-    publishIndex : 4,
+    // publishName  : 'circus.people',
+    // publishIndex : 4,
   })
 })
