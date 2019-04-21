@@ -17,7 +17,7 @@ const filePathRandom = [
 ]
 
 const PALLETE_INDEX = 6
-const PALLETE_RANDOM_FLAG = true
+const PALLETE_RANDOM_FLAG = false
 const RATE = 0.045
 const TARGET_INDEX = 0
 

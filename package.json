@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Large collection of handmade light themes",
-  "version": "6.8.0",
+  "version": "5.8.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -22,14 +22,6 @@
   "bugs": {
     "url": "https://github.com/selfrefactor/niketa-theme/issues"
   },
-  "keywords": [
-    "theme",
-    "color-theme",
-    "light",
-    "collection",
-    "themes",
-    "bundle"
-  ],
   "icon": "logo.png",
   "contributes": {
     "themes": [
@@ -120,6 +112,14 @@
       }
     ]
   },
+  "keywords": [
+    "theme",
+    "color-theme",
+    "light",
+    "collection",
+    "themes",
+    "bundle"
+  ],
   "devDependencies": {
     "rgb-hex": "^2.1.0",
     "babel-cli": "^6.26.0",
