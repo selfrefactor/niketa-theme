@@ -2,10 +2,10 @@ import { createPaletteTheme } from './createPaletteTheme'
 import { readJsonAnt } from './ants/readJson'
 import { constantCase } from 'string-fn'
 
-const PALLETE_INDEX = 8
-const PALLETE_RANDOM_FLAG = false
+const PALLETE_INDEX = 2
+const PALLETE_RANDOM_FLAG = true
 const RATE = 0.05
-const TARGET_INDEX = 9
+const TARGET_INDEX = 12
 const TARGETS = [
   [ 'dark.brown.3', 'random.2' ],
   [ 'dark.0', 'grey.5' ],
@@ -18,9 +18,11 @@ const TARGETS = [
   [ 'navy.4', 'dark.blue.2' ],
   [ 'light.red.0', 'red.0' ],
   [ 'orange.6', 'navy.0' ],
+  [ 'secondary.5', 'ochra.0' ], // for darker themes
+  [ 'navy.7', 'dark.1' ], // for darker themes
   [ 'light.yellow.2', 'dark.purple.1' ],
   [ 'grey.0', 'dark.brown.2' ],
-    [ 'pink.2', 'dark.pink.3' ],
+  [ 'pink.2', 'dark.pink.3' ],
   [ 'green.2', 'dark.green.3' ],
   [ 'dark.purple.1', 'purple.2' ],
 ]
@@ -63,24 +65,24 @@ const rulesComplexWithTargets = {
     'SELECTION_2',
   ],
   COLOR_0 : [
-    'orange.6',
-    fetchTarget(0),
+    '#9B6397',
+    '#1B6397',
   ],
   COLOR_1 : [
     'dark.blue.1',
     fetchTarget(0),
   ],
   COLOR_2 : [
-    '#4c824a',
+    'dark.green.7',
     fetchTarget(1),
   ],
   COLOR_3 : [
-    'brown.1',
+    'brown.2',
     fetchTarget(1),
   ],
-  COLOR_4 : [
-    '#9B6397',
-    '#1B6397',
+  COLOR_0 : [
+    'brown.4',
+    fetchTarget(0),
   ],
   COLOR_5 : [
     'dark.red.8',
@@ -138,11 +140,11 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       getFilePathRandom(PALLETE_INDEX) :
       filePath,
-    rules  : rulesWithTwoColors,
+    rules  : rulesComplexWithTargets,
     levels : 22,
     rate   : RATE,
-    publishName  : 'brave.neighbour',
-    publishIndex : 3,
+    publishName  : 'niketa.moon',
+    publishIndex : 6,
   })
 })
 
@@ -187,5 +189,5 @@ function getFilePathRandom(index){
     `${ base }/generated/randomJones.json`,
   ]
 
-  return filePathRandom[index]
+  return filePathRandom[ index ]
 }
