@@ -18,7 +18,7 @@ const filePathRandom = [
 
 const PALLETE_INDEX = 6
 const PALLETE_RANDOM_FLAG = false
-const RATE = 0.045
+const RATE = 0.075
 const TARGET_INDEX = 0
 
 const TARGETS = [
@@ -75,15 +75,15 @@ function translate(colorKeyRaw){
 }
 
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#d8d5c9', '#d8d5c9' ],
-  COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
+  COLOR_BACK      : [ '#f9f6f2', '#ede8e1' ],
+  COLOR_SECONDARY : [ '#CBC8C6', '#CBC8C6' ],
   COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
-  COLOR_0         : [ '#218aaf', fetchTargetComplex(0) ],
-  COLOR_1         : [ '#C55E33', fetchTargetComplex(1) ],
-  COLOR_2         : [ translate('navy.5'), fetchTargetComplex(1) ],
-  COLOR_3         : [ '#5a245f', fetchTargetComplex(0) ],
-  COLOR_4         : [ '#8e1f2f', fetchTargetComplex(0) ],
-  COLOR_5         : [ '#AB3574', fetchTargetComplex(1) ],
+  COLOR_0         : [ '#2c6c96', fetchTargetComplex(0) ],
+  COLOR_1         : [ '#567c73', fetchTargetComplex(1) ],
+  COLOR_2         : [ translate('grey.5'), fetchTargetComplex(1) ],
+  COLOR_3         : [ '#d95361', fetchTargetComplex(0) ],
+  COLOR_4         : [ '#985155', fetchTargetComplex(0) ],
+  COLOR_5         : [ translate('purple.4'), fetchTargetComplex(1) ],
 }
 
 const rulesWithOneColor = {
@@ -187,8 +187,8 @@ test('happy', () => {
     rules        : rulesWithTwoColors,
     levels       : 22,
     rate         : RATE,
-    publishName  : 'niketa.bear',
-    publishIndex : 2,
+    // publishName  : 'niketa.bear',
+    // publishIndex : 2,
   })
 })
 
