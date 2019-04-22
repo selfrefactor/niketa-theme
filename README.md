@@ -44,6 +44,8 @@
 
 ### Brave Neighbour
 
+> updated screen coming
+
 ![Brave Neighbour](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.neighbour.png?raw=true)
 
 ### Circus Ajax
@@ -56,7 +58,7 @@
 
 ### Circus People
 
-> update coming
+> updated screen coming
 
 ![circus.People](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.people.png?raw=true)
 
