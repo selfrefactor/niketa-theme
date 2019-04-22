@@ -143,8 +143,8 @@ test('happy', () => {
     rules  : rulesComplexWithTargets,
     levels : 22,
     rate   : RATE,
-    publishName  : 'niketa.moon',
-    publishIndex : 6,
+    // publishName  : 'niketa.moon',
+    // publishIndex : 6,
   })
 })
 
