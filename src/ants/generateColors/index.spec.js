@@ -44,7 +44,7 @@ test('x', () => {
 
 test.only('happy', () => {
   const input = [ '#64c2ba', 'ochra.3' ]
-  expect(() => generateColorsAnt(input, '_PERSISTED')).not.toThrow()
+  expect(() => generateColorsAnt(input, false, '_PERSISTED')).not.toThrow()
   const sk = readJsonAnt(
     'src/ants/generateColors/colors/_PERSISTED_COLORS.json'
   )

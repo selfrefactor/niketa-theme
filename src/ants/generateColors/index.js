@@ -1,8 +1,27 @@
 import { writeJsonAnt } from '../writeJson'
 import { translate } from '../mini/translate'
 import { getGradientBee } from '../../bees/getGradient'
-import { uniq, piped, tail, take, flatten } from 'rambdax'
+import {
+  flatten,
+  pipe,
+  piped,
+  tail,
+  take,
+  sort,
+  uniq,
+  ifElse,
+} from 'rambdax'
+import hexSorter from 'hexsorter'
 const base = 'src/ants/generateColors/colors'
+
+export function compareColors(a, b){
+  if (!a) return 1
+  if (!b) return -1
+
+  const brighter = hexSorter.mostBrightColor([ a, b ])
+
+  return brighter === a ? -1 : 1
+}
 
 function getOpacities(levels = 10){
   return piped(
@@ -12,7 +31,7 @@ function getOpacities(levels = 10){
   )
 }
 
-function applyOpacities(hexColor){
+export function applyOpacities(hexColor){
   const opacities = getOpacities()
 
   return opacities.map(
@@ -20,7 +39,7 @@ function applyOpacities(hexColor){
   )
 }
 
-export function generateColorsAnt(colorsOrKeys, label = ''){
+export function generateColorsAnt(colorsOrKeys, opacityFlag = false, label = ''){
   const [ firstRaw, secondRaw ] = colorsOrKeys
   const OUTPUT = `${ base }/${ label }_COLORS.json`
 
@@ -32,11 +51,19 @@ export function generateColorsAnt(colorsOrKeys, label = ''){
     secondRaw :
     translate(secondRaw)
 
+  const whenOpacity = pipe(
+    x => x.map(applyOpacities),
+    flatten,
+    sort(compareColors)
+  )
+
   const colors = piped(
     getGradientBee(first, second, 500),
     uniq,
-    x => x.map(applyOpacities),
-    flatten,
+    x => opacityFlag ?
+      whenOpacity(x) :
+      x
   )
+
   writeJsonAnt(OUTPUT, colors)
 }

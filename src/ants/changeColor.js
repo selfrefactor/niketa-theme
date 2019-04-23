@@ -4,6 +4,8 @@ import { switcher } from 'rambdax'
 const BASE = 0.08
 
 export function changeColorAnt(color, modeInput, base = BASE){
+  if(color.length === 9) return color
+  
   const { mode, change } = switcher(modeInput)
     .is('DARKEST', {
       mode   : 'darken',
