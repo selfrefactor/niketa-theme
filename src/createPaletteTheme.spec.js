@@ -1,6 +1,6 @@
 import { createPaletteTheme } from './createPaletteTheme'
-import { readJsonAnt } from './ants/readJson'
-import { constantCase } from 'string-fn'
+import { translate } from './ants/mini/translate'
+import { FetchTargetColor } from './ants/mini/fetchTargetColor'
 
 const PALLETE_INDEX = 7
 const PALLETE_RANDOM_FLAG = true
@@ -29,41 +29,26 @@ const TARGETS = [
   [ 'dark.purple.1', 'purple.2' ],
 ]
 
+const FetchTargetColorI = new FetchTargetColor({
+  targetIndex : TARGET_INDEX,
+  targets     : TARGETS,
+})
+
+const fetchZero = FetchTargetColorI.is(0)
+const fetchOne = FetchTargetColorI.is(1)
+const fetchZeroSimple = FetchTargetColorI.isSimple(0)
+const fetchOneSimple = FetchTargetColorI.isSimple(1)
+
 const rulesWithTwoColors = {
   COLOR_BACK      : [ '#f5f2e0', '#ede8e1' ],
   COLOR_SECONDARY : [ '#cacacc', '#9eb4ad' ],
   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_0         : [ translate('dark.purple.4'), fetchTargetComplex(0) ],
-  COLOR_1         : [ '#3f7063', fetchTargetComplex(1) ],
-  COLOR_2         : [ translate('blue.4'), fetchTargetComplex(1) ],
-  COLOR_3         : [ '#d95361', fetchTargetComplex(0) ],
-  COLOR_4         : [ '#985155', fetchTargetComplex(1) ],
-  // COLOR_5         : [ translate('yellow.5'), fetchTargetComplex(1) ],
-  COLOR_5         : [ '#D8A10D', fetchTargetComplex(1) ],
-}
-
-const rulesWithTwoColorsx = {
-  COLOR_BACK      : [ '#f3f3e2', '#f6f6e9' ],
-  COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
-  COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_0         : [ '#3EA8C4', fetchTargetComplex(0) ],
-  COLOR_1         : [ '#aa769b', fetchTargetComplex(1) ],
-  COLOR_2         : [ translate('dark.green.6'), fetchTargetComplex(1) ],
-  COLOR_3         : [ translate('dark.blue.0'), fetchTargetComplex(0) ],
-  COLOR_4         : [ '#c83a71', fetchTargetComplex(1) ],
-  COLOR_5         : [ translate('random.2'), fetchTargetComplex(1) ],
-}
-
-const rulesWithOneColor = {
-  COLOR_BACK      : '#f9f7f5',
-  COLOR_SECONDARY : '#ebe5d6',
-  COLOR_SELECTION : '#a1a1a1',
-  COLOR_0         : '#46758D',
-  COLOR_1         : '#9a4e4e',
-  COLOR_2         : '#aa769b',
-  COLOR_3         : '#880e4f',
-  COLOR_4         : '#7e735f',
-  COLOR_5         : '#8e1f2f',
+  COLOR_0         : [ translate('dark.purple.4'), fetchOne ],
+  COLOR_1         : [ '#3f7063', fetchZero ],
+  COLOR_2         : [ translate('blue.4'), fetchOne ],
+  COLOR_3         : [ '#d95361', fetchZero ],
+  COLOR_4         : [ '#985155', fetchOne ],
+  COLOR_5         : [ '#D8A10D', fetchZero ],
 }
 
 const rulesComplexWithTargets = {
@@ -85,23 +70,23 @@ const rulesComplexWithTargets = {
   ],
   COLOR_1 : [
     'dark.blue.1',
-    fetchTarget(0),
+    fetchOneSimple,
   ],
   COLOR_2 : [
     'dark.green.7',
-    fetchTarget(1),
+    fetchZeroSimple,
   ],
   COLOR_3 : [
     'brown.2',
-    fetchTarget(1),
+    fetchOneSimple,
   ],
   COLOR_0 : [
     'brown.4',
-    fetchTarget(0),
+    fetchOneSimple,
   ],
   COLOR_5 : [
     'dark.red.8',
-    fetchTarget(1),
+    fetchZeroSimple,
   ],
 }
 
@@ -163,37 +148,6 @@ test('happy', () => {
   })
 })
 
-function fetchTarget(mode){
-  const [ whenZero, whenOne ] = TARGETS[ TARGET_INDEX ]
-
-  return mode === 0 ? whenZero : whenOne
-}
-
-function fetchTargetComplex(mode){
-  const colors = readJsonAnt('colors.json')
-  const [ whenZero, whenOne ] = TARGETS[ TARGET_INDEX ]
-
-  const colorKeyRaw = mode === 0 ? whenZero : whenOne
-
-  const colorKey = constantCase(colorKeyRaw)
-  const [ num ] = [ ...colorKeyRaw ].filter(x => Number(x) === Number(x))
-
-  const actualColor = colors[ colorKey ][ String(num) ]
-
-  return actualColor
-}
-
-function translate(colorKeyRaw){
-  const colors = readJsonAnt('colors.json')
-
-  const colorKey = constantCase(colorKeyRaw)
-  const [ num ] = [ ...colorKeyRaw ].filter(x => Number(x) === Number(x))
-
-  const actualColor = colors[ colorKey ][ String(num) ]
-
-  return actualColor
-}
-
 function getFilePathRandom(index){
   const filePathRandom = [
     `${ base }/generated/randomFirst.json`,
@@ -208,4 +162,18 @@ function getFilePathRandom(index){
   ]
 
   return filePathRandom[ index ]
+}
+
+function getRuleWithOneColor(){
+  return {
+    COLOR_BACK      : '#f9f7f5',
+    COLOR_SECONDARY : '#ebe5d6',
+    COLOR_SELECTION : '#a1a1a1',
+    COLOR_0         : '#46758D',
+    COLOR_1         : '#9a4e4e',
+    COLOR_2         : '#aa769b',
+    COLOR_3         : '#880e4f',
+    COLOR_4         : '#7e735f',
+    COLOR_5         : '#8e1f2f',
+  }
 }
