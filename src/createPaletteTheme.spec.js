@@ -54,7 +54,6 @@ const rulesWithTwoColorsx = {
   COLOR_5         : [ translate('random.2'), fetchTargetComplex(1) ],
 }
 
-
 const rulesWithOneColor = {
   COLOR_BACK      : '#f9f7f5',
   COLOR_SECONDARY : '#ebe5d6',
@@ -145,7 +144,7 @@ const rulesComplex = {
   ],
 }
 
-const base = '/home/s/repos/y/niketa-theme/palettes'
+const base = '/home/s/repos/niketa-theme/palettes'
 const filePath = `${ base }/generated/boring.json`
 
 test('happy', () => {
@@ -163,7 +162,6 @@ test('happy', () => {
     // publishIndex : 3,
   })
 })
-
 
 function fetchTarget(mode){
   const [ whenZero, whenOne ] = TARGETS[ TARGET_INDEX ]
@@ -198,9 +196,9 @@ function translate(colorKeyRaw){
 
 function getFilePathRandom(index){
   const filePathRandom = [
-    `${ base }/generated/randomFirst.json`, 
-    `${ base }/generated/randomSecond.json`, 
-    `${ base }/generated/randomThird.json`, 
+    `${ base }/generated/randomFirst.json`,
+    `${ base }/generated/randomSecond.json`,
+    `${ base }/generated/randomThird.json`,
     `${ base }/generated/randomX.json`,
     `${ base }/generated/randomY.json`,
     `${ base }/generated/randomZ.json`,

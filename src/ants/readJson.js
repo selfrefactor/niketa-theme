@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import { readFileSync } from 'fs'
 
 const BASE = process.env.NODE_ENV === 'test' ?
-  '/home/s/repos/y/niketa-theme/' :
+  '/home/s/repos/niketa-theme/' :
   resolve(__dirname, '..')
 
 export function readJsonAnt(filePath){

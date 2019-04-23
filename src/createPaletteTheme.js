@@ -1,4 +1,4 @@
-import {  ok, range, replace, map, init, last } from 'rambdax'
+import { ok, range, replace, map, init, last } from 'rambdax'
 import { changeColorAnt } from './ants/changeColor'
 import { listImportedColorsAnt } from './ants/listImportedColors'
 import { readFileSync } from 'fs-extra'
@@ -20,60 +20,62 @@ function createPaletteRule(prop, colorBase, rate){
   modes.forEach(mode => {
     const newColor = changeColorAnt(colorBase, mode, rate)
 
-    willReturn[`${prop}_${mode}`] = newColor
+    willReturn[ `${ prop }_${ mode }` ] = newColor
   })
 
-  willReturn[prop] = colorBase
+  willReturn[ prop ] = colorBase
+
   return willReturn
 }
 
 function applyPaletteBee(content, paletteRule){
   Object.keys(paletteRule).forEach(ruleKey => {
-    const appliableColor = paletteRule[ruleKey]
-    const regex = new RegExp(ruleKey,'g')
+    const appliableColor = paletteRule[ ruleKey ]
+    const regex = new RegExp(ruleKey, 'g')
     content = replace(regex, appliableColor, content)
   })
 
   return content
 }
 
-function singlePaletteTheme({filePath, rules, rate, index = 0}){
+function singlePaletteTheme({ filePath, rules, rate, index = 0 }){
   const rulesKeys = Object.keys(rules)
   let content = readFileSync(filePath).toString()
 
-  range(0,rulesKeys.length).forEach(i => {
-    const prop = rulesKeys[i]
-    const colorBase = rules[prop]
+  range(0, rulesKeys.length).forEach(i => {
+    const prop = rulesKeys[ i ]
+    const colorBase = rules[ prop ]
     const paletteRule = createPaletteRule(prop, colorBase, rate)
     content = applyPaletteBee(content, paletteRule)
   })
+
   return savePaletteThemeBee(content, index)
 }
 
 function getCurrentRules(rules, i){
-  return map(x => x[i], rules)
+  return map(x => x[ i ], rules)
 }
 
 function createPaletteThemeBee({
-  filePath, 
-  rules, 
-  rate
+  filePath,
+  rules,
+  rate,
 }){
   const keys = Object.keys(rules)
-  
-  return range(0, rules[keys[0]].length).map(i => {
+
+  return range(0, rules[ keys[ 0 ] ].length).map(i => {
     const currentRules = getCurrentRules(rules, i)
     const savedLabel = singlePaletteTheme({
-      filePath, 
-      rules: currentRules,
-      rate, 
-      index: i
-    })  
+      filePath,
+      rules : currentRules,
+      rate,
+      index : i,
+    })
 
     return {
-      label: savedLabel,
+      label   : savedLabel,
       uiTheme : 'vs',
-      path    : `./baboon/${savedLabel}.json`,
+      path    : `./baboon/${ savedLabel }.json`,
     }
   })
 }
@@ -82,7 +84,7 @@ function isGradientMode(rules){
   let flag = false
   map(
     x => {
-      if(Array.isArray(x)) flag = true
+      if (Array.isArray(x)) flag = true
     }
   )(rules)
 
@@ -90,7 +92,7 @@ function isGradientMode(rules){
 }
 
 const createGradientRules = map(
-  x => Array.isArray(x) ? x : [x,x] 
+  x => Array.isArray(x) ? x : [ x, x ]
 )
 
 const getRulesWithGradients = (rules, levels) => map(
@@ -108,13 +110,13 @@ function simpleMode({
   singlePaletteTheme({
     filePath,
     rules,
-    rate
+    rate,
   })
-  const devJson = [{
-    label: 'BaboonAnt',
+  const devJson = [ {
+    label   : 'BaboonAnt',
     uiTheme : 'vs',
-    path    : `./baboon/BaboonAnt.json`,
-  }]
+    path    : './baboon/BaboonAnt.json',
+  } ]
   saveToPackageJsonAnt(devJson)
 }
 
@@ -127,11 +129,11 @@ function gradientMode({
   levels = 12,
 }){
   const gradientRules = createGradientRules(rules)
-  const rulesWithGradients = getRulesWithGradients(gradientRules, levels)   
+  const rulesWithGradients = getRulesWithGradients(gradientRules, levels)
   const devJson = createPaletteThemeBee({
-    rules: rulesWithGradients,
+    rules : rulesWithGradients,
     filePath,
-    rate
+    rate,
   })
 
   saveToPackageJsonAnt(devJson)
@@ -140,26 +142,28 @@ function gradientMode({
 function applyPredefinedColors(tag){
   const parentKey = init(tag.split('_')).join('_')
   const index = last(tag.split('_'))
-  const parent = colors[parentKey]
-  if(!parent){
+  const parent = colors[ parentKey ]
+  if (!parent){
     // Rules of type COLOR_1: [dark.1, #433433]
     // ============================================
     return tag
   }
-  const appliableColor = parent[index]
-  if(!appliableColor){
-    console.log(`EMPTY COLOR ${tag} | FALLBACK TO #2a13a3`)
+  const appliableColor = parent[ index ]
+  if (!appliableColor){
+    console.log(`EMPTY COLOR ${ tag } | FALLBACK TO #2a13a3`)
+
     return '#2a13a3'
   }
+
   return appliableColor
 }
 
 function normalize(rules){
   const willReturn = {}
   map(
-    (x, key) => willReturn[key] = [
-      replace(/\./g, '_', x[0]).toUpperCase(),
-      replace(/\./g, '_', x[1]).toUpperCase(),
+    (x, key) => willReturn[ key ] = [
+      replace(/\./g, '_', x[ 0 ]).toUpperCase(),
+      replace(/\./g, '_', x[ 1 ]).toUpperCase(),
     ]
   )(rules)
 
@@ -170,22 +174,22 @@ function normalize(rules){
 // ============================================
 function complexMode({
   rules,
-  rate, 
+  rate,
   levels = 12,
-  filePath
+  filePath,
 }){
   const rulesWithColors = map(
-    ([from, to]) => ([
+    ([ from, to ]) => [
       applyPredefinedColors(from),
       applyPredefinedColors(to),
-    ])
+    ]
   )(normalize(rules))
-  
+
   return gradientMode({
-    filePath, 
-    rules: rulesWithColors, 
-    rate, 
-    levels
+    filePath,
+    rules : rulesWithColors,
+    rate,
+    levels,
   })
 }
 
@@ -195,15 +199,15 @@ export function createPaletteTheme({
   filePath,
   rules,
   publishName,
-  publishIndex = 0
+  publishIndex = 0,
 }){
   ok(filePath, rules)(String, Object)
-  if(showList) console.log(listImportedColorsAnt())
-  if(publishName) return publishThemeBee(publishName, publishIndex)
-  
-  if(complex) return complexMode(arguments[0])
-  if(!isGradientMode(rules)) return simpleMode(arguments[0])
-  
-  return gradientMode(arguments[0])
+  if (showList) console.log(listImportedColorsAnt())
+  if (publishName) return publishThemeBee(publishName, publishIndex)
+
+  if (complex) return complexMode(arguments[ 0 ])
+  if (!isGradientMode(rules)) return simpleMode(arguments[ 0 ])
+
+  return gradientMode(arguments[ 0 ])
 }
 

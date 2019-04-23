@@ -3,7 +3,7 @@ import { range } from 'rambdax'
 export function createThemeBee(rules, originTheme){
   const keys = Object.keys(rules)
   const len = rules[ keys[ 0 ] ].length
-  
+
   return range(0, len).map(i => {
     const newThemeColors = {}
     keys.forEach(path => {

@@ -2,7 +2,7 @@ import { createPaletteTheme } from './createPaletteTheme'
 import { readJsonAnt } from './ants/readJson'
 import { constantCase } from 'string-fn'
 
-const base = '/home/s/repos/y/niketa-theme/palettes'
+const base = '/home/s/repos/niketa-theme/palettes'
 const filePath = `${ base }/generated/boring.json`
 const filePathRandom = [
   `${ base }/generated/randomFirst.json`,

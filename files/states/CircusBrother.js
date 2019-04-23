@@ -145,7 +145,7 @@ const rulesComplex = {
   ],
 }
 
-const base = '/home/s/repos/y/niketa-theme/palettes'
+const base = '/home/s/repos/niketa-theme/palettes'
 const filePath = `${ base }/generated/boring.json`
 
 test('happy', () => {

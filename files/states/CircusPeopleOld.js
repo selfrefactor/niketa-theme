@@ -1,6 +1,6 @@
 import { createPaletteTheme } from './createPaletteTheme'
 
-const base = '/home/s/repos/y/niketa-theme/palettes'
+const base = '/home/s/repos/niketa-theme/palettes'
 const filePath = `${ base }/generated/foo.json`
 const filePathRandom = [
   `${ base }/generated/randomFoo.json`,

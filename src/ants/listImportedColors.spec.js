@@ -1,4 +1,4 @@
-import {listImportedColorsAnt} from './listImportedColors'
+import { listImportedColorsAnt } from './listImportedColors'
 
 test('showImportedColors', () => {
   const result = listImportedColorsAnt()

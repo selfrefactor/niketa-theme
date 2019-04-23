@@ -7,13 +7,13 @@ export function listImportedColorsAnt(){
   keys.forEach(key => {
     const filtered = filter(
       x => x.length > 0
-    )(importedColors[key])
+    )(importedColors[ key ])
     const len = Object.keys(filtered).length
-    if(!len) return  
+    if (!len) return
     holder.push(
-      `${key} - ${len - 1}`
+      `${ key } - ${ len - 1 }`
     )
   })
 
-  return holder.sort((a,b) => a > b ? 1 : -1)
+  return holder.sort((a, b) => a > b ? 1 : -1)
 }

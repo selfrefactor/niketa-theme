@@ -41,7 +41,7 @@ export function saveThemeBee(theme, i){
 
 export function savePaletteThemeBee(themeString, i){
   const label = pascalCase(`${ BASE }.${ namesHash[ i ] }`)
-  const theme = JSON.parse(themeString)  
+  const theme = JSON.parse(themeString)
   theme.name = label
   writeJsonAnt(
     `./baboon/${ label }.json`,
