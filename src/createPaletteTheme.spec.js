@@ -38,23 +38,10 @@ const rulesWithTwoColors = {
   COLOR_1         : [ '#aa769b', fetchTargetComplex(1) ],
   COLOR_2         : [ translate('dark.green.6'), fetchTargetComplex(1) ],
   COLOR_3         : [ translate('dark.blue.0'), fetchTargetComplex(0) ],
-  // COLOR_3         : [ '#79753C', fetchTargetComplex(0) ],
   COLOR_4         : [ '#c83a71', fetchTargetComplex(1) ],
   COLOR_5         : [ translate('random.2'), fetchTargetComplex(1) ],
 }
 
-
-// const rulesWithTwoColors = {
-//   COLOR_BACK      : [ '#f9f6f2', '#ede8e1' ],
-//   COLOR_SECONDARY : [ '#cacacc', '#9eb4ad' ],
-//   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-//   COLOR_0         : [ translate('dark.purple.4'), fetchTargetComplex(0) ],
-//   COLOR_1         : [ '#3f7063', fetchTargetComplex(1) ],
-//   COLOR_2         : [ translate('blue.9'), fetchTargetComplex(1) ],
-//   COLOR_3         : [ '#d95361', fetchTargetComplex(0) ],
-//   COLOR_4         : [ '#985155', fetchTargetComplex(0) ],
-//   COLOR_5         : [ translate('ochra.4'), fetchTargetComplex(1) ],
-// }
 
 const rulesWithOneColor = {
   COLOR_BACK      : '#f9f7f5',
