@@ -2,10 +2,10 @@ import { createPaletteTheme } from './createPaletteTheme'
 import { readJsonAnt } from './ants/readJson'
 import { constantCase } from 'string-fn'
 
-const PALLETE_INDEX = 2
+const PALLETE_INDEX = 3
 const PALLETE_RANDOM_FLAG = true
-const RATE = 0.05
-const TARGET_INDEX = 12
+const RATE = 0.055
+const TARGET_INDEX = 13
 const TARGETS = [
   [ 'dark.brown.3', 'random.2' ],
   [ 'dark.0', 'grey.5' ],
@@ -20,24 +20,41 @@ const TARGETS = [
   [ 'orange.6', 'navy.0' ],
   [ 'secondary.5', 'ochra.0' ], // for darker themes
   [ 'navy.7', 'dark.1' ], // for darker themes
-  [ 'light.yellow.2', 'dark.purple.1' ],
+  [ 'dark.blue.9', 'dark.3' ], // for darker themes
+  [ 'dark.purple.3', 'dark.purple.3' ],
+  [ 'dark.purple.0', 'dark.purple.1' ],
   [ 'grey.0', 'dark.brown.2' ],
   [ 'pink.2', 'dark.pink.3' ],
   [ 'green.2', 'dark.green.3' ],
   [ 'dark.purple.1', 'purple.2' ],
 ]
 
+
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#f9f6f2', '#ede8e1' ],
-  COLOR_SECONDARY : [ '#cacacc', '#9eb4ad' ],
+  COLOR_BACK      : [ '#f3f3e2', '#f6f6e9' ],
+  COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_0         : [ translate('dark.purple.4'), fetchTargetComplex(0) ],
-  COLOR_1         : [ '#3f7063', fetchTargetComplex(1) ],
-  COLOR_2         : [ translate('blue.9'), fetchTargetComplex(1) ],
-  COLOR_3         : [ '#d95361', fetchTargetComplex(0) ],
-  COLOR_4         : [ '#985155', fetchTargetComplex(0) ],
-  COLOR_5         : [ translate('ochra.4'), fetchTargetComplex(1) ],
+  COLOR_0         : [ '#3EA8C4', fetchTargetComplex(0) ],
+  COLOR_1         : [ '#aa769b', fetchTargetComplex(1) ],
+  COLOR_2         : [ translate('dark.green.6'), fetchTargetComplex(1) ],
+  COLOR_3         : [ translate('dark.blue.0'), fetchTargetComplex(0) ],
+  // COLOR_3         : [ '#79753C', fetchTargetComplex(0) ],
+  COLOR_4         : [ '#c83a71', fetchTargetComplex(1) ],
+  COLOR_5         : [ translate('random.2'), fetchTargetComplex(1) ],
 }
+
+
+// const rulesWithTwoColors = {
+//   COLOR_BACK      : [ '#f9f6f2', '#ede8e1' ],
+//   COLOR_SECONDARY : [ '#cacacc', '#9eb4ad' ],
+//   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
+//   COLOR_0         : [ translate('dark.purple.4'), fetchTargetComplex(0) ],
+//   COLOR_1         : [ '#3f7063', fetchTargetComplex(1) ],
+//   COLOR_2         : [ translate('blue.9'), fetchTargetComplex(1) ],
+//   COLOR_3         : [ '#d95361', fetchTargetComplex(0) ],
+//   COLOR_4         : [ '#985155', fetchTargetComplex(0) ],
+//   COLOR_5         : [ translate('ochra.4'), fetchTargetComplex(1) ],
+// }
 
 const rulesWithOneColor = {
   COLOR_BACK      : '#f9f7f5',
@@ -140,11 +157,11 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       getFilePathRandom(PALLETE_INDEX) :
       filePath,
-    rules  : rulesComplexWithTargets,
+    rules  : rulesWithTwoColors,
     levels : 22,
     rate   : RATE,
-    // publishName  : 'niketa.moon',
-    // publishIndex : 6,
+    publishName  : 'circus.people',
+    publishIndex : 2,
   })
 })
 

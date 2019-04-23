@@ -2,26 +2,15 @@ import { createPaletteTheme } from './createPaletteTheme'
 import { readJsonAnt } from './ants/readJson'
 import { constantCase } from 'string-fn'
 
-const base = '/home/s/repos/y/niketa-theme/palettes'
-const filePath = `${ base }/generated/boring.json`
-const filePathRandom = [
-  `${ base }/generated/randomFirst.json`,
-  `${ base }/generated/randomSecond.json`,
-  `${ base }/generated/randomThird.json`,
-  `${ base }/generated/randomX.json`,
-  `${ base }/generated/randomY.json`,
-  `${ base }/generated/randomZ.json`,
-  `${ base }/generated/randomJohn.json`,
-  `${ base }/generated/randomPaul.json`,
-  `${ base }/generated/randomJones.json`,
-]
-
-const PALLETE_INDEX = 7
+const PALLETE_INDEX = 3
 const PALLETE_RANDOM_FLAG = true
-const RATE = 0.068
-const TARGET_INDEX = 0
-
+const RATE = 0.055
+const TARGET_INDEX = 13
 const TARGETS = [
+  [ 'dark.brown.3', 'random.2' ],
+  [ 'dark.0', 'grey.5' ],
+  [ 'dark.red.6', 'dark.pink.7' ],
+  [ 'dark.green.10', 'dark.purple.4' ],
   [ 'dark.pink.7', 'navy.7' ],
   [ 'teal.1', 'teal.1' ],
   [ 'dark.blue.8', 'blue.8' ],
@@ -29,58 +18,43 @@ const TARGETS = [
   [ 'navy.4', 'dark.blue.2' ],
   [ 'light.red.0', 'red.0' ],
   [ 'orange.6', 'navy.0' ],
-  [ 'light.yellow.2', 'dark.purple.1' ],
+  [ 'secondary.5', 'ochra.0' ], // for darker themes
+  [ 'navy.7', 'dark.1' ], // for darker themes
+  [ 'dark.blue.9', 'dark.3' ], // for darker themes
+  [ 'dark.purple.3', 'dark.purple.3' ],
+  [ 'dark.purple.0', 'dark.purple.1' ],
   [ 'grey.0', 'dark.brown.2' ],
-  [ 'dark.purple.3', 'secondary.9' ],
-  [ 'back.13', 'back.3' ], 2
-    [ 'pink.2', 'dark.pink.3' ],
+  [ 'pink.2', 'dark.pink.3' ],
   [ 'green.2', 'dark.green.3' ],
   [ 'dark.purple.1', 'purple.2' ],
-  [ 'secondary.7', 'purple.2' ],
 ]
 
-function fetchTarget(mode){
-  const [ whenZero, whenOne ] = TARGETS[ TARGET_INDEX ]
-
-  return mode === 0 ? whenZero : whenOne
-}
-
-function fetchTargetComplex(mode){
-  const colors = readJsonAnt('colors.json')
-  const [ whenZero, whenOne ] = TARGETS[ TARGET_INDEX ]
-
-  const colorKeyRaw = mode === 0 ? whenZero : whenOne
-
-  const colorKey = constantCase(colorKeyRaw)
-  const [ num ] = [ ...colorKeyRaw ].filter(x => Number(x) === Number(x))
-
-  const actualColor = colors[ colorKey ][ String(num) ]
-
-  return actualColor
-}
-
-function translateColor(colorKeyRaw){
-  const colors = readJsonAnt('colors.json')
-
-  const colorKey = constantCase(colorKeyRaw)
-  const [ num ] = [ ...colorKeyRaw ].filter(x => Number(x) === Number(x))
-
-  const actualColor = colors[ colorKey ][ String(num) ]
-
-  return actualColor
-}
 
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#f1f1dd', '#f6f6d6' ],
+  COLOR_BACK      : [ '#f3f3e2', '#f6f6e9' ],
   COLOR_SECONDARY : [ '#D9D4BA', '#a6aBaF' ],
-  COLOR_SELECTION : [ '#abe5d6', '#eae3cd' ],
+  COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
   COLOR_0         : [ '#3EA8C4', fetchTargetComplex(0) ],
-  COLOR_1         : [ translateColor('pink.1'), fetchTargetComplex(0) ],
-  COLOR_2         : [ '#cd7c55', fetchTargetComplex(1) ],
-  COLOR_3         : [ '#79753C', fetchTargetComplex(0) ],
+  COLOR_1         : [ '#aa769b', fetchTargetComplex(1) ],
+  COLOR_2         : [ translate('dark.green.6'), fetchTargetComplex(1) ],
+  COLOR_3         : [ translate('dark.blue.0'), fetchTargetComplex(0) ],
+  // COLOR_3         : [ '#79753C', fetchTargetComplex(0) ],
   COLOR_4         : [ '#c83a71', fetchTargetComplex(1) ],
-  COLOR_5         : [ '#3EA8C4', fetchTargetComplex(1) ],
+  COLOR_5         : [ translate('random.2'), fetchTargetComplex(1) ],
 }
+
+
+// const rulesWithTwoColors = {
+//   COLOR_BACK      : [ '#f9f6f2', '#ede8e1' ],
+//   COLOR_SECONDARY : [ '#cacacc', '#9eb4ad' ],
+//   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
+//   COLOR_0         : [ translate('dark.purple.4'), fetchTargetComplex(0) ],
+//   COLOR_1         : [ '#3f7063', fetchTargetComplex(1) ],
+//   COLOR_2         : [ translate('blue.9'), fetchTargetComplex(1) ],
+//   COLOR_3         : [ '#d95361', fetchTargetComplex(0) ],
+//   COLOR_4         : [ '#985155', fetchTargetComplex(0) ],
+//   COLOR_5         : [ translate('ochra.4'), fetchTargetComplex(1) ],
+// }
 
 const rulesWithOneColor = {
   COLOR_BACK      : '#f9f7f5',
@@ -96,39 +70,39 @@ const rulesWithOneColor = {
 
 const rulesComplexWithTargets = {
   COLOR_BACK : [
-    'BACK_7',
-    'BACK_9',
+    '#c1bcae',
+    '#c1bcae',
   ],
   COLOR_SECONDARY : [
-    'SECONDARY_2',
-    'SECONDARY_9',
+    'secondary.8',
+    'secondary.8',
   ],
   COLOR_SELECTION : [
     'SELECTION_1',
     'SELECTION_2',
   ],
   COLOR_0 : [
-    'teal.1',
-    fetchTarget(0),
+    '#9B6397',
+    '#1B6397',
   ],
   COLOR_1 : [
-    'dark.red.8',
-    fetchTarget(1),
-  ],
-  COLOR_2 : [
-    'dark.blue.3',
+    'dark.blue.1',
     fetchTarget(0),
   ],
-  COLOR_3 : [
-    'blue.1',
+  COLOR_2 : [
+    'dark.green.7',
     fetchTarget(1),
   ],
-  COLOR_4 : [
-    'navy.7',
+  COLOR_3 : [
+    'brown.2',
+    fetchTarget(1),
+  ],
+  COLOR_0 : [
+    'brown.4',
     fetchTarget(0),
   ],
   COLOR_5 : [
-    'brown.1',
+    'dark.red.8',
     fetchTarget(1),
   ],
 }
@@ -172,18 +146,65 @@ const rulesComplex = {
   ],
 }
 
+const base = '/home/s/repos/y/niketa-theme/palettes'
+const filePath = `${ base }/generated/boring.json`
+
 test('happy', () => {
 
   createPaletteTheme({
     showList : false,
     complex  : true,
     filePath : PALLETE_RANDOM_FLAG ?
-      filePathRandom[ PALLETE_INDEX ] :
+      getFilePathRandom(PALLETE_INDEX) :
       filePath,
-    rules        : rulesWithTwoColors,
-    levels       : 22,
-    rate         : RATE,
+    rules  : rulesWithTwoColors,
+    levels : 22,
+    rate   : RATE,
     publishName  : 'circus.people',
-    publishIndex : 4,
+    publishIndex : 2,
   })
 })
+
+function fetchTarget(mode){
+  const [ whenZero, whenOne ] = TARGETS[ TARGET_INDEX ]
+
+  return mode === 0 ? whenZero : whenOne
+}
+
+function fetchTargetComplex(mode){
+  const colors = readJsonAnt('colors.json')
+  const [ whenZero, whenOne ] = TARGETS[ TARGET_INDEX ]
+
+  const colorKeyRaw = mode === 0 ? whenZero : whenOne
+
+  const colorKey = constantCase(colorKeyRaw)
+  const [ num ] = [ ...colorKeyRaw ].filter(x => Number(x) === Number(x))
+
+  const actualColor = colors[ colorKey ][ String(num) ]
+
+  return actualColor
+}
+
+function translate(colorKeyRaw){
+  const colors = readJsonAnt('colors.json')
+
+  const colorKey = constantCase(colorKeyRaw)
+  const [ num ] = [ ...colorKeyRaw ].filter(x => Number(x) === Number(x))
+
+  const actualColor = colors[ colorKey ][ String(num) ]
+
+  return actualColor
+}
+
+function getFilePathRandom(index){
+  const filePathRandom = [
+    `${ base }/generated/randomFirst.json`, `${ base }/generated/randomSecond.json`, `${ base }/generated/randomThird.json`, `${ base }/generated/randomX.json`,
+    `${ base }/generated/randomY.json`,
+    `${ base }/generated/randomZ.json`,
+    `${ base }/generated/randomJohn.json`,
+    `${ base }/generated/randomPaul.json`,
+    `${ base }/generated/randomJones.json`,
+  ]
+
+  return filePathRandom[ index ]
+}
