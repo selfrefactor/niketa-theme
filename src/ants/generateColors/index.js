@@ -2,10 +2,11 @@ import { writeJsonAnt } from '../writeJson'
 import { translate } from '../mini/translate'
 import { getGradientBee } from '../../bees/getGradient'
 
-const OUTPUT = 'src/ants/generateColors/manyColors.json'
+const base = 'src/ants/generateColors/colors'
 
-export function generateColorsAnt(colorsOrKeys){
+export function generateColorsAnt(colorsOrKeys, label = ''){
   const [ firstRaw, secondRaw ] = colorsOrKeys
+  const OUTPUT = `${ base }/${ label }_COLORS.json`
 
   const first = firstRaw.startsWith('#') ?
     firstRaw :
@@ -15,9 +16,7 @@ export function generateColorsAnt(colorsOrKeys){
     secondRaw :
     translate(secondRaw)
 
-  const colors = getGradientBee(first, second, 88)
+  const colors = getGradientBee(first, second, 500)
 
-  // const toSave = colors.map()
-  // const withBrigherFirst
   writeJsonAnt(OUTPUT, colors)
 }
