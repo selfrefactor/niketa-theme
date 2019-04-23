@@ -13,17 +13,12 @@ function getOpacities(levels = 10){
 }
 
 function applyOpacities(hexColor){
-  // console.log({hexColor})
   const opacities = getOpacities()
 
   return opacities.map(
     singleOpacity => `${ hexColor }${ singleOpacity }`
   )
 }
-
-console.log(
-  applyOpacities('#a43441')
-)
 
 export function generateColorsAnt(colorsOrKeys, label = ''){
   const [ firstRaw, secondRaw ] = colorsOrKeys
@@ -42,7 +37,6 @@ export function generateColorsAnt(colorsOrKeys, label = ''){
     uniq,
     x => x.map(applyOpacities),
     flatten,
-    // x => x.map(xx => xx.map(applyOpacities))
   )
   writeJsonAnt(OUTPUT, colors)
 }

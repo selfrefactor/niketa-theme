@@ -8,13 +8,14 @@ export function sortThemesAnt(){
     try {
       const { colors } = readJsonAnt(`themes/${ label }.json`)
       const background = colors[ 'editor.background' ]
-  
+
       return {
         background,
         label,
       }
-    } catch (error) {
-      console.log({error: label})
+    } catch (error){
+      console.log({ error : label })
+
       return false
     }
   })
