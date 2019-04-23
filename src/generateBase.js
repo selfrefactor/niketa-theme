@@ -3,7 +3,6 @@ import { outputFileSync } from 'fs-extra'
 
 import { camelCase } from 'string-fn'
 import { baseData, baseBase, all } from '../palettes/baseData'
-
 import { switcher, random, remove, replace } from 'rambdax'
 
 const UNDERLINE = '.UNDERLINE'
