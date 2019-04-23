@@ -1,11 +1,12 @@
 import Color from 'color'
-import { switcher } from 'rambdax'
+import { switcher, takeLast } from 'rambdax'
 
 const BASE = 0.08
 
+const whenOpacity = (toReturn, color) => `${ toReturn }${ takeLast(2, color) }`
+
 export function changeColorAnt(color, modeInput, base = BASE){
-  if(color.length === 9) return color
-  
+
   const { mode, change } = switcher(modeInput)
     .is('DARKEST', {
       mode   : 'darken',
@@ -31,6 +32,11 @@ export function changeColorAnt(color, modeInput, base = BASE){
 
   if (!mode) return color
 
-  return Color(color)[ mode ](change)
+  const hasOpacity = color.length === 9
+  const toReturn = Color(color)[ mode ](change)
     .hex()
+
+  return hasOpacity ?
+    whenOpacity(toReturn, color) :
+    toReturn
 }
