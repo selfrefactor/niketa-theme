@@ -42,7 +42,7 @@ test('x', () => {
   expect(() => generateRandomPair()).not.toThrow()
 })
 
-test.only('happy', () => {
+test('happy', () => {
   const input = [ '#64c2ba', 'ochra.3' ]
   expect(() => generateColorsAnt(input, false, '_PERSISTED')).not.toThrow()
   const sk = readJsonAnt(
@@ -55,13 +55,26 @@ test.only('happy', () => {
 test('change every time', () => {
   const input = generateRandomPair()
   expect(
-    () => generateColorsAnt(input, '_RANDOM_PERSISTED')
+    () => generateColorsAnt(input, true, '_RANDOM_PERSISTED')
+  ).not.toThrow()
+})
+
+test.only('change every time', () => {
+  const [ _, target ] = generateRandomPair()
+  const input = [
+    '#fafafa11',
+    target,
+  ]
+
+  expect(
+    () => generateColorsAnt(input, true, '_WITH_ONE')
   ).not.toThrow()
 })
 
 test('random', () => {
   const input = generateRandomPair()
+  console.log({ input })
   expect(
-    () => generateColorsAnt(input, getLabel())
+    () => generateColorsAnt(input, true, getLabel())
   ).not.toThrow()
 })
