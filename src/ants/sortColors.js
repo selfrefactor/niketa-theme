@@ -7,6 +7,17 @@ export function compareColors(colors){
   const compareColors = (a, b) => {
     if (!a) return 1
     if (!b) return -1
+    if (a.length === 9){
+      if (b.length === 9){
+        return a > b ?
+          -1 :
+          1
+      }
+
+      return -1
+    }
+
+    if (b.length === 9) return 1
 
     const brighter = hexSorter.mostBrightColor([ a, b ])
 
