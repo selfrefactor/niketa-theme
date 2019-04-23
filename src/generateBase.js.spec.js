@@ -1,7 +1,7 @@
-import { base, baseRandom, randomShade } from './base'
+import { generateBase, baseRandom, randomShade } from './generateBase'
 
 test('happy', () => {
-  base('boring')
+  generateBase('boring')
 })
 
 const LIST = [ 'first', 'second', 'third', 'x', 'y', 'z', 'john', 'paul', 'jones' ]

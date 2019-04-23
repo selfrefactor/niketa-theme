@@ -107,7 +107,7 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   }
 }
 
-export function base(label){
+export function generateBase(label){
   const tokenColors = []
 
   Object.entries(baseData)
