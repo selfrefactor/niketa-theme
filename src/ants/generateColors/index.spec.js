@@ -10,6 +10,7 @@ import {
 } from 'rambdax'
 
 const getLabel = () => random(1000, 9999)
+
 function generateRandomPair(){
   const data = readJsonAnt('colors.json')
 
@@ -42,8 +43,13 @@ test('x', () => {
 })
 
 test('happy', () => {
-  const input = [ '#fafafa', 'ochra.3' ]
+  const input = [ '#64c2ba', 'ochra.3' ]
   expect(() => generateColorsAnt(input, '_PERSISTED')).not.toThrow()
+  const sk = readJsonAnt(
+    'src/ants/generateColors/colors/_PERSISTED_COLORS.json'
+  )
+
+  console.log({ sk : sk.length })
 })
 
 test('change every time', () => {
