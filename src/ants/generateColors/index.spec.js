@@ -42,7 +42,7 @@ test('x', () => {
   expect(() => generateRandomPair()).not.toThrow()
 })
 
-test('happy', () => {
+test.only('happy', () => {
   const input = [ '#64c2ba', 'ochra.3' ]
   expect(() => generateColorsAnt(input, '_PERSISTED')).not.toThrow()
   const sk = readJsonAnt(

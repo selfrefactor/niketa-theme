@@ -1,25 +1,26 @@
 import hexSorter from 'hexsorter'
 import { readJsonAnt } from './readJson'
 import exported from '../../exported.json'
-import { pluck } from 'rambdax'
 
 export function sortThemesAnt(){
-  const plucked = pluck('label', exported)
-
   const mapped = exported.map(({ label }) => {
-    console.log({ label })
 
-    const { colors } = readJsonAnt(`themes/${ label }.json`)
-    const background = colors[ 'editor.background' ]
-    console.log({ background })
-
-    return {
-      background,
-      label,
+    try {
+      const { colors } = readJsonAnt(`themes/${ label }.json`)
+      const background = colors[ 'editor.background' ]
+  
+      return {
+        background,
+        label,
+      }
+    } catch (error) {
+      console.log({error: label})
+      return false
     }
   })
+  const filtered = mapped.filter(Boolean)
 
-  mapped.sort((first, second) => {
+  filtered.sort((first, second) => {
     const brighter = hexSorter.mostBrightColor(
       [ first.background, second.background ]
     )
@@ -27,5 +28,5 @@ export function sortThemesAnt(){
     return brighter === first.background ? -1 : 1
   })
 
-  return mapped
+  return filtered
 }
