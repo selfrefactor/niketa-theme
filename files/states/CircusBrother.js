@@ -159,8 +159,8 @@ test('happy', () => {
     rules  : rulesWithTwoColors,
     levels : 22,
     rate   : RATE,
-    // publishName  : 'circus.brother',
-    // publishIndex : 3,
+    publishName  : 'circus.brother',
+    publishIndex : 3,
   })
 })
 
