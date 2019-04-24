@@ -9,6 +9,10 @@ export function translate(colorKeyRaw, extraMode = false){
   const [ num ] = [ ...colorKeyRaw ].filter(x => Number(x) === Number(x))
 
   const actualColor = colors[ colorKey ][ String(num) ]
+  console.log({
+    actualColor,
+    extraMode,
+  })
 
   return extraMode ? dropLast(2, actualColor) : actualColor
 }

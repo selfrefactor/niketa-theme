@@ -9,6 +9,10 @@ import { getGradientBee } from './bees/getGradient'
 import colors from '../colors.json'
 
 function createPaletteRule(prop, colorBase, rate){
+  console.log({
+    prop,
+    colorBase,
+  })
   const willReturn = {}
   const modes = [
     'DARKEST',
