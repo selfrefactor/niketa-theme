@@ -115,6 +115,8 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 ## Roadmap
 
+on hover of any niketa icon show jest out
+
 [ ]  Once new generate pallete theme is done, move the test to deprecated as this will pin the palletes  
 
 [ ]  Maybe few words before the screen

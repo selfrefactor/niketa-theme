@@ -110,11 +110,12 @@ const colorsKeys = [
   'COLOR_5',
 ]
 
-export function generateBaseRandom(label){
+export function generateBaseRandom(label, setOfRandoms){
   const colorsHash = { ...baseData }
-  const newColorsKeys = shuffle(colorsKeys)
 
-  const sk = map((colorKey, prop) => {
+  const newColorsKeys = setOfRandoms ? setOfRandoms : shuffle(colorsKeys)
+
+  const sk = map((_, prop) => {
     const foundIndex = findIndex(
       x => x === prop
     )(newColorsKeys)

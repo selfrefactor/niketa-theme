@@ -16,41 +16,54 @@ test.skip('random', () => {
   expect(() => generateBaseRandom('sk')).not.toThrow()
 })
 
-function isUniq(x, holder){
-  const [found] = holder.filter(holderInstance => equals(holderInstance,x))
-  return !found
-}
+// function isUniq(x, holder){
+//   const [ found ] = holder.filter(holderInstance => equals(holderInstance, x))
 
-function pushUniq(x, holder){
-  if(!isUniq(x,holder)) return
-  holder.push(x)
-}
+//   return !found
+// }
+
+// function pushUniq(x, holder){
+//   if (!isUniq(x, holder)) return
+//   holder.push(x)
+// }
 
 const PERMUTATION_BASE = [
-  '0',
-  '1',
-  '2',
-  '3',
-  '4',
-  '5',
+  'COLOR_0',
+  'COLOR_1',
+  'COLOR_2',
+  'COLOR_3',
+  'COLOR_4',
+  'COLOR_5',
 ]
 
-function permutation(){
+function permutation(levels = 5){
   const holder = []
-  
-  range(0,100).forEach(_ => {
-    pushUniq(
-      shuffle(PERMUTATION_BASE),
-      holder
-    )
-  });
+  const sk = new Set()
+  range(0, levels).forEach(_ => {
+    const mystery = JSON.stringify(shuffle(PERMUTATION_BASE))
+    sk.add(mystery)
+  })
+
+  sk.forEach(x => {
+    holder.push(JSON.parse(x))
+  })
 
   return holder
 }
 
-test('random', () => {
-  const x = permutation()
-  console.log({x, sk: x.length})
-  // expect(() => generateBaseRandom('sk')).not.toThrow()
+test.only('fair random', () => {
+  const setOfRandoms = permutation(20)
+
+  // expect().toBe()
+})
+
+test('with permutation', () => {
+  const setOfRandoms = permutation(20)
+
+  expect(() => {
+    setOfRandoms.forEach(
+      (singleSet, i) => generateBaseRandom(`_${ i }`, singleSet)
+    )
+  }).not.toThrow()
 })
 
