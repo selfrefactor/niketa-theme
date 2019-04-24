@@ -1,6 +1,6 @@
 import { map } from 'rambdax'
 
-export function createRulesBee(rules){
+export function createRules(rules){
   return map(
     color => {
       if (Array.isArray(color)) return color
