@@ -9,9 +9,9 @@ export function translate(colorKeyRaw, extraMode = false){
 
   const actualColor = colors[ colorKey ][ String(num) ]
 
-  return extraMode ? `${actualColor}-` : actualColor
+  return extraMode ? `${ actualColor }-` : actualColor
 }
 
-export function translatex(colorKeyRaw) {
+export function translatex(colorKeyRaw){
   return translate(colorKeyRaw, true)
 }

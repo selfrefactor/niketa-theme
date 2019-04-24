@@ -1,8 +1,9 @@
 import { createTheme } from './'
 import { createRulesBee } from './bees/createRules'
 
-const base = '/home/s/repos/niketa-theme/bases'
-const filePath = `${ base }/BraveWhisky.json`
+const base = '/home/s/repos/niketa-theme/themes'
+const filePath = `${ base }/AdvancedBat.json`
+
 const rules = {
   'editor.background'                   : [ '#C9DDE9', '#DBE3D6' ],
   'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
@@ -47,8 +48,11 @@ test.skip('createTheme', () => {
   })
 })
 
+/*
+  Change basic editor colors on random priciple with already published theme
+*/
 test('createTheme', () => {
-  const result = createTheme({
+  const createThemeFn = () => createTheme({
     random : {
       changes  : 1,
       distance : 6,
@@ -56,10 +60,10 @@ test('createTheme', () => {
     },
     filePath,
     rules,
-    levels : 12,
+    levels : 22,
     // publishName : '',
     // publishIndex : 5,
   })
 
-  console.log({ result })
+  expect(() => createThemeFn()).not.toThrow()
 })

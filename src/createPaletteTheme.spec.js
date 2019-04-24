@@ -35,7 +35,6 @@ const FetchTargetColorI = new FetchTargetColor({
   targets     : TARGETS,
 })
 
-
 const fetchZero = FetchTargetColorI.is(0)
 const fetchOne = FetchTargetColorI.is(1)
 const fetchZeroSimple = FetchTargetColorI.isSimple(0)
@@ -144,9 +143,9 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       getFilePathRandom(PALLETE_INDEX) :
       filePath,
-    rules  : rulesWithTwoColors,
-    levels : 22,
-    rate   : RATE,
+    rules        : rulesWithTwoColors,
+    levels       : 22,
+    rate         : RATE,
     publishName  : 'brave.homer',
     publishIndex : 2,
   })

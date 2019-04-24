@@ -121,6 +121,12 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 - Use lerna for monorepo
 
+- get max levels ant(as instead of 22 we call this ant)
+
+- increase baboon levels
+
+- Try to bind method comments with VSCode hint worker
+
 ## Trending log
 
 Time - 18.04.2019
