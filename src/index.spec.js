@@ -1,5 +1,6 @@
 import { createTheme } from './'
 import { createRulesBee } from './bees/createRules'
+import { translate } from './ants/mini/translate'
 
 const base = '/home/s/repos/niketa-theme/themes'
 const filePath = `${ base }/AdvancedBat.json`
@@ -11,10 +12,14 @@ const rules = {
   'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
 }
 
-test.skip('createTheme', () => {
+
+/*
+  It allows to manipulate just the basic editor settings of published theme
+*/
+test('createTheme', () => {
   const singleColorBase = {
     'editor.background'                : [ '#f2ede0', '#faede0' ],
-    'activityBar.background'           : '#e3e4d7',
+    'activityBar.background'           : [translate('ochra.1'), translate('blue.2')],
     'editor.selectionBackground'       : '#ffe0e0',
     'editor.lineHighlightBackground'   : '#e3e4d7',
     'editorBracketMatch.background'    : '#55978B',
@@ -51,7 +56,7 @@ test.skip('createTheme', () => {
 /*
   Change basic editor colors on random priciple with already published theme
 */
-test('createTheme', () => {
+test.skip('createTheme', () => {
   const createThemeFn = () => createTheme({
     random : {
       changes  : 1,
