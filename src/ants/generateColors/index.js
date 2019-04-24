@@ -4,20 +4,16 @@ import { getGradientBee } from '../../bees/getGradient'
 import {
   flatten,
   piped,
-  tail,
-  take,
-  sort,
   uniq,
-  shuffle,
 } from 'rambdax'
 const base = 'src/ants/generateColors/colors'
 
-function getOpacities(levels = 3){
-  return piped(
-    getGradientBee('#660000', '#fe0000', levels),
-    x => x.map(take(3)),
-    x => x.map(tail)
-  )
+function getOpacities(){
+  return [
+    'f1',
+    'e9',
+    'd6',
+  ]
 }
 
 export function applyOpacities(hexColor){

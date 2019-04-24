@@ -43,31 +43,34 @@ test('x', () => {
 })
 
 test.only('happy', () => {
-  const input = [ 'red.3', 'brown.1' ]
+  const input = [
+    '#8e1f2f',
+    '#00afd6',
+  ]
+
   expect(
     () => generateColorsAnt({
-      input, 
-      label :'_HAPPY',
-      opacityFlag: true,
-      levels:40
+      input,
+      label       : '_HAPPY',
+      opacityFlag : true,
+      levels      : 60,
     })
   ).not.toThrow()
-  
-  const sk = readJsonAnt(
-    'src/ants/generateColors/colors/_PERSISTED_COLORS.json'
-  )
 
-  console.log({ sk : sk.length })
+  // const sk = readJsonAnt(
+  //   'src/ants/generateColors/colors/_HAPPY_COLORS.json'
+  // )
+  // console.log({ sk : sk.length })
 })
 
 test('change every time', () => {
   const input = generateRandomPair()
   expect(
     () => generateColorsAnt({
-      input, 
-      label :'_RANDOM_PERSISTED',
-      opacityFlag: true,
-      levels:40
+      input,
+      label       : '_RANDOM_PERSISTED',
+      opacityFlag : true,
+      levels      : 40,
     })
   ).not.toThrow()
 })
@@ -81,23 +84,23 @@ test('change every time', () => {
 
   expect(
     () => generateColorsAnt({
-      input, 
-      label :'_WITH_ONE',
-      opacityFlag: true,
-      levels:100
+      input,
+      label       : '_WITH_ONE',
+      opacityFlag : true,
+      levels      : 100,
     })
   ).not.toThrow()
 })
 
 test('random', () => {
   const input = generateRandomPair()
-  
+
   expect(
     () => generateColorsAnt({
-      input, 
-      label :getLabel(),
-      opacityFlag: true,
-      levels:200
+      input,
+      label       : getLabel(),
+      opacityFlag : true,
+      levels      : 200,
     })
   ).not.toThrow()
 })
