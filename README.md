@@ -113,21 +113,21 @@ I build the themes by running `createPalleteTheme.spec.js` with `publish` flag s
 
 Debug mode will open 22 themes, so the developer can choose which variation looks the best.
 
-## Roadmap
+## Roadmap April 2019
 
-on hover of any niketa icon show jest out
+[]  on hover of any niketa icon show jest out
 
-[ ]  Once new generate pallete theme is done, move the test to deprecated as this will pin the palletes  
+[x] Once new generate pallete theme is done, move the test to deprecated as this will pin the palletes  
 
-[ ]  Maybe few words before the screen
+[ ] Maybe few words before the screen
 
-[ ]  Editor background and COLOR_0 should have the same direction
+[ ] Editor background and COLOR_0 should have the same direction
 
 [x] Generated palletes just change COLOR_1 to COLOR_5
 
-[] Generate uniq set of COLOR_0 till COLOR_5 for pallete bases
+[x] Generate uniq set of COLOR_0 till COLOR_5 for pallete bases
 
-[ ] Each theme is also a separate theme
+[ ] Each theme is also a separate published theme
 
 [ ] Dark theme based on `90s` theme
 
