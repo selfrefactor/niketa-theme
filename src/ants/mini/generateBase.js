@@ -1,9 +1,9 @@
 import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
-
 import { camelCase } from 'string-fn'
+import { switcher, random, remove, replace, shuffle } from 'rambdax'
+
 import { baseData, baseBase } from '../../../palettes/baseData'
-import { switcher, random, remove, replace } from 'rambdax'
 
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
@@ -100,5 +100,18 @@ export function generateBase(label){
   }
 
   save(label, themeBase)
+}
+
+const colorsKeys = [
+  'COLOR_0',
+  'COLOR_1',
+  'COLOR_2',
+  'COLOR_3',
+  'COLOR_4',
+  'COLOR_5',
+]
+
+export function generateBaseRandom(){
+  const newColorKeys = shuffle(colorsKeys)
 }
 

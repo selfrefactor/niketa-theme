@@ -113,21 +113,27 @@ I build the themes by running `createPalleteTheme.spec.js` with `publish` flag s
 
 Debug mode will open 22 themes, so the developer can choose which variation looks the best.
 
-## TODO
+## Roadmap
 
-- Generated palletes just change COLOR_1 to COLOR_5
+[ ]  Once new generate pallete theme is done, move the test to deprecated as this will pin the palletes  
 
-- Each theme is also a separate theme
+[ ]  Maybe few words before the screen
 
-- Dark theme based on `90s` theme
+[ ]  Editor background and COLOR_0 should have the same direction
 
-- Use lerna for monorepo
+[ ] Generated palletes just change COLOR_1 to COLOR_5
 
-- get max levels ant(as instead of 22 we call this ant)
+[ ] Each theme is also a separate theme
 
-- increase baboon levels
+[ ] Dark theme based on `90s` theme
 
-- Try to bind method comments with VSCode hint worker
+[ ] Use lerna for monorepo
+
+[ ] get max levels ant(as instead of 22 we call this ant)
+
+[ ] increase baboon levels
+
+[ ] Try to bind method comments with VSCode hint worker
 
 ## Trending log
 
