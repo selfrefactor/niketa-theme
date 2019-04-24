@@ -1,13 +1,17 @@
-import { translate, translatex } from './translate'
+import { translate, translateOpacity } from './translate'
 
-test('return color key', () => {
+test('happy', () => {
   expect(
     translate('back.0')
   ).toBe('#fafafa')
 })
 
-test('return persisted opacity color', () => {
+test('with opacity', () => {
   expect(
-    translatex('special.0')
-  ).toBe('#c8403966-')
+    translate('special.0').length
+  ).toBe(9)
+
+  expect(
+    translateOpacity('special.0').length
+  ).toBe(7)
 })

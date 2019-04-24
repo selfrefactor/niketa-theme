@@ -1,5 +1,6 @@
 import { readJsonAnt } from '../readJson'
 import { constantCase } from 'string-fn'
+import { dropLast } from 'rambdax'
 
 export function translate(colorKeyRaw, extraMode = false){
   const colors = readJsonAnt('colors.json')
@@ -9,9 +10,10 @@ export function translate(colorKeyRaw, extraMode = false){
 
   const actualColor = colors[ colorKey ][ String(num) ]
 
-  return extraMode ? `${ actualColor }-` : actualColor
+  return extraMode ? dropLast(2, actualColor) : actualColor
 }
 
-export function translatex(colorKeyRaw){
-  return translate(colorKeyRaw, true)
+export function translateOpacity(colorKey){
+
+  return translate(colorKey, true)
 }

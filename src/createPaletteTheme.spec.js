@@ -52,7 +52,8 @@ const rulesWithTwoColors = {
   COLOR_5         : [ '#861d4ff1', fetchZero ],
 }
 // ac5e53e9
-
+// remove opacity
+// any opacity color trigger repeated gradient
 const rulesComplexWithTargets = {
   COLOR_BACK : [
     '#c1bcae',
