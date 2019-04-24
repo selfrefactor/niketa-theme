@@ -41,11 +41,10 @@ const fetchZeroSimple = FetchTargetColorI.isSimple(0)
 const fetchOneSimple = FetchTargetColorI.isSimple(1)
 
 const rulesWithTwoColors = {
-  COLOR_BACK      : [ '#e7e6e0', 'back.17' ],
-  // TODO persist flag as no gradient is generated
-  COLOR_SECONDARY : [ '#d1d3d4', '#9eb4ad' ],
+  COLOR_BACK      : [ translatex('special.32'), '#9eb4ad' ],
+  COLOR_SECONDARY : [ translatex('special.34'), '#9eb4ad' ],
   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_0         : [ translatex('special.5'), fetchOne ],
+  COLOR_0         : [ translatex('special.24'), fetchOne ],
   COLOR_1         : [ '#a76b42', fetchZero ],
   COLOR_2         : [ '#5a8851e9', fetchOne ],
   COLOR_3         : [ '#b45948f1', fetchZero ],

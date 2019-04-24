@@ -21,7 +21,7 @@ test('with opacity', () => {
 })
 
 test.only('with translatex', () => {
-  expect( () => getGradientBee(
+  expect(() => getGradientBee(
     translatex('special.5'),
     '#fafafa'
   )).not.toThrow()
