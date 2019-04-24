@@ -5,20 +5,12 @@ import { translate } from './ants/mini/translate'
 const base = '/home/s/repos/niketa-theme/themes'
 const filePath = `${ base }/AdvancedBat.json`
 
-const rules = {
-  'editor.background'                   : [ '#C9DDE9', '#DBE3D6' ],
-  'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
-  'editor.selectionBackground'          : [ '#DDE6E0', '#C8D8E2' ],
-  'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
-}
-
-
 /*
   It allows to manipulate just the basic editor settings of published theme
 */
-test('createTheme', () => {
+test('complex', () => {
   const singleColorBase = {
-    'editor.background'                : [ '#f2ede0', '#faede0' ],
+    'editor.background'                : [translate('back.17'), '#f39c12'],
     'activityBar.background'           : [translate('ochra.1'), translate('blue.2')],
     'editor.selectionBackground'       : '#ffe0e0',
     'editor.lineHighlightBackground'   : '#e3e4d7',
@@ -39,7 +31,7 @@ test('createTheme', () => {
   }
   const singleColor = createRulesBee(singleColorBase)
 
-  createTheme({
+  const createThemeFn = () => createTheme({
     random : {
       changes  : 1,
       distance : 5,
@@ -51,12 +43,24 @@ test('createTheme', () => {
     // publishName : '',
     // publishIndex : 5,
   })
+
+
+  expect(
+    () => createThemeFn()
+  ).not.toThrow()
 })
 
 /*
   Change basic editor colors on random priciple with already published theme
 */
-test.skip('createTheme', () => {
+test.skip('with two colors', () => {
+  const rules = {
+    'editor.background'                   : [ '#C9DDE9', '#DBE3D6' ],
+    'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
+    'editor.selectionBackground'          : [ '#DDE6E0', '#C8D8E2' ],
+    'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
+  }
+
   const createThemeFn = () => createTheme({
     random : {
       changes  : 1,
