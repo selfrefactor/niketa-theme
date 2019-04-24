@@ -1,14 +1,12 @@
 import { generateBase, generateBaseRandom } from './generateBase'
 import {
-  equals,
-  flatten,
+  map,
   range,
+  mergeAll,
   shuffle,
-  sort,
-  uniqBy,
 } from 'rambdax'
 
-test.skip('happy', () => {
+test('happy', () => {
   generateBase('boring')
 })
 
@@ -36,11 +34,11 @@ const PERMUTATION_BASE = [
   'COLOR_5',
 ]
 
-function permutation(levels = 5){
+function permutation(levels = 5, permutationBase = PERMUTATION_BASE){
   const holder = []
   const sk = new Set()
   range(0, levels).forEach(_ => {
-    const mystery = JSON.stringify(shuffle(PERMUTATION_BASE))
+    const mystery = JSON.stringify(shuffle(permutationBase))
     sk.add(mystery)
   })
 
@@ -51,13 +49,30 @@ function permutation(levels = 5){
   return holder
 }
 
-test.only('fair random', () => {
-  const setOfRandoms = permutation(20)
+function applyFairness({setOfRandoms, accordingTo, levels}){
+  const refereeRaw = map(
+    x => ({[x]: 0})
+  )(accordingTo)
 
-  // expect().toBe()
-})
+  const referee = mergeAll(refereeRaw)
+  const toReturn = []
 
-test('with permutation', () => {
+  setOfRandoms.forEach(singleRandomSet => {
+    const [first] = singleRandomSet
+
+    const currentLevel = referee[first]
+    if(currentLevel<= levels){
+      
+      referee[first] = referee[first] + 1
+      toReturn.push(singleRandomSet)
+    }
+  })
+
+  return toReturn
+}
+
+
+test.skip('with permutation', () => {
   const setOfRandoms = permutation(20)
 
   expect(() => {
@@ -66,4 +81,20 @@ test('with permutation', () => {
     )
   }).not.toThrow()
 })
+
+test.skip('fair random', () => {
+  const setOfRandomsRaw = permutation(100)
+  const setOfRandoms = applyFairness({
+    setOfRandoms: setOfRandomsRaw,
+    levels:4, 
+    accordingTo: PERMUTATION_BASE
+  })
+
+  expect(() => {
+    setOfRandoms.forEach(
+      (singleSet, i) => generateBaseRandom(`_${ i }`, singleSet)
+    )
+  }).not.toThrow()
+})
+
 
