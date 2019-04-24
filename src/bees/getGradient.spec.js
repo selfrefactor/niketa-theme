@@ -9,9 +9,8 @@ test('get gradient', () => {
 })
 
 test('with opacity', () => {
-  const expected = [ '#11fafaa3', [
-    '#1fcece', '#2da2a2', '#3b7676',
-  ], '#4a4a4a2a' ]
+  const expected = [ '#11fafaa3',
+    '#1fcece', '#2da2a2', '#3b7676', '#4a4a4a2a' ]
 
   const result = getGradientBee('#11fafaa3', '#4a4a4a2a')
 

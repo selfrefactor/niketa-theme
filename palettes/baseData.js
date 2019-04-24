@@ -35,7 +35,6 @@ export const COLOR_2 = [
   'variable.parameter',
   'support.function',
   'source.json',
-  'meta.object-literal.key.js',
   'variable.other.constant.js',
   'meta.paragraph.markdown',
   'entity.other.attribute-name.js',
@@ -54,7 +53,6 @@ export const COLOR_3 = [
   'meta.import.js',
   'meta.tag.js',
   'string.quoted.single.js',
-  'meta.object-literal.key.js',
   'string.template',
   'entity.name.function.method',
   'support.type.property-name.json',
@@ -63,6 +61,7 @@ export const COLOR_3 = [
 
 export const COLOR_4 = [
   'markup.italic',
+  'meta.object-literal.key.js',
   'meta.template.expression.js',
   'punctuation.separator.parameter.js',
   'meta.parameters.js',

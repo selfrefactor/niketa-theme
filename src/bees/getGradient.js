@@ -53,7 +53,7 @@ export function getGradientBee(fromRaw, toRaw, levels = 5){
 
   return [
     fromRaw,
-    init(tail(gradient)),
+    ...init(tail(gradient)),
     toRaw,
   ]
 }

@@ -130,6 +130,7 @@ function gradientMode({
 }){
   const gradientRules = createGradientRules(rules)
   const rulesWithGradients = getRulesWithGradients(gradientRules, levels)
+
   const devJson = createPaletteThemeBee({
     rules : rulesWithGradients,
     filePath,
