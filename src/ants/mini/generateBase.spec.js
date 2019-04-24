@@ -7,3 +7,4 @@ test.skip('happy', () => {
 test('random', () => {
   expect(() => generateBaseRandom('sk')).not.toThrow()
 })
+

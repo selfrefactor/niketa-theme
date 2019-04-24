@@ -1,7 +1,6 @@
 import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
-import { camelCase } from 'string-fn'
-import { switcher, random, remove, replace, shuffle } from 'rambdax'
+import { switcher, random, remove, replace, shuffle, map, findIndex } from 'rambdax'
 
 import { baseData, baseBase } from '../../../palettes/baseData'
 
@@ -11,7 +10,7 @@ const extensions = [ '.jsx', '.ts', '.tsx' ]
 function save(label, data){
   const output = resolve(
     __dirname,
-    `../palettes/generated/${ camelCase(label) }.json`
+    `../../../palettes/generated/${ label }.json`
   )
   outputFileSync(output, JSON.stringify(data, null, 2))
 }
@@ -71,10 +70,10 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   }
 }
 
-export function generateBase(label){
+export function generateBase(label, baseDataValue = baseData){
   const tokenColors = []
 
-  Object.entries(baseData)
+  Object.entries(baseDataValue)
     .forEach(([ color, syntaxInstances ]) => {
 
       syntaxInstances
@@ -111,7 +110,19 @@ const colorsKeys = [
   'COLOR_5',
 ]
 
-export function generateBaseRandom(){
-  const newColorKeys = shuffle(colorsKeys)
+export function generateBaseRandom(label){
+  const colorsHash = { ...baseData }
+  const newColorsKeys = shuffle(colorsKeys)
+
+  const sk = map((colorKey, prop) => {
+    const foundIndex = findIndex(
+      x => x === prop
+    )(newColorsKeys)
+    const foundKey = colorsKeys[ foundIndex ]
+
+    return colorsHash[ foundKey ]
+  })(colorsHash)
+
+  generateBase(label, sk)
 }
 

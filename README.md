@@ -121,7 +121,9 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 [ ]  Editor background and COLOR_0 should have the same direction
 
-[ ] Generated palletes just change COLOR_1 to COLOR_5
+[x] Generated palletes just change COLOR_1 to COLOR_5
+
+[] Generate uniq set of COLOR_0 till COLOR_5 for pallete bases
 
 [ ] Each theme is also a separate theme
 
