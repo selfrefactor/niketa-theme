@@ -36,6 +36,8 @@
 
 ### Brave Homer
 
+> updated screen coming
+
 ![Brave Homer](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.homer.png?raw=true)
 
 ### Brave Love
