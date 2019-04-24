@@ -2,13 +2,12 @@ import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
 
 import { camelCase } from 'string-fn'
-import { baseData, baseBase } from '../../../palettes/baseData'
+import { baseData, baseBase, all } from './_baseData'
 import { switcher, random, remove, replace } from 'rambdax'
 
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
-
-function save(label, data){
+function saveAnt(label, data){
   const output = resolve(
     __dirname,
     `../palettes/generated/${ camelCase(label) }.json`
@@ -29,6 +28,43 @@ export function randomShade(color){
   return shade
 }
 
+export function randomColor(){
+  const indexSeed = random(1, 100)
+
+  const index = switcher(indexSeed)
+    .is(x => x > 78, '1')
+    .is(x => x > 54, '2')
+    .is(x => x > 34, '3')
+    .is(x => x > 18, '4')
+    .default('5')
+
+  return `COLOR_${ index }`
+}
+
+export function baseRandom(label){
+  const tokenColors = []
+
+  all.forEach(syntaxInstanceRaw => {
+    const underline = syntaxInstanceRaw.endsWith(UNDERLINE) ?
+      { fontStyle : 'underline' } :
+      {}
+    const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
+    const color = randomColor()
+    pushToTokenColors({
+      color,
+      syntaxInstance,
+      underline,
+      tokenColors,
+    })
+  })
+
+  const themeBase = {
+    ...baseBase,
+    tokenColors,
+  }
+  saveAnt(`random.${ label }`, themeBase)
+}
+
 function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   const tokenColor = {
     name     : syntaxInstance,
@@ -38,7 +74,6 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
       foreground : randomShade(color),
     },
   }
-
   tokenColors.push(tokenColor)
 
   if (syntaxInstance.endsWith('.js')){
@@ -79,11 +114,11 @@ export function generateBase(label){
 
       syntaxInstances
         .forEach(syntaxInstanceRaw => {
-          const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
 
           const underline = syntaxInstanceRaw.endsWith(UNDERLINE) ?
             { fontStyle : 'underline' } :
             {}
+          const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
 
           pushToTokenColors({
             syntaxInstance,
@@ -98,7 +133,6 @@ export function generateBase(label){
     ...baseBase,
     tokenColors,
   }
-
-  save(label, themeBase)
+  saveAnt(label, themeBase)
 }
 

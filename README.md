@@ -115,6 +115,8 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 ## TODO
 
+- Generated palletes just change COLOR_1 to COLOR_5
+
 - Each theme is also a separate theme
 
 - Dark theme based on `90s` theme
