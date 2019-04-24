@@ -143,16 +143,16 @@ test('happy', () => {
     filePath : PALLETE_RANDOM_FLAG ?
       getFilePathRandom(PALLETE_INDEX) :
       filePath,
-    rules        : rulesWithTwoColors,
-    levels       : 22,
-    rate         : RATE,
+    rules  : rulesWithTwoColors,
+    levels : 22,
+    rate   : RATE,
     // publishName  : 'brave.homer',
     // publishIndex : 2,
   })
 })
 
 function getFilePathRandom(index){
-  const found = `${ base }/generated/_${index}.json`
+  const found = `${ base }/generated/_${ index }.json`
 
   return found
 }

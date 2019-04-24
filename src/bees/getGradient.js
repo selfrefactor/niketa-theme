@@ -1,6 +1,14 @@
 require('../ants/gradStop')
 const rgbHex = require('rgb-hex')
-import { init, tail, replace, map, split, dropLast } from 'rambdax'
+import {
+  dropLast,
+  init,
+  map,
+  replace,
+  repeat,
+  split,
+  tail,
+} from 'rambdax'
 
 const parseGradient = input => {
   const str = replace(/rgb\(|\)/g, '', input)
@@ -31,6 +39,8 @@ function parseInput(fromRaw, toRaw){
 }
 
 export function getGradientBee(fromRaw, toRaw, levels = 5){
+  if (fromRaw.endsWith('-')) return repeat(init(fromRaw), levels)
+
   const { from, to, changed } = parseInput(fromRaw, toRaw)
   let gradient
   try {

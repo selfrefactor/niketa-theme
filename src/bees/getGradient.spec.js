@@ -1,3 +1,4 @@
+import { translatex } from '../ants/mini/translate'
 import { getGradientBee } from './getGradient'
 
 test('get gradient', () => {
@@ -17,4 +18,11 @@ test('with opacity', () => {
   expect(
     result
   ).toEqual(expected)
+})
+
+test.only('with translatex', () => {
+  expect( () => getGradientBee(
+    translatex('special.5'),
+    '#fafafa'
+  )).not.toThrow()
 })
