@@ -42,7 +42,7 @@ test('x', () => {
   expect(() => generateRandomPair()).not.toThrow()
 })
 
-test.only('happy', () => {
+test('happy', () => {
   const input = [
     '#8e1f2f',
     '#00afd6',
@@ -56,29 +56,24 @@ test.only('happy', () => {
       levels      : 60,
     })
   ).not.toThrow()
-
-  // const sk = readJsonAnt(
-  //   'src/ants/generateColors/colors/_HAPPY_COLORS.json'
-  // )
-  // console.log({ sk : sk.length })
 })
 
-test('change every time', () => {
+test('random persisted', () => {
   const input = generateRandomPair()
   expect(
     () => generateColorsAnt({
       input,
       label       : '_RANDOM_PERSISTED',
       opacityFlag : true,
-      levels      : 40,
+      levels      : 20,
     })
   ).not.toThrow()
 })
 
-test('change every time', () => {
+test.only('with static base', () => {
   const [ _, target ] = generateRandomPair()
   const input = [
-    '#fafafa11',
+    '#8e1f2f',
     target,
   ]
 
@@ -87,18 +82,20 @@ test('change every time', () => {
       input,
       label       : '_WITH_ONE',
       opacityFlag : true,
-      levels      : 100,
+      levels      : 10,
     })
   ).not.toThrow()
 })
 
-test('random', () => {
+test('random with hash', () => {
   const input = generateRandomPair()
+  const label = getLabel()
+  console.log({ label })
 
   expect(
     () => generateColorsAnt({
       input,
-      label       : getLabel(),
+      label,
       opacityFlag : true,
       levels      : 200,
     })
