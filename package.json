@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme",
   "description": "Large collection of handmade light themes",
-  "version": "6.14.0",
+  "version": "6.12.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -26,89 +26,114 @@
   "contributes": {
     "themes": [
       {
-        "label": "AdvancedBat",
+        "label": "BaboonAnt",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedBat.json"
+        "path": "./baboon/BaboonAnt.json"
       },
       {
-        "label": "AdvancedCat",
+        "label": "BaboonBee",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedCat.json"
+        "path": "./baboon/BaboonBee.json"
       },
       {
-        "label": "AdvancedDog",
+        "label": "BaboonCell",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedDog.json"
+        "path": "./baboon/BaboonCell.json"
       },
       {
-        "label": "AdvancedEngine",
+        "label": "BaboonDeep",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedEngine.json"
+        "path": "./baboon/BaboonDeep.json"
       },
       {
-        "label": "AdvancedMystery",
+        "label": "BaboonDelatour",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedMystery.json"
+        "path": "./baboon/BaboonDelatour.json"
       },
       {
-        "label": "BraveLove",
+        "label": "BaboonFigure",
         "uiTheme": "vs",
-        "path": "./themes/BraveLove.json"
+        "path": "./baboon/BaboonFigure.json"
       },
       {
-        "label": "BraveHomer",
+        "label": "BaboonForreal",
         "uiTheme": "vs",
-        "path": "./themes/BraveHomer.json"
+        "path": "./baboon/BaboonForreal.json"
       },
       {
-        "label": "BraveHabits",
+        "label": "BaboonGlamour",
         "uiTheme": "vs",
-        "path": "./themes/BraveHabits.json"
+        "path": "./baboon/BaboonGlamour.json"
       },
       {
-        "label": "BraveNeighbour",
+        "label": "BaboonHit",
         "uiTheme": "vs",
-        "path": "./themes/BraveNeighbour.json"
+        "path": "./baboon/BaboonHit.json"
       },
       {
-        "label": "CircusPeople",
+        "label": "BaboonJessy",
         "uiTheme": "vs",
-        "path": "./themes/CircusPeople.json"
+        "path": "./baboon/BaboonJessy.json"
       },
       {
-        "label": "CircusWhisky",
+        "label": "BaboonLiteral",
         "uiTheme": "vs",
-        "path": "./themes/CircusWhisky.json"
+        "path": "./baboon/BaboonLiteral.json"
       },
       {
-        "label": "CircusBrother",
+        "label": "BaboonMarketshare",
         "uiTheme": "vs",
-        "path": "./themes/CircusBrother.json"
+        "path": "./baboon/BaboonMarketshare.json"
       },
       {
-        "label": "NiketaBear",
+        "label": "BaboonMisery",
         "uiTheme": "vs",
-        "path": "./themes/NiketaBear.json"
+        "path": "./baboon/BaboonMisery.json"
       },
       {
-        "label": "NiketaOwl",
+        "label": "BaboonObnoxious",
         "uiTheme": "vs",
-        "path": "./themes/NiketaOwl.json"
+        "path": "./baboon/BaboonObnoxious.json"
       },
       {
-        "label": "NiketaMoon",
+        "label": "BaboonQuote",
         "uiTheme": "vs",
-        "path": "./themes/NiketaMoon.json"
+        "path": "./baboon/BaboonQuote.json"
       },
       {
-        "label": "CircusAjax",
+        "label": "BaboonRemains",
         "uiTheme": "vs",
-        "path": "./themes/CircusAjax.json"
+        "path": "./baboon/BaboonRemains.json"
       },
       {
-        "label": "AdvancedHook",
+        "label": "BaboonSalome",
         "uiTheme": "vs",
-        "path": "./themes/AdvancedHook.json"
+        "path": "./baboon/BaboonSalome.json"
+      },
+      {
+        "label": "BaboonSame",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonSame.json"
+      },
+      {
+        "label": "BaboonSong",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonSong.json"
+      },
+      {
+        "label": "BaboonTrauma",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonTrauma.json"
+      },
+      {
+        "label": "BaboonVesi",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonVesi.json"
+      },
+      {
+        "label": "BaboonWorkingman",
+        "uiTheme": "vs",
+        "path": "./baboon/BaboonWorkingman.json"
       }
     ]
   },
@@ -136,6 +161,6 @@
       "build",
       "bee"
     ],
-    "workInProgress": ""
+    "workInProgress": "gradient respects translatex"
   }
 }

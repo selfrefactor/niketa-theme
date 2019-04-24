@@ -1,11 +1,11 @@
 import { createPaletteTheme } from './createPaletteTheme'
-import { translate } from './ants/mini/translate'
+import { translate, translatex } from './ants/mini/translate'
 import { FetchTargetColor } from './ants/mini/fetchTargetColor'
 
-const PALLETE_INDEX = 0
-const PALLETE_RANDOM_FLAG = false
+const PALLETE_INDEX = 8
+const PALLETE_RANDOM_FLAG = true
 const RATE = 0.055
-const TARGET_INDEX = 12
+const TARGET_INDEX = 5
 const TARGETS = [
   [ 'dark.brown.3', 'random.2' ],
   [ 'dark.0', 'grey.5' ],
@@ -45,7 +45,7 @@ const rulesWithTwoColors = {
   // TODO persist flag as no gradient is generated
   COLOR_SECONDARY : [ '#d1d3d4', '#9eb4ad' ],
   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_0         : [ '#2f5866e9', fetchOne ],
+  COLOR_0         : [ translatex('special.5'), fetchOne ],
   COLOR_1         : [ '#a76b42', fetchZero ],
   COLOR_2         : [ '#5a8851e9', fetchOne ],
   COLOR_3         : [ '#b45948f1', fetchZero ],
@@ -146,25 +146,15 @@ test('happy', () => {
     rules        : rulesWithTwoColors,
     levels       : 22,
     rate         : RATE,
-    publishName  : 'brave.homer',
-    publishIndex : 2,
+    // publishName  : 'brave.homer',
+    // publishIndex : 2,
   })
 })
 
 function getFilePathRandom(index){
-  const filePathRandom = [
-    `${ base }/generated/randomFirst.json`,
-    `${ base }/generated/randomSecond.json`,
-    `${ base }/generated/randomThird.json`,
-    `${ base }/generated/randomX.json`,
-    `${ base }/generated/randomY.json`,
-    `${ base }/generated/randomZ.json`,
-    `${ base }/generated/randomJohn.json`,
-    `${ base }/generated/randomPaul.json`,
-    `${ base }/generated/randomJones.json`,
-  ]
+  const found = `${ base }/generated/_${index}.json`
 
-  return filePathRandom[ index ]
+  return found
 }
 
 function getRuleWithOneColor(){
