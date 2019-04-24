@@ -109,11 +109,17 @@ Niketa is the name I gave to my dog. On this picture, she is about 90 days:
 
 ## Develop
 
-I build the themes by running `createPalleteTheme.spec.js` with `publish` flag set to `false`. I change the colors and I check among the 12 generated variations.
+I build the themes by running `createPalleteTheme.spec.js` with `publish` flag set to `false`. I change some colors and then I enter debug mode.
 
-## Dark themes
+Debug mode will open 22 themes, so the developer can choose which variation looks the best.
 
-If somebody cares for dark themes, just submit PR with this request and I'd create a few(or you can build a theme on your own and submit actual PR).
+## TODO
+
+- Each theme is also a separate theme
+
+- Dark theme based on `90s` theme
+
+- Use lerna for monorepo
 
 ## Trending log
 
