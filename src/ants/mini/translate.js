@@ -1,7 +1,7 @@
 import { readJsonAnt } from '../readJson'
 import { constantCase } from 'string-fn'
 
-export function translate(colorKeyRaw){
+export function translate(colorKeyRaw, extraMode = false){
   const colors = readJsonAnt('colors.json')
 
   const colorKey = constantCase(colorKeyRaw)
@@ -9,5 +9,9 @@ export function translate(colorKeyRaw){
 
   const actualColor = colors[ colorKey ][ String(num) ]
 
-  return actualColor
+  return extraMode ? `${actualColor}-` : actualColor
+}
+
+export function translatex(colorKeyRaw) {
+  return translate(colorKeyRaw, true)
 }
