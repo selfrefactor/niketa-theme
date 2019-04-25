@@ -1,5 +1,6 @@
 import { generateColorsAnt } from './'
 import { readJsonAnt } from '../readJson'
+import { translate, translateOpacity } from '../mini/translate'
 import {
   random,
   shuffle,
@@ -44,8 +45,8 @@ test('x', () => {
 
 test('happy', () => {
   const input = [
-    '#8e1f2f',
-    '#00afd6',
+    translate('back.17'),
+    translate('light.pink.1'),
   ]
 
   expect(
@@ -58,7 +59,7 @@ test('happy', () => {
   ).not.toThrow()
 })
 
-test('random persisted', () => {
+test.skip('random persisted', () => {
   const input = generateRandomPair()
   expect(
     () => generateColorsAnt({
@@ -70,10 +71,10 @@ test('random persisted', () => {
   ).not.toThrow()
 })
 
-test.only('with static base', () => {
+test.skip('with static base', () => {
   const [ _, target ] = generateRandomPair()
   const input = [
-    '#8e1f2f',
+    translate('back.0'),
     target,
   ]
 
@@ -87,7 +88,7 @@ test.only('with static base', () => {
   ).not.toThrow()
 })
 
-test('random with hash', () => {
+test.skip('random with hash', () => {
   const input = generateRandomPair()
   const label = getLabel()
   console.log({ label })
