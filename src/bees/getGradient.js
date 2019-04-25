@@ -18,8 +18,8 @@ const parseGradient = input => {
 }
 
 export function getGradientBee(from, to, levels = 5){
-  if (from.length === 7) return repeat(init(from), levels)
-  if (to.length === 7) return repeat(init(to), levels)
+  if (from.length === 9) return repeat(from, levels)
+  if (to.length === 9) return repeat(to, levels)
 
   let gradient
   try {
@@ -37,6 +37,10 @@ export function getGradientBee(from, to, levels = 5){
     })
     throw e
   }
+  console.log({
+    gradient,
+    from,
+  })
 
   return gradient
 }

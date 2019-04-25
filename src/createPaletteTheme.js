@@ -9,10 +9,6 @@ import { getGradientBee } from './bees/getGradient'
 import colors from '../colors.json'
 
 function createPaletteRule(prop, colorBase, rate){
-  console.log({
-    prop,
-    colorBase,
-  })
   const willReturn = {}
   const modes = [
     'DARKEST',
@@ -134,7 +130,7 @@ function gradientMode({
 }){
   const gradientRules = createGradientRules(rules)
   const rulesWithGradients = getRulesWithGradients(gradientRules, levels)
-
+  console.log({ rulesWithGradients })
   const devJson = createPaletteThemeBee({
     rules : rulesWithGradients,
     filePath,
@@ -208,9 +204,11 @@ export function createPaletteTheme({
 }){
   ok(filePath, rules)(String, Object)
   if (showList) console.log(listImportedColorsAnt())
+
   if (publishName) return publishThemeBee(publishName, publishIndex)
 
   if (complex) return complexMode(arguments[ 0 ])
+
   if (!isGradientMode(rules)) return simpleMode(arguments[ 0 ])
 
   return gradientMode(arguments[ 0 ])
