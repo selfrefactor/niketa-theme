@@ -1,7 +1,6 @@
 require('../ants/gradStop')
 import rgbHex from 'rgb-hex'
 import {
-  init,
   map,
   replace,
   repeat,
@@ -37,10 +36,6 @@ export function getGradientBee(from, to, levels = 5){
     })
     throw e
   }
-  console.log({
-    gradient,
-    from,
-  })
 
   return gradient
 }
