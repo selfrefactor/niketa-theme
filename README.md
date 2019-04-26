@@ -115,7 +115,11 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 ## Roadmap April 2019
 
-[]  on hover of any niketa icon show jest out
+[] script to copy theme to mono repo folder
+
+[] opacity colors can still be darken
+
+[] on hover of any niketa icon show jest out
 
 [x] Once new generate pallete theme is done, move the test to deprecated as this will pin the palletes  
 
