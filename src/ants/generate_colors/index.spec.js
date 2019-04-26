@@ -35,18 +35,22 @@ function generateRandomPair(){
     randomized[ firstRandomIndex ],
     randomized[ secondRandomIndex ],
   ]
+  console.log({
+    firstRandomIndex,
+    secondRandomIndex,
+  })
 
   return toReturn
 }
 
-test('x', () => {
+test.skip('x', () => {
   expect(() => generateRandomPair()).not.toThrow()
 })
 
 test('happy', () => {
   const input = [
-    translate('back.17'),
-    translate('light.pink.1'),
+    translate('back.3'),
+    translate('back.18'),
   ]
 
   expect(

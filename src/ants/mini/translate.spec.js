@@ -2,8 +2,8 @@ import { translate, translatex } from './translate'
 
 test('happy', () => {
   expect(
-    translate('back.0')
-  ).toBe('#fafafa')
+    translate('back.18')
+  ).toBe('#c3c1a9')
 })
 
 test('with opacity', () => {

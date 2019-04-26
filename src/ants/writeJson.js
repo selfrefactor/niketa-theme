@@ -10,6 +10,7 @@ export function writeJsonAnt(filePath, obj){
     BASE,
     filePath
   )
+
   outputFileSync(
     resolvedPath,
     JSON.stringify(obj, null, 2)
