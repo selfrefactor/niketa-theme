@@ -27,17 +27,15 @@ function whenOpacity({ color, opacityChange, opacityDirection }){
     sd + opacityChange :
     sd - opacityChange
 
-  console.log({
-    sk,
-    sd,
-    xx,
-  })
-
   const dd = xx > 240 ?
     'f3' :
     toHex(xx)
 
   const toReturn = `${ dropLast(2, color) }${ dd }`
+  console.log({
+    toReturn,
+    color,
+  })
 
   return toReturn
 }
