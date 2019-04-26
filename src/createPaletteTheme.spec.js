@@ -43,13 +43,13 @@ const rules = {
   COLOR_BACK      : [ translate('back_opacity.1'), '#9eb4ad' ],
   COLOR_SECONDARY : [ translate('special.7'), '#9eb4ad' ],
   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_0         : [ translateOpacity('dark.opacity.4'), fetchOne ],
-  COLOR_1         : [ '#a76b42', fetchZero ],
+  COLOR_0         : [ translate('dark.opacity.4'), fetchOne ],
+  COLOR_1         : [ translate('green.opacity.0'), fetchZero ],
   COLOR_2         : [ '#5a8851e9', fetchOne ],
   COLOR_3         : [ '#b45948f1', fetchZero ],
   COLOR_4         : [ '#0068a8', fetchOne ],
-  COLOR_5         : [ '#861d4ff1', fetchZero ],
-} 
+  COLOR_5         : [ translate('yellow.opacity.5'), fetchZero ],
+}
 
 const base = '/home/s/repos/niketa-theme/palettes'
 const filePath = `${ base }/generated/boring.json`
