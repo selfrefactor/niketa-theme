@@ -1,6 +1,6 @@
 import { random, maybe } from 'rambdax'
 
-function toHex(d){
+export function toHex(d){
   return Number(d).toString(16)
     .slice(-2)
     .toUpperCase()

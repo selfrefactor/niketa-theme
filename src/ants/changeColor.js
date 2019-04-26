@@ -1,30 +1,93 @@
 import Color from 'color'
-import { switcher } from 'rambdax'
+import { toHex } from './applyDistance'
+import { switcher, takeLast, dropLast } from 'rambdax'
+
+const ConvertBase = function(num){
+  return {
+    from : function(baseFrom){
+      return {
+        to : function(baseTo){
+          return parseInt(num, baseFrom).toString(baseTo)
+        },
+      }
+    },
+  }
+}
+
+export function hexToNumber(hex){
+  return Number(ConvertBase(hex).from(16)
+    .to(10))
+}
+
+function whenOpacity({ color, opacityChange, opacityDirection }){
+  const sk = takeLast(2, color)
+  const sd = hexToNumber(sk)
+
+  const xx = opacityDirection === 'plus' ?
+    sd + opacityChange :
+    sd - opacityChange
+
+  console.log({
+    sk,
+    sd,
+    xx,
+  })
+
+  const dd = xx > 240 ?
+    'f3' :
+    toHex(xx)
+
+  const toReturn = `${ dropLast(2, color) }${ dd }`
+
+  return toReturn
+}
+
+function whenNoOpacity({ color, change, mode }){
+
+  return Color(color)[ mode ](change)
+    .hex()
+}
 
 const BASE = 0.08
 
 export function changeColorAnt(color, modeInput, base = BASE){
 
-  const { mode, change } = switcher(modeInput)
+  const { mode, change, opacityChange, opacityDirection } = switcher(modeInput)
     .is('DARKEST', {
-      mode   : 'darken',
-      change : base * 3,
+      mode             : 'darken',
+      change           : base * 3,
+      opacityChange    : 90,
+      opacityDirection : 'plus',
     })
     .is('DARKER', {
-      mode   : 'darken',
-      change : base * 2,
+      mode             : 'darken',
+      change           : base * 2,
+      opacityChange    : 60,
+      opacityDirection : 'plus',
     })
     .is('DARK', {
-      mode   : 'darken',
-      change : base,
+      mode             : 'darken',
+      change           : base,
+      opacityChange    : 40,
+      opacityDirection : 'plus',
+    })
+    .is('LIGHTEST', {
+      mode             : 'lighten',
+      change           : base * 2.7,
+      opacityChange    : 70,
+      opacityDirection : 'minus',
     })
     .is('LIGHTER', {
-      mode   : 'lighten',
-      change : base * 2,
+      mode             : 'lighten',
+      change           : base * 2,
+      opacityChange    : 50,
+      opacityDirection : 'minus',
     })
     .is('LIGHT', {
-      mode   : 'lighten',
-      change : base,
+      mode             : 'lighten',
+      change           : base,
+      opacityChange    : 30,
+      opacityDirection : 'minus',
     })
     .default({})
 
@@ -32,12 +95,17 @@ export function changeColorAnt(color, modeInput, base = BASE){
 
   const hasOpacity = color.length === 9
 
-  const whenNoOpacity = () => Color(color)[ mode ](change)
-    .hex()
-
   const toReturn = hasOpacity ?
-    color :
-    whenNoOpacity()
+    whenOpacity({
+      color,
+      opacityChange,
+      opacityDirection,
+    }) :
+    whenNoOpacity({
+      color,
+      change,
+      mode,
+    })
 
   return toReturn
 }
