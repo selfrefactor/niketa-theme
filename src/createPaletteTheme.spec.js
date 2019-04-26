@@ -9,9 +9,7 @@ const fetchZero = FetchTargetColorI.is(0)
 const fetchOne = FetchTargetColorI.is(TARGET_ONLY_FIRST_FLAG() ? 0 : 1)
 const RATE = 0.055 // applied to no opacity colors
 function TARGETS(){
-  return [
-    [ 'dark.brown.3', 'random.2' ],
-    [ 'dark.0', 'grey.5' ],
+  return [ [ 'dark.brown.3', 'random.2' ], [ 'dark.0', 'grey.5' ],
     [ 'dark.red.6', 'dark.pink.7' ],
     [ 'dark.green.10', 'dark.purple.4' ],
     [ 'dark.pink.7', 'navy.7' ],
@@ -34,17 +32,17 @@ function TARGETS(){
   ]
 }
 
+function TARGET_ONLY_FIRST_FLAG(){ return false }
+function TARGET_INDEX(){ return 4 }
 const PALLETE_INDEX = 8
 const PALLETE_RANDOM_FLAG = false
-function TARGET_ONLY_FIRST_FLAG(){ return true }
-function TARGET_INDEX(){ return 5 }
 
 const rules = {
-  COLOR_BACK      : [ translate('back_opacity.1'), '#9eb4ad' ],
+  COLOR_BACK      : [ translate('back_opacity.6'), '#9eb4ad' ],
   COLOR_SECONDARY : [ translate('special.7'), '#9eb4ad' ],
-  COLOR_SELECTION : [ translate('yellow.opacity.6'), '#eae3cd' ],
+  COLOR_SELECTION : [ translate('red.opacity.3'), '#eae3cd' ],
   COLOR_0         : [ translate('dark.opacity.4'), fetchOne ],
-  COLOR_1         : [ translate('green.opacity.0'), fetchZero ],
+  COLOR_1         : [ translate('blue.opacity.2'), fetchZero ],
   COLOR_2         : [ '#5a8851e9', fetchOne ],
   COLOR_3         : [ '#b45948f1', fetchZero ],
   COLOR_4         : [ '#0068a8', fetchOne ],

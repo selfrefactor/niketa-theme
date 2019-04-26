@@ -50,7 +50,7 @@ test.skip('x', () => {
 test('happy', () => {
   const input = [
     translate('back.3'),
-    translate('back.18'),
+    translate('secondary.4'),
   ]
 
   expect(
