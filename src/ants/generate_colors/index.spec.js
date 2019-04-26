@@ -1,6 +1,6 @@
 import { generateColorsAnt } from './'
 import { readJsonAnt } from '../readJson'
-import { translate, translateOpacity } from '../mini/translate'
+import { translate, translatex } from '../mini/translate'
 import {
   random,
   shuffle,

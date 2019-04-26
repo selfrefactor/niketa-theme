@@ -1,4 +1,4 @@
-import { translate, translateOpacity } from './translate'
+import { translate, translatex } from './translate'
 
 test('happy', () => {
   expect(
@@ -12,6 +12,6 @@ test('with opacity', () => {
   ).toBe(9)
 
   expect(
-    translateOpacity('special.0').length
+    translatex('special.0').length
   ).toBe(7)
 })

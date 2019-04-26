@@ -18,7 +18,7 @@ export function translate(colorKeyRaw, extraMode = false){
   }
 }
 
-export function translateOpacity(colorKey){
+export function translatex(colorKey){
 
   return translate(colorKey, true)
 }

@@ -1,5 +1,5 @@
 import { createPaletteTheme } from './createPaletteTheme'
-import { translate, translateOpacity } from './ants/mini/translate'
+import { translate, translatex } from './ants/mini/translate'
 import { FetchTargetColor } from './ants/mini/fetchTargetColor'
 const FetchTargetColorI = new FetchTargetColor({
   targetIndex : TARGET_INDEX(),
@@ -42,7 +42,7 @@ function TARGET_INDEX(){ return 5 }
 const rules = {
   COLOR_BACK      : [ translate('back_opacity.1'), '#9eb4ad' ],
   COLOR_SECONDARY : [ translate('special.7'), '#9eb4ad' ],
-  COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
+  COLOR_SELECTION : [ translate('yellow.opacity.6'), '#eae3cd' ],
   COLOR_0         : [ translate('dark.opacity.4'), fetchOne ],
   COLOR_1         : [ translate('green.opacity.0'), fetchZero ],
   COLOR_2         : [ '#5a8851e9', fetchOne ],

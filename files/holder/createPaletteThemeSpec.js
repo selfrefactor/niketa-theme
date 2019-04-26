@@ -1,5 +1,5 @@
 import { createPaletteTheme } from './createPaletteTheme'
-import { translate, translateOpacity } from './ants/mini/translate'
+import { translate, translatex } from './ants/mini/translate'
 import { FetchTargetColor } from './ants/mini/fetchTargetColor'
 
 const PALLETE_INDEX = 8
@@ -44,7 +44,7 @@ const rulesWithTwoColors = {
   COLOR_BACK      : [ translate('special.32'), '#9eb4ad' ],
   COLOR_SECONDARY : [ translate('special.34'), '#9eb4ad' ],
   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_0         : [ translateOpacity('special.24'), fetchOne ],
+  COLOR_0         : [ translatex('special.24'), fetchOne ],
   COLOR_1         : [ '#a76b42', fetchZero ],
   COLOR_2         : [ '#5a8851e9', fetchOne ],
   COLOR_3         : [ '#b45948f1', fetchZero ],
