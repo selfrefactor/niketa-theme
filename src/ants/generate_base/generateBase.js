@@ -16,16 +16,18 @@ function save(label, data){
 }
 
 export function randomShade(color){
-  const seed = random(1, 20)
+  const seed = random(3, 20)
 
   const shade = switcher(seed)
     .is(20, `${ color }_LIGHTEST`)
-    .is(10, `${ color }_DARKER`)
-    .is(9, `${ color }_DARK`)
-    .is(8, `${ color }_LIGHTER`)
-    .is(7, `${ color }_LIGHT`)
-    .is(6, `${ color }_LIGHT`)
-    .is(5, `${ color }_LIGHT`)
+    .is(19, `${ color }_LIGHTER`)
+    .is(17, `${ color }_LIGHT`)
+    .is(16, `${ color }_LIGHT`)
+    .is(15, `${ color }_DARK`)
+    .is(14, `${ color }_DARK`)
+    .is(18, `${ color }_DARK`)
+    .is(12, `${ color }_DARKER`)
+    .is(11, `${ color }_DARKEST`)
     .default(color)
 
   return shade

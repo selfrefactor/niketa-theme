@@ -82,7 +82,7 @@ test.skip('with permutation', () => {
   }).not.toThrow()
 })
 
-test.skip('fair random', () => {
+test('fair random', () => {
   const setOfRandomsRaw = permutation(100)
   const setOfRandoms = applyFairness({
     setOfRandoms: setOfRandomsRaw,
