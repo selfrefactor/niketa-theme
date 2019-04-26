@@ -40,16 +40,16 @@ function TARGET_ONLY_FIRST_FLAG(){ return true }
 function TARGET_INDEX(){ return 5 }
 
 const rules = {
-  COLOR_BACK      : [ translate('special.32'), '#9eb4ad' ],
-  COLOR_SECONDARY : [ translate('special.34'), '#9eb4ad' ],
+  COLOR_BACK      : [ translate('back_opacity.1'), '#9eb4ad' ],
+  COLOR_SECONDARY : [ translate('special.7'), '#9eb4ad' ],
   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_0         : [ translateOpacity('special.24'), fetchOne ],
+  COLOR_0         : [ translateOpacity('dark.opacity.4'), fetchOne ],
   COLOR_1         : [ '#a76b42', fetchZero ],
   COLOR_2         : [ '#5a8851e9', fetchOne ],
   COLOR_3         : [ '#b45948f1', fetchZero ],
   COLOR_4         : [ '#0068a8', fetchOne ],
   COLOR_5         : [ '#861d4ff1', fetchZero ],
-}
+} 
 
 const base = '/home/s/repos/niketa-theme/palettes'
 const filePath = `${ base }/generated/boring.json`

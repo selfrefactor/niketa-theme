@@ -20,22 +20,18 @@ export function hexToNumber(hex){
 }
 
 function whenOpacity({ color, opacityChange, opacityDirection }){
-  const sk = takeLast(2, color)
-  const sd = hexToNumber(sk)
+  const lastTwo = takeLast(2, color)
+  const asNumber = hexToNumber(lastTwo)
 
-  const xx = opacityDirection === 'plus' ?
-    sd + opacityChange :
-    sd - opacityChange
+  const withCorrection = opacityDirection === 'plus' ?
+    asNumber + opacityChange :
+    asNumber - opacityChange
 
-  const dd = xx > 240 ?
+  const newOpacity = withCorrection > 240 ?
     'f3' :
-    toHex(xx)
+    toHex(withCorrection)
 
-  const toReturn = `${ dropLast(2, color) }${ dd }`
-  console.log({
-    toReturn,
-    color,
-  })
+  const toReturn = `${ dropLast(2, color) }${ newOpacity }`
 
   return toReturn
 }

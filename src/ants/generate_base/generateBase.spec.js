@@ -49,28 +49,27 @@ function permutation(levels = 5, permutationBase = PERMUTATION_BASE){
   return holder
 }
 
-function applyFairness({setOfRandoms, accordingTo, levels}){
+function applyFairness({ setOfRandoms, accordingTo, levels }){
   const refereeRaw = map(
-    x => ({[x]: 0})
+    x => ({ [ x ] : 0 })
   )(accordingTo)
 
   const referee = mergeAll(refereeRaw)
   const toReturn = []
 
   setOfRandoms.forEach(singleRandomSet => {
-    const [first] = singleRandomSet
+    const [ first ] = singleRandomSet
 
-    const currentLevel = referee[first]
-    if(currentLevel<= levels){
-      
-      referee[first] = referee[first] + 1
+    const currentLevel = referee[ first ]
+    if (currentLevel <= levels){
+
+      referee[ first ] = referee[ first ] + 1
       toReturn.push(singleRandomSet)
     }
   })
 
   return toReturn
 }
-
 
 test.skip('with permutation', () => {
   const setOfRandoms = permutation(20)
@@ -85,9 +84,9 @@ test.skip('with permutation', () => {
 test('fair random', () => {
   const setOfRandomsRaw = permutation(100)
   const setOfRandoms = applyFairness({
-    setOfRandoms: setOfRandomsRaw,
-    levels:4, 
-    accordingTo: PERMUTATION_BASE
+    setOfRandoms : setOfRandomsRaw,
+    levels       : 4,
+    accordingTo  : PERMUTATION_BASE,
   })
 
   expect(() => {
@@ -96,5 +95,4 @@ test('fair random', () => {
     )
   }).not.toThrow()
 })
-
 
