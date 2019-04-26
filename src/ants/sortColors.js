@@ -1,7 +1,7 @@
 import importedColors from '../../colors.json'
 import { writeJsonAnt } from './writeJson.js'
 import hexSorter from 'hexsorter'
-import { sort } from 'rambdax'
+import { sort, _ } from 'rambdax'
 
 export function compareColors(colors){
   const compareColorsFn = (a, b) => {
@@ -31,20 +31,20 @@ export function sortColorsAnt(){
   const keys = Object.keys(importedColors)
   const sortedColors = {}
   keys.forEach(key => {
-    if(key.endsWith('_OPACITY')){
+    if (key === 'SPECIAL' || key.endsWith('_OPACITY')){
       sortedColors[ key ] = importedColors[ key ]
-    }else{
+    } else {
       const all = Object.values(importedColors[ key ]).map(x => x.toLowerCase())
 
       all.sort((a, b) => {
         if (!a) return 1
         if (!b) return -1
-  
+
         const brighter = hexSorter.mostBrightColor([ a, b ])
-  
+
         return brighter === a ? -1 : 1
       })
-  
+
       const newColor = {}
       all.forEach((sortedColor, i) => {
         newColor[ i ] = sortedColor
@@ -52,11 +52,11 @@ export function sortColorsAnt(){
       sortedColors[ key ] = newColor
     }
   })
-  console.log({sortedColors})
-  // writeJsonAnt(
-  //   'colors.json',
-  //   sortedColors
-  // )
+
+  writeJsonAnt(
+    'colors.json',
+    sortedColors
+  )
 
   return sortedColors
 }
