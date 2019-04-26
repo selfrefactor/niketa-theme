@@ -31,7 +31,7 @@ export function sortColorsAnt(){
   const keys = Object.keys(importedColors)
   const sortedColors = {}
   keys.forEach(key => {
-    if (key === 'SPECIAL' || key.endsWith('_OPACITY')){
+    if (key === _.SPECIAL || key.endsWith('_OPACITY')){
       sortedColors[ key ] = importedColors[ key ]
     } else {
       const all = Object.values(importedColors[ key ]).map(x => x.toLowerCase())
