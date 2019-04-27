@@ -1,15 +1,32 @@
 import { createPaletteTheme } from './createPaletteTheme'
 import { translate, translatex } from './ants/mini/translate'
 import { FetchTargetColor } from './ants/mini/fetchTargetColor'
-const FetchTargetColorI = new FetchTargetColor({
+
+const targetOptions = {
   targetIndex : TARGET_INDEX(),
-  targets     : TARGETS(),
-})
+  opacityFlag : TARGET_OPACITY(),
+  targets     : [ OPACITY_TARGETS(), TARGETS() ],
+}
+
+const FetchTargetColorI = new FetchTargetColor(targetOptions)
+
 const fetchZero = FetchTargetColorI.is(0)
 const fetchOne = FetchTargetColorI.is(TARGET_ONLY_FIRST_FLAG() ? 0 : 1)
 const RATE = 0.055 // applied to no opacity colors
+
+function OPACITY_TARGETS(){
+  return [
+    [ '39', '90' ],
+    [ 'f1', '77' ],
+    [ 'a0', 'c9' ],
+    [ 'ba', 'ed' ],
+  ]
+}
+
 function TARGETS(){
-  return [ [ 'dark.brown.3', 'random.2' ], [ 'dark.0', 'grey.5' ],
+  return [
+    [ 'dark.brown.3', 'random.2' ],
+    [ 'dark.0', 'grey.5' ],
     [ 'dark.red.6', 'dark.pink.7' ],
     [ 'dark.green.10', 'dark.purple.4' ],
     [ 'dark.pink.7', 'navy.7' ],
@@ -32,24 +49,23 @@ function TARGETS(){
   ]
 }
 
-function TARGET_ONLY_FIRST_FLAG(){ return false }
-function TARGET_INDEX(){ return 4 }
+function TARGET_OPACITY(){ return true }
+function TARGET_ONLY_FIRST_FLAG(){ return true }
+function TARGET_INDEX(){ return 0 }
 const PALLETE_INDEX = 8
 const PALLETE_RANDOM_FLAG = false
 
 const rules = {
-  COLOR_BACK      : [ translate('back_opacity.14'), '#9eb4ad' ],
-  COLOR_SECONDARY : [ translate('back.opacity.7'), '#9eb4ad' ],
-  COLOR_SELECTION : [ translate('back.opacity.10'), '#eae3cd' ],
-  COLOR_0         : [ translate('special.7'), '#eae3cd' ],
-  // COLOR_0         : [ translate('dark.opacity.4'), fetchOne ],
+  COLOR_BACK      : [ translate('back_opacity.14'), fetchZero ],
+  COLOR_SECONDARY : [ translate('back.opacity.7'), fetchOne ],
+  COLOR_SELECTION : [ translate('back.opacity.10'), fetchZero ],
+  COLOR_0         : [ translate('special.7'), fetchOne ],
   COLOR_1         : [ translate('red.opacity.9'), fetchZero ],
-  COLOR_2         : [ translate('green.opacity.4'), fetchZero ],
-  COLOR_3         : [ translate('red.opacity.1'), fetchOne ],
-  COLOR_4         : [ translate('dark.opacity.9'), fetchZero ],
-  COLOR_5         : [ translate('yellow.opacity.4'), fetchZero ],
+  COLOR_2         : [ translate('green.opacity.4'), fetchOne ],
+  COLOR_3         : [ translate('red.opacity.1'), fetchZero ],
+  COLOR_4         : [ translate('dark.opacity.9'), fetchOne ],
+  COLOR_5         : [ translate('yellow.opacity.1'), fetchZero ],
 }
-
 const base = '/home/s/repos/niketa-theme/palettes'
 const filePath = `${ base }/generated/boring.json`
 
@@ -67,7 +83,7 @@ test('happy', () => {
     // publishName  : 'brave.homer',
     // publishIndex : 2,
   })
-})
+}) 
 
 function getFilePathRandom(index){
   const found = `${ base }/generated/_${ index }.json`

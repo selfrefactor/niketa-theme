@@ -2,16 +2,18 @@ import { constantCase } from 'string-fn'
 import { readJsonAnt } from '../readJson'
 
 export class FetchTargetColor{
-  constructor({ targetIndex, targets }){
-    this.targets = targets
+  constructor({ targetIndex, targets, opacityFlag }){
+    this.opacityTargets = targets[ 0 ]
+    this.targets = targets[ 1 ]
     this.targetIndex = targetIndex
-  }
-
-  isSimple(zeroOrOne){
-    return this.targets[ this.targetIndex ][ zeroOrOne ]
+    this.opacityFlag = opacityFlag
   }
 
   is(zeroOrOne){
+    if (this.opacityFlag){
+      return this.opacityTargets[ this.targetIndex ][ zeroOrOne ]
+    }
+
     const colors = readJsonAnt('colors.json')
     const [ whenZero, whenOne ] = this.targets[ this.targetIndex ]
 

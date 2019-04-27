@@ -5,10 +5,12 @@ import { hexToNumber } from '../ants/changeColor'
 import { toHex } from '../ants/applyDistance'
 
 import {
+  last,
   map,
   dropLast,
   takeLast,
   replace,
+  reverse,
   repeat,
   split,
 } from 'rambdax'
@@ -27,14 +29,30 @@ function whenOpacity(from, toRaw, levels){
   const fromBase = dropLast(2, from)
   const fromOpacity = takeLast(2, from)
 
-  const toAsHex = hexToNumber(to)
-  const fromAsHex = hexToNumber(fromOpacity)
-  const distance = Math.abs(Math.floor((fromAsHex - toAsHex) / levels))
+  const toAsNumber = hexToNumber(to)
+  const fromAsNumber = hexToNumber(fromOpacity)
+  const distance = Math.abs(Math.floor((fromAsNumber - toAsNumber) / levels))
 
-  const toReturn = rangeBy(fromAsHex, toAsHex, distance).map(toHex)
+  const toReturnRaw = rangeBy(fromAsNumber, toAsNumber, distance).map(toHex)
     .map(x => `${ fromBase }${ x }`)
 
-  return toReturn
+  const toReturn = fromAsNumber < toAsNumber ?
+    toReturnRaw :
+    reverse(toReturnRaw)
+
+  // console.log({ toReturn, fromAsNumber, toAsNumber, a: fromAsNumber > toAsNumber })
+
+  if (toReturn.length === levels) return toReturn
+
+  const diff = Math.abs(levels - toReturn.length)
+
+  if (toReturn.length < levels){
+    const added = repeat(last(toReturn), diff)
+
+    return [ ...toReturn, ...added ]
+  }
+
+  return dropLast(diff, toReturn)
 }
 
 export function getGradientBee(from, to, levels = 5){

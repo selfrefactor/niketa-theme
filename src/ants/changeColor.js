@@ -45,7 +45,6 @@ function whenNoOpacity({ color, change, mode }){
 const BASE = 0.08
 
 export function changeColorAnt(color, modeInput, base = BASE){
-
   const { mode, change, opacityChange, opacityDirection } = switcher(modeInput)
     .is('DARKEST', {
       mode             : 'darken',
