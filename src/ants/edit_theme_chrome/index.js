@@ -1,11 +1,11 @@
 import { partialCurry, map, ok } from 'rambdax'
-import { readJsonAnt } from './ants/readJson'
-import { getGradientBee } from './bees/getGradient'
-import { createThemeBee } from './bees/createTheme'
-import { randomColorBee } from './bees/randomColor'
-import { saveThemeBee } from './bees/saveTheme'
-import { publishThemeBee } from './bees/publishTheme'
-import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
+import { readJsonAnt } from '../readJson'
+import { getGradientBee } from '../../bees/getGradient'
+import { createThemeBee } from '../../bees/createTheme'
+import { randomColorBee } from '../../bees/randomColor'
+import { saveThemeBee } from '../../bees/saveTheme'
+import { publishThemeBee } from '../../bees/publishTheme'
+import { saveToPackageJsonAnt } from '../../ants/saveToPackageJson'
 
 function getRulesWithColors({
   levels,
@@ -45,7 +45,7 @@ function getRulesWithColors({
   )
 }
 
-export function createTheme({
+export function editThemeChrome({
   filePath,
   rules,
   random,

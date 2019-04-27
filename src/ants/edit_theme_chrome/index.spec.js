@@ -1,14 +1,14 @@
-import { createTheme } from './'
-import { createRules } from './ants/mini/createRules'
-import { translate } from './ants/mini/translate'
+import { editThemeChrome } from './'
+import { createRules } from '../mini/createRules'
+import { translate } from '../mini/translate'
 
 const base = '/home/s/repos/niketa-theme/themes'
-const filePath = `${ base }/AdvancedBat.json`
+const filePath = `${ base }/AdvancedHook.json`
 
 /*
   It allows to manipulate just the basic editor settings of published theme
 */
-test('with one or two colors', () => {
+test.skip('with one or two colors', () => {
   const singleColorBase = {
     'editor.background'                : [ translate('back.17'), '#f39c12' ],
     'activityBar.background'           : [ translate('ochra.1'), translate('blue.2') ],
@@ -31,7 +31,7 @@ test('with one or two colors', () => {
   }
   const singleColor = createRules(singleColorBase)
 
-  const createThemeFn = () => createTheme({
+  const createThemeFn = () => editThemeChrome({
     random : {
       changes  : 1,
       distance : 5,
@@ -40,8 +40,6 @@ test('with one or two colors', () => {
     filePath,
     rules  : singleColor,
     levels : 12,
-    // publishName : '',
-    // publishIndex : 5,
   })
 
   expect(
@@ -52,7 +50,7 @@ test('with one or two colors', () => {
 /*
   Change basic editor colors on random priciple with already published theme
 */
-test.skip('with static color pairs', () => {
+test('with static color pairs', () => {
   const rules = {
     'editor.background'                   : [ '#C9DDE9', '#DBE3D6' ],
     'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
@@ -60,7 +58,7 @@ test.skip('with static color pairs', () => {
     'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
   }
 
-  const createThemeFn = () => createTheme({
+  const createThemeFn = () => editThemeChrome({
     random : {
       changes  : 1,
       distance : 6,
@@ -69,8 +67,6 @@ test.skip('with static color pairs', () => {
     filePath,
     rules,
     levels : 22,
-    // publishName : '',
-    // publishIndex : 5,
   })
 
   expect(() => createThemeFn()).not.toThrow()

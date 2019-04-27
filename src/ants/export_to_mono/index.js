@@ -125,6 +125,12 @@ export function exportToMono(themeIndex, outputName){
   if (existsSync(screenSource)){
     copySync(screenSource, screenDestination)
     removeSync(`${ outputFolder }/theme/brave.homer.png`)
+  } else {
+    console.log('You need to save a screen before that')
+    moveSync(
+      `${ outputFolder }/theme/brave.homer.png`,
+      `${ outputFolder }/theme/${ dotCase(theme) }.png`,
+    )
   }
 
   const packageJson = readJsonSync(packageJsonFile)
@@ -144,5 +150,5 @@ export function exportToMono(themeIndex, outputName){
 
   outputFileSync(readmeFile, editedReadme)
 
-  console.log({ editedReadme })
+  console.log({ jsonName })
 }
