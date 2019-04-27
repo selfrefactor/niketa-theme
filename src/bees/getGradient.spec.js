@@ -9,18 +9,22 @@ test('get gradient', () => {
   ).toEqual(expected)
 })
 
-test('with opacity', () => {
-  const expected = [ '#11fafaa3',
-    '#1fcece', '#2da2a2', '#3b7676', '#4a4a4a2a' ]
+test.skip('with opacity', () => {
+  const expected = [ '#977d9660',
+         '#977d967B',
+         '#977d9696',
+         '#977d96B1',
+         '#977d96CC',
+         '#977d96E7' ]
 
-  const result = getGradientBee('#11fafaa3', '#4a4a4a2a')
+  const result = getGradientBee('#977d96e9', '60')
 
   expect(
     result
   ).toEqual(expected)
 })
 
-test.only('with translatex', () => {
+test('with translatex', () => {
   expect(() => getGradientBee(
     translate('special.5'),
     '#fafafa'
