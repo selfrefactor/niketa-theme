@@ -2,7 +2,7 @@ import { readJsonAnt, resolve } from '../readJson'
 import { namesHash } from '../../bees/saveTheme'
 import { resolve as resolveMethod } from 'path'
 import { existsSync, readFileSync } from 'fs'
-import {replace, remove } from 'rambdax'
+import { replace, remove } from 'rambdax'
 import { snakeCase, dotCase, pascalCase, titleCase } from 'string-fn'
 import {
   copySync,
@@ -17,7 +17,7 @@ import {
 function getBaboon(baboonInput){
   const themeIndex = Number(remove('baboon.', baboonInput))
 
-  return pascalCase(`baboon.${namesHash[themeIndex]}`)
+  return pascalCase(`baboon.${ namesHash[ themeIndex ] }`)
 }
 
 /*
@@ -50,28 +50,26 @@ const THEMES = [
 
 function editPackageJson(themeName, json){
   const themes = {
-    "label": titleCase(themeName),
-    "uiTheme": "vs",
-    "path":`./theme/${themeName}.json`
+    label   : titleCase(themeName),
+    uiTheme : 'vs',
+    path    : `./theme/${ themeName }.json`,
   }
-  const icon = `theme/${dotCase(themeName)}.png`
+  const icon = `theme/${ dotCase(themeName) }.png`
 
   return {
     ...json,
     icon,
-    version: "0.1.0",
-    name: themeName + 'Niketa',
-    displayName: themeName,
-    "contributes": {
-      "themes": [themes]
-    },
+    version     : '0.1.0',
+    name        : themeName + 'Niketa',
+    displayName : themeName,
+    contributes : { themes : [ themes ] },
   }
 }
 
 function editReadme(themeName, readme){
-  const first = replace(/Brave\sHomer/g, titleCase(themeName) , readme)
-  const second = replace(/BraveHomer/g, pascalCase(themeName) ,first)
-  const third = replace(/brave\.homer/g, dotCase(themeName) ,second)
+  const first = replace(/Brave\sHomer/g, titleCase(themeName), readme)
+  const second = replace(/BraveHomer/g, pascalCase(themeName), first)
+  const third = replace(/brave\.homer/g, dotCase(themeName), second)
 
   return third
 }
@@ -84,13 +82,13 @@ export function exportToMono(themeIndex, outputName){
 
   if (!existsSync(filePathBase)) return console.log(`${ filePathBase } is not a directory`)
 
-  if(typeof themeIndex === 'string' && !outputName) return console.log('need to pass name as well')
+  if (typeof themeIndex === 'string' && !outputName) return console.log('need to pass name as well')
 
   // When we publish from dev theme, we pass ('baboon.2', 'more.pumpkins')
   // ============================================
   const theme = outputName ?
-     getBaboon(themeIndex) :
-     THEMES[ themeIndex ] 
+    getBaboon(themeIndex) :
+    THEMES[ themeIndex ]
 
   const demoSource = `${ filePathBase }/brave_homer`
   const outputFolder = `${ filePathBase }/${ snakeCase(theme) }`
@@ -102,12 +100,11 @@ export function exportToMono(themeIndex, outputName){
     readJsonAnt(`themes/${ jsonName }`)
 
   const destination = `${ outputFolder }/theme/BraveHomer.json`
-  const packageJsonFile = `${outputFolder}/package.json`
-  const themeDestination = `${outputFolder}/theme/${jsonName}`
-  
-  const screenSource = resolve(`files/${theme}.png`) 
-  const screenDestination = resolve(`${outputFolder}/theme/${theme}.png`) 
+  const packageJsonFile = `${ outputFolder }/package.json`
+  const themeDestination = `${ outputFolder }/theme/${ jsonName }`
 
+  const screenSource = resolve(`files/${ theme }.png`)
+  const screenDestination = resolve(`${ outputFolder }/theme/${ theme }.png`)
 
   // handle dark
   /*
@@ -125,29 +122,27 @@ export function exportToMono(themeIndex, outputName){
   */
   moveSync(destination, themeDestination)
 
-  if(existsSync(screenSource)){
+  if (existsSync(screenSource)){
     copySync(screenSource, screenDestination)
     removeSync(`${ outputFolder }/theme/brave.homer.png`)
   }
 
   const packageJson = readJsonSync(packageJsonFile)
   const editedPackageJson = editPackageJson(pascalCase(theme), packageJson)
-  
+
   /*
     Save corrected package.json
   */
-  outputJsonSync(packageJsonFile, editedPackageJson, {spaces:2})
+  outputJsonSync(packageJsonFile, editedPackageJson, { spaces : 2 })
 
   /*
     Save corrected readme
   */
-  const readmeFile = resolve(`${outputFolder}/README.md`) 
-  const readme = readFileSync(readmeFile).toString() 
-  const editedReadme = editReadme(theme,readme)
-  
+  const readmeFile = resolve(`${ outputFolder }/README.md`)
+  const readme = readFileSync(readmeFile).toString()
+  const editedReadme = editReadme(theme, readme)
+
   outputFileSync(readmeFile, editedReadme)
 
-  console.log({
-    editedReadme  ,
-  })
+  console.log({ editedReadme })
 }
