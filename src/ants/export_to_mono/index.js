@@ -3,7 +3,7 @@ import { namesHash } from '../../bees/saveTheme'
 import { resolve as resolveMethod } from 'path'
 import { existsSync, readFileSync } from 'fs'
 import {replace, remove } from 'rambdax'
-import { snakeCase, pascalCase, titleCase } from 'string-fn'
+import { snakeCase, dotCase, pascalCase, titleCase } from 'string-fn'
 import {
   copySync,
   emptyDirSync,
@@ -54,8 +54,11 @@ function editPackageJson(themeName, json){
     "uiTheme": "vs",
     "path":`./theme/${themeName}.json`
   }
+  const icon = `theme/${dotCase(themeName)}.png`
+
   return {
     ...json,
+    icon,
     version: "0.1.0",
     name: themeName + 'Niketa',
     displayName: themeName,
@@ -66,7 +69,11 @@ function editPackageJson(themeName, json){
 }
 
 function editReadme(themeName, readme){
-  return replace(/Brave\sHomer/, titleCase(themeName) , readme)
+  const first = replace(/Brave\sHomer/g, titleCase(themeName) , readme)
+  const second = replace(/BraveHomer/g, pascalCase(themeName) ,first)
+  const third = replace(/brave\.homer/g, dotCase(themeName) ,second)
+
+  return third
 }
 
 export function exportToMono(themeIndex, outputName){
