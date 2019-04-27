@@ -1,7 +1,9 @@
 import { readJsonAnt, resolve } from '../readJson'
+import { namesHash } from '../../bees/saveTheme'
 import { resolve as resolveMethod } from 'path'
 import { existsSync } from 'fs'
-import { dropLast } from 'rambdax'
+import { remove } from 'rambdax'
+import { snakeCase, pascalCase, titleCase } from 'string-fn'
 import {
   copySync,
   emptyDirSync,
@@ -10,7 +12,12 @@ import {
   readJsonSync,
   removeSync,
 } from 'fs-extra'
-import { snakeCase, pascalCase, titleCase } from 'string-fn'
+
+function getBaboon(baboonInput){
+  const themeIndex = Number(remove('baboon.', baboonInput))
+
+  return pascalCase(`baboon.${namesHash[themeIndex]}`)
+}
 
 /*
   Index of all themes including dark one
@@ -56,7 +63,7 @@ function editPackageJson(themeName, json){
   }
 }
 
-export function exportToMono(themeIndex){
+export function exportToMono(themeIndex, outputName){
   const filePathBase = resolveMethod(
     __dirname,
     '../../../../niketa-themes/packages'
@@ -64,28 +71,44 @@ export function exportToMono(themeIndex){
 
   if (!existsSync(filePathBase)) return console.log(`${ filePathBase } is not a directory`)
 
-  const theme = THEMES[ themeIndex ]
+  if(typeof themeIndex === 'string' && !outputName) return console.log('need to pass name as well')
+
+  // When we publish from dev theme, we pass ('baboon.2', 'more.pumpkins')
+  // ============================================
+  const theme = outputName ?
+     getBaboon(themeIndex) :
+     THEMES[ themeIndex ] 
 
   const demoSource = `${ filePathBase }/brave_homer`
   const outputFolder = `${ filePathBase }/${ snakeCase(theme) }`
   emptyDirSync(outputFolder)
 
   const jsonName = `${ pascalCase(theme) }.json`
-  const actualData = readJsonAnt(`themes/${ jsonName }`)
+  const actualData = outputName ?
+    readJsonAnt(`baboon/${ jsonName }`) :
+    readJsonAnt(`themes/${ jsonName }`)
+
   const destination = `${ outputFolder }/theme/BraveHomer.json`
   const packageJsonFile = `${outputFolder}/package.json`
   const themeDestination = `${outputFolder}/theme/${jsonName}`
+  
   const screenSource = resolve(`files/${theme}.png`) 
   const screenDestination = resolve(`${outputFolder}/theme/${theme}.png`) 
 
-    // handle dark
-    // handle publish directly from baboon
-
-
+  // handle dark
+  /*
+    Copy from BraveHomer
+  */
   copySync(demoSource, outputFolder)
 
+  /*
+    Copy source
+  */
   outputJsonSync(destination, actualData, { spaces : 2 })
 
+  /*
+    Rename theme.json
+  */
   moveSync(destination, themeDestination)
 
   if(existsSync(screenSource)){
@@ -96,13 +119,12 @@ export function exportToMono(themeIndex){
   const packageJson = readJsonSync(packageJsonFile)
   const editedPackageJson = editPackageJson(pascalCase(theme), packageJson)
   
+  /*
+    Save corrected package.json
+  */
   outputJsonSync(packageJsonFile, editedPackageJson, {spaces:2})
 
   console.log({
-    editedPackageJson,
-    screenSource,
-    demoSource,
-    outputFolder,
+    jsonName,
   })
-  
 }
