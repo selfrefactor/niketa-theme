@@ -40,8 +40,6 @@ function whenOpacity(from, toRaw, levels){
     toReturnRaw :
     reverse(toReturnRaw)
 
-  // console.log({ toReturn, fromAsNumber, toAsNumber, a: fromAsNumber > toAsNumber })
-
   if (toReturn.length === levels) return toReturn
 
   const diff = Math.abs(levels - toReturn.length)

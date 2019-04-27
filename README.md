@@ -119,37 +119,29 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 ## Roadmap April 2019
 
-[] Dark themes are not uploaded here, but still published to mono repo
+[-] Dark themes are not uploaded here, but still published to mono repo
 
-[] Flag to allow [OPACITY, COLOR] to actually generate gradient
+[x] Allow [OPACITY, COLOR] to actually generate gradient
 
-[] script to copy theme to mono repo folder
+[x] script to copy theme to mono repo folder
 
-[] opacity colors can still be darken
-
-[] on hover of any niketa icon show jest out
+[x] opacity colors can still be darken
 
 [x] Once new generate pallete theme is done, move the test to deprecated as this will pin the palletes  
-
-[ ] Maybe few words before the screen
-
-[ ] Editor background and COLOR_0 should have the same direction
 
 [x] Generated palletes just change COLOR_1 to COLOR_5
 
 [x] Generate uniq set of COLOR_0 till COLOR_5 for pallete bases
 
-[ ] Each theme is also a separate published theme
+[-] Each theme is also a separate published theme
 
 [ ] Dark theme based on `90s` theme
 
-[ ] Use lerna for monorepo
+[x] Use lerna for monorepo
 
-[ ] get max levels ant(as instead of 22 we call this ant)
+[x] get max levels ant(as instead of 22 we call this ant)
 
-[ ] increase baboon levels
-
-[ ] Try to bind method comments with VSCode hint worker
+[x] increase dev theme levels from 22
 
 ## Trending log
 

@@ -1,5 +1,6 @@
 import { createPaletteTheme } from './createPaletteTheme'
 import { translate, translatex } from './ants/mini/translate'
+import { MAX_LEVELS } from './bees/saveTheme'
 import { FetchTargetColor } from './ants/mini/fetchTargetColor'
 
 const targetOptions = {
@@ -78,12 +79,12 @@ test('happy', () => {
       getFilePathRandom(PALLETE_INDEX) :
       filePath,
     rules,
-    levels : 22,
+    levels : MAX_LEVELS,
     rate   : RATE,
     // publishName  : 'brave.homer',
     // publishIndex : 2,
   })
-}) 
+})
 
 function getFilePathRandom(index){
   const found = `${ base }/generated/_${ index }.json`

@@ -12,6 +12,7 @@ export const namesHash = [
   'figure',
   'forreal',
   'glamour',
+  'greet',
   'hit',
   'jessy',
   'literal',
@@ -19,14 +20,20 @@ export const namesHash = [
   'misery',
   'obnoxious',
   'quote',
+  'refrain',
   'remains',
   'salome',
+  'samara',
   'same',
   'song',
+  'star',
   'trauma',
   'vesi',
   'workingman',
+  'ziggy',
 ]
+
+export const MAX_LEVELS = namesHash.length
 
 export function saveThemeBee(theme, i){
   const label = pascalCase(`${ BASE }.${ namesHash[ i ] }`)
