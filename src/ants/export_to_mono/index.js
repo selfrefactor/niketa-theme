@@ -1,14 +1,15 @@
 import { readJsonAnt, resolve } from '../readJson'
 import { namesHash } from '../../bees/saveTheme'
 import { resolve as resolveMethod } from 'path'
-import { existsSync } from 'fs'
-import { remove } from 'rambdax'
+import { existsSync, readFileSync } from 'fs'
+import {replace, remove } from 'rambdax'
 import { snakeCase, pascalCase, titleCase } from 'string-fn'
 import {
   copySync,
   emptyDirSync,
   moveSync,
   outputJsonSync,
+  outputFileSync,
   readJsonSync,
   removeSync,
 } from 'fs-extra'
@@ -55,12 +56,17 @@ function editPackageJson(themeName, json){
   }
   return {
     ...json,
+    version: "0.1.0",
     name: themeName + 'Niketa',
     displayName: themeName,
     "contributes": {
       "themes": [themes]
     },
   }
+}
+
+function editReadme(themeName, readme){
+  return replace(/Brave\sHomer/, titleCase(themeName) , readme)
 }
 
 export function exportToMono(themeIndex, outputName){
@@ -95,6 +101,7 @@ export function exportToMono(themeIndex, outputName){
   const screenSource = resolve(`files/${theme}.png`) 
   const screenDestination = resolve(`${outputFolder}/theme/${theme}.png`) 
 
+
   // handle dark
   /*
     Copy from BraveHomer
@@ -124,7 +131,16 @@ export function exportToMono(themeIndex, outputName){
   */
   outputJsonSync(packageJsonFile, editedPackageJson, {spaces:2})
 
+  /*
+    Save corrected readme
+  */
+  const readmeFile = resolve(`${outputFolder}/README.md`) 
+  const readme = readFileSync(readmeFile).toString() 
+  const editedReadme = editReadme(theme,readme)
+  
+  outputFileSync(readmeFile, editedReadme)
+
   console.log({
-    jsonName,
+    editedReadme  ,
   })
 }
