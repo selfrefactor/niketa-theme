@@ -41,7 +41,7 @@ const rules = {
   COLOR_BACK      : [ translate('back_opacity.14'), '#9eb4ad' ],
   COLOR_SECONDARY : [ translate('back.opacity.7'), '#9eb4ad' ],
   COLOR_SELECTION : [ translate('back.opacity.10'), '#eae3cd' ],
-  COLOR_0 : [ translate('special.7'), '#eae3cd' ],
+  COLOR_0         : [ translate('special.7'), '#eae3cd' ],
   // COLOR_0         : [ translate('dark.opacity.4'), fetchOne ],
   COLOR_1         : [ translate('red.opacity.9'), fetchZero ],
   COLOR_2         : [ translate('green.opacity.4'), fetchZero ],

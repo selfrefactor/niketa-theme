@@ -13,6 +13,7 @@ function getOpacities(){
     'f1',
     'e9',
     'd6',
+    '80',
   ]
 }
 

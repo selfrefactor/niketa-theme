@@ -47,7 +47,7 @@ test('x', () => {
   expect(() => generateRandomPair()).not.toThrow()
 })
 
-test.skip('happy', () => {
+test('happy', () => {
   const input = [
     // translate('light.green.1'),
     // translate('dark.blue.3'),
@@ -56,12 +56,13 @@ test.skip('happy', () => {
     // translate('light.blue.9'),
     // translate('teal.0'),
     // translate('teal.7'),
-    // translate('navy.6'),
+    translate('dark.blue.6'),
     // translate('dark.green.8'),
     // translate('brown.8'),
     // translate('back.5'),
-    '#fafafa',
-    translate('dark.purple.0'),
+    // '#fafafa',
+    translate('yellow.0'),
+
   ]
 
   expect(
