@@ -115,6 +115,8 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 ## Roadmap April 2019
 
+[] Flag to allow [OPACITY, COLOR] to actually generate gradient
+
 [] script to copy theme to mono repo folder
 
 [] opacity colors can still be darken

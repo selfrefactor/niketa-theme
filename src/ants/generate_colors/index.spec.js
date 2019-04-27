@@ -43,14 +43,25 @@ function generateRandomPair(){
   return toReturn
 }
 
-test.skip('x', () => {
+test('x', () => {
   expect(() => generateRandomPair()).not.toThrow()
 })
 
-test('happy', () => {
+test.skip('happy', () => {
   const input = [
-    translate('back.3'),
-    translate('secondary.4'),
+    // translate('light.green.1'),
+    // translate('dark.blue.3'),
+    // translate('dark.blue.0'),
+    // translate('light.blue.0'),
+    // translate('light.blue.9'),
+    // translate('teal.0'),
+    // translate('teal.7'),
+    // translate('navy.6'),
+    // translate('dark.green.8'),
+    // translate('brown.8'),
+    // translate('back.5'),
+    '#fafafa',
+    translate('dark.purple.0'),
   ]
 
   expect(
@@ -78,8 +89,10 @@ test.skip('random persisted', () => {
 test.skip('with static base', () => {
   const [ _, target ] = generateRandomPair()
   const input = [
-    translate('back.0'),
+    translate('purple.2'),
     target,
+    '#8994bd',
+    // target,
   ]
 
   expect(

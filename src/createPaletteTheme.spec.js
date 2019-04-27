@@ -43,10 +43,10 @@ const rules = {
   COLOR_SELECTION : [ translate('red.opacity.3'), '#eae3cd' ],
   COLOR_0         : [ translate('dark.opacity.4'), fetchOne ],
   COLOR_1         : [ translate('blue.opacity.2'), fetchZero ],
-  COLOR_2         : [ '#5a8851e9', fetchOne ],
-  COLOR_3         : [ '#b45948f1', fetchZero ],
-  COLOR_4         : [ '#0068a8', fetchOne ],
-  COLOR_5         : [ translate('yellow.opacity.5'), fetchZero ],
+  COLOR_2         : [ translate('green.opacity.2'), fetchZero ],
+  COLOR_3         : [ translate('red.opacity.1'), fetchOne ],
+  COLOR_4         : [ translate('dark.opacity.9'), fetchZero ],
+  COLOR_5         : [ translate('yellow.opacity.4'), fetchZero ],
 }
 
 const base = '/home/s/repos/niketa-theme/palettes'
