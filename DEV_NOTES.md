@@ -4,6 +4,12 @@
 
 > Set (opacity)color pair as [FOO, FOO] in order to persist it.
 
+## Gradient
+
+If the first color is opacity the target is other other opacity color or opacity target.
+
+If the first color has no opacity, then the second color cannot have opacity.
+
 ## Dark themes
 
 They are always deployed from `baboon` folder

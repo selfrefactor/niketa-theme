@@ -66,13 +66,13 @@ export function changeColorAnt(color, modeInput, base = BASE){
     })
     .is('LIGHTEST', {
       mode             : 'lighten',
-      change           : base * 2.7,
+      change           : base * 2.9,
       opacityChange    : 70,
       opacityDirection : 'minus',
     })
     .is('LIGHTER', {
       mode             : 'lighten',
-      change           : base * 2,
+      change           : base * 2.6,
       opacityChange    : 50,
       opacityDirection : 'minus',
     })

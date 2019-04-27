@@ -52,20 +52,20 @@ function TARGETS(){
 
 function TARGET_OPACITY(){ return true }
 function TARGET_ONLY_FIRST_FLAG(){ return true }
-function TARGET_INDEX(){ return 0 }
-const PALLETE_INDEX = 8
-const PALLETE_RANDOM_FLAG = false
+function TARGET_INDEX(){ return 1 }
+const PALLETE_INDEX = 29 // 29 is max
+const PALLETE_RANDOM_FLAG = true
 
 const rules = {
-  COLOR_BACK      : [ translate('back_opacity.14'), fetchZero ],
-  COLOR_SECONDARY : [ translate('back.opacity.7'), fetchOne ],
+  COLOR_BACK      : [ '#25467A', translate('dark.1') ],
+  COLOR_SECONDARY : [ translate('special.4'), translate('special.0') ],
   COLOR_SELECTION : [ translate('back.opacity.10'), fetchZero ],
-  COLOR_0         : [ translate('special.7'), fetchOne ],
-  COLOR_1         : [ translate('red.opacity.9'), fetchZero ],
-  COLOR_2         : [ translate('green.opacity.4'), fetchOne ],
-  COLOR_3         : [ translate('red.opacity.1'), fetchZero ],
-  COLOR_4         : [ translate('dark.opacity.9'), fetchOne ],
-  COLOR_5         : [ translate('yellow.opacity.1'), fetchZero ],
+  COLOR_0         : [ translate('light.pink.1'), translate('back.13') ],
+  COLOR_1         : [ translate('light.yellow.1'), translate('light.yellow.0') ],
+  COLOR_2         : [ translate('yellow.6'), translate('red.1') ],
+  COLOR_3         : [ translate('special.9'), fetchZero ],
+  COLOR_4         : [ translate('back.opacity.9'), fetchOne ],
+  COLOR_5         : [ translate('special.7'), fetchZero ],
 }
 const base = '/home/s/repos/niketa-theme/palettes'
 const filePath = `${ base }/generated/boring.json`

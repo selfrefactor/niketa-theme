@@ -135,13 +135,17 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 [-] Each theme is also a separate published theme
 
-[ ] Dark theme based on `90s` theme
+[x] Dark theme based on `90s` theme
 
 [x] Use lerna for monorepo
 
 [x] get max levels ant(as instead of 22 we call this ant)
 
 [x] increase dev theme levels from 22
+
+[] LIGHTEST test
+
+[] Set React, Jest, JSON, JS folder in data to test out themes
 
 ## Trending log
 
