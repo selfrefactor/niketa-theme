@@ -8,6 +8,8 @@
 
 ### Advanced Bat
 
+> updated screen coming
+
 ![advanced.bat](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.bat.png?raw=true)
 
 ### Advanced Cat
@@ -37,6 +39,8 @@
 ### Brave Homer
 
 > updated screen coming
+
+Distributed as a separate theme at [https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveHomerNiketa](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveHomerNiketa)
 
 ![Brave Homer](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.homer.png?raw=true)
 
