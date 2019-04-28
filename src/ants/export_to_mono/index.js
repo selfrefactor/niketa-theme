@@ -173,11 +173,15 @@ export function exportToMono(themeIndex, outputName){
   /*
     Save corrected readme
   */
-  const readmeFile = resolve(`${ outputFolder }/README.md`)
+  const readmeFile = isDark ? 
+    resolve(`${ outputFolder }/README_DARK.md`):
+    resolve(`${ outputFolder }/README.md`)
+
   const readme = readFileSync(readmeFile).toString()
   const editedReadme = editReadme(themeName, readme)
 
   outputFileSync(readmeFile, editedReadme)
+  removeSync(`${ outputFolder }/README_DARK.md`)
 
   /*
     Handle standalone themes
