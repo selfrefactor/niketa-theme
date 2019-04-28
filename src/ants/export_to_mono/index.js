@@ -131,9 +131,10 @@ export function exportToMono(themeIndex, outputName){
   } else {
     console.log('You need to save a screen before that')
     moveSync(
-      `${ outputFolder }/theme/fallback.png`,
+      `${ outputFolder }/theme/niketa.fallback.png`,
       `${ outputFolder }/theme/${ dotCase(themeName) }.png`,
-    )
+      )
+    removeSync(`${ outputFolder }/theme/brave.homer.png`)
   }
 
   const packageJson = readJsonSync(packageJsonFile)
