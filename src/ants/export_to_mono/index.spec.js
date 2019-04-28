@@ -1,5 +1,5 @@
 import { exportToMono } from './'
 
 test('happy', () => {
-  expect(() => exportToMono('baboon.11', 'because.always')).not.toThrow()
+  expect(() => exportToMono('baboon.literal', 'because.ask')).not.toThrow()
 })

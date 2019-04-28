@@ -15,8 +15,13 @@ import {
 } from 'fs-extra'
 
 function getBaboon(baboonInput, themeNameInput){
-  const themeIndex = Number(remove('baboon.', baboonInput))
-  const theme = pascalCase(`baboon.${ namesHash[ themeIndex ] }`)
+  const themeIndexBase = remove('baboon.', baboonInput)
+  const themeIndex = Number(themeIndexBase)
+  const themeBase = Number.isNaN(themeIndex) ?
+    `baboon.${themeIndexBase}`:
+    `baboon.${namesHash[themeIndex]}`
+
+  const theme = pascalCase(themeBase)
   const themeName = pascalCase(themeNameInput)
 
   const toReturn = {
@@ -95,7 +100,6 @@ function editReadme(themeName, readme){
 
 export function exportToMono(themeIndex, outputName){
   const isDark = outputName && outputName.startsWith('because')
-  console.log({ isDark })
   const filePathBase = resolveMethod(
     __dirname,
     '../../../../niketa-themes/packages'
@@ -105,7 +109,7 @@ export function exportToMono(themeIndex, outputName){
 
   if (typeof themeIndex === 'string' && !outputName) return console.log('need to pass name as well')
 
-  // When we publish from dev theme, we pass ('baboon.2', 'more.pumpkins')
+  // When we publish from dev theme, we pass ('baboon.2'/'baboon.literal', 'more.pumpkins')
   // ============================================
   const { theme, themeName } = outputName ?
     getBaboon(themeIndex, outputName) :
