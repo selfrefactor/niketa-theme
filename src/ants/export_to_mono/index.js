@@ -46,26 +46,36 @@ const THEMES = [
   'niketa.moon',
   'niketa.owl',
   // 'because.forever',
-  // 'because.always',
   // 'because.never',
   // 'because.together',
 ]
 
-function editPackageJson(themeName, json){
+function updateJson(filePath, change){
+  const obj = readJsonSync(filePath)
+  const updated = {...obj, ...change}
+
+  outputJsonSync(filePath, updated, {spaces: 2})
+}
+
+function editPackageJson(themeName, json, isDark){
   const themes = {
     label   : titleCase(themeName),
-    uiTheme : 'vs',
+    uiTheme: isDark ?"vs-dark": "vs",
     path    : `./theme/${ themeName }.json`,
   }
   const icon = `theme/${ dotCase(themeName) }.png`
 
-  return {
-    ...json,
+  const partial = {
     icon,
     version     : '0.1.0',
     name        : themeName + 'Niketa',
     displayName : themeName,
-    contributes : { themes : [ themes ] },
+    contributes : { themes : [ themes ] }
+  }
+
+  return {
+    ...json,
+    ...partial,
   }
 }
 
@@ -78,6 +88,8 @@ function editReadme(themeName, readme){
 }
 
 export function exportToMono(themeIndex, outputName){
+  const isDark = outputName && outputName.startsWith('because')
+  console.log({isDark})
   const filePathBase = resolveMethod(
     __dirname,
     '../../../../niketa-themes/packages'
@@ -93,6 +105,7 @@ export function exportToMono(themeIndex, outputName){
     getBaboon(themeIndex, outputName) :
     {theme: THEMES[ themeIndex ], themeName: THEMES[ themeIndex ]}
 
+    
   const demoSource = `${ filePathBase }/brave_homer`
   const outputFolder = `${ filePathBase }/${ snakeCase(themeName) }`
   emptyDirSync(outputFolder)
@@ -138,7 +151,7 @@ export function exportToMono(themeIndex, outputName){
   }
 
   const packageJson = readJsonSync(packageJsonFile)
-  const editedPackageJson = editPackageJson(pascalCase(themeName), packageJson)
+  const editedPackageJson = editPackageJson(pascalCase(themeName), packageJson, isDark)
 
   /*
     Save corrected package.json
@@ -154,5 +167,10 @@ export function exportToMono(themeIndex, outputName){
 
   outputFileSync(readmeFile, editedReadme)
 
+  /*
+    Handle standalone themes
+  */
+
+  updateJson(themeDestination, {name: themeName, type: isDark? 'dark' :'light'})
   console.log({ themeName })
 }
