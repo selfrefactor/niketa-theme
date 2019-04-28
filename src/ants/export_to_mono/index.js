@@ -131,7 +131,7 @@ export function exportToMono(themeIndex, outputName){
   } else {
     console.log('You need to save a screen before that')
     moveSync(
-      `${ outputFolder }/theme/brave.homer.png`,
+      `${ outputFolder }/theme/fallback.png`,
       `${ outputFolder }/theme/${ dotCase(themeName) }.png`,
     )
   }
