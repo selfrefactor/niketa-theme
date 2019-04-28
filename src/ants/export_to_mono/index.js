@@ -19,7 +19,10 @@ function getBaboon(baboonInput, themeNameInput){
   const theme = pascalCase(`baboon.${ namesHash[ themeIndex ] }`)
   const themeName = pascalCase(themeNameInput)
 
-  const toReturn = {theme, themeName}
+  const toReturn = {
+    theme,
+    themeName,
+  }
 
   return toReturn
 }
@@ -52,15 +55,18 @@ const THEMES = [
 
 function updateJson(filePath, change){
   const obj = readJsonSync(filePath)
-  const updated = {...obj, ...change}
+  const updated = {
+    ...obj,
+    ...change,
+  }
 
-  outputJsonSync(filePath, updated, {spaces: 2})
+  outputJsonSync(filePath, updated, { spaces : 2 })
 }
 
 function editPackageJson(themeName, json, isDark){
   const themes = {
     label   : titleCase(themeName),
-    uiTheme: isDark ?"vs-dark": "vs",
+    uiTheme : isDark ? 'vs-dark' : 'vs',
     path    : `./theme/${ themeName }.json`,
   }
   const icon = `theme/${ dotCase(themeName) }.png`
@@ -70,7 +76,7 @@ function editPackageJson(themeName, json, isDark){
     version     : '0.1.0',
     name        : themeName + 'Niketa',
     displayName : themeName,
-    contributes : { themes : [ themes ] }
+    contributes : { themes : [ themes ] },
   }
 
   return {
@@ -89,7 +95,7 @@ function editReadme(themeName, readme){
 
 export function exportToMono(themeIndex, outputName){
   const isDark = outputName && outputName.startsWith('because')
-  console.log({isDark})
+  console.log({ isDark })
   const filePathBase = resolveMethod(
     __dirname,
     '../../../../niketa-themes/packages'
@@ -103,9 +109,11 @@ export function exportToMono(themeIndex, outputName){
   // ============================================
   const { theme, themeName } = outputName ?
     getBaboon(themeIndex, outputName) :
-    {theme: THEMES[ themeIndex ], themeName: THEMES[ themeIndex ]}
+    {
+      theme     : THEMES[ themeIndex ],
+      themeName : THEMES[ themeIndex ],
+    }
 
-    
   const demoSource = `${ filePathBase }/brave_homer`
   const outputFolder = `${ filePathBase }/${ snakeCase(themeName) }`
   emptyDirSync(outputFolder)
@@ -146,7 +154,7 @@ export function exportToMono(themeIndex, outputName){
     moveSync(
       `${ outputFolder }/theme/niketa.fallback.png`,
       `${ outputFolder }/theme/${ dotCase(themeName) }.png`,
-      )
+    )
     removeSync(`${ outputFolder }/theme/brave.homer.png`)
   }
 
@@ -171,6 +179,9 @@ export function exportToMono(themeIndex, outputName){
     Handle standalone themes
   */
 
-  updateJson(themeDestination, {name: themeName, type: isDark? 'dark' :'light'})
+  updateJson(themeDestination, {
+    name : themeName,
+    type : isDark ? 'dark' : 'light',
+  })
   console.log({ themeName })
 }

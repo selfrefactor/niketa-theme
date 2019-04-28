@@ -13,7 +13,7 @@ const FetchTargetColorI = new FetchTargetColor(targetOptions)
 
 const fetchZero = FetchTargetColorI.is(0)
 const fetchOne = FetchTargetColorI.is(TARGET_ONLY_FIRST_FLAG() ? 0 : 1)
-const RATE = 0.055 // applied to no opacity colors
+const RATE = 0.065 // applied to no opacity colors
 
 function OPACITY_TARGETS(){
   return [
@@ -67,17 +67,16 @@ const rules = {
   COLOR_4         : [ translate('back.opacity.9'), fetchOne ],
   COLOR_5         : [ translate('special.7'), fetchZero ],
 }
-const base = '/home/s/repos/niketa-theme/palettes'
-const filePath = `${ base }/generated/boring.json`
 
 test('happy', () => {
+  const base = '/home/s/repos/niketa-theme/palettes'
 
   createPaletteTheme({
     showList : false,
     complex  : true,
     filePath : PALLETE_RANDOM_FLAG ?
       getFilePathRandom(PALLETE_INDEX) :
-      filePath,
+      `${ base }/generated/boring.json`,
     rules,
     levels : MAX_LEVELS,
     rate   : RATE,

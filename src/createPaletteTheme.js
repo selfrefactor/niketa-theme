@@ -14,6 +14,7 @@ function createPaletteRule(prop, colorBase, rate){
     'DARKEST',
     'DARKER',
     'LIGHTER',
+    'LIGHTEST',
     'DARK',
     'LIGHT',
   ]

@@ -119,7 +119,7 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 ## Roadmap April 2019
 
-[-] Dark themes are not uploaded here, but still published to mono repo
+[x] Dark themes are not uploaded here, but still published to mono repo
 
 [x] Allow [OPACITY, COLOR] to actually generate gradient
 
@@ -133,7 +133,7 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 [x] Generate uniq set of COLOR_0 till COLOR_5 for pallete bases
 
-[-] Each theme is also a separate published theme
+[x] Each theme is also a separate published theme
 
 [x] Dark theme based on `90s` theme
 
@@ -145,7 +145,7 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 [] LIGHTEST test
 
-[] Set React, Jest, JSON, JS folder in data to test out themes
+[x] Set React, Jest, JSON, JS folder in data to test out themes
 
 ## Trending log
 

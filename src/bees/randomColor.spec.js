@@ -1,5 +1,6 @@
 import { randomColorBee } from './randomColor'
 
+// todo move out
 test('random color', () => {
   const result = randomColorBee({
     color         : '#cfd5dd',
