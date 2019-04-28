@@ -79,8 +79,8 @@ test('happy', () => {
       getFilePathRandom(PALLETE_INDEX) :
       `${ base }/generated/boring.json`,
     rules,
-    levels : MAX_LEVELS,
-    rate   : RATE,
+    levels       : MAX_LEVELS,
+    rate         : RATE,
     publishName  : 'advanced.cat',
     publishIndex : 14,
   })
