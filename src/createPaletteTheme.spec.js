@@ -23,7 +23,7 @@ function OPACITY_TARGETS(){
     [ 'ba', 'ed' ],
   ]
 }
-
+const MARK = [ '#aa00ff', '#aa00ff' ]
 function TARGETS(){
   return [
     [ 'dark.brown.3', 'random.2' ],
@@ -53,7 +53,7 @@ function TARGETS(){
 function TARGET_OPACITY(){ return true }
 function TARGET_ONLY_FIRST_FLAG(){ return true }
 function TARGET_INDEX(){ return 2 }
-const PALLETE_INDEX = 11 // 29 is max
+const PALLETE_INDEX = 17 // 29 is max
 const PALLETE_RANDOM_FLAG = true
 
 const rules = {
@@ -61,11 +61,11 @@ const rules = {
   COLOR_SECONDARY : [ translate('special.10'), translate('special.10') ],
   COLOR_SELECTION : [ translate('back.opacity.10'), fetchZero ],
   // COLOR_0         : [ translate('special.7'), '53' ],
-  COLOR_0         : [ translate('purple.1'), translate('purple.1') ],
+  COLOR_0         : [ translate('dark.red.5'), translate('teal.1') ],
   COLOR_1         : [ translate('yellow.opacity.5'), translate('yellow.opacity.5') ],
-  COLOR_2         : [ translate('dark.opacity.2'), translate('dark.opacity.2') ],
-  COLOR_3         : [ '#21A68D', translate('light.blue.1') ],
-  COLOR_4         : [ translate('red.opacity.2'), '55' ],
+  COLOR_2         : [ translate('dark.opacity.9'), translate('dark.opacity.2') ],
+  COLOR_3         : [ '#21A68D', '#aaA68D' ],
+  COLOR_4         : [ translate('red.opacity.2'), '66' ],
   COLOR_5         : [ translate('blue.opacity.6'), translate('blue.opacity.6') ],
 }
 
