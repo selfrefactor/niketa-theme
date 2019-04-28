@@ -143,7 +143,7 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 [x] increase dev theme levels from 22
 
-[] LIGHTEST test
+[X] LIGHTEST fix
 
 [x] Set React, Jest, JSON, JS folder in data to test out themes
 

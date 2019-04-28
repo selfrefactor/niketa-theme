@@ -18,8 +18,8 @@ function getBaboon(baboonInput, themeNameInput){
   const themeIndexBase = remove('baboon.', baboonInput)
   const themeIndex = Number(themeIndexBase)
   const themeBase = Number.isNaN(themeIndex) ?
-    `baboon.${themeIndexBase}`:
-    `baboon.${namesHash[themeIndex]}`
+    `baboon.${ themeIndexBase }` :
+    `baboon.${ namesHash[ themeIndex ] }`
 
   const theme = pascalCase(themeBase)
   const themeName = pascalCase(themeNameInput)
@@ -173,8 +173,8 @@ export function exportToMono(themeIndex, outputName){
   /*
     Save corrected readme
   */
-  const readmeFile = isDark ? 
-    resolve(`${ outputFolder }/README_DARK.md`):
+  const readmeFile = isDark ?
+    resolve(`${ outputFolder }/README_DARK.md`) :
     resolve(`${ outputFolder }/README.md`)
 
   const readme = readFileSync(readmeFile).toString()
