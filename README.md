@@ -117,6 +117,14 @@ I build the themes by running `createPalleteTheme.spec.js` with `publish` flag s
 
 Debug mode will open 22 themes, so the developer can choose which variation looks the best.
 
+## Dark themes
+
+I work around people which prefer dark themes. This set of themes is focused on light themes, but the themes factory is used to generate a few dark themes under `Because` namespace. All of them are published as standalone themes and are not part of the packaged `Niketa` theme.
+
+- BecauseAsk
+
+- BesauseAlways
+
 ## Roadmap April 2019
 
 [x] Dark themes are not uploaded here, but still published to mono repo
@@ -146,6 +154,8 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 [X] LIGHTEST fix
 
 [x] Set React, Jest, JSON, JS folder in data to test out themes
+
+[] Fix readme dark as it is not deleted on publish and has wrong image path
 
 ## Trending log
 
