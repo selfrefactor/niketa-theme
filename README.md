@@ -157,6 +157,8 @@ I work around people which prefer dark themes. This set of themes is focused on 
 
 [] Fix readme dark as it is not deleted on publish and has wrong image path
 
+[] Change dark theme from mono repo
+
 ## Trending log
 
 Time - 18.04.2019
