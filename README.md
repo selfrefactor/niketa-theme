@@ -10,19 +10,19 @@
 
 ![advanced.bat](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.bat.png?raw=true)
 
-[As a single theme(marketplace link)](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveBatNiketa)
+[As a single theme(marketplace link)](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedBatNiketa)
 
 ### Advanced Cat
 
 ![advanced.cat](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.cat.png?raw=true)
 
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveCatNiketa)
+[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedCatNiketa)
 
 ### Advanced Dog
 
 ![advanced.dog](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.dog.png?raw=true)
 
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveDogNiketa)
+[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedDogNiketa)
 
 ### Advanced Engine
 

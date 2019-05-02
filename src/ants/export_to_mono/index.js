@@ -109,7 +109,8 @@ export function exportToMono(themeIndex, outputName){
 
   if (typeof themeIndex === 'string' && !outputName) return console.log('need to pass name as well')
 
-  // When we publish from dev theme, we pass ('baboon.2'/'baboon.literal', 'more.pumpkins')
+  // When we publish from dev theme, we pass fn('baboon.2'/'baboon.literal', 'more.pump')
+  // When we publish Niketa theme, we pass only index fn(10)
   // ============================================
   const { theme, themeName } = outputName ?
     getBaboon(themeIndex, outputName) :
