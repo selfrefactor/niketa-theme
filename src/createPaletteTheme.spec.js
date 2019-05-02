@@ -23,7 +23,7 @@ function OPACITY_TARGETS(){
     [ 'ba', 'ed' ],
   ]
 }
-const MARK = [ '#aa00ff', '#aa00ff' ]
+const MARK = [ '#aa00ff', '#aa00aa' ]
 function TARGETS(){
   return [
     [ 'dark.brown.3', 'random.2' ],
@@ -53,22 +53,24 @@ function TARGETS(){
 function TARGET_OPACITY(){ return true }
 function TARGET_ONLY_FIRST_FLAG(){ return true }
 function TARGET_INDEX(){ return 2 }
-const PALLETE_INDEX = 29 // 29 is max
+const PALLETE_INDEX = 17 // 29 is max
 const PALLETE_RANDOM_FLAG = true
 
 const rules = {
   COLOR_BACK      : [ translate('special.6'), 'ff' ],
   // COLOR_BACK      : [ '#30322ef1', '5a' ],
-  COLOR_SECONDARY : [ translate('special.4'), translate('special.0') ],
+  COLOR_SECONDARY : [ translate('random.3'), translate('back.8') ],
+  // COLOR_SECONDARY : [ translate('special.4'), translate('special.0') ],
   COLOR_SELECTION : [ translate('back.opacity.10'), fetchZero ],
-  COLOR_0         : [ '#fafafa', '#fafa33' ],
-  // COLOR_0: [ '#fafafa56', 'aa' ],
-  // COLOR_0         : [ translate('red.3'), translate('red.3') ],
-  COLOR_1         : [ translate('light.yellow.1'), translate('red.0') ],
-  COLOR_2         : [ translate('yellow.6'), translate('red.1') ],
+  COLOR_0         : [ '#aa769b', '#fafafa' ],
+  // COLOR_4:MARK,
+  // COLOR_5:MARK,
+  COLOR_1         : [ translate('back.opacity.10'), translate('back.opacity.10') ],
+  // COLOR_1         : [ translate('light.yellow.1'), translate('red.0') ],
+  COLOR_2         : [ translate('yellow.6'), translate('back.8') ],
   COLOR_3         : [ translate('light.blue.1'), translate('light.blue.1') ],
-  COLOR_4         : [ translate('light.blue.0'), translate('back.14') ],
-  COLOR_5         : [ translate('back.opacity.7'), fetchZero ],
+  COLOR_4         : [ '#f2b999', '#c0c5c9' ],
+  COLOR_5         : [ '#6cabdd', translate('back.13') ],
 }
 
 const base = '/home/s/repos/niketa-theme/palettes'
