@@ -35,6 +35,7 @@ function getBaboon(baboonInput, themeNameInput){
 /*
   Index of all themes including dark one
 */
+
 const THEMES = [
   'advanced.bat',
   'advanced.cat',
@@ -43,7 +44,6 @@ const THEMES = [
   'advanced.hook',
   'advanced.mystery',
   'brave.habits',
-  'brave.homer',
   'brave.love',
   'brave.neighbour',
   'circus.ajax',
@@ -94,8 +94,9 @@ function editReadme(themeName, readme){
   const first = replace(/Brave\sHomer/g, titleCase(themeName), readme)
   const second = replace(/BraveHomer/g, pascalCase(themeName), first)
   const third = replace(/brave\.homer/g, dotCase(themeName), second)
+  const fourth = replace(/brave_homer/g, snakeCase(themeName), third)
 
-  return third
+  return fourth
 }
 
 export function exportToMono(themeIndex, outputName){
