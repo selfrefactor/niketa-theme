@@ -108,11 +108,9 @@
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
 
-### Led Immigrant Song
+### Zeppelin Immigrant Song
 
 ![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/immigrang.song.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.LedImmigrantSongNiketa)
 
 ## Naming conventions
 
@@ -130,7 +128,7 @@ group themes by background:
 
 `Niketa` for after sunset themes
 
-`Led` themes without particular theme besides using Led Zeppelin's songs as names
+`Zeppelin` themes without particular topic besides using Led Zeppelin's songs as names
 ```
 
 ## Name
@@ -152,6 +150,8 @@ I work around people which prefer dark themes. This set of themes is focused on 
 - [BecauseAsk](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAskNiketa)
 
 - [BesauseAlways](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAlwaysNiketa)
+
+- [BesauseTogether](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseTogetherNiketa)
 
 ## Trending log
 
