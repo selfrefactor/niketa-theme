@@ -108,6 +108,12 @@
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
 
+### Led Immigrant Song
+
+![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/immigrang.song.png?raw=true)
+
+[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.LedImmigrantSongNiketa)
+
 ## Naming conventions
 
 Replace `foo, bar, baz` with their equally irrelevant substitutes.
@@ -123,6 +129,8 @@ group themes by background:
 `Circus`  for darker mild themes
 
 `Niketa` for after sunset themes
+
+`Led` themes without particular theme besides using Led Zeppelin's songs as names
 ```
 
 ## Name

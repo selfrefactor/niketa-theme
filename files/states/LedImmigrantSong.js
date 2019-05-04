@@ -65,12 +65,12 @@ const rules = {
   COLOR_2         : [ '#7E3231', translate('red.1') ],
   COLOR_3         : [ translate('red.1'), translate('back.8') ],
   COLOR_4         : [ '#20366b', '#c0c5c9' ],
-  COLOR_5         : [ '#00afd6ff', 'aa' ],
+  COLOR_5         : ['#00afd6ff','aa'],
   // COLOR_5         : ['#00BCD4D0','88'],
 }
 
 const base = '/home/s/repos/niketa-theme/palettes'
-test.skip('happy', () => {
+test('happy', () => {
 
   createPaletteTheme({
     showList : false,
@@ -79,8 +79,8 @@ test.skip('happy', () => {
       getFilePathRandom(PALLETE_INDEX) :
       `${ base }/generated/boring.json`,
     rules,
-    levels       : MAX_LEVELS,
-    rate         : RATE,
+    levels : MAX_LEVELS,
+    rate   : RATE,
     publishName  : 'led.immigrant.song',
     publishIndex : 4,
   })

@@ -1,11 +1,12 @@
 {
   "name": "_Palette",
+  "meta": "for dark themes",
   "type": "light",
   "colors": {
     "editor.background": "COLOR_BACK",
     "activityBar.background": "COLOR_SECONDARY",
     "editor.selectionBackground": "COLOR_SELECTION",
-    "editor.lineHighlightBackground": "COLOR_SECONDARY_LIGHTEST",
+    "editor.lineHighlightBackground": "COLOR_BACK_DARKER",
     "editorBracketMatch.background": "COLOR_5_DARKER",
     "editorBracketMatch.border": "COLOR_4_DARKER",
     "editorGroupHeader.tabsBackground": "COLOR_BACK_DARK",

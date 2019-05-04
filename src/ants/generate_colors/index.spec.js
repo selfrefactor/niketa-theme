@@ -56,13 +56,11 @@ test('happy', () => {
     // translate('light.blue.9'),
     // translate('teal.0'),
     // translate('teal.7'),
-    translate('dark.blue.6'),
     // translate('dark.green.8'),
     // translate('brown.8'),
-    // translate('back.5'),
+    translate('back.8'),
     // '#fafafa',
-    translate('yellow.0'),
-
+    translate('dark.red.1'),
   ]
 
   expect(

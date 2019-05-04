@@ -53,6 +53,27 @@ const rules = {
 ```
 
 
+## Because always
+
+```
+function TARGET_OPACITY(){ return true }
+function TARGET_INDEX(){ return 0 }
+const PALLETE_INDEX = 11 // 29 is max
+const PALLETE_RANDOM_FLAG = true
+
+const rules = {
+  COLOR_BACK      : [ '#2a3343e9', '66' ],
+  COLOR_SECONDARY : [ '#859da9e9', fetchZero ],
+  COLOR_SELECTION : [ '#282c34', '#fafafa' ],
+  COLOR_0         : [ '#f7ddb2f1', '#f7ddb2f1' ],
+  COLOR_1         : [ '#7bb3bd', '#1111aa' ],
+  COLOR_2         : [ '#e47e7d', translate('pink.3') ],
+  COLOR_3         : [ '#f1aa22', '#c2be6c' ],
+  COLOR_4         : [ '#DB618F', '#fafafa' ],
+  COLOR_5         : [ '#66cc99', '#b5a2d0' ],
+}
+```
+
 
 ## Roadmap April 2019
 
