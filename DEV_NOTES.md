@@ -26,6 +26,10 @@ They are always deployed from `baboon` folder
 
 [] Dev themes are in `dev` folder
 
+## TODO
+
+publish theme has wrong theme name - foo.bar instead of FooBar
+
 ## Because ask
 
 ```javascript
