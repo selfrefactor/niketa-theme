@@ -3,7 +3,7 @@ import { createRules } from '../mini/createRules'
 import { translate } from '../mini/translate'
 
 const base = '/home/s/repos/niketa-theme/themes'
-const filePath = `${ base }/AdvancedHook.json`
+const filePath = `${ base }/ZeppelinImmigrantSong.json`
 
 /*
   It allows to manipulate just the basic editor settings of published theme
@@ -52,16 +52,16 @@ test.skip('with one or two colors', () => {
 */
 test('with static color pairs', () => {
   const rules = {
-    'editor.background'                   : [ '#C9DDE9', '#DBE3D6' ],
-    'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
-    'editor.selectionBackground'          : [ '#DDE6E0', '#C8D8E2' ],
-    'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
+    'sideBar.background' : [ '#D2D4BF', '#D2D4BF' ],
+    // 'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
+    // 'editor.selectionBackground'          : [ '#DDE6E0', '#C8D8E2' ],
+    // 'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
   }
 
   const createThemeFn = () => editThemeChrome({
     random : {
       changes  : 1,
-      distance : 6,
+      distance : 3,
       indexes  : [ 0, 1 ],
     },
     filePath,
