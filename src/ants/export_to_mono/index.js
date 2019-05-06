@@ -2,7 +2,7 @@ import { readJsonAnt, resolve } from '../readJson'
 import { namesHash } from '../../bees/saveTheme'
 import { resolve as resolveMethod } from 'path'
 import { existsSync, readFileSync } from 'fs'
-import { replace, remove } from 'rambdax'
+import { replace, remove, log } from 'rambdax'
 import { snakeCase, dotCase, pascalCase, titleCase } from 'string-fn'
 import {
   copySync,
@@ -53,9 +53,9 @@ const THEMES = [
   'niketa.bear',
   'niketa.moon',
   'niketa.owl',
+  'ZeppelinImmigrantSong',
   // 'because.forever',
   // 'because.never',
-  // 'because.together',
 ]
 
 function updateJson(filePath, change){
@@ -135,6 +135,7 @@ export function exportToMono(themeIndex, outputName){
   const themeDestination = `${ outputFolder }/theme/${ jsonOutputName }`
 
   const screenSource = resolve(`files/${ theme }.png`)
+  log({ screenSource })
   const screenDestination = resolve(`${ outputFolder }/theme/${ themeName }.png`)
 
   /*

@@ -1,6 +1,6 @@
 # Niketa
 
-17 Light VSCode Themes
+18 Light VSCode Themes
 
 > The repo contains also internal theme generator used for creation of the themes
 
@@ -110,7 +110,7 @@
 
 ### Zeppelin Immigrant Song
 
-![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/immigrang.song.png?raw=true)
+![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/zeppelin.immigrang.song.png?raw=true)
 
 ## Naming conventions
 
