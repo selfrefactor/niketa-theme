@@ -5,6 +5,7 @@ import {
   flatten,
   piped,
   uniq,
+  log,
 } from 'rambdax'
 const base = 'src/ants/generate_colors/colors'
 
@@ -53,7 +54,7 @@ export function generateColorsAnt({
     getGradientBee(first, second, levels),
     uniq,
   )
-  // console.log({OUTPUT})
+  log({ OUTPUT })
 
   if (!opacityFlag) return writeJsonAnt(OUTPUT, flatten(colors))
 

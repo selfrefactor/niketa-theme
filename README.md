@@ -110,7 +110,9 @@
 
 ### Zeppelin Immigrant Song
 
-![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/zeppelin.immigrang.song.png?raw=true)
+![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/zeppelin.immigrant.song.png?raw=true)
+
+[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.ZeppelinImmigrantSongNiketa)
 
 ## Naming conventions
 

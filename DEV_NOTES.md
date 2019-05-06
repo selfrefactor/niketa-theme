@@ -30,6 +30,8 @@ They are always deployed from `baboon` folder
 
 publish theme has wrong theme name - foo.bar instead of FooBar
 
+remove show colors
+
 ## Because ask
 
 ```javascript
@@ -56,7 +58,6 @@ const rules = {
 }
 ```
 
-
 ## Because always
 
 ```
@@ -78,6 +79,28 @@ const rules = {
 }
 ```
 
+## Because never
+
+```
+
+function TARGET_OPACITY(){ return true }
+function TARGET_ONLY_FIRST_FLAG(){ return true }
+function TARGET_INDEX(){ return 2 }
+const PALLETE_INDEX = 6 // 29 is max
+const PALLETE_RANDOM_FLAG = true
+
+const rules = {
+  COLOR_BACK      : [ '#303b45', '#305b45' ],
+  COLOR_SECONDARY : [ translate('random.3'), translate('back.8') ],
+  COLOR_SELECTION : [ translate('back.opacity.10'), fetchZero ],
+  COLOR_0         : [ '#15a1ae', '#fafafa' ],
+  COLOR_1         : [ '#ebea8b', translate('random.2') ],
+  COLOR_2         : [ '#f47d4fff', '77' ],
+  COLOR_3         : [ '#E5AA83', '#E5AA83' ],
+  COLOR_4         : [ '#15b8ae', '#1541ae' ],
+  COLOR_5         : [ '#ec6dcdf6', '44' ],
+}
+```
 
 ## Roadmap April 2019
 

@@ -58,9 +58,9 @@ test('happy', () => {
     // translate('teal.7'),
     // translate('dark.green.8'),
     // translate('brown.8'),
-    translate('back.8'),
-    // '#fafafa',
-    translate('dark.red.1'),
+    translate('purple.1'),
+    // '#c11925',
+    translate('pink.1'),
   ]
 
   expect(

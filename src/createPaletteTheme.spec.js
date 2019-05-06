@@ -53,24 +53,23 @@ function TARGETS(){
 function TARGET_OPACITY(){ return true }
 function TARGET_ONLY_FIRST_FLAG(){ return true }
 function TARGET_INDEX(){ return 2 }
-const PALLETE_INDEX = 17 // 29 is max
+const PALLETE_INDEX = 6 // 29 is max
 const PALLETE_RANDOM_FLAG = true
 
 const rules = {
-  COLOR_BACK      : [ '#f7f2f2', '#f7f2f2' ],
+  COLOR_BACK      : [ '#303b45', '#305b45' ],
   COLOR_SECONDARY : [ translate('random.3'), translate('back.8') ],
   COLOR_SELECTION : [ translate('back.opacity.10'), fetchZero ],
-  COLOR_0         : [ '#aa769b', '#fafafa' ],
-  COLOR_1         : [ translate('dark.green.1'), translate('random.2') ],
-  COLOR_2         : [ '#7E3231', translate('red.1') ],
-  COLOR_3         : [ translate('red.1'), translate('back.8') ],
-  COLOR_4         : [ '#20366b', '#c0c5c9' ],
-  COLOR_5         : [ '#00afd6ff', 'aa' ],
-  // COLOR_5         : ['#00BCD4D0','88'],
+  COLOR_0         : [ '#15a1ae', '#fafafa' ],
+  COLOR_1         : [ '#ebea8b', translate('random.2') ],
+  COLOR_2         : [ '#f47d4fff', '77' ],
+  COLOR_3         : [ '#E5AA83', '#E5AA83' ],
+  COLOR_4         : [ '#15b8ae', '#1541ae' ],
+  COLOR_5         : [ '#ec6dcdf6', '44' ],
 }
 
 const base = '/home/s/repos/niketa-theme/palettes'
-test.skip('happy', () => {
+test('happy', () => {
 
   createPaletteTheme({
     showList : false,
@@ -79,10 +78,10 @@ test.skip('happy', () => {
       getFilePathRandom(PALLETE_INDEX) :
       `${ base }/generated/boring.json`,
     rules,
-    levels       : MAX_LEVELS,
-    rate         : RATE,
-    publishName  : 'led.immigrant.song',
-    publishIndex : 4,
+    levels : MAX_LEVELS,
+    rate   : RATE,
+    // publishName  : 'led.immigrant.song',
+    // publishIndex : 4,
   })
 })
 
