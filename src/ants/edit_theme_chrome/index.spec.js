@@ -1,9 +1,14 @@
 import { editThemeChrome } from './'
+import { resolve } from 'path'
 import { createRules } from '../mini/createRules'
 import { translate } from '../mini/translate'
 
 const base = '/home/s/repos/niketa-theme/themes'
-const filePath = `${ base }/ZeppelinImmigrantSong.json`
+// const filePath = `${ base }/ZeppelinImmigrantSong.json`
+const filePath = resolve(
+  __dirname,
+  '../../../../niketa-themes/packages/because/themes/BecauseNever.json'
+)
 
 /*
   It allows to manipulate just the basic editor settings of published theme
@@ -51,12 +56,7 @@ test.skip('with one or two colors', () => {
   Change basic editor colors on random priciple with already published theme
 */
 test('with static color pairs', () => {
-  const rules = {
-    'sideBar.background' : [ '#D2D4BF', '#D2D4BF' ],
-    // 'activityBar.background'              : [ '#cfd5dd', '#cfd5aa' ],
-    // 'editor.selectionBackground'          : [ '#DDE6E0', '#C8D8E2' ],
-    // 'editor.selectionHighlightBackground' : [ '#87A190', '#51636D' ],
-  }
+  const rules = { 'editor.background' : [ '#2A3343', '#1a1a16' ] }
 
   const createThemeFn = () => editThemeChrome({
     random : {
