@@ -134,9 +134,9 @@ export function exportToMono(themeIndex, outputName){
   const packageJsonFile = `${ outputFolder }/package.json`
   const themeDestination = `${ outputFolder }/theme/${ jsonOutputName }`
 
-  const screenSource = resolve(`files/${ theme }.png`)
+  const screenSource = resolve(`files/${ dotCase(theme) }.png`)
   log({ screenSource })
-  const screenDestination = resolve(`${ outputFolder }/theme/${ themeName }.png`)
+  const screenDestination = resolve(`${ outputFolder }/theme/${ dotCase(themeName) }.png`)
 
   /*
     Copy from BraveHomer
