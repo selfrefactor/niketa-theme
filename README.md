@@ -139,6 +139,10 @@ Niketa is the name I gave to my dog. On this picture, she is about 90 days:
 
 ![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.jpg?raw=true)
 
+And here she is about 1 year old.
+
+![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa_young.jpg?raw=true)
+
 ## Develop
 
 I build the themes by running `createPalleteTheme.spec.js` with `publish` flag set to `false`. I change some colors and then I enter debug mode.
@@ -153,7 +157,9 @@ I work around people which prefer dark themes. This set of themes is focused on 
 
 - [BesauseAlways](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAlwaysNiketa)
 
-- [BesauseTogether](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseTogetherNiketa)
+- [BesauseTogether](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseNeverNiketa)
+
+- [BesauseNever](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseNeverNiketa)
 
 ## Trending log
 
