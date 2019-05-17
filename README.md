@@ -165,7 +165,7 @@ Also there is [Because themes extension](https://marketplace.visualstudio.com/it
 
 ## Niketa extension
 
-I used the same name for a suite of tools for automatic run of `Jest` tests with covarage. If you are interested, then you can hop on one of the following:
+I used the same name for a suite of tools for automatic run of `Jest` tests with coverage. If you are interested, then you can hop on one of the following:
 
 - [Niketa docs](https://github.com/selfrefactor/niketa)
 
