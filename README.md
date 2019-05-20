@@ -161,6 +161,18 @@ I work around people which prefer dark themes. This set of themes is focused on 
 
 - [BesauseNever](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseNeverNiketa)
 
+Also there is [Because themes extension](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Because) which holds all of the above.
+
+## Niketa extension
+
+I used the same name for a suite of tools for automatic run of `Jest` tests with coverage. If you are interested, then you can hop on one of the following:
+
+- [Niketa docs](https://github.com/selfrefactor/niketa)
+
+There is `VSCode` part and `node` client part. On each save of file `foo.js`, it will run `foo.spec.js`. It will do that also if `foo.spec.js` has been saved.
+
+- [The case against Wallaby](https://ilearnsmarter.wordpress.com/2018/12/22/the-case-against-wallaby-js/) `Niketa` is created as frustration with some cons of `Wallaby.js`. The link leads to an article where I try to compare both tools and explain more about the benefits of `Niketa` as `Jest` tool.
+
 ## Trending log
 
 Time - 18.04.2019
