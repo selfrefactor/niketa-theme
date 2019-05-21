@@ -1,5 +1,7 @@
 # Dev notes
 
+> Background color cannot have opacity as terminal colors depend on that
+
 ## Opacity
 
 > Set (opacity)color pair as [FOO, FOO] in order to persist it.
