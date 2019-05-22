@@ -14,16 +14,14 @@ export function populateScreensAnt(){
   const screens = readdirSync(`${ base }/raw_screens`)
   const sortedScreens = sort(sortFn, screens)
   const screensSources = sortedScreens.map(
-    x => `${ base }/raw_screens/${x}`
+    x => `${ base }/raw_screens/${ x }`
   )
 
-  const themesNames = pluck('label', sort(sortFn, themes))
+  const themesNames = sort(sortFn, pluck('label', themes))
   const screenDestinations = themesNames.map(x => `${ base }/${ dotCase(x) }.png`)
 
-  console.log({screensSources})
   screensSources.forEach((screenPath, i) => copySync(
     screenPath,
     screenDestinations[ i ]
   ))
-
 }
