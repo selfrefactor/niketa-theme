@@ -151,17 +151,31 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 ## Dark themes
 
-I work around people which prefer dark themes. This set of themes is focused on light themes, but the themes factory is used to generate a few dark themes under `Because` namespace. All of them are published as standalone themes and are not part of `Niketa` theme.
+There is dark version of `Niketa theme` and it is called [Because](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Because) which holds all of the following 4 themes.
 
-- [BecauseAsk](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAskNiketa)
+### Because Ask
 
-- [BesauseAlways](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAlwaysNiketa)
+![because.ask](https://github.com/selfrefactor/niketa-themes/blob/master/packages/because/screens/because.ask.png?raw=true)
 
-- [BesauseTogether](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseNeverNiketa)
+[As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAskNiketa)
 
-- [BesauseNever](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseNeverNiketa)
+### Because Always
 
-Also there is [Because themes extension](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Because) which holds all of the above.
+![because.always](https://github.com/selfrefactor/niketa-themes/blob/master/packages/because/screens/because.always.png?raw=true)
+
+[As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAlwaysNiketa)
+
+### Because Together
+
+![because.together](https://github.com/selfrefactor/niketa-themes/blob/master/packages/because/screens/because.together.png?raw=true)
+
+[As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseTogetherNiketa)
+
+### Because Never
+
+![because.never](https://github.com/selfrefactor/niketa-themes/blob/master/packages/because/screens/because.never.png?raw=true)
+
+[As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseNeverNiketa)
 
 ## Niketa extension
 
