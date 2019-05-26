@@ -154,9 +154,11 @@ export function exportToMono(themeIndex, outputName){
   moveSync(destination, themeDestination)
 
   if (existsSync(screenSource)){
+    
     copySync(screenSource, screenDestination)
     removeSync(`${ outputFolder }/theme/brave.homer.png`)
   } else {
+
     console.log('You need to save a screen before that')
     moveSync(
       `${ outputFolder }/theme/niketa.fallback.png`,

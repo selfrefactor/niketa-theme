@@ -3,12 +3,9 @@ import { resolve } from 'path'
 import { createRules } from '../mini/createRules'
 import { translate } from '../mini/translate'
 
-const base = '/home/s/repos/niketa-theme/themes'
-// const filePath = `${ base }/ZeppelinImmigrantSong.json`
-const filePath = resolve(
-  __dirname,
-  '../../../../niketa-themes/packages/because/themes/BecauseNever.json'
-)
+const base = resolve(__dirname,'../../../themes')
+
+const filePath = `${base}/BraveHomer.json`
 
 /*
   It allows to manipulate just the basic editor settings of published theme

@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import { createPaletteTheme } from './createPaletteTheme'
 import { translate, translatex } from './ants/mini/translate'
 import { MAX_LEVELS } from './bees/saveTheme'
@@ -68,7 +69,8 @@ const rules = {
   COLOR_5         : [ '#ec6dcdf6', '44' ],
 }
 
-const base = '/home/s/repos/niketa-theme/palettes'
+const base = resolve(__dirname, '../palettes')
+
 test('happy', () => {
 
   createPaletteTheme({

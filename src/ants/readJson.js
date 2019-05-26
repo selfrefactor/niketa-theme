@@ -1,9 +1,7 @@
 import { resolve as resolveMethod } from 'path'
 import { readFileSync } from 'fs'
 
-const BASE = process.env.NODE_ENV === 'test' ?
-  '/home/s/repos/niketa-theme/' :
-  resolve(__dirname, '..')
+const BASE = resolveMethod(__dirname,'../../')
 
 export const resolve = filePath => resolveMethod(
   BASE,
