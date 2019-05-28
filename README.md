@@ -40,7 +40,7 @@
 
 ![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.immigrant.png?raw=true)
 
-[Single theme is deployed as `ZeppelinImmigrantSong` as that was the previous name](https://marketplace.visualstudio.com/items?itemName=selfrefactor.ZeppelinImmigrantSongNiketa)
+[Single theme is deployed as `ZeppelinImmigrantSong` as that was its previous name](https://marketplace.visualstudio.com/items?itemName=selfrefactor.ZeppelinImmigrantSongNiketa)
 
 ### Advanced Mystery
 

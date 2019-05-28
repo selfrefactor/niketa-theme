@@ -124,6 +124,18 @@
     "themes",
     "bundle"
   ],
+  "badges": [
+    {
+      "description": "GitHub stars",
+      "href": "https://github.com/selfrefactor/niketa-theme/stargazers",
+      "url": "https://img.shields.io/github/stars/selfrefactor/niketa-theme.svg?style=social"
+    },
+    {
+      "description": "GitHub issues",
+      "href": "https://github.com/selfrefactor/niketa-theme/issues",
+      "url": "https://img.shields.io/github/issues/selfrefactor/niketa-theme.svg?style=social"
+    }
+  ],
   "devDependencies": {
     "rgb-hex": "^2.1.0",
     "babel-cli": "^6.26.0",
