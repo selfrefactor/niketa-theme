@@ -36,6 +36,12 @@
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedHookNiketa)
 
+### Advanced Immigrant
+
+![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.immigrant.png?raw=true)
+
+[Single theme is deployed as `ZeppelinImmigrantSong` as that was the previous name](https://marketplace.visualstudio.com/items?itemName=selfrefactor.ZeppelinImmigrantSongNiketa)
+
 ### Advanced Mystery
 
 ![advanced.mystery](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.mystery.png?raw=true)
@@ -108,12 +114,6 @@
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
 
-### Zeppelin Immigrant Song
-
-![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/zeppelin.immigrant.song.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.ZeppelinImmigrantSongNiketa)
-
 ## Naming conventions
 
 Replace `foo, bar, baz` with their equally irrelevant substitutes.
@@ -129,8 +129,6 @@ group themes by background:
 `Circus`  for darker mild themes
 
 `Niketa` for after sunset themes
-
-`Zeppelin` themes without particular topic besides using Led Zeppelin's songs as names
 ```
 
 ## Name
