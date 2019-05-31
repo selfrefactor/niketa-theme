@@ -17,12 +17,7 @@ const fetchOne = FetchTargetColorI.is(TARGET_ONLY_FIRST_FLAG() ? 0 : 1)
 const RATE = 0.065 // applied to no opacity colors
 
 function OPACITY_TARGETS(){
-  return [
-    [ '39', '90' ],
-    [ 'f1', '77' ],
-    [ 'a0', 'c9' ],
-    [ 'ba', 'ed' ],
-  ]
+  return [ [ '39', '90' ], [ 'f1', '77' ], [ 'a0', 'c9' ], [ 'ba', 'ed' ] ]
 }
 const MARK = [ '#aa00ff', '#aa00aa' ]
 function TARGETS(){
@@ -51,13 +46,19 @@ function TARGETS(){
   ]
 }
 
-function TARGET_OPACITY(){ return true }
-function TARGET_ONLY_FIRST_FLAG(){ return true }
-function TARGET_INDEX(){ return 2 }
-const PALLETE_INDEX = 6 // 29 is max
+function TARGET_OPACITY(){
+  return true
+}
+function TARGET_ONLY_FIRST_FLAG(){
+  return true
+}
+function TARGET_INDEX(){
+  return 2
+}
+const PALLETE_INDEX = 26 // 29 is max
 const PALLETE_RANDOM_FLAG = true
 
-const rules = {
+const rulesx = {
   COLOR_BACK      : [ '#303b45', '#305b45' ],
   COLOR_SECONDARY : [ translate('random.3'), translate('back.8') ],
   COLOR_SELECTION : [ translate('back.opacity.10'), fetchZero ],
@@ -69,10 +70,21 @@ const rules = {
   COLOR_5         : [ '#ec6dcdf6', '44' ],
 }
 
+const rules = {
+  COLOR_BACK      : [ '#f1f1f1', '#f1f1f1' ],
+  COLOR_SECONDARY : [ '#C9C9C1', '#C9C9C1' ],
+  COLOR_SELECTION : [ '#b0e4d5', '#FAFAFA' ],
+  COLOR_0         : [ '#387396', '#4389B3' ],
+  COLOR_1         : [ '#D67059', '#D67059' ],
+  COLOR_2         : [ '#4389B3', '#387396' ],
+  COLOR_3         : [ '#598132', '#598132' ],
+  COLOR_4         : [ '#880e4f', '#a50044' ],
+  COLOR_5         : [ '#880e4f', '#a50044' ],
+}
+
 const base = resolve(__dirname, '../palettes')
 
 test('happy', () => {
-
   createPaletteTheme({
     showList : false,
     complex  : true,

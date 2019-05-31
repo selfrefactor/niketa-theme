@@ -16,10 +16,8 @@ function generateRandomPair(){
   const data = readJsonAnt('colors.json')
 
   const predicate = colorKey => {
-    const setOfColors = piped(
-      data[ colorKey ],
-      filter(Boolean),
-      x => Object.values(x)
+    const setOfColors = piped(data[ colorKey ], filter(Boolean), x =>
+      Object.values(x)
     )
 
     return { [ colorKey ] : setOfColors }
@@ -58,13 +56,14 @@ test('happy', () => {
     // translate('teal.7'),
     // translate('dark.green.8'),
     // translate('brown.8'),
-    translate('purple.1'),
-    // '#c11925',
+    '#9B4B74',
+    // translate('purple.1'),
+    '#c11925',
     translate('pink.1'),
   ]
 
-  expect(
-    () => generateColorsAnt({
+  expect(() =>
+    generateColorsAnt({
       input,
       label       : '_HAPPY',
       opacityFlag : true,
@@ -75,8 +74,8 @@ test('happy', () => {
 
 test.skip('random persisted', () => {
   const input = generateRandomPair()
-  expect(
-    () => generateColorsAnt({
+  expect(() =>
+    generateColorsAnt({
       input,
       label       : '_RANDOM_PERSISTED',
       opacityFlag : true,
@@ -94,8 +93,8 @@ test.skip('with static base', () => {
     // target,
   ]
 
-  expect(
-    () => generateColorsAnt({
+  expect(() =>
+    generateColorsAnt({
       input,
       label       : '_WITH_ONE',
       opacityFlag : true,
@@ -109,8 +108,8 @@ test.skip('random with hash', () => {
   const label = getLabel()
   console.log({ label })
 
-  expect(
-    () => generateColorsAnt({
+  expect(() =>
+    generateColorsAnt({
       input,
       label,
       opacityFlag : true,
