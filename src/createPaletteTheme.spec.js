@@ -55,32 +55,19 @@ function TARGET_ONLY_FIRST_FLAG(){
 function TARGET_INDEX(){
   return 2
 }
-const PALLETE_INDEX = 12 // 29 is max
-const PALLETE_RANDOM_FLAG = false
-
-const rulesDark = {
-  COLOR_BACK      : [ '#303b45', '#305b45' ],
-  COLOR_SECONDARY : [ translate('random.3'), translate('back.8') ],
-  COLOR_SELECTION : [ translate('back.opacity.10'), fetchZero ],
-  COLOR_0         : [ '#15a1ae', '#fafafa' ],
-  COLOR_1         : [ '#ebea8b', translate('random.2') ],
-  COLOR_2         : [ '#f47d4fff', '77' ],
-  COLOR_3         : [ '#E5AA83', '#E5AA83' ],
-  COLOR_4         : [ '#15b8ae', '#1541ae' ],
-  COLOR_5         : [ '#ec6dcdf6', '44' ],
-}
+const PALLETE_INDEX = 2 // 29 is max
+const PALLETE_RANDOM_FLAG = true
 
 const rules = {
-  COLOR_BACK      : [ '#f6f4e8', '#f8f6f1' ],
-  // COLOR_BACK      : [ '#f7f5ec', '#f5f2e0' ],
-  COLOR_SECONDARY : [ '#cacacc', '#9eb4ad' ],
+  COLOR_BACK      : [ '#dcdcd3', '#9eb4ad' ],
+  COLOR_SECONDARY : [ '#A5A9A1', '#9eb4ad' ],
   COLOR_SELECTION : [ '#eec2bb', '#eae3cd' ],
-  COLOR_3         : [ '#968420', '#968420' ],
-  COLOR_2         : [ '#968420', '#968420' ],
-  COLOR_4         : [ '#57668f', '#57668f' ],
-  COLOR_1         : [ '#57668f', '#57668f' ],
-  COLOR_0         : [ '#AD404F', '#a74648' ],
-  COLOR_5         : [ '#a74648', '#AD404F' ],
+  COLOR_2         : [ '#df5831', '#df5831' ],
+  COLOR_4         : [ '#df5831', '#df5831' ],
+  COLOR_0         : [ '#2F586F', '#2F586F' ],
+  COLOR_1         : [ '#8c7647', '#8c7647' ],
+  COLOR_3         : [ '#8c7647', '#8c7647' ],
+  COLOR_5         : [ '#2F586F', '#2F586F' ],
 }
 
 const base = resolve(__dirname, '../palettes')
