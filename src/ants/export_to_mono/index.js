@@ -53,9 +53,6 @@ const THEMES = [
   'niketa.bear',
   'niketa.moon',
   'niketa.owl',
-  'ZeppelinImmigrantSong',
-  // 'because.forever',
-  // 'because.never',
 ]
 
 function updateJson(filePath, change){
@@ -72,7 +69,7 @@ function editPackageJson(themeName, json, isDark){
   const themes = {
     label   : titleCase(themeName),
     uiTheme : isDark ? 'vs-dark' : 'vs',
-    path    : `./theme/${ themeName }.json`,
+    path    : `./theme/${ dotCase(themeName) }.json`,
   }
   const icon = `theme/${ dotCase(themeName) }.png`
 
@@ -106,9 +103,11 @@ export function exportToMono(themeIndex, outputName){
     '../../../../niketa-themes/packages'
   )
 
-  if (!existsSync(filePathBase)) return console.log(`${ filePathBase } is not a directory`)
+  if (!existsSync(filePathBase))
+    return console.log(`${ filePathBase } is not a directory`)
 
-  if (typeof themeIndex === 'string' && !outputName) return console.log('need to pass name as well')
+  if (typeof themeIndex === 'string' && !outputName)
+    return console.log('need to pass name as well')
 
   // When we publish from dev theme, we pass fn('baboon.2'/'baboon.literal', 'more.pump')
   // When we publish Niketa theme, we pass only index fn(10)
@@ -136,7 +135,9 @@ export function exportToMono(themeIndex, outputName){
 
   const screenSource = resolve(`files/${ dotCase(theme) }.png`)
   log({ screenSource })
-  const screenDestination = resolve(`${ outputFolder }/theme/${ dotCase(themeName) }.png`)
+  const screenDestination = resolve(
+    `${ outputFolder }/theme/${ dotCase(themeName) }.png`
+  )
 
   /*
     Copy from BraveHomer
@@ -154,21 +155,23 @@ export function exportToMono(themeIndex, outputName){
   moveSync(destination, themeDestination)
 
   if (existsSync(screenSource)){
-    
     copySync(screenSource, screenDestination)
     removeSync(`${ outputFolder }/theme/brave.homer.png`)
   } else {
-
     console.log('You need to save a screen before that')
     moveSync(
       `${ outputFolder }/theme/niketa.fallback.png`,
-      `${ outputFolder }/theme/${ dotCase(themeName) }.png`,
+      `${ outputFolder }/theme/${ dotCase(themeName) }.png`
     )
     removeSync(`${ outputFolder }/theme/brave.homer.png`)
   }
 
   const packageJson = readJsonSync(packageJsonFile)
-  const editedPackageJson = editPackageJson(pascalCase(themeName), packageJson, isDark)
+  const editedPackageJson = editPackageJson(
+    pascalCase(themeName),
+    packageJson,
+    isDark
+  )
 
   /*
     Save corrected package.json
