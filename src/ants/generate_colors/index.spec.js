@@ -56,9 +56,9 @@ test('happy', () => {
     // translate('teal.7'),
     // translate('dark.green.8'),
     // translate('brown.8'),
-    '#9B4B74',
+    '#f7f5ec',
     // translate('purple.1'),
-    '#c11925',
+    '#fafafa',
     translate('pink.1'),
   ]
 
@@ -66,7 +66,7 @@ test('happy', () => {
     generateColorsAnt({
       input,
       label       : '_HAPPY',
-      opacityFlag : true,
+      opacityFlag : false,
       levels      : 60,
     })
   ).not.toThrow()
