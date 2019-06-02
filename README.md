@@ -84,6 +84,12 @@
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusBrotherNiketa)
 
+### Circus Owl
+
+![niketa.owl](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.owl.png?raw=true)
+
+[As a single theme is deployed under its previous name `NiketaOwl`](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
+
 ### Circus People
 
 ![circus.People](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.people.png?raw=true)
@@ -107,12 +113,6 @@
 ![niketa.moon](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.moon.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaMoonNiketa)
-
-### Niketa Owl
-
-![niketa.owl](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.owl.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
 
 ## Naming conventions
 
