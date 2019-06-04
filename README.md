@@ -147,6 +147,38 @@ I build the themes by running `createPalleteTheme.spec.js` with `publish` flag s
 
 Debug mode will open 22 themes, so the developer can choose which variation looks the best.
 
+## Zeppelin themes
+
+Tre color spin-off from `Niketa` themes.
+
+All themes use three colors schema and use one of two light backgrounds.
+
+Git diff colors are blue and ochra similar to the ones suggested in the article [Your syntax highlighter is wrong](https://jameshfisher.com/2014/05/11/your-syntax-highlighter-is-wrong/)
+
+### ZeppelinDancingDays
+
+![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/dancing.days.png?raw=true)
+
+### ZeppelinHeartbreaker
+
+![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/heartbreaker.png?raw=true)
+
+### ZeppelinInLight
+
+![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/in.light.png?raw=true)
+
+### ZeppelinLemonSong
+
+![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/lemon.song.png?raw=true)
+
+### ZeppelinSinceLoving
+
+![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/since.loving.png?raw=true)
+
+### ZeppelinTeaFor
+
+![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/tea.for.png?raw=true)
+
 ## Dark themes
 
 There is dark version of `Niketa theme` and it is called [Because](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Because) which holds all of the following 4 themes.
