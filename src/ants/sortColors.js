@@ -2,7 +2,7 @@ import importedColors from '../../colors.json'
 import { writeJsonAnt } from './writeJson.js'
 import hexSorter from 'hexsorter'
 import { sort } from 'rambdax'
- 
+
 export function compareColors(colors){
   const compareColorsFn = (a, b) => {
     if (!a) return 1

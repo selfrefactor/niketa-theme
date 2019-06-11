@@ -147,6 +147,10 @@ I build the themes by running `createPalleteTheme.spec.js` with `publish` flag s
 
 Debug mode will open 22 themes, so the developer can choose which variation looks the best.
 
+## References
+
+- Featured in [Web Tools Weekly](https://mailchi.mp/webtoolsweekly/web-tools-306)
+
 ## Zeppelin themes
 
 Tre color spin-off from `Niketa` themes.
