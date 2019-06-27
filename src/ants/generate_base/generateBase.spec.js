@@ -1,6 +1,7 @@
 import { generateBase, generateBaseRandom } from './generateBase'
 import {
   map,
+  take,
   range,
   mergeAll,
   shuffle,
@@ -70,12 +71,13 @@ test.skip('with permutation', () => {
   }).not.toThrow()
 })
 
-test('fair random', () => {
+test('fair random - 4', () => {
+  const levels = 4
   const setOfRandomsRaw = permutation(100)
   const setOfRandoms = applyFairness({
     setOfRandoms : setOfRandomsRaw,
-    levels       : 4,
-    accordingTo  : PERMUTATION_BASE,
+    levels,
+    accordingTo  : take(4,PERMUTATION_BASE),
   })
 
   expect(() => {
