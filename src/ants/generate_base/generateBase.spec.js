@@ -6,24 +6,13 @@ import {
   shuffle,
 } from 'rambdax'
 
-test('happy', () => {
+test.skip('happy', () => {
   generateBase('boring')
 })
 
 test.skip('random', () => {
   expect(() => generateBaseRandom('sk')).not.toThrow()
 })
-
-// function isUniq(x, holder){
-//   const [ found ] = holder.filter(holderInstance => equals(holderInstance, x))
-
-//   return !found
-// }
-
-// function pushUniq(x, holder){
-//   if (!isUniq(x, holder)) return
-//   holder.push(x)
-// }
 
 const PERMUTATION_BASE = [
   'COLOR_0',

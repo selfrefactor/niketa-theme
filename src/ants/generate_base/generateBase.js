@@ -2,8 +2,17 @@ import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
 import { switcher, random, remove, replace, shuffle, map, findIndex } from 'rambdax'
 
-import { baseData, baseBase } from '../../../palettes/baseData'
+import * as three from '../../../palettes/baseDataThree'
+import * as four from '../../../palettes/baseDataFour'
+import * as five from '../../../palettes/baseDataFive'
+import * as six from '../../../palettes/baseDataSix'
 
+const hash = {
+  three,
+  four,
+  five,
+  six,
+}
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
 
@@ -75,10 +84,11 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   }
 }
 
-export function generateBase(label, baseDataValue = baseData){
+export function generateBase(label, mode = 'three', baseData){
+  const { baseBase } = hash[ mode ]
   const tokenColors = []
 
-  Object.entries(baseDataValue)
+  Object.entries(baseData)
     .forEach(([ color, syntaxInstances ]) => {
 
       syntaxInstances
@@ -102,8 +112,10 @@ export function generateBase(label, baseDataValue = baseData){
     ...baseBase,
     tokenColors,
   }
+  console.log(label)
+  console.log(themeBase)
 
-  save(label, themeBase)
+  // save(label, themeBase)
 }
 
 const colorsKeys = [
@@ -115,10 +127,9 @@ const colorsKeys = [
   'COLOR_5',
 ]
 
-export function generateBaseRandom(label, setOfRandoms){
-  const colorsHash = { ...baseData }
-
-  const newColorsKeys = setOfRandoms ? setOfRandoms : shuffle(colorsKeys)
+export function generateBaseRandom(label, newColorsKeys, mode = 'three'){
+  const base = hash[ mode ]
+  const colorsHash = { ...base.baseData }
 
   const sk = map((_, prop) => {
     const foundIndex = findIndex(
@@ -129,6 +140,6 @@ export function generateBaseRandom(label, setOfRandoms){
     return colorsHash[ foundKey ]
   })(colorsHash)
 
-  generateBase(label, sk)
+  generateBase(label, mode, sk)
 }
 
