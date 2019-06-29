@@ -8,9 +8,11 @@ import { getChrome } from './createMultipleTheme.spec'
 const SETTINGS_DEV = {
   mode    : 'advanced',
   COLOR_0 : '#063672',
-  COLOR_1 : '#ff5177',
+  COLOR_1 : '#0068a8',
   COLOR_2 : '#7e9a64',
-  COLOR_3 : '#0068a8',
+  // COLOR_3 : '#bae637',
+  // COLOR_4 : '#ff5177',
+  // COLOR_5 : '#df172b',
 }
 
 async function findBestTheme(){
@@ -35,11 +37,11 @@ async function findBestTheme(){
         levels : 6,
       }
     )
-  ) 
+  )
 
   const toPackageJson = range(0, paletteMode.levels).map(i => {
     const palette = readJsonAnt(`palettes/${ paletteMode.mode }/_${ i }.json`)
-  const themeData = generateThemeDataBee({
+    const themeData = generateThemeDataBee({
       palette,
       chrome,
       colors : omit('mode', SETTINGS_DEV),

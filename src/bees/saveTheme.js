@@ -2,7 +2,10 @@ import { writeJsonAnt } from '../ants/writeJson'
 import { pascalCase } from 'string-fn'
 
 const BASE = 'baboon'
-
+// misery jessy obnoxious
+// misery jessy obnoxious
+// misery jessy obnoxious
+// jessy obnoxious
 export const namesHash = [
   'ant',
   'bee',
