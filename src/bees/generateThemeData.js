@@ -1,43 +1,24 @@
-import { range } from 'rambdax'
+import { map, mergeAll } from 'rambdax'
+import { createPaletteRule } from '../createPaletteTheme'
 
-export function generateThemeDataBee({ pallete, chrome, colors }){
-  console.log(chrome, colors)
+export function generateThemeDataBee({ palette, chrome, colors }){
+  const translatedColors = mergeAll(map(
+    (color, prop) => createPaletteRule(prop, color)
+  )(colors))
 
-  // const keys = Object.keys(rules)
-  // const len = rules[ keys[ 0 ] ].length
+  const newTokenColors = map(
+    tokenColor => {
+      tokenColor.settings.foreground = translatedColors[ tokenColor.settings.foreground ]
 
-  // return range(0, len).map(i => {
-  //   const newThemeColors = {}
-  //   keys.forEach(path => {
-  //     newThemeColors[ path ] = rules[ path ][ i ]
-  //   })
+      return tokenColor
+    }
+  )(palette.tokenColors)
 
-  //   return {
-  //     ...originTheme,
-  //     colors : {
-  //       ...originTheme.colors,
-  //       ...newThemeColors,
-  //     },
-  //   }
-  // })
+  const newTheme = {
+    ...palette,
+    colors      : chrome,
+    tokenColors : newTokenColors,
+  }
+
+  return newTheme
 }
-
-// export function generateThemeDataBee(rules, originTheme){
-//   const keys = Object.keys(rules)
-//   const len = rules[ keys[ 0 ] ].length
-
-//   return range(0, len).map(i => {
-//     const newThemeColors = {}
-//     keys.forEach(path => {
-//       newThemeColors[ path ] = rules[ path ][ i ]
-//     })
-
-//     return {
-//       ...originTheme,
-//       colors : {
-//         ...originTheme.colors,
-//         ...newThemeColors,
-//       },
-//     }
-//   })
-// }
