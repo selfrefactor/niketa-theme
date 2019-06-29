@@ -1,9 +1,10 @@
-import { delay, range, pick, omit } from 'rambdax'
+import { generateThemeDataBee } from './bees/generateThemeData'
+import { delay, range, pick, omit, switcher, maybe, map, mergeAll } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
 import { pascalCase } from 'string-fn'
 import { writeJsonAnt } from './ants/writeJson'
 import { resolve } from 'path'
-import { createPaletteTheme } from './createPaletteTheme'
+import { createPaletteTheme, createPaletteRule } from './createPaletteTheme'
 
 const RATE = 0.052 // applied to no opacity colors
 
@@ -66,12 +67,13 @@ const baseColors = {
 
 const base = resolve(__dirname, '../palettes')
 
-const SETTINGS_DEV = () => ({
+const SETTINGS_DEV = {
+  mode    : 'advanced',
   COLOR_0 : '#063672',
   COLOR_1 : '#ff5177',
   COLOR_2 : '#b76144',
   COLOR_3 : '#0068a8',
-})
+}
 
 const SETTINGS = {}
 SETTINGS[ 0 ] = () => ({
@@ -211,12 +213,94 @@ test.skip('export all', done => {
   Promise.all(promised).then(() => done())
 })
 
+function getChrome(mode){
+  if (mode === 'advanced'){
+    return {
+      'editor.background'                : '#FAF8F3',
+      'activityBar.background'           : '#87775780',
+      'editor.selectionBackground'       : '#F8E2E2CC',
+      'editor.lineHighlightBackground'   : '#87775722',
+      'editorBracketMatch.background'    : '#4381A8f3',
+      'editorBracketMatch.border'        : '#861D4FE3',
+      'editorGroupHeader.tabsBackground' : '#FAF8F3f3',
+      'editorGutter.background'          : '#FAF8F3D6',
+      'editorLineNumber.foreground'      : '#877757BC',
+      'scrollbarSlider.background'       : '#87775780',
+      'scrollbarSlider.hoverBackground'  : '#877757BC',
+      'sideBar.background'               : '#bdc3c7',
+      'statusBar.background'             : '#877757DA',
+      'tab.inactiveForeground'           : '#FAF8F3D6',
+      'tab.inactiveBackground'           : '#877757DA',
+      'tab.activeForeground'             : '#B45948f3',
+      'tab.activeBackground'             : '#FAF8F3D6',
+      'tab.border'                       : '#FAF8F3D6',
+    }
+  }
+
+  return {
+    'editor.background'                : '#FAF8F3',
+    'activityBar.background'           : '#87775780',
+    'editor.selectionBackground'       : '#F8E2E2CC',
+    'editor.lineHighlightBackground'   : '#87775722',
+    'editorBracketMatch.background'    : '#4381A8f3',
+    'editorBracketMatch.border'        : '#861D4FE3',
+    'editorGroupHeader.tabsBackground' : '#FAF8F3f3',
+    'editorGutter.background'          : '#FAF8F3D6',
+    'editorLineNumber.foreground'      : '#877757BC',
+    'scrollbarSlider.background'       : '#87775780',
+    'scrollbarSlider.hoverBackground'  : '#877757BC',
+    'sideBar.background'               : '#bdc3c7',
+    'statusBar.background'             : '#877757DA',
+    'tab.inactiveForeground'           : '#FAF8F3D6',
+    'tab.inactiveBackground'           : '#877757DA',
+    'tab.activeForeground'             : '#B45948f3',
+    'tab.activeBackground'             : '#FAF8F3D6',
+    'tab.border'                       : '#FAF8F3D6',
+  }
+}
+function generateThemeData({ palette, chrome, colors }){
+  const translatedColors = mergeAll(map(
+    (color, prop) => createPaletteRule(prop, color)
+  )(colors))
+
+  const newTokenColors = map(
+    tokenColor => {
+      tokenColor.settings.foreground = translatedColors[ tokenColor.settings.foreground ]
+
+      return tokenColor
+    }
+  )(palette.tokenColors)
+  console.log(newTokenColors)
+
+  // palette.tokenColors.map(singleRule => {
+  //   // console.log(singleRule.settings.foreground, sk)
+
+  // })
+}
+
 async function findBestTheme(){
+  const chrome = getChrome(SETTINGS_DEV.mode)
+  const paletteMode = maybe(
+    SETTINGS_DEV.COLOR_5,
+    'six',
+    SETTINGS_DEV.COLOR_4 ? 'five' : maybe(
+      SETTINGS_DEV.COLOR_3,
+      'four',
+      'three'
+    )
+  )
+  console.log({ paletteMode })
+  const palette = readJsonAnt(`palettes/${ paletteMode }/_1.json`)
+  const a = generateThemeData({
+    palette,
+    chrome,
+    colors : omit('mode', SETTINGS_DEV),
+  })
 
 }
 
 test('find best pallete', async () => {
-  const a = await findBestTheme()
+  const a = await findBestTheme(1)
   // expect().toBe()
 })
 

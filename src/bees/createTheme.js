@@ -1,9 +1,5 @@
 import { range } from 'rambdax'
 
-export function generateThemeDataBee(pallete, chrome, colors){
-
-}
-
 export function createThemeBee(rules, originTheme){
   const keys = Object.keys(rules)
   const len = rules[ keys[ 0 ] ].length

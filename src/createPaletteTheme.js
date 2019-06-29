@@ -7,7 +7,7 @@ import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { getGradientBee } from './bees/getGradient'
 import colors from '../colors.json'
 
-function createPaletteRule(prop, colorBase, rate){
+export function createPaletteRule(prop, colorBase, rate = 0.045){
   const willReturn = {}
   const modes = [
     'DARKEST',
