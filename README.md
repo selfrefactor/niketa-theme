@@ -4,6 +4,10 @@
 
 > The repo contains also internal theme generator used for creation of the themes
 
+--
+
+> Niketa theme version 7.0.3 is published as [Niketa theme legacy](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-legacy)
+
 ## Screens
 
 ### Advanced Bat
