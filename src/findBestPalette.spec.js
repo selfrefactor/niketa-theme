@@ -1,10 +1,7 @@
 import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { saveThemeBee } from './bees/saveTheme'
-import { generateThemeDataBee } from './bees/generateThemeData'
 import { delay, range, pick, omit, switcher, maybe, map, mergeAll } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
-import { pascalCase } from 'string-fn'
-import { writeJsonAnt } from './ants/writeJson'
 import { resolve } from 'path'
 import { createPaletteTheme, createPaletteRule } from './createPaletteTheme'
 

@@ -3,9 +3,6 @@ import { pascalCase } from 'string-fn'
 
 const BASE = 'baboon'
 
-
-
-
 export const namesHash = [
   'ant',
   'bee',
