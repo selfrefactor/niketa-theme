@@ -91,13 +91,12 @@ function getChrome(mode){
   if (mode === 'advanced'){
     return {
       ...baseColors,
-      'editor.background' : '#FAF8F3',
+      'editor.background'                : '#FAF8F3',
     }
   }
-
   return {
     ...baseColors,
-    'editor.background' : '#FAF8F3',
+    'editor.background'                : '#FAF8F3',
   }
 }
 
@@ -116,8 +115,8 @@ function generateThemeData({ palette, chrome, colors }){
 
   const newTheme = {
     ...palette,
-    colors      : chrome,
-    tokenColors : newTokenColors,
+    colors: chrome,
+    tokenColors: newTokenColors
   }
 
   return newTheme
@@ -127,28 +126,16 @@ async function findBestTheme(){
   const chrome = getChrome(SETTINGS_DEV.mode)
   const paletteMode = maybe(
     SETTINGS_DEV.COLOR_5,
-    {
-      mode   : 'six',
-      levels : 24,
-    },
-    SETTINGS_DEV.COLOR_4 ? {
-      mode   : 'five',
-      levels : 24,
-    } : maybe(
+    {mode: 'six', levels: 24},
+    SETTINGS_DEV.COLOR_4 ? {mode: 'five', levels: 24} : maybe(
       SETTINGS_DEV.COLOR_3,
-      {
-        mode   : 'four',
-        levels : 20,
-      },
-      {
-        mode   : 'three',
-        levels : 6,
-      }
+      {mode: 'four', levels: 20},
+      {mode: 'three', levels: 6}
     )
   )
 
-  const toPackageJson = range(0, paletteMode.levels).map(i => {
-    const palette = readJsonAnt(`palettes/${ paletteMode.mode }/_${ i }.json`)
+  const toPackageJson = range(0,paletteMode.levels).map(i => {
+    const palette = readJsonAnt(`palettes/${ paletteMode.mode }/_${i}.json`)
     const themeData = generateThemeData({
       palette,
       chrome,
@@ -156,7 +143,6 @@ async function findBestTheme(){
     })
 
     const label = saveThemeBee(themeData, i)
-
     return {
       label,
       uiTheme : 'vs',
@@ -166,7 +152,7 @@ async function findBestTheme(){
 
   saveToPackageJsonAnt(toPackageJson)
 }
-
+ 
 test('find best pallete', async () => {
   await findBestTheme()
 })
