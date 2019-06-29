@@ -5,7 +5,7 @@ import { generateThemeDataBee } from './bees/generateThemeData'
 import { createPaletteTheme, createPaletteRule } from './createPaletteTheme'
 import { saveThemeBee } from './bees/saveTheme'
 import { readJsonAnt } from './ants/readJson'
-import { delay, range, pick, omit, switcher, maybe, map, mergeAll } from 'rambdax'
+import { delay, range, pick, omit, switcher, maybe, map, mergeAll, defaultTo } from 'rambdax'
 
 export const baseColors = {
   'diffEditor.removedTextBackground'  : '#64B5F655',
@@ -28,6 +28,7 @@ export const baseColors = {
 
 const SETTINGS = {}
 SETTINGS[ 0 ] = {
+  back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'bat',
   COLOR_0 : '#B06775E9',
@@ -36,6 +37,7 @@ SETTINGS[ 0 ] = {
   COLOR_3 : '#8F1C3DE9',
 }
 SETTINGS[ 1 ] = {
+  back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'cat',
   COLOR_0 : '#5a6598fa',
@@ -44,76 +46,85 @@ SETTINGS[ 1 ] = {
   COLOR_3 : '#861D4FCF',
   COLOR_4 : '#4381A8E9',
 }
-
-function createSingleTheme(index){
-  return new Promise(resolve => {
-    const toReturn = SETTINGS[ index ]()
-    const actualRules = createRules(toReturn)
-    const callback = () => resolve(toReturn)
-    const filePath = getFilePathRandom(PALLETE_INDEX, toReturn.fourColors)
-
-    const options = {
-      complex : false,
-      filePath,
-      rules   : actualRules,
-      rate    : RATE,
-      callback,
-    }
-
-    createPaletteTheme(options)
-  })
+SETTINGS[ 1 ] = {
+  back    : '#f9f6f2',
+  mode    : 'advanced',
+  label   : 'dog',
+  COLOR_0 : '#af3564fa',
+  COLOR_1 : '#C26F63fa',
+  COLOR_2 : '#533963f1',
+  COLOR_3 : '#7F8E52f1',
+}
+// lemon song
+SETTINGS[ 2 ] = {
+  back    : '#f9f6f1',
+  mode    : 'advanced',
+  label   : 'engine',
+  COLOR_0    : '#1E416E',
+  COLOR_1    : '#38978D',
+  COLOR_2    : '#B97444',
+}
+// heartbreaker
+SETTINGS[ 3 ] = {
+  back    : '#f9f6f1',
+  mode    : 'advanced',
+  label   : 'hook',
+  COLOR_0 : '#9C8058',
+  COLOR_1 : '#f26153',
+  COLOR_2 : '#096165',
+}
+// dancing days
+SETTINGS[ 4 ] = {
+  back    : '#f9f6f1',
+  mode    : 'advanced',
+  label   : 'immigrant',
+  COLOR_0 : '#063672',
+  COLOR_1 : '#ff5177',
+  COLOR_2 : '#b76144',
+  COLOR_3 : '#0068a8',
 }
 
-function createFourColorTheme(index){
-  return new Promise(resolve => {
-    const settings = SETTINGS.DEV()
-    const actualRules = createRules(settings)
-
-    const callback = () => resolve(settings)
-    const filePath = getFilePathRandom(index, settings.fourColors)
-
-    const options = {
-      complex : false,
-      filePath,
-      rules   : actualRules,
-      rate    : RATE,
-      callback,
-    }
-    console.log(options)
-
-    createPaletteTheme(options)
-  })
+SETTINGS[ 5 ] = {
+  back    : '#f1f1f1',
+  mode    : 'advanced',
+  label   : 'mystery',
+  COLOR_0 : '#2b8fb3',
+  COLOR_1 : '#a0512c',
+  COLOR_2 : '#BD2E63',
+  COLOR_3 : '#E9630D',
+  COLOR_4 : '#508546',
+  COLOR_5 : '#880e4f',
 }
 
-export function getChrome(mode){
+export function getChrome(mode, back){
   if (mode === 'advanced'){
     return {
       ...baseColors,
-      'editor.background' : '#FAF8F3',
+      'editor.background' : defaultTo('#FAF8F3', back),
     }
   }
   if (mode === 'brave'){
     return {
       ...baseColors,
-      'editor.background' : '#f3f0e0',
+      'editor.background' : defaultTo('#f3f0e0', back),
     }
   }
   if (mode === 'circus'){
     return {
       ...baseColors,
-      'editor.background' : '#ede8e1',
+      'editor.background' : defaultTo('#ede8e1', back),
     }
   }
 
   return {
     ...baseColors,
-    'editor.background' : '#d8d5c9',
+    'editor.background' : defaultTo('#d8d5c9', back),
   }
 }
 
 test('happy', () => {
   map(
-    ({mode,label, ...colors}) => {
+    ({ mode, label, back, ...colors }) => {
       const paletteMode = maybe(
         colors.COLOR_5,
         'six',
@@ -125,15 +136,15 @@ test('happy', () => {
       )
       const chrome = getChrome(mode)
       const palette = readJsonAnt(`palettes/${ paletteMode }.json`)
-       const themeData = generateThemeDataBee({
+      const themeData = generateThemeDataBee({
         palette,
         chrome,
-        colors
-      }) 
-      themeData.name = pascalCase(`${mode}.${label}`)
-       console.log(themeData.name);
+        colors,
+      })
+      themeData.name = pascalCase(`${ mode }.${ label }`)
+      console.log(themeData.name)
 
-      writeJsonAnt(`themes/${themeData.name}.json`, themeData)
+      writeJsonAnt(`themes/${ themeData.name }.json`, themeData)
     }
   )(SETTINGS)
   const exported = readJsonAnt(
