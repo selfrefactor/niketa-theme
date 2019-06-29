@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
-import { switcher, random, remove, replace, shuffle, map, findIndex } from 'rambdax'
+import { switcher, random, remove, replace, map, findIndex } from 'rambdax'
 
 import * as three from '../../../palettes/baseDataThree'
 import * as four from '../../../palettes/baseDataFour'
@@ -16,10 +16,10 @@ const hash = {
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
 
-function save(label, data){
+function save({ label, mode, data }){
   const output = resolve(
     __dirname,
-    `../../../palettes/generated/${ label }.json`
+    `../../../palettes/${ mode }/${ label }.json`
   )
   outputFileSync(output, JSON.stringify(data, null, 2))
 }
@@ -90,6 +90,7 @@ export function generateBase(label, mode = 'three', baseData){
 
   Object.entries(baseData)
     .forEach(([ color, syntaxInstances ]) => {
+      console.log(color, syntaxInstances)
 
       syntaxInstances
         .forEach(syntaxInstanceRaw => {
@@ -112,10 +113,12 @@ export function generateBase(label, mode = 'three', baseData){
     ...baseBase,
     tokenColors,
   }
-  console.log(label)
-  console.log(themeBase)
 
-  // save(label, themeBase)
+  save({
+    label,
+    mode,
+    data : themeBase,
+  })
 }
 
 const colorsKeys = [

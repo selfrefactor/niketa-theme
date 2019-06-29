@@ -71,18 +71,27 @@ test.skip('with permutation', () => {
   }).not.toThrow()
 })
 
-test('fair random - 4', () => {
+test.skip('fair random', () => {
+  // const levels = 3
+  // const mode = 'three'
   const levels = 4
-  const setOfRandomsRaw = permutation(100)
+  const mode = 'four'
+  // const levels = 5
+  // const mode = 'five' 
+  // const levels = 6
+  // const mode = 'six'
+  const setOfRandomsRaw = permutation(100, take(levels, PERMUTATION_BASE))
   const setOfRandoms = applyFairness({
     setOfRandoms : setOfRandomsRaw,
     levels,
-    accordingTo  : take(4,PERMUTATION_BASE),
+    accordingTo  : take(levels, PERMUTATION_BASE),
   })
+  const withLimit = take(24, setOfRandoms)
+  console.log(withLimit)
 
   expect(() => {
-    setOfRandoms.forEach(
-      (singleSet, i) => generateBaseRandom(`_${ i }`, singleSet)
+    withLimit.forEach(
+      (singleSet, i) => generateBaseRandom(`_${ i }`, singleSet, mode)
     )
   }).not.toThrow()
 })

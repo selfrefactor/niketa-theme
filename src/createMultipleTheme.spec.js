@@ -66,77 +66,63 @@ const baseColors = {
 
 const base = resolve(__dirname, '../palettes')
 
+const SETTINGS_DEV = () => ({
+  COLOR_0 : '#063672',
+  COLOR_1 : '#ff5177',
+  COLOR_2 : '#b76144',
+  COLOR_3 : '#0068a8',
+})
+
 const SETTINGS = {}
-// To test all palletes
-// ============================================
-SETTINGS.DEV = () => ({
-  fourColors : true,
-  COLOR_0    : '#063672',
-  COLOR_1    : '#ff5177',
-  COLOR_2    : '#b76144',
-  COLOR_3    : '#0068a8',
-})
-
 SETTINGS[ 0 ] = () => ({
-  label      : 'dancing.days',
-  fourColors : true,
-  COLOR_0    : '#612e5d',
-  COLOR_1    : '#ae8d60',
-  COLOR_2    : '#7e9a64',
-  COLOR_3    : '#35495f',
+  mode    : 'advanced',
+  label   : 'bat',
+  COLOR_0 : '#612e5d',
+  COLOR_1 : '#ae8d60',
+  COLOR_2 : '#7e9a64',
+  COLOR_3 : '#35495f',
 })
 
-// Old version
-// ============================================
-// SETTINGS[ 0 ] = () => ({
+// SETTINGS[ 1 ] = () => ({
 //   yellowBack : true,
 //   brightBack : true,
-//   label      : 'dancing.days',
-//   COLOR_0    : '#612e5d',
-//   COLOR_1    : '#ae8d60',
-//   COLOR_2    : '#7e9a64',
+//   label      : 'heartbreaker',
+//   COLOR_0    : '#9C8058',
+//   COLOR_1    : '#f26153',
+//   COLOR_2    : '#096165',
 // })
-
-SETTINGS[ 1 ] = () => ({
-  yellowBack : true,
-  brightBack : true,
-  label      : 'heartbreaker',
-  COLOR_0    : '#9C8058',
-  COLOR_1    : '#f26153',
-  COLOR_2    : '#096165',
-})
-SETTINGS[ 2 ] = () => ({
-  yellowBack : true,
-  brightBack : true,
-  label      : 'in.light',
-  COLOR_0    : '#A0595E',
-  COLOR_1    : '#3782AF',
-  COLOR_2    : '#0d8a81',
-})
-SETTINGS[ 3 ] = () => ({
-  yellowBack : false,
-  brightBack : true,
-  label      : 'lemon.song',
-  COLOR_0    : '#1E416E',
-  COLOR_1    : '#38978D',
-  COLOR_2    : '#B97444',
-})
-SETTINGS[ 4 ] = () => ({
-  yellowBack : false,
-  brightBack : true,
-  label      : 'since.loving',
-  COLOR_0    : '#B1365B',
-  COLOR_1    : '#5F7E97',
-  COLOR_2    : '#9F7E6B',
-})
-SETTINGS[ 5 ] = () => ({
-  yellowBack : false,
-  brightBack : true,
-  label      : 'tea.for',
-  COLOR_0    : '#89325f',
-  COLOR_1    : '#b56e30',
-  COLOR_2    : '#356a6d',
-})
+// SETTINGS[ 2 ] = () => ({
+//   yellowBack : true,
+//   brightBack : true,
+//   label      : 'in.light',
+//   COLOR_0    : '#A0595E',
+//   COLOR_1    : '#3782AF',
+//   COLOR_2    : '#0d8a81',
+// })
+// SETTINGS[ 3 ] = () => ({
+//   yellowBack : false,
+//   brightBack : true,
+//   label      : 'lemon.song',
+//   COLOR_0    : '#1E416E',
+//   COLOR_1    : '#38978D',
+//   COLOR_2    : '#B97444',
+// })
+// SETTINGS[ 4 ] = () => ({
+//   yellowBack : false,
+//   brightBack : true,
+//   label      : 'since.loving',
+//   COLOR_0    : '#B1365B',
+//   COLOR_1    : '#5F7E97',
+//   COLOR_2    : '#9F7E6B',
+// })
+// SETTINGS[ 5 ] = () => ({
+//   yellowBack : false,
+//   brightBack : true,
+//   label      : 'tea.for',
+//   COLOR_0    : '#89325f',
+//   COLOR_1    : '#b56e30',
+//   COLOR_2    : '#356a6d',
+// })
 
 function createSingleTheme(index){
   return new Promise(resolve => {
@@ -180,7 +166,7 @@ function createFourColorTheme(index){
 
 test.skip('try all palletes', done => {
   jest.setTimeout(60000)
-  const loop = range(0,6)
+  const loop = range(0, 6)
   const correction = 12
   // No more than six palletes
   // ============================================
@@ -223,6 +209,15 @@ test.skip('export all', done => {
   }))
 
   Promise.all(promised).then(() => done())
+})
+
+async function findBestTheme(){
+
+}
+
+test('find best pallete', async () => {
+  const a = await findBestTheme()
+  // expect().toBe()
 })
 
 function getFilePathRandom(index, fourColors){

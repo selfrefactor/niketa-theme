@@ -90,28 +90,7 @@ export const COLOR_3 = [
 export const baseBase = {
   name   : '_Palette',
   type   : 'light',
-  colors : {
-    'diffEditor.removedTextBackground'  : '#64B5F655',
-    'diffEditor.insertedTextBackground' : '#9c824a55',
-    'editor.background'                 : 'COLOR_BACK',
-    'activityBar.background'            : 'COLOR_SECONDARY',
-    'editor.selectionBackground'        : 'COLOR_SELECTION',
-    'editorBracketMatch.background'     : 'COLOR_2_DARKER',
-    'editorBracketMatch.border'         : 'COLOR_3_DARKER',
-    'editorGroupHeader.tabsBackground'  : 'COLOR_BACK_DARK',
-    'editorGutter.background'           : 'COLOR_BACK',
-    'editorLineNumber.foreground'       : 'COLOR_SECONDARY_DARKER',
-    'scrollbarSlider.background'        : 'COLOR_SECONDARY',
-    'scrollbarSlider.hoverBackground'   : 'COLOR_SECONDARY_DARKER',
-    'sideBar.background'                : 'COLOR_SECONDARY_DARK',
-    'statusBar.background'              : 'COLOR_SECONDARY_DARKEST',
-    'editor.lineHighlightBackground'    : 'COLOR_BACK_DARK',
-    'tab.inactiveForeground'            : 'COLOR_BACK_DARK',
-    'tab.inactiveBackground'            : 'COLOR_SECONDARY_DARKEST',
-    'tab.activeForeground'              : 'COLOR_SECONDARY_DARKEST',
-    'tab.activeBackground'              : 'COLOR_BACK_DARK',
-    'tab.border'                        : 'COLOR_BACK',
-  },
+  colors : {},
 }
 
 export const baseData = {
@@ -120,10 +99,3 @@ export const baseData = {
   COLOR_2,
   COLOR_3,
 }
-
-export const all = [
-  ...COLOR_0,
-  ...COLOR_1,
-  ...COLOR_2,
-  ...COLOR_3,
-]
