@@ -1,3 +1,5 @@
+import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
+import { saveThemeBee } from './bees/saveTheme'
 import { generateThemeDataBee } from './bees/generateThemeData'
 import { delay, range, pick, omit, switcher, maybe, map, mergeAll } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
@@ -270,33 +272,45 @@ function generateThemeData({ palette, chrome, colors }){
       return tokenColor
     }
   )(palette.tokenColors)
-  console.log(newTokenColors)
 
-  // palette.tokenColors.map(singleRule => {
-  //   // console.log(singleRule.settings.foreground, sk)
+  const newTheme = {
+    ...palette,
+    colors: chrome,
+    tokenColors: newTokenColors
+  }
 
-  // })
+  return newTheme
 }
 
 async function findBestTheme(){
   const chrome = getChrome(SETTINGS_DEV.mode)
   const paletteMode = maybe(
     SETTINGS_DEV.COLOR_5,
-    'six',
-    SETTINGS_DEV.COLOR_4 ? 'five' : maybe(
+    {mode: 'six', levels: 24},
+    SETTINGS_DEV.COLOR_4 ? {mode: 'five', levels: 24} : maybe(
       SETTINGS_DEV.COLOR_3,
-      'four',
-      'three'
+      {mode: 'four', levels: 20},
+      {mode: 'three', levels: 6}
     )
   )
-  console.log({ paletteMode })
-  const palette = readJsonAnt(`palettes/${ paletteMode }/_1.json`)
-  const a = generateThemeData({
-    palette,
-    chrome,
-    colors : omit('mode', SETTINGS_DEV),
+
+  const toPackageJson = range(0,paletteMode.levels).map(i => {
+    const palette = readJsonAnt(`palettes/${ paletteMode.mode }/_${i}.json`)
+    const themeData = generateThemeData({
+      palette,
+      chrome,
+      colors : omit('mode', SETTINGS_DEV),
+    })
+
+    const label = saveThemeBee(themeData, i)
+    return {
+      label,
+      uiTheme : 'vs',
+      path    : `./baboon/${ label }.json`,
+    }
   })
 
+  saveToPackageJsonAnt(toPackageJson)
 }
 
 test('find best pallete', async () => {
