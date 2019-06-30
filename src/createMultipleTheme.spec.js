@@ -119,16 +119,16 @@ SETTINGS[ 7 ] = {
   COLOR_3 : '#884b50',
   COLOR_4 : '#B84251',
   COLOR_5 : '#406F64',
-}
+} 
 SETTINGS[ 8 ] = {
   back    : '#f3f0e0',
   mode    : 'brave',
   label   : 'love',
   COLOR_0 : '#5482ab',
   COLOR_1 : '#7e1b24',
-  COLOR_2 : '#466261',
-  COLOR_3 : '#A24877',
-}
+  // COLOR_2 : '#245115',
+  COLOR_2 : '#A24877',
+}  
 // lemon song
 SETTINGS[ 9 ] = {
   back    : '#f3f0e0',
@@ -176,9 +176,9 @@ SETTINGS[ 13 ] = {
 SETTINGS[ 14 ] = {
   mode    : 'niketa',
   label   : 'owl',
-  COLOR_0 : '#2f586f',
+  COLOR_2 : '#2f586f',
   COLOR_1 : '#8c7647',
-  COLOR_2 : '#df5831',
+  COLOR_0 : '#df5831',
 }
 SETTINGS[ 15 ] = {
   mode    : 'niketa',
