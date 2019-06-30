@@ -146,6 +146,15 @@ SETTINGS[ 10 ] = {
   COLOR_2 : '#427BB0',
   COLOR_3 : '#d8576a',
 }
+// label      : 'since.loving',
+SETTINGS[ 11 ] = {
+  back: '#f9f6f1',
+  mode    : 'circus',
+  label   : 'brother',
+  COLOR_0    : '#B1365B',
+  COLOR_1    : '#5F7E97',
+  COLOR_2    : '#9F7E6B',
+}
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
@@ -214,3 +223,15 @@ test('happy', () => {
     1
   ).toBeTruthy()
 })
+
+/*
+  Brother alternative
+  SETTINGS[ 11 ] = {
+  back: '#f6f4e8',
+  mode    : 'circus',
+  label   : 'brother',
+  COLOR_1: "#ad404f",
+  COLOR_0: "#57668f",
+  COLOR_2: "#968420"
+}
+*/
