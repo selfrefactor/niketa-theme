@@ -129,6 +129,15 @@ SETTINGS[ 8 ] = {
   COLOR_2 : '#466261',
   COLOR_3 : '#A24877',
 }
+// lemon song
+SETTINGS[ 9 ] = {
+  back: '#f3f0e0',
+  mode    : 'brave',
+  label   : 'neighbour',
+  COLOR_0    : '#1E416E',
+  COLOR_1    : '#38978D',
+  COLOR_2    : '#B97444',
+}
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
