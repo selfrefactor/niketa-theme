@@ -2,28 +2,35 @@ import { writeJsonAnt } from './ants/writeJson'
 import { pascalCase } from 'string-fn'
 import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { generateThemeDataBee } from './bees/generateThemeData'
-import { createPaletteTheme, createPaletteRule } from './createPaletteTheme'
-import { saveThemeBee } from './bees/saveTheme'
 import { readJsonAnt } from './ants/readJson'
-import { delay, range, pick, omit, switcher, maybe, map, mergeAll, defaultTo } from 'rambdax'
+import {  maybe, map, defaultTo } from 'rambdax'
 
 export const baseColors = {
   'diffEditor.removedTextBackground'  : '#64B5F655',
   'diffEditor.insertedTextBackground' : '#9c824a55',
-  'activityBar.background'            : '#cccdc5f1',
+  'activityBar.background'            : '#C4BE9D',
+  // 'activityBar.background'            : '#cccdc5f2',
   'editor.selectionBackground'        : '#94525755',
   'editorBracketMatch.background'     : '#B1365Bf3',
   'editorBracketMatch.border'         : '#9F7E6Bf3',
   'editorGroupHeader.tabsBackground'  : '#F2EBE1',
   'editorLineNumber.foreground'       : '#2a3343a9',
-  'scrollbarSlider.background'        : '#cccdc5f1',
-  'scrollbarSlider.hoverBackground'   : '#cccdc5f3',
-  'sideBar.background'                : '#cccdc5f3',
-  'statusBar.background'              : '#cccdc5f3',
+  'scrollbarSlider.background'        : '#C4BE9D',
+  'scrollbarSlider.hoverBackground'   : '#C4BE9D',
+  'sideBar.background'                : '#C4BE9D',
+  'statusBar.background'              : '#C4BE9D',
   'editor.lineHighlightBackground'    : '#F2EBE1',
+  "tab.activeBackground": "#35495f",
   'tab.inactiveForeground'            : '#fafafa',
   'tab.inactiveBackground'            : '#859da9e9',
-  'tab.activeForeground'              : '#2a3343e9',
+  // 'tab.activeBackground'            : '#C4BE9D',
+} 
+
+function getBaseColors(back){
+  return {
+    ...baseColors,
+    'tab.activeBackground'            : back,
+  }
 }
 
 const SETTINGS = {}
@@ -60,9 +67,9 @@ SETTINGS[ 2 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'engine',
-  COLOR_0    : '#1E416E',
-  COLOR_1    : '#38978D',
-  COLOR_2    : '#B97444',
+  COLOR_0 : '#1E416E',
+  COLOR_1 : '#38978D',
+  COLOR_2 : '#B97444',
 }
 // heartbreaker
 SETTINGS[ 3 ] = {
@@ -98,28 +105,32 @@ SETTINGS[ 5 ] = {
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
+    const actualBack = defaultTo('#FAF8F3', back)
     return {
-      ...baseColors,
-      'editor.background' : defaultTo('#FAF8F3', back),
+      ...getBaseColors(actualBack),
+      'editor.background' : actualBack,
     }
   }
   if (mode === 'brave'){
+    const actualBack = defaultTo('#f3f0e0', back)
     return {
-      ...baseColors,
-      'editor.background' : defaultTo('#f3f0e0', back),
-    }
-  }
-  if (mode === 'circus'){
-    return {
-      ...baseColors,
-      'editor.background' : defaultTo('#ede8e1', back),
+      ...getBaseColors(actualBack),
+      'editor.background' : actualBack,
     }
   }
 
-  return {
-    ...baseColors,
-    'editor.background' : defaultTo('#d8d5c9', back),
+  if (mode === 'circus'){
+    const actualBack = defaultTo('#ede8e1', back)
+    return {
+      ...getBaseColors(actualBack),
+      'editor.background' : actualBack,
+    }
   }
+    const actualBack = defaultTo('#d8d5c9', back)
+    return {
+      ...getBaseColors(actualBack),
+      'editor.background' : actualBack,
+    }
 }
 
 test('happy', () => {
@@ -151,4 +162,7 @@ test('happy', () => {
     'exported.json'
   )
   saveToPackageJsonAnt(exported)
+  expect(
+    1
+  ).toBeTruthy()
 })
