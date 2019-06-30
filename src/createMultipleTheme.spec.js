@@ -155,6 +155,15 @@ SETTINGS[ 11 ] = {
   COLOR_1    : '#5F7E97',
   COLOR_2    : '#9F7E6B',
 }
+// label      : 'tea.for'
+SETTINGS[ 12 ] = {
+  back: '#f9f6f1',
+  mode    : 'circus',
+  label   : 'people',
+  COLOR_0    : '#89325f',
+  COLOR_1    : '#b56e30',
+  COLOR_2    : '#356a6d',
+}
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
@@ -233,5 +242,18 @@ test('happy', () => {
   COLOR_1: "#ad404f",
   COLOR_0: "#57668f",
   COLOR_2: "#968420"
+}
+*/
+
+/*
+  SETTINGS[ 12 ] = {
+  back: '#f3f3e2',
+  mode    : 'circus',
+  label   : 'people',
+  COLOR_0: "#23515F",
+  COLOR_1: "#C03A71",
+  COLOR_2: "#A17798",
+  COLOR_3: "#245115",
+  COLOR_4: "#256FA1"
 }
 */
