@@ -120,6 +120,15 @@ SETTINGS[ 7 ] = {
   COLOR_4 : '#B84251',
   COLOR_5 : '#406F64',
 }
+SETTINGS[ 8 ] = {
+  back: '#f3f0e0',
+  mode    : 'brave',
+  label   : 'love',
+  COLOR_0 : '#5482ab',
+  COLOR_1 : '#7e1b24',
+  COLOR_2 : '#466261',
+  COLOR_3 : '#A24877',
+}
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
