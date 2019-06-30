@@ -42,6 +42,7 @@ const THEMES = [
   'advanced.dog',
   'advanced.engine',
   'advanced.hook',
+  'advanced.immigrant',
   'advanced.mystery',
   'brave.habits',
   'brave.love',
