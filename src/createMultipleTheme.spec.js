@@ -148,39 +148,38 @@ SETTINGS[ 10 ] = {
 }
 // label      : 'since.loving',
 SETTINGS[ 11 ] = {
-  back: '#f9f6f1',
+  back    : '#f9f6f1',
   mode    : 'circus',
   label   : 'brother',
-  COLOR_0    : '#B1365B',
-  COLOR_1    : '#5F7E97',
-  COLOR_2    : '#9F7E6B',
+  COLOR_0 : '#B1365B',
+  COLOR_1 : '#5F7E97',
+  COLOR_2 : '#9F7E6B',
 }
 // label      : 'tea.for'
 SETTINGS[ 12 ] = {
-  back: '#f9f6f1',
+  back    : '#f9f6f1',
   mode    : 'circus',
   label   : 'people',
-  COLOR_0    : '#89325f',
-  COLOR_1    : '#b56e30',
-  COLOR_2    : '#356a6d',
+  COLOR_0 : '#89325f',
+  COLOR_1 : '#b56e30',
+  COLOR_2 : '#356a6d',
 }
 // label      : 'in.light',
 SETTINGS[ 13 ] = {
   mode    : 'circus',
   label   : 'whisky',
-  COLOR_0    : '#3782AF',
-  COLOR_1    : '#0d8a81',
-  COLOR_2    : '#A0595E',
+  COLOR_0 : '#3782AF',
+  COLOR_1 : '#0d8a81',
+  COLOR_2 : '#A0595E',
 }
-// SETTINGS[ 13 ] = {
-//   back: '#f9f6f1',
-//   mode    : 'circus',
-//   label   : 'whisky',
-//   COLOR_0: "#C43742",
-//   COLOR_1: "#268bd2",
-//   COLOR_2: "#974545",
-//   COLOR_3: "#4e5f52",
-// }
+
+SETTINGS[ 14 ] = {
+  mode    : 'niketa',
+  label   : 'owl',
+  COLOR_0 : '#2f586f',
+  COLOR_1 : '#8c7647',
+  COLOR_2 : '#df5831',
+}
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
