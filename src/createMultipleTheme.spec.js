@@ -109,6 +109,17 @@ SETTINGS[ 6 ] = {
   COLOR_2 : '#6a3951',
   COLOR_3 : '#4EBFBB',
 }
+SETTINGS[ 7 ] = {
+  back: '#f3f0e0',
+  mode    : 'brave',
+  label   : 'homer',
+  COLOR_0 : '#AD8310',
+  COLOR_1 : '#3782AF',
+  COLOR_2 : '#E0AA15',
+  COLOR_3 : '#884b50',
+  COLOR_4 : '#B84251',
+  COLOR_5 : '#406F64',
+}
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
