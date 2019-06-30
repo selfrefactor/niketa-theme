@@ -164,6 +164,23 @@ SETTINGS[ 12 ] = {
   COLOR_1    : '#b56e30',
   COLOR_2    : '#356a6d',
 }
+// label      : 'in.light',
+SETTINGS[ 13 ] = {
+  mode    : 'circus',
+  label   : 'whisky',
+  COLOR_0    : '#3782AF',
+  COLOR_1    : '#0d8a81',
+  COLOR_2    : '#A0595E',
+}
+// SETTINGS[ 13 ] = {
+//   back: '#f9f6f1',
+//   mode    : 'circus',
+//   label   : 'whisky',
+//   COLOR_0: "#C43742",
+//   COLOR_1: "#268bd2",
+//   COLOR_2: "#974545",
+//   COLOR_3: "#4e5f52",
+// }
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
