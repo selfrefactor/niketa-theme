@@ -52,7 +52,7 @@ SETTINGS[ 1 ] = {
   COLOR_3 : '#861D4FCF',
   COLOR_4 : '#4381A8E9',
 }
-SETTINGS[ 1 ] = {
+SETTINGS[ 17 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'dog',
@@ -179,6 +179,22 @@ SETTINGS[ 14 ] = {
   COLOR_0 : '#2f586f',
   COLOR_1 : '#8c7647',
   COLOR_2 : '#df5831',
+}
+SETTINGS[ 15 ] = {
+  mode    : 'niketa',
+  label   : 'bear',
+  COLOR_0: "#C66534",
+  COLOR_1: "#3c6e5b",
+  COLOR_2: "#532053",
+  COLOR_3: "#9e386a",
+}
+SETTINGS[ 16 ] = {
+  mode    : 'niketa',
+  label   : 'moon',
+  back   : '#c1bcae',
+  COLOR_0: "#696040",
+  COLOR_1: "#295879",
+  COLOR_2: "#7f0c29",
 }
 
 export function getChrome(mode, back){
