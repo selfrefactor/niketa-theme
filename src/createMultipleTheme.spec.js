@@ -23,7 +23,6 @@ export const baseColors = {
   "tab.activeBackground": "#35495f",
   'tab.inactiveForeground'            : '#fafafa',
   'tab.inactiveBackground'            : '#859da9e9',
-  // 'tab.activeBackground'            : '#C4BE9D',
 } 
 
 function getBaseColors(back){
@@ -101,6 +100,14 @@ SETTINGS[ 5 ] = {
   COLOR_3 : '#E9630D',
   COLOR_4 : '#508546',
   COLOR_5 : '#880e4f',
+}
+SETTINGS[ 6 ] = {
+  mode    : 'brave',
+  label   : 'habits',
+  COLOR_0 : '#D27837',
+  COLOR_1 : '#3b6160bb',
+  COLOR_2 : '#6a3951',
+  COLOR_3 : '#4EBFBB',
 }
 
 export function getChrome(mode, back){
