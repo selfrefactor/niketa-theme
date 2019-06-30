@@ -3,7 +3,7 @@ import { pascalCase } from 'string-fn'
 import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { generateThemeDataBee } from './bees/generateThemeData'
 import { readJsonAnt } from './ants/readJson'
-import {  maybe, map, defaultTo } from 'rambdax'
+import { maybe, map, defaultTo } from 'rambdax'
 
 export const baseColors = {
   'diffEditor.removedTextBackground'  : '#64B5F655',
@@ -20,15 +20,15 @@ export const baseColors = {
   'sideBar.background'                : '#C4BE9D',
   'statusBar.background'              : '#C4BE9D',
   'editor.lineHighlightBackground'    : '#F2EBE1',
-  "tab.activeBackground": "#35495f",
+  'tab.activeBackground'              : '#35495f',
   'tab.inactiveForeground'            : '#fafafa',
   'tab.inactiveBackground'            : '#859da9e9',
-} 
+}
 
 function getBaseColors(back){
   return {
     ...baseColors,
-    'tab.activeBackground'            : back,
+    'tab.activeBackground' : back,
   }
 }
 
@@ -110,7 +110,7 @@ SETTINGS[ 6 ] = {
   COLOR_3 : '#4EBFBB',
 }
 SETTINGS[ 7 ] = {
-  back: '#f3f0e0',
+  back    : '#f3f0e0',
   mode    : 'brave',
   label   : 'homer',
   COLOR_0 : '#AD8310',
@@ -121,7 +121,7 @@ SETTINGS[ 7 ] = {
   COLOR_5 : '#406F64',
 }
 SETTINGS[ 8 ] = {
-  back: '#f3f0e0',
+  back    : '#f3f0e0',
   mode    : 'brave',
   label   : 'love',
   COLOR_0 : '#5482ab',
@@ -131,17 +131,26 @@ SETTINGS[ 8 ] = {
 }
 // lemon song
 SETTINGS[ 9 ] = {
-  back: '#f3f0e0',
+  back    : '#f3f0e0',
   mode    : 'brave',
   label   : 'neighbour',
-  COLOR_0    : '#1E416E',
-  COLOR_1    : '#38978D',
-  COLOR_2    : '#B97444',
+  COLOR_0 : '#1E416E',
+  COLOR_1 : '#38978D',
+  COLOR_2 : '#B97444',
+}
+SETTINGS[ 10 ] = {
+  mode    : 'circus',
+  label   : 'ajax',
+  COLOR_0 : '#5c4c78',
+  COLOR_1 : '#399090',
+  COLOR_2 : '#427BB0',
+  COLOR_3 : '#d8576a',
 }
 
 export function getChrome(mode, back){
   if (mode === 'advanced'){
     const actualBack = defaultTo('#FAF8F3', back)
+
     return {
       ...getBaseColors(actualBack),
       'editor.background' : actualBack,
@@ -149,6 +158,7 @@ export function getChrome(mode, back){
   }
   if (mode === 'brave'){
     const actualBack = defaultTo('#f3f0e0', back)
+
     return {
       ...getBaseColors(actualBack),
       'editor.background' : actualBack,
@@ -157,16 +167,18 @@ export function getChrome(mode, back){
 
   if (mode === 'circus'){
     const actualBack = defaultTo('#ede8e1', back)
+
     return {
       ...getBaseColors(actualBack),
       'editor.background' : actualBack,
     }
   }
-    const actualBack = defaultTo('#d8d5c9', back)
-    return {
-      ...getBaseColors(actualBack),
-      'editor.background' : actualBack,
-    }
+  const actualBack = defaultTo('#d8d5c9', back)
+
+  return {
+    ...getBaseColors(actualBack),
+    'editor.background' : actualBack,
+  }
 }
 
 test('happy', () => {
