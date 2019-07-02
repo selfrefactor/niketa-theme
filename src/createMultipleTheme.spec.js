@@ -119,7 +119,7 @@ SETTINGS[ 7 ] = {
   COLOR_3 : '#884b50',
   COLOR_4 : '#B84251',
   COLOR_5 : '#406F64',
-} 
+}
 SETTINGS[ 8 ] = {
   back    : '#f3f0e0',
   mode    : 'brave',
@@ -128,7 +128,7 @@ SETTINGS[ 8 ] = {
   COLOR_1 : '#7e1b24',
   // COLOR_2 : '#245115',
   COLOR_2 : '#A24877',
-}  
+}
 // lemon song
 SETTINGS[ 9 ] = {
   back    : '#f3f0e0',
@@ -183,18 +183,18 @@ SETTINGS[ 14 ] = {
 SETTINGS[ 15 ] = {
   mode    : 'niketa',
   label   : 'bear',
-  COLOR_0: "#C66534",
-  COLOR_1: "#3c6e5b",
-  COLOR_2: "#532053",
-  COLOR_3: "#9e386a",
+  COLOR_0 : '#C66534',
+  COLOR_1 : '#3c6e5b',
+  COLOR_2 : '#532053',
+  COLOR_3 : '#9e386a',
 }
 SETTINGS[ 16 ] = {
   mode    : 'niketa',
   label   : 'moon',
-  back   : '#c1bcae',
-  COLOR_0: "#696040",
-  COLOR_1: "#295879",
-  COLOR_2: "#7f0c29",
+  back    : '#c1bcae',
+  COLOR_0 : '#696040',
+  COLOR_1 : '#295879',
+  COLOR_2 : '#7f0c29',
 }
 
 export function getChrome(mode, back){
