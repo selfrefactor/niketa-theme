@@ -3,33 +3,39 @@ import { pascalCase } from 'string-fn'
 import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { generateThemeDataBee } from './bees/generateThemeData'
 import { readJsonAnt } from './ants/readJson'
-import { maybe, map, defaultTo } from 'rambdax'
+import { maybe, map, defaultTo, replace, switcher } from 'rambdax'
 
 export const baseColors = {
   'diffEditor.removedTextBackground'  : '#64B5F655',
   'diffEditor.insertedTextBackground' : '#9c824a55',
   'activityBar.background'            : '#C4BE9D',
-  // 'activityBar.background'            : '#cccdc5f2',
-  'editor.selectionBackground'        : '#94525755',
+  'editor.selectionBackground'        : 'MAIN_COLOR55',
   'editorBracketMatch.background'     : '#B1365Bf3',
   'editorBracketMatch.border'         : '#9F7E6Bf3',
-  'editorGroupHeader.tabsBackground'  : '#F2EBE1',
+  'editorGroupHeader.tabsBackground'  : 'MAIN_COLOR',
   'editorLineNumber.foreground'       : '#2a3343a9',
-  'scrollbarSlider.background'        : '#C4BE9D',
+  'scrollbarSlider.background'        : 'MAIN_COLOR',
   'scrollbarSlider.hoverBackground'   : '#C4BE9D',
-  'sideBar.background'                : '#C4BE9D',
-  'statusBar.background'              : '#C4BE9D',
-  'editor.lineHighlightBackground'    : '#F2EBE1',
-  'tab.activeBackground'              : '#35495f',
-  'tab.inactiveForeground'            : '#fafafa',
-  'tab.inactiveBackground'            : '#859da9e9',
+  'sideBar.background'                : 'MAIN_COLOR',
+  'statusBar.background'              : 'MAIN_COLOR',
+  'editor.lineHighlightBackground'    : 'MAIN_COLOR25',
+  'tab.activeBackground'              : '#FAF8F3',
+  'tab.activeForeground'              : '#35495f',
+  'tab.inactiveForeground'            : '#fff',
+  'tab.inactiveBackground'            : 'MAIN_COLOR',
+  'editor.background'                 : '#FAF8F3',
 }
 
-function getBaseColors(back){
-  return {
-    ...baseColors,
-    'tab.activeBackground' : back,
-  }
+function getBaseColors(mode){
+  const chromeMainColor = switcher(mode)
+    .is('advanced', '#bdc3c7')
+    .is('brave', '#bbc0c4')
+    .is('circus', '#b7bcbf')
+    .default('#b0b4b4')
+
+  return map(
+    color => replace('MAIN_COLOR', chromeMainColor, color)
+  )(baseColors)
 }
 
 const SETTINGS = {}
@@ -105,12 +111,11 @@ SETTINGS[ 6 ] = {
   mode    : 'brave',
   label   : 'habits',
   COLOR_0 : '#D27837',
-  COLOR_1 : '#3b6160bb',
+  COLOR_1 : '#3b6160',
   COLOR_2 : '#6a3951',
-  COLOR_3 : '#4EBFBB',
+  COLOR_3 : '#60b6b1',
 }
 SETTINGS[ 7 ] = {
-  back    : '#f3f0e0',
   mode    : 'brave',
   label   : 'homer',
   COLOR_0 : '#AD8310',
@@ -121,17 +126,14 @@ SETTINGS[ 7 ] = {
   COLOR_5 : '#406F64',
 }
 SETTINGS[ 8 ] = {
-  back    : '#f3f0e0',
   mode    : 'brave',
   label   : 'love',
   COLOR_0 : '#5482ab',
   COLOR_1 : '#7e1b24',
-  // COLOR_2 : '#245115',
   COLOR_2 : '#A24877',
 }
 // lemon song
 SETTINGS[ 9 ] = {
-  back    : '#f3f0e0',
   mode    : 'brave',
   label   : 'neighbour',
   COLOR_0 : '#1E416E',
@@ -198,11 +200,12 @@ SETTINGS[ 16 ] = {
 }
 
 export function getChrome(mode, back){
+  const baseToApply = getBaseColors(mode)
   if (mode === 'advanced'){
     const actualBack = defaultTo('#FAF8F3', back)
 
     return {
-      ...getBaseColors(actualBack),
+      ...baseToApply,
       'editor.background' : actualBack,
     }
   }
@@ -210,7 +213,7 @@ export function getChrome(mode, back){
     const actualBack = defaultTo('#f3f0e0', back)
 
     return {
-      ...getBaseColors(actualBack),
+      ...baseToApply,
       'editor.background' : actualBack,
     }
   }
@@ -219,14 +222,14 @@ export function getChrome(mode, back){
     const actualBack = defaultTo('#ede8e1', back)
 
     return {
-      ...getBaseColors(actualBack),
+      ...baseToApply,
       'editor.background' : actualBack,
     }
   }
   const actualBack = defaultTo('#d8d5c9', back)
 
   return {
-    ...getBaseColors(actualBack),
+    ...baseToApply,
     'editor.background' : actualBack,
   }
 }
@@ -251,7 +254,6 @@ test('happy', () => {
         colors,
       })
       themeData.name = pascalCase(`${ mode }.${ label }`)
-      console.log(themeData.name)
 
       writeJsonAnt(`themes/${ themeData.name }.json`, themeData)
     }
