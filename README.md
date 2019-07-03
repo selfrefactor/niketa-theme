@@ -118,6 +118,10 @@
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
 
+## Git diff
+
+Git diff colors are blue and ochra similar to the ones suggested in the article [Your syntax highlighter is wrong](https://jameshfisher.com/2014/05/11/your-syntax-highlighter-is-wrong/)
+
 ## Naming conventions
 
 Replace `foo, bar, baz` with their equally irrelevant substitutes.
@@ -157,35 +161,33 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 ## Zeppelin themes
 
-Tre color spin-off from `Niketa` themes.
-
-Git diff colors are blue and ochra similar to the ones suggested in the article [Your syntax highlighter is wrong](https://jameshfisher.com/2014/05/11/your-syntax-highlighter-is-wrong/)
-
-> Later the colors of `Zeppelin` themes are integrated in `Niketa` themes and this caused the major bump to version `8.0.0`
+Three-color spin-off from `Niketa` themes which is already integrated in `Niketa` themes with the major bump to version `8.0.0`.
 
 ### ZeppelinDancingDays
 
-![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/dancing.days.png?raw=true)
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/dancing.days.png?raw=true)
 
 ### ZeppelinHeartbreaker
 
-![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/heartbreaker.png?raw=true)
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/heartbreaker.png?raw=true)
 
 ### ZeppelinInLight
 
-![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/in.light.png?raw=true)
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/in.light.png?raw=true)
 
 ### ZeppelinLemonSong
 
-![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/lemon.song.png?raw=true)
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/lemon.song.png?raw=true)
 
 ### ZeppelinSinceLoving
 
-![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/since.loving.png?raw=true)
+> update
+
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/since.loving.png?raw=true)
 
 ### ZeppelinTeaFor
 
-![vscode screen](https://github.com/selfrefactor/zeppelin-themes/blob/master/files/tea.for.png?raw=true)
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/tea.for.png?raw=true)
 
 ## Dark themes
 
