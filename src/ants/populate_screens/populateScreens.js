@@ -24,7 +24,7 @@ export function populateScreensAnt(){
     x => `${ lernaBase }/${ snakeCase(x) }/theme/${ dotCase(x) }.png`
   )
   screensSources.forEach((screenPath, i) => {
-    console.log(i, screenPath); 
+    console.log(i, screenPath)
 
     copySync(screenPath, screenDestinations[ i ])
     copySync(screenPath, lernaDestinations[ i ])
