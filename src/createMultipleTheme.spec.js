@@ -19,23 +19,27 @@ export const baseColors = {
   'sideBar.background'                : 'MAIN_COLOR',
   'statusBar.background'              : 'MAIN_COLOR',
   'editor.lineHighlightBackground'    : 'MAIN_COLOR25',
-  'tab.activeBackground'              : '#FAF8F3',
+  'tab.activeBackground'              : 'BACK_COLOR',
   'tab.activeForeground'              : '#35495f',
   'tab.inactiveForeground'            : '#fff',
   'tab.inactiveBackground'            : 'MAIN_COLOR',
   'editor.background'                 : '#FAF8F3',
 }
 
-function getBaseColors(mode){
+function getBaseColors(mode, actualBack){
   const chromeMainColor = switcher(mode)
     .is('advanced', '#bdc3c7')
     .is('brave', '#bbc0c4')
     .is('circus', '#b7bcbf')
     .default('#b0b4b4')
 
-  return map(
+  const withMainColor = map(
     color => replace('MAIN_COLOR', chromeMainColor, color)
   )(baseColors)
+
+  return map(
+    color => replace('BACK_COLOR', actualBack, color)
+  )(withMainColor)
 }
 
 const SETTINGS = {}
@@ -200,10 +204,10 @@ SETTINGS[ 16 ] = {
 }
 
 export function getChrome(mode, back){
-  const baseToApply = getBaseColors(mode)
   if (mode === 'advanced'){
     const actualBack = defaultTo('#FAF8F3', back)
-
+    const baseToApply = getBaseColors(mode, actualBack)
+    
     return {
       ...baseToApply,
       'editor.background' : actualBack,
@@ -211,7 +215,7 @@ export function getChrome(mode, back){
   }
   if (mode === 'brave'){
     const actualBack = defaultTo('#f3f0e0', back)
-
+    const baseToApply = getBaseColors(mode, actualBack)
     return {
       ...baseToApply,
       'editor.background' : actualBack,
@@ -220,14 +224,14 @@ export function getChrome(mode, back){
 
   if (mode === 'circus'){
     const actualBack = defaultTo('#ede8e1', back)
-
+    const baseToApply = getBaseColors(mode, actualBack)
     return {
       ...baseToApply,
       'editor.background' : actualBack,
     }
   }
   const actualBack = defaultTo('#d8d5c9', back)
-
+  const baseToApply = getBaseColors(mode, actualBack)
   return {
     ...baseToApply,
     'editor.background' : actualBack,
