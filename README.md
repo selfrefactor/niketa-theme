@@ -159,9 +159,9 @@ Debug mode will open 22 themes, so the developer can choose which variation look
 
 Tre color spin-off from `Niketa` themes.
 
-All themes use three colors schema and use one of two light backgrounds.
-
 Git diff colors are blue and ochra similar to the ones suggested in the article [Your syntax highlighter is wrong](https://jameshfisher.com/2014/05/11/your-syntax-highlighter-is-wrong/)
+
+> Later the colors of `Zeppelin` themes are integrated in `Niketa` themes and this caused the major bump to version `8.0.0`
 
 ### ZeppelinDancingDays
 
