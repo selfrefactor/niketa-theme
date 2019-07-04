@@ -5,6 +5,14 @@ import { generateThemeDataBee } from './bees/generateThemeData'
 import { readJsonAnt } from './ants/readJson'
 import { maybe, map, defaultTo, replace, switcher } from 'rambdax'
 
+const newSuggestions = [
+  'actual',
+  'astral',
+  'adorable',
+  'calm',
+  'comical',
+]
+
 export const baseColors = {
   'diffEditor.removedTextBackground'  : '#64B5F655',
   'diffEditor.insertedTextBackground' : '#9c824a55',
