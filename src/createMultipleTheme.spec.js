@@ -99,7 +99,7 @@ SETTINGS[ 1 ] = {
   COLOR_3 : '#861D4FCF',
   COLOR_4 : '#4381A8E9',
 }
-SETTINGS[ 17 ] = {
+SETTINGS[ 2 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'dog',
@@ -109,7 +109,7 @@ SETTINGS[ 17 ] = {
   COLOR_3 : '#7F8E52f1',
 }
 // lemon song
-SETTINGS[ 2 ] = {
+SETTINGS[ 3 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'engine',
@@ -118,7 +118,7 @@ SETTINGS[ 2 ] = {
   COLOR_2 : '#B97444',
 }
 // heartbreaker
-SETTINGS[ 3 ] = {
+SETTINGS[ 4 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'hook',
@@ -127,7 +127,7 @@ SETTINGS[ 3 ] = {
   COLOR_2 : '#096165',
 }
 // dancing days
-SETTINGS[ 4 ] = {
+SETTINGS[ 5 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'immigrant',
@@ -137,7 +137,7 @@ SETTINGS[ 4 ] = {
   COLOR_3 : '#0068a8',
 }
 
-SETTINGS[ 5 ] = {
+SETTINGS[ 6 ] = {
   back    : '#f1f1f1',
   mode    : 'advanced',
   label   : 'mystery',
@@ -148,7 +148,7 @@ SETTINGS[ 5 ] = {
   COLOR_4 : '#508546',
   COLOR_5 : '#880e4f',
 }
-SETTINGS[ 6 ] = {
+SETTINGS[ 7 ] = {
   mode    : 'brave',
   label   : 'habits',
   COLOR_0 : '#D27837',
@@ -156,7 +156,7 @@ SETTINGS[ 6 ] = {
   COLOR_2 : '#6a3951',
   COLOR_3 : '#60b6b1',
 }
-SETTINGS[ 7 ] = {
+SETTINGS[ 8 ] = {
   mode    : 'brave',
   label   : 'homer',
   COLOR_0 : '#AD8310',
@@ -166,7 +166,7 @@ SETTINGS[ 7 ] = {
   COLOR_4 : '#B84251',
   COLOR_5 : '#406F64',
 }
-SETTINGS[ 8 ] = {
+SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
   COLOR_0 : '#5482ab',
@@ -174,14 +174,14 @@ SETTINGS[ 8 ] = {
   COLOR_2 : '#A24877',
 }
 // lemon song
-SETTINGS[ 9 ] = {
+SETTINGS[ 10 ] = {
   mode    : 'brave',
   label   : 'neighbour',
   COLOR_0 : '#1E416E',
   COLOR_1 : '#38978D',
   COLOR_2 : '#B97444',
 }
-SETTINGS[ 10 ] = {
+SETTINGS[ 11 ] = {
   mode    : 'circus',
   label   : 'ajax',
   COLOR_0 : '#5c4c78',
@@ -190,7 +190,7 @@ SETTINGS[ 10 ] = {
   COLOR_3 : '#d8576a',
 }
 // label      : 'since.loving',
-SETTINGS[ 11 ] = {
+SETTINGS[ 12 ] = {
   back    : '#f9f6f1',
   mode    : 'circus',
   label   : 'brother',
@@ -199,7 +199,7 @@ SETTINGS[ 11 ] = {
   COLOR_2 : '#9F7E6B',
 }
 // label      : 'tea.for'
-SETTINGS[ 12 ] = {
+SETTINGS[ 13 ] = {
   back    : '#f9f6f1',
   mode    : 'circus',
   label   : 'people',
@@ -208,7 +208,7 @@ SETTINGS[ 12 ] = {
   COLOR_2 : '#356a6d',
 }
 // label      : 'in.light',
-SETTINGS[ 13 ] = {
+SETTINGS[ 14 ] = {
   mode    : 'circus',
   label   : 'whisky',
   COLOR_0 : '#3782AF',
@@ -216,14 +216,14 @@ SETTINGS[ 13 ] = {
   COLOR_2 : '#A0595E',
 }
 
-SETTINGS[ 14 ] = {
+SETTINGS[ 15 ] = {
   mode    : 'niketa',
   label   : 'owl',
   COLOR_2 : '#2f586f',
   COLOR_1 : '#8c7647',
   COLOR_0 : '#df5831',
 }
-SETTINGS[ 15 ] = {
+SETTINGS[ 16 ] = {
   mode    : 'niketa',
   label   : 'bear',
   COLOR_0 : '#C66534',
@@ -231,7 +231,7 @@ SETTINGS[ 15 ] = {
   COLOR_2 : '#532053',
   COLOR_3 : '#9e386a',
 }
-SETTINGS[ 16 ] = {
+SETTINGS[ 17 ] = {
   mode    : 'niketa',
   label   : 'moon',
   back    : '#c1bcae',
@@ -277,7 +277,9 @@ export function getChrome(mode, back){
 
 test('happy', () => {
   map(
-    ({ mode, label, back, ...colors }) => {
+    (val, key) => {
+      const { mode, label, back, ...colors } = val  
+      if(Number(key) > 6) return
       const paletteMode = maybe(
         colors.COLOR_5,
         'six',
@@ -299,10 +301,10 @@ test('happy', () => {
       writeJsonAnt(`themes/${ themeData.name }.json`, themeData)
     }
   )(SETTINGS)
-  const exported = readJsonAnt(
-    'exported.json'
-  )
+
+  const exported = readJsonAnt('exported.json')
   saveToPackageJsonAnt(exported)
+  
   expect(
     1
   ).toBeTruthy()
