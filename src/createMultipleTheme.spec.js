@@ -27,8 +27,10 @@ const listNiketa = {
   // 'list.hoverBackground'             : '#51676e',
   'list.inactiveSelectionBackground' : '#d1d3d4',
 }
-
+ 
 export const baseColors = {
+  "gitDecoration.modifiedResourceForeground": "#eae3cd",
+  "gitDecoration.untrackedResourceForeground": "#f7aeae",
   'activityBar.background'               : '#C4BE9D',
   'badge.background'                     : '#aaa',
   'badge.foreground'                     : '#fafafa',
