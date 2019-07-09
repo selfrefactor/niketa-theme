@@ -31,7 +31,7 @@ const listNiketa = {
 export const baseColors = {
   'activityBar.background'               : '#C4BE9D',
   'badge.background'                     : '#aaa',
-  'badge.foreground'                     : '#faa',
+  'badge.foreground'                     : '#fafafa',
   'diffEditor.insertedTextBackground'    : '#9c824a55',
   'diffEditor.removedTextBackground'     : '#64B5F655',
   'editor.background'                    : '#FAF8F3',
