@@ -29,6 +29,7 @@ const listNiketa = {
 }
  
 export const baseColors = {
+  "list.errorForeground": "#d7aeae",
   "gitDecoration.modifiedResourceForeground": "#eae3cd",
   "gitDecoration.untrackedResourceForeground": "#f7aeae",
   'activityBar.background'               : '#C4BE9D',
