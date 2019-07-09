@@ -5,6 +5,29 @@ import { generateThemeDataBee } from './bees/generateThemeData'
 import { readJsonAnt } from './ants/readJson'
 import { maybe, map, defaultTo, replace, switcher } from 'rambdax'
 
+const listAdvancedBraveCircus = {
+  'list.activeSelectionBackground'   : '#eae3cd',
+  'list.activeSelectionForeground'   : '#677d7f',
+  'list.dropBackground'              : '#999a9d',
+  'list.focusBackground'             : '#885f66aa',
+  'list.highlightForeground'         : '#89345d',
+  'list.hoverBackground'             : '#999a9d',
+  'list.hoverForeground'             : '#f5f4e8',
+  'list.inactiveSelectionBackground' : '#eae3cd',
+  'list.inactiveSelectionForeground' : '#30322e',
+}
+const listNiketa = {
+  ...listAdvancedBraveCircus,
+  'list.activeSelectionBackground'   : '#cacacc',
+  'list.activeSelectionForeground'   : '#445a63',
+  // 'list.dropBackground'              : '#c3c1a9',
+  'list.focusBackground'             : '#978373d2',
+  'list.highlightForeground'         : '#861d4f',
+  // 'list.hoverForeground'             : '#fff',
+  // 'list.hoverBackground'             : '#51676e',
+  'list.inactiveSelectionBackground' : '#d1d3d4',
+}
+
 export const baseColors = {
   'activityBar.background'               : '#C4BE9D',
   'badge.background'                     : '#aaa',
@@ -29,16 +52,7 @@ export const baseColors = {
   'editorLink.activeForeground'          : '#034694',
   'errorForeground'                      : '#B1365Bf3',
   'focusBorder'                          : '#525e54',
-  'foreground'                           : '#B06775',
-  'list.activeSelectionBackground'       : '#eae3cd',
-  'list.activeSelectionForeground'       : '#bdc3c7',
-  'list.dropBackground'                  : '#455a64',
-  'list.focusBackground'                 : '#87a192',
-  "list.highlightForeground": "#2470a0",
-  "list.hoverBackground": "#87775780",
-  "list.hoverForeground": "#f5f4e8",
-  "list.inactiveSelectionBackground": "#eae3cd",
-  'list.inactiveSelectionForeground'     : '#30322e',
+  // 'foreground'                           : '#B06775',
   'scrollbarSlider.background'           : 'MAIN_COLOR',
   'scrollbarSlider.hoverBackground'      : '#C4BE9D',
   'selection.background'                 : '#ebe6d9',
@@ -69,9 +83,17 @@ function getBaseColors(mode, actualBack){
     .is('circus', '#b7bcbf')
     .default('#b0b4b4')
 
+  const listChrome = mode === 'niketa' ?
+    listNiketa :
+    listAdvancedBraveCircus
+
+  const currentBase = {
+    ...baseColors,
+    ...listChrome,
+  }
   const withMainColor = map(
     color => replace('MAIN_COLOR', chromeMainColor, color)
-  )(baseColors)
+  )(currentBase)
 
   return map(
     color => replace('BACK_COLOR', actualBack, color)
@@ -281,7 +303,7 @@ test('happy', () => {
   map(
     (val, key) => {
       const { mode, label, back, ...colors } = val
-      if (Number(key) > 6) return
+      // if (Number(key) > 6 && Number(key) < 13) return
       const paletteMode = maybe(
         colors.COLOR_5,
         'six',
