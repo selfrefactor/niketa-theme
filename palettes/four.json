@@ -4,6 +4,13 @@
   "colors": {},
   "tokenColors": [
     {
+      "name": "source.go",
+      "scope": "source.go",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
       "name": "comment",
       "scope": "comment",
       "settings": {

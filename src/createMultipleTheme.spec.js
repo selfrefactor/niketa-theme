@@ -29,7 +29,7 @@ const listNiketa = {
 }
 
 export const baseColors = {
-  "git.color.modified" :"#a50044",
+  'git.color.modified'                        : '#a50044',
   'list.errorForeground'                      : '#a50044',
   'gitDecoration.modifiedResourceForeground'  : '#eae3cd',
   'gitDecoration.untrackedResourceForeground' : '#a50044',

@@ -62,6 +62,13 @@
   },
   "tokenColors": [
     {
+      "name": "source.go",
+      "scope": "source.go",
+      "settings": {
+        "foreground": "#B97444"
+      }
+    },
+    {
       "name": "constant.character",
       "scope": "constant.character",
       "settings": {

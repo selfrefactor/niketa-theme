@@ -23,6 +23,13 @@
   },
   "tokenColors": [
     {
+      "name": "source.go",
+      "scope": "source.go",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
       "name": "support.constant",
       "scope": "support.constant",
       "settings": {
