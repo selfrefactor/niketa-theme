@@ -26,6 +26,9 @@ export const COLOR_1 = [
 ]
 
 export const COLOR_2 = [
+  'source.go',
+  'source.json',
+  'source.css',
   'variable.parameter',
   'support.function',
   'meta.import.js',
