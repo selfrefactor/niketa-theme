@@ -13,7 +13,7 @@ const listAdvancedBraveCircus = {
   'list.highlightForeground'         : '#89345d',
   'list.hoverBackground'             : '#999a9d',
   'list.hoverForeground'             : '#f5f4e8',
-  'list.inactiveSelectionBackground' : '#eae3cd',
+  'list.inactiveSelectionBackground' : '#eae3cd55',
   'list.inactiveSelectionForeground' : '#30322e',
 }
 const listNiketa = {
@@ -25,13 +25,14 @@ const listNiketa = {
   'list.highlightForeground'         : '#861d4f',
   // 'list.hoverForeground'             : '#fff',
   // 'list.hoverBackground'             : '#51676e',
-  'list.inactiveSelectionBackground' : '#d1d3d4',
+  'list.inactiveSelectionBackground' : '#d1d3d4aa',
 }
-// "git.color.modified"
+
 export const baseColors = {
-  'list.errorForeground'                      : '#d7aeae',
+  "git.color.modified" :"#a50044",
+  'list.errorForeground'                      : '#a50044',
   'gitDecoration.modifiedResourceForeground'  : '#eae3cd',
-  'gitDecoration.untrackedResourceForeground' : '#f7aeae',
+  'gitDecoration.untrackedResourceForeground' : '#a50044',
   'activityBar.background'                    : '#C4BE9D',
   'badge.background'                          : '#aaa',
   'badge.foreground'                          : '#fafafa',
