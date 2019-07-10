@@ -104,7 +104,7 @@ function getBaseColors(mode, actualBack){
   )(withMainColor)
 }
 
-const SETTINGS = {}
+export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
