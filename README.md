@@ -227,7 +227,13 @@ There is `VSCode` part and `node` client part. On each save of file `foo.js`, it
 
 - [The case against Wallaby](https://ilearnsmarter.wordpress.com/2018/12/22/the-case-against-wallaby-js/) `Niketa` is created as frustration with some cons of `Wallaby.js`. The link leads to an article where I try to compare both tools and explain more about the benefits of `Niketa` as `Jest` tool.
 
-## Trending log
+## Additional info
+
+### Featured in
+
+- [Web Tools Weekly](https://webtoolsweekly.com/archives/issue-299/)
+
+### Trending log
 
 Time - 18.04.2019
 
