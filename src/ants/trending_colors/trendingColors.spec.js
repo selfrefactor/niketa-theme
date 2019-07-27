@@ -1,6 +1,6 @@
 import { trendingColorsAnt } from './trendingColors'
 
-test.skip('happy', async () => {
+test('happy', async () => {
   await trendingColorsAnt()
   // expect().toBe()
 })
