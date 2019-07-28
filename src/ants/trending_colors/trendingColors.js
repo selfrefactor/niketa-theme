@@ -94,6 +94,8 @@ export async function trendingColorsAnt(reload = true){
     pluck('hex'),
     map(prepend('#'))
   )
+  let counter = -1
+  let counterx = -1
   const indexList = getIndexes(LIMIT)
   // console.log({indexList})
   const sk = piped(
@@ -101,16 +103,16 @@ export async function trendingColorsAnt(reload = true){
     map(indexListInstance => evaluateCombination(indexListInstance, colors,BACKGROUND)),
     filter(Boolean),
     sort((a, b) => {
-      if (Math.floor(a.minBackground - b.minBackground) < 0.3){
-        return a.minBetween > b.minBetween ? -1 : 1
+      if (toDecimal(a.minBackground - b.minBackground) < 0.65){
+        if(a.minBetween ===  b.minBetween){
+          counter++
+          return a.maxBetween > b.maxBetween ? -1 : 1
+        }
+        return a.minBackground <  b.minBackground ? -1 : 1
       }
-
-      return a.minBackground> b.minBackground ? -1 : 1
     }),
   )
     
   writeJsonAnt(SAVED_SK, sk)
-  console.log(toDecimal)
-  
 }
 
