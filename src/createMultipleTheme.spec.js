@@ -203,7 +203,6 @@ SETTINGS[ 8 ] = {
   COLOR_1 : '#3c6e5b',
   COLOR_2 : '#532053',
 
-  
 */
 SETTINGS[ 9 ] = {
   mode    : 'brave',
