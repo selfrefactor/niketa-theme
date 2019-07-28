@@ -142,14 +142,23 @@ SETTINGS[ 3 ] = {
   COLOR_1 : '#38978D',
   COLOR_2 : '#B97444',
 }
+/*
+  Second trending theme is hosted in AdvancedHook
+
+  Origin palette is zeppelin.heartbreaker:
+  COLOR_0 : '#9C8058',
+  COLOR_1 : '#f26153',
+  COLOR_2 : '#096165',
+*/
+
 // heartbreaker
 SETTINGS[ 4 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_0 : '#9C8058',
-  COLOR_1 : '#f26153',
-  COLOR_2 : '#096165',
+  COLOR_2 : '#8B1518',
+  COLOR_1 : '#847545',
+  COLOR_0 : '#f38b80',
 }
 // dancing days
 SETTINGS[ 5 ] = {
@@ -193,7 +202,7 @@ SETTINGS[ 8 ] = {
 }
 /*
   Current trending theme BraveLove
-  before colors:
+  Origin palette:
   COLOR_0 : '#5482ab',
   COLOR_1 : '#7e1b24',
   COLOR_2 : '#A24877',
@@ -203,13 +212,17 @@ SETTINGS[ 8 ] = {
   COLOR_1 : '#3c6e5b',
   COLOR_2 : '#532053',
 
+  second iteration:
+  COLOR_0 : '#f39c12',
+  COLOR_1 : '#440b0b',
+  COLOR_2 : '#038387',
 */
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
-  COLOR_0 : '#f39c12',
-  COLOR_1 : '#440b0b',
-  COLOR_2 : '#038387',
+  COLOR_0 : '#847545',
+  COLOR_1 : '#f38b80',
+  COLOR_2 : '#25164C',
 }
 // lemon song
 SETTINGS[ 10 ] = {

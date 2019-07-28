@@ -105,92 +105,93 @@ export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   mode    : 'advanced',
   label   : 'bat',
-  COLOR_0 : '#f39c12',
-  COLOR_1 : '#440b0b',
-  COLOR_2 : '#827717',
+  COLOR_0 : '#847545',
+  COLOR_1 : '#d4a12a',
+  COLOR_2 : '#820014',
 }
 SETTINGS[ 1 ] = {
   mode    : 'advanced',
   label   : 'cat',
-  COLOR_0 : '#f39c12',
-  COLOR_1 : '#440b0b',
-  COLOR_2 : '#038387',
+  COLOR_0 : '#25164C',
+  COLOR_1 : '#da3b01',
+  COLOR_2 : '#d4a12a',
 }
 SETTINGS[ 2 ] = {
   mode    : 'advanced',
   label   : 'dog',
-  COLOR_0 : '#25164C',
-  COLOR_1 : '#ff8c00',
-  COLOR_2 : '#da3b01',
+  COLOR_0 : '#151C6F',
+  COLOR_1 : '#da3b01',
+  COLOR_2 : '#d4a12a',
 }
 // lemon song
 SETTINGS[ 3 ] = {
   mode    : 'advanced',
   label   : 'engine',
-  COLOR_0 : '#440b0b',
-  COLOR_1 : '#ff8c00',
-  COLOR_2 : '#038387',
+  COLOR_0 : '#0418C1',
+  COLOR_1 : '#847545',
+  COLOR_2 : '#d4a12a',
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_0 : '#25164C',
-  COLOR_1 : '#038387',
-  COLOR_2 : '#d4a12a',
+  COLOR_0 : '#da3b01',
+  COLOR_1 : '#d4a12a',
+  COLOR_2 : '#820014',
 }
 // dancing days
 SETTINGS[ 5 ] = {
   mode    : 'advanced',
   label   : 'immigrant',
-  COLOR_0 : '#869FEB',
-  COLOR_1 : '#354CA8',
-  COLOR_2 : '#ca5010',
+  COLOR_0 : '#652b5c',
+  COLOR_1 : '#d33682',
+  COLOR_2 : '#d4a12a',
 }
 
 SETTINGS[ 6 ] = {
   mode    : 'advanced',
   label   : 'mystery',
-  COLOR_0 : '#71779B',
-  COLOR_1 : '#D77DFF',
-  COLOR_2 : '#AC0E24',
+  COLOR_0 : '#8B1518',
+  COLOR_1 : '#da3b01',
+  COLOR_2 : '#d4a12a',
 }
 
 SETTINGS[ 7 ] = {
   mode    : 'brave',
   label   : 'habits',
-  COLOR_0 : '#B75F92',
-  COLOR_1 : '#4c4a48',
-  COLOR_2 : '#c2aa4d',
+  COLOR_2 : '#25164C',
+  COLOR_0 : '#847545',
+  COLOR_1 : '#f38b80',
 }
+
 SETTINGS[ 8 ] = {
   mode    : 'brave',
   label   : 'homer',
-  COLOR_0 : '#B75F92',
-  COLOR_1 : '#8e1f2f',
-  COLOR_2 : '#c2aa4d',
+  COLOR_0 : '#847545',
+  COLOR_1 : '#f38b80',
+  COLOR_2 : '#820014',
 }
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
-  COLOR_0 : '#827717',
-  COLOR_1 : '#7cb305',
+  COLOR_0 : '#7A5DF1',
+  COLOR_1 : '#d4a12a',
   COLOR_2 : '#85144b',
 }
 // lemon song
 SETTINGS[ 10 ] = {
   mode    : 'brave',
   label   : 'neighbour',
-  COLOR_0 : '#6561F5',
-  COLOR_1 : '#D77DFF',
-  COLOR_2 : '#85144b',
+  COLOR_0 : '#0F5037',
+  COLOR_1 : '#7A5DF1',
+  COLOR_2 : '#d4a12a',
 }
 SETTINGS[ 11 ] = {
   mode    : 'circus',
   label   : 'ajax',
-  COLOR_0 : '#f5222d',
-  COLOR_1 : '#a20025',
-  COLOR_2 : '#33bdcd',
+  COLOR_2 : '#8B1518',
+  COLOR_1 : '#847545',
+  COLOR_0 : '#f38b80',
 }
 // stop
 // label      : 'since.loving',
@@ -198,9 +199,9 @@ SETTINGS[ 12 ] = {
   back    : '#f9f6f1',
   mode    : 'circus',
   label   : 'brother',
-  COLOR_0 : '#1B7F9D',
-  COLOR_1 : '#702861',
-  COLOR_2 : '#0DBDF1',
+  COLOR_2 : '#25164C',
+  COLOR_1 : '#da3b01',
+  COLOR_0 : '#60b49b',
 }
 // label      : 'tea.for'
 SETTINGS[ 13 ] = {
@@ -243,7 +244,7 @@ SETTINGS[ 17 ] = {
   COLOR_1 : '#295879',
   COLOR_2 : '#7f0c29',
 }
-// WINNERS: bear & cat
+// WINNERS: brother ajax
 const SOLE_BACKGROUND = '#FAF8F3'
 
 export function getChrome(mode, back){

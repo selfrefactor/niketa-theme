@@ -125,9 +125,10 @@ function getLocalColors(colorLovers, limit){
   )
   if (!colorLovers) return localColors
   const halfLimit = Math.floor(limit / 2)
+  const partialColorLovers = shuffle(take(limit, colorLovers))
 
   return [
-    ...take(halfLimit, colorLovers),
+    ...take(halfLimit, partialColorLovers),
     ...take(halfLimit, shuffle(localColors)),
   ]
 }
@@ -162,13 +163,14 @@ export async function trendingColorsAnt({ reload, useLocalColors, mixFlag, predi
   const numberIterations = useLocalColors || mixFlag ? take(LIMIT, colors.length).length : LIMIT
   const indexList = getIndexes(numberIterations)
   console.log(colors.length, indexList.length)
+
   const sk = piped(
     indexList,
     map(indexListInstance => evaluateCombination(indexListInstance, colors, BACKGROUND)),
     filter(Boolean),
     filter(x => filterAgainstTwoBlues(x.colors)),
-    // filter(x => x.minBetween > 2),
-    // filter(x => x.minBackground > 2.04),
+    filter(x => x.minBetween > 1.7),
+    filter(x => x.minBackground > 1.8),
     sort((a, b) => {
       if (a.minBetween === b.minBetween){
         return a.maxBetween > b.maxBetween ? -1 : 1
