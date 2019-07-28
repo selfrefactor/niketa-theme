@@ -20,11 +20,8 @@ const listNiketa = {
   ...listAdvancedBraveCircus,
   'list.activeSelectionBackground'   : '#cacacc',
   'list.activeSelectionForeground'   : '#445a63',
-  // 'list.dropBackground'              : '#c3c1a9',
   'list.focusBackground'             : '#978373d2',
   'list.highlightForeground'         : '#861d4f',
-  // 'list.hoverForeground'             : '#fff',
-  // 'list.hoverBackground'             : '#51676e',
   'list.inactiveSelectionBackground' : '#d1d3d4aa',
 }
 
@@ -112,12 +109,6 @@ SETTINGS[ 0 ] = {
   COLOR_1 : '#440b0b',
   COLOR_2 : '#827717',
 }
-
-// chosen cat
-// remove too blue colors
-// no two blue colors
-// min between is top prority
-// with all colors.json that include also opacityless fn
 SETTINGS[ 1 ] = {
   mode    : 'advanced',
   label   : 'cat',
@@ -128,79 +119,80 @@ SETTINGS[ 1 ] = {
 SETTINGS[ 2 ] = {
   mode    : 'advanced',
   label   : 'dog',
-  COLOR_0 : '#9eb4ad',
-  COLOR_1 : '#841818',
-  COLOR_2 : '#827717',
+  COLOR_0 : '#25164C',
+  COLOR_1 : '#ff8c00',
+  COLOR_2 : '#da3b01',
 }
 // lemon song
 SETTINGS[ 3 ] = {
   mode    : 'advanced',
   label   : 'engine',
-  COLOR_0 : '#f39c12',
-  COLOR_1 : '#841818',
+  COLOR_0 : '#440b0b',
+  COLOR_1 : '#ff8c00',
   COLOR_2 : '#038387',
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_0 : '#9eb4ad',
-  COLOR_1 : '#440b0b',
-  COLOR_2 : '#ca5010',
+  COLOR_0 : '#25164C',
+  COLOR_1 : '#038387',
+  COLOR_2 : '#d4a12a',
 }
 // dancing days
 SETTINGS[ 5 ] = {
   mode    : 'advanced',
   label   : 'immigrant',
-  COLOR_0 : '#f39c12',
-  COLOR_1 : '#ca5010',
-  COLOR_2 : '#283593',
+  COLOR_0 : '#869FEB',
+  COLOR_1 : '#354CA8',
+  COLOR_2 : '#ca5010',
 }
 
 SETTINGS[ 6 ] = {
   mode    : 'advanced',
   label   : 'mystery',
-  COLOR_0 : '#f39c12',
-  COLOR_1 : '#440b0b',
-  COLOR_2 : '#2c6c96',
+  COLOR_0 : '#71779B',
+  COLOR_1 : '#D77DFF',
+  COLOR_2 : '#AC0E24',
 }
 
 SETTINGS[ 7 ] = {
   mode    : 'brave',
   label   : 'habits',
-  COLOR_0 : '#BAD867',
-  COLOR_1 : '#E3158A',
-  COLOR_2 : '#5C1860',
+  COLOR_0 : '#B75F92',
+  COLOR_1 : '#4c4a48',
+  COLOR_2 : '#c2aa4d',
 }
 SETTINGS[ 8 ] = {
   mode    : 'brave',
   label   : 'homer',
-  COLOR_0 : '#2C226F',
-  COLOR_1 : '#E3158A',
-  COLOR_2 : '#8DC0D4',
+  COLOR_0 : '#B75F92',
+  COLOR_1 : '#8e1f2f',
+  COLOR_2 : '#c2aa4d',
 }
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
-  COLOR_0 : '#2C226F',
-  COLOR_1 : '#DD9FE2',
-  COLOR_2 : '#1B7F9D',
+  COLOR_0 : '#827717',
+  COLOR_1 : '#7cb305',
+  COLOR_2 : '#85144b',
 }
 // lemon song
 SETTINGS[ 10 ] = {
   mode    : 'brave',
   label   : 'neighbour',
-  COLOR_0 : '#2D410C',
-  COLOR_1 : '#8DC0D4',
-  COLOR_2 : '#1B7F9D',
+  COLOR_0 : '#6561F5',
+  COLOR_1 : '#D77DFF',
+  COLOR_2 : '#85144b',
 }
 SETTINGS[ 11 ] = {
   mode    : 'circus',
   label   : 'ajax',
-  COLOR_0 : '#2D410C',
-  COLOR_1 : '#1B7F9D',
-  COLOR_2 : '#0DBDF1',
+  COLOR_0 : '#f5222d',
+  COLOR_1 : '#a20025',
+  COLOR_2 : '#33bdcd',
 }
+// stop
 // label      : 'since.loving',
 SETTINGS[ 12 ] = {
   back    : '#f9f6f1',
@@ -317,9 +309,4 @@ test('happy', () => {
 
   const exported = readJsonAnt('exported.json')
   saveToPackageJsonAnt(exported)
-  console.log(1)
-
-  expect(
-    1
-  ).toBeTruthy()
 })

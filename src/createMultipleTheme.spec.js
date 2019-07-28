@@ -192,18 +192,25 @@ SETTINGS[ 8 ] = {
   COLOR_5 : '#406F64',
 }
 /*
-  Current trending theme
+  Current trending theme BraveLove
   before colors:
   COLOR_0 : '#5482ab',
   COLOR_1 : '#7e1b24',
   COLOR_2 : '#A24877',
+
+  first iteration:
+  COLOR_0 : '#C66534',
+  COLOR_1 : '#3c6e5b',
+  COLOR_2 : '#532053',
+
+  
 */
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
-  COLOR_0 : '#C66534',
-  COLOR_1 : '#3c6e5b',
-  COLOR_2 : '#532053',
+  COLOR_0 : '#f39c12',
+  COLOR_1 : '#440b0b',
+  COLOR_2 : '#038387',
 }
 // lemon song
 SETTINGS[ 10 ] = {

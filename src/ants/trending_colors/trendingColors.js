@@ -20,7 +20,6 @@ const isRed = x => getContrast(x, RED_BASE) < 1.15
 export const isTooLight = x => getContrast(x, LIGHT_BASE) < 2.2
 const isDark = x => {
   const aa = getContrast(x, DARK_BASE) < 1.5
-  // console.log(getContrast(x, BLUE_BASE),getContrast(x, RED_BASE),  getContrast(x, DARK_BASE), x,9,aa);
 
   return aa
 }
@@ -140,9 +139,11 @@ const INDEX = 0
 export async function trendingColorsAnt({ reload, useLocalColors, mixFlag, predicate }){
   if (predicate){
     const filtered = predicate(readJsonAnt(SAVED_SK))
+    console.log(filtered.length)
 
     return writeJsonAnt(SAVED_FILTERED, filtered)
   }
+
   const trendingColors = reload ? restoreColors() : await getColors(100)
   const getColorLovers = () => piped(
     trendingColors,
