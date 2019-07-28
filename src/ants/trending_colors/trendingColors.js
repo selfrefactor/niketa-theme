@@ -2,7 +2,7 @@ import { readJsonAnt } from '../../ants/readJson'
 import { writeJsonAnt } from '../../ants/writeJson'
 const getContrastRatio = require('get-contrast-ratio')
 import { getCombinations } from './permutation'
-import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten, any, filter, toDecimal , maybe } from 'rambdax'
+import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten, any, filter, toDecimal, maybe , complement , splitEvery , nth } from 'rambdax'
 import axios from 'axios'
 
 const SAVED = 'src/ants/trending_colors/saved.json'
@@ -15,13 +15,16 @@ function getContrast(a, b){
 const BLUE_BASE = '#00f'
 const RED_BASE = '#f00'
 const DARK_BASE = '#000'
+const LIGHT_BASE = '#fff'
 const isRed = x => getContrast(x, RED_BASE) < 1.15
 const isDark = x => {
-  const aa = getContrast(x, DARK_BASE) < 1.8
+  const aa = getContrast(x, DARK_BASE) < 1.5
   // console.log(getContrast(x, BLUE_BASE),getContrast(x, RED_BASE),  getContrast(x, DARK_BASE), x,9,aa);
-  
+
   return aa
 }
+const isTooLight = x => getContrast(x, LIGHT_BASE) < 6
+// const allowColor = x => !isDark(x) && !isLight(x) 
 const isBlue = x => maybe(
   isDark(x),
   true,
@@ -36,16 +39,16 @@ function filterAgainstTwoBlues(colors){
 
   //   console.log(blues, colors);
   // }
-  
+
   return blues.length === 1 || blues.length === 0
 }
 
 const FOO = {
-  "COLORS": {
-    "COLOR_0": "#2C226F",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#8DC0D4"
-  }
+  COLORS : {
+    COLOR_0 : '#2C226F',
+    COLOR_1 : '#646EA7',
+    COLOR_2 : '#8DC0D4',
+  },
 }
 // console.log(filterAgainstTwoBlues([FOO.COLORS.COLOR_0, FOO.COLORS.COLOR_1,FOO.COLORS.COLOR_2]))
 async function getColorsFragment(offset){
@@ -124,34 +127,33 @@ function evaluateCombination(indexListInstance, colors, background){
   }
 }
 
-const BACKGROUND = '#eaeaf4'
-const LIMIT = 50
-
+const BACKGROUND = '#FAF8F3'
+const LIMIT = 130
+const INDEX = 0
 export async function trendingColorsAnt(reload = true){
   const trendingColors = reload ? restoreColors() : await getColors()
   const colors = piped(
     trendingColors,
-    take(LIMIT),
     pluck('hex'),
-    map(prepend('#'))
+    map(prepend('#')),
+    splitEvery(LIMIT),
+    nth(INDEX),
   )
+  
   const indexList = getIndexes(LIMIT)
   const sk = piped(
     indexList,
     map(indexListInstance => evaluateCombination(indexListInstance, colors, BACKGROUND)),
     filter(Boolean),
     filter(x => filterAgainstTwoBlues(x.colors)),
-    filter(x => x.minBetween > 1.95),
+    filter(x => x.minBetween > 2),
+    filter(x => x.minBackground > 2.04),
     sort((a, b) => {
-      if (toDecimal(a.minBackground - b.minBackground) < 0.65){
         if (a.minBetween === b.minBetween){
           return a.maxBetween > b.maxBetween ? -1 : 1
         }
 
         return a.minBetween > b.minBetween ? -1 : 1
-      }
-
-      return a.minBackground < b.minBackground ? -1 : 1
     }),
     map(({ unsorted, colors, ...rest }) => ({
       ...rest,
@@ -163,8 +165,7 @@ export async function trendingColorsAnt(reload = true){
     }))
   )
 
-  console.log(sk.length);
-  
+  console.log(sk.length)
 
   writeJsonAnt(SAVED_SK, sk)
 }

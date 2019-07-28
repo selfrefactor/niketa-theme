@@ -117,6 +117,7 @@ SETTINGS[ 0 ] = {
 // remove too blue colors
 // no two blue colors
 // min between is top prority
+// with all colors.json that include also opacityless fn
 SETTINGS[ 1 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
@@ -147,60 +148,61 @@ SETTINGS[ 4 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_0 : '#9C8058',
-  COLOR_1 : '#f26153',
-  COLOR_2 : '#096165',
+  COLOR_0 : '#2C226F',
+  COLOR_1 : '#BAD867',
+  COLOR_2 : '#1B7F9D',
 }
 // dancing days
 SETTINGS[ 5 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'immigrant',
-  COLOR_0 : '#1A478D',
-  COLOR_1 : '#E0022A',
-  COLOR_2 : '#8DC0D4',
+  COLOR_0 : '#2C226F',
+  COLOR_1 : '#BAD867',
+  COLOR_2 : '#E3158A',
 }
 
 SETTINGS[ 6 ] = {
   back    : '#f1f1f1',
   mode    : 'advanced',
   label   : 'mystery',
-  COLOR_0 : '#2b8fb3',
-  COLOR_1 : '#a0512c',
-  COLOR_2 : '#BD2E63',
+  COLOR_0 : '#2C226F',
+  COLOR_1 : '#D6C1E1',
+  COLOR_2 : '#1B7F9D',
 }
 SETTINGS[ 7 ] = {
   mode    : 'brave',
   label   : 'habits',
-  COLOR_0 : '#D27837',
-  COLOR_1 : '#3b6160',
-  COLOR_2 : '#6a3951',
+  COLOR_0 : '#BAD867',
+  COLOR_1 : '#E3158A',
+  COLOR_2 : '#5C1860',
 }
 SETTINGS[ 8 ] = {
   mode    : 'brave',
   label   : 'homer',
-  COLOR_0 : '#AD8310',
-  COLOR_1 : '#3782AF',
-  COLOR_2 : '#E0AA15',
+  COLOR_0 : '#2C226F',
+  COLOR_1 : '#E3158A',
+  COLOR_2 : '#8DC0D4',
 }
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
-  COLOR_0 : '#5482ab',
-  COLOR_1 : '#7e1b24',
-  COLOR_2 : '#A24877',
+  COLOR_0 : '#2C226F',
+  COLOR_1 : '#DD9FE2',
+  COLOR_2 : '#1B7F9D',
 }
 // lemon song
 SETTINGS[ 10 ] = {
   mode    : 'brave',
   label   : 'neighbour',
-  COLOR_0 : '#1E416E',
-  COLOR_1 : '#38978D',
-  COLOR_2 : '#B97444',
+  COLOR_0 : '#2D410C',
+  COLOR_1 : '#8DC0D4',
+  COLOR_2 : '#1B7F9D',
 }
 SETTINGS[ 11 ] = {
-  mode    : 'circus',
-  label   : 'ajax',
+  mode  : 'circus',
+  label : 'ajax',
+
   COLOR_0 : '#5c4c78',
   COLOR_1 : '#399090',
   COLOR_2 : '#427BB0',
