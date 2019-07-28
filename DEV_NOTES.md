@@ -1,4 +1,5 @@
 # Dev notes
+local colors defined by
 
 > Background color cannot have opacity as terminal colors depend on that
 
