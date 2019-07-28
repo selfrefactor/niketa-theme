@@ -109,34 +109,38 @@ SETTINGS[ 0 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'bat',
-  COLOR_0 : '#B06775E9',
-  COLOR_1 : '#54ABB5E9',
-  COLOR_2 : '#CF6F4Bf3',
+  COLOR_0 : '#1A478D',
+  COLOR_1 : '#E3158A',
+  COLOR_2 : '#8DC0D4',
 }
+// chosen cat
+// remove too blue colors
+// no two blue colors
+// min between is top prority
 SETTINGS[ 1 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'cat',
-  COLOR_0 : '#5a6598fa',
-  COLOR_1 : '#B45948f1',
-  COLOR_2 : '#6E3E53C6',
+  COLOR_0 : '#E0022A',
+  COLOR_1 : '#5C1860',
+  COLOR_2 : '#8DC0D4',
 }
 SETTINGS[ 2 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'dog',
-  COLOR_0 : '#af3564fa',
-  COLOR_1 : '#C26F63fa',
-  COLOR_2 : '#533963f1',
+  COLOR_0 : '#2D410C',
+  COLOR_1 : '#E0022A',
+  COLOR_2 : '#8DC0D4',
 }
 // lemon song
 SETTINGS[ 3 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'engine',
-  COLOR_0 : '#1E416E',
-  COLOR_1 : '#38978D',
-  COLOR_2 : '#B97444',
+  COLOR_0 : '#2D410C',
+  COLOR_1 : '#E3158A',
+  COLOR_2 : '#8DC0D4',
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
@@ -152,9 +156,9 @@ SETTINGS[ 5 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'immigrant',
-  COLOR_0 : '#063672',
-  COLOR_1 : '#ff5177',
-  COLOR_2 : '#b76144',
+  COLOR_0 : '#1A478D',
+  COLOR_1 : '#E0022A',
+  COLOR_2 : '#8DC0D4',
 }
 
 SETTINGS[ 6 ] = {

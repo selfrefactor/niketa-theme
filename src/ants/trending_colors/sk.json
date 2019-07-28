@@ -1,79 +1,376 @@
 [
   {
-    "minBetween": 2.59,
-    "minBackground": 1.65,
+    "minBetween": 2.45,
+    "minBackground": 1.56,
     "maxBackground": 11.22,
-    "maxBetween": 6.78,
+    "maxBetween": 7.15,
     "COLORS": {
       "COLOR_0": "#2C226F",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 2.52,
-    "minBackground": 1.65,
-    "maxBackground": 11.22,
-    "maxBetween": 6.78,
-    "COLORS": {
-      "COLOR_0": "#2C226F",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#1B7F9D"
     }
   },
   {
     "minBetween": 2.45,
-    "minBackground": 1.65,
-    "maxBackground": 11.22,
-    "maxBetween": 6.78,
-    "COLORS": {
-      "COLOR_0": "#2C226F",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 2.45,
-    "minBackground": 1.65,
+    "minBackground": 1.56,
     "maxBackground": 10.01,
-    "maxBetween": 6.05,
+    "maxBetween": 6.38,
     "COLORS": {
-      "COLOR_0": "#646EA7",
-      "COLOR_1": "#5C1860",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.43,
+    "minBackground": 1.56,
+    "maxBackground": 9.38,
+    "maxBetween": 5.97,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#1B7F9D"
     }
   },
   {
     "minBetween": 2.4,
-    "minBackground": 1.65,
-    "maxBackground": 10.01,
-    "maxBetween": 6.05,
+    "minBackground": 1.56,
+    "maxBackground": 11.22,
+    "maxBetween": 7.15,
     "COLORS": {
-      "COLOR_0": "#E0022A",
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.4,
+    "minBackground": 1.56,
+    "maxBackground": 10.01,
+    "maxBetween": 6.38,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
       "COLOR_1": "#5C1860",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.4,
+    "minBackground": 1.56,
+    "maxBackground": 9.38,
+    "maxBetween": 5.97,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.39,
+    "minBackground": 1.6,
+    "maxBackground": 11.22,
+    "maxBetween": 7,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.39,
+    "minBackground": 1.6,
+    "maxBackground": 10.01,
+    "maxBetween": 6.24,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.39,
+    "minBackground": 1.6,
+    "maxBackground": 9.38,
+    "maxBetween": 5.85,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.36,
+    "minBackground": 1.56,
+    "maxBackground": 11.22,
+    "maxBetween": 7.15,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.36,
+    "minBackground": 1.56,
+    "maxBackground": 10.01,
+    "maxBetween": 6.38,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.36,
+    "minBackground": 1.56,
+    "maxBackground": 9.38,
+    "maxBetween": 5.97,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.35,
+    "minBackground": 1.6,
+    "maxBackground": 11.22,
+    "maxBetween": 7,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.35,
+    "minBackground": 1.6,
+    "maxBackground": 10.01,
+    "maxBetween": 6.24,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.35,
+    "minBackground": 1.6,
+    "maxBackground": 9.38,
+    "maxBetween": 5.85,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#E4ADB7"
     }
   },
   {
     "minBetween": 2.33,
+    "minBackground": 1.64,
+    "maxBackground": 11.22,
+    "maxBetween": 6.82,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.33,
+    "minBackground": 1.64,
+    "maxBackground": 10.01,
+    "maxBetween": 6.09,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.33,
+    "minBackground": 1.64,
+    "maxBackground": 9.38,
+    "maxBetween": 5.7,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.32,
+    "minBackground": 1.56,
+    "maxBackground": 11.22,
+    "maxBetween": 7.15,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.32,
+    "minBackground": 1.65,
+    "maxBackground": 11.22,
+    "maxBetween": 6.78,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.32,
+    "minBackground": 1.56,
+    "maxBackground": 10.01,
+    "maxBetween": 6.38,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.32,
     "minBackground": 1.65,
     "maxBackground": 10.01,
     "maxBetween": 6.05,
     "COLORS": {
-      "COLOR_0": "#AA29DF",
-      "COLOR_1": "#5C1860",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.32,
+    "minBackground": 1.56,
+    "maxBackground": 9.38,
+    "maxBetween": 5.97,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.32,
+    "minBackground": 1.65,
+    "maxBackground": 9.38,
+    "maxBetween": 5.67,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.32,
+    "minBackground": 1.56,
+    "maxBackground": 8.46,
+    "maxBetween": 5.39,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#9EC89C"
     }
   },
   {
     "minBetween": 2.31,
-    "minBackground": 1.65,
-    "maxBackground": 9.38,
-    "maxBetween": 5.67,
+    "minBackground": 1.6,
+    "maxBackground": 11.22,
+    "maxBetween": 7,
     "COLORS": {
-      "COLOR_0": "#646EA7",
-      "COLOR_1": "#2D410C",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.31,
+    "minBackground": 1.6,
+    "maxBackground": 10.01,
+    "maxBetween": 6.24,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.31,
+    "minBackground": 1.6,
+    "maxBackground": 9.38,
+    "maxBetween": 5.85,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.29,
+    "minBackground": 1.64,
+    "maxBackground": 11.22,
+    "maxBetween": 6.82,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.29,
+    "minBackground": 1.64,
+    "maxBackground": 10.01,
+    "maxBetween": 6.09,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.29,
+    "minBackground": 1.64,
+    "maxBackground": 9.38,
+    "maxBetween": 5.7,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.28,
+    "minBackground": 1.56,
+    "maxBackground": 8.46,
+    "maxBetween": 5.39,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.28,
+    "minBackground": 1.6,
+    "maxBackground": 8.46,
+    "maxBetween": 5.27,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.27,
+    "minBackground": 1.6,
+    "maxBackground": 11.22,
+    "maxBetween": 7,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#E4ADB7"
     }
   },
   {
@@ -89,6 +386,17 @@
   },
   {
     "minBetween": 2.27,
+    "minBackground": 1.6,
+    "maxBackground": 10.01,
+    "maxBetween": 6.24,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.27,
     "minBackground": 1.65,
     "maxBackground": 10.01,
     "maxBetween": 6.05,
@@ -100,6 +408,17 @@
   },
   {
     "minBetween": 2.27,
+    "minBackground": 1.6,
+    "maxBackground": 9.38,
+    "maxBetween": 5.85,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.27,
     "minBackground": 1.65,
     "maxBackground": 9.38,
     "maxBetween": 5.67,
@@ -107,6 +426,61 @@
       "COLOR_0": "#2D410C",
       "COLOR_1": "#7A5DF1",
       "COLOR_2": "#8DC0D4"
+    }
+  },
+  {
+    "minBetween": 2.27,
+    "minBackground": 1.6,
+    "maxBackground": 8.46,
+    "maxBetween": 5.27,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.25,
+    "minBackground": 1.64,
+    "maxBackground": 11.22,
+    "maxBetween": 6.82,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.25,
+    "minBackground": 1.64,
+    "maxBackground": 10.01,
+    "maxBetween": 6.09,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.25,
+    "minBackground": 1.64,
+    "maxBackground": 9.38,
+    "maxBetween": 5.7,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.25,
+    "minBackground": 1.64,
+    "maxBackground": 8.46,
+    "maxBetween": 5.14,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#21D60D"
     }
   },
   {
@@ -144,13 +518,35 @@
   },
   {
     "minBetween": 2.24,
-    "minBackground": 1.65,
-    "maxBackground": 9.38,
-    "maxBetween": 5.67,
+    "minBackground": 1.56,
+    "maxBackground": 8.46,
+    "maxBetween": 5.39,
     "COLORS": {
-      "COLOR_0": "#2D410C",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.24,
+    "minBackground": 1.6,
+    "maxBackground": 8.46,
+    "maxBetween": 5.27,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.24,
+    "minBackground": 1.64,
+    "maxBackground": 8.46,
+    "maxBetween": 5.14,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#21D60D"
     }
   },
   {
@@ -173,17 +569,930 @@
       "COLOR_0": "#E3158A",
       "COLOR_1": "#8DC0D4",
       "COLOR_2": "#3319C4"
+    }
+  },
+  {
+    "minBetween": 2.21,
+    "minBackground": 1.64,
+    "maxBackground": 11.22,
+    "maxBetween": 6.82,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.21,
+    "minBackground": 1.73,
+    "maxBackground": 11.22,
+    "maxBetween": 6.47,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.21,
+    "minBackground": 1.64,
+    "maxBackground": 10.01,
+    "maxBetween": 6.09,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.21,
+    "minBackground": 1.73,
+    "maxBackground": 10.01,
+    "maxBetween": 5.77,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.21,
+    "minBackground": 1.64,
+    "maxBackground": 9.38,
+    "maxBetween": 5.7,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.21,
+    "minBackground": 1.73,
+    "maxBackground": 9.38,
+    "maxBetween": 5.4,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.21,
+    "minBackground": 1.64,
+    "maxBackground": 8.46,
+    "maxBetween": 5.14,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.56,
+    "maxBackground": 11.22,
+    "maxBetween": 7.15,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.65,
+    "maxBackground": 11.22,
+    "maxBetween": 6.78,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#2D70FB"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.56,
+    "maxBackground": 10.01,
+    "maxBetween": 6.38,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.65,
+    "maxBackground": 10.01,
+    "maxBetween": 6.05,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#2D70FB"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.56,
+    "maxBackground": 9.38,
+    "maxBetween": 5.97,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.65,
+    "maxBackground": 9.38,
+    "maxBetween": 5.67,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#2D70FB"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.56,
+    "maxBackground": 8.46,
+    "maxBetween": 5.39,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.65,
+    "maxBackground": 8.46,
+    "maxBetween": 5.11,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#2D70FB"
+    }
+  },
+  {
+    "minBetween": 2.2,
+    "minBackground": 1.56,
+    "maxBackground": 7.71,
+    "maxBetween": 4.91,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.19,
+    "minBackground": 1.56,
+    "maxBackground": 8.46,
+    "maxBetween": 5.39,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.19,
+    "minBackground": 1.6,
+    "maxBackground": 8.46,
+    "maxBetween": 5.27,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.19,
+    "minBackground": 1.64,
+    "maxBackground": 8.46,
+    "maxBetween": 5.14,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.19,
+    "minBackground": 1.65,
+    "maxBackground": 8.46,
+    "maxBetween": 5.11,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.19,
+    "minBackground": 1.73,
+    "maxBackground": 8.46,
+    "maxBetween": 4.87,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#1B7F9D"
     }
   },
   {
     "minBetween": 2.18,
+    "minBackground": 1.76,
+    "maxBackground": 11.22,
+    "maxBetween": 6.36,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.18,
+    "minBackground": 1.76,
+    "maxBackground": 10.01,
+    "maxBetween": 5.68,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.18,
+    "minBackground": 1.76,
+    "maxBackground": 9.38,
+    "maxBetween": 5.32,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.18,
+    "minBackground": 1.56,
+    "maxBackground": 7.54,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.18,
+    "minBackground": 1.76,
+    "maxBackground": 8.46,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.56,
+    "maxBackground": 11.22,
+    "maxBetween": 7.15,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.73,
+    "maxBackground": 11.22,
+    "maxBetween": 6.47,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.56,
+    "maxBackground": 10.01,
+    "maxBetween": 6.38,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.56,
+    "maxBackground": 9.38,
+    "maxBetween": 5.97,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.73,
+    "maxBackground": 10.01,
+    "maxBetween": 5.77,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.73,
+    "maxBackground": 9.38,
+    "maxBetween": 5.4,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.56,
+    "maxBackground": 8.46,
+    "maxBetween": 5.39,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.56,
+    "maxBackground": 7.71,
+    "maxBetween": 4.91,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.73,
+    "maxBackground": 8.46,
+    "maxBetween": 4.87,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.17,
+    "minBackground": 1.56,
+    "maxBackground": 7.54,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.15,
+    "minBackground": 1.6,
+    "maxBackground": 11.22,
+    "maxBetween": 7,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.15,
+    "minBackground": 1.6,
+    "maxBackground": 10.01,
+    "maxBetween": 6.24,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.15,
+    "minBackground": 1.6,
+    "maxBackground": 9.38,
+    "maxBetween": 5.85,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.15,
+    "minBackground": 1.6,
+    "maxBackground": 8.46,
+    "maxBetween": 5.27,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.15,
+    "minBackground": 1.6,
+    "maxBackground": 7.71,
+    "maxBetween": 4.81,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.15,
+    "minBackground": 1.6,
+    "maxBackground": 7.54,
+    "maxBetween": 4.7,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.6,
+    "maxBackground": 11.22,
+    "maxBetween": 7,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.73,
+    "maxBackground": 11.22,
+    "maxBetween": 6.47,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.76,
+    "maxBackground": 11.22,
+    "maxBetween": 6.36,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.6,
+    "maxBackground": 10.01,
+    "maxBetween": 6.24,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.6,
+    "maxBackground": 9.38,
+    "maxBetween": 5.85,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.73,
+    "maxBackground": 10.01,
+    "maxBetween": 5.77,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.76,
+    "maxBackground": 10.01,
+    "maxBetween": 5.68,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.73,
+    "maxBackground": 9.38,
+    "maxBetween": 5.4,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.76,
+    "maxBackground": 9.38,
+    "maxBetween": 5.32,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.6,
+    "maxBackground": 8.46,
+    "maxBetween": 5.27,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.73,
+    "maxBackground": 8.46,
+    "maxBetween": 4.87,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.6,
+    "maxBackground": 7.71,
+    "maxBetween": 4.81,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.76,
+    "maxBackground": 8.46,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.13,
+    "minBackground": 1.6,
+    "maxBackground": 7.54,
+    "maxBetween": 4.7,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.11,
+    "minBackground": 1.56,
+    "maxBackground": 7.71,
+    "maxBetween": 4.91,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.11,
+    "minBackground": 1.6,
+    "maxBackground": 7.71,
+    "maxBetween": 4.81,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.11,
+    "minBackground": 1.64,
+    "maxBackground": 7.71,
+    "maxBetween": 4.69,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.11,
+    "minBackground": 1.65,
+    "maxBackground": 7.71,
+    "maxBetween": 4.66,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#2D70FB"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.64,
+    "maxBackground": 11.22,
+    "maxBetween": 6.82,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.73,
+    "maxBackground": 11.22,
+    "maxBetween": 6.47,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.76,
+    "maxBackground": 11.22,
+    "maxBetween": 6.36,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.64,
+    "maxBackground": 10.01,
+    "maxBetween": 6.09,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.73,
+    "maxBackground": 10.01,
+    "maxBetween": 5.77,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.64,
+    "maxBackground": 9.38,
+    "maxBetween": 5.7,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.76,
+    "maxBackground": 10.01,
+    "maxBetween": 5.68,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.73,
+    "maxBackground": 9.38,
+    "maxBetween": 5.4,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.76,
+    "maxBackground": 9.38,
+    "maxBetween": 5.32,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.64,
+    "maxBackground": 8.46,
+    "maxBetween": 5.14,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.73,
+    "maxBackground": 8.46,
+    "maxBetween": 4.87,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.76,
+    "maxBackground": 8.46,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.64,
+    "maxBackground": 7.71,
+    "maxBetween": 4.69,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.64,
+    "maxBackground": 7.54,
+    "maxBetween": 4.58,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.1,
+    "minBackground": 1.73,
+    "maxBackground": 7.71,
+    "maxBetween": 4.44,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.09,
+    "minBackground": 1.56,
+    "maxBackground": 7.15,
+    "maxBetween": 4.55,
+    "COLORS": {
+      "COLOR_0": "#9EC89C",
+      "COLOR_1": "#281CEB",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.09,
+    "minBackground": 1.6,
+    "maxBackground": 7.15,
+    "maxBetween": 4.46,
+    "COLORS": {
+      "COLOR_0": "#E4ADB7",
+      "COLOR_1": "#281CEB",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.64,
+    "maxBackground": 11.22,
+    "maxBetween": 6.82,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.65,
+    "maxBackground": 11.22,
+    "maxBetween": 6.78,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.64,
+    "maxBackground": 10.01,
+    "maxBetween": 6.09,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.65,
+    "maxBackground": 10.01,
+    "maxBetween": 6.05,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.64,
+    "maxBackground": 9.38,
+    "maxBetween": 5.7,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.08,
     "minBackground": 1.65,
     "maxBackground": 9.38,
     "maxBetween": 5.67,
     "COLORS": {
       "COLOR_0": "#2D410C",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.64,
+    "maxBackground": 8.46,
+    "maxBetween": 5.14,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#0B7DEA"
     }
   },
   {
@@ -192,9 +1501,53 @@
     "maxBackground": 8.46,
     "maxBetween": 5.11,
     "COLORS": {
-      "COLOR_0": "#646EA7",
-      "COLOR_1": "#8DC0D4",
-      "COLOR_2": "#3319C4"
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.56,
+    "maxBackground": 7.71,
+    "maxBetween": 4.91,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.6,
+    "maxBackground": 7.71,
+    "maxBetween": 4.81,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.64,
+    "maxBackground": 7.71,
+    "maxBetween": 4.69,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.64,
+    "maxBackground": 7.71,
+    "maxBetween": 4.69,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#0B7DEA"
     }
   },
   {
@@ -206,6 +1559,380 @@
       "COLOR_0": "#E3158A",
       "COLOR_1": "#8DC0D4",
       "COLOR_2": "#0C32C5"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.65,
+    "maxBackground": 7.71,
+    "maxBetween": 4.66,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.64,
+    "maxBackground": 7.54,
+    "maxBetween": 4.58,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.65,
+    "maxBackground": 7.54,
+    "maxBetween": 4.55,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#6774DA"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.73,
+    "maxBackground": 7.71,
+    "maxBetween": 4.44,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.76,
+    "maxBackground": 7.71,
+    "maxBetween": 4.37,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.08,
+    "minBackground": 1.64,
+    "maxBackground": 7.15,
+    "maxBetween": 4.35,
+    "COLORS": {
+      "COLOR_0": "#21D60D",
+      "COLOR_1": "#281CEB",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.07,
+    "minBackground": 1.56,
+    "maxBackground": 7.15,
+    "maxBetween": 4.55,
+    "COLORS": {
+      "COLOR_0": "#6774DA",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#281CEB"
+    }
+  },
+  {
+    "minBetween": 2.07,
+    "minBackground": 1.6,
+    "maxBackground": 7.15,
+    "maxBetween": 4.46,
+    "COLORS": {
+      "COLOR_0": "#6774DA",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#281CEB"
+    }
+  },
+  {
+    "minBetween": 2.07,
+    "minBackground": 1.64,
+    "maxBackground": 7.15,
+    "maxBetween": 4.35,
+    "COLORS": {
+      "COLOR_0": "#21D60D",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#281CEB"
+    }
+  },
+  {
+    "minBetween": 2.07,
+    "minBackground": 1.65,
+    "maxBackground": 7.15,
+    "maxBetween": 4.32,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#281CEB"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.65,
+    "maxBackground": 11.22,
+    "maxBetween": 6.78,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.76,
+    "maxBackground": 11.22,
+    "maxBetween": 6.36,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.65,
+    "maxBackground": 10.01,
+    "maxBetween": 6.05,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.76,
+    "maxBackground": 10.01,
+    "maxBetween": 5.68,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.65,
+    "maxBackground": 9.38,
+    "maxBetween": 5.67,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.76,
+    "maxBackground": 9.38,
+    "maxBetween": 5.32,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.65,
+    "maxBackground": 8.46,
+    "maxBetween": 5.11,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.56,
+    "maxBackground": 7.54,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.76,
+    "maxBackground": 8.46,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.6,
+    "maxBackground": 7.54,
+    "maxBetween": 4.7,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.65,
+    "maxBackground": 7.71,
+    "maxBetween": 4.66,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.64,
+    "maxBackground": 7.54,
+    "maxBetween": 4.58,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.65,
+    "maxBackground": 7.54,
+    "maxBetween": 4.55,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#2D70FB"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.65,
+    "maxBackground": 7.54,
+    "maxBetween": 4.55,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#8DC0D4",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.76,
+    "maxBackground": 7.71,
+    "maxBetween": 4.37,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.73,
+    "maxBackground": 7.54,
+    "maxBetween": 4.34,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.65,
+    "maxBackground": 7.15,
+    "maxBetween": 4.32,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#281CEB",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 2.06,
+    "minBackground": 1.76,
+    "maxBackground": 7.54,
+    "maxBetween": 4.27,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.04,
+    "minBackground": 1.88,
+    "maxBackground": 11.22,
+    "maxBetween": 5.96,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#9EADD0",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.04,
+    "minBackground": 1.88,
+    "maxBackground": 10.01,
+    "maxBetween": 5.32,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#9EADD0",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.04,
+    "minBackground": 1.88,
+    "maxBackground": 9.38,
+    "maxBetween": 4.98,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#9EADD0",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.04,
+    "minBackground": 1.56,
+    "maxBackground": 7.71,
+    "maxBetween": 4.91,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.04,
+    "minBackground": 1.6,
+    "maxBackground": 7.71,
+    "maxBetween": 4.81,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.04,
+    "minBackground": 1.64,
+    "maxBackground": 7.71,
+    "maxBetween": 4.69,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#21D60D"
     }
   },
   {
@@ -220,6 +1947,72 @@
     }
   },
   {
+    "minBetween": 2.04,
+    "minBackground": 1.88,
+    "maxBackground": 8.46,
+    "maxBetween": 4.49,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#9EADD0",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2.04,
+    "minBackground": 1.73,
+    "maxBackground": 7.71,
+    "maxBetween": 4.44,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.04,
+    "minBackground": 1.76,
+    "maxBackground": 7.71,
+    "maxBetween": 4.37,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.03,
+    "minBackground": 1.56,
+    "maxBackground": 7.54,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2.03,
+    "minBackground": 1.6,
+    "maxBackground": 7.54,
+    "maxBetween": 4.7,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2.03,
+    "minBackground": 1.64,
+    "maxBackground": 7.54,
+    "maxBetween": 4.58,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#21D60D"
+    }
+  },
+  {
     "minBetween": 2.03,
     "minBackground": 1.65,
     "maxBackground": 7.54,
@@ -231,14 +2024,179 @@
     }
   },
   {
-    "minBetween": 2.02,
-    "minBackground": 1.65,
-    "maxBackground": 8.46,
-    "maxBetween": 5.11,
+    "minBetween": 2.03,
+    "minBackground": 1.73,
+    "maxBackground": 7.54,
+    "maxBetween": 4.34,
     "COLORS": {
-      "COLOR_0": "#E0022A",
-      "COLOR_1": "#8DC0D4",
-      "COLOR_2": "#3319C4"
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2.03,
+    "minBackground": 1.76,
+    "maxBackground": 7.54,
+    "maxBetween": 4.27,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2.01,
+    "minBackground": 1.9,
+    "maxBackground": 11.22,
+    "maxBetween": 5.88,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 2.01,
+    "minBackground": 1.9,
+    "maxBackground": 10.01,
+    "maxBetween": 5.24,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 2.01,
+    "minBackground": 1.9,
+    "maxBackground": 9.38,
+    "maxBetween": 4.91,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 2.01,
+    "minBackground": 1.9,
+    "maxBackground": 8.46,
+    "maxBetween": 4.43,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.88,
+    "maxBackground": 11.22,
+    "maxBetween": 5.96,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.88,
+    "maxBackground": 10.01,
+    "maxBetween": 5.32,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.88,
+    "maxBackground": 9.38,
+    "maxBetween": 4.98,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.56,
+    "maxBackground": 7.71,
+    "maxBetween": 4.91,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.6,
+    "maxBackground": 7.71,
+    "maxBetween": 4.81,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.56,
+    "maxBackground": 7.54,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#1A478D",
+      "COLOR_2": "#9EC89C"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.6,
+    "maxBackground": 7.54,
+    "maxBetween": 4.7,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#1A478D",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.64,
+    "maxBackground": 7.71,
+    "maxBetween": 4.69,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.65,
+    "maxBackground": 7.71,
+    "maxBetween": 4.66,
+    "COLORS": {
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.64,
+    "maxBackground": 7.54,
+    "maxBetween": 4.58,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#1A478D",
+      "COLOR_2": "#21D60D"
     }
   },
   {
@@ -253,707 +2211,674 @@
     }
   },
   {
+    "minBetween": 2,
+    "minBackground": 1.88,
+    "maxBackground": 8.46,
+    "maxBetween": 4.49,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.73,
+    "maxBackground": 7.71,
+    "maxBetween": 4.44,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.76,
+    "maxBackground": 7.71,
+    "maxBetween": 4.37,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.73,
+    "maxBackground": 7.54,
+    "maxBetween": 4.34,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#1A478D",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.76,
+    "maxBackground": 7.54,
+    "maxBetween": 4.27,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#1A478D",
+      "COLOR_2": "#59C4B3"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.88,
+    "maxBackground": 7.71,
+    "maxBetween": 4.1,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.88,
+    "maxBackground": 7.71,
+    "maxBetween": 4.1,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#9EADD0",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.9,
+    "maxBackground": 7.71,
+    "maxBetween": 4.04,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 2,
+    "minBackground": 1.88,
+    "maxBackground": 7.54,
+    "maxBetween": 4,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#1A478D",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 1.99,
+    "minBackground": 1.73,
+    "maxBackground": 11.22,
+    "maxBetween": 6.47,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 1.99,
+    "minBackground": 1.73,
+    "maxBackground": 10.01,
+    "maxBetween": 5.77,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 1.99,
+    "minBackground": 1.73,
+    "maxBackground": 9.38,
+    "maxBetween": 5.4,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 1.99,
+    "minBackground": 1.73,
+    "maxBackground": 8.46,
+    "maxBetween": 4.87,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 1.99,
+    "minBackground": 1.73,
+    "maxBackground": 7.71,
+    "maxBetween": 4.44,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 1.99,
+    "minBackground": 1.73,
+    "maxBackground": 7.54,
+    "maxBetween": 4.34,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#DD9FE2"
+    }
+  },
+  {
+    "minBetween": 1.99,
+    "minBackground": 1.73,
+    "maxBackground": 7.15,
+    "maxBetween": 4.12,
+    "COLORS": {
+      "COLOR_0": "#6774DA",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#281CEB"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.73,
+    "maxBackground": 11.22,
+    "maxBetween": 6.47,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.88,
+    "maxBackground": 11.22,
+    "maxBetween": 5.96,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.9,
+    "maxBackground": 11.22,
+    "maxBetween": 5.88,
+    "COLORS": {
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.73,
+    "maxBackground": 10.01,
+    "maxBetween": 5.77,
+    "COLORS": {
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.73,
+    "maxBackground": 9.38,
+    "maxBetween": 5.4,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.88,
+    "maxBackground": 10.01,
+    "maxBetween": 5.32,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.9,
+    "maxBackground": 10.01,
+    "maxBetween": 5.24,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#5C1860",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.88,
+    "maxBackground": 9.38,
+    "maxBetween": 4.98,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.9,
+    "maxBackground": 9.38,
+    "maxBetween": 4.91,
+    "COLORS": {
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#7A5DF1",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.73,
+    "maxBackground": 8.46,
+    "maxBetween": 4.87,
+    "COLORS": {
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.88,
+    "maxBackground": 8.46,
+    "maxBetween": 4.49,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.73,
+    "maxBackground": 7.71,
+    "maxBetween": 4.44,
+    "COLORS": {
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.9,
+    "maxBackground": 8.46,
+    "maxBetween": 4.43,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#3319C4",
+      "COLOR_2": "#C89ECB"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.73,
+    "maxBackground": 7.54,
+    "maxBetween": 4.34,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.56,
+    "maxBackground": 6.75,
+    "maxBetween": 4.3,
+    "COLORS": {
+      "COLOR_0": "#9EC89C",
+      "COLOR_1": "#201EF8",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.6,
+    "maxBackground": 6.75,
+    "maxBetween": 4.21,
+    "COLORS": {
+      "COLOR_0": "#201EF8",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.73,
+    "maxBackground": 7.15,
+    "maxBetween": 4.12,
+    "COLORS": {
+      "COLOR_0": "#DD9FE2",
+      "COLOR_1": "#281CEB",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.88,
+    "maxBackground": 7.71,
+    "maxBetween": 4.1,
+    "COLORS": {
+      "COLOR_0": "#E3158A",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.64,
+    "maxBackground": 6.75,
+    "maxBetween": 4.1,
+    "COLORS": {
+      "COLOR_0": "#21D60D",
+      "COLOR_1": "#201EF8",
+      "COLOR_2": "#0B7DEA"
+    }
+  },
+  {
     "minBetween": 1.97,
     "minBackground": 1.65,
-    "maxBackground": 8.46,
-    "maxBetween": 5.11,
+    "maxBackground": 6.75,
+    "maxBetween": 4.08,
     "COLORS": {
-      "COLOR_0": "#AA29DF",
-      "COLOR_1": "#8DC0D4",
-      "COLOR_2": "#3319C4"
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#201EF8",
+      "COLOR_2": "#0B7DEA"
     }
   },
   {
-    "minBetween": 1.9,
-    "minBackground": 1.65,
+    "minBetween": 1.97,
+    "minBackground": 1.9,
     "maxBackground": 7.71,
-    "maxBetween": 4.66,
+    "maxBetween": 4.04,
     "COLORS": {
-      "COLOR_0": "#646EA7",
-      "COLOR_1": "#8DC0D4",
-      "COLOR_2": "#0C32C5"
+      "COLOR_0": "#7A5DF1",
+      "COLOR_1": "#0C32C5",
+      "COLOR_2": "#C89ECB"
     }
   },
   {
-    "minBetween": 1.85,
-    "minBackground": 1.65,
+    "minBetween": 1.97,
+    "minBackground": 1.88,
     "maxBackground": 7.54,
-    "maxBetween": 4.55,
+    "maxBetween": 4,
     "COLORS": {
-      "COLOR_0": "#646EA7",
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#E3158A",
+      "COLOR_2": "#9EADD0"
+    }
+  },
+  {
+    "minBetween": 1.97,
+    "minBackground": 1.9,
+    "maxBackground": 7.54,
+    "maxBetween": 3.95,
+    "COLORS": {
+      "COLOR_0": "#7A5DF1",
       "COLOR_1": "#1A478D",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_2": "#C89ECB"
     }
   },
   {
-    "minBetween": 1.84,
-    "minBackground": 1.65,
-    "maxBackground": 7.71,
-    "maxBetween": 4.66,
+    "minBetween": 1.97,
+    "minBackground": 1.73,
+    "maxBackground": 6.75,
+    "maxBetween": 3.89,
     "COLORS": {
-      "COLOR_0": "#E0022A",
-      "COLOR_1": "#8DC0D4",
-      "COLOR_2": "#0C32C5"
+      "COLOR_0": "#DD9FE2",
+      "COLOR_1": "#201EF8",
+      "COLOR_2": "#0B7DEA"
     }
   },
   {
-    "minBetween": 1.82,
-    "minBackground": 2.35,
+    "minBetween": 1.96,
+    "minBackground": 1.76,
     "maxBackground": 11.22,
-    "maxBetween": 4.77,
+    "maxBetween": 6.36,
     "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#AA29DF"
+      "COLOR_0": "#2C226F",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#59C4B3"
     }
   },
   {
-    "minBetween": 1.82,
-    "minBackground": 2.35,
+    "minBetween": 1.96,
+    "minBackground": 1.76,
     "maxBackground": 10.01,
-    "maxBetween": 4.26,
+    "maxBetween": 5.68,
     "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#5C1860"
+      "COLOR_0": "#5C1860",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#59C4B3"
     }
   },
   {
-    "minBetween": 1.82,
-    "minBackground": 2.35,
+    "minBetween": 1.96,
+    "minBackground": 1.76,
     "maxBackground": 9.38,
-    "maxBetween": 3.99,
+    "maxBetween": 5.32,
     "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2D410C",
-      "COLOR_2": "#AA29DF"
+      "COLOR_0": "#2D410C",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#59C4B3"
     }
   },
   {
-    "minBetween": 1.82,
-    "minBackground": 2.35,
+    "minBetween": 1.96,
+    "minBackground": 1.56,
+    "maxBackground": 7.54,
+    "maxBetween": 4.8,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 1.96,
+    "minBackground": 1.76,
     "maxBackground": 8.46,
-    "maxBetween": 3.59,
+    "maxBetween": 4.8,
     "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#3319C4"
+      "COLOR_0": "#3319C4",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#59C4B3"
     }
   },
   {
-    "minBetween": 1.8,
+    "minBetween": 1.96,
+    "minBackground": 1.6,
+    "maxBackground": 7.54,
+    "maxBetween": 4.7,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#E4ADB7"
+    }
+  },
+  {
+    "minBetween": 1.96,
+    "minBackground": 1.64,
+    "maxBackground": 7.54,
+    "maxBetween": 4.58,
+    "COLORS": {
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#1B7F9D"
+    }
+  },
+  {
+    "minBetween": 1.96,
     "minBackground": 1.65,
     "maxBackground": 7.54,
     "maxBetween": 4.55,
     "COLORS": {
       "COLOR_0": "#1A478D",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 1.79,
-    "minBackground": 1.65,
-    "maxBackground": 7.71,
-    "maxBetween": 4.66,
-    "COLORS": {
-      "COLOR_0": "#AA29DF",
       "COLOR_1": "#8DC0D4",
-      "COLOR_2": "#0C32C5"
+      "COLOR_2": "#1B7F9D"
     }
   },
   {
-    "minBetween": 1.79,
-    "minBackground": 2.35,
-    "maxBackground": 7.71,
-    "maxBetween": 3.28,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#0C32C5"
-    }
-  },
-  {
-    "minBetween": 1.77,
-    "minBackground": 2.35,
-    "maxBackground": 11.22,
-    "maxBetween": 4.77,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#E0022A"
-    }
-  },
-  {
-    "minBetween": 1.77,
-    "minBackground": 2.35,
-    "maxBackground": 10.01,
-    "maxBetween": 4.26,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#5C1860"
-    }
-  },
-  {
-    "minBetween": 1.77,
-    "minBackground": 2.35,
-    "maxBackground": 9.38,
-    "maxBetween": 3.99,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2D410C",
-      "COLOR_2": "#E0022A"
-    }
-  },
-  {
-    "minBetween": 1.77,
-    "minBackground": 2.35,
-    "maxBackground": 8.46,
-    "maxBetween": 3.59,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#3319C4"
-    }
-  },
-  {
-    "minBetween": 1.77,
-    "minBackground": 2.35,
-    "maxBackground": 7.71,
-    "maxBetween": 3.28,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#0C32C5"
-    }
-  },
-  {
-    "minBetween": 1.77,
-    "minBackground": 2.35,
-    "maxBackground": 7.54,
-    "maxBetween": 3.2,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#1A478D",
-      "COLOR_2": "#E0022A"
-    }
-  },
-  {
-    "minBetween": 1.75,
-    "minBackground": 1.65,
-    "maxBackground": 7.54,
+    "minBetween": 1.96,
+    "minBackground": 1.56,
+    "maxBackground": 7.15,
     "maxBetween": 4.55,
     "COLORS": {
-      "COLOR_0": "#AA29DF",
-      "COLOR_1": "#1A478D",
-      "COLOR_2": "#8DC0D4"
+      "COLOR_0": "#2D70FB",
+      "COLOR_1": "#9EC89C",
+      "COLOR_2": "#281CEB"
     }
   },
   {
-    "minBetween": 1.72,
-    "minBackground": 2.35,
-    "maxBackground": 11.22,
-    "maxBetween": 4.77,
+    "minBetween": 1.96,
+    "minBackground": 1.6,
+    "maxBackground": 7.15,
+    "maxBetween": 4.46,
     "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#646EA7"
+      "COLOR_0": "#2D70FB",
+      "COLOR_1": "#E4ADB7",
+      "COLOR_2": "#281CEB"
     }
   },
   {
-    "minBetween": 1.72,
-    "minBackground": 2.35,
-    "maxBackground": 10.01,
-    "maxBetween": 4.26,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#5C1860"
-    }
-  },
-  {
-    "minBetween": 1.72,
-    "minBackground": 2.35,
-    "maxBackground": 9.38,
-    "maxBetween": 3.99,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#2D410C"
-    }
-  },
-  {
-    "minBetween": 1.72,
-    "minBackground": 2.35,
-    "maxBackground": 8.46,
-    "maxBetween": 3.59,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#3319C4"
-    }
-  },
-  {
-    "minBetween": 1.72,
-    "minBackground": 2.35,
+    "minBetween": 1.96,
+    "minBackground": 1.76,
     "maxBackground": 7.71,
-    "maxBetween": 3.28,
+    "maxBetween": 4.37,
     "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#0C32C5"
+      "COLOR_0": "#0C32C5",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#59C4B3"
     }
   },
   {
-    "minBetween": 1.72,
-    "minBackground": 2.35,
+    "minBetween": 1.96,
+    "minBackground": 1.64,
+    "maxBackground": 7.15,
+    "maxBetween": 4.35,
+    "COLORS": {
+      "COLOR_0": "#2D70FB",
+      "COLOR_1": "#21D60D",
+      "COLOR_2": "#281CEB"
+    }
+  },
+  {
+    "minBetween": 1.96,
+    "minBackground": 1.73,
     "maxBackground": 7.54,
-    "maxBetween": 3.2,
+    "maxBetween": 4.34,
     "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#1A478D"
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#1B7F9D"
     }
   },
   {
-    "minBetween": 1.7,
-    "minBackground": 2.52,
-    "maxBackground": 11.22,
-    "maxBetween": 4.45,
+    "minBetween": 1.96,
+    "minBackground": 1.65,
+    "maxBackground": 7.15,
+    "maxBetween": 4.32,
     "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#AA29DF"
+      "COLOR_0": "#8DC0D4",
+      "COLOR_1": "#2D70FB",
+      "COLOR_2": "#281CEB"
     }
   },
   {
-    "minBetween": 1.7,
-    "minBackground": 2.52,
-    "maxBackground": 10.01,
-    "maxBetween": 3.97,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#5C1860"
-    }
-  },
-  {
-    "minBetween": 1.7,
-    "minBackground": 2.52,
-    "maxBackground": 9.38,
-    "maxBetween": 3.72,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#2D410C",
-      "COLOR_2": "#AA29DF"
-    }
-  },
-  {
-    "minBetween": 1.7,
-    "minBackground": 2.52,
-    "maxBackground": 8.46,
-    "maxBetween": 3.35,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#3319C4"
-    }
-  },
-  {
-    "minBetween": 1.7,
-    "minBackground": 2.52,
-    "maxBackground": 7.71,
-    "maxBetween": 3.05,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#0C32C5"
-    }
-  },
-  {
-    "minBetween": 1.7,
-    "minBackground": 2.52,
+    "minBetween": 1.96,
+    "minBackground": 1.76,
     "maxBackground": 7.54,
-    "maxBetween": 2.99,
+    "maxBetween": 4.27,
     "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#1A478D"
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#6774DA",
+      "COLOR_2": "#59C4B3"
     }
   },
   {
-    "minBetween": 1.65,
-    "minBackground": 2.52,
-    "maxBackground": 11.22,
-    "maxBetween": 4.45,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#E0022A"
-    }
-  },
-  {
-    "minBetween": 1.6,
-    "minBackground": 2.52,
-    "maxBackground": 11.22,
-    "maxBetween": 4.45,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#646EA7"
-    }
-  },
-  {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
-    "maxBackground": 11.22,
-    "maxBetween": 6.78,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 1.65,
-    "minBackground": 2.52,
-    "maxBackground": 10.01,
-    "maxBetween": 3.97,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#5C1860"
-    }
-  },
-  {
-    "minBetween": 1.65,
-    "minBackground": 2.52,
-    "maxBackground": 9.38,
-    "maxBetween": 3.72,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#2D410C",
-      "COLOR_2": "#E0022A"
-    }
-  },
-  {
-    "minBetween": 1.65,
-    "minBackground": 2.52,
-    "maxBackground": 8.46,
-    "maxBetween": 3.35,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#3319C4"
-    }
-  },
-  {
-    "minBetween": 1.65,
-    "minBackground": 2.52,
-    "maxBackground": 7.71,
-    "maxBetween": 3.05,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#0C32C5"
-    }
-  },
-  {
-    "minBetween": 1.65,
-    "minBackground": 2.52,
+    "minBetween": 1.96,
+    "minBackground": 1.76,
     "maxBackground": 7.54,
-    "maxBetween": 2.99,
+    "maxBetween": 4.27,
     "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#1A478D",
-      "COLOR_2": "#E0022A"
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#59C4B3"
     }
   },
   {
-    "minBetween": 1.6,
-    "minBackground": 2.52,
-    "maxBackground": 10.01,
-    "maxBetween": 3.97,
+    "minBetween": 1.96,
+    "minBackground": 1.73,
+    "maxBackground": 7.15,
+    "maxBetween": 4.12,
     "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#5C1860"
+      "COLOR_0": "#2D70FB",
+      "COLOR_1": "#DD9FE2",
+      "COLOR_2": "#281CEB"
     }
   },
   {
-    "minBetween": 1.6,
-    "minBackground": 2.52,
-    "maxBackground": 9.38,
-    "maxBetween": 3.72,
+    "minBetween": 1.96,
+    "minBackground": 1.76,
+    "maxBackground": 7.15,
+    "maxBetween": 4.06,
     "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#2D410C"
+      "COLOR_0": "#2D70FB",
+      "COLOR_1": "#59C4B3",
+      "COLOR_2": "#281CEB"
     }
   },
   {
-    "minBetween": 1.6,
-    "minBackground": 2.52,
-    "maxBackground": 8.46,
-    "maxBetween": 3.35,
+    "minBetween": 1.96,
+    "minBackground": 1.76,
+    "maxBackground": 7.15,
+    "maxBetween": 4.06,
     "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#3319C4"
+      "COLOR_0": "#6774DA",
+      "COLOR_1": "#59C4B3",
+      "COLOR_2": "#281CEB"
     }
   },
   {
-    "minBetween": 1.6,
-    "minBackground": 2.52,
-    "maxBackground": 7.71,
-    "maxBetween": 3.05,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#0C32C5"
-    }
-  },
-  {
-    "minBetween": 1.6,
-    "minBackground": 2.52,
+    "minBetween": 1.96,
+    "minBackground": 1.88,
     "maxBackground": 7.54,
-    "maxBetween": 2.99,
+    "maxBetween": 4,
     "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#1A478D"
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#9EADD0",
+      "COLOR_2": "#1B7F9D"
     }
   },
   {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
-    "maxBackground": 10.01,
-    "maxBetween": 6.05,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#5C1860",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
-    "maxBackground": 9.38,
-    "maxBetween": 5.67,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#2D410C",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
-    "maxBackground": 8.46,
-    "maxBetween": 5.11,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#8DC0D4",
-      "COLOR_2": "#3319C4"
-    }
-  },
-  {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
-    "maxBackground": 7.71,
-    "maxBetween": 4.66,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#8DC0D4",
-      "COLOR_2": "#0C32C5"
-    }
-  },
-  {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
+    "minBetween": 1.96,
+    "minBackground": 1.9,
     "maxBackground": 7.54,
-    "maxBetween": 4.55,
+    "maxBetween": 3.95,
     "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#1A478D",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
-    "maxBackground": 4.29,
-    "maxBetween": 2.59,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
-    "maxBackground": 4.17,
-    "maxBetween": 2.52,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#E0022A",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 1.52,
-    "minBackground": 1.65,
-    "maxBackground": 4.05,
-    "maxBetween": 2.45,
-    "COLORS": {
-      "COLOR_0": "#A383E8",
-      "COLOR_1": "#646EA7",
-      "COLOR_2": "#8DC0D4"
-    }
-  },
-  {
-    "minBetween": 1.75,
-    "minBackground": 2.35,
-    "maxBackground": 7.54,
-    "maxBetween": 3.2,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#AA29DF",
-      "COLOR_2": "#1A478D"
-    }
-  },
-  {
-    "minBetween": 1.6,
-    "minBackground": 2.35,
-    "maxBackground": 11.22,
-    "maxBetween": 4.77,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#7A5DF1"
-    }
-  },
-  {
-    "minBetween": 1.6,
-    "minBackground": 2.35,
-    "maxBackground": 10.01,
-    "maxBetween": 4.26,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#7A5DF1",
-      "COLOR_2": "#5C1860"
-    }
-  },
-  {
-    "minBetween": 1.6,
-    "minBackground": 2.35,
-    "maxBackground": 9.38,
-    "maxBetween": 3.99,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2D410C",
-      "COLOR_2": "#7A5DF1"
-    }
-  },
-  {
-    "minBetween": 1.6,
-    "minBackground": 2.35,
-    "maxBackground": 8.46,
-    "maxBetween": 3.59,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#7A5DF1",
-      "COLOR_2": "#3319C4"
-    }
-  },
-  {
-    "minBetween": 1.6,
-    "minBackground": 2.35,
-    "maxBackground": 7.71,
-    "maxBetween": 3.28,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#7A5DF1",
-      "COLOR_2": "#0C32C5"
-    }
-  },
-  {
-    "minBetween": 1.6,
-    "minBackground": 2.35,
-    "maxBackground": 7.54,
-    "maxBetween": 3.2,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#7A5DF1",
-      "COLOR_2": "#1A478D"
-    }
-  },
-  {
-    "minBetween": 1.57,
-    "minBackground": 2.35,
-    "maxBackground": 11.22,
-    "maxBetween": 4.77,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2C226F",
-      "COLOR_2": "#E3158A"
-    }
-  },
-  {
-    "minBetween": 1.57,
-    "minBackground": 2.35,
-    "maxBackground": 10.01,
-    "maxBetween": 4.26,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#E3158A",
-      "COLOR_2": "#5C1860"
-    }
-  },
-  {
-    "minBetween": 1.57,
-    "minBackground": 2.35,
-    "maxBackground": 9.38,
-    "maxBetween": 3.99,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#2D410C",
-      "COLOR_2": "#E3158A"
-    }
-  },
-  {
-    "minBetween": 1.57,
-    "minBackground": 2.35,
-    "maxBackground": 8.46,
-    "maxBetween": 3.59,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#E3158A",
-      "COLOR_2": "#3319C4"
-    }
-  },
-  {
-    "minBetween": 1.57,
-    "minBackground": 2.35,
-    "maxBackground": 7.71,
-    "maxBetween": 3.28,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#E3158A",
-      "COLOR_2": "#0C32C5"
-    }
-  },
-  {
-    "minBetween": 1.57,
-    "minBackground": 2.35,
-    "maxBackground": 7.54,
-    "maxBetween": 3.2,
-    "COLORS": {
-      "COLOR_0": "#609EE1",
-      "COLOR_1": "#1A478D",
-      "COLOR_2": "#E3158A"
+      "COLOR_0": "#1A478D",
+      "COLOR_1": "#1B7F9D",
+      "COLOR_2": "#C89ECB"
     }
   }
 ]
