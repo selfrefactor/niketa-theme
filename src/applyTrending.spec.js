@@ -108,9 +108,9 @@ export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   mode    : 'advanced',
   label   : 'bat',
-  COLOR_0 : '#1A478D',
-  COLOR_1 : '#E3158A',
-  COLOR_2 : '#8DC0D4',
+  COLOR_0 : '#f39c12',
+  COLOR_1 : '#440b0b',
+  COLOR_2 : '#827717',
 }
 
 // chosen cat
@@ -121,49 +121,50 @@ SETTINGS[ 0 ] = {
 SETTINGS[ 1 ] = {
   mode    : 'advanced',
   label   : 'cat',
-  COLOR_0 : '#E0022A',
-  COLOR_1 : '#5C1860',
-  COLOR_2 : '#8DC0D4',
+  COLOR_0 : '#f39c12',
+  COLOR_1 : '#440b0b',
+  COLOR_2 : '#038387',
 }
 SETTINGS[ 2 ] = {
   mode    : 'advanced',
   label   : 'dog',
-  COLOR_0 : '#2D410C',
-  COLOR_1 : '#E0022A',
-  COLOR_2 : '#8DC0D4',
+  COLOR_0 : '#9eb4ad',
+  COLOR_1 : '#841818',
+  COLOR_2 : '#827717',
 }
 // lemon song
 SETTINGS[ 3 ] = {
   mode    : 'advanced',
   label   : 'engine',
-  COLOR_0 : '#2D410C',
-  COLOR_1 : '#E3158A',
-  COLOR_2 : '#8DC0D4',
+  COLOR_0 : '#f39c12',
+  COLOR_1 : '#841818',
+  COLOR_2 : '#038387',
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_0 : '#2C226F',
-  COLOR_1 : '#BAD867',
-  COLOR_2 : '#1B7F9D',
+  COLOR_0 : '#9eb4ad',
+  COLOR_1 : '#440b0b',
+  COLOR_2 : '#ca5010',
 }
 // dancing days
 SETTINGS[ 5 ] = {
   mode    : 'advanced',
   label   : 'immigrant',
-  COLOR_0 : '#2C226F',
-  COLOR_1 : '#BAD867',
-  COLOR_2 : '#E3158A',
+  COLOR_0 : '#f39c12',
+  COLOR_1 : '#ca5010',
+  COLOR_2 : '#283593',
 }
 
 SETTINGS[ 6 ] = {
   mode    : 'advanced',
   label   : 'mystery',
-  COLOR_0 : '#2C226F',
-  COLOR_1 : '#D6C1E1',
-  COLOR_2 : '#1B7F9D',
+  COLOR_0 : '#f39c12',
+  COLOR_1 : '#440b0b',
+  COLOR_2 : '#2c6c96',
 }
+
 SETTINGS[ 7 ] = {
   mode    : 'brave',
   label   : 'habits',

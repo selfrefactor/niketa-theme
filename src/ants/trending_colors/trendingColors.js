@@ -2,11 +2,10 @@ import { readJsonAnt } from '../../ants/readJson'
 import { writeJsonAnt } from '../../ants/writeJson'
 const getContrastRatio = require('get-contrast-ratio')
 import { getCombinations } from './permutation'
-import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten, any, filter, toDecimal, maybe, complement, splitEvery, nth } from 'rambdax'
+import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten, any, filter, toDecimal, maybe, complement, splitEvery, nth, omit } from 'rambdax'
 import axios from 'axios'
 
 const SAVED = 'src/ants/trending_colors/saved.json'
-const SAVED_COLORS = 'src/ants/trending_colors/colors.json'
 const SAVED_SK = 'src/ants/trending_colors/sk.json'
 
 function getContrast(a, b){
@@ -15,7 +14,6 @@ function getContrast(a, b){
 const BLUE_BASE = '#00f'
 const RED_BASE = '#f00'
 const DARK_BASE = '#000'
-const LIGHT_BASE = '#fff'
 const isRed = x => getContrast(x, RED_BASE) < 1.15
 const isDark = x => {
   const aa = getContrast(x, DARK_BASE) < 1.5
@@ -23,8 +21,6 @@ const isDark = x => {
 
   return aa
 }
-const isTooLight = x => getContrast(x, LIGHT_BASE) < 6
-// const allowColor = x => !isDark(x) && !isLight(x)
 const isBlue = x => maybe(
   isDark(x),
   true,
@@ -35,10 +31,6 @@ function filterAgainstTwoBlues(colors){
   const blues = colors.filter(
     isBlue
   )
-  // if(blues.length !== 2){
-
-  //   console.log(blues, colors);
-  // }
 
   return blues.length === 1 || blues.length === 0
 }
@@ -64,10 +56,10 @@ async function getColorsFragment(offset){
   return data
 }
 
-async function getColors(){
+async function getColors(numFragments = 10){
   const colorsRaw = await mapAsync(
     async i => getColorsFragment(i * 100),
-  )(range(0, 10))
+  )(range(0, numFragments))
   const colors = flatten(colorsRaw)
 
   const sk = piped(
@@ -127,20 +119,35 @@ function evaluateCombination(indexListInstance, colors, background){
   }
 }
 
+function getLocalColors(limit){
+  const list = []
+
+  map((x, key) => map(xx => list.push(xx), x))(readJsonAnt('colors.json'))
+
+  return piped(
+    list,
+    filter(x => x.length === 7)
+  )
+}
+
 const BACKGROUND = '#FAF8F3'
 const LIMIT = 130
 const INDEX = 0
-export async function trendingColorsAnt(reload = true){
-  const trendingColors = reload ? restoreColors() : await getColors()
-  const colors = piped(
+
+export async function trendingColorsAnt({ reload, useLocalColors }){
+  const trendingColors = reload ? restoreColors() : await getColors(100)
+  const getColorLovers = () => piped(
     trendingColors,
     pluck('hex'),
     map(prepend('#')),
     splitEvery(LIMIT),
     nth(INDEX),
   )
-
-  const indexList = getIndexes(LIMIT)
+  const colors = useLocalColors ?
+    getLocalColors(LIMIT) :
+    getColorLovers()
+ 
+  const indexList = getIndexes(useLocalColors ? take(LIMIT, colors.length).length : LIMIT)
   const sk = piped(
     indexList,
     map(indexListInstance => evaluateCombination(indexListInstance, colors, BACKGROUND)),

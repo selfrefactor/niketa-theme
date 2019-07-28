@@ -1,6 +1,10 @@
 import { trendingColorsAnt } from './trendingColors'
 
 test('happy', async () => {
-  await trendingColorsAnt()
+  jest.setTimeout(10 * 60 * 1000)
+  await trendingColorsAnt({
+    useLocalColors : false,
+    reload         : true,
+  })
   // expect().toBe()
 })
