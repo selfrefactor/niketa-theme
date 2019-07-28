@@ -2,7 +2,7 @@ import { readJsonAnt } from '../../ants/readJson'
 import { writeJsonAnt } from '../../ants/writeJson'
 const getContrastRatio = require('get-contrast-ratio')
 import { getCombinations } from './permutation'
-import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten, any, filter, toDecimal, maybe , complement , splitEvery , nth } from 'rambdax'
+import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten, any, filter, toDecimal, maybe, complement, splitEvery, nth } from 'rambdax'
 import axios from 'axios'
 
 const SAVED = 'src/ants/trending_colors/saved.json'
@@ -24,7 +24,7 @@ const isDark = x => {
   return aa
 }
 const isTooLight = x => getContrast(x, LIGHT_BASE) < 6
-// const allowColor = x => !isDark(x) && !isLight(x) 
+// const allowColor = x => !isDark(x) && !isLight(x)
 const isBlue = x => maybe(
   isDark(x),
   true,
@@ -139,7 +139,7 @@ export async function trendingColorsAnt(reload = true){
     splitEvery(LIMIT),
     nth(INDEX),
   )
-  
+
   const indexList = getIndexes(LIMIT)
   const sk = piped(
     indexList,
@@ -149,11 +149,11 @@ export async function trendingColorsAnt(reload = true){
     filter(x => x.minBetween > 2),
     filter(x => x.minBackground > 2.04),
     sort((a, b) => {
-        if (a.minBetween === b.minBetween){
-          return a.maxBetween > b.maxBetween ? -1 : 1
-        }
+      if (a.minBetween === b.minBetween){
+        return a.maxBetween > b.maxBetween ? -1 : 1
+      }
 
-        return a.minBetween > b.minBetween ? -1 : 1
+      return a.minBetween > b.minBetween ? -1 : 1
     }),
     map(({ unsorted, colors, ...rest }) => ({
       ...rest,

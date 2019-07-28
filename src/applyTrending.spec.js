@@ -106,20 +106,19 @@ function getBaseColors(mode, actualBack){
 
 export const SETTINGS = {}
 SETTINGS[ 0 ] = {
-  back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'bat',
   COLOR_0 : '#1A478D',
   COLOR_1 : '#E3158A',
   COLOR_2 : '#8DC0D4',
 }
+
 // chosen cat
 // remove too blue colors
 // no two blue colors
 // min between is top prority
 // with all colors.json that include also opacityless fn
 SETTINGS[ 1 ] = {
-  back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'cat',
   COLOR_0 : '#E0022A',
@@ -127,7 +126,6 @@ SETTINGS[ 1 ] = {
   COLOR_2 : '#8DC0D4',
 }
 SETTINGS[ 2 ] = {
-  back    : '#f9f6f2',
   mode    : 'advanced',
   label   : 'dog',
   COLOR_0 : '#2D410C',
@@ -136,7 +134,6 @@ SETTINGS[ 2 ] = {
 }
 // lemon song
 SETTINGS[ 3 ] = {
-  back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'engine',
   COLOR_0 : '#2D410C',
@@ -145,7 +142,6 @@ SETTINGS[ 3 ] = {
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
-  back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'hook',
   COLOR_0 : '#2C226F',
@@ -154,7 +150,6 @@ SETTINGS[ 4 ] = {
 }
 // dancing days
 SETTINGS[ 5 ] = {
-  back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'immigrant',
   COLOR_0 : '#2C226F',
@@ -163,7 +158,6 @@ SETTINGS[ 5 ] = {
 }
 
 SETTINGS[ 6 ] = {
-  back    : '#f1f1f1',
   mode    : 'advanced',
   label   : 'mystery',
   COLOR_0 : '#2C226F',
@@ -200,47 +194,47 @@ SETTINGS[ 10 ] = {
   COLOR_2 : '#1B7F9D',
 }
 SETTINGS[ 11 ] = {
-  mode  : 'circus',
-  label : 'ajax',
-
-  COLOR_0 : '#5c4c78',
-  COLOR_1 : '#399090',
-  COLOR_2 : '#427BB0',
+  mode    : 'circus',
+  label   : 'ajax',
+  COLOR_0 : '#2D410C',
+  COLOR_1 : '#1B7F9D',
+  COLOR_2 : '#0DBDF1',
 }
 // label      : 'since.loving',
 SETTINGS[ 12 ] = {
   back    : '#f9f6f1',
   mode    : 'circus',
   label   : 'brother',
-  COLOR_0 : '#B1365B',
-  COLOR_1 : '#5F7E97',
-  COLOR_2 : '#9F7E6B',
+  COLOR_0 : '#1B7F9D',
+  COLOR_1 : '#702861',
+  COLOR_2 : '#0DBDF1',
 }
 // label      : 'tea.for'
 SETTINGS[ 13 ] = {
   back    : '#f9f6f1',
   mode    : 'circus',
   label   : 'people',
-  COLOR_0 : '#89325f',
-  COLOR_1 : '#b56e30',
-  COLOR_2 : '#356a6d',
+  COLOR_0 : '#9EADD0',
+  COLOR_1 : '#1B7F9D',
+  COLOR_2 : '#702861',
 }
 // label      : 'in.light',
 SETTINGS[ 14 ] = {
   mode    : 'circus',
   label   : 'whisky',
-  COLOR_0 : '#3782AF',
-  COLOR_1 : '#0d8a81',
-  COLOR_2 : '#A0595E',
+  COLOR_0 : '#0B0A6B',
+  COLOR_1 : '#0DBDF1',
+  COLOR_2 : '#028B02',
 }
 
 SETTINGS[ 15 ] = {
   mode    : 'niketa',
   label   : 'owl',
-  COLOR_2 : '#2f586f',
-  COLOR_1 : '#8c7647',
-  COLOR_0 : '#df5831',
+  COLOR_0 : '#1B7F9D',
+  COLOR_1 : '#C89ECB',
+  COLOR_2 : '#0B0A6B',
 }
+
 SETTINGS[ 16 ] = {
   mode    : 'niketa',
   label   : 'bear',
@@ -256,10 +250,12 @@ SETTINGS[ 17 ] = {
   COLOR_1 : '#295879',
   COLOR_2 : '#7f0c29',
 }
+// WINNERS: bear & cat
+const SOLE_BACKGROUND = '#FAF8F3'
 
 export function getChrome(mode, back){
+  const actualBack = defaultTo(SOLE_BACKGROUND, back)
   if (mode === 'advanced'){
-    const actualBack = defaultTo('#FAF8F3', back)
     const baseToApply = getBaseColors(mode, actualBack)
 
     return {
@@ -268,7 +264,6 @@ export function getChrome(mode, back){
     }
   }
   if (mode === 'brave'){
-    const actualBack = defaultTo('#f3f0e0', back)
     const baseToApply = getBaseColors(mode, actualBack)
 
     return {
@@ -278,7 +273,6 @@ export function getChrome(mode, back){
   }
 
   if (mode === 'circus'){
-    const actualBack = defaultTo('#ede8e1', back)
     const baseToApply = getBaseColors(mode, actualBack)
 
     return {
@@ -286,7 +280,6 @@ export function getChrome(mode, back){
       'editor.background' : actualBack,
     }
   }
-  const actualBack = defaultTo('#d8d5c9', back)
   const baseToApply = getBaseColors(mode, actualBack)
 
   return {
