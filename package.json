@@ -25,34 +25,94 @@
   "contributes": {
     "themes": [
       {
-        "label": "BaboonAnt",
+        "label": "AdvancedBat",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonAnt.json"
+        "path": "./themes/AdvancedBat.json"
       },
       {
-        "label": "BaboonBee",
+        "label": "AdvancedCat",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonBee.json"
+        "path": "./themes/AdvancedCat.json"
       },
       {
-        "label": "BaboonCell",
+        "label": "AdvancedDog",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonCell.json"
+        "path": "./themes/AdvancedDog.json"
       },
       {
-        "label": "BaboonDeep",
+        "label": "AdvancedEngine",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonDeep.json"
+        "path": "./themes/AdvancedEngine.json"
       },
       {
-        "label": "BaboonDelatour",
+        "label": "AdvancedMystery",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonDelatour.json"
+        "path": "./themes/AdvancedMystery.json"
       },
       {
-        "label": "BaboonFigure",
+        "label": "BraveLove",
         "uiTheme": "vs",
-        "path": "./baboon/BaboonFigure.json"
+        "path": "./themes/BraveLove.json"
+      },
+      {
+        "label": "BraveHomer",
+        "uiTheme": "vs",
+        "path": "./themes/BraveHomer.json"
+      },
+      {
+        "label": "BraveHabits",
+        "uiTheme": "vs",
+        "path": "./themes/BraveHabits.json"
+      },
+      {
+        "label": "BraveNeighbour",
+        "uiTheme": "vs",
+        "path": "./themes/BraveNeighbour.json"
+      },
+      {
+        "label": "CircusAjax",
+        "uiTheme": "vs",
+        "path": "./themes/CircusAjax.json"
+      },
+      {
+        "label": "CircusPeople",
+        "uiTheme": "vs",
+        "path": "./themes/CircusPeople.json"
+      },
+      {
+        "label": "CircusWhisky",
+        "uiTheme": "vs",
+        "path": "./themes/CircusWhisky.json"
+      },
+      {
+        "label": "CircusBrother",
+        "uiTheme": "vs",
+        "path": "./themes/CircusBrother.json"
+      },
+      {
+        "label": "NiketaBear",
+        "uiTheme": "vs",
+        "path": "./themes/NiketaBear.json"
+      },
+      {
+        "label": "NiketaOwl",
+        "uiTheme": "vs",
+        "path": "./themes/NiketaOwl.json"
+      },
+      {
+        "label": "NiketaMoon",
+        "uiTheme": "vs",
+        "path": "./themes/NiketaMoon.json"
+      },
+      {
+        "label": "AdvancedHook",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedHook.json"
+      },
+      {
+        "label": "AdvancedImmigrant",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedImmigrant.json"
       }
     ]
   },
@@ -68,6 +128,7 @@
     "axios": "^0.19.0",
     "babel-cli": "^7.0.0-beta.3",
     "babel-preset-env": "^7.0.0-beta.3",
+    "color": "^3.1.2",
     "fs-extra": "^8.1.0",
     "get-contrast-ratio": "^0.2.1",
     "hexsorter": "^1.5.0",
@@ -108,8 +169,6 @@
       "theme",
       "build",
       "bee"
-    ],
-    "workInProgress": ""
-  },
-  "dependencies": {}
+    ]
+  }
 }

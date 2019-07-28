@@ -2,14 +2,14 @@ import { readJsonAnt } from '../../ants/readJson'
 import { writeJsonAnt } from '../../ants/writeJson'
 const getContrastRatio = require('get-contrast-ratio')
 import { getCombinations } from './permutation'
-import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten , any , filter , toDecimal } from 'rambdax'
+import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten, any, filter, toDecimal } from 'rambdax'
 import axios from 'axios'
 
 const SAVED = 'src/ants/trending_colors/saved.json'
 const SAVED_COLORS = 'src/ants/trending_colors/colors.json'
 const SAVED_SK = 'src/ants/trending_colors/sk.json'
 
-function getContrast(a,b){
+function getContrast(a, b){
   return getContrastRatio.default(a, b)
 }
 
@@ -59,29 +59,36 @@ function getIndexes(limit){
 }
 
 function evaluateCombination(indexListInstance, colors, background){
-  const color1 = colors[indexListInstance[0]]
-  const color2 = colors[indexListInstance[1]]
-  const color3 = colors[indexListInstance[2]]
+  const color1 = colors[ indexListInstance[ 0 ] ]
+  const color2 = colors[ indexListInstance[ 1 ] ]
+  const color3 = colors[ indexListInstance[ 2 ] ]
   const betweenContrast = [
     getContrast(color1, color2),
     getContrast(color1, color3),
     getContrast(color2, color3),
   ]
-  const okBetween = any(x => x < 1.5,betweenContrast)
-  if(okBetween) return false
+  const okBetween = any(x => x < 1.5, betweenContrast)
+  if (okBetween) return false
   const compareToBackground = [
     getContrast(color1, background),
     getContrast(color2, background),
     getContrast(color3, background),
   ]
-  if(any(x => x < 1.5,compareToBackground)) return false
-  const sorted = [color1, color2, color3].sort()
+  if (any(x => x < 1.5, compareToBackground)) return false
+  const sorted = [ color1, color2, color3 ].sort()
   const minBetween = Math.min(...betweenContrast)
   const minBackground = Math.min(...compareToBackground)
   const maxBetween = Math.max(...betweenContrast)
   const maxBackground = Math.max(...compareToBackground)
 
-  return {colors: sorted, unsorted: [color1, color2, color3], minBetween, minBackground, maxBackground, maxBetween}
+  return {
+    colors   : sorted,
+    unsorted : [ color1, color2, color3 ],
+    minBetween,
+    minBackground,
+    maxBackground,
+    maxBetween,
+  }
 }
 
 const BACKGROUND = '#eaeaf4'
@@ -97,27 +104,29 @@ export async function trendingColorsAnt(reload = true){
   const indexList = getIndexes(LIMIT)
   const sk = piped(
     indexList,
-    map(indexListInstance => evaluateCombination(indexListInstance, colors,BACKGROUND)),
+    map(indexListInstance => evaluateCombination(indexListInstance, colors, BACKGROUND)),
     filter(Boolean),
     sort((a, b) => {
       if (toDecimal(a.minBackground - b.minBackground) < 0.65){
-        if(a.minBetween ===  b.minBetween){
+        if (a.minBetween === b.minBetween){
           return a.maxBetween > b.maxBetween ? -1 : 1
         }
+
         return a.minBetween > b.minBetween ? -1 : 1
       }
-      return a.minBackground <  b.minBackground ? -1 : 1
+
+      return a.minBackground < b.minBackground ? -1 : 1
     }),
-    map(({unsorted, colors,...rest}) => ({
+    map(({ unsorted, colors, ...rest }) => ({
       ...rest,
-      COLORS: {
-        COLOR_0: unsorted[0],
-        COLOR_1: unsorted[1],
-        COLOR_2: unsorted[2],
-      }
+      COLORS : {
+        COLOR_0 : unsorted[ 0 ],
+        COLOR_1 : unsorted[ 1 ],
+        COLOR_2 : unsorted[ 2 ],
+      },
     }))
   )
-    
+
   writeJsonAnt(SAVED_SK, sk)
 }
 
