@@ -13,7 +13,7 @@ function getContrast(a,b){
   return getContrastRatio.default(a, b)
 }
 
-async function getAllColors(offset){
+async function getColorsFragment(offset){
   const url = glue(`
     http://www.colourlovers.com/api/colors?format=json
     numResults=100
@@ -28,7 +28,7 @@ async function getAllColors(offset){
 
 async function getColors(){
   const colorsRaw = await mapAsync(
-    async i => getAllColors(i * 100),
+    async i => getColorsFragment(i * 100),
   )(range(0, 10))
   const colors = flatten(colorsRaw)
 
@@ -76,10 +76,12 @@ function evaluateCombination(indexListInstance, colors, background){
   ]
   if(any(x => x < 1.5,compareToBackground)) return false
   const sorted = [color1, color2, color3].sort()
+  const minBetween = Math.min(...betweenContrast)
+  const minBackground = Math.min(...compareToBackground)
   const maxBetween = Math.max(...betweenContrast)
   const maxBackground = Math.max(...compareToBackground)
 
-  return {colors: sorted, maxBetween, maxBackground}
+  return {colors: sorted, minBetween, minBackground, maxBackground, maxBetween}
 }
 
 const BACKGROUND = '#eaeaf4'
@@ -99,15 +101,15 @@ export async function trendingColorsAnt(reload = true){
     map(indexListInstance => evaluateCombination(indexListInstance, colors,BACKGROUND)),
     filter(Boolean),
     sort((a, b) => {
-      if (Math.floor(a.maxBackground) === Math.floor(b.maxBackground)){
-        return a.maxBetween > b.maxBetween ? -1 : 1
+      if (Math.floor(a.minBackground - b.minBackground) < 0.3){
+        return a.minBetween > b.minBetween ? -1 : 1
       }
 
-      return a.maxBackground > b.maxBackground ? -1 : 1
+      return a.minBackground> b.minBackground ? -1 : 1
     }),
   )
     
-  // writeJsonAnt(SAVED_SK, sk)
+  writeJsonAnt(SAVED_SK, sk)
   console.log(toDecimal)
   
 }
