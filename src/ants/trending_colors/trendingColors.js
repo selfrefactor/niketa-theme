@@ -81,7 +81,7 @@ function evaluateCombination(indexListInstance, colors, background){
   const maxBetween = Math.max(...betweenContrast)
   const maxBackground = Math.max(...compareToBackground)
 
-  return {colors: sorted, minBetween, minBackground, maxBackground, maxBetween}
+  return {colors: sorted, unsorted: [color1, color2, color3], minBetween, minBackground, maxBackground, maxBetween}
 }
 
 const BACKGROUND = '#eaeaf4'
@@ -94,10 +94,7 @@ export async function trendingColorsAnt(reload = true){
     pluck('hex'),
     map(prepend('#'))
   )
-  let counter = -1
-  let counterx = -1
   const indexList = getIndexes(LIMIT)
-  // console.log({indexList})
   const sk = piped(
     indexList,
     map(indexListInstance => evaluateCombination(indexListInstance, colors,BACKGROUND)),
@@ -105,12 +102,20 @@ export async function trendingColorsAnt(reload = true){
     sort((a, b) => {
       if (toDecimal(a.minBackground - b.minBackground) < 0.65){
         if(a.minBetween ===  b.minBetween){
-          counter++
           return a.maxBetween > b.maxBetween ? -1 : 1
         }
-        return a.minBackground <  b.minBackground ? -1 : 1
+        return a.minBetween > b.minBetween ? -1 : 1
       }
+      return a.minBackground <  b.minBackground ? -1 : 1
     }),
+    map(({unsorted, colors,...rest}) => ({
+      ...rest,
+      COLORS: {
+        COLOR_0: unsorted[0],
+        COLOR_1: unsorted[1],
+        COLOR_2: unsorted[2],
+      }
+    }))
   )
     
   writeJsonAnt(SAVED_SK, sk)
