@@ -245,7 +245,8 @@ SETTINGS[ 17 ] = {
   COLOR_2 : '#7f0c29',
 }
 // WINNERS: brother ajax
-const SOLE_BACKGROUND = '#FAF8F3'
+// const SOLE_BACKGROUND = '#FAF8F3'
+const SOLE_BACKGROUND = '#f3f0e0'
 
 export function getChrome(mode, back){
   const actualBack = defaultTo(SOLE_BACKGROUND, back)

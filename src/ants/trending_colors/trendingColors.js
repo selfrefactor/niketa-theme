@@ -133,7 +133,7 @@ function getLocalColors(colorLovers, limit){
   ]
 }
 
-const BACKGROUND = '#FAF8F3'
+const BACKGROUND = '#f3f0e0'
 const LIMIT = 130
 const INDEX = 0
 

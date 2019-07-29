@@ -17,7 +17,7 @@ test('happy', async () => {
     useLocalColors : false,
     reload         : true,
     mixFlag        : true,
-    predicate      : filter(predicate),
+    // predicate      : filter(predicate),
   })
   // expect().toBe()
 })
