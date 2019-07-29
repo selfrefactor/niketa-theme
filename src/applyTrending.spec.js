@@ -127,30 +127,33 @@ SETTINGS[ 2 ] = {
 SETTINGS[ 3 ] = {
   mode    : 'advanced',
   label   : 'engine',
+  "COLOR_0": "#556AE7",
+      "COLOR_1": "#25164C",
+      "COLOR_2": "#d4b106"
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_0 : '#da3b01',
-  COLOR_1 : '#d4a12a',
-  COLOR_2 : '#820014',
+  "COLOR_0": "#556AE7",
+      "COLOR_1": "#50C5C2",
+      "COLOR_2": "#132333"
 }
 // dancing days
 SETTINGS[ 5 ] = {
   mode    : 'advanced',
   label   : 'immigrant',
-  COLOR_0 : '#652b5c',
-  COLOR_1 : '#d33682',
-  COLOR_2 : '#d4a12a',
+  "COLOR_0": "#50C5C2",
+      "COLOR_1": "#132333",
+      "COLOR_2": "#847545"
 }
 
 SETTINGS[ 6 ] = {
   mode    : 'advanced',
   label   : 'mystery',
-  COLOR_0 : '#8B1518',
-  COLOR_1 : '#da3b01',
-  COLOR_2 : '#d4a12a',
+  "COLOR_0": "#E8045A",
+      "COLOR_1": "#d4b106",
+      "COLOR_2": "#282c34"
 }
 
 SETTINGS[ 7 ] = {
