@@ -105,31 +105,28 @@ export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   mode    : 'advanced',
   label   : 'bat',
-  COLOR_0 : '#847545',
-  COLOR_1 : '#d4a12a',
-  COLOR_2 : '#820014',
+  "COLOR_0": "#25164C",
+  "COLOR_1": "#E8045A",
+  "COLOR_2": "#50C5C2"
 }
 SETTINGS[ 1 ] = {
   mode    : 'advanced',
   label   : 'cat',
-  COLOR_0 : '#25164C',
-  COLOR_1 : '#da3b01',
-  COLOR_2 : '#d4a12a',
+  "COLOR_0": "#556AE7",
+  "COLOR_1": "#50C5C2",
+  "COLOR_2": "#440b0b"
 }
 SETTINGS[ 2 ] = {
   mode    : 'advanced',
   label   : 'dog',
-  COLOR_0 : '#151C6F',
-  COLOR_1 : '#da3b01',
-  COLOR_2 : '#d4a12a',
+  "COLOR_0": "#E8045A",
+      "COLOR_1": "#50C5C2",
+      "COLOR_2": "#440b0b"
 }
 // lemon song
 SETTINGS[ 3 ] = {
   mode    : 'advanced',
   label   : 'engine',
-  COLOR_0 : '#0418C1',
-  COLOR_1 : '#847545',
-  COLOR_2 : '#d4a12a',
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
