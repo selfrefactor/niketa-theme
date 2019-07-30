@@ -2,7 +2,24 @@ import { readJsonAnt } from '../../ants/readJson'
 import { writeJsonAnt } from '../../ants/writeJson'
 const getContrastRatio = require('get-contrast-ratio')
 import { getCombinations } from './permutation'
-import { glue, piped, sort, range, tap, take, pluck, prepend, map, mapAsync, flatten, any, filter, toDecimal, maybe, complement, splitEvery, nth, omit, shuffle, uniq } from 'rambdax'
+import {
+  any,
+  filter,
+  flatten,
+  glue,
+  map,
+  mapAsync,
+  maybe,
+  nth,
+  piped,
+  pluck,
+  prepend,
+  range,
+  shuffle,
+  sort,
+  splitEvery,
+  take,
+} from 'rambdax'
 import axios from 'axios'
 
 const SAVED = 'src/ants/trending_colors/saved.json'
@@ -51,7 +68,8 @@ async function getColorsFragment(offset){
   return data
 }
 
-async function getColors(numFragments = 10){
+async function getColors(numFragments, forceColors){
+  if (forceColors.length === 0) return
   const colorsRaw = await mapAsync(
     async i => getColorsFragment(i * 100),
   )(range(0, numFragments))
@@ -115,9 +133,12 @@ function evaluateCombination(indexListInstance, colors, background){
 }
 
 function getLocalColors(colorLovers, limit){
+  // console.log(colorLovers);
+
   const list = []
 
   map(x => map(xx => list.push(xx), x))(readJsonAnt('colors.json'))
+  console.log(list)
 
   const localColors = piped(
     list,
@@ -135,24 +156,32 @@ function getLocalColors(colorLovers, limit){
 
 const BACKGROUND = '#f3f0e0'
 const LIMIT = 130
-const INDEX = 0
 
-export async function trendingColorsAnt({ reload, useLocalColors, mixFlag, predicate }){
+export async function trendingColorsAnt({
+  mixFlag = false,
+  forceColors = [],
+  predicate = undefined,
+  reload = true,
+  useLocalColors = false,
+}){
   if (predicate){
     const filtered = predicate(readJsonAnt(SAVED_SK))
-    console.log(filtered.length)
+    console.log('filtered', filtered.length)
 
     return writeJsonAnt(SAVED_FILTERED, filtered)
   }
 
-  const trendingColors = reload ? restoreColors() : await getColors(100)
-  const getColorLovers = () => piped(
-    trendingColors,
-    pluck('hex'),
-    map(prepend('#')),
-    splitEvery(LIMIT),
-    nth(INDEX),
-  )
+  const trendingColors = reload ? restoreColors() : await getColors(100, forceColors)
+  const getColorLovers = () => {
+    if (forceColors.length > 0) return take(LIMIT, shuffle(forceColors))
+
+    return piped(
+      trendingColors,
+      pluck('hex'),
+      map(prepend('#')),
+      take(LIMIT),
+    )
+  }
   const colors = maybe(
     mixFlag,
     getLocalColors(getColorLovers(), LIMIT),

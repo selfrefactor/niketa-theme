@@ -105,55 +105,49 @@ export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   mode    : 'advanced',
   label   : 'bat',
-  "COLOR_0": "#25164C",
-  "COLOR_1": "#E8045A",
-  "COLOR_2": "#50C5C2"
+  COLOR_0 : '#801336',
+  COLOR_1 : '#93b5b3',
+  COLOR_2 : '#018574',
 }
 SETTINGS[ 1 ] = {
   mode    : 'advanced',
   label   : 'cat',
-  "COLOR_0": "#556AE7",
-  "COLOR_1": "#50C5C2",
-  "COLOR_2": "#440b0b"
+  COLOR_0 : '#6561F5',
+  COLOR_1 : '#D77DFF',
+  COLOR_2 : '#5D0450',
 }
 SETTINGS[ 2 ] = {
-  mode    : 'advanced',
-  label   : 'dog',
-  "COLOR_0": "#E8045A",
-      "COLOR_1": "#50C5C2",
-      "COLOR_2": "#440b0b"
+  mode  : 'advanced',
+  label : 'dog',
 }
 // lemon song
 SETTINGS[ 3 ] = {
-  mode    : 'advanced',
-  label   : 'engine',
-  "COLOR_0": "#556AE7",
-      "COLOR_1": "#25164C",
-      "COLOR_2": "#d4b106"
+  mode  : 'advanced',
+  label : 'engine',
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
   mode    : 'advanced',
   label   : 'hook',
-  "COLOR_0": "#556AE7",
-      "COLOR_1": "#50C5C2",
-      "COLOR_2": "#132333"
+  COLOR_0 : '#556AE7',
+  COLOR_1 : '#50C5C2',
+  COLOR_2 : '#132333',
 }
 // dancing days
 SETTINGS[ 5 ] = {
   mode    : 'advanced',
   label   : 'immigrant',
-  "COLOR_0": "#50C5C2",
-      "COLOR_1": "#132333",
-      "COLOR_2": "#847545"
+  COLOR_0 : '#50C5C2',
+  COLOR_1 : '#132333',
+  COLOR_2 : '#847545',
 }
 
 SETTINGS[ 6 ] = {
   mode    : 'advanced',
   label   : 'mystery',
-  "COLOR_0": "#E8045A",
-      "COLOR_1": "#d4b106",
-      "COLOR_2": "#282c34"
+  COLOR_0 : '#E8045A',
+  COLOR_1 : '#d4b106',
+  COLOR_2 : '#282c34',
 }
 
 SETTINGS[ 7 ] = {
