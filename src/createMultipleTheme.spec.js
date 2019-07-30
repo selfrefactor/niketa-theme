@@ -149,6 +149,11 @@ SETTINGS[ 3 ] = {
   COLOR_0 : '#9C8058',
   COLOR_1 : '#f26153',
   COLOR_2 : '#096165',
+
+  First iteration:
+  COLOR_2 : '#8B1518',
+  COLOR_1 : '#847545',
+  COLOR_0 : '#f38b80',
 */
 
 // heartbreaker
@@ -156,9 +161,9 @@ SETTINGS[ 4 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_2 : '#8B1518',
-  COLOR_1 : '#847545',
-  COLOR_0 : '#f38b80',
+  "COLOR_1": "#240041",
+      "COLOR_2": "#ff4d4d",
+      "COLOR_0": "#0e5f76"
 }
 // dancing days
 SETTINGS[ 5 ] = {

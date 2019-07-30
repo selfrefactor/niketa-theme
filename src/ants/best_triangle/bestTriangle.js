@@ -99,6 +99,13 @@ function getLocalColors(colors){
 }
 
 export function sortFn(a, b){
+  if (a.minBackground === b.minBackground){
+    return a.maxBetween > b.maxBetween ? -1 : 1
+  }
+
+  return a.minBackground > b.minBackground ? -1 : 1
+}
+export function sortFnx(a, b){
   if (a.minBetween === b.minBetween){
     return a.maxBetween > b.maxBetween ? -1 : 1
   }
@@ -113,7 +120,7 @@ export function filterColors(predicate){
   console.log('filtered', filtered.length)
 
   return writeJsonAnt(SAVED_FILTERED, filtered)
-}
+} 
 
 export async function findBestTriangle({ colors, minBackground = 1.7, minBetween = 1.8 }){
   const indexList = getIndexes(colors.length)

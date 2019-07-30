@@ -104,9 +104,9 @@ export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   mode    : 'advanced',
   label   : 'bat',
-  COLOR_0 : '#801336',
-  COLOR_1 : '#93b5b3',
-  COLOR_2 : '#018574',
+  COLOR_1 : '#240041',
+  COLOR_2 : '#ff4d4d',
+  COLOR_0 : '#0e5f76',
 }
 SETTINGS[ 1 ] = {
   mode  : 'advanced',
@@ -133,11 +133,11 @@ SETTINGS[ 5 ] = {
 }
 
 const permutations = [
-  [ 1, 3, 2 ],
-  [ 2, 1, 3 ],
-  [ 2, 3, 1 ],
-  [ 3, 2, 1 ],
-  [ 3, 1, 2 ],
+  [ 1, 3, 2 ], // cat
+  [ 2, 1, 3 ], // dog
+  [ 2, 3, 1 ], // engine
+  [ 3, 2, 1 ], // hook
+  [ 3, 1, 2 ], // immigrant
 ]
 permutations.forEach((indexes, i) => {
   SETTINGS[ i + 1 ] = {

@@ -9,13 +9,14 @@ import {
 } from './bestTriangle'
 import importedColors from './colors.json'
 
-test('happy', async () => {
-  jest.setTimeout(10 * 60 * 1000)
-
+test.skip('happy', async () => {
+  jest.setTimeout(20 * 60 * 1000)
+  const LIMIT = 80
   const holder = []
+  console.time('happy')
   const singleLoop = async i => {
     console.time(`iteration-${ i }`)
-    const colors = take(50, shuffle(importedColors))
+    const colors = take(LIMIT, shuffle(importedColors))
     const singleResult = await findBestTriangle({
       colors,
       minBetween    : 2.05,
@@ -25,7 +26,9 @@ test('happy', async () => {
     console.log(singleResult.length)
     console.timeEnd(`iteration-${ i }`)
   }
-  await mapAsync(singleLoop)(range(0, 2))
+  console.timeEnd('happy')
+
+  await mapAsync(singleLoop)(range(0, 20))
   const toSave = sort(sortFn)(flatten(holder))
   writeJsonAnt(SAVED_SK, toSave)
 })
