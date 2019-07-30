@@ -9,6 +9,10 @@ import {
 } from './bestTriangle'
 import importedColors from './colors.json'
 
+test('filter out dark colors', () => {
+  // expect().toBe()
+})
+
 test.skip('happy', async () => {
   jest.setTimeout(20 * 60 * 1000)
   const LIMIT = 80
