@@ -23,7 +23,6 @@ function getColor(img, quality) {
                 reject(err);
             })
     });
-
 }
 
 function getPalette(img, colorCount = 10, quality = 10) {
