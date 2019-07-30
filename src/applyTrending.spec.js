@@ -100,19 +100,17 @@ function getBaseColors(mode, actualBack){
   )(withMainColor)
 }
 
-
-
 export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   mode    : 'advanced',
   label   : 'bat',
   COLOR_0 : '#801336',
-COLOR_1 : '#93b5b3',
-COLOR_2 : '#018574',
+  COLOR_1 : '#93b5b3',
+  COLOR_2 : '#018574',
 }
 SETTINGS[ 1 ] = {
-  mode    : 'advanced',
-  label   : 'cat',
+  mode  : 'advanced',
+  label : 'cat',
 }
 SETTINGS[ 2 ] = {
   mode  : 'advanced',
@@ -125,31 +123,31 @@ SETTINGS[ 3 ] = {
 }
 // heartbreaker
 SETTINGS[ 4 ] = {
-  mode    : 'advanced',
-  label   : 'hook',
+  mode  : 'advanced',
+  label : 'hook',
 }
 // dancing days
 SETTINGS[ 5 ] = {
-  mode    : 'advanced',
-  label   : 'immigrant',
+  mode  : 'advanced',
+  label : 'immigrant',
 }
 
 const permutations = [
-  [1,3,2],
-  [2,1,3],
-  [2,3,1],
-  [3,2,1],
-  [3,1,2],
+  [ 1, 3, 2 ],
+  [ 2, 1, 3 ],
+  [ 2, 3, 1 ],
+  [ 3, 2, 1 ],
+  [ 3, 1, 2 ],
 ]
 permutations.forEach((indexes, i) => {
-  SETTINGS[i+1] = {
-    ...SETTINGS[i+1],
-    COLOR_0: SETTINGS[0][`COLOR_${indexes[0] -1}`],
-    COLOR_1: SETTINGS[0][`COLOR_${indexes[1] -1}`],
-    COLOR_2: SETTINGS[0][`COLOR_${indexes[2] -1}`],
+  SETTINGS[ i + 1 ] = {
+    ...SETTINGS[ i + 1 ],
+    COLOR_0 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 0 ] - 1 }` ],
+    COLOR_1 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 1 ] - 1 }` ],
+    COLOR_2 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 2 ] - 1 }` ],
   }
 })
-console.log(SETTINGS);
+console.log(SETTINGS)
 
 // const SOLE_BACKGROUND = '#FAF8F3'
 const SOLE_BACKGROUND = '#f3f0e0'

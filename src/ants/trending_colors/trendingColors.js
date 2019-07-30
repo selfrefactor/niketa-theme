@@ -154,8 +154,16 @@ function getLocalColors(colorLovers, limit){
   ]
 }
 
+export function sortFn(a, b){
+  if (a.minBetween === b.minBetween){
+    return a.maxBetween > b.maxBetween ? -1 : 1
+  }
+
+  return a.minBetween > b.minBetween ? -1 : 1
+}
+
 const BACKGROUND = '#f3f0e0'
-const LIMIT = 130
+export const LIMIT = 50
 
 export async function trendingColorsAnt({
   mixFlag = false,
@@ -200,13 +208,7 @@ export async function trendingColorsAnt({
     filter(x => filterAgainstTwoBlues(x.colors)),
     filter(x => x.minBetween > 1.7),
     filter(x => x.minBackground > 1.8),
-    sort((a, b) => {
-      if (a.minBetween === b.minBetween){
-        return a.maxBetween > b.maxBetween ? -1 : 1
-      }
-
-      return a.minBetween > b.minBetween ? -1 : 1
-    }),
+    sort(sortFn),
     map(({ unsorted, colors, ...rest }) => ({
       ...rest,
       COLORS : {
@@ -220,5 +222,26 @@ export async function trendingColorsAnt({
   console.log(sk.length)
 
   writeJsonAnt(SAVED_SK, sk)
+}
+
+async function findBestTriangle({ colors, minBackground = 1.7, minBetween = 1.8 }){
+  const indexList = getIndexes(LIMIT)
+
+  return piped(
+    indexList,
+    map(indexListInstance => evaluateCombination(indexListInstance, colors, BACKGROUND)),
+    filter(Boolean),
+    filter(x => x.minBetween > minBetween),
+    filter(x => x.minBackground > minBackground),
+    sort(sortFn),
+    map(({ unsorted, colors, ...rest }) => ({
+      ...rest,
+      COLORS : {
+        COLOR_0 : unsorted[ 0 ],
+        COLOR_1 : unsorted[ 1 ],
+        COLOR_2 : unsorted[ 2 ],
+      },
+    }))
+  )
 }
 
