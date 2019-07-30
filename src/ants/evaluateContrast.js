@@ -1,10 +1,47 @@
+import { readJsonAnt } from '../ants/readJson'
+import { pascalCase } from 'string-fn'
 const getContrastRatio = require('get-contrast-ratio')
-import { readJsonSync, outputJsonSync } from 'fs-extra'
-const path = '/home/s/.config/Code - Exploration/User/settings.json'
+import { SETTINGS } from '../createMultipleTheme.spec'
+import { map, filter , values , findInObject } from 'rambdax'
 
-export function evaluateContrast(themeColors){
-  // const a = getContrastRatio.default('#433', '#fafafa');
+export function evaluateContrast(){
+  const hash = {}
+  let max = -Infinity
+  let min = Infinity
+  const toLog = []
+  map(singleSetting => {
+    const colors = filter(
+      (_, prop) => prop.startsWith('COLOR') && prop.length === 7
+    )(singleSetting)
+    const theme = pascalCase(`${ singleSetting.mode }.${ singleSetting.label }`)
 
+    const content = readJsonAnt(`themes/${ theme }.json`)
+    const background = content.colors[ 'editor.background' ]
+    const sk = map(
+      (singleColor, prop) => {
+        const love = getContrastRatio.default(background, singleColor)
+        if(love < min) min = love
+        if(love > max) max = love
+        hash[`${theme}.${prop}`] = love
+        return love
+      } 
+    )(colors)  
+    const sum = values(sk).reduce(
+      (prev, curr) => curr + prev,
+      0
+    ) 
+    const approximate = Math.floor(sum/values(sk).length)  
+    toLog.push({theme, approximate})   
+  })(SETTINGS)
+  const minColor = findInObject(
+    x => x === min,
+    hash
+  )
+  const maxColor = findInObject(
+    x => x === max,
+    hash
+  )
+  console.log(hash);
+  toLog.forEach(x => console.log(x.theme, x.approximate))
+  console.log(minColor, maxColor);
 }
-
-// {"id":75,"amount":"3","reason":"-","receiverName":"Android","clinicName":"iOS campaign","date_added":1561713189,"date_modified":1561713189,"state":"PENDING","invoices":[],"inner_transfer":{"donation_id":52368,"campaign_to_id":285,"campaign_to_slug":"ios-campaign-285","campaign_to_name":"iOS campaign"},"meta":{"campaign_id":338,"campaign_slug":"testove-za-harvard-338","campaign_name":"Тестове за Харвард"},"IBAN":"-","comment":"-"}"

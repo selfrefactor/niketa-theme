@@ -5,62 +5,79 @@ import { generateThemeDataBee } from './bees/generateThemeData'
 import { readJsonAnt } from './ants/readJson'
 import { maybe, map, defaultTo, replace, switcher } from 'rambdax'
 
+const listAdvancedBraveCircus = {
+  'list.activeSelectionBackground'   : '#eae3cd',
+  'list.activeSelectionForeground'   : '#677d7f',
+  'list.dropBackground'              : '#999a9d',
+  'list.focusBackground'             : '#885f66aa',
+  'list.highlightForeground'         : '#89345d',
+  'list.hoverBackground'             : '#999a9d',
+  'list.hoverForeground'             : '#f5f4e8',
+  'list.inactiveSelectionBackground' : '#eae3cd55',
+  'list.inactiveSelectionForeground' : '#30322e',
+}
+const listNiketa = {
+  ...listAdvancedBraveCircus,
+  'list.activeSelectionBackground'   : '#cacacc',
+  'list.activeSelectionForeground'   : '#445a63',
+  // 'list.dropBackground'              : '#c3c1a9',
+  'list.focusBackground'             : '#978373d2',
+  'list.highlightForeground'         : '#861d4f',
+  // 'list.hoverForeground'             : '#fff',
+  // 'list.hoverBackground'             : '#51676e',
+  'list.inactiveSelectionBackground' : '#d1d3d4aa',
+}
+
 export const baseColors = {
-  'activityBar.background'               : '#C4BE9D',
-  'badge.background'                     : '#aaa',
-  'badge.foreground'                     : '#faa',
-  'diffEditor.insertedTextBackground'    : '#9c824a55',
-  'diffEditor.removedTextBackground'     : '#64B5F655',
-  'editor.background'                    : '#FAF8F3',
-  'editor.findMatchBackground'           : '#95a5a677',
-  'editor.findMatchHighlightBackground'  : '#71aac355',
-  'editor.findRangeHighlightBackground'  : '#3f706366',
-  'editor.lineHighlightBackground'       : 'MAIN_COLOR25',
-  'editor.lineHighlightBorderx'          : '#9a9b9411',
-  'editor.selectionBackground'           : 'MAIN_COLOR55',
-  'editor.selectionHighlightBackground'  : 'MAIN_COLOR88',
-  'editor.wordHighlightBackground'       : 'MAIN_COLORaa',
-  'editor.wordHighlightStrongBackground' : 'MAIN_COLORdd',
-  'editorBracketMatch.background'        : '#B1365Bf3',
-  'editorBracketMatch.border'            : '#9F7E6Bf3',
-  'editorCursor.foreground'              : '#544',
-  'editorGroupHeader.tabsBackground'     : 'MAIN_COLOR',
-  'editorLineNumber.foreground'          : '#2a3343a9',
-  'editorLink.activeForeground'          : '#034694',
-  'errorForeground'                      : '#B1365Bf3',
-  'focusBorder'                          : '#525e54',
-  'foreground'                           : '#B06775',
-  'list.activeSelectionBackground'       : 'MAIN_COLOR',
-  // TODO: use bright according to mode
-  'list.activeSelectionForeground'       : '#fff',
-  'list.dropBackground'                  : '#455a64',
-  'list.focusBackground'                 : '#87a192',
-  'list.highlightForeground'             : '#fff',
-  'list.hoverBackground'                 : '#35495f',
-  'list.hoverForeground'                 : 'BACK_COLOR',
-  'list.inactiveSelectionBackground'     : '#fff',
-  'list.inactiveSelectionForeground'     : '#30322e',
-  'scrollbarSlider.background'           : 'MAIN_COLOR',
-  'scrollbarSlider.hoverBackground'      : '#C4BE9D',
-  'selection.background'                 : '#ebe6d9',
-  'sideBar.background'                   : 'MAIN_COLOR',
-  'sideBar.border'                       : '#445250c1',
-  'sideBar.foreground'                   : '#f9f4f4',
-  'sideBarSectionHeader.background'      : '#aebabee9',
-  'sideBarSectionHeader.foreground'      : '#2a3343e9',
-  'sideBarTitle.foreground'              : '#30322ed1',
-  'statusBar.background'                 : 'MAIN_COLOR',
-  'statusBar.foreground'                 : '#35495f',
-  'tab.activeBackground'                 : 'BACK_COLOR',
-  'tab.activeBorder'                     : '#35495f',
-  'tab.activeForeground'                 : '#35495f',
-  'tab.border'                           : 'MAIN_COLOR',
-  'tab.inactiveBackground'               : 'MAIN_COLOR',
-  'tab.inactiveForeground'               : '#fff',
-  'tab.unfocusedActiveBackground'        : 'MAIN_COLOR',
-  'tab.unfocusedActiveBorder'            : 'MAIN_COLOR',
-  'tab.unfocusedActiveForeground'        : '#fff',
-  'widget.shadow'                        : '#8382aebb',
+  'git.color.modified'                        : '#a50044',
+  'list.errorForeground'                      : '#a50044',
+  'gitDecoration.modifiedResourceForeground'  : '#eae3cd',
+  'gitDecoration.untrackedResourceForeground' : '#a50044',
+  'activityBar.background'                    : '#C4BE9D',
+  'badge.background'                          : '#aaa',
+  'badge.foreground'                          : '#fafafa',
+  'diffEditor.insertedTextBackground'         : '#9c824a55',
+  'diffEditor.removedTextBackground'          : '#64B5F655',
+  'editor.background'                         : '#FAF8F3',
+  'editor.findMatchBackground'                : '#95a5a677',
+  'editor.findMatchHighlightBackground'       : '#71aac355',
+  'editor.findRangeHighlightBackground'       : '#3f706366',
+  'editor.lineHighlightBackground'            : 'MAIN_COLOR25',
+  'editor.lineHighlightBorderx'               : '#9a9b9411',
+  'editor.selectionBackground'                : 'MAIN_COLOR55',
+  'editor.selectionHighlightBackground'       : 'MAIN_COLOR88',
+  'editor.wordHighlightBackground'            : 'MAIN_COLORaa',
+  'editor.wordHighlightStrongBackground'      : 'MAIN_COLORdd',
+  'editorBracketMatch.background'             : '#B1365Bf3',
+  'editorBracketMatch.border'                 : '#9F7E6Bf3',
+  'editorCursor.foreground'                   : '#544',
+  'editorGroupHeader.tabsBackground'          : 'MAIN_COLOR',
+  'editorLineNumber.foreground'               : '#2a3343a9',
+  'editorLink.activeForeground'               : '#034694',
+  'errorForeground'                           : '#B1365Bf3',
+  'focusBorder'                               : '#525e54',
+  // 'foreground'                           : '#B06775',
+  'scrollbarSlider.background'                : 'MAIN_COLOR',
+  'scrollbarSlider.hoverBackground'           : '#C4BE9D',
+  'selection.background'                      : '#ebe6d9',
+  'sideBar.background'                        : 'MAIN_COLOR',
+  'sideBar.border'                            : '#445250c1',
+  'sideBar.foreground'                        : '#f9f4f4',
+  'sideBarSectionHeader.background'           : '#aebabee9',
+  'sideBarSectionHeader.foreground'           : '#2a3343e9',
+  'sideBarTitle.foreground'                   : '#30322ed1',
+  'statusBar.background'                      : 'MAIN_COLOR',
+  'statusBar.foreground'                      : '#35495f',
+  'tab.activeBackground'                      : 'BACK_COLOR',
+  'tab.activeBorder'                          : '#35495f',
+  'tab.activeForeground'                      : '#35495f',
+  'tab.border'                                : 'MAIN_COLOR',
+  'tab.inactiveBackground'                    : 'MAIN_COLOR',
+  'tab.inactiveForeground'                    : '#fff',
+  'tab.unfocusedActiveBackground'             : 'MAIN_COLOR',
+  'tab.unfocusedActiveBorder'                 : 'MAIN_COLOR',
+  'tab.unfocusedActiveForeground'             : '#fff',
+  'widget.shadow'                             : '#8382aebb',
 }
 
 function getBaseColors(mode, actualBack){
@@ -70,16 +87,24 @@ function getBaseColors(mode, actualBack){
     .is('circus', '#b7bcbf')
     .default('#b0b4b4')
 
+  const listChrome = mode === 'niketa' ?
+    listNiketa :
+    listAdvancedBraveCircus
+
+  const currentBase = {
+    ...baseColors,
+    ...listChrome,
+  }
   const withMainColor = map(
     color => replace('MAIN_COLOR', chromeMainColor, color)
-  )(baseColors)
+  )(currentBase)
 
   return map(
     color => replace('BACK_COLOR', actualBack, color)
   )(withMainColor)
 }
 
-const SETTINGS = {}
+export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
@@ -117,14 +142,23 @@ SETTINGS[ 3 ] = {
   COLOR_1 : '#38978D',
   COLOR_2 : '#B97444',
 }
+/*
+  Second trending theme is hosted in AdvancedHook
+
+  Origin palette is zeppelin.heartbreaker:
+  COLOR_0 : '#9C8058',
+  COLOR_1 : '#f26153',
+  COLOR_2 : '#096165',
+*/
+
 // heartbreaker
 SETTINGS[ 4 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_0 : '#9C8058',
-  COLOR_1 : '#f26153',
-  COLOR_2 : '#096165',
+  COLOR_2 : '#8B1518',
+  COLOR_1 : '#847545',
+  COLOR_0 : '#f38b80',
 }
 // dancing days
 SETTINGS[ 5 ] = {
@@ -166,12 +200,29 @@ SETTINGS[ 8 ] = {
   COLOR_4 : '#B84251',
   COLOR_5 : '#406F64',
 }
-SETTINGS[ 9 ] = {
-  mode    : 'brave',
-  label   : 'love',
+/*
+  Current trending theme BraveLove
+  Origin palette:
   COLOR_0 : '#5482ab',
   COLOR_1 : '#7e1b24',
   COLOR_2 : '#A24877',
+
+  first iteration:
+  COLOR_0 : '#C66534',
+  COLOR_1 : '#3c6e5b',
+  COLOR_2 : '#532053',
+
+  second iteration:
+  COLOR_0 : '#f39c12',
+  COLOR_1 : '#440b0b',
+  COLOR_2 : '#038387',
+*/
+SETTINGS[ 9 ] = {
+  mode    : 'brave',
+  label   : 'love',
+  COLOR_0 : '#847545',
+  COLOR_1 : '#f38b80',
+  COLOR_2 : '#25164C',
 }
 // lemon song
 SETTINGS[ 10 ] = {
@@ -282,7 +333,7 @@ test('happy', () => {
   map(
     (val, key) => {
       const { mode, label, back, ...colors } = val
-      if (Number(key) > 6) return
+      // if (Number(key) > 6 && Number(key) < 13) return
       const paletteMode = maybe(
         colors.COLOR_5,
         'six',

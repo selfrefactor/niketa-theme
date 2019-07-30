@@ -4,7 +4,7 @@ import { saveThemeBee } from './bees/saveTheme'
 import { delay, range, pick, omit, switcher, maybe, map, mergeAll } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
 import { getChrome } from './createMultipleTheme.spec'
-
+   
 const SETTINGS_DEV = {
   mode    : 'advanced',
   COLOR_0 : '#063672',

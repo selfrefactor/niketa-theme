@@ -34,6 +34,9 @@ export const COLOR_1 = [
 
 export const COLOR_2 = [
   'variable',
+  'source.go',
+  'source.json',
+  'source.css',
   'keyword.control.import.js',
   'keyword.control.from.js',
   'keyword.control.export.js',
