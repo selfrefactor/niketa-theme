@@ -19,6 +19,16 @@ const SAVED_FILTERED = 'src/ants/best_triangle/filtered.json'
 function getContrast(a, b){
   return getContrastRatio.default(a, b)
 }
+console.log(
+  getContrast('#000', '#002f35')
+)
+export function filterWith(base, limit){
+  return color => getContrast(color, base) > limit
+}
+export function filterAgainst(base, limit){
+  return color => getContrast(color, base) < limit
+}
+
 const BLUE_BASE = '#00f'
 const RED_BASE = '#f00'
 const DARK_BASE = '#000'
@@ -26,7 +36,6 @@ const LIGHT_BASE = '#fff'
 
 const isRed = x => getContrast(x, RED_BASE) < 1.15
 const isDark = x => getContrast(x, DARK_BASE) < 1.5
-export const isTooLight = x => getContrast(x, LIGHT_BASE) < 2.2
 
 const isBlue = x => maybe(
   isDark(x),
@@ -113,29 +122,22 @@ export function sortFnx(a, b){
   return a.minBetween > b.minBetween ? -1 : 1
 }
 
-const BACKGROUND = '#f3f0e0'
-
 export function filterColors(predicate){
   const filtered = predicate(readJsonAnt(SAVED_SK))
   console.log('filtered', filtered.length)
 
   return writeJsonAnt(SAVED_FILTERED, filtered)
-} 
+}
 
-export async function findBestTriangle({ colors, minBackground = 1.7, minBetween = 1.8 }){
+export async function findBestTriangle({ colors, minBetween = 1.8, background }){
   const indexList = getIndexes(colors.length)
-  console.log({
-    minBackground,
-    minBetween,
-  })
 
   return piped(
     indexList,
-    map(indexListInstance => evaluateCombination(indexListInstance, colors, BACKGROUND)),
+    map(indexListInstance => evaluateCombination(indexListInstance, colors, background)),
     filter(Boolean),
     // filter(x => filterAgainstTwoBlues(x.colors)),
     filter(x => x.minBetween > minBetween),
-    filter(x => x.minBackground > minBackground),
     sort(sortFn),
     map(({ unsorted, colors, ...rest }) => ({
       ...rest,

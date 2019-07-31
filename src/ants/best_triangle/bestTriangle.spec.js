@@ -4,27 +4,38 @@ import {
   SAVED_SK,
   sortFn,
   findBestTriangle,
-  isTooLight,
+  filterWith,
   withLocalColors,
 } from './bestTriangle'
+import colorsOrigin from './colorsOrigin.json'
 import importedColors from './colors.json'
+const BACKGROUND = '#f3f0e0'
 
-test('filter out dark colors', () => {
-  // expect().toBe()
+test.skip('filter colors', () => {
+  const filteredColors = colorsOrigin
+    .filter(
+      filterWith('#000', 1.4)
+    )
+    .filter(
+      filterWith(BACKGROUND, 2.05)
+    )
+
+  writeJsonAnt('src/ants/best_triangle/colors.json', filteredColors)
 })
 
-test.skip('happy', async () => {
+test('happy', async () => {
   jest.setTimeout(20 * 60 * 1000)
   const LIMIT = 80
   const holder = []
+
   console.time('happy')
   const singleLoop = async i => {
     console.time(`iteration-${ i }`)
     const colors = take(LIMIT, shuffle(importedColors))
     const singleResult = await findBestTriangle({
       colors,
+      background    : BACKGROUND,
       minBetween    : 2.05,
-      minBackground : 2.05,
     })
     holder.push(singleResult)
     console.log(singleResult.length)
