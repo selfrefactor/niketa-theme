@@ -147,7 +147,6 @@ permutations.forEach((indexes, i) => {
     COLOR_2 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 2 ] - 1 }` ],
   }
 })
-console.log(SETTINGS)
 
 const SOLE_BACKGROUND = '#FAF8F3'
 // const SOLE_BACKGROUND = '#f3f0e0'
@@ -187,7 +186,11 @@ export function getChrome(mode, back){
   }
 }
 
-test('happy', () => {
+test('happy', async () => {
+  const screenDir = `${process.env.HOME}`  
+})
+
+test.skip('happy', () => {
   map(
     a => {
       const { mode, label, back, ...colors } = a
