@@ -198,7 +198,7 @@ export function createPaletteTheme({
   complex,
   filePath,
   rules,
-  publishName,
+  publishName = undefined,
   publishIndex = 0,
 }){
   ok(filePath, rules)(String, Object)
