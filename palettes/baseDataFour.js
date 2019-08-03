@@ -17,8 +17,6 @@ export const COLOR_0 = [
 ]
 
 export const COLOR_1 = [
-  'comment.block.documentation',
-  'comment.line.double-slash',
   'constant.language.null.js',
   'entity.name.type',
   'entity.other.inherited-class',
@@ -40,6 +38,8 @@ export const COLOR_1 = [
 ]
 
 export const COLOR_2 = [
+  'comment.block.documentation',
+  'comment.line.double-slash',
   'source.go',
   'source.json',
   'source.css',

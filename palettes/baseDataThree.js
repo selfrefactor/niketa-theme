@@ -6,7 +6,6 @@ export const COLOR_0 = [
   'markup.italic',
   'entity.name.function.method',
   'string.quoted.single.js',
-  'support.type.property-name.json',
   'punctuation.accessor.js',
   'punctuation.separator.key-value.js',
   'constant.numeric',
@@ -29,8 +28,6 @@ export const COLOR_0 = [
 ]
 
 export const COLOR_1 = [
-  'comment.block.documentation',
-  'comment.line.double-slash',
   'constant.language.null.js',
   'entity.name.type',
   'meta.parameters.js',
@@ -56,6 +53,8 @@ export const COLOR_1 = [
 ]
 
 export const COLOR_2 = [
+  'comment.block.documentation',
+  'comment.line.double-slash',
   'source.go',
   'source.json',
   'source.css',
@@ -64,6 +63,7 @@ export const COLOR_2 = [
   'constant.other',
   'keyword.control.flow.js',
   'keyword.control.module.js',
+  'support.type.property-name.json',
   'keyword.operator.accessor',
   'markup.italic',
   'meta.import.js',
