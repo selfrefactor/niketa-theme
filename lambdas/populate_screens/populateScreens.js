@@ -4,7 +4,7 @@ import { resolve } from 'path'
 import { dotCase, snakeCase } from 'string-fn'
 import { sort, pluck } from 'rambdax'
 import themes from '../../exported.json'
- 
+
 export function populateScreens(){
   const sortFn = (a, b) => (a > b ? 1 : -1)
   const base = resolve(__dirname, '../../files')

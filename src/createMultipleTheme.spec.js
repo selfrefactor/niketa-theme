@@ -343,7 +343,6 @@ test('happy', () => {
   map(
     (val, key) => {
       const { mode, label, back, ...colors } = val
-      // if (Number(key) > 6 && Number(key) < 13) return
       const paletteMode = maybe(
         colors.COLOR_5,
         'six',
@@ -368,10 +367,6 @@ test('happy', () => {
 
   const exported = readJsonAnt('exported.json')
   saveToPackageJsonAnt(exported)
-
-  expect(
-    1
-  ).toBeTruthy()
 })
 
 /*
