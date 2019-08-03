@@ -1,7 +1,7 @@
 import { generateThemeDataBee } from './bees/generateThemeData'
 import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
 import { saveThemeBee } from './bees/saveTheme'
-import { delay, range, pick, omit, switcher, maybe, map, mergeAll } from 'rambdax'
+import { range, omit, maybe } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
 import { getChrome } from './createMultipleTheme.spec'
    

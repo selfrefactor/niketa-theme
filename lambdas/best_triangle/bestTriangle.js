@@ -1,5 +1,5 @@
-import { readJsonAnt } from '../../ants/readJson'
-import { writeJsonAnt } from '../../ants/writeJson'
+import { readJsonAnt } from '../../src/ants/readJson'
+import { writeJsonAnt } from '../../src/ants/writeJson'
 const getContrastRatio = require('get-contrast-ratio')
 import { getCombinations } from './permutation'
 import {
@@ -19,9 +19,12 @@ const SAVED_FILTERED = 'src/ants/best_triangle/filtered.json'
 function getContrast(a, b){
   return getContrastRatio.default(a, b)
 }
-console.log(
-  getContrast('#000', '#002f35')
-)
+// console.log(
+//   getContrast('#000', '#002f35'),
+//   getContrast('#000', '#af0404'),
+//   getContrast('#000', '#1c2938'),
+//   getContrast('#000', '#121b74'),
+// )
 export function filterWith(base, limit){
   return color => getContrast(color, base) > limit
 }
