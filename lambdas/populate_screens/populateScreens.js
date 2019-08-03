@@ -3,14 +3,14 @@ import { copySync } from 'fs-extra'
 import { resolve } from 'path'
 import { dotCase, snakeCase } from 'string-fn'
 import { sort, pluck } from 'rambdax'
-import themes from '../../../exported.json'
-
-export function populateScreensAnt(){
+import themes from '../../exported.json'
+ 
+export function populateScreens(){
   const sortFn = (a, b) => (a > b ? 1 : -1)
-  const base = resolve(__dirname, '../../../files')
+  const base = resolve(__dirname, '../../files')
   const lernaBase = resolve(
     __dirname,
-    '../../../../niketa-themes/packages'
+    '../../../../../niketa-themes/packages'
   )
   const screens = readdirSync(`${ base }/raw_screens`)
   const sortedScreens = sort(sortFn, screens)

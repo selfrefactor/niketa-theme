@@ -9,7 +9,7 @@ import {
 } from 'rambdax'
 const base = 'src/ants/generate_colors/colors'
 
-export function generateColorsAnt({
+export function generateColors({
   input,
   levels = 20,
   label = '',

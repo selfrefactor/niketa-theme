@@ -1,4 +1,4 @@
-import { generateColorsAnt } from './'
+import { generateColors } from './'
 import { readJsonAnt } from '../../src/ants/readJson'
 import { translate } from '../../src/ants/mini/translate'
 import {
@@ -59,7 +59,7 @@ test('happy', () => {
   ]
 
   expect(() =>
-    generateColorsAnt({
+    generateColors({
       input,
       label       : '_HAPPY',
       opacityFlag : false,
@@ -71,7 +71,7 @@ test('happy', () => {
 test.skip('random persisted', () => {
   const input = generateRandomPair()
   expect(() =>
-    generateColorsAnt({
+    generateColors({
       input,
       label       : '_RANDOM_PERSISTED',
       opacityFlag : true,
@@ -90,7 +90,7 @@ test.skip('with static base', () => {
   ]
 
   expect(() =>
-    generateColorsAnt({
+    generateColors({
       input,
       label       : '_WITH_ONE',
       opacityFlag : true,
@@ -105,7 +105,7 @@ test.skip('random with hash', () => {
   console.log({ label })
 
   expect(() =>
-    generateColorsAnt({
+    generateColors({
       input,
       label,
       levels : 200,
