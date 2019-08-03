@@ -1,6 +1,6 @@
 import { generateColorsAnt } from './'
-import { readJsonAnt } from '../readJson'
-import { translate, translatex } from '../mini/translate'
+import { readJsonAnt } from '../../src/ants/readJson'
+import { translate } from '../../src/ants/mini/translate'
 import {
   random,
   shuffle,
@@ -33,10 +33,6 @@ function generateRandomPair(){
     randomized[ firstRandomIndex ],
     randomized[ secondRandomIndex ],
   ]
-  console.log({
-    firstRandomIndex,
-    secondRandomIndex,
-  })
 
   return toReturn
 }
@@ -112,8 +108,7 @@ test.skip('random with hash', () => {
     generateColorsAnt({
       input,
       label,
-      opacityFlag : true,
-      levels      : 200,
+      levels : 200,
     })
   ).not.toThrow()
 })
