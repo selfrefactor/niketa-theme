@@ -13,18 +13,13 @@ import {
   sort,
   take,
 } from 'rambdax'
-export const SAVED_SK = 'src/ants/best_triangle/sk.json'
-const SAVED_FILTERED = 'src/ants/best_triangle/filtered.json'
+export const SAVED_SK = 'lambdas/best_triangle/sk.json'
+const SAVED_FILTERED = 'lambdas/ants/best_triangle/filtered.json'
 
 function getContrast(a, b){
   return getContrastRatio.default(a, b)
 }
-// console.log(
-//   getContrast('#000', '#002f35'),
-//   getContrast('#000', '#af0404'),
-//   getContrast('#000', '#1c2938'),
-//   getContrast('#000', '#121b74'),
-// )
+
 export function filterWith(base, limit){
   return color => getContrast(color, base) > limit
 }
@@ -131,7 +126,7 @@ export function filterColors(predicate){
 
   return writeJsonAnt(SAVED_FILTERED, filtered)
 }
-
+ 
 export async function findBestTriangle({ colors, minBetween = 1.8, background }){
   const indexList = getIndexes(colors.length)
 
