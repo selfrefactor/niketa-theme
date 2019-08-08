@@ -10,7 +10,7 @@ export function populateScreens(){
   const base = resolve(__dirname, '../../files')
   const lernaBase = resolve(
     __dirname,
-    '../../../../../niketa-themes/packages'
+    '../../../niketa-themes/packages'
   )
   const screens = readdirSync(`${ base }/raw_screens`)
   const sortedScreens = sort(sortFn, screens)
@@ -19,7 +19,7 @@ export function populateScreens(){
   const themesNames = sort(sortFn, pluck('label', themes))
   const screenDestinations = themesNames.map(
     x => `${ base }/${ dotCase(x) }.png`
-  )
+  ) 
   const lernaDestinations = themesNames.map(
     x => `${ lernaBase }/${ snakeCase(x) }/theme/${ dotCase(x) }.png`
   )
