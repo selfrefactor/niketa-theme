@@ -6,7 +6,7 @@ import { sort, pluck } from 'rambdax'
 import themes from '../../exported.json'
 
 export function populateScreens(){
-  const sortFn = (a, b) => (a > b ? 1 : -1)
+  const sortFn = (a, b) => a > b ? 1 : -1
   const base = resolve(__dirname, '../../files')
   const lernaBase = resolve(
     __dirname,
@@ -19,7 +19,7 @@ export function populateScreens(){
   const themesNames = sort(sortFn, pluck('label', themes))
   const screenDestinations = themesNames.map(
     x => `${ base }/${ dotCase(x) }.png`
-  ) 
+  )
   const lernaDestinations = themesNames.map(
     x => `${ lernaBase }/${ snakeCase(x) }/theme/${ dotCase(x) }.png`
   )

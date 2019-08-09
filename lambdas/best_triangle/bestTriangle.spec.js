@@ -5,6 +5,7 @@ import {
   sortFn,
   findBestTriangle,
   filterWith,
+  calculateTriangleScore,
   withLocalColors,
 } from './bestTriangle'
 import colorsOrigin from './colorsOrigin.json'
@@ -12,9 +13,20 @@ import importedColors from './colors.json'
 const BACKGROUND = '#f3f0e0'
 const DARK_BACKGROUND = '#2A3343'
 
-const DARK_BACKGROUND_FLAG = 1
+const DARK_BACKGROUND_FLAG = 0
 const FILTER_FLAG = 0
-const FILTER_LIGHT = 0
+const FILTER_LIGHT = 1
+
+test('calculate triangle score', () => {
+  console.log(
+    calculateTriangleScore(
+      '#1E416E',
+      '#38978D',
+      '#B97444',
+      '#f9f6f1'
+    )
+  )
+})
 
 test('filter colors', () => {
   if (!FILTER_FLAG) return
@@ -24,8 +36,7 @@ test('filter colors', () => {
       x => FILTER_LIGHT ? filterWith('#fff', 1.4)(x) : true
     )
     .filter(
-      filterWith(DARK_BACKGROUND, 4.05)
-      // filterWith(DARK_BACKGROUND, 2.05) // when light
+      filterWith(DARK_BACKGROUND, DARK_BACKGROUND_FLAG ? 4.05 : 2.05)
     )
 
   console.log(
@@ -49,7 +60,7 @@ test('happy', async () => {
     const singleResult = await findBestTriangle({
       colors,
       background : DARK_BACKGROUND_FLAG ? DARK_BACKGROUND : BACKGROUND,
-      minBetween : 1,
+      minBetween : 1.05,
     })
     holder.push(singleResult)
     console.log(singleResult.length)
@@ -58,8 +69,6 @@ test('happy', async () => {
   console.timeEnd('happy')
 
   await mapAsync(singleLoop)(range(0, 2))
-  console.log(holder);
-  
   // await mapAsync(singleLoop)(range(0, 20))
   const toSave = sort(sortFn)(flatten(holder))
   writeJsonAnt(SAVED_SK, toSave)

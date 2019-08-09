@@ -104,9 +104,9 @@ export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   mode    : 'advanced',
   label   : 'bat',
-  COLOR_1 : '#883c82',
-  COLOR_2 : '#459d72',
-  COLOR_0 : '#530c0c',
+  "COLOR_0": "#824c96",
+  "COLOR_1": "#4c6f7b",
+  "COLOR_2": "#d32d2d"
 }
 SETTINGS[ 1 ] = {
   mode  : 'advanced',
@@ -190,7 +190,7 @@ test('happy', async () => {
   const screenDir = `${process.env.HOME}`  
 })
 
-test.skip('happy', () => {
+test('happy', () => {
   map(
     a => {
       const { mode, label, back, ...colors } = a
@@ -202,7 +202,7 @@ test.skip('happy', () => {
           'four',
           'three'
         )
-      )
+      )  
       const chrome = getChrome(mode)
       const palette = readJsonAnt(`palettes/${ paletteMode }.json`)
       const themeData = generateThemeDataBee({

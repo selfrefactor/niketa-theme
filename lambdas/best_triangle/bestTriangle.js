@@ -4,6 +4,7 @@ const getContrastRatio = require('get-contrast-ratio')
 import { getCombinations } from './permutation'
 import {
   any,
+  none,
   filter,
   map,
   maybe,
@@ -56,16 +57,13 @@ function getIndexes(limit){
   return indexList.map(x => x.split(' ').map(Number))
 }
 
-function evaluateCombination(indexListInstance, colors, background){
-  const color1 = colors[ indexListInstance[ 0 ] ]
-  const color2 = colors[ indexListInstance[ 1 ] ]
-  const color3 = colors[ indexListInstance[ 2 ] ]
+export function calculateTriangleScore(color1, color2, color3, background){
   const betweenContrast = [
     getContrast(color1, color2),
     getContrast(color1, color3),
     getContrast(color2, color3),
   ]
-  const okBetween = any(x => x < 1.5, betweenContrast)
+  const okBetween = none(x => x < 1.5, betweenContrast)
   if (okBetween) return false
   const compareToBackground = [
     getContrast(color1, background),
@@ -87,6 +85,14 @@ function evaluateCombination(indexListInstance, colors, background){
     maxBackground,
     maxBetween,
   }
+}
+
+function evaluateCombination(indexListInstance, colors, background){
+  const color1 = colors[ indexListInstance[ 0 ] ]
+  const color2 = colors[ indexListInstance[ 1 ] ]
+  const color3 = colors[ indexListInstance[ 2 ] ]
+
+  return calculateTriangleScore(color1, color2, color3, background)
 }
 
 function getLocalColors(colors){
@@ -126,7 +132,7 @@ export function filterColors(predicate){
 
   return writeJsonAnt(SAVED_FILTERED, filtered)
 }
- 
+
 export async function findBestTriangle({ colors, minBetween = 1.8, background }){
   const indexList = getIndexes(colors.length)
 
