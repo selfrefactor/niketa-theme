@@ -1,3 +1,7 @@
+/*
+  Used when all 18 themes needed to be exported to mono repo
+   as this is already done, then this file is deprecated
+*/
 import { readJsonAnt, resolve } from '../readJson'
 import { namesHash } from '../../bees/saveTheme'
 import { resolve as resolveMethod } from 'path'
