@@ -1,7 +1,8 @@
-import { readJsonAnt, resolve } from '../../src/ants/readJson'
+import { readJsonAnt, resolve } from '../readJson'
+import { namesHash } from '../../bees/saveTheme'
 import { resolve as resolveMethod } from 'path'
 import { existsSync, readFileSync } from 'fs'
-import { replace, log } from 'rambdax'
+import { replace, remove, log } from 'rambdax'
 import { snakeCase, dotCase, pascalCase, titleCase } from 'string-fn'
 import {
   copySync,
@@ -12,6 +13,48 @@ import {
   readJsonSync,
   removeSync,
 } from 'fs-extra'
+
+function getBaboon(baboonInput, themeNameInput){
+  const themeIndexBase = remove('baboon.', baboonInput)
+  const themeIndex = Number(themeIndexBase)
+  const themeBase = Number.isNaN(themeIndex) ?
+    `baboon.${ themeIndexBase }` :
+    `baboon.${ namesHash[ themeIndex ] }`
+
+  const theme = pascalCase(themeBase)
+  const themeName = pascalCase(themeNameInput)
+
+  const toReturn = {
+    theme,
+    themeName,
+  }
+
+  return toReturn
+}
+
+/*
+  Index of all themes including dark one
+*/
+
+const THEMES = [
+  'advanced.bat',
+  'advanced.cat',
+  'advanced.dog',
+  'advanced.engine',
+  'advanced.hook',
+  'advanced.immigrant',
+  'advanced.mystery',
+  'brave.habits',
+  'brave.love',
+  'brave.neighbour',
+  'circus.ajax',
+  'circus.brother',
+  'circus.people',
+  'circus.whisky',
+  'niketa.bear',
+  'niketa.moon',
+  'niketa.owl',
+]
 
 function updateJson(filePath, change){
   const obj = readJsonSync(filePath)
@@ -54,29 +97,44 @@ function editReadme(themeName, readme){
   return fourth
 }
 
-export function exportToMono(themeName){
-  console.log(themeName)
+export function exportToMono(themeIndex, outputName){
+  const isDark = outputName && outputName.startsWith('because')
   const filePathBase = resolveMethod(
     __dirname,
     '../../../../niketa-themes/packages'
   )
 
-  return console.log({ filePathBase })
-
   if (!existsSync(filePathBase))
     return console.log(`${ filePathBase } is not a directory`)
+
+  if (typeof themeIndex === 'string' && !outputName)
+    return console.log('need to pass name as well')
+
+  // When we publish from dev theme, we pass fn('baboon.2'/'baboon.literal', 'more.pump')
+  // When we publish Niketa theme, we pass only index fn(10)
+  // ============================================
+  const { theme, themeName } = outputName ?
+    getBaboon(themeIndex, outputName) :
+    {
+      theme     : THEMES[ themeIndex ],
+      themeName : THEMES[ themeIndex ],
+    }
 
   const demoSource = `${ filePathBase }/brave_homer`
   const outputFolder = `${ filePathBase }/${ snakeCase(themeName) }`
   emptyDirSync(outputFolder)
 
-  const jsonName = `${ themeName }.json`
-  const actualData = readJsonAnt(`themes/${ jsonName }`)
+  const jsonName = `${ pascalCase(theme) }.json`
+  const jsonOutputName = `${ themeName }.json`
+  const actualData = outputName ?
+    readJsonAnt(`baboon/${ jsonName }`) :
+    readJsonAnt(`themes/${ jsonName }`)
+
   const destination = `${ outputFolder }/theme/BraveHomer.json`
   const packageJsonFile = `${ outputFolder }/package.json`
-  const themeDestination = `${ outputFolder }/theme/${ themeName }`
+  const themeDestination = `${ outputFolder }/theme/${ jsonOutputName }`
 
-  const screenSource = resolve(`files/${ dotCase(themeName) }.png`)
+  const screenSource = resolve(`files/${ dotCase(theme) }.png`)
   log({ screenSource })
   const screenDestination = resolve(
     `${ outputFolder }/theme/${ dotCase(themeName) }.png`
@@ -102,12 +160,18 @@ export function exportToMono(themeName){
     removeSync(`${ outputFolder }/theme/brave.homer.png`)
   } else {
     console.log('You need to save a screen before that')
+    moveSync(
+      `${ outputFolder }/theme/niketa.fallback.png`,
+      `${ outputFolder }/theme/${ dotCase(themeName) }.png`
+    )
+    removeSync(`${ outputFolder }/theme/brave.homer.png`)
   }
 
   const packageJson = readJsonSync(packageJsonFile)
   const editedPackageJson = editPackageJson(
     pascalCase(themeName),
     packageJson,
+    isDark
   )
 
   /*
@@ -118,7 +182,10 @@ export function exportToMono(themeName){
   /*
     Save corrected readme
   */
-  const readmeFile = resolve(`${ outputFolder }/README.md`)
+  const readmeFile = isDark ?
+    resolve(`${ outputFolder }/README_DARK.md`) :
+    resolve(`${ outputFolder }/README.md`)
+
   const readme = readFileSync(readmeFile).toString()
   const editedReadme = editReadme(themeName, readme)
 
@@ -131,7 +198,7 @@ export function exportToMono(themeName){
 
   updateJson(themeDestination, {
     name : themeName,
-    type : 'light',
+    type : isDark ? 'dark' : 'light',
   })
   console.log({ themeName })
 }
