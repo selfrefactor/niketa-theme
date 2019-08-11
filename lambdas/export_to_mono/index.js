@@ -6,12 +6,8 @@ import { exec } from 'helpers'
 import { snakeCase, dotCase, titleCase } from 'string-fn'
 import {
   copySync,
-  emptyDirSync,
-  moveSync,
   outputJsonSync,
   outputFileSync,
-  readJsonSync,
-  removeSync,
 } from 'fs-extra'
 import { readdirSync } from 'fs'
 const sortFn = (a, b) => a > b ? -1 : 1
@@ -28,7 +24,6 @@ export function getLastestScreen(){
 
 export async function exportToMono(themeName, withScreenshot = false, republishAs = ''){
   getLastestScreen()
-  const republishDot = dotCase(republishAs)
   const republishSnake = snakeCase(republishAs)
   const asDot = dotCase(themeName)
   const asSnake = snakeCase(themeName)
@@ -44,7 +39,6 @@ export async function exportToMono(themeName, withScreenshot = false, republishA
   const destination = `${ filePathBase }/${ asSnake }`
   const themeDestination = `${ destination }/theme/${ asDot }.json`
   const republishFolder = `${ filePathBase }/${ republishSnake }`
-  const republishThemeDestination = `${ republishFolder }/theme/${ republishDot }.json`
   const republishPackageJson = `${ republishFolder }/package.json`
 
   const screenSource = withScreenshot ?
@@ -61,25 +55,24 @@ export async function exportToMono(themeName, withScreenshot = false, republishA
   } else {
     console.log('You need to save a screen before that')
   }
-  // await exec({
-  //   command : 'run d feat@bump minor',
-  //   cwd     : destination,
-  // })
-  // await exec({
-  //   command : 'vsce publish minor',
-  //   cwd     : destination,
-  // })
-  // await exec({
-  //   command : 'run d small',
-  //   cwd     : destination,
-  // })
+  await exec({
+    command : 'run d feat@bump minor',
+    cwd     : destination,
+  })
+  await exec({
+    command : 'vsce publish minor',
+    cwd     : destination,
+  })
+  await exec({
+    command : 'run d small',
+    cwd     : destination,
+  })
 
   if (republishAs){
     republish({
       republishFolder,
       source : destination,
       republishPackageJson,
-      republishThemeDestination,
       themeName,
       republishAs,
     })
@@ -95,14 +88,14 @@ function performRename(content, newName, oldName, skipDotCase = false){
   return replace(new RegExp(oldName, 'g'), newName, afterTitle)
 }
 
-async function republish({ republishFolder, republishPackageJson, source, republishThemeDestination, themeName, republishAs }){
+async function republish({ republishFolder, republishPackageJson, source, themeName, republishAs }){
   if (existsSync(republishFolder)){
     return console.log('Please empty destination folder', republishAs)
   }
   copySync(source, republishFolder)
 
   const readme = readFileSync(`${ source }/README.md`).toString()
-  const editedReadme = performRename(readme, republishAs, themeName)
+  const editedReadme = performRename(readme, republishAs, themeName, true)
   outputFileSync(`${ republishFolder }/README.md`, editedReadme)
 
   const packageJson = readFileSync(republishPackageJson).toString()
