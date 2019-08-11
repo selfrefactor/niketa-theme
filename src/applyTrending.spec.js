@@ -102,19 +102,14 @@ function getBaseColors(mode, actualBack){
 
 export const SETTINGS = {}
 SETTINGS[ 0 ] = {
-  mode  : 'advanced',
-  label : 'bat',
-
-  COLOR_0 : '#c03546',
-  COLOR_1 : '#614ad3',
-  COLOR_2 : '#906387',
-  // "COLOR_0": "#cc085e",
-  //     "COLOR_1": "#5454c5",
-  //     "COLOR_2": "#6f6f6f"
-  // engine
-  // "COLOR_0": "#226b80",
-  //     "COLOR_1": "#cc085e",
-  //     "COLOR_2": "#a75265"
+  mode    : 'advanced',
+  label   : 'bat',
+  COLOR_1 : '#780662',
+  COLOR_2 : '#1d242b',
+  COLOR_0 : '#83580b',
+  // "COLOR_0": "#34495d",
+  // "COLOR_1": "#0e0220",
+  // "COLOR_2": "#83580b"
 }
 SETTINGS[ 1 ] = {
   mode  : 'advanced',
@@ -153,7 +148,7 @@ permutations.forEach((indexes, i) => {
   }
 })
 
-const SOLE_BACKGROUND = '#FAF8F3'
+const SOLE_BACKGROUND = '#f4f1e3'
 // const SOLE_BACKGROUND = '#f3f0e0'
 
 export function getChrome(mode, back){

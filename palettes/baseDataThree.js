@@ -25,6 +25,8 @@ export const COLOR_0 = [
   'punctuation.definition.parameters.begin.js',
   'punctuation.definition.parameters.end.js',
   'markup.quote',
+  'keyword.control.module.js',
+  'keyword.control.flow.js',
   'entity.other.attribute-name.js',
 ]
 
@@ -63,8 +65,6 @@ export const COLOR_2 = [
   'comment',
   'constant.language',
   'constant.other',
-  'keyword.control.flow.js',
-  'keyword.control.module.js',
   'keyword.operator.accessor',
   'markup.italic',
   'meta.import.js',

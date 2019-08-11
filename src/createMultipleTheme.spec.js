@@ -242,10 +242,10 @@ SETTINGS[ 8 ] = {
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
-  back    : '#FAF8F3',
-  COLOR_0 : '#cf0a2c',
-  COLOR_1 : '#226b80',
-  COLOR_2 : '#a75265',
+  back    : '#f4f1e3',
+  "COLOR_1": "#780662",
+      "COLOR_2": "#1d242b",
+      "COLOR_0": "#83580b"
 }
 // lemon song
 SETTINGS[ 10 ] = {
@@ -327,6 +327,11 @@ export function getChrome(mode, back){
   if (mode === 'brave'){
     const actualBack = defaultTo('#f3f0e0', back)
     const baseToApply = getBaseColors(mode, actualBack)
+    console.log({
+      mode,
+      actualBack,
+      back,
+    })
 
     return {
       ...baseToApply,
@@ -365,7 +370,12 @@ test('happy', () => {
           'three'
         )
       )
-      const chrome = getChrome(mode)
+      const chrome = getChrome(mode, back)
+      console.log(
+        chrome[ 'editor.background' ],
+        label,
+
+      )
       const palette = readJsonAnt(`palettes/${ paletteMode }.json`)
       const themeData = generateThemeDataBee({
         palette,

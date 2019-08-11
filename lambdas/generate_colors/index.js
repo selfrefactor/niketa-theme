@@ -7,7 +7,7 @@ import {
   uniq,
   log,
 } from 'rambdax'
-const base = 'src/ants/generate_colors/colors'
+const base = 'lambdas/generate_colors/colors'
 
 export function generateColors({
   input,

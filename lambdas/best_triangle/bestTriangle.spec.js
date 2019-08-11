@@ -11,11 +11,10 @@ import {
 } from './bestTriangle'
 import colorsOrigin from './colorsOrigin.json'
 import importedColors from './colors.json'
-const BACKGROUND = '#f3f0e0'
+const BACKGROUND = '#f4f1e3'
 
 const FILTER_SK = 1
 const FILTER_FLAG = 0
-const FILTER_LIGHT = 1
 
 test.skip('calculate triangle score', () => {
   console.log(
@@ -33,7 +32,7 @@ test('filter before', () => {
 
   const filteredColors = colorsOrigin
     .filter(
-      x => FILTER_LIGHT ? filterWith('#fff', 1.4)(x) : true
+      filterWith('#f4f1e3', 4.7)
     )
 
   console.log(
@@ -45,11 +44,11 @@ test('filter before', () => {
 
 test('filter after', () => {
   if (!FILTER_SK) return
-
+  jest.setTimeout(20 * 60 * 1000)
   const origin = readJsonAnt(SAVED_SK)
   const filteredColors = origin
     .filter(
-      x => x.minBetween > 1.08
+      x => x.minBetween > 1.47
     )
     .filter(
       x => x.minBackground > 4.2
@@ -59,11 +58,11 @@ test('filter after', () => {
     origin.length - filteredColors.length,
     filteredColors.length
   )
-  writeJsonAnt('lambdas/best_triangle/colors.json', filteredColors)
+  writeJsonAnt('lambdas/best_triangle/after.json', filteredColors)
 })
 
-test.skip('happy', async () => {
-  if (FILTER_FLAG) return
+test('happy', async () => {
+  if (FILTER_FLAG || FILTER_SK) return
 
   jest.setTimeout(20 * 60 * 1000)
   const LIMIT = 80
@@ -76,7 +75,7 @@ test.skip('happy', async () => {
     const singleResult = await findBestTriangle({
       colors,
       background : BACKGROUND,
-      minBetween : 1.05,
+      minBetween : 1.08,
     })
     holder.push(singleResult)
     console.log(singleResult.length)
@@ -84,8 +83,8 @@ test.skip('happy', async () => {
   }
   console.timeEnd('happy')
 
-  // await mapAsync(singleLoop)(range(0, 2))
-  await mapAsync(singleLoop)(range(0, 20))
+  await mapAsync(singleLoop)(range(0, 2))
   const toSave = sort(sortFn)(flatten(holder))
+  console.log(toSave.length)
   writeJsonAnt(SAVED_SK, toSave)
 })
