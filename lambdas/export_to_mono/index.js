@@ -41,9 +41,17 @@ export async function exportToMono(themeName, withScreenshot = false, republishA
   const republishFolder = `${ filePathBase }/${ republishSnake }`
   const republishPackageJson = `${ republishFolder }/package.json`
 
+  const niketaScreenLocation = resolve(`files/${ asDot }.png`)
   const screenSource = withScreenshot ?
     getLastestScreen() :
-    resolve(`files/${ asDot }.png`)
+    niketaScreenLocation
+
+  if (withScreenshot){
+    // So when trending screen is updated
+    //  so is the screen part of Niketa screens
+    // ============================================
+    copySync(screenSource, niketaScreenLocation)
+  }
 
   const screenDestination = resolve(
     `${ destination }/theme/${ asDot }.png`

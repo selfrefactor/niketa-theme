@@ -15,7 +15,7 @@ import { exportToMono, getLastestScreen } from './'
 */
 test('happy', async () => {
   // await exportToMono('AdvancedHook', true, 'TeaForOne')
-  // await exportToMono('BraveLove', true, 'LemonSong')
+  await exportToMono('AdvancedHook', true)
 })
 
 test('latest screen', async () => {
