@@ -1,4 +1,5 @@
 import { writeJsonAnt } from '../../src/ants/writeJson'
+import { readJsonAnt } from '../../src/ants/readJson'
 import { mapAsync, range, shuffle, flatten, take, sort } from 'rambdax'
 import {
   SAVED_SK,
@@ -11,13 +12,12 @@ import {
 import colorsOrigin from './colorsOrigin.json'
 import importedColors from './colors.json'
 const BACKGROUND = '#f3f0e0'
-const DARK_BACKGROUND = '#2A3343'
 
-const DARK_BACKGROUND_FLAG = 0
+const FILTER_SK = 1
 const FILTER_FLAG = 0
 const FILTER_LIGHT = 1
 
-test('calculate triangle score', () => {
+test.skip('calculate triangle score', () => {
   console.log(
     calculateTriangleScore(
       '#1E416E',
@@ -28,15 +28,12 @@ test('calculate triangle score', () => {
   )
 })
 
-test('filter colors', () => {
-  if (!FILTER_FLAG) return
+test('filter before', () => {
+  if (!FILTER_FLAG || FILTER_SK) return
 
   const filteredColors = colorsOrigin
     .filter(
       x => FILTER_LIGHT ? filterWith('#fff', 1.4)(x) : true
-    )
-    .filter(
-      filterWith(DARK_BACKGROUND, DARK_BACKGROUND_FLAG ? 4.05 : 2.05)
     )
 
   console.log(
@@ -46,7 +43,26 @@ test('filter colors', () => {
   writeJsonAnt('lambdas/best_triangle/colors.json', filteredColors)
 })
 
-test('happy', async () => {
+test('filter after', () => {
+  if (!FILTER_SK) return
+
+  const origin = readJsonAnt(SAVED_SK)
+  const filteredColors = origin
+    .filter(
+      x => x.minBetween > 1.08
+    )
+    .filter(
+      x => x.minBackground > 4.2
+    )
+
+  console.log(
+    origin.length - filteredColors.length,
+    filteredColors.length
+  )
+  writeJsonAnt('lambdas/best_triangle/colors.json', filteredColors)
+})
+
+test.skip('happy', async () => {
   if (FILTER_FLAG) return
 
   jest.setTimeout(20 * 60 * 1000)
@@ -59,7 +75,7 @@ test('happy', async () => {
     const colors = take(LIMIT, shuffle(importedColors))
     const singleResult = await findBestTriangle({
       colors,
-      background : DARK_BACKGROUND_FLAG ? DARK_BACKGROUND : BACKGROUND,
+      background : BACKGROUND,
       minBetween : 1.05,
     })
     holder.push(singleResult)
@@ -68,8 +84,8 @@ test('happy', async () => {
   }
   console.timeEnd('happy')
 
-  await mapAsync(singleLoop)(range(0, 2))
-  // await mapAsync(singleLoop)(range(0, 20))
+  // await mapAsync(singleLoop)(range(0, 2))
+  await mapAsync(singleLoop)(range(0, 20))
   const toSave = sort(sortFn)(flatten(holder))
   writeJsonAnt(SAVED_SK, toSave)
 })

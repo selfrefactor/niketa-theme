@@ -2,7 +2,7 @@
   "name": "niketa-theme",
   "displayName": "Niketa Theme Light",
   "description": "Large collection of handmade light themes",
-  "version": "8.7.2",
+  "version": "8.5.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -130,7 +130,6 @@
     "color": "^3.1.2",
     "fs-extra": "^8.1.0",
     "get-contrast-ratio": "^0.2.1",
-    "helpers": "https://github.com/selfrefactor/helpers#1.5.1",
     "hexsorter": "^1.5.0",
     "jest": "^24.8.0",
     "rambdax": "^2.11.0",
@@ -163,8 +162,5 @@
       "href": "https://github.com/selfrefactor/niketa-theme/issues",
       "url": "https://img.shields.io/github/issues/selfrefactor/niketa-theme.svg?style=social"
     }
-  ],
-  "commitMessage": {
-    "workInProgress": ""
-  }
+  ]
 }

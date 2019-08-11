@@ -4,7 +4,7 @@ import { saveThemeBee } from './bees/saveTheme'
 import { range, omit, maybe } from 'rambdax'
 import { readJsonAnt } from './ants/readJson'
 import { getChrome } from './createMultipleTheme.spec'
-   
+
 const SETTINGS_DEV = {
   mode    : 'advanced',
   COLOR_0 : '#063672',
@@ -62,11 +62,3 @@ async function findBestTheme(){
 test('find best pallete', async () => {
   await findBestTheme()
 })
-
-function getFilePathRandom(index, fourColors){
-  if (!fourColors) return `${ base }/generated/threeColors.json`
-
-  const found = `${ base }/generated/_${ index }.json`
-
-  return found
-}

@@ -102,11 +102,19 @@ function getBaseColors(mode, actualBack){
 
 export const SETTINGS = {}
 SETTINGS[ 0 ] = {
-  mode    : 'advanced',
-  label   : 'bat',
-  "COLOR_0": "#824c96",
-  "COLOR_1": "#4c6f7b",
-  "COLOR_2": "#d32d2d"
+  mode  : 'advanced',
+  label : 'bat',
+
+  COLOR_0 : '#c03546',
+  COLOR_1 : '#614ad3',
+  COLOR_2 : '#906387',
+  // "COLOR_0": "#cc085e",
+  //     "COLOR_1": "#5454c5",
+  //     "COLOR_2": "#6f6f6f"
+  // engine
+  // "COLOR_0": "#226b80",
+  //     "COLOR_1": "#cc085e",
+  //     "COLOR_2": "#a75265"
 }
 SETTINGS[ 1 ] = {
   mode  : 'advanced',
@@ -116,35 +124,32 @@ SETTINGS[ 2 ] = {
   mode  : 'advanced',
   label : 'dog',
 }
-// lemon song
 SETTINGS[ 3 ] = {
   mode  : 'advanced',
   label : 'engine',
 }
-// heartbreaker
 SETTINGS[ 4 ] = {
   mode  : 'advanced',
   label : 'hook',
 }
-// dancing days
 SETTINGS[ 5 ] = {
   mode  : 'advanced',
   label : 'immigrant',
 }
 
 const permutations = [
-  [ 1, 3, 2 ], // cat
-  [ 2, 1, 3 ], // dog
-  [ 2, 3, 1 ], // engine
-  [ 3, 2, 1 ], // hook
-  [ 3, 1, 2 ], // immigrant
+  [ 0, 2, 1 ], // cat
+  [ 1, 0, 2 ], // dog
+  [ 1, 2, 0 ], // engine
+  [ 2, 1, 0 ], // hook
+  [ 2, 0, 1 ], // immigrant
 ]
 permutations.forEach((indexes, i) => {
   SETTINGS[ i + 1 ] = {
     ...SETTINGS[ i + 1 ],
-    COLOR_0 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 0 ] - 1 }` ],
-    COLOR_1 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 1 ] - 1 }` ],
-    COLOR_2 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 2 ] - 1 }` ],
+    COLOR_0 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 0 ] }` ],
+    COLOR_1 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 1 ] }` ],
+    COLOR_2 : SETTINGS[ 0 ][ `COLOR_${ indexes[ 2 ] }` ],
   }
 })
 
@@ -187,7 +192,7 @@ export function getChrome(mode, back){
 }
 
 test('happy', async () => {
-  const screenDir = `${process.env.HOME}`  
+  const screenDir = `${ process.env.HOME }`
 })
 
 test('happy', () => {
@@ -202,7 +207,7 @@ test('happy', () => {
           'four',
           'three'
         )
-      )  
+      )
       const chrome = getChrome(mode)
       const palette = readJsonAnt(`palettes/${ paletteMode }.json`)
       const themeData = generateThemeDataBee({

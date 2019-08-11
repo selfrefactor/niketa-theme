@@ -159,16 +159,23 @@ SETTINGS[ 3 ] = {
   COLOR_1 : '#240041',
   COLOR_2 : '#ff4d4d',
   COLOR_0 : '#0e5f76'
+
+  Third iteration published as `tea for one` theme:
+  COLOR_1 : '#883c82',
+  COLOR_2 : '#459d72',
+  COLOR_0 : '#530c0c',
 */
 
 // heartbreaker
 SETTINGS[ 4 ] = {
-  back    : '#f9f6f1',
+  // prev state
+  // back    : '#f9f6f1',
+  back    : '#FAF8F3',
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_1 : '#883c82',
-  COLOR_2 : '#459d72',
-  COLOR_0 : '#530c0c',
+  COLOR_0 : '#c03546',
+  COLOR_1 : '#614ad3',
+  COLOR_2 : '#906387',
 }
 // dancing days
 SETTINGS[ 5 ] = {
@@ -226,13 +233,19 @@ SETTINGS[ 8 ] = {
   COLOR_0 : '#f39c12',
   COLOR_1 : '#440b0b',
   COLOR_2 : '#038387',
+
+  third iteration published as `lemon song` theme:
+  COLOR_0 : '#847545',
+  COLOR_1 : '#f38b80',
+  COLOR_2 : '#25164C',
 */
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
-  COLOR_0 : '#847545',
-  COLOR_1 : '#f38b80',
-  COLOR_2 : '#25164C',
+  back    : '#FAF8F3',
+  COLOR_0 : '#cf0a2c',
+  COLOR_1 : '#226b80',
+  COLOR_2 : '#a75265',
 }
 // lemon song
 SETTINGS[ 10 ] = {

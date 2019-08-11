@@ -8,14 +8,14 @@ import { exportToMono, getLastestScreen } from './'
   this updates brave.love mono repo and creates a new theme
 
   Second scenario is when updating a thrending theme,
-   but you don't want to create a new theme, 
+   but you don't want to create a new theme,
    just update trending theme mono repo
 
    Run `await exportToMono('BraveLove', true')` for screen update or run `await exportToMono('BraveLove')` for style update only
 */
-test.skip('happy', async () => {
-  // await exportToMono('AdvancedHook')
-  await exportToMono('BraveLove', true, 'LemonSong')
+test('happy', async () => {
+  // await exportToMono('AdvancedHook', true, 'TeaForOne')
+  // await exportToMono('BraveLove', true, 'LemonSong')
 })
 
 test('latest screen', async () => {
