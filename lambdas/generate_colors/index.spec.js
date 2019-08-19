@@ -52,9 +52,9 @@ test('happy', () => {
     // translate('teal.7'),
     // translate('dark.green.8'),
     // translate('brown.8'),
-    '#fafafa',
+    '#412135',
     // translate('purple.1'),
-    '#f3f0e0',
+    '#060608',
     translate('pink.1'),
   ]
 

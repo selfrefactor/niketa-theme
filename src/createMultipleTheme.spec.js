@@ -305,13 +305,20 @@ SETTINGS[ 16 ] = {
   COLOR_2 : '#532053',
   COLOR_3 : '#9e386a',
 }
+
+/*
+  First saved iteration:
+  COLOR_0 : '#696040',
+  COLOR_1 : '#295879',
+  COLOR_2 : '#7f0c29'
+*/
 SETTINGS[ 17 ] = {
   mode    : 'niketa',
   label   : 'moon',
   back    : '#c1bcae',
-  COLOR_0 : '#696040',
-  COLOR_1 : '#295879',
-  COLOR_2 : '#7f0c29',
+  "COLOR_0": "#900048", 
+  "COLOR_1": "#3a0088",
+      "COLOR_2": "#0a070b",
 }
 
 export function getChrome(mode, back){

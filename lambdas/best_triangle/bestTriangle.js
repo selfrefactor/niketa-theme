@@ -154,8 +154,12 @@ export async function findBestTriangle({ colors, minBetween = 1.8, background })
   )
 }
 
-export async function withLocalColors(inputColors){
-  const colors = getLocalColors(inputColors)
+export async function withLocalColors({ colors, minBetween, background }){
+  const combinedColors = getLocalColors(colors)
 
-  return findBestTriangle({ colors })
+  return findBestTriangle({
+    colors : combinedColors,
+    minBetween,
+    background,
+  })
 }
