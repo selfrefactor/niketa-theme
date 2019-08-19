@@ -316,9 +316,9 @@ SETTINGS[ 17 ] = {
   mode    : 'niketa',
   label   : 'moon',
   back    : '#c1bcae',
-  "COLOR_0": "#900048", 
-  "COLOR_1": "#3a0088",
-      "COLOR_2": "#0a070b",
+  COLOR_0 : '#900048',
+  COLOR_1 : '#3a0088',
+  COLOR_2 : '#0a070b',
 }
 
 export function getChrome(mode, back){
