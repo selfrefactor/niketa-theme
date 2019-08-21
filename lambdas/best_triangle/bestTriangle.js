@@ -17,7 +17,7 @@ import {
 export const SAVED_SK = 'lambdas/best_triangle/sk.json'
 const SAVED_FILTERED = 'lambdas/ants/best_triangle/filtered.json'
 
-function getContrast(a, b){
+export function getContrast(a, b){
   return getContrastRatio.default(a, b)
 }
 
@@ -26,28 +26,6 @@ export function filterWith(base, limit){
 }
 export function filterAgainst(base, limit){
   return color => getContrast(color, base) < limit
-}
-
-const BLUE_BASE = '#00f'
-const RED_BASE = '#f00'
-const DARK_BASE = '#000'
-const LIGHT_BASE = '#fff'
-
-const isRed = x => getContrast(x, RED_BASE) < 1.15
-const isDark = x => getContrast(x, DARK_BASE) < 1.5
-
-const isBlue = x => maybe(
-  isDark(x),
-  true,
-  isRed(x) ? false : getContrast(x, BLUE_BASE) < 2
-)
-
-function filterAgainstTwoBlues(colors){
-  const blues = colors.filter(
-    isBlue
-  )
-
-  return blues.length === 1 || blues.length === 0
 }
 
 function getIndexes(limit){
