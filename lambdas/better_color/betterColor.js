@@ -1,4 +1,4 @@
-import { shuffle, take, piped, filter, sort, map } from 'rambdax'
+import { take, piped, filter, sort, map } from 'rambdax'
 import {
   sortFn,
   calculateTriangleScore,
@@ -12,7 +12,6 @@ export function betterColor({
   colorTwo,
   background,
 }){
-  // const possibleColors = take(batch, shuffle(colorsOrigin))
   const rawResult = colorsOrigin.map(possibleColor => calculateTriangleScore(
     colorOne,
     colorTwo,
