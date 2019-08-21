@@ -105,14 +105,22 @@ function getBaseColors(mode, actualBack){
 }
 
 export const SETTINGS = {}
-SETTINGS[ 0 ] = {
-  back    : '#f9f6f2',
-  mode    : 'advanced',
-  label   : 'bat',
+
+/*
+  First iteration:
   COLOR_0 : '#B06775E9',
   COLOR_1 : '#54ABB5E9',
   COLOR_2 : '#CF6F4Bf3',
   COLOR_3 : '#8F1C3DE9',
+*/
+SETTINGS[ 0 ] = {
+  back    : '#f9f6f2',
+  mode    : 'advanced',
+  label   : 'bat',
+  COLOR_0 : '#480032',
+  COLOR_1 : '#20639b',
+  COLOR_2 : '#CF6F4B',
+  COLOR_3 : '#8F1C3D',
 }
 SETTINGS[ 1 ] = {
   back    : '#f9f6f2',
