@@ -12,10 +12,14 @@ import { exportToMono, getLastestScreen } from './'
    just update trending theme mono repo
 
    Run `await exportToMono('BraveLove', true')` for screen update or run `await exportToMono('BraveLove')` for style update only
+
+  Third scenario is when you have changed any other theme and you need monorepo to be synced with 
 */
 test('happy', async () => {
+  jest.setTimeout(2 * 60 * 1000)
   // await exportToMono('AdvancedHook', true, 'TeaForOne')
-  await exportToMono('AdvancedHook', true)
+  await exportToMono('AdvancedBat')
+  // await exportToMono('AdvancedHook', true)
 })
 
 test('latest screen', async () => {
