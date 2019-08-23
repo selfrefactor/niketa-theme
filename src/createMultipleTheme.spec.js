@@ -291,7 +291,7 @@ SETTINGS[ 13 ] = {
 SETTINGS[ 14 ] = {
   mode    : 'circus',
   label   : 'whisky',
-  COLOR_0 : '#3782AF',
+  COLOR_0 : '#083358',
   COLOR_1 : '#0d8a81',
   COLOR_2 : '#A0595E',
 }
