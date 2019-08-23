@@ -10,6 +10,7 @@ import {
 import {
   sortFn,
   getContrast,
+  filterWith,
 } from '../best_triangle/bestTriangle.js'
 import colorsOrigin from '../best_triangle/colorsOrigin.json'
 import { writeJsonAnt } from '../../src/ants/writeJson'
@@ -48,12 +49,15 @@ function evaluateSquare(colors, background, minBetween, minBackground){
 export function bestSquare({
   background,
   batch,
+  blackTolerance,
   colors,
   minBackground,
   minBetween,
 }){
   const possibleColors = uniq(colorsOrigin)
-  const rawResult = possibleColors.map(possibleColor => evaluateSquare(
+  const filteredColors = possibleColors.filter(filterWith('#000', blackTolerance))
+  console.log(filteredColors.length)
+  const rawResult = filteredColors.map(possibleColor => evaluateSquare(
     [ ...colors, possibleColor ],
     background,
     minBetween,

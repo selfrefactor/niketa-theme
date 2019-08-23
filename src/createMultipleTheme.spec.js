@@ -150,8 +150,9 @@ SETTINGS[ 3 ] = {
   COLOR_1 : '#38978D',
   COLOR_2 : '#B97444',
 }
+
 /*
-  Second trending theme is hosted in AdvancedHook
+  AdvancedHook is a trending theme
 
   Origin palette is zeppelin.heartbreaker:
   COLOR_0 : '#9C8058',
@@ -176,8 +177,6 @@ SETTINGS[ 3 ] = {
 
 // heartbreaker
 SETTINGS[ 4 ] = {
-  // prev state
-  // back    : '#f9f6f1',
   back    : '#FAF8F3',
   mode    : 'advanced',
   label   : 'hook',
@@ -211,9 +210,9 @@ SETTINGS[ 7 ] = {
   mode    : 'brave',
   label   : 'habits',
   COLOR_0 : '#D27837',
-  COLOR_1 : '#3b6160',
+  COLOR_1 : '#cf455c',
   COLOR_2 : '#6a3951',
-  COLOR_3 : '#60b6b1',
+  COLOR_3 : '#3b6160',
 }
 SETTINGS[ 8 ] = {
   mode    : 'brave',
@@ -408,25 +407,9 @@ test('happy', () => {
 })
 
 /*
-  Brother alternative
-  SETTINGS[ 11 ] = {
-  back: '#f6f4e8',
-  mode    : 'circus',
-  label   : 'brother',
   COLOR_1: "#ad404f",
-  COLOR_0: "#57668f",
-  COLOR_2: "#968420"
-}
-*/
-
-/*
-  SETTINGS[ 12 ] = {
-  back: '#f3f3e2',
-  mode    : 'circus',
-  label   : 'people',
   COLOR_0: "#23515F",
   COLOR_1: "#C03A71",
-  COLOR_2: "#A17798",
   COLOR_3: "#245115",
   COLOR_4: "#256FA1"
 }
