@@ -1,4 +1,4 @@
-import { generateColors } from './'
+import { generateColors } from './generateColors'
 import { readJsonAnt } from '../../src/ants/readJson'
 import { translate } from '../../src/ants/mini/translate'
 import {
