@@ -1,9 +1,9 @@
 import { betterColor } from './betterColor.js'
 
-const COLOR_0 = '#CF6F4B'
-const COLOR_1 = '#8F1C3D'
-const BACKGROUND = '#f9f6f2'
-const BATCH = 100
+const COLOR_0 = '#780662'
+const COLOR_1 = '#83580b'
+const BACKGROUND = '#f4f1e3'
+const BATCH = 200
 
 test('happy', () => {
 

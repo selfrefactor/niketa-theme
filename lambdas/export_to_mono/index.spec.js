@@ -13,7 +13,7 @@ import { exportToMono, getLastestScreen } from './'
 
    Run `await exportToMono('BraveLove', true')` for screen update or run `await exportToMono('BraveLove')` for style update only
 
-  Third scenario is when you have changed any other theme and you need monorepo to be synced with 
+  Third scenario is when you have changed any other theme and you need monorepo to be synced with
 */
 test('happy', async () => {
   jest.setTimeout(2 * 60 * 1000)
