@@ -1,8 +1,8 @@
 import { betterColor } from './betterColor.js'
 
-const COLOR_0 = '#1c44ac'
-const COLOR_1 = '#532053'
-const BACKGROUND = '#d8d5c9'
+const COLOR_0 = '#900048'
+const COLOR_1 = '#3a0088'
+const BACKGROUND = '#c1bcae'
 const BATCH = 300
 const COLOR_TOLERANCE = 1
 const BACKGROUND_TOLERANCE = 3.5

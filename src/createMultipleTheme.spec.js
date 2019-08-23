@@ -323,7 +323,7 @@ SETTINGS[ 17 ] = {
   back    : '#c1bcae',
   COLOR_0 : '#900048',
   COLOR_1 : '#3a0088',
-  COLOR_2 : '#0a070b',
+  COLOR_2 : '#01676b',
 }
 
 export function getChrome(mode, back){
