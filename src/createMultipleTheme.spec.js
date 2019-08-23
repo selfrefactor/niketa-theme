@@ -306,10 +306,9 @@ SETTINGS[ 15 ] = {
 SETTINGS[ 16 ] = {
   mode    : 'niketa',
   label   : 'bear',
-  COLOR_0 : '#C66534',
-  COLOR_1 : '#3c6e5b',
+  COLOR_0 : '#1c44ac',
+  COLOR_1 : '#98414f',
   COLOR_2 : '#532053',
-  COLOR_3 : '#9e386a',
 }
 
 /*

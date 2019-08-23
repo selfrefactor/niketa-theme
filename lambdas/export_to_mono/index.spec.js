@@ -19,7 +19,7 @@ test('happy', async () => {
   jest.setTimeout(2 * 60 * 1000)
   // await exportToMono('AdvancedHook', true, 'TeaForOne')
   // await exportToMono('BraveLove', true, 'LittleWing')
-  await exportToMono('CircusAjax', true, 'FamilyGuy')
+  await exportToMono('CircusWhisky', true, 'Duckman')
   // await exportToMono('AdvancedBat')
   // await exportToMono('AdvancedHook', true)
 })

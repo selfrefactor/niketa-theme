@@ -43,18 +43,8 @@ test('x', () => {
 
 test('happy', () => {
   const input = [
-    // translate('light.green.1'),
-    // translate('dark.blue.3'),
-    // translate('dark.blue.0'),
-    // translate('light.blue.0'),
-    // translate('light.blue.9'),
-    // translate('teal.0'),
-    // translate('teal.7'),
-    // translate('dark.green.8'),
-    // translate('brown.8'),
-    '#412135',
-    // translate('purple.1'),
-    '#060608',
+    '#b04d5d',
+    '#140303',
     translate('pink.1'),
   ]
 

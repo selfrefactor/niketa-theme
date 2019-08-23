@@ -4,16 +4,13 @@ import {
   piped,
   sort,
   take,
-  uniq,
   tap,
 } from 'rambdax'
-import {
-  sortFn,
-  getContrast,
-  filterWith,
-} from '../best_triangle/bestTriangle.js'
+import { getContrast } from '../best_triangle/bestTriangle.js'
 import colorsOrigin from '../best_triangle/colorsOrigin.json'
 import { writeJsonAnt } from '../../src/ants/writeJson'
+import { filterColors } from '../../lib/filterColors'
+import { sortColors } from '../../lib/sortColors'
 
 const indexList = [
   [ 0, 1 ], [ 0, 2 ], [ 0, 3 ], [ 1, 2 ], [ 1, 3 ], [ 2, 3 ],
@@ -49,13 +46,17 @@ function evaluateSquare(colors, background, minBetween, minBackground){
 export function bestSquare({
   background,
   batch,
-  blackTolerance,
+  colorTolerance,
   colors,
   minBackground,
   minBetween,
 }){
-  const possibleColors = uniq(colorsOrigin)
-  const filteredColors = possibleColors.filter(filterWith('#000', blackTolerance))
+  const filteredColors = filterColors({
+    colors         : colorsOrigin,
+    redTolerance   : colorTolerance,
+    blueTolerance  : colorTolerance,
+    blackTolerance : colorTolerance,
+  })
   const rawResult = filteredColors.map(possibleColor => evaluateSquare(
     [ ...colors, possibleColor ],
     background,
@@ -65,7 +66,7 @@ export function bestSquare({
 
   return piped(
     rawResult,
-    sort(sortFn),
+    sort(sortColors),
     take(batch),
     map(({ colors, ...rest }) => ({
       ...rest,
