@@ -18,7 +18,8 @@ import { exportToMono, getLastestScreen } from './'
 test('happy', async () => {
   jest.setTimeout(2 * 60 * 1000)
   // await exportToMono('AdvancedHook', true, 'TeaForOne')
-  await exportToMono('BraveLove', true, 'LittleWing')
+  // await exportToMono('BraveLove', true, 'LittleWing')
+  await exportToMono('BraveHabits', true, 'AmericanDad')
   // await exportToMono('AdvancedBat')
   // await exportToMono('AdvancedHook', true)
 })
