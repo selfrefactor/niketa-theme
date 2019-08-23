@@ -2,16 +2,16 @@ import { map } from 'rambdax'
 import { bestSquare } from './bestSquare.js'
 
 const BLACK_TOLERANCE = 1.9
-const COLOR_INDEX = 3
+const COLOR_INDEX = 1
 const BATCH = 200
-const MIN_BETWEEN = 1.22
-const MIN_BACKGROUND = 2.18
-const BACKGROUND = '#f3f0e0'
+const MIN_BETWEEN = 1
+const MIN_BACKGROUND = 1.09
+const BACKGROUND = '#ede8e1'
 const COLORS_RAW = {
-  COLOR_0 : '#D27837',
-  COLOR_1 : '#3b6160',
-  COLOR_2 : '#6a3951',
-  COLOR_3 : '#60b6b1',
+  COLOR_1 : '#5c4c78',
+  COLOR_0 : '#399090',
+  COLOR_2 : '#113f67',
+  COLOR_3 : '#d8576a',
 }
 
 test('happy', () => {
@@ -38,3 +38,4 @@ function generateColors(colors, indexToSkip){
 }
 
 // Brave back - #f3f0e0
+// Circus back - #ede8e1

@@ -1,18 +1,27 @@
-import { take, piped, filter, sort, map } from 'rambdax'
+import { take, piped, sort, map, toDecimal } from 'rambdax'
 import {
   sortFn,
   calculateTriangleScore,
 } from '../best_triangle/bestTriangle.js'
 import colorsOrigin from '../best_triangle/colorsOrigin.json'
 import { writeJsonAnt } from '../../src/ants/writeJson'
+import { filterColors } from '../../lib/filterColors'
 
 export function betterColor({
   batch,
   colorOne,
   colorTwo,
   background,
+  colorTolerance,
 }){
-  const rawResult = colorsOrigin.map(possibleColor => calculateTriangleScore(
+  const filteredColors = filterColors({
+    colors         : colorsOrigin,
+    blueTolerance  : colorTolerance,
+    redTolerance   : colorTolerance,
+    blackTolerance : toDecimal(colorTolerance + 0.33),
+  })
+
+  const rawResult = filteredColors.map(possibleColor => calculateTriangleScore(
     colorOne,
     colorTwo,
     possibleColor,
@@ -21,7 +30,7 @@ export function betterColor({
 
   return piped(
     rawResult,
-    filter(x => x.minBetween > 1.3),
+    // filter(x => x.minBetween > 1.3),
     sort(sortFn),
     take(batch),
     map(({ unsorted, colors, ...rest }) => ({

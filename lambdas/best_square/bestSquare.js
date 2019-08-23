@@ -56,7 +56,6 @@ export function bestSquare({
 }){
   const possibleColors = uniq(colorsOrigin)
   const filteredColors = possibleColors.filter(filterWith('#000', blackTolerance))
-  console.log(filteredColors.length)
   const rawResult = filteredColors.map(possibleColor => evaluateSquare(
     [ ...colors, possibleColor ],
     background,

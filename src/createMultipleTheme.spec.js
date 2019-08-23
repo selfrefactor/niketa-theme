@@ -265,10 +265,9 @@ SETTINGS[ 10 ] = {
 SETTINGS[ 11 ] = {
   mode    : 'circus',
   label   : 'ajax',
-  COLOR_0 : '#5c4c78',
-  COLOR_1 : '#399090',
-  COLOR_2 : '#427BB0',
-  COLOR_3 : '#d8576a',
+  COLOR_0 : '#399090',
+  COLOR_1 : '#611919',
+  COLOR_2 : '#d8576a',
 }
 // label      : 'since.loving',
 SETTINGS[ 12 ] = {
