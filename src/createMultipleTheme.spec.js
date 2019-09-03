@@ -217,12 +217,11 @@ SETTINGS[ 7 ] = {
 SETTINGS[ 8 ] = {
   mode    : 'brave',
   label   : 'homer',
-  COLOR_0 : '#AD8310',
+  COLOR_0 : '#884b50',
   COLOR_1 : '#3782AF',
-  COLOR_2 : '#E0AA15',
-  COLOR_3 : '#884b50',
-  COLOR_4 : '#B84251',
-  COLOR_5 : '#406F64',
+  COLOR_2 : '#c4773b',
+  COLOR_3 : '#B84251',
+  COLOR_4 : '#406F64',
 }
 /*
   Current trending theme BraveLove
