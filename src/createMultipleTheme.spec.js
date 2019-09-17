@@ -244,14 +244,19 @@ SETTINGS[ 8 ] = {
   COLOR_0 : '#847545',
   COLOR_1 : '#f38b80',
   COLOR_2 : '#25164C',
+
+  fourth iteration published as `kashmir` theme:
+  COLOR_0 : '#83580b',
+  COLOR_1 : '#780662',
+  COLOR_2 : '#090089',
 */
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
   back    : '#f4f1e3',
-  COLOR_0 : '#83580b',
-  COLOR_1 : '#780662',
-  COLOR_2 : '#090089',
+  COLOR_0 : '#780662',
+  COLOR_1 : '#da4949',
+  COLOR_2 : '#83580b',
 }
 // lemon song
 SETTINGS[ 10 ] = {

@@ -104,12 +104,9 @@ export const SETTINGS = {}
 SETTINGS[ 0 ] = {
   mode    : 'advanced',
   label   : 'bat',
-  COLOR_0 : '#900048',
-  COLOR_1 : '#3a0088',
-  COLOR_2 : '#0a070b',
-  // "COLOR_0": "#0a070b",
-  // "COLOR_1": "#900048",
-  // "COLOR_2": "#3a0088"
+  COLOR_1 : '#da4949',
+  COLOR_0 : '#780662',
+  COLOR_2 : '#83580b',
 }
 SETTINGS[ 1 ] = {
   mode  : 'advanced',
@@ -148,7 +145,7 @@ permutations.forEach((indexes, i) => {
   }
 })
 
-const SOLE_BACKGROUND = '#c1bcae'
+const SOLE_BACKGROUND = '#f4f1e3'
 
 export function getChrome(mode, back){
   const actualBack = defaultTo(SOLE_BACKGROUND, back)
