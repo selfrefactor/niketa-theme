@@ -2,10 +2,6 @@
 
 18 Light VSCode Themes
 
-> The repo contains also internal theme generator used for creation of the themes
-
---
-
 > Niketa theme version 7.0.3 is published as [Niketa theme legacy](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-legacy)
 
 ## Screens
@@ -141,53 +137,18 @@ group themes by background:
 
 ## Name
 
-Niketa is the name I gave to my dog. On this picture, she is about 90 days:
+Niketa is the name I gave to my dog. On this picture, she is 90 days old:
 
 ![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.jpg?raw=true)
 
-And here she is about 1 year old.
+And here she after as one year old dog.
 
 ![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa_young.jpg?raw=true)
-
-## Develop
-
-I build the themes by running `createPalleteTheme.spec.js` with `publish` flag set to `false`. I change some colors and then I enter debug mode.
-
-Debug mode will open 22 themes, so the developer can choose which variation looks the best.
 
 ## References
 
 - Featured in [Web Tools Weekly](https://mailchi.mp/webtoolsweekly/web-tools-306)
 
-## Zeppelin themes
-
-Three-color spin-off from `Niketa` themes which is already integrated in `Niketa` themes with the major bump to version `8.0.0`.
-
-### ZeppelinDancingDays
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/dancing.days.png?raw=true)
-
-### ZeppelinHeartbreaker
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/heartbreaker.png?raw=true)
-
-### ZeppelinInLight
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/in.light.png?raw=true)
-
-### ZeppelinLemonSong
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/lemon.song.png?raw=true)
-
-### ZeppelinSinceLoving
-
-> update
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/since.loving.png?raw=true)
-
-### ZeppelinTeaFor
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/tea.for.png?raw=true)
 
 ## Dark themes
 
@@ -217,6 +178,34 @@ There is dark version of `Niketa theme` and it is called [Because](https://marke
 
 [As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseNeverNiketa)
 
+## Zeppelin themes
+
+Three-color spin-off from `Niketa` themes which is already integrated in `Niketa` themes with the major bump to version `8.0.0`.
+
+### ZeppelinDancingDays
+
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/dancing.days.png?raw=true)
+
+### ZeppelinHeartbreaker
+
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/heartbreaker.png?raw=true)
+
+### ZeppelinInLight
+
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/in.light.png?raw=true)
+
+### ZeppelinLemonSong
+
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/lemon.song.png?raw=true)
+
+### ZeppelinSinceLoving
+
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/since.loving.png?raw=true)
+
+### ZeppelinTeaFor
+
+![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/tea.for.png?raw=true)
+
 ## Niketa extension
 
 I used the same name for a suite of tools for automatic run of `Jest` tests with coverage. If you are interested, then you can hop on one of the following:
@@ -226,19 +215,3 @@ I used the same name for a suite of tools for automatic run of `Jest` tests with
 There is `VSCode` part and `node` client part. On each save of file `foo.js`, it will run `foo.spec.js`. It will do that also if `foo.spec.js` has been saved.
 
 - [The case against Wallaby](https://ilearnsmarter.wordpress.com/2018/12/22/the-case-against-wallaby-js/) `Niketa` is created as frustration with some cons of `Wallaby.js`. The link leads to an article where I try to compare both tools and explain more about the benefits of `Niketa` as `Jest` tool.
-
-## Additional info
-
-### Featured in
-
-- [Web Tools Weekly](https://webtoolsweekly.com/archives/issue-299/)
-
-### Trending log
-
-Time - 18.04.2019
-
-![trending](https://github.com/selfrefactor/niketa-theme/blob/master/files/trending.png?raw=true)
-
-Time - 05.03.2019
-
-![trending](https://github.com/selfrefactor/niketa-theme/blob/master/files/trending.march.png?raw=true)
