@@ -267,11 +267,6 @@ SETTINGS[ 10 ] = {
   COLOR_2 : '#B97444',
 }
 
-/*  
-COLOR_0 : '#399090',
-COLOR_1 : '#611919',
-COLOR_2 : '#d8576a',
-*/
 SETTINGS[ 11 ] = {
   mode    : 'circus',
   label   : 'ajax',
@@ -280,6 +275,7 @@ SETTINGS[ 11 ] = {
   COLOR_2 : '#532053',
   COLOR_3 : '#9e386a',
 }
+
 // label      : 'since.loving',
 SETTINGS[ 12 ] = {
   back    : '#f9f6f1',
@@ -382,7 +378,7 @@ export function getChrome(mode, back){
 
 test('happy', () => {
   map(
-    (val, key) => {
+    val => {
       const { mode, label, back, ...colors } = val
       const paletteMode = maybe(
         colors.COLOR_5,
@@ -414,12 +410,3 @@ test('happy', () => {
   const exported = readJsonAnt('exported.json')
   saveToPackageJsonAnt(exported)
 })
-
-/*
-  COLOR_1: "#ad404f",
-  COLOR_0: "#23515F",
-  COLOR_1: "#C03A71",
-  COLOR_3: "#245115",
-  COLOR_4: "#256FA1"
-}
-*/

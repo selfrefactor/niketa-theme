@@ -13,17 +13,26 @@ import { exportToMono, getLastestScreen } from './exportToMono'
 
    Run `await exportToMono('BraveLove', true')` for screen update or run `await exportToMono('BraveLove')` for style update only
 
-  Third scenario is when you have changed any other theme and you need monorepo to be synced with. Optionally, you can also republish to new theme the old state
+  Third scenario is when you have changed any other theme and you need monorepo to be synced with.
+  Optionally, you can also publish it as a new theme
 */
 test('happy', async () => {
   jest.setTimeout(2 * 60 * 1000)
   // await exportToMono('AdvancedHook', true, 'TeaForOne')
-  await exportToMono('BraveLove', true, 'Kashmir')
   // await exportToMono('NiketaMoon', true, 'DancingDays')
   // await exportToMono('AdvancedBat')
   // await exportToMono('AdvancedHook', true)
+
+  // 1. Republish CircusAjax as a new theme
+  // before going forward to change the theme
+  // ============================================
+  // await exportToMono('CircusAjax', false, 'GretaVanFleet')
+
+  // 2. Update the theme
+  // ============================================
+  await exportToMono('CircusAjax', true)
 })
 
-test('latest screen', async () => {
+test.skip('latest screen', async () => {
   await getLastestScreen()
 })
