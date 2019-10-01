@@ -1,17 +1,20 @@
 import { map } from 'rambdax'
 import { bestSquare } from './bestSquare.js'
 
-const COLOR_TOLERANCE = 1.06
-const COLOR_INDEX = 3
-const BATCH = 200
-const MIN_BETWEEN = 1
-const MIN_BACKGROUND = 1.69
-const BACKGROUND = '#d8d5c9'
+const COLOR_TOLERANCE = 1.46
+const COLOR_INDEX = 1
+const BATCH = 500
+const MIN_BETWEEN = 1.16
+const MIN_BACKGROUND = 1.8
+const BACKGROUND = '#ede8e1'
 const COLORS_RAW = {
-  COLOR_0 : '#C66534',
-  COLOR_1 : '#3c6e5b',
+  // COLOR_2 : '#C66534',
+  // COLOR_1 : '#3c6e5b',
+  COLOR_0 : '#399090',
+  COLOR_1 : '#611919',
   COLOR_2 : '#532053',
   COLOR_3 : '#9e386a',
+  // COLOR_2 : '#d8576a',
 }
 
 test('happy', () => {

@@ -4,6 +4,7 @@ import {
   piped,
   sort,
   take,
+  uniq,
   tap,
 } from 'rambdax'
 import { getContrast } from '../best_triangle/bestTriangle.js'
@@ -52,32 +53,35 @@ export function bestSquare({
   minBetween,
 }){
   const filteredColors = filterColors({
-    colors         : colorsOrigin,
+    colors         : uniq(colorsOrigin),
     redTolerance   : colorTolerance,
     blueTolerance  : colorTolerance,
     blackTolerance : colorTolerance,
   })
-  const rawResult = filteredColors.map(possibleColor => evaluateSquare(
+  // const rawResult = filteredColors.map(possibleColor => evaluateSquare(
+  const rawResult = uniq(colorsOrigin).map(possibleColor => evaluateSquare(
     [ ...colors, possibleColor ],
     background,
     minBetween,
     minBackground
-  )).filter(Boolean)
+  ))
+    .filter(Boolean)
 
   return piped(
     rawResult,
     sort(sortColors),
     take(batch),
-    map(({ colors, ...rest }) => ({
-      ...rest,
-      COLORS : {
-        COLOR_0 : colors[ 3 ],
-        COLOR_1 : colors[ 0 ],
-        COLOR_2 : colors[ 1 ],
-        COLOR_3 : colors[ 2 ],
-      },
-    })),
-    tap(x => console.log(x.length)),
+    // map(({ colors, ...rest }) => ({
+    //   ...rest,
+    //   COLORS : {
+    //     COLOR_0 : colors[ 3 ],
+    //     COLOR_1 : colors[ 0 ],
+    //     COLOR_2 : colors[ 1 ],
+    //     COLOR_3 : colors[ 2 ],
+    //   },
+    // })),
+    map(({ colors }) => colors[ 3 ]),
+    // tap(x => console.log(x.length)),
     x => writeJsonAnt('lambdas/best_square/colors.json', x)
   )
 }
