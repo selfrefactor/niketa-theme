@@ -271,8 +271,8 @@ SETTINGS[ 11 ] = {
   mode    : 'circus',
   label   : 'ajax',
   COLOR_0 : '#399090',
-  COLOR_1 : '#0b032d',
-  COLOR_2 : '#532053',
+  COLOR_1 : '#303e27',
+  COLOR_2 : '#0b032d',
   COLOR_3 : '#9e386a',
 }
 
