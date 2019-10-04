@@ -23,14 +23,18 @@ test('happy', async () => {
   // await exportToMono('AdvancedBat')
   // await exportToMono('AdvancedHook', true)
 
-  // 1. Republish CircusAjax as a new theme
+  // 1.1.1 Publish new trending theme
+  // ============================================
+  await exportToMono('BraveLove', true, 'ComeTogether')
+
+  // 1.2.1 Republish CircusAjax as a new theme
   // before going forward to change the theme
   // ============================================
   // await exportToMono('CircusAjax', false, 'GretaVanFleet')
 
-  // 2. Update the theme
-  // ============================================
-  await exportToMono('CircusAjax', true)
+  // // 1.2.2 Update the theme
+  // // ============================================
+  // await exportToMono('CircusAjax', true)
 })
 
 test.skip('latest screen', async () => {

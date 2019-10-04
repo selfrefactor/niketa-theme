@@ -263,7 +263,7 @@ SETTINGS[ 9 ] = {
   COLOR_3 : '#3b6160',
   COLOR_2 : '#A0595E',
   COLOR_4 : '#0068a8',
-} 
+}
 // lemon song
 SETTINGS[ 10 ] = {
   mode    : 'brave',
