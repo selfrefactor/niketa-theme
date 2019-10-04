@@ -20,7 +20,7 @@ const FILTER_FLAG = 0
 test.skip('calculate triangle score', () => {
   console.log(
     calculateTriangleScore(
-      '#1E416E',
+      '#5482ab',
       '#38978D',
       '#B97444',
       '#f9f6f1'

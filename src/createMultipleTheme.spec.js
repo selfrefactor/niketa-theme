@@ -249,14 +249,21 @@ SETTINGS[ 8 ] = {
   COLOR_0 : '#83580b',
   COLOR_1 : '#780662',
   COLOR_2 : '#090089',
+
+  fifth iteration:
+  COLOR_0 : '#780662',
+  COLOR_1 : '#da4949',
+  COLOR_2 : '#83580b',
 */
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
-  back    : '#f4f1e3',
-  COLOR_0 : '#780662',
+  COLOR_0 : '#5482ab',
   COLOR_1 : '#da4949',
-  COLOR_2 : '#83580b',
+  COLOR_2 : '#3b6160',
+  COLOR_3 : '#A0595E',
+  COLOR_4 : '#0068a8',
+  COLOR_5 : '#459d72',
 }
 // lemon song
 SETTINGS[ 10 ] = {
@@ -264,7 +271,7 @@ SETTINGS[ 10 ] = {
   label   : 'neighbour',
   COLOR_0 : '#1E416E',
   COLOR_1 : '#38978D',
-  COLOR_2 : '#B97444',
+  COLOR_2 : '#a0512c',
 }
 
 SETTINGS[ 11 ] = {

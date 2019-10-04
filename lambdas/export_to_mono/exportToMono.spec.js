@@ -30,7 +30,7 @@ test('happy', async () => {
 
   // 2. Update the theme
   // ============================================
-  await exportToMono('CircusAjax', true) 
+  await exportToMono('CircusAjax', true)
 })
 
 test.skip('latest screen', async () => {
