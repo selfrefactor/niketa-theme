@@ -132,38 +132,12 @@ function getCurrentColors(permutation){
 
 const SOLE_BACKGROUND = '#f4f1e3'
 
-export function getChrome(mode, back){
-  const actualBack = defaultTo(SOLE_BACKGROUND, back)
-  if (mode === 'advanced'){
-    const baseToApply = getBaseColors(mode, actualBack)
-
-    return {
-      ...baseToApply,
-      'editor.background' : actualBack,
-    }
-  }
-  if (mode === 'brave'){
-    const baseToApply = getBaseColors(mode, actualBack)
-
-    return {
-      ...baseToApply,
-      'editor.background' : actualBack,
-    }
-  }
-
-  if (mode === 'circus'){
-    const baseToApply = getBaseColors(mode, actualBack)
-
-    return {
-      ...baseToApply,
-      'editor.background' : actualBack,
-    }
-  }
-  const baseToApply = getBaseColors(mode, actualBack)
+export function getChrome(mode){
+  const baseToApply = getBaseColors(mode, SOLE_BACKGROUND)
 
   return {
     ...baseToApply,
-    'editor.background' : actualBack,
+    'editor.background' : SOLE_BACKGROUND,
   }
 }
 
@@ -194,6 +168,5 @@ test('happy', async () => {
       await delay(100)
       writeJsonAnt(`themes/${ themeData.name }.json`, themeData)
     }
-  ,themeNames)
+    , themeNames)
 })
- 

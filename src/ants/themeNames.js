@@ -33,7 +33,7 @@ export const themeNames = [
   },
   {
     mode  : 'brave',
-    label : 'habits',
+    label : 'homer',
   },
   {
     mode  : 'brave',
@@ -57,7 +57,7 @@ export const themeNames = [
   },
   {
     mode  : 'circus',
-    label : 'whiskey',
+    label : 'whisky',
   },
   {
     mode  : 'niketa',

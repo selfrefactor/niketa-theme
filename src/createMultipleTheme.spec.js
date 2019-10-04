@@ -259,12 +259,11 @@ SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
   COLOR_0 : '#5482ab',
-  COLOR_1 : '#da4949',
-  COLOR_2 : '#3b6160',
-  COLOR_3 : '#A0595E',
+  COLOR_1 : '#459d72',
+  COLOR_3 : '#3b6160',
+  COLOR_2 : '#A0595E',
   COLOR_4 : '#0068a8',
-  COLOR_5 : '#459d72',
-}
+} 
 // lemon song
 SETTINGS[ 10 ] = {
   mode    : 'brave',
