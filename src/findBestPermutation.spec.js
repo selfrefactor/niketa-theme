@@ -113,11 +113,11 @@ function getBaseColors(mode, actualBack){
 
 const THEME_COLORS = {
   COLOR_0 : '#5482ab',
-  // COLOR_1 : '#da4949',
+  COLOR_1 : '#780662',
   COLOR_2 : '#3b6160',
   COLOR_3 : '#A0595E',
   COLOR_4 : '#0068a8',
-  COLOR_1 : '#459d72',
+  COLOR_5 : '#459d72',
 }
 
 function getCurrentColors(permutation){
@@ -158,7 +158,7 @@ test('happy', async () => {
 
       const chrome = getChrome(mode)
       const themeData = generateThemeDataBee({
-        palette : readJsonAnt('palettes/five.json'),
+        palette : readJsonAnt('palettes/six.json'),
         chrome,
         colors,
       })

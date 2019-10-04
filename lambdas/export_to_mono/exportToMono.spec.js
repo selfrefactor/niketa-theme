@@ -25,7 +25,7 @@ test('happy', async () => {
 
   // 1.1.1 Publish new trending theme
   // ============================================
-  await exportToMono('BraveLove', true, 'ComeTogether')
+  await exportToMono('BraveLove', true, 'MobyDick')
 
   // 1.2.1 Republish CircusAjax as a new theme
   // before going forward to change the theme
