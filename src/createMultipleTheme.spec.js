@@ -173,16 +173,22 @@ SETTINGS[ 3 ] = {
   COLOR_1 : '#883c82',
   COLOR_2 : '#459d72',
   COLOR_0 : '#530c0c',
-*/
 
-// heartbreaker
+  Fourth iteration published as `brickleberry` theme:
+  COLOR_0 : '#c03546',
+  COLOR_1 : '#614ad3',
+  COLOR_2 : '#906387',
+*/
 SETTINGS[ 4 ] = {
   back    : '#FAF8F3',
   mode    : 'advanced',
   label   : 'hook',
-  COLOR_0 : '#c03546',
-  COLOR_1 : '#614ad3',
-  COLOR_2 : '#906387',
+  "COLOR_0": "#c03546",
+  "COLOR_5": "#614ad3",
+  "COLOR_4": "#906387",
+  "COLOR_3": "#9e596f",
+  "COLOR_1": "#835095",
+  "COLOR_2": "#bb4741"
 }
 // dancing days
 SETTINGS[ 5 ] = {
@@ -353,11 +359,6 @@ export function getChrome(mode, back){
   if (mode === 'brave'){
     const actualBack = defaultTo('#f3f0e0', back)
     const baseToApply = getBaseColors(mode, actualBack)
-    console.log({
-      mode,
-      actualBack,
-      back,
-    })
 
     return {
       ...baseToApply,
@@ -397,11 +398,6 @@ test('happy', () => {
         )
       )
       const chrome = getChrome(mode, back)
-      console.log(
-        chrome[ 'editor.background' ],
-        label,
-
-      )
       const palette = readJsonAnt(`palettes/${ paletteMode }.json`)
       const themeData = generateThemeDataBee({
         palette,

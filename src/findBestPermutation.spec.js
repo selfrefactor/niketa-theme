@@ -5,7 +5,6 @@ import { generateThemeDataBee } from './bees/generateThemeData'
 import { readJsonAnt } from './ants/readJson'
 import { themeNames } from './ants/themeNames.js'
 import {
-  defaultTo,
   map,
   mapAsync,
   range,
@@ -110,14 +109,14 @@ function getBaseColors(mode, actualBack){
     color => replace('BACK_COLOR', actualBack, color)
     , withMainColor)
 }
-
+const SOLE_BACKGROUND = '#FAF8F3'
 const THEME_COLORS = {
-  COLOR_0 : '#5482ab',
-  COLOR_1 : '#780662',
-  COLOR_2 : '#3b6160',
-  COLOR_3 : '#A0595E',
-  COLOR_4 : '#0068a8',
-  COLOR_5 : '#459d72',
+  COLOR_0 : '#c03546',
+  COLOR_1 : '#614ad3',
+  COLOR_2 : '#906387',
+  COLOR_3 : '#9e596f',
+  COLOR_4 : '#835095',
+  COLOR_5 : '#bb4741',
 }
 
 function getCurrentColors(permutation){
@@ -129,8 +128,6 @@ function getCurrentColors(permutation){
 
   return toReturn
 }
-
-const SOLE_BACKGROUND = '#f4f1e3'
 
 export function getChrome(mode){
   const baseToApply = getBaseColors(mode, SOLE_BACKGROUND)

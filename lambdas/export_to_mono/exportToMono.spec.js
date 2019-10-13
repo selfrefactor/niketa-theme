@@ -25,12 +25,13 @@ test('happy', async () => {
 
   // 1.1.1 Publish new trending theme
   // ============================================
-  await exportToMono('BraveLove', true, 'MobyDick')
+  // await exportToMono('BraveLove', true, 'MobyDick')
 
   // 1.2.1 Republish CircusAjax as a new theme
   // before going forward to change the theme
   // ============================================
   // await exportToMono('CircusAjax', false, 'GretaVanFleet')
+  await exportToMono('AdvancedHook', false, 'Brickleberry')
 
   // // 1.2.2 Update the theme
   // // ============================================
