@@ -31,10 +31,11 @@ test('happy', async () => {
   // before going forward to change the theme
   // ============================================
   // await exportToMono('CircusAjax', false, 'GretaVanFleet')
-  await exportToMono('AdvancedHook', false, 'Brickleberry')
+  // await exportToMono('AdvancedHook', false, 'Brickleberry')
 
   // // 1.2.2 Update the theme
   // // ============================================
+  await exportToMono('AdvancedHook', true)
   // await exportToMono('CircusAjax', true)
 })
 

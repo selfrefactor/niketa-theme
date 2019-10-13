@@ -183,12 +183,12 @@ SETTINGS[ 4 ] = {
   back    : '#FAF8F3',
   mode    : 'advanced',
   label   : 'hook',
-  "COLOR_0": "#c03546",
-  "COLOR_5": "#614ad3",
-  "COLOR_4": "#906387",
-  "COLOR_3": "#9e596f",
-  "COLOR_1": "#835095",
-  "COLOR_2": "#bb4741"
+  COLOR_0 : '#c03546',
+  COLOR_5 : '#614ad3',
+  COLOR_4 : '#906387',
+  COLOR_3 : '#9e596f',
+  COLOR_1 : '#835095',
+  COLOR_2 : '#bb4741',
 }
 // dancing days
 SETTINGS[ 5 ] = {
