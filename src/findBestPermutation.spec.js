@@ -109,14 +109,14 @@ function getBaseColors(mode, actualBack){
     color => replace('BACK_COLOR', actualBack, color)
     , withMainColor)
 }
-const SOLE_BACKGROUND = '#FAF8F3'
+const SOLE_BACKGROUND = '#ede8e1'
 const THEME_COLORS = {
-  COLOR_0 : '#c03546',
-  COLOR_1 : '#614ad3',
-  COLOR_2 : '#906387',
-  COLOR_3 : '#9e596f',
-  COLOR_4 : '#835095',
-  COLOR_5 : '#bb4741',
+  COLOR_0 : '#399090',
+  COLOR_1 : '#5c8875',
+  COLOR_2 : '#0b032d',
+  COLOR_4 : '#431a22',
+  COLOR_3 : '#9e386a',
+  COLOR_5 : '#783777',
 }
 
 function getCurrentColors(permutation){
@@ -138,6 +138,10 @@ export function getChrome(mode){
   }
 }
 
+// Brave back - #f3f0e0
+// Circus back - #ede8e1
+// Niketa back - #d8d5c9
+
 const getPermutation = permute(range(0, Object.keys(THEME_COLORS).length))
 
 const permutationsRaw = range(0, 100)
@@ -147,12 +151,14 @@ const permutations = take(themeNames.length)(shuffle(permutationsRaw))
 
 test('happy', async () => {
   let i = 0
+  const permutationsToSave = {}
   await mapAsync(
     async ({ mode, label }) => {
       const currentPermutation = permutations[ i++ ]
       const colors = getCurrentColors(currentPermutation)
       if (!colors) return console.log(colors, currentPermutation, i)
 
+      permutationsToSave[ `${ mode }.${ label }` ] = colors
       const chrome = getChrome(mode)
       const themeData = generateThemeDataBee({
         palette : readJsonAnt('palettes/six.json'),
@@ -164,6 +170,9 @@ test('happy', async () => {
       themeData.colors = colors
       await delay(100)
       writeJsonAnt(`themes/${ themeData.name }.json`, themeData)
-    }
-    , themeNames)
+    },
+    themeNames
+  )
+
+  writeJsonAnt('src/permutations.json', permutationsToSave)
 })

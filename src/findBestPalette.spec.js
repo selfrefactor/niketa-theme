@@ -10,9 +10,6 @@ const SETTINGS_DEV = {
   COLOR_0 : '#063672',
   COLOR_1 : '#0068a8',
   COLOR_2 : '#7e9a64',
-  // COLOR_3 : '#bae637',
-  // COLOR_4 : '#ff5177',
-  // COLOR_5 : '#df172b',
 }
 
 async function findBestTheme(){
