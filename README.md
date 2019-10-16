@@ -5,8 +5,6 @@
 
 18 Light VSCode Themes
 
-> Niketa theme version 7.0.3 is published as [Niketa theme legacy](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-legacy)
-
 ## Screens
 
 ### Advanced Bat
@@ -150,8 +148,13 @@ And here she after as one year old dog.
 
 ## References
 
-- Featured in [Web Tools Weekly](https://mailchi.mp/webtoolsweekly/web-tools-306)
+- [Web Tools Weekly](https://mailchi.mp/webtoolsweekly/web-tools-306)
 
+- [Awesome VSCode](https://github.com/viatsko/awesome-vscode#niketa-theme-by-dejan-toteff)
+
+## Legacy
+
+> Niketa theme version 7.0.3 is published as [Niketa theme legacy](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-legacy)
 
 ## Dark themes
 
