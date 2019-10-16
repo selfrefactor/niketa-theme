@@ -35,8 +35,8 @@ test('happy', async () => {
 
   // // 1.2.2 Update the theme
   // // ============================================
-  await exportToMono('AdvancedHook', true)
-  // await exportToMono('CircusAjax', true)
+  // await exportToMono('AdvancedHook', true)
+  await exportToMono('CircusAjax', true)
 })
 
 test.skip('latest screen', async () => {
