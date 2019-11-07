@@ -115,6 +115,10 @@
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
 
+## Dark themes
+
+[Niketa dark](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-dark-theme) is similar to this theme, but the groups are 3 and total number of themes is 9.
+
 ## Git diff
 
 Git diff colors are blue and ochra similar to the ones suggested in the article [Your syntax highlighter is wrong](https://jameshfisher.com/2014/05/11/your-syntax-highlighter-is-wrong/)
