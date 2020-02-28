@@ -156,13 +156,21 @@ And here she after as one year old dog.
 
 - [Awesome VSCode](https://github.com/viatsko/awesome-vscode#niketa-theme-by-dejan-toteff)
 
-## Legacy
+## Legacy theme
 
 > Niketa theme version 7.0.3 is published as [Niketa theme legacy](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-legacy)
 
+## Alternative set of another 18 themes
+
+[Niketa future theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-future-theme)
+
+### Advanced Bat
+
+![advanced.bat](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.bat.png?raw=true)
+
 ## Dark themes
 
-There is dark version of `Niketa theme` and it is called [Because](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Because) which holds all of the following 4 themes.
+There are 2 dark versions of `Niketa theme`. First of them is called [Because](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Because) which holds all of the following 4 themes.
 
 ### Because Ask
 
