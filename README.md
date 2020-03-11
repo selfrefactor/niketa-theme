@@ -162,6 +162,8 @@ And here she after as one year old dog.
 
 ## Alternative set of another 18 themes
 
+I wanted to have a free pass to try out new color patterns, so I created [Niketa future theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-future-theme), which is mirror copy of the current theme, but with different colors.
+
 ### Advanced Bat
 
 ![advanced.bat](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.bat.png?raw=true)
