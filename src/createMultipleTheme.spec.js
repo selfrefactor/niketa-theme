@@ -12,10 +12,14 @@ const listAdvancedBraveCircus = {
   'list.dropBackground'              : '#999a9d',
   'list.focusBackground'             : '#885f66aa',
   'list.highlightForeground'         : '#89345d',
-  'list.hoverBackground'             : '#999a9d',
-  'list.hoverForeground'             : '#f5f4e8',
+  'list.hoverBackground'             : '#b1c1a5',
+  'list.hoverForeground'             : '#30322e',
   'list.inactiveSelectionBackground' : '#eae3cd55',
-  'list.inactiveSelectionForeground' : '#30322e',
+  'list.inactiveSelectionForeground' : '#95a5a6',
+  // 'list.hoverBackground'             : '#999a9d',
+  // 'list.hoverForeground'             : '#f5f4e8',
+  // 'list.inactiveSelectionBackground' : '#eae3cd55',
+  // 'list.inactiveSelectionForeground' : '#30322e',
 }
 const listNiketa = {
   ...listAdvancedBraveCircus,
@@ -27,6 +31,7 @@ const listNiketa = {
 }
  
 export const baseColors = {
+  'editor.foldBackground'                     : '#fafafa',
   'git.color.modified'                        : '#a50044',
   'list.errorForeground'                      : '#a50044',
   'gitDecoration.modifiedResourceForeground'  : '#eae3cd',
@@ -101,13 +106,6 @@ function getBaseColors(mode, actualBack){
 
 export const SETTINGS = {}
 
-/*
-  First iteration:
-  COLOR_0 : '#B06775E9',
-  COLOR_1 : '#54ABB5E9',
-  COLOR_2 : '#CF6F4Bf3',
-  COLOR_3 : '#8F1C3DE9',
-*/
 SETTINGS[ 0 ] = {
   back    : '#f9f6f2',
   mode    : 'advanced',
@@ -136,7 +134,6 @@ SETTINGS[ 2 ] = {
   COLOR_2 : '#533963f1',
   COLOR_3 : '#7F8E52f1',
 }
-// lemon song
 SETTINGS[ 3 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
@@ -145,35 +142,6 @@ SETTINGS[ 3 ] = {
   COLOR_1 : '#38978D',
   COLOR_2 : '#B97444',
 }
-
-/*
-  AdvancedHook is a trending theme
-
-  Origin palette is zeppelin.heartbreaker:
-  COLOR_0 : '#9C8058',
-  COLOR_1 : '#f26153',
-  COLOR_2 : '#096165',
-
-  First iteration:
-  COLOR_2 : '#8B1518',
-  COLOR_1 : '#847545',
-  COLOR_0 : '#f38b80',
-
-  Second iteration:
-  COLOR_1 : '#240041',
-  COLOR_2 : '#ff4d4d',
-  COLOR_0 : '#0e5f76'
-
-  Third iteration published as `tea for one` theme:
-  COLOR_1 : '#883c82',
-  COLOR_2 : '#459d72',
-  COLOR_0 : '#530c0c',
-
-  Fourth iteration published as `brickleberry` theme:
-  COLOR_0 : '#c03546',
-  COLOR_1 : '#614ad3',
-  COLOR_2 : '#906387',
-*/
 SETTINGS[ 4 ] = {
   back    : '#FAF8F3',
   mode    : 'advanced',
@@ -185,7 +153,6 @@ SETTINGS[ 4 ] = {
   COLOR_1 : '#835095',
   COLOR_2 : '#bb4741',
 }
-// dancing days
 SETTINGS[ 5 ] = {
   back    : '#f9f6f1',
   mode    : 'advanced',
@@ -194,9 +161,8 @@ SETTINGS[ 5 ] = {
   COLOR_1 : '#ff5177',
   COLOR_2 : '#b76144',
   COLOR_3 : '#0068a8',
-}
+}*/
 
-SETTINGS[ 6 ] = {
   back    : '#f1f1f1',
   mode    : 'advanced',
   label   : 'mystery',
@@ -224,38 +190,6 @@ SETTINGS[ 8 ] = {
   COLOR_3 : '#B84251',
   COLOR_4 : '#406F64',
 }
-/*
-  Current trending theme BraveLove
-  Origin palette:
-  COLOR_0 : '#5482ab',
-  COLOR_1 : '#7e1b24',
-  COLOR_2 : '#A24877',
-
-  first iteration:
-  COLOR_0 : '#C66534',
-  COLOR_1 : '#3c6e5b',
-  COLOR_2 : '#532053',
-
-  second iteration:
-  COLOR_0 : '#f39c12',
-  COLOR_1 : '#440b0b',
-  COLOR_2 : '#038387',
-
-  third iteration published as `lemon song` theme:
-  COLOR_0 : '#847545',
-  COLOR_1 : '#f38b80',
-  COLOR_2 : '#25164C',
-
-  fourth iteration published as `kashmir` theme:
-  COLOR_0 : '#83580b',
-  COLOR_1 : '#780662',
-  COLOR_2 : '#090089',
-
-  fifth iteration:
-  COLOR_0 : '#780662',
-  COLOR_1 : '#da4949',
-  COLOR_2 : '#83580b',
-*/
 SETTINGS[ 9 ] = {
   mode    : 'brave',
   label   : 'love',
@@ -266,7 +200,6 @@ SETTINGS[ 9 ] = {
   COLOR_4 : '#780662',
   COLOR_5 : '#0068a8',
 }
-// lemon song
 SETTINGS[ 10 ] = {
   mode    : 'brave',
   label   : 'neighbour',
@@ -286,7 +219,6 @@ SETTINGS[ 11 ] = {
   COLOR_5 : '#783777',
 }
 
-// label      : 'since.loving',
 SETTINGS[ 12 ] = {
   back    : '#f9f6f1',
   mode    : 'circus',
@@ -295,7 +227,6 @@ SETTINGS[ 12 ] = {
   COLOR_1 : '#5F7E97',
   COLOR_2 : '#9F7E6B',
 }
-// label      : 'tea.for'
 SETTINGS[ 13 ] = {
   back    : '#f9f6f1',
   mode    : 'circus',
@@ -304,7 +235,6 @@ SETTINGS[ 13 ] = {
   COLOR_1 : '#b56e30',
   COLOR_2 : '#356a6d',
 }
-// label      : 'in.light',
 SETTINGS[ 14 ] = {
   mode    : 'circus',
   label   : 'whisky',
@@ -312,7 +242,6 @@ SETTINGS[ 14 ] = {
   COLOR_1 : '#0d8a81',
   COLOR_2 : '#A0595E',
 }
-
 SETTINGS[ 15 ] = {
   mode    : 'niketa',
   label   : 'owl',
@@ -327,13 +256,6 @@ SETTINGS[ 16 ] = {
   COLOR_1 : '#98414f',
   COLOR_2 : '#532053',
 }
-
-/*
-  First saved iteration:
-  COLOR_0 : '#696040',
-  COLOR_1 : '#295879',
-  COLOR_2 : '#7f0c29'
-*/
 SETTINGS[ 17 ] = {
   mode    : 'niketa',
   label   : 'moon',
