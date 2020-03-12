@@ -1,18 +1,15 @@
+import { range, uniq } from 'rambdax'
+
 import { applyDistanceAnt } from './applyDistance'
-import { uniq, range } from 'rambdax'
 
 test('applyDistance', () => {
-  const result = uniq(
-    range(0, 10).map(() => applyDistanceAnt('9', 7))
-  )
+  const result = uniq(range(0, 10).map(() => applyDistanceAnt('9', 7)))
   expect(result.includes('2')).toBeTruthy()
   expect(result.includes('F')).toBeTruthy()
 })
 
 test('shorted distance', () => {
-  const result = uniq(
-    range(0, 10).map(() => applyDistanceAnt('9', 4))
-  )
+  const result = uniq(range(0, 10).map(() => applyDistanceAnt('9', 4)))
   expect(result.includes('5')).toBeTruthy()
   expect(result.includes('D')).toBeTruthy()
 })

@@ -1,9 +1,10 @@
-import { writeJsonAnt } from './ants/writeJson'
+import { defaultTo, map, maybe, replace, switcher } from 'rambdax'
 import { pascalCase } from 'string-fn'
-import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
-import { generateThemeDataBee } from './bees/generateThemeData'
+
 import { readJsonAnt } from './ants/readJson'
-import { maybe, map, defaultTo, replace, switcher } from 'rambdax'
+import { saveToPackageJsonAnt } from './ants/saveToPackageJson'
+import { writeJsonAnt } from './ants/writeJson'
+import { generateThemeDataBee } from './bees/generateThemeData'
 
 const listAdvancedBraveCircus = {
   'list.activeSelectionBackground'   : '#eae3cd',
@@ -24,7 +25,7 @@ const listNiketa = {
   'list.highlightForeground'         : '#861d4f',
   'list.inactiveSelectionBackground' : '#d1d3d4aa',
 }
-
+ 
 export const baseColors = {
   'git.color.modified'                        : '#a50044',
   'list.errorForeground'                      : '#a50044',
@@ -83,21 +84,19 @@ function getBaseColors(mode, actualBack){
     .is('circus', '#b7bcbf')
     .default('#b0b4b4')
 
-  const listChrome = mode === 'niketa' ?
-    listNiketa :
-    listAdvancedBraveCircus
+  const listChrome = mode === 'niketa' ? listNiketa : listAdvancedBraveCircus
 
   const currentBase = {
     ...baseColors,
     ...listChrome,
   }
-  const withMainColor = map(
-    color => replace('MAIN_COLOR', chromeMainColor, color)
-  )(currentBase)
+  const withMainColor = map(color => replace(
+    'MAIN_COLOR', chromeMainColor, color
+  ))(currentBase)
 
-  return map(
-    color => replace('BACK_COLOR', actualBack, color)
-  )(withMainColor)
+  return map(color => replace(
+    'BACK_COLOR', actualBack, color
+  ))(withMainColor)
 }
 
 export const SETTINGS = {}
@@ -383,30 +382,26 @@ export function getChrome(mode, back){
 }
 
 test('happy', () => {
-  map(
-    val => {
-      const { mode, label, back, ...colors } = val
-      const paletteMode = maybe(
-        colors.COLOR_5,
-        'six',
-        colors.COLOR_4 ? 'five' : maybe(
-          colors.COLOR_3,
-          'four',
-          'three'
-        )
+  map(val => {
+    const { mode, label, back, ...colors } = val
+    const paletteMode = maybe(
+      colors.COLOR_5,
+      'six',
+      colors.COLOR_4 ? 'five' : maybe(
+        colors.COLOR_3, 'four', 'three'
       )
-      const chrome = getChrome(mode, back)
-      const palette = readJsonAnt(`palettes/${ paletteMode }.json`)
-      const themeData = generateThemeDataBee({
-        palette,
-        chrome,
-        colors,
-      })
-      themeData.name = pascalCase(`${ mode }.${ label }`)
+    )
+    const chrome = getChrome(mode, back)
+    const palette = readJsonAnt(`palettes/${ paletteMode }.json`)
+    const themeData = generateThemeDataBee({
+      palette,
+      chrome,
+      colors,
+    })
+    themeData.name = pascalCase(`${ mode }.${ label }`)
 
-      writeJsonAnt(`themes/${ themeData.name }.json`, themeData)
-    }
-  )(SETTINGS)
+    writeJsonAnt(`themes/${ themeData.name }.json`, themeData)
+  })(SETTINGS)
 
   const exported = readJsonAnt('exported.json')
   saveToPackageJsonAnt(exported)

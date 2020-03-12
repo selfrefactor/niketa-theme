@@ -1,170 +1,167 @@
 {
-	"name": "niketa-theme",
-	"displayName": "Niketa Theme Light",
-	"description": "Large collection of handmade light themes",
-	"version": "8.20.1",
-	"license": "MIT",
-	"publisher": "selfrefactor",
-	"scripts": {
-		"test": "jest src"
-	},
-	"engines": {
-		"vscode": "^1.27.0"
-	},
-	"categories": [
-		"Themes"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/selfrefactor/niketa-theme.git"
-	},
-	"bugs": {
-		"url": "https://github.com/selfrefactor/niketa-theme/issues"
-	},
-	"icon": "logo.png",
-	"contributes": {
-		"themes": [
-			{
-				"label": "AdvancedBat",
-				"uiTheme": "vs",
-				"path": "./themes/AdvancedBat.json"
-			},
-			{
-				"label": "AdvancedCat",
-				"uiTheme": "vs",
-				"path": "./themes/AdvancedCat.json"
-			},
-			{
-				"label": "AdvancedDog",
-				"uiTheme": "vs",
-				"path": "./themes/AdvancedDog.json"
-			},
-			{
-				"label": "AdvancedEngine",
-				"uiTheme": "vs",
-				"path": "./themes/AdvancedEngine.json"
-			},
-			{
-				"label": "AdvancedMystery",
-				"uiTheme": "vs",
-				"path": "./themes/AdvancedMystery.json"
-			},
-			{
-				"label": "BraveLove",
-				"uiTheme": "vs",
-				"path": "./themes/BraveLove.json"
-			},
-			{
-				"label": "BraveHomer",
-				"uiTheme": "vs",
-				"path": "./themes/BraveHomer.json"
-			},
-			{
-				"label": "BraveHabits",
-				"uiTheme": "vs",
-				"path": "./themes/BraveHabits.json"
-			},
-			{
-				"label": "BraveNeighbour",
-				"uiTheme": "vs",
-				"path": "./themes/BraveNeighbour.json"
-			},
-			{
-				"label": "CircusAjax",
-				"uiTheme": "vs",
-				"path": "./themes/CircusAjax.json"
-			},
-			{
-				"label": "CircusPeople",
-				"uiTheme": "vs",
-				"path": "./themes/CircusPeople.json"
-			},
-			{
-				"label": "CircusWhisky",
-				"uiTheme": "vs",
-				"path": "./themes/CircusWhisky.json"
-			},
-			{
-				"label": "CircusBrother",
-				"uiTheme": "vs",
-				"path": "./themes/CircusBrother.json"
-			},
-			{
-				"label": "NiketaBear",
-				"uiTheme": "vs",
-				"path": "./themes/NiketaBear.json"
-			},
-			{
-				"label": "NiketaOwl",
-				"uiTheme": "vs",
-				"path": "./themes/NiketaOwl.json"
-			},
-			{
-				"label": "NiketaMoon",
-				"uiTheme": "vs",
-				"path": "./themes/NiketaMoon.json"
-			},
-			{
-				"label": "AdvancedHook",
-				"uiTheme": "vs",
-				"path": "./themes/AdvancedHook.json"
-			},
-			{
-				"label": "AdvancedImmigrant",
-				"uiTheme": "vs",
-				"path": "./themes/AdvancedImmigrant.json"
-			}
-		]
-	},
-	"keywords": [
-		"theme",
-		"color-theme",
-		"light",
-		"collection",
-		"themes",
-		"bundle"
-	],
-	"devDependencies": {
-		"babel-cli": "^7.0.0-beta.3",
-		"babel-preset-env": "^7.0.0-beta.3",
-		"color": "^3.1.2",
-		"fs-extra": "^8.1.0",
-		"get-contrast-ratio": "^0.2.1",
-		"helpers": "https://github.com/selfrefactor/helpers#2.4.0",
-		"hexsorter": "^1.5.0",
-		"jest": "^25.1.0",
-		"rambdax": "^3.7.0",
-		"rgb-hex": "^3.0.0",
-		"string-fn": "^2.10.2"
-	},
-	"badges": [
-		{
-			"description": "Trending daily",
-			"href": "https://github.com/selfrefactor/niketa-theme",
-			"url": "https://vsmarketplacebadge.apphb.com/trending-daily/selfrefactor.Niketa-theme.svg"
-		},
-		{
-			"description": "Trending weekly",
-			"href": "https://github.com/selfrefactor/niketa-theme",
-			"url": "https://vsmarketplacebadge.apphb.com/trending-weekly/selfrefactor.Niketa-theme.svg"
-		},
-		{
-			"description": "Trending monthly",
-			"href": "https://github.com/selfrefactor/niketa-theme",
-			"url": "https://vsmarketplacebadge.apphb.com/trending-monthly/selfrefactor.Niketa-theme.svg"
-		},
-		{
-			"description": "GitHub stars",
-			"href": "https://github.com/selfrefactor/niketa-theme/stargazers",
-			"url": "https://img.shields.io/github/stars/selfrefactor/niketa-theme.svg?style=social"
-		},
-		{
-			"description": "GitHub issues",
-			"href": "https://github.com/selfrefactor/niketa-theme/issues",
-			"url": "https://img.shields.io/github/issues/selfrefactor/niketa-theme.svg?style=social"
-		}
-	],
-	"dependencies": {
-		
-	}
+  "name": "niketa-theme",
+  "displayName": "Niketa Theme Light",
+  "description": "Large collection of handmade light themes",
+  "version": "8.21.0",
+  "license": "MIT",
+  "publisher": "selfrefactor",
+  "scripts": {
+    "test": "jest src"
+  },
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selfrefactor/niketa-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/selfrefactor/niketa-theme/issues"
+  },
+  "icon": "logo.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "AdvancedBat",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedBat.json"
+      },
+      {
+        "label": "AdvancedCat",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedCat.json"
+      },
+      {
+        "label": "AdvancedDog",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedDog.json"
+      },
+      {
+        "label": "AdvancedEngine",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedEngine.json"
+      },
+      {
+        "label": "AdvancedMystery",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedMystery.json"
+      },
+      {
+        "label": "BraveLove",
+        "uiTheme": "vs",
+        "path": "./themes/BraveLove.json"
+      },
+      {
+        "label": "BraveHomer",
+        "uiTheme": "vs",
+        "path": "./themes/BraveHomer.json"
+      },
+      {
+        "label": "BraveHabits",
+        "uiTheme": "vs",
+        "path": "./themes/BraveHabits.json"
+      },
+      {
+        "label": "BraveNeighbour",
+        "uiTheme": "vs",
+        "path": "./themes/BraveNeighbour.json"
+      },
+      {
+        "label": "CircusAjax",
+        "uiTheme": "vs",
+        "path": "./themes/CircusAjax.json"
+      },
+      {
+        "label": "CircusPeople",
+        "uiTheme": "vs",
+        "path": "./themes/CircusPeople.json"
+      },
+      {
+        "label": "CircusWhisky",
+        "uiTheme": "vs",
+        "path": "./themes/CircusWhisky.json"
+      },
+      {
+        "label": "CircusBrother",
+        "uiTheme": "vs",
+        "path": "./themes/CircusBrother.json"
+      },
+      {
+        "label": "NiketaBear",
+        "uiTheme": "vs",
+        "path": "./themes/NiketaBear.json"
+      },
+      {
+        "label": "NiketaOwl",
+        "uiTheme": "vs",
+        "path": "./themes/NiketaOwl.json"
+      },
+      {
+        "label": "NiketaMoon",
+        "uiTheme": "vs",
+        "path": "./themes/NiketaMoon.json"
+      },
+      {
+        "label": "AdvancedHook",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedHook.json"
+      },
+      {
+        "label": "AdvancedImmigrant",
+        "uiTheme": "vs",
+        "path": "./themes/AdvancedImmigrant.json"
+      }
+    ]
+  },
+  "keywords": [
+    "theme",
+    "color-theme",
+    "light",
+    "collection",
+    "themes",
+    "bundle"
+  ],
+  "devDependencies": {
+    "babel-cli": "^7.0.0-beta.3",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "color": "^3.1.2",
+    "fs-extra": "^8.1.0",
+    "get-contrast-ratio": "^0.2.1",
+    "helpers": "https://github.com/selfrefactor/helpers#1.7.1",
+    "hexsorter": "^1.5.0",
+    "jest": "^24.8.0",
+    "rambdax": "^2.11.0",
+    "rgb-hex": "^3.0.0",
+    "string-fn": "^2.9.0"
+  },
+  "badges": [
+    {
+      "description": "Trending daily",
+      "href": "https://github.com/selfrefactor/niketa-theme",
+      "url": "https://vsmarketplacebadge.apphb.com/trending-daily/selfrefactor.Niketa-theme.svg"
+    },
+    {
+      "description": "Trending weekly",
+      "href": "https://github.com/selfrefactor/niketa-theme",
+      "url": "https://vsmarketplacebadge.apphb.com/trending-weekly/selfrefactor.Niketa-theme.svg"
+    },
+    {
+      "description": "Trending monthly",
+      "href": "https://github.com/selfrefactor/niketa-theme",
+      "url": "https://vsmarketplacebadge.apphb.com/trending-monthly/selfrefactor.Niketa-theme.svg"
+    },
+    {
+      "description": "GitHub stars",
+      "href": "https://github.com/selfrefactor/niketa-theme/stargazers",
+      "url": "https://img.shields.io/github/stars/selfrefactor/niketa-theme.svg?style=social"
+    },
+    {
+      "description": "GitHub issues",
+      "href": "https://github.com/selfrefactor/niketa-theme/issues",
+      "url": "https://img.shields.io/github/issues/selfrefactor/niketa-theme.svg?style=social"
+    }
+  ]
 }
