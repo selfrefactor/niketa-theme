@@ -161,8 +161,9 @@ SETTINGS[ 5 ] = {
   COLOR_1 : '#ff5177',
   COLOR_2 : '#b76144',
   COLOR_3 : '#0068a8',
-}*/
+}
 
+SETTINGS[ 6 ] = {
   back    : '#f1f1f1',
   mode    : 'advanced',
   label   : 'mystery',
