@@ -12,15 +12,14 @@ const listAdvancedBraveCircus = {
   'list.dropBackground'              : '#999a9d',
   'list.focusBackground'             : '#885f66aa',
   'list.highlightForeground'         : '#89345d',
+  // list.hoverBackground is used in autocomplete suggestion list
+  // ============================================
   'list.hoverBackground'             : '#b1c1a5',
   'list.hoverForeground'             : '#30322e',
   'list.inactiveSelectionBackground' : '#eae3cd55',
   'list.inactiveSelectionForeground' : '#95a5a6',
-  // 'list.hoverBackground'             : '#999a9d',
-  // 'list.hoverForeground'             : '#f5f4e8',
-  // 'list.inactiveSelectionBackground' : '#eae3cd55',
-  // 'list.inactiveSelectionForeground' : '#30322e',
 }
+
 const listNiketa = {
   ...listAdvancedBraveCircus,
   'list.activeSelectionBackground'   : '#cacacc',
@@ -28,7 +27,7 @@ const listNiketa = {
   'list.focusBackground'             : '#978373d2',
   'list.highlightForeground'         : '#861d4f',
   'list.inactiveSelectionBackground' : '#d1d3d4aa',
-}
+} 
  
 export const baseColors = {
   'editor.foldBackground'                     : '#fafafa',
@@ -39,6 +38,11 @@ export const baseColors = {
   'activityBar.background'                    : '#C4BE9D',
   'badge.background'                          : '#aaa',
   'badge.foreground'                          : '#fafafa',
+  'editorSuggestWidget.background'            : '#c3c1a9',
+  'editorSuggestWidget.border'                : '#936776',
+  'editorSuggestWidget.foreground'            : '#344250',
+  'editorSuggestWidget.highlightForeground'   : '#4d0e0b',
+  'editorSuggestWidget.selectedBackground'    : '#fafafa',
   'diffEditor.insertedTextBackground'         : '#9c824a55',
   'diffEditor.removedTextBackground'          : '#64B5F655',
   'editor.background'                         : '#FAF8F3',
@@ -51,8 +55,8 @@ export const baseColors = {
   'editor.selectionHighlightBackground'       : 'MAIN_COLOR88',
   'editor.wordHighlightBackground'            : 'MAIN_COLORaa',
   'editor.wordHighlightStrongBackground'      : 'MAIN_COLORdd',
-  'editorBracketMatch.background'             : '#cacacc',
-  'editorBracketMatch.border'                 : '#c3c1a9',
+  'editorBracketMatch.background'             : '#e7e7e7',
+  'editorBracketMatch.border'                 : '#fafafa',
   'editorCursor.foreground'                   : '#544',
   'editorGroupHeader.tabsBackground'          : 'MAIN_COLOR',
   'editorLineNumber.foreground'               : '#2a3343a9',
