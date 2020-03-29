@@ -1,5 +1,6 @@
 export const themeNames = [
   'boogie.wonderland',
+  'big.payback',
   'celebration.day',
   'communication.breakdown',
   'dancing.days',
@@ -14,7 +15,6 @@ export const themeNames = [
   'little.wing',
   'muddy.waters',
   'strange.brew',
-  'soul.power',
   'sweat.leaf',
   'war.pigs',
 ]
