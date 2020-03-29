@@ -17,18 +17,3 @@ export function createPaletteRule(
 
   return willReturn
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
