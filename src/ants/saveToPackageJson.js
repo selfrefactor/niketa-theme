@@ -3,7 +3,7 @@ import { readJsonAnt } from './readJson'
 
 export function saveToPackageJsonAnt(partialJson){
   const packageJson = readJsonAnt(
-    'packageBase.json'
+    'package.json'
   )
   const newPackageJson = {
     ...packageJson,
