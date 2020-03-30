@@ -1,9 +1,11 @@
 export const COLOR_0 = [
   'entity.name.tag.UNDERLINE',
   'markup.italic',
+  'text.html.derivative',
   'punctuation.accessor.js',
   'source.js',
   'storage.modifier.js',
+  'punctuation.separator.key-value.js',
   'storage.type',
   'string.quoted.single.js',
   'support.function.dom.js',
@@ -13,13 +15,19 @@ export const COLOR_0 = [
 ]
 
 export const COLOR_1 = [
+  'meta.var.expr.js',
+  'keyword',
+  'expression.ng',
+  'meta.brace.round.js',
   'constant.language.boolean',
+  'constant.numeric',
   'constant.language.null.js',
   'entity.name.class.UNDERLINE',
   'entity.name.function.UNDERLINE',
   'entity.name.type.UNDERLINE',
   'markup.heading.markdown',
   'punctuation.separator.comma.js',
+  'meta.tag.attributes.js',
   'support.variable.property.js',
   'support.type.primitive.js',
   'variable',
@@ -27,15 +35,19 @@ export const COLOR_1 = [
 
 export const COLOR_2 = [
   'source.go',
+  'string.quoted.double.html',
+  'keyword.control.import.js',
   'source.json',
   'source.css',
   'variable.parameter',
   'support.function',
+  'support.type.object.module.js',
   'meta.import.js',
   'meta.paragraph.markdown',
   'entity.other.attribute-name.js',
   'string.quoted.single.js',
   'string.quoted.single.json',
+  'keyword.control.module.js',
   'support.class.promise.js',
   'support.type.object.console.js',
   'support.function.console.js',
@@ -43,14 +55,19 @@ export const COLOR_2 = [
 ]
 
 export const COLOR_3 = [
+  'entity.other.ng-binding-name.property.html',
   'punctuation.definition.parameters.begin.js',
   'punctuation.definition.parameters.end.js',
+  'keyword.control.export.js',
+  'keyword.control.from.js',
   'markup.quote',
   'meta.tag.js',
   'meta.parameters.js',
   'meta.brace.square.js',
   'variable.other.class.js',
   'constant.other.object.key.js',
+  'keyword.operator.accessor',
+  'keyword.control.default.js',
   'entity.name.function.method',
   'string.template',
   'support.type.property-name.json',
@@ -58,41 +75,26 @@ export const COLOR_3 = [
 ]
 
 export const COLOR_4 = [
+  'entity.other.ng-binding-name.outputReplEvent.html',
+  'entity.other.inherited-class',
   'support.constant',
   'punctuation.separator.parameter.js',
   'constant.character',
   'constant.language',
   'constant.other',
+  'support.class.builtin.js',
   'comment',
   'markup.italic',
   'meta.object-literal.key.js',
   'comment.block.documentation',
   'comment.line.double-slash',
   'punctuation.accessor.js',
+  'invalid.UNDERLINE',
   'variable.language',
+  'storage.modifier.async.js',
   'variable.other.object.js',
   'variable.other.readwrite',
   'variable.other.readwrite.js',
-]
-
-export const COLOR_5 = [
-  'punctuation.separator.key-value.js',
-  'storage.modifier.async.js',
-  'meta.brace.round.js',
-  'entity.other.inherited-class',
-  'support.class.builtin.js',
-  'meta.tag.attributes.js',
-  'keyword.control.module.js',
-  'keyword.operator.accessor',
-  'invalid.UNDERLINE',
-  'constant.numeric',
-  'keyword',
-  'meta.var.expr.js',
-  'keyword.control.import.js',
-  'keyword.control.from.js',
-  'keyword.control.export.js',
-  'keyword.control.default.js',
-  'support.type.object.module.js',
 ]
 
 export const baseBase = {
@@ -126,7 +128,6 @@ export const baseData = {
   COLOR_2,
   COLOR_3,
   COLOR_4,
-  COLOR_5,
 }
 
 export const all = [
@@ -135,5 +136,4 @@ export const all = [
   ...COLOR_2,
   ...COLOR_3,
   ...COLOR_4,
-  ...COLOR_5,
 ]

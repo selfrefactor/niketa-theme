@@ -1,27 +1,18 @@
-import { resolve } from 'path'
 import { outputFileSync } from 'fs-extra'
-import { switcher, random, remove, replace, map, findIndex } from 'rambdax'
+import { resolve } from 'path'
+import {  random, remove, replace, switcher } from 'rambdax'
 
-import * as three from '../../../palettes/baseDataThree'
-import * as four from '../../../palettes/baseDataFour'
-import * as five from '../../../palettes/baseDataFive'
-import * as six from '../../../palettes/baseDataSix'
+import * as basePalette from '../../../palettes/base'
 
-const hash = {
-  three,
-  four,
-  five,
-  six,
-}
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
 
-function save({ label, mode, data }){
-  const output = resolve(
-    __dirname,
-    `../../../palettes/${ mode }/${ label }.json`
-  )
-  outputFileSync(output, JSON.stringify(data, null, 2))
+function save({ label, data }){
+  const output = resolve(__dirname,
+    `../../../palettes/${ label }.json`)
+  outputFileSync(output, JSON.stringify(
+    data, null, 2
+  ))
 }
 
 export function randomShade(color){
@@ -71,9 +62,7 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   }
   if (syntaxInstance.endsWith('.begin.js')){
     const endSyntaxInstance = replace(
-      '.begin.js',
-      '.end.js',
-      syntaxInstance
+      '.begin.js', '.end.js', syntaxInstance
     )
     pushToTokenColors({
       syntaxInstance : endSyntaxInstance,
@@ -84,30 +73,28 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   }
 }
 
-export function generateBase(label, mode = 'three', baseData){
-  const { baseBase } = hash[ mode ]
+export function generateBase(
+  label
+){
+  const { baseBase, baseData } = basePalette
   const tokenColors = []
 
-  Object.entries(baseData)
-    .forEach(([ color, syntaxInstances ]) => {
-      console.log(color, syntaxInstances)
+  Object.entries(baseData).forEach(([ color, syntaxInstances ]) => {
+    syntaxInstances.forEach(syntaxInstanceRaw => {
+      const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
 
-      syntaxInstances
-        .forEach(syntaxInstanceRaw => {
-          const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
+      const underline = syntaxInstanceRaw.endsWith(UNDERLINE) ?
+        { fontStyle : 'underline' } :
+        {}
 
-          const underline = syntaxInstanceRaw.endsWith(UNDERLINE) ?
-            { fontStyle : 'underline' } :
-            {}
-
-          pushToTokenColors({
-            syntaxInstance,
-            underline,
-            color,
-            tokenColors,
-          })
-        })
+      pushToTokenColors({
+        syntaxInstance,
+        underline,
+        color,
+        tokenColors,
+      })
     })
+  })
 
   const themeBase = {
     ...baseBase,
@@ -116,33 +103,6 @@ export function generateBase(label, mode = 'three', baseData){
 
   save({
     label,
-    mode,
     data : themeBase,
   })
 }
-
-const colorsKeys = [
-  'COLOR_0',
-  'COLOR_1',
-  'COLOR_2',
-  'COLOR_3',
-  'COLOR_4',
-  'COLOR_5',
-]
-
-export function generateBaseRandom(label, newColorsKeys, mode = 'three'){
-  const base = hash[ mode ]
-  const colorsHash = { ...base.baseData }
-
-  const sk = map((_, prop) => {
-    const foundIndex = findIndex(
-      x => x === prop
-    )(newColorsKeys)
-    const foundKey = colorsKeys[ foundIndex ]
-
-    return colorsHash[ foundKey ]
-  })(colorsHash)
-
-  generateBase(label, mode, sk)
-}
-
