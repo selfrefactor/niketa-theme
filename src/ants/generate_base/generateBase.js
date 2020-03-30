@@ -1,6 +1,6 @@
 import { outputFileSync } from 'fs-extra'
 import { resolve } from 'path'
-import {  random, remove, replace, switcher } from 'rambdax'
+import { random, remove, replace, switcher } from 'rambdax'
 
 import * as basePalette from '../../../palettes/base'
 
@@ -8,8 +8,7 @@ const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
 
 function save({ label, data }){
-  const output = resolve(__dirname,
-    `../../../palettes/${ label }.json`)
+  const output = resolve(__dirname, `../../../palettes/${ label }.json`)
   outputFileSync(output, JSON.stringify(
     data, null, 2
   ))
@@ -73,9 +72,7 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   }
 }
 
-export function generateBase(
-  label
-){
+export function generateBase(label){
   const { baseBase, baseData } = basePalette
   const tokenColors = []
 

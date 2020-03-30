@@ -1,24 +1,38 @@
 import { map, mergeAll } from 'rambdax'
-import { createPaletteRule } from '../createPaletteTheme'
 
-export function generateThemeDataBee({ palette, chrome, colors }){
-  const translatedColors = mergeAll(map(
-    (color, prop) => createPaletteRule(prop, color)
-  )(colors))
-  const newTokenColors = map(
-    tokenColor => {
-      if (tokenColor.name === 'source.json'){
-        // console.log(tokenColor,colors, palette,'before')
-      }
-      tokenColor.settings.foreground = translatedColors[ tokenColor.settings.foreground ]
+import { changeColorAnt } from '../ants/changeColor'
 
-      if (tokenColor.name === 'source.json'){
-        // console.log(tokenColor,'after')
-      }
+function createPaletteRule(
+  prop, colorBase, rate = 0.045
+){
+  const willReturn = {}
+  const modes = [ 'DARKEST', 'DARKER', 'LIGHTER', 'LIGHTEST', 'DARK', 'LIGHT' ]
+  modes.forEach(mode => {
+    const newColor = changeColorAnt(
+      colorBase, mode, rate
+    )
 
-      return tokenColor
+    willReturn[ `${ prop }_${ mode }` ] = newColor
+  })
+
+  willReturn[ prop ] = colorBase
+
+  return willReturn
+}
+
+export function generateThemeData({ palette, chrome, colors }){
+  const translatedColors = mergeAll(map((color, prop) => createPaletteRule(prop, color))(colors))
+  const newTokenColors = map(tokenColor => {
+    if (tokenColor.name === 'source.json'){
     }
-  )(palette.tokenColors)
+    tokenColor.settings.foreground =
+      translatedColors[ tokenColor.settings.foreground ]
+
+    if (tokenColor.name === 'source.json'){
+    }
+
+    return tokenColor
+  })(palette.tokenColors)
   const newTheme = {
     ...palette,
     colors      : chrome,

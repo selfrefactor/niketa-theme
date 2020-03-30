@@ -1,5 +1,9 @@
 # Niketa light themes
 
+## todo 
+
+logo.png is missing
+
 9 Light VSCode Themes
 
 ## Screens

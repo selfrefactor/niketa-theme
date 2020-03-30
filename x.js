@@ -333,7 +333,7 @@ SETTINGS[ 16 ] = {
   COLOR_3 : '#51978f',
   COLOR_4 : '#b5603e',
   COLOR_5 : '#1c44ac',
-}   
+}
 SETTINGS[ 17 ] = {
   // COLOR_3 : '#828d83',
   // COLOR_4 : '#82397e',
