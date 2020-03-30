@@ -1,8 +1,8 @@
 {
-  "name": "niketa-theme",
-  "displayName": "Niketa Theme Light",
+  "name": "niketa-theme-old",
+  "displayName": "Niketa Theme Light Old",
   "description": "Large collection of handmade light themes",
-  "version": "8.22.1",
+  "version": "1.0.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/selfrefactor/niketa-theme.git"
+    "url": "https://github.com/selfrefactor/niketa-themes.git"
   },
   "bugs": {
-    "url": "https://github.com/selfrefactor/niketa-theme/issues"
+    "url": "https://github.com/selfrefactor/niketa-themes/issues"
   },
   "icon": "logo.png",
   "contributes": {
@@ -136,32 +136,5 @@
     "rambdax": "^2.11.0",
     "rgb-hex": "^3.0.0",
     "string-fn": "^2.9.0"
-  },
-  "badges": [
-    {
-      "description": "Trending daily",
-      "href": "https://github.com/selfrefactor/niketa-theme",
-      "url": "https://vsmarketplacebadge.apphb.com/trending-daily/selfrefactor.Niketa-theme.svg"
-    },
-    {
-      "description": "Trending weekly",
-      "href": "https://github.com/selfrefactor/niketa-theme",
-      "url": "https://vsmarketplacebadge.apphb.com/trending-weekly/selfrefactor.Niketa-theme.svg"
-    },
-    {
-      "description": "Trending monthly",
-      "href": "https://github.com/selfrefactor/niketa-theme",
-      "url": "https://vsmarketplacebadge.apphb.com/trending-monthly/selfrefactor.Niketa-theme.svg"
-    },
-    {
-      "description": "GitHub stars",
-      "href": "https://github.com/selfrefactor/niketa-theme/stargazers",
-      "url": "https://img.shields.io/github/stars/selfrefactor/niketa-theme.svg?style=social"
-    },
-    {
-      "description": "GitHub issues",
-      "href": "https://github.com/selfrefactor/niketa-theme/issues",
-      "url": "https://img.shields.io/github/issues/selfrefactor/niketa-theme.svg?style=social"
-    }
-  ]
+  }
 }

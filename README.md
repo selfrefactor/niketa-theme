@@ -1,7 +1,4 @@
-# Niketa
-
-[![Installs](https://img.shields.io/vscode-marketplace/i/selfrefactor.Niketa-theme.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme)
-[![Downloads](https://img.shields.io/vscode-marketplace/d/selfrefactor.Niketa-theme.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme)
+# Niketa old
 
 18 Light VSCode Themes
 
@@ -9,109 +6,109 @@
 
 ### Advanced Bat
 
-![advanced.bat](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.bat.png?raw=true)
+![advanced.bat](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.bat.png?raw=true)
 
 [As a single theme(marketplace link)](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedBatNiketa)
 
 ### Advanced Cat
 
-![advanced.cat](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.cat.png?raw=true)
+![advanced.cat](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.cat.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedCatNiketa)
 
 ### Advanced Dog
 
-![advanced.dog](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.dog.png?raw=true)
+![advanced.dog](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.dog.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedDogNiketa)
 
 ### Advanced Engine
 
-![advanced.engine](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.engine.png?raw=true)
+![advanced.engine](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.engine.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedEngineNiketa)
 
 ### Advanced Hook
 
-![advanced.hook](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.hook.png?raw=true)
+![advanced.hook](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.hook.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedHookNiketa)
 
 ### Advanced Immigrant
 
-![immigrant.song](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.immigrant.png?raw=true)
+![immigrant.song](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.immigrant.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedImmigrantNiketa)
 
 ### Advanced Mystery
 
-![advanced.mystery](https://github.com/selfrefactor/niketa-theme/blob/master/files/advanced.mystery.png?raw=true)
+![advanced.mystery](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.mystery.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedMysteryNiketa)
 
 ### Brave Habits
 
-![Brave Habits](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.habits.png?raw=true)
+![Brave Habits](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/brave.habits.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveHabitsNiketa)
 
 ### Brave Homer
 
-![Brave Homer](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.homer.png?raw=true)
+![Brave Homer](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/brave.homer.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveHomerNiketa)
 
 ### Brave Love
 
-![Brave Love](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.love.png?raw=true)
+![Brave Love](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/brave.love.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveLoveNiketa)
 
 ### Brave Neighbour
 
-![Brave Neighbour](https://github.com/selfrefactor/niketa-theme/blob/master/files/brave.neighbour.png?raw=true)
+![Brave Neighbour](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/brave.neighbour.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveNeighbourNiketa)
 
 ### Circus Ajax
 
-![circus.brother](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.ajax.png?raw=true)
+![circus.brother](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/circus.ajax.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusAjaxNiketa)
 
 ### Circus Brother
 
-![circus.brother](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.brother.png?raw=true)
+![circus.brother](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/circus.brother.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusBrotherNiketa)
 
 ### Circus People
 
-![circus.People](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.people.png?raw=true)
+![circus.People](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/circus.people.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusPeopleNiketa)
 
 ### Circus Whisky
 
-![circus.whisky](https://github.com/selfrefactor/niketa-theme/blob/master/files/circus.whisky.png?raw=true)
+![circus.whisky](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/circus.whisky.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusWhiskyNiketa)
 
 ### Niketa Bear
 
-![niketa.bear](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.bear.png?raw=true)
+![niketa.bear](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/niketa.bear.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaBearNiketa)
 
 ### Niketa Moon
 
-![niketa.moon](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.moon.png?raw=true)
+![niketa.moon](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/niketa.moon.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaMoonNiketa)
 
 ### Niketa Owl
 
-![niketa.owl](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.owl.png?raw=true)
+![niketa.owl](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/niketa.owl.png?raw=true)
 
 [As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
 
@@ -139,169 +136,3 @@ group themes by background:
 
 `Niketa` for after sunset themes
 ```
-
-## Name
-
-Niketa is the name I gave to my dog. On this picture, she is 90 days old:
-
-![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.jpg?raw=true)
-
-And here she after as one year old dog.
-
-![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa_young.jpg?raw=true)
-
-## References
-
-- [Web Tools Weekly](https://mailchi.mp/webtoolsweekly/web-tools-306)
-
-- [Awesome VSCode](https://github.com/viatsko/awesome-vscode#niketa-theme-by-dejan-toteff)
-
-## Legacy theme
-
-> Niketa theme version 7.0.3 is published as [Niketa theme legacy](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-legacy)
-
-## Alternative set of another 18 themes
-
-I wanted to have a free pass to try out new color patterns, so I created [Niketa future theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-future-theme), which is mirror copy of the current theme, but with different colors.
-
-### Advanced Bat
-
-![advanced.bat](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.bat.png?raw=true)
-
-### Advanced Cat
-
-![advanced.cat](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.cat.png?raw=true)
-
-### Advanced Dog
-
-![advanced.dog](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.dog.png?raw=true)
-
-### Advanced Engine
-
-![advanced.engine](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.engine.png?raw=true)
-
-### Advanced Hook
-
-![advanced.hook](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.hook.png?raw=true)
-
-### Advanced Immigrant
-
-![immigrant.song](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.immigrant.png?raw=true)
-
-### Advanced Mystery
-
-![advanced.mystery](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.mystery.png?raw=true)
-
-### Brave Habits
-
-![Brave Habits](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/brave.habits.png?raw=true)
-
-### Brave Homer
-
-![Brave Homer](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/brave.homer.png?raw=true)
-
-### Brave Love
-
-![Brave Love](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/brave.love.png?raw=true)
-
-### Brave Neighbour
-
-![Brave Neighbour](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/brave.neighbour.png?raw=true)
-
-### Circus Ajax
-
-![circus.brother](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/circus.ajax.png?raw=true)
-
-### Circus Brother
-
-![circus.brother](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/circus.brother.png?raw=true)
-
-### Circus People
-
-![circus.People](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/circus.people.png?raw=true)
-
-### Circus Whisky
-
-![circus.whisky](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/circus.whisky.png?raw=true)
-
-### Niketa Bear
-
-![niketa.bear](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/niketa.bear.png?raw=true)
-
-### Niketa Moon
-
-![niketa.moon](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/niketa.moon.png?raw=true)
-
-### Niketa Owl
-
-![niketa.owl](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/niketa.owl.png?raw=true)
-
-### Advanced Bat
-
-![advanced.bat](https://github.com/selfrefactor/niketa-future-theme/blob/master/files/advanced.bat.png?raw=true)
-
-## Dark themes
-
-There are 2 dark versions of `Niketa theme`. First of them is called [Because](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Because) which holds all of the following 4 themes.
-
-### Because Ask
-
-![because.ask](https://github.com/selfrefactor/niketa-themes/blob/master/packages/because/screens/because.ask.png?raw=true)
-
-[As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAskNiketa)
-
-### Because Always
-
-![because.always](https://github.com/selfrefactor/niketa-themes/blob/master/packages/because/screens/because.always.png?raw=true)
-
-[As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseAlwaysNiketa)
-
-### Because Together
-
-![because.together](https://github.com/selfrefactor/niketa-themes/blob/master/packages/because/screens/because.together.png?raw=true)
-
-[As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseTogetherNiketa)
-
-### Because Never
-
-![because.never](https://github.com/selfrefactor/niketa-themes/blob/master/packages/because/screens/because.never.png?raw=true)
-
-[As a standalone theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BecauseNeverNiketa)
-
-## Zeppelin themes
-
-Three-color spin-off from `Niketa` themes which is already integrated in `Niketa` themes with the major bump to version `8.0.0`.
-
-### ZeppelinDancingDays
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/dancing.days.png?raw=true)
-
-### ZeppelinHeartbreaker
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/heartbreaker.png?raw=true)
-
-### ZeppelinInLight
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/in.light.png?raw=true)
-
-### ZeppelinLemonSong
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/lemon.song.png?raw=true)
-
-### ZeppelinSinceLoving
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/since.loving.png?raw=true)
-
-### ZeppelinTeaFor
-
-![vscode screen](https://github.com/selfrefactor/niketa-themes/blob/master/packages/zeppelin-themes/screens/tea.for.png?raw=true)
-
-## Niketa extension
-
-I used the same name for a suite of tools for automatic run of `Jest` tests with coverage. If you are interested, then you can hop on one of the following:
-
-- [Niketa docs](https://github.com/selfrefactor/niketa)
-
-There is `VSCode` part and `node` client part. On each save of file `foo.js`, it will run `foo.spec.js`. It will do that also if `foo.spec.js` has been saved.
-
-- [The case against Wallaby](https://ilearnsmarter.wordpress.com/2018/12/22/the-case-against-wallaby-js/) `Niketa` is created as frustration with some cons of `Wallaby.js`. The link leads to an article where I try to compare both tools and explain more about the benefits of `Niketa` as `Jest` tool.
