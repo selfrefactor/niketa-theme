@@ -1,8 +1,8 @@
 {
-  "name": "niketa-theme",
-  "displayName": "Niketa Theme Light",
+  "name": "niketa-theme-old",
+  "displayName": "Niketa Theme Light Old",
   "description": "Large collection of handmade light themes",
-  "version": "8.22.1",
+  "version": "1.0.0",
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/selfrefactor/niketa-theme.git"
+    "url": "https://github.com/selfrefactor/niketa-themes.git"
   },
   "bugs": {
-    "url": "https://github.com/selfrefactor/niketa-theme/issues"
+    "url": "https://github.com/selfrefactor/niketa-themes/issues"
   },
   "icon": "logo.png",
   "contributes": {
@@ -163,8 +163,5 @@
       "href": "https://github.com/selfrefactor/niketa-theme/issues",
       "url": "https://img.shields.io/github/issues/selfrefactor/niketa-theme.svg?style=social"
     }
-  ],
-  "commitMessage": {
-    "workInProgress": ""
-  }
+  ]
 }
