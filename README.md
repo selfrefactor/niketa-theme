@@ -1,6 +1,6 @@
-# Niketa old
+# Niketa light themes
 
-18 Light VSCode Themes
+9 Light VSCode Themes
 
 ## Screens
 
@@ -8,131 +8,53 @@
 
 ![advanced.bat](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.bat.png?raw=true)
 
-[As a single theme(marketplace link)](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedBatNiketa)
-
 ### Advanced Cat
 
 ![advanced.cat](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.cat.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedCatNiketa)
 
 ### Advanced Dog
 
 ![advanced.dog](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.dog.png?raw=true)
 
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedDogNiketa)
-
-### Advanced Engine
-
-![advanced.engine](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.engine.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedEngineNiketa)
-
-### Advanced Hook
-
-![advanced.hook](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.hook.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedHookNiketa)
-
-### Advanced Immigrant
-
-![immigrant.song](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.immigrant.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedImmigrantNiketa)
-
-### Advanced Mystery
-
-![advanced.mystery](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.mystery.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedMysteryNiketa)
-
-### Brave Habits
-
-![Brave Habits](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/brave.habits.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveHabitsNiketa)
-
-### Brave Homer
-
-![Brave Homer](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/brave.homer.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveHomerNiketa)
-
-### Brave Love
-
-![Brave Love](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/brave.love.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveLoveNiketa)
-
-### Brave Neighbour
-
-![Brave Neighbour](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/brave.neighbour.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.BraveNeighbourNiketa)
-
-### Circus Ajax
-
-![circus.brother](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/circus.ajax.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusAjaxNiketa)
-
-### Circus Brother
-
-![circus.brother](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/circus.brother.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusBrotherNiketa)
-
-### Circus People
-
-![circus.People](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/circus.people.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusPeopleNiketa)
-
-### Circus Whisky
-
-![circus.whisky](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/circus.whisky.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CircusWhiskyNiketa)
-
-### Niketa Bear
-
-![niketa.bear](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/niketa.bear.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaBearNiketa)
-
-### Niketa Moon
-
-![niketa.moon](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/niketa.moon.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaMoonNiketa)
-
-### Niketa Owl
-
-![niketa.owl](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/niketa.owl.png?raw=true)
-
-[As a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.NiketaOwlNiketa)
+[A a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedDogNiketa)
 
 ## Dark themes
 
-[Niketa dark](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-dark-theme) is similar to this theme, but the groups are 3 and total number of themes is 9.
+There are 2 dark versions of `Niketa theme`:
+
+- [Niketa dark](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-dark-theme) and have total of 9 themes.
+
+- [Because](https://marketplace.visualstudio.com/items?itemName=selfrefactor.Because) and it holds 4 themes.
+
+## Legacy themes
+
+- Niketa theme version 8.22.1 is published as [Niketa theme old](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-old)
+
+- Niketa theme version 7.0.3 is published as [Niketa theme legacy](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-legacy)
+
+## Zeppelin themes
+
+Set of 6 light themes:
+
+[Zeppelin themes](https://marketplace.visualstudio.com/items?itemName=selfrefactor.zeppelin-themes)
+
+## Name
+
+Niketa is the name I gave to my dog. On this picture, she is 90 days old:
+
+![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.jpg?raw=true)
+
+And here she after as one year old dog.
+
+![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa_young.jpg?raw=true)
 
 ## Git diff
 
 Git diff colors are blue and ochra similar to the ones suggested in the article [Your syntax highlighter is wrong](https://jameshfisher.com/2014/05/11/your-syntax-highlighter-is-wrong/)
 
-## Naming conventions
+## References
 
-Replace `foo, bar, baz` with their equally irrelevant substitutes.
+- [Web Tools Weekly](https://mailchi.mp/webtoolsweekly/web-tools-306)
 
-```
-group themes by background:
+- [Awesome VSCode](https://github.com/viatsko/awesome-vscode#niketa-theme-by-dejan-toteff)
 
-
-`Advanced` for bright early day themes
-
-`Brave` for mild themes
-
-`Circus`  for darker mild themes
-
-`Niketa` for after sunset themes
-```
