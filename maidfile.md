@@ -16,6 +16,18 @@ INDEX=1 node src/createMultipleThemes.js
 INDEX=2 node src/createMultipleThemes.js
 ```
 
+## theme3
+
+```bash
+INDEX=3 node src/createMultipleThemes.js
+```
+
+## theme4
+
+```bash
+INDEX=4 node src/createMultipleThemes.js
+```
+
 ## out
 
-Run tasks `theme0` `theme1` `theme2` in parallel.
+Run tasks `theme0` `theme1` `theme2` `theme3` `theme4` in parallel.
