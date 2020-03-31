@@ -19,7 +19,7 @@ export async function exportToMono(){
     cwd     : filePathBase,
   })
   const destination = `${ filePathBase }/niketa-theme-experimental`
- 
+
   await copy(source, destination)
   await exec({
     command : 'rm -rf .git',
