@@ -1,18 +1,14 @@
-import { resolve as resolveMethod } from 'path'
-import { readFileSync } from 'fs'
+const { readFileSync } = require('fs')
+const { resolve: resolveMethod } = require('path')
+const BASE = resolveMethod(__dirname, '../../')
 
-const BASE = resolveMethod(__dirname,'../../')
+const resolve = filePath => resolveMethod(BASE, filePath)
 
-export const resolve = filePath => resolveMethod(
-  BASE,
-  filePath
-)
-
-export function readJsonAnt(filePath){
-  const resolvedPath = resolve(
-    filePath
-  )
+function readJsonAnt(filePath){
+  const resolvedPath = resolve(filePath)
   const content = readFileSync(resolvedPath).toString()
 
   return JSON.parse(content)
 }
+
+exports.readJsonAnt = readJsonAnt

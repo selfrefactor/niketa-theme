@@ -6,12 +6,18 @@ test('happy', () => {
 })
 
 test.skip('bypass colors with opacity', () => {
-  const result = changeColorAnt('#4a6f93aa', 'DARKEST', 0.2)
+  const result = changeColorAnt(
+    '#4a6f93aa', 'DARKEST', 0.2
+  )
 
   expect(result).toEqual('#4a6f93aa')
 })
 
 test('with opacity', () => {
-  expect(changeColorAnt('#4a6f93aa', 'DARK', 0.2)).toEqual('#4a6f93D2')
-  expect(changeColorAnt('#4a6f93aa', 'LIGHT', 0.2)).toEqual('#4a6f938C')
+  expect(changeColorAnt(
+    '#4a6f93aa', 'DARK', 0.2
+  )).toEqual('#4a6f93D2')
+  expect(changeColorAnt(
+    '#4a6f93aa', 'LIGHT', 0.2
+  )).toEqual('#4a6f938C')
 })

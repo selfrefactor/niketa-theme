@@ -1,6 +1,8 @@
-import { range, length, last, split, compose } from 'rambdax'
+import { compose, last, length, range, split } from 'rambdax'
 
-export function rangeBy(startNum, endNum, distance){
+export function rangeBy(
+  startNum, endNum, distance
+){
   const isInteger = !distance.toString().includes('.')
   if (startNum > endNum){
     const startNumHolder = startNum
@@ -11,10 +13,7 @@ export function rangeBy(startNum, endNum, distance){
   let valueToPush = startNum
 
   if (isInteger){
-    const loopIndexes = range(
-      0,
-      Math.floor((endNum - startNum) / distance)
-    )
+    const loopIndexes = range(0, Math.floor((endNum - startNum) / distance))
     loopIndexes.forEach(() => {
       valueToPush += distance
       willReturn.push(valueToPush)
@@ -25,10 +24,7 @@ export function rangeBy(startNum, endNum, distance){
       last,
       split('.')
     )(distance.toString())
-    const loopIndexes = range(
-      0,
-      Math.floor((endNum - startNum) / distance)
-    )
+    const loopIndexes = range(0, Math.floor((endNum - startNum) / distance))
     loopIndexes.forEach(() => {
       valueToPush += distance
       willReturn.push(Number(valueToPush.toFixed(decimalLength)))

@@ -1,7 +1,8 @@
-import {  map,  mapToObject } from 'rambdax'
-import { readJsonAnt } from './ants/readJson'
-import { writeJsonAnt } from './ants/writeJson'
-import { generateThemeData } from './bees/generateThemeData'
+const { outputJSON } = require('fs-extra')
+const { resolve } = require('path')
+const { mapToObject, delay } = require('rambdax')
+const { readJsonAnt } = require('./ants/readJson')
+const { generateThemeData } = require('./bees/generateThemeData')
 
 const CHROME_COLOR = '#cdd0d2'
 const BACK_COLOR = '#F1F1F1'
@@ -126,36 +127,45 @@ const CommunicationBreakdown = [
   '#38978D',
   '#B1365B',
 ]
-// 'dancing.days',
-// 'funky.drummer',
+const DancingDays = [ '#b13695', '#38978D', '#614ad3', '#080c11', '#df5831' ]
+const FunkyDrummer = [ '#b66ae4', '#480032', '#0068a8', '#38978D', '#B1365B' ]
+
 // 'glass.onion',
 // 'hello.spaceboy',
 // 'kozmic.blues',
 // 'led.zeppelin',
 // 'strange.brew',
 // 'sweat.leaf',
-const SETTINGS = [ { CommunicationBreakdown } ]
+const SETTINGS = [ {CommunicationBreakdown}, { DancingDays }, { FunkyDrummer } ]
 const palette = readJsonAnt('palettes/palette.json')
 
 function createColorsHash(colors){
-  if(colors.length !== 5) throw 'colors.length !== 5'
+  if (colors.length !== 5) throw 'colors.length !== 5'
 
-  return mapToObject(
-    (color, i) => ({[`COLOR_${i}`]: color}),
-    colors
+  return mapToObject((color, i) => ({ [ `COLOR_${ i }` ] : color }), colors)
+}
+
+const themesDirectory = resolve(__dirname, '../themes/')
+
+async function singleRun(themeSettings){
+  const [ [ themeName, colors ] ] = Object.entries(themeSettings)
+
+  const themeData = generateThemeData({
+    palette,
+    chrome : chromeColors,
+    colors : createColorsHash(colors),
+  })
+  themeData.name = themeName
+  await outputJSON(
+    `${ themesDirectory }/${ themeName }.json`, themeData, { spaces : 2 }
   )
 }
 
-test('happy', () => {
-  map(themeSettings => {
-    const [[themeName, colors]] = Object.entries(themeSettings)
 
-    const themeData = generateThemeData({
-      palette,
-      chrome: chromeColors,
-      colors: createColorsHash(colors),
-    })
-    themeData.name = themeName
-    writeJsonAnt(`themes/${ themeName }.json`, themeData)
-  })(SETTINGS)
-})
+void async function createThemes(){
+  const index = Number(process.env.INDEX)
+  if(SETTINGS[index] === undefined) return console.log('!index');
+  
+  await singleRun(SETTINGS[index])
+}() 
+ 

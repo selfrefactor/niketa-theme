@@ -1,6 +1,5 @@
-import { map, mergeAll } from 'rambdax'
-
-import { changeColorAnt } from '../ants/changeColor'
+const { changeColorAnt } = require('../ants/changeColor')
+const { map, mergeAll } = require('rambdax')
 
 function createPaletteRule(
   prop, colorBase, rate = 0.045
@@ -20,7 +19,7 @@ function createPaletteRule(
   return willReturn
 }
 
-export function generateThemeData({ palette, chrome, colors }){
+function generateThemeData({ palette, chrome, colors }){
   const translatedColors = mergeAll(map((color, prop) => createPaletteRule(prop, color))(colors))
   const newTokenColors = map(tokenColor => {
     if (tokenColor.name === 'source.json'){
@@ -41,3 +40,5 @@ export function generateThemeData({ palette, chrome, colors }){
 
   return newTheme
 }
+
+exports.generateThemeData = generateThemeData

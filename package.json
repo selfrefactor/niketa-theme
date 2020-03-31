@@ -6,7 +6,10 @@
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
-    "test": "jest src"
+    "test0": "INDEX=0 node src/createMultipleThemeProve.js",
+    "test1": "INDEX=1 node src/createMultipleThemeProve.js",
+    "test2": "INDEX=2 node src/createMultipleThemeProve.js",
+    "out": "yarn test0&&yarn test1&&yarn test2"
   },
   "engines": {
     "vscode": "^1.27.0"
@@ -28,6 +31,16 @@
         "label": "CommunicationBreakdown",
         "uiTheme": "vs",
         "path": "./themes/CommunicationBreakdown.json"
+      },
+      {
+        "label": "FunkyDrummer",
+        "uiTheme": "vs",
+        "path": "./themes/FunkyDrummer.json"
+      },
+      {
+        "label": "DancingDays",
+        "uiTheme": "vs",
+        "path": "./themes/DancingDays.json"
       }
     ]
   },
