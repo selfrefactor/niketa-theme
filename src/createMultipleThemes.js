@@ -1,8 +1,8 @@
-const { outputJSON } = require('fs-extra')
-const { resolve } = require('path')
-const { mapToObject, delay } = require('rambdax')
-const { readJsonAnt } = require('./ants/readJson')
 const { generateThemeData } = require('./bees/generateThemeData')
+const { mapToObject, delay } = require('rambdax')
+const { outputJSON } = require('fs-extra')
+const { readJsonAnt } = require('./ants/readJson')
+const { resolve } = require('path')
 
 const CHROME_COLOR = '#cdd0d2'
 const BACK_COLOR = '#F1F1F1'
@@ -129,28 +129,22 @@ const CommunicationBreakdown = [
 ]
 const DancingDays = [ '#b13695', '#38978D', '#614ad3', '#080c11', '#df5831' ]
 const FunkyDrummer = [ '#b66ae4', '#480032', '#0068a8', '#38978D', '#B1365B' ]
-const GlassOnion = [
-'#bb9132',
-'#20366b',
-'#2c91af',
-'#861D4F',
-'#E9630D',
-]
+const GlassOnion = [ '#bb9132', '#20366b', '#2c91af', '#861D4F', '#E9630D' ]
 
-const HelloSpaceboy = [
-  '#01676b',
-  '#6833b9',
-  '#b1336b',
-  '#192112',
-  '#0031df',
-]
- 
+const HelloSpaceboy = [ '#01676b', '#6833b9', '#b1336b', '#192112', '#0031df' ]
+
 // 'hello.spaceboy',
 // 'kozmic.blues',
 // 'led.zeppelin',
 // 'strange.brew',
 // 'sweat.leaf',
-const SETTINGS = [{HelloSpaceboy}, {CommunicationBreakdown},{GlassOnion}, { DancingDays }, { FunkyDrummer } ]
+const SETTINGS = [
+  { HelloSpaceboy },
+  { CommunicationBreakdown },
+  { GlassOnion },
+  { DancingDays },
+  { FunkyDrummer },
+]
 const palette = readJsonAnt('palettes/palette.json')
 
 function createColorsHash(colors){
@@ -175,11 +169,9 @@ async function singleRun(themeSettings){
   )
 }
 
-
-void async function createThemes(){
+void (async function createThemes(){
   const index = Number(process.env.INDEX)
-  if(SETTINGS[index] === undefined) return console.log('!index');
-  
-  await singleRun(SETTINGS[index])
-}() 
- 
+  if (SETTINGS[ index ] === undefined) return console.log('!index')
+
+  await singleRun(SETTINGS[ index ])
+})()
