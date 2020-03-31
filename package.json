@@ -6,6 +6,7 @@
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
+    "test": "jest src/createMultipleThemes.spec.js",
     "out": "maided out"
   },
   "engines": {
@@ -55,6 +56,7 @@
     "color": "^3.1.2",
     "fs-extra": "^8.1.0",
     "get-contrast-ratio": "^0.2.1",
+    "helpers-fn": "^0.1.1",
     "hexsorter": "^1.5.0",
     "jest": "^24.8.0",
     "maided": "^0.1.3",
