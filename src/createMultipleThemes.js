@@ -131,7 +131,7 @@ const DancingDays = [ '#b13695', '#38978D', '#614ad3', '#080c11', '#df5831' ]
 const FunkyDrummer = [ '#b66ae4', '#480032', '#0068a8', '#38978D', '#B1365B' ]
 const GlassOnion = [ '#bb9132', '#20366b', '#2c91af', '#861D4F', '#E9630D' ]
 
-const HelloSpaceboy = [ '#01676b', '#6833b9', '#b1336b', '#192112', '#0031df' ]
+const HelloSpaceboy = [ '#6833b9', '#01676b', '#b1336b', '#192112', '#0031df' ]
 
 // 'hello.spaceboy',
 // 'kozmic.blues',
