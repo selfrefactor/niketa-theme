@@ -1,5 +1,7 @@
 export const COLOR_0 = [
+  'source.go',
   'entity.name.tag.UNDERLINE',
+  'variable.language.constructor.UNDERLINE',
   'markup.italic',
   'text.html.derivative',
   'punctuation.accessor.js',
@@ -13,7 +15,6 @@ export const COLOR_0 = [
   'meta.var.expr.js',
   'punctuation.separator.comma.js',
   'support.variable.property.js',
-  'variable.language.constructor.UNDERLINE',
   'variable.language.this',
 ]
 
@@ -35,7 +36,6 @@ export const COLOR_1 = [
 ]
 
 export const COLOR_2 = [
-  'source.go',
   'string.quoted.double.html',
   'keyword.control.import.js',
   'source.json',
