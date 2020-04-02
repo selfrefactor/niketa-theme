@@ -25,18 +25,14 @@ export async function exportToMono(){
     command : 'rm -rf .git',
     cwd     : destination,
   })
-  // await exec({
-  //   command : 'run d feat@bump minor',
-  //   cwd     : destination,
-  // })
   await exec({
     command : 'vsce publish minor',
     cwd     : destination,
   })
-  // await exec({
-  //   command : 'run d feat@publish experimental',
-  //   cwd     : destination,
-  // })
+  await exec({
+    command : 'run d feat@bump experimental',
+    cwd     : destination,
+  })  
 }
 
 function performRename(

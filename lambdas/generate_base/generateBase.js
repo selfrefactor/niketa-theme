@@ -12,7 +12,7 @@ function save({ label, data }){
   outputFileSync(output, JSON.stringify(
     data, null, 2
   ))
-} 
+}
 
 export function randomShade(color){
   const seed = random(3, 20)
