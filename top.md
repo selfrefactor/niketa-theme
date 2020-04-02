@@ -1,24 +1,32 @@
-  COLOR_2 : '#2f586f',
+
+ '#083358',
+  
+====
+  '#2f586f',
   COLOR_2 : '#a83c56',
-  COLOR_3 : '#0d8a81',
+  COLOR_1 : '#0031df',
+  COLOR_0 : '#d239a0',
+ COLOR_1 : '#bb9132',
 
-  COLOR_2 : '#3a0088',
-  COLOR_1 : '#222d60',
 
-  COLOR_0 : '#083358',
-  COLOR_3 : '#953b69',
   COLOR_0 : '#00a8cc',
+  COLOR_1 : '#222d60',
+  COLOR_3 : '#953b69',
   COLOR_1 : '#b24826',
+  COLOR_3 : '#01676b',
 
-  COLOR_0 : '#28305d',
 
+  COLOR_3 : '#0d8a81',
+  COLOR_0 : '#00a8cc',
   COLOR_2 : '#a12b6d',
-  COLOR_2 : '#0068a8',
   COLOR_4 : '#d44578',
+  COLOR_2 : '#3a0088',
+
+  COLOR_2 : '#a83c56',
+  COLOR_0 : '#28305d',
+  COLOR_2 : '#0068a8',
   COLOR_0 : '#d239a0',
 
-
-====
   COLOR_3 : '#01676b',
   COLOR_4 : '#b1336b',
   COLOR_2 : '#192112',

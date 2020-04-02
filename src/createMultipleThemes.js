@@ -129,23 +129,27 @@ const CommunicationBreakdown = [
   '#38978D',
   '#B1365B',
 ]
-const DancingDays = [ '#b13695', '#38978D', '#614ad3', '#080c11', '#df5831' ]
+const DancingDays = [ '#b13695', '#38978D', '#614ad3', '#083358', '#df5831' ]
 const FunkyDrummer = [ '#b66ae4', '#480032', '#0068a8', '#38978D', '#B1365B' ]
 const GlassOnion = [ '#bb9132', '#20366b', '#2c91af', '#861D4F', '#E9630D' ]
 
 const HelloSpaceboy = [ '#01676b', '#6833b9', '#b1336b', '#192112', '#0031df' ]
+const KozmicBlues = [ '#a83c56', '#28305d', '#0068a8', '#d239a0', '#b66ae4' ]
+const LedZeppelin = [ '#0d8a81', '#00a8cc', '#a12b6d', '#d44578', '#3a0088' ]
+const StrangeBrew = [ '#00a8cc', '#222d60', '#953b69', '#b24826', '#01676b' ]
 
-// 'hello.spaceboy',
-// 'kozmic.blues',
-// 'led.zeppelin',
-// 'strange.brew',
-// 'sweat.leaf',
+const SweatLeaf = [ '#2f586f', '#a83c56', '#0031df', '#d239a0', '#bb9132' ]
+
 const SETTINGS = [
+  { LedZeppelin },
+  { SweatLeaf },
   { HelloSpaceboy },
   { CommunicationBreakdown },
   { GlassOnion },
   { DancingDays },
   { FunkyDrummer },
+  { KozmicBlues },
+  { StrangeBrew },
 ]
 const palette = readJsonAnt('palettes/palette.json')
 
