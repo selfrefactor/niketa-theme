@@ -1,4 +1,11 @@
+https://raw.githubusercontent.com/lukinco/lukin-vscode-theme/master/themes/lukin-color-theme.json
 
+#47ffa0
+#FFAB40
+#FF5252
+#40C4FF
+#47ddff
+#de3cd6
  '#083358',
   
 ====
