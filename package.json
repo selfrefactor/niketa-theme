@@ -36,6 +36,11 @@
         "path": "./themes/FunkyDrummer.json"
       },
       {
+        "label": "KozmicBlues",
+        "uiTheme": "vs",
+        "path": "./themes/KozmicBlues.json"
+      },
+      {
         "label": "GlassOnion",
         "uiTheme": "vs",
         "path": "./themes/GlassOnion.json"
@@ -44,6 +49,21 @@
         "label": "HelloSpaceboy",
         "uiTheme": "vs",
         "path": "./themes/HelloSpaceboy.json"
+      },
+      {
+        "label": "StrangeBrew",
+        "uiTheme": "vs",
+        "path": "./themes/StrangeBrew.json"
+      },
+      {
+        "label": "SweatLeaf",
+        "uiTheme": "vs",
+        "path": "./themes/SweatLeaf.json"
+      },
+      {
+        "label": "LedZeppelin",
+        "uiTheme": "vs",
+        "path": "./themes/LedZeppelin.json"
       },
       {
         "label": "DancingDays",
@@ -61,6 +81,7 @@
     "bundle"
   ],
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "babel-cli": "^7.0.0-beta.3",
     "babel-preset-env": "^7.0.0-beta.3",
     "color": "^3.1.2",
@@ -100,5 +121,8 @@
       "href": "https://github.com/selfrefactor/niketa-theme/issues",
       "url": "https://img.shields.io/github/issues/selfrefactor/niketa-theme.svg?style=social"
     }
-  ]
+  ],
+  "commitMessage": {
+    "workInProgress": "find missing rules"
+  }
 }
