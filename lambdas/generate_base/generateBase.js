@@ -1,6 +1,6 @@
 import { outputFileSync } from 'fs-extra'
 import { resolve } from 'path'
-import { random, remove, replace, switcher } from 'rambdax'
+import { remove, replace } from 'rambdax'
 
 import * as basePalette from '../../palettes/base'
 
@@ -14,31 +14,13 @@ function save({ label, data }){
   ))
 }
 
-export function randomShade(color){
-  const seed = random(3, 20)
-
-  const shade = switcher(seed)
-    .is(20, `${ color }_LIGHTEST`)
-    .is(19, `${ color }_LIGHTER`)
-    .is(17, `${ color }_LIGHT`)
-    .is(16, `${ color }_LIGHT`)
-    .is(15, `${ color }_DARK`)
-    .is(14, `${ color }_DARK`)
-    .is(18, `${ color }_DARK`)
-    .is(12, `${ color }_DARKER`)
-    .is(11, `${ color }_DARKEST`)
-    .default(color)
-
-  return shade
-}
-
 function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   const tokenColor = {
     name     : syntaxInstance,
     scope    : syntaxInstance,
     settings : {
       ...underline,
-      foreground : randomShade(color),
+      foreground : color,
     },
   }
 
@@ -53,7 +35,7 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
         scope    : `${ plainSyntaxInstance }${ extension }`,
         settings : {
           ...underline,
-          foreground : randomShade(color),
+          foreground : color,
         },
       }
       tokenColors.push(tokenColorExtension)
