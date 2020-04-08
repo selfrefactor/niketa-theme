@@ -62,12 +62,12 @@ Run tasks `theme0` `theme1` `theme2` `theme3` `theme4` `theme5` `theme6` `theme7
 yarn export_to_mono
 ```
 
-## bump
+## publish
 
 ```bash
 ./bump.sh
 ```
 
-## publish
+## bump
 
-Run tasks `bump` and `export:to:mono` in parallel.
+Run tasks `publish` and `export:to:mono` in parallel.

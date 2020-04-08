@@ -10,7 +10,7 @@
     "export_to_mono": "jest lambdas/export_to_mono/exportToMono.spec.js",
     "test": "jest src/createMultipleThemes.spec.js",
     "out": "maided out",
-    "bump": "maided publish"
+    "bump": "maided bump"
   },
   "engines": {
     "vscode": "^1.27.0"
