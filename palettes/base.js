@@ -41,8 +41,10 @@ export const COLOR_2 = [
   'source.json',
   'source.css',
   'support.function',
+  'variable.other.constant.js',
   'support.type.object.module.js',
   'meta.import.js',
+  'variable.other.object.js',
   'meta.paragraph.markdown',
   'entity.other.attribute-name.js',
   'string.quoted.single.js',
@@ -92,7 +94,6 @@ export const COLOR_4 = [
   'invalid.UNDERLINE',
   'variable.language',
   'storage.modifier.async.js',
-  'variable.other.object.js',
   'variable.other.readwrite',
   'variable.other.readwrite.js',
 ]

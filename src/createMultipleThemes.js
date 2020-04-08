@@ -65,8 +65,6 @@ const selectionColors = {
   'editor.selectionHighlightBackground' : `${ CHROME_COLOR }77`,
   'editor.inactiveSelectionBackground'  : '#aaab9c66',
 }
-// entity.name.function.js
-// variable.other.constant.js
 
 const chromeColors = {
   ...selectionColors,
@@ -81,7 +79,7 @@ const chromeColors = {
   'badge.foreground'                          : '#3f7063',
   'diffEditor.insertedTextBackground'         : '#9c824a55',
   'diffEditor.removedTextBackground'          : '#64B5F655',
-  'editor.findMatchBackground'                : '#aaff1144', 
+  'editor.findMatchBackground'                : '#aaff1144',
   'editor.findMatchHighlightBackground'       : '#71aac333',
   'editor.findRangeHighlightBackground'       : '#3f706355',
   'editor.lineHighlightBackground'            : BACK_COLOR,
@@ -89,8 +87,8 @@ const chromeColors = {
   // When search by word is active or when double click on a word
   'editor.wordHighlightBackground'            : '#aa769b55',
   'editor.wordHighlightStrongBackground'      : '#410a0b44',
-  'editorBracketMatch.background'             : '#e7e7e7',
-  'editorBracketMatch.border'                 : '#c3c1a9',
+  'editorBracketMatch.background'             : '#e7e7a7aa',
+  'editorBracketMatch.border'                 : '#63c1a9ca',
   'editorCursor.foreground'                   : '#544',
   'editorGroupHeader.tabsBackground'          : CHROME_COLOR,
   'editorLineNumber.foreground'               : '#2a3343a9',
