@@ -1,28 +1,10 @@
 import { readFileSync } from 'fs'
 import { copy, outputFile, outputJson, readJson } from 'fs-extra'
 import { exec } from 'helpers-fn'
-import { load, save } from 'package-storage'
 import { resolve as resolveMethod } from 'path'
 import { piped, replace } from 'rambdax'
 import { dotCase, pascalCase, snakeCase } from 'string-fn'
-
-const STANDALONES_VERSION_KEY = 'standaloneVersion'
-
-async function bumpVersion(version){
-  const [ major, minor, patch ] = version.split('.').map(Number)
-  const newVersion = `${ major }.${ minor }.${ patch + 1 }`
-
-  return save(
-    STANDALONES_VERSION_KEY, newVersion, undefined, true
-  )
-}
-
-async function getVersion(){
-  return load(
-    STANDALONES_VERSION_KEY, undefined, true
-  )
-}
-
+ 
 const PROJECT_ROOT = resolveMethod(__dirname, '../../')
 
 function createReadme({ themeName, asDot, asSnake }){
@@ -60,9 +42,8 @@ async function getPackageJson({ version, themeName, asDot }){
   }
 }
 
-export async function exportToMono(themeNameRaw){
+export async function exportToMono(themeNameRaw, version){
   const themeName = pascalCase(themeNameRaw)
-  const version = await getVersion()
   const asDot = dotCase(themeName)
   const asSnake = snakeCase(themeName)
   const readmeContent = createReadme({
@@ -98,18 +79,18 @@ export async function exportToMono(themeNameRaw){
   await outputJson(
     packageJsonDestination, packageJsonContent, { spaces : 2 }
   )
-  // await bumpVersion(version)
+  await bumpVersion(version)
 
-  // await exec({
-  //   command : 'run d feat@bump patch',
-  //   cwd     : destination,
-  // })
-  // await exec({
-  //   command : 'vsce publish patch',
-  //   cwd     : destination,
-  // })
-  // await exec({
-  //   command : 'run d chore@bump',
-  //   cwd     : destination,
-  // })
+  await exec({
+    command : 'run d feat@bump patch',
+    cwd     : DESTINATION_ROOT,
+  })
+  await exec({
+    command : 'vsce publish',
+    cwd     : DESTINATION_ROOT,
+  })
+  await exec({
+    command : 'run d chore@bump',
+    cwd     : DESTINATION_ROOT,
+  })
 }

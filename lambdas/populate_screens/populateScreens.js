@@ -3,6 +3,7 @@ import { copySync } from 'fs-extra'
 import { resolve } from 'path'
 import { sort } from 'rambdax'
 import { dotCase } from 'string-fn'
+
 import { themesNames } from '../../src/constants'
 
 export function populateScreens(){
