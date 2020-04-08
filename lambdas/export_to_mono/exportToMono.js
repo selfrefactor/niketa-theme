@@ -1,25 +1,30 @@
-import { sort, replace } from 'rambdax'
-import { readJsonAnt, resolve } from '../../src/ants/readJson'
-import { resolve as resolveMethod } from 'path'
 import { existsSync, readFileSync } from 'fs'
-import { exec } from 'helpers-fn'
-import { snakeCase, dotCase, titleCase } from 'string-fn'
-import {
-  copySync,
-  outputJsonSync,
-  outputFileSync,
-} from 'fs-extra'
 import { readdirSync } from 'fs'
+import { copySync, outputFileSync, outputJsonSync } from 'fs-extra'
+import { exec } from 'helpers-fn'
+import { load, save } from 'package-storage'
+import { resolve as resolveMethod } from 'path'
+import { replace, sort } from 'rambdax'
+import { dotCase, snakeCase, titleCase } from 'string-fn'
+
+import { readJsonAnt, resolve } from '../../src/ants/readJson'
 const sortFn = (a, b) => a > b ? -1 : 1
 
+const STANDALONES_VERSION_KEY = 'standalones'
+
+async function getVersion(){
+  const a = await load(STANDALONES_VERSION_KEY, 'version')
+  console.log(a)
+}
+
 export async function exportToMono(themeName){
+  await getVersion()
+
   return
   const asDot = dotCase(themeName)
   const asSnake = snakeCase(themeName)
-  const filePathBase = resolveMethod(
-    __dirname,
-    '../../../niketa-themes/packages'
-  )
+  const filePathBase = resolveMethod(__dirname,
+    '../../../niketa-themes/packages')
 
   const actualData = readJsonAnt(`themes/${ themeName }.json`)
   const destination = `${ filePathBase }/${ themeName }`
@@ -28,11 +33,11 @@ export async function exportToMono(themeName){
   const niketaScreenLocation = resolve(`files/${ asDot }.png`)
   // copySync(screenSource, niketaScreenLocation)
 
-  const screenDestination = resolve(
-    `${ destination }/theme/${ asDot }.png`
-  )
+  const screenDestination = resolve(`${ destination }/theme/${ asDot }.png`)
 
-  outputJsonSync(themeDestination, actualData, { spaces : 2 })
+  outputJsonSync(
+    themeDestination, actualData, { spaces : 2 }
+  )
   if (existsSync(screenSource)){
     copySync(screenSource, screenDestination)
   } else {
@@ -52,11 +57,27 @@ export async function exportToMono(themeName){
   })
 }
 
-function performRename(content, newName, oldName, skipDotCase = false){
-  const afterDot = replace(new RegExp(dotCase(oldName), 'g'), dotCase(newName), content)
+function performRename(
+  content, newName, oldName, skipDotCase = false
+){
+  const afterDot = replace(
+    new RegExp(dotCase(oldName), 'g'),
+    dotCase(newName),
+    content
+  )
 
-  const afterSnake = replace(new RegExp(snakeCase(oldName), 'g'), snakeCase(newName), skipDotCase ? content : afterDot)
-  const afterTitle = replace(new RegExp(titleCase(oldName), 'g'), titleCase(newName), afterSnake)
+  const afterSnake = replace(
+    new RegExp(snakeCase(oldName), 'g'),
+    snakeCase(newName),
+    skipDotCase ? content : afterDot
+  )
+  const afterTitle = replace(
+    new RegExp(titleCase(oldName), 'g'),
+    titleCase(newName),
+    afterSnake
+  )
 
-  return replace(new RegExp(oldName, 'g'), newName, afterTitle)
+  return replace(
+    new RegExp(oldName, 'g'), newName, afterTitle
+  )
 }
