@@ -2,7 +2,7 @@ const { readFileSync } = require('fs')
 const { resolve: resolveMethod } = require('path')
 const BASE = resolveMethod(__dirname, '../../')
 
-const resolve = filePath => resolveMethod(BASE, filePath)
+export const resolve = filePath => resolveMethod(BASE, filePath)
 
 function readJsonAnt(filePath){
   const resolvedPath = resolve(filePath)

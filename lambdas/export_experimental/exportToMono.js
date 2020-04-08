@@ -24,7 +24,7 @@ export async function exportToMono(){
   await exec({
     command : 'rm -rf .git',
     cwd     : destination,
-  })
+  }) 
   await exec({
     command : 'vsce publish minor',
     cwd     : destination,
