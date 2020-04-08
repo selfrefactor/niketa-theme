@@ -1,4 +1,4 @@
-import { outputFileSync } from 'fs-extra'
+import { outputJson } from 'fs-extra'
 import { resolve } from 'path'
 import { remove, replace } from 'rambdax'
 
@@ -7,12 +7,13 @@ import * as basePalette from '../../palettes/base'
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
 
-function save({ label, data }){
+async function save({ label, data }){
   const output = resolve(__dirname, `../../palettes/${ label }.json`)
-  outputFileSync(output, JSON.stringify(
-    data, null, 2
-  ))
-}
+  await outputJson(output, data, {spaces: 2})
+
+  const darkThemePaletteLocation = resolve(__dirname, `../../../niketa-themes/packages/niketa_dark/src/palette.json`)
+  await outputJson(darkThemePaletteLocation, data,{spaces: 2})
+} 
 
 function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   const tokenColor = {
@@ -54,7 +55,7 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
   }
 }
 
-export function generateBase(label){
+export function generatePalette(label){
   const { baseBase, baseData } = basePalette
   const tokenColors = []
 
