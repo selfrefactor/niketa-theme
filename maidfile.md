@@ -56,10 +56,18 @@ INDEX=8 node src/createMultipleThemes.js
 
 Run tasks `theme0` `theme1` `theme2` `theme3` `theme4` `theme5` `theme6` `theme7` and `theme8` in parallel.
 
-## publish
-
-Export to mono and afterwards make automatic bump
+## export:to:mono
 
 ```bash
-ls
+yarn export_to_mono
 ```
+
+## bump
+
+```bash
+./bump.sh
+```
+
+## publish
+
+Run tasks `bump` and `export:to:mono` in parallel.
