@@ -1,26 +1,52 @@
 # Niketa light themes
 
-## todo 
+9 Light VSCode Themes with same background
 
-logo.png is missing
+## Important
 
-9 Light VSCode Themes
+Latest major version bump changed the number, the names and the colors of the themes.
+
+For those of you missing the old theme with its 18 themes, you can ewither install version `8.22.1` of this theme or install 
+[Niketa theme old](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-old). There is no difference which one you choose.
 
 ## Screens
 
-### Advanced Bat
+### Communication Breakdown
 
-![advanced.bat](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.bat.png?raw=true)
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/communication.breakdown.png?raw=true)
 
-### Advanced Cat
+### Dancing Days
 
-![advanced.cat](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.cat.png?raw=true)
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/dancing.days.png?raw=true)
 
-### Advanced Dog
+### Funky Drummer
 
-![advanced.dog](https://github.com/selfrefactor/niketa-themes/blob/master/packages/niketa-theme-old/screens/advanced.dog.png?raw=true)
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/funky.drummer.png?raw=true)
 
-[A a single theme](https://marketplace.visualstudio.com/items?itemName=selfrefactor.AdvancedDogNiketa)
+### Glass Onion
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/glass.onion.png?raw=true)
+
+### Hello Spaceboy
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/hello.spaceboy.png?raw=true)
+
+### Kozmic Blues
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/kozmic.blues.png?raw=true)
+
+### Led Zeppelin
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/led.zeppelin.png?raw=true)
+
+### Strange Brew
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/strange.brew.png?raw=true)
+
+### Sweat Leaf
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/sweat.leaf.png?raw=true)
+
 
 ## Dark themes
 
@@ -46,11 +72,11 @@ Set of 6 light themes:
 
 Niketa is the name I gave to my dog. On this picture, she is 90 days old:
 
-![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.jpg?raw=true)
+![niketa as small dog](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa.jpg?raw=true)
 
 And here she after as one year old dog.
 
-![niketa](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa_young.jpg?raw=true)
+![niketa has grown](https://github.com/selfrefactor/niketa-theme/blob/master/files/niketa_young.jpg?raw=true)
 
 ## Git diff
 

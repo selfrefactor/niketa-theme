@@ -87,7 +87,7 @@ const chromeColors = {
   // When search by word is active or when double click on a word
   'editor.wordHighlightBackground'            : '#aa769b55',
   'editor.wordHighlightStrongBackground'      : '#410a0b44',
-  'editorBracketMatch.background'             : '#87775750', 
+  'editorBracketMatch.background'             : '#87775750',
   'editorBracketMatch.border'                 : BACK_COLOR,
   'editorCursor.foreground'                   : '#544',
   'editorGroupHeader.tabsBackground'          : CHROME_COLOR,
