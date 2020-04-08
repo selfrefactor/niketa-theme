@@ -79,14 +79,13 @@ export async function exportToMono(themeNameRaw, version){
   await outputJson(
     packageJsonDestination, packageJsonContent, { spaces : 2 }
   )
-  await bumpVersion(version)
 
   await exec({
     command : 'run d feat@bump patch',
     cwd     : DESTINATION_ROOT,
   })
   await exec({
-    command : 'vsce publish',
+    command : 'vsce publish patch',
     cwd     : DESTINATION_ROOT,
   })
   await exec({
