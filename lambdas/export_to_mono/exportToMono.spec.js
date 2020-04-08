@@ -11,7 +11,7 @@ const STANDALONES_VERSION_KEY = 'standaloneVersion'
 
 async function bumpVersion(version){
   const [ major, minor, patch ] = version.split('.').map(Number)
-  const newVersion = `${ major }.${ minor }.${ patch + 1 }`
+  const newVersion = `${ major }.${ minor + 1 }.${ patch }`
 
   return save(
     STANDALONES_VERSION_KEY, newVersion, undefined, true
@@ -24,7 +24,7 @@ async function getVersion(){
   )
 }
 
-test.skip('happy', async () => {
+test('happy', async () => {
   const version = await getVersion()
 
   await mapAsync(async themeName => await exportToMono(themeName, version),

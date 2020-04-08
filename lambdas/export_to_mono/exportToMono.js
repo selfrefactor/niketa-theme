@@ -81,11 +81,11 @@ export async function exportToMono(themeNameRaw, version){
   )
 
   await exec({
-    command : 'run d feat@bump patch',
+    command : 'run d feat@bump minor',
     cwd     : DESTINATION_ROOT,
   })
   await exec({
-    command : 'vsce publish patch',
+    command : 'vsce publish minor',
     cwd     : DESTINATION_ROOT,
   })
   await exec({
