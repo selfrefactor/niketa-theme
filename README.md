@@ -15,38 +15,56 @@ For those of you missing the old theme with its 18 themes, you can ewither insta
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/communication.breakdown.png?raw=true)
 
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CommunicationBreakdown)
+
 ### Dancing Days
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/dancing.days.png?raw=true)
+
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.DancingDays)
 
 ### Funky Drummer
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/funky.drummer.png?raw=true)
 
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.FunkyDrummer)
+
 ### Glass Onion
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/glass.onion.png?raw=true)
+
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.GlassOnion)
 
 ### Hello Spaceboy
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/hello.spaceboy.png?raw=true)
 
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.HelloSpaceboy)
+
+
 ### Kozmic Blues
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/kozmic.blues.png?raw=true)
+
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.KozmicBlues)
 
 ### Led Zeppelin
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/led.zeppelin.png?raw=true)
 
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.LedZeppelin)
+
 ### Strange Brew
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/strange.brew.png?raw=true)
+
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.StrangeBrew)
 
 ### Sweat Leaf
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/sweat.leaf.png?raw=true)
 
+[As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.SweatLeaf)
 
 ## Dark themes
 
