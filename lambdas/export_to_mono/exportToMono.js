@@ -4,7 +4,7 @@ import { exec } from 'helpers-fn'
 import { resolve as resolveMethod } from 'path'
 import { piped, replace } from 'rambdax'
 import { dotCase, pascalCase, snakeCase } from 'string-fn'
- 
+
 const PROJECT_ROOT = resolveMethod(__dirname, '../../')
 
 function createReadme({ themeName, asDot, asSnake }){

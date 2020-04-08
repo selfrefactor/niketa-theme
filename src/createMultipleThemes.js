@@ -65,6 +65,8 @@ const selectionColors = {
   'editor.selectionHighlightBackground' : `${ CHROME_COLOR }77`,
   'editor.inactiveSelectionBackground'  : '#aaab9c66',
 }
+// entity.name.function.js
+// variable.other.constant.js
 
 const chromeColors = {
   ...selectionColors,
@@ -73,24 +75,22 @@ const chromeColors = {
   ...listColors,
   'editor.background'                         : BACK_COLOR,
   'editor.lineHighlightBorder'                : '#9c824a',
-  // Above are missing in Niketa light theme
-  // ============================================
   'editor.foldBackground'                     : '#fafafa',
   'activityBar.background'                    : '#C4BE9D',
   'badge.background'                          : '#e7e7e7',
   'badge.foreground'                          : '#3f7063',
   'diffEditor.insertedTextBackground'         : '#9c824a55',
   'diffEditor.removedTextBackground'          : '#64B5F655',
-  'editor.findMatchBackground'                : '#87a192',
-  'editor.findMatchHighlightBackground'       : '#71aac355',
-  'editor.findRangeHighlightBackground'       : '#3f706366',
+  'editor.findMatchBackground'                : '#aaff1144', 
+  'editor.findMatchHighlightBackground'       : '#71aac333',
+  'editor.findRangeHighlightBackground'       : '#3f706355',
   'editor.lineHighlightBackground'            : BACK_COLOR,
   // next two
   // When search by word is active or when double click on a word
   'editor.wordHighlightBackground'            : '#aa769b55',
   'editor.wordHighlightStrongBackground'      : '#410a0b44',
   'editorBracketMatch.background'             : '#e7e7e7',
-  'editorBracketMatch.border'                 : '#fafafa',
+  'editorBracketMatch.border'                 : '#c3c1a9',
   'editorCursor.foreground'                   : '#544',
   'editorGroupHeader.tabsBackground'          : CHROME_COLOR,
   'editorLineNumber.foreground'               : '#2a3343a9',
