@@ -1,5 +1,4 @@
 import { ms } from 'string-fn'
-
 import { exportToMono } from './exportToMono'
 
 jest.setTimeout(ms('5 minutes'))

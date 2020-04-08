@@ -6,6 +6,7 @@
   "license": "MIT",
   "publisher": "selfrefactor",
   "scripts": {
+    "dev": "jest lambdas/export_to_mono/exportToMono.spec.js --watch",
     "test": "jest src/createMultipleThemes.spec.js",
     "out": "maided out"
   },
@@ -23,9 +24,7 @@
     "url": "https://github.com/selfrefactor/niketa-themes/issues"
   },
   "icon": "niketa.jpg",
-  "standalones":{
-    "version": "0.1.0"
-  },
+  "standaloneVersion": "0.1.0",
   "contributes": {
     "themes": [
       {
@@ -84,6 +83,7 @@
     "bundle"
   ],
   "devDependencies": {
+    "@types/fs-extra": "^8.1.0",
     "@types/jest": "^25.2.1",
     "babel-cli": "^7.0.0-beta.3",
     "babel-preset-env": "^7.0.0-beta.3",

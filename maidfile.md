@@ -55,3 +55,11 @@ INDEX=8 node src/createMultipleThemes.js
 ## out
 
 Run tasks `theme0` `theme1` `theme2` `theme3` `theme4` `theme5` `theme6` `theme7` and `theme8` in parallel.
+
+## publish
+
+Export to mono and afterwards make automatic bump
+
+```bash
+ls
+```
