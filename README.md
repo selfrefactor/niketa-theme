@@ -13,33 +13,33 @@ For those of you missing the old theme with its 18 themes, you can ewither insta
 
 ### Communication Breakdown
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/communication.breakdown.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.CommunicationBreakdown)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/communication.breakdown.png?raw=true)
 
 ### Dancing Days
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/dancing.days.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.DancingDays)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/dancing.days.png?raw=true)
 
 ### Funky Drummer
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/funky.drummer.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.FunkyDrummer)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/funky.drummer.png?raw=true)
 
 ### Glass Onion
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/glass.onion.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.GlassOnion)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/glass.onion.png?raw=true)
 
 ### Hello Spaceboy
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/hello.spaceboy.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.HelloSpaceboy)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/hello.spaceboy.png?raw=true)
 
 
 ### Kozmic Blues
@@ -50,21 +50,21 @@ For those of you missing the old theme with its 18 themes, you can ewither insta
 
 ### Led Zeppelin
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/led.zeppelin.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.LedZeppelin)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/led.zeppelin.png?raw=true)
 
 ### Strange Brew
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/strange.brew.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.StrangeBrew)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/strange.brew.png?raw=true)
 
 ### Sweat Leaf
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/sweat.leaf.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.SweatLeaf)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/sweat.leaf.png?raw=true)
 
 ## Dark themes
 
