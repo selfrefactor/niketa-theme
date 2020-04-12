@@ -5,13 +5,6 @@
 
 9 Light VSCode Themes with same background
 
-## Important
-
-Latest major version bump changed the number, the names and the colors of the themes.
-
-For those of you missing the old theme with its 18 themes, you can ewither install version `8.22.1` of this theme or install 
-[Niketa theme old](https://marketplace.visualstudio.com/items?itemName=selfrefactor.niketa-theme-old). There is no difference which one you choose.
-
 ## Screens
 
 ### Communication Breakdown
