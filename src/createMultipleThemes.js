@@ -1,13 +1,13 @@
 const { generateThemeData } = require('./bees/generateThemeData')
-const { mapToObject, delay } = require('rambdax')
+const { mapToObject } = require('rambdax')
 const { outputJSON } = require('fs-extra')
 const { readJsonAnt } = require('./ants/readJson')
 const { resolve } = require('path')
 
 const CHROME_COLOR = '#cdd0d2'
-const BACK_COLOR = '#F1F1F1'
-
-const listColors = {
+const BACK_COLOR = '#F3F3F3'
+ 
+const listColors = { 
   // in change of themes
   // in the circle of unsaved changes
   // in extensions preview

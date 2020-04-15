@@ -1,5 +1,4 @@
-import { readJson } from 'fs-extra'
-
+import { readJson, outputJson } from 'fs-extra'
 import { readJsonAnt } from '../../src/ants/readJson'
 
 export async function findMissingRules(){
