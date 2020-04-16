@@ -8,7 +8,7 @@ const { resolve } = require('path')
 // const CHROME_COLOR = '#cdd0d2'
 const CHROME_COLOR = '#9299aa'
 const BACK_COLOR = '#F3F3F3'
- 
+
 const listColors = {
   // in change of themes
   // in the circle of unsaved changes
