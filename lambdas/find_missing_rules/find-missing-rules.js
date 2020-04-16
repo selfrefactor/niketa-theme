@@ -38,8 +38,8 @@ export async function findMissingRules(label = 'lukin'){
 
   const allScopes = [ ...currentMissingScopes.missingScopes, ...localScopes ]
   const allColors = {
-    ...currentMissingColors.missingColors, 
-    ...local.colors
+    ...currentMissingColors.missingColors,
+    ...local.colors,
   }
 
   const missingScopes = foreignScopes.filter(x => !allScopes.includes(x))
@@ -59,7 +59,12 @@ export async function findMissingRules(label = 'lukin'){
   if (Object.keys(missingColors).length > 1){
     await outputJson(
       `${ __dirname }/missingColors.json`,
-      { missingColors: {...currentMissingColors.missingColors, ...missingColors} },
+      {
+        missingColors : {
+          ...currentMissingColors.missingColors,
+          ...missingColors,
+        },
+      },
       { spaces : 2 }
     )
   }
