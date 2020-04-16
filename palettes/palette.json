@@ -91,6 +91,146 @@
   },
   "tokenColors": [
     {
+      "name": "keyword.control",
+      "scope": "keyword.control",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.other.property",
+      "scope": "variable.other.property",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.css.string",
+      "scope": "variable.css.string",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "entity.other.attribute-name",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.definition.normal.markdown",
+      "scope": "punctuation.definition.normal.markdown",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.object-literal.key",
+      "scope": "meta.object-literal.key",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "keyword.other.this",
+      "scope": "keyword.other.this",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.object.constant",
+      "scope": "variable.object.constant",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.readwrite.other.block",
+      "scope": "variable.readwrite.other.block",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.definition.heading.markdown",
+      "scope": "punctuation.definition.heading.markdown",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.diff.header",
+      "scope": "meta.diff.header",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "function.sass",
+      "scope": "function.sass",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.other.block",
+      "scope": "variable.other.block",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.type.property-name.sass",
+      "scope": "support.type.property-name.sass",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.constant.scss",
+      "scope": "support.constant.scss",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.separator.markdown",
+      "scope": "meta.separator.markdown",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.css",
+      "scope": "variable.css",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.constant.sass",
+      "scope": "support.constant.sass",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.variable",
+      "scope": "support.variable",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.type.property-name.less",
+      "scope": "support.type.property-name.less",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
       "name": "source.go",
       "scope": "source.go",
       "settings": {
@@ -401,6 +541,146 @@
       }
     },
     {
+      "name": "punctuation.definition.list_item.markdown",
+      "scope": "punctuation.definition.list_item.markdown",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.type.property-name.css",
+      "scope": "support.type.property-name.css",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "keyword.operator.other.elixir",
+      "scope": "keyword.operator.other.elixir",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "unit.less",
+      "scope": "unit.less",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "invalid.deprecated",
+      "scope": "invalid.deprecated",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.deleted",
+      "scope": "markup.deleted",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.constant.css",
+      "scope": "support.constant.css",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.variable.UnityEngine",
+      "scope": "support.variable.UnityEngine",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.other.constant.elixir",
+      "scope": "variable.other.constant.elixir",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.inserted",
+      "scope": "markup.inserted",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.bold.markdown",
+      "scope": "punctuation.definition.bold.markdown",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.scss.string",
+      "scope": "variable.scss.string",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.variable.elixir",
+      "scope": "punctuation.definition.variable.elixir",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.type.property-name.scss",
+      "scope": "support.type.property-name.scss",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.string",
+      "scope": "punctuation.definition.string",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.type",
+      "scope": "support.type",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "function.css",
+      "scope": "function.css",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "string",
+      "scope": "string",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.structure.dictionary.value.json",
+      "scope": "meta.structure.dictionary.value.json",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "unit.scss",
+      "scope": "unit.scss",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
       "name": "keyword",
       "scope": "keyword",
       "settings": {
@@ -660,6 +940,146 @@
       "scope": "variable",
       "settings": {
         "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.class",
+      "scope": "support.class",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "keyword.other.base",
+      "scope": "keyword.other.base",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "function.less",
+      "scope": "function.less",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.quote.markdown",
+      "scope": "markup.quote.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.function-call",
+      "scope": "entity.name.function-call",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.bold.markdown",
+      "scope": "markup.bold.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.underline.link.markdown",
+      "scope": "markup.underline.link.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.scss",
+      "scope": "variable.scss",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.less.string",
+      "scope": "variable.less.string",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "string.embedded.begin",
+      "scope": "string.embedded.begin",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.raw.inline.markdown",
+      "scope": "markup.raw.inline.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.tag.class",
+      "scope": "entity.name.tag.class",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.other.symbol.elixir",
+      "scope": "constant.other.symbol.elixir",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.constant.less",
+      "scope": "support.constant.less",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.variable.local",
+      "scope": "entity.name.variable.local",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "string.detected-link",
+      "scope": "string.detected-link",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.less",
+      "scope": "variable.less",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.numeric.css",
+      "scope": "constant.numeric.css",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.language.base",
+      "scope": "variable.language.base",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.sass.string",
+      "scope": "variable.sass.string",
+      "settings": {
+        "foreground": "COLOR_2"
       }
     },
     {
@@ -1041,6 +1461,146 @@
       }
     },
     {
+      "name": "meta.diff",
+      "scope": "meta.diff",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.readwrite",
+      "scope": "variable.readwrite",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "function.support.builtin",
+      "scope": "function.support.builtin",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.dictionary.json",
+      "scope": "support.dictionary.json",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "unit.sass",
+      "scope": "unit.sass",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.other.variable",
+      "scope": "support.other.variable",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "parameter.variable.function.elixir",
+      "scope": "parameter.variable.function.elixir",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "function.support.core",
+      "scope": "function.support.core",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "keyword.operator.logical",
+      "scope": "keyword.operator.logical",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.object.property",
+      "scope": "variable.other.object.property",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.constant",
+      "scope": "variable.other.constant",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "storage.identifier",
+      "scope": "storage.identifier",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "keyword.operator.constructor",
+      "scope": "keyword.operator.constructor",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "source.elixir",
+      "scope": "source.elixir",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.raw.block.markdown",
+      "scope": "markup.raw.block.markdown",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.numeric.scss",
+      "scope": "constant.numeric.scss",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.numeric.less",
+      "scope": "constant.numeric.less",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "string.embedded",
+      "scope": "string.embedded",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "keyword.operator",
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "string.quoted.double.json",
+      "scope": "string.quoted.double.json",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
       "name": "entity.other.ng-binding-name.property.html",
       "scope": "entity.other.ng-binding-name.property.html",
       "settings": {
@@ -1416,6 +1976,132 @@
       "scope": "variable.other.property.tsx",
       "settings": {
         "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.numeric.sass",
+      "scope": "constant.numeric.sass",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.module",
+      "scope": "entity.name.module",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "function.scss",
+      "scope": "function.scss",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.object",
+      "scope": "variable.other.object",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "storage",
+      "scope": "storage",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.filename.find-in-files",
+      "scope": "entity.name.filename.find-in-files",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.embedded.end",
+      "scope": "string.embedded.end",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.changed",
+      "scope": "markup.changed",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.module.elixir",
+      "scope": "variable.other.readwrite.module.elixir",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.variable.UnityEditor",
+      "scope": "support.variable.UnityEditor",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.alias",
+      "scope": "variable.other.alias",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "unit.css",
+      "scope": "unit.css",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.sass",
+      "scope": "variable.sass",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.comment",
+      "scope": "string.comment",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.tag.id",
+      "scope": "entity.name.tag.id",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.object.property",
+      "scope": "variable.object.property",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.structure.dictionary.json",
+      "scope": "meta.structure.dictionary.json",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.variable",
+      "scope": "entity.name.variable",
+      "settings": {
+        "foreground": "COLOR_4"
       }
     },
     {

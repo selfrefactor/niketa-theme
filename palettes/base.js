@@ -3,16 +3,16 @@ import { shuffle, splitEvery } from 'rambdax'
 import { missingColors } from '../lambdas/find_missing_rules/missingColors.json'
 import { missingScopes } from '../lambdas/find_missing_rules/missingScopes.json'
 
-// const [
-//   ADDITIONAL_0,
-//   ADDITIONAL_1,
-//   ADDITIONAL_2,
-//   ADDITIONAL_3,
-//   ADDITIONAL_4,
-// ] = splitEvery(5, shuffle(missingScopes))
+const [
+  ADDITIONAL_0,
+  ADDITIONAL_1,
+  ADDITIONAL_2,
+  ADDITIONAL_3,
+  ADDITIONAL_4,
+] = splitEvery(Math.ceil(missingScopes.length / 5), shuffle(missingScopes))
 
 const COLOR_0 = [
-  //...ADDITIONAL_0,
+  ...ADDITIONAL_0,
   'source.go',
   'entity.name.tag.UNDERLINE',
   'variable.language.constructor.UNDERLINE',
@@ -33,7 +33,7 @@ const COLOR_0 = [
 ]
 
 const COLOR_1 = [
-  //...ADDITIONAL_1,
+  ...ADDITIONAL_1,
   'keyword',
   'expression.ng',
   'entity.name.tag.class.js',
@@ -53,7 +53,7 @@ const COLOR_1 = [
 ]
 
 const COLOR_2 = [
-  //...ADDITIONAL_2,
+  ...ADDITIONAL_2,
   'string.quoted.double.html',
   'keyword.control.import.js',
   'source.json',
@@ -75,7 +75,7 @@ const COLOR_2 = [
 ]
 
 const COLOR_3 = [
-  //...ADDITIONAL_3,
+  ...ADDITIONAL_3,
   'entity.other.ng-binding-name.property.html',
   'punctuation.definition.parameters.begin.js',
   'punctuation.definition.parameters.end.js',
@@ -96,7 +96,7 @@ const COLOR_3 = [
 ]
 
 const COLOR_4 = [
-  //...ADDITIONAL_4,
+  ...ADDITIONAL_4,
   'entity.other.ng-binding-name.outputReplEvent.html',
   'entity.other.inherited-class',
   'support.constant',
