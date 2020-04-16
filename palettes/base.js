@@ -126,27 +126,7 @@ const COLOR_4 = [
 export const baseBase = {
   name   : '_Palette',
   type   : 'light',
-  colors : {
-    ...missingColors,
-    'editor.background'                : 'COLOR_BACK',
-    'activityBar.background'           : 'COLOR_SECONDARY',
-    'editor.selectionBackground'       : 'COLOR_SELECTION',
-    'editor.lineHighlightBackground'   : 'COLOR_SECONDARY',
-    'editorBracketMatch.background'    : 'COLOR_5_DARKER',
-    'editorBracketMatch.border'        : 'COLOR_4_DARKER',
-    'editorGroupHeader.tabsBackground' : 'COLOR_BACK_DARK',
-    'editorGutter.background'          : 'COLOR_BACK',
-    'editorLineNumber.foreground'      : 'COLOR_SECONDARY_DARKER',
-    'scrollbarSlider.background'       : 'COLOR_SECONDARY',
-    'scrollbarSlider.hoverBackground'  : 'COLOR_SECONDARY_DARKER',
-    'sideBar.background'               : 'COLOR_SECONDARY_DARK',
-    'statusBar.background'             : 'COLOR_SECONDARY_DARKEST',
-    'tab.inactiveForeground'           : 'COLOR_1_LIGHTER',
-    'tab.inactiveBackground'           : 'COLOR_SECONDARY_DARKEST',
-    'tab.activeForeground'             : 'COLOR_1_DARK',
-    'tab.activeBackground'             : 'COLOR_BACK',
-    'tab.border'                       : 'COLOR_BACK',
-  },
+  colors : {},
 }
 
 export const baseData = {
