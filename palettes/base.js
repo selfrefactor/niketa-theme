@@ -1,8 +1,15 @@
-import {shuffle, splitEvery} from 'rambdax'
-import {missingColors} from '../lambdas/find_missing_rules/missingColors.json'
-import {missingScopes} from '../lambdas/find_missing_rules/missingScopes.json'
+import { shuffle, splitEvery } from 'rambdax'
 
-const [ADDITIONAL_0, ADDITIONAL_1, ADDITIONAL_2, ADDITIONAL_3, ADDITIONAL_4] = splitEvery(5, shuffle(missingScopes))
+import { missingColors } from '../lambdas/find_missing_rules/missingColors.json'
+import { missingScopes } from '../lambdas/find_missing_rules/missingScopes.json'
+
+const [
+  ADDITIONAL_0,
+  ADDITIONAL_1,
+  ADDITIONAL_2,
+  ADDITIONAL_3,
+  ADDITIONAL_4,
+] = splitEvery(5, shuffle(missingScopes))
 
 const COLOR_0 = [
   ...ADDITIONAL_0,

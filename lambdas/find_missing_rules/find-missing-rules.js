@@ -1,13 +1,27 @@
 import { outputJson, readJson } from 'fs-extra'
-import { filter } from 'rambdax'
+import { filter, flatten, trim, uniq } from 'rambdax'
 
 import { readJsonAnt } from '../../src/ants/readJson'
 
-function extractRules(scope){
-  if (Array.isArray(scope)) return scope
-  if (typeof scope !== 'string') throw new Error('scope must be a string')
+function isBadScope(scope){
+  if (scope.includes(' .')) return true
+  if (scope.includes(' - ')) return true
 
-  return scope.split(',')
+  return false
+} 
+
+function removeBadScopes(scopes){
+  return scopes.filter(x => !x.endsWith('.jsx') && !x.endsWith('.tsx'))
+}
+
+function extractRules(scope){
+  if (Array.isArray(scope)) return scope.map(extractRules)
+  if (typeof scope !== 'string') throw new Error('scope must be a string')
+  if (isBadScope(scope)) return []
+
+  return scope.includes(',') ?
+    scope.split(',').map(trim) :
+    scope.split(' ').map(trim)
 }
 
 function getAllScopes(tokenColors){
@@ -18,7 +32,7 @@ function getAllScopes(tokenColors){
     toReturn = [ ...toReturn, ...languageRules ]
   })
 
-  return toReturn
+  return removeBadScopes(uniq(flatten(toReturn)))
 }
 
 const MISSING_SCOPES = `${ __dirname }/missingScopes.json`
