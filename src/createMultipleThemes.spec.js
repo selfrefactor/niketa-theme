@@ -9,3 +9,4 @@ test('happy', async () => {
     onLog   : () => {},
   })
 })
+ 

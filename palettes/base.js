@@ -3,16 +3,16 @@ import { shuffle, splitEvery } from 'rambdax'
 import { missingColors } from '../lambdas/find_missing_rules/missingColors.json'
 import { missingScopes } from '../lambdas/find_missing_rules/missingScopes.json'
 
-const [
-  ADDITIONAL_0,
-  ADDITIONAL_1,
-  ADDITIONAL_2,
-  ADDITIONAL_3,
-  ADDITIONAL_4,
-] = splitEvery(5, shuffle(missingScopes))
+// const [
+//   ADDITIONAL_0,
+//   ADDITIONAL_1,
+//   ADDITIONAL_2,
+//   ADDITIONAL_3,
+//   ADDITIONAL_4,
+// ] = splitEvery(5, shuffle(missingScopes))
 
 const COLOR_0 = [
-  ...ADDITIONAL_0,
+  //...ADDITIONAL_0,
   'source.go',
   'entity.name.tag.UNDERLINE',
   'variable.language.constructor.UNDERLINE',
@@ -33,9 +33,10 @@ const COLOR_0 = [
 ]
 
 const COLOR_1 = [
-  ...ADDITIONAL_1,
+  //...ADDITIONAL_1,
   'keyword',
   'expression.ng',
+  'entity.name.tag.class.js',
   'meta.brace.round.js',
   'constant.language.boolean',
   'constant.numeric',
@@ -43,6 +44,7 @@ const COLOR_1 = [
   'entity.name.class.UNDERLINE',
   'entity.name.function.UNDERLINE',
   'entity.name.type.UNDERLINE',
+  'string.template.js',
   'markup.heading.markdown',
   'meta.tag.attributes.js',
   'support.variable.property.js',
@@ -51,7 +53,7 @@ const COLOR_1 = [
 ]
 
 const COLOR_2 = [
-  ...ADDITIONAL_2,
+  //...ADDITIONAL_2,
   'string.quoted.double.html',
   'keyword.control.import.js',
   'source.json',
@@ -73,7 +75,7 @@ const COLOR_2 = [
 ]
 
 const COLOR_3 = [
-  ...ADDITIONAL_3,
+  //...ADDITIONAL_3,
   'entity.other.ng-binding-name.property.html',
   'punctuation.definition.parameters.begin.js',
   'punctuation.definition.parameters.end.js',
@@ -94,7 +96,7 @@ const COLOR_3 = [
 ]
 
 const COLOR_4 = [
-  ...ADDITIONAL_4,
+  //...ADDITIONAL_4,
   'entity.other.ng-binding-name.outputReplEvent.html',
   'entity.other.inherited-class',
   'support.constant',
@@ -113,6 +115,11 @@ const COLOR_4 = [
   'variable.language',
   'storage.modifier.async.js',
   'variable.other.readwrite',
+  'punctuation.definition.template-expression.begin.js',
+  'punctuation.definition.template-expression.end.js',
+  'punctuation.definition.template-expression.begin.ts',
+  'punctuation.definition.template-expression.end.ts',
+  'meta.template.expression.js',
   'variable.other.readwrite.js',
 ]
 

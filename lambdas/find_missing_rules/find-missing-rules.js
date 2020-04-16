@@ -8,7 +8,7 @@ function isBadScope(scope){
   if (scope.includes(' - ')) return true
 
   return false
-} 
+}
 
 function removeBadScopes(scopes){
   return scopes.filter(x => !x.endsWith('.jsx') && !x.endsWith('.tsx'))
