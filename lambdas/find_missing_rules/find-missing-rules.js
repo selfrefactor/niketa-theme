@@ -1,6 +1,6 @@
 import { outputJson, readJson } from 'fs-extra'
 import { filter, flatten, trim, uniq } from 'rambdax'
-
+import { resolve } from 'path'
 import { readJsonAnt } from '../../src/ants/readJson'
 
 function isBadScope(scope){
@@ -37,8 +37,11 @@ function getAllScopes(tokenColors){
 
 const MISSING_SCOPES = `${ __dirname }/missingScopes.json`
 const MISSING_COLORS = `${ __dirname }/missingColors.json`
+const MISSING_COLORS_DARK = resolve(__dirname, '../../../niketa-themes/packages/niketa_dark/src/missingColors.json')
 
 export async function findMissingRules(label = 'lukin'){
+  const outputMissingColors = label.startsWith('dark') ? MISSING_COLORS_DARK : MISSING_COLORS
+
   const foreign = await readJson(`${ __dirname }/assets/${ label }.json`)
   const local = await readJsonAnt('themes/CommunicationBreakdown.json')
   const currentMissingScopes = await readJsonAnt(MISSING_SCOPES)
@@ -75,10 +78,10 @@ export async function findMissingRules(label = 'lukin'){
   console.log(Object.keys(local.colors).length)
   console.log(Object.keys(foreign.colors).length)
   console.log(Object.keys(missingColors).length)
-
+ 
   if (Object.keys(missingColors).length > 1){
     await outputJson(
-      `${ __dirname }/missingColors.json`,
+      outputMissingColors,
       {
         missingColors : {
           ...currentMissingColors.missingColors,
