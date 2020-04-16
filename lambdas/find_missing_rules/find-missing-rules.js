@@ -95,9 +95,4 @@ export async function findMissingRules(label = 'lukin'){
       { spaces : 2 }
     )
   }
-
-  expect({
-    missingScopes,
-    missingColors,
-  }).toMatchSnapshot()
 }

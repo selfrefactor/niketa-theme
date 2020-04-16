@@ -1,6 +1,5 @@
 import { shuffle, splitEvery } from 'rambdax'
 
-import { missingColors } from '../lambdas/find_missing_rules/missingColors.json'
 import { missingScopes } from '../lambdas/find_missing_rules/missingScopes.json'
 
 const [
@@ -13,6 +12,7 @@ const [
 
 const COLOR_0 = [
   ...ADDITIONAL_0,
+  'variable.import.parameter.js',
   'source.go',
   'entity.name.tag.UNDERLINE',
   'variable.language.constructor.UNDERLINE',
@@ -22,6 +22,7 @@ const COLOR_0 = [
   'source.js',
   'variable.parameter',
   'storage.modifier.js',
+  'entity.name.method.js',
   'punctuation.separator.key-value.js',
   'storage.type',
   'string.quoted.single.js',
@@ -41,6 +42,7 @@ const COLOR_1 = [
   'constant.language.boolean',
   'constant.numeric',
   'constant.language.null.js',
+  'punctuation.definition.tag.js',
   'entity.name.class.UNDERLINE',
   'entity.name.function.UNDERLINE',
   'entity.name.type.UNDERLINE',
@@ -58,6 +60,7 @@ const COLOR_2 = [
   'keyword.control.import.js',
   'source.json',
   'source.css',
+  'entity.name.module.js',
   'support.function',
   'variable.other.constant.js',
   'support.type.object.module.js',
@@ -67,6 +70,7 @@ const COLOR_2 = [
   'entity.other.attribute-name.js',
   'string.quoted.single.js',
   'string.quoted.single.json',
+  'meta.class-method.js',
   'keyword.control.module.js',
   'support.class.promise.js',
   'support.type.object.console.js',
@@ -76,22 +80,25 @@ const COLOR_2 = [
 
 const COLOR_3 = [
   ...ADDITIONAL_3,
+  'constant.other.object.key.js',
+  'entity.name.function.method',
   'entity.other.ng-binding-name.property.html',
-  'punctuation.definition.parameters.begin.js',
-  'punctuation.definition.parameters.end.js',
+  'keyword.control.default.js',
   'keyword.control.export.js',
   'keyword.control.from.js',
-  'markup.quote',
-  'meta.tag.js',
-  'meta.parameters.js',
-  'meta.brace.square.js',
-  'variable.other.class.js',
-  'constant.other.object.key.js',
   'keyword.operator.accessor',
-  'keyword.control.default.js',
-  'entity.name.function.method',
+  'markup.quote',
+  'meta.brace.square.js',
+  'meta.parameters.js',
+  'meta.tag.js',
+  'entity.name.tag.js',
+  'entity.name.function.js',
+  'punctuation.definition.parameters.begin.js',
+  'punctuation.definition.parameters.end.js',
+  'string.unquoted.label.js',
   'string.template',
   'support.type.property-name.json',
+  'variable.other.class.js',
   'variable.other.property.js',
 ]
 
@@ -103,6 +110,7 @@ const COLOR_4 = [
   'punctuation.separator.parameter.js',
   'constant.character',
   'constant.language',
+  'tag.decorator.js',
   'constant.other',
   'support.class.builtin.js',
   'comment',

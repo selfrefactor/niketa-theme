@@ -1,14 +1,14 @@
 const { generateThemeData } = require('./bees/generateThemeData')
 const { mapToObject } = require('rambdax')
+const { missingColors } = require('../lambdas/find_missing_rules/missingColors.json')
 const { outputJSON } = require('fs-extra')
 const { readJsonAnt } = require('./ants/readJson')
 const { resolve } = require('path')
-const { missingColors } = require('../lambdas/find_missing_rules/missingColors.json')
 
 // const CHROME_COLOR = '#cdd0d2'
 const CHROME_COLOR = '#9299aa'
 const BACK_COLOR = '#F3F3F3'
-
+ 
 const listColors = {
   // in change of themes
   // in the circle of unsaved changes
