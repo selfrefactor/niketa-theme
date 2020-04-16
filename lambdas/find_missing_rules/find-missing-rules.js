@@ -11,7 +11,7 @@ function isBadScope(scope){
 }
 
 function removeBadScopes(scopes){
-  return scopes.filter(x => !x.endsWith('.jsx') && !x.endsWith('.tsx'))
+  return scopes.filter(x => !x.endsWith('.jsx') && !x.endsWith('.tsx') && !x.endsWith('.ts'))
 }
 
 function extractRules(scope){
@@ -44,9 +44,6 @@ export async function findMissingRules(label = 'lukin'){
   const currentMissingScopes = await readJsonAnt(MISSING_SCOPES)
   const currentMissingColors = await readJsonAnt(MISSING_COLORS)
 
-  console.log(currentMissingScopes.missingScopes[ 0 ])
-  console.log(currentMissingScopes.missingScopes.length)
-
   const foreignScopes = getAllScopes(foreign.tokenColors)
   const localScopes = getAllScopes(local.tokenColors)
 
@@ -55,8 +52,17 @@ export async function findMissingRules(label = 'lukin'){
     ...currentMissingColors.missingColors,
     ...local.colors,
   }
+  const jsRules = []
+  const missingScopes = foreignScopes.filter(x => {
+    if (allScopes.includes(x)) return false
+    if (x.endsWith('.js')){
+      jsRules.push(x)
 
-  const missingScopes = foreignScopes.filter(x => !allScopes.includes(x))
+      return false
+    }
+
+    return true
+  })
   const missingColors = filter((x, prop) => {
     if (allColors[ prop ]) return false
 
@@ -95,4 +101,6 @@ export async function findMissingRules(label = 'lukin'){
       { spaces : 2 }
     )
   }
+
+  expect(jsRules).toMatchSnapshot()
 }
