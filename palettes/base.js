@@ -1,4 +1,4 @@
-export const COLOR_0 = [
+const COLOR_0 = [
   'source.go',
   'entity.name.tag.UNDERLINE',
   'variable.language.constructor.UNDERLINE',
@@ -18,7 +18,7 @@ export const COLOR_0 = [
   'variable.language.this',
 ]
 
-export const COLOR_1 = [
+const COLOR_1 = [
   'keyword',
   'expression.ng',
   'meta.brace.round.js',
@@ -35,7 +35,7 @@ export const COLOR_1 = [
   'variable',
 ]
 
-export const COLOR_2 = [
+const COLOR_2 = [
   'string.quoted.double.html',
   'keyword.control.import.js',
   'source.json',
@@ -56,7 +56,7 @@ export const COLOR_2 = [
   'punctuation.definition.block.js',
 ]
 
-export const COLOR_3 = [
+const COLOR_3 = [
   'entity.other.ng-binding-name.property.html',
   'punctuation.definition.parameters.begin.js',
   'punctuation.definition.parameters.end.js',
@@ -76,7 +76,7 @@ export const COLOR_3 = [
   'variable.other.property.js',
 ]
 
-export const COLOR_4 = [
+const COLOR_4 = [
   'entity.other.ng-binding-name.outputReplEvent.html',
   'entity.other.inherited-class',
   'support.constant',
