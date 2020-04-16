@@ -7,7 +7,7 @@
   "publisher": "selfrefactor",
   "scripts": {
     "dev": "jest lambdas/export_to_mono/exportToMono.spec.js --watch",
-    "export_to_mono": "jest lambdas/export_to_mono/exportToMono.spec.js",
+    "export": "jest lambdas/export_to_mono/exportToMono.spec.js",
     "test": "jest src/createMultipleThemes.spec.js",
     "out": "maided out",
     "bump": "maided bump"
