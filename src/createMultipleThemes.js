@@ -14,6 +14,7 @@ const BORDER = '#76608a'
 const WARNING = '#d13438'
 const SOFT_WARNING = '#744da9'
 const ACCENT_BACKGROUND = '#ea5c0055'
+const SOFTER_ACCENT = '#834962'
 
 const listColors = {
   // in change of themes
@@ -52,6 +53,18 @@ const sidebarColors = {
   'sideBarTitle.foreground'         : '#30322e',
 }
 
+const menuColors = {
+  "menu.border": BORDER,
+  'menu.background'             : BACK_COLOR,
+  'menu.foreground'             : DARK,
+  'menu.selectionBackground'    : `${SOFTER_ACCENT}66`,
+  'menu.selectionForeground'    : DARK,
+  'menu.separatorBackground'    : `${DARK}88`,
+  'menubar.selectionBackground' : `${SOFTER_ACCENT}66`,
+  'menubar.selectionBorder'     : BORDER,
+  'menubar.selectionForeground' : DARK,
+}
+
 const suggestionsColors = {
   // in autocomplete box, the active line background
   'editorSuggestWidget.selectedBackground'  : '#2c3d5244',
@@ -77,7 +90,7 @@ const selectionColors = {
 }
 
 const fromMissingColors = {
-  // when using `exx` snippet 
+  // when using `exx` snippet
   'editor.snippetTabstopHighlightBackground' : ACCENT_BACKGROUND,
   'editorGroupHeader.tabsBorder'             : CHROME_COLOR_ACCENT,
   'editorGroup.border'                       : BORDER,
@@ -88,7 +101,7 @@ const fromMissingColors = {
   'input.background'                         : CHROME_BRIGHTER,
   'input.foreground'                         : DARK,
   'input.border'                             : BORDER,
-  'input.placeholderForeground'              : `${DARK}88`,
+  'input.placeholderForeground'              : `${ DARK }88`,
   'debugToolBar.background'                  : BACK_COLOR,
   'titleBar.activeBackground'                : BACK_COLOR,
   'titleBar.activeForeground'                : DARK,
@@ -106,6 +119,7 @@ const fromMissingColors = {
 const chromeColors = {
   ...missingColors,
   ...fromMissingColors,
+  ...menuColors,
   ...selectionColors,
   ...sidebarColors,
   ...suggestionsColors,
@@ -155,14 +169,14 @@ const chromeColors = {
   'tab.activeBorderTop'                       : '#35495f',
   'tab.activeForeground'                      : '#35495f',
   'tab.border'                                : CHROME_COLOR_ACCENT,
-  'tab.inactiveBackground'                    : CHROME_COLOR,
+  'tab.inactiveBackground'                    : CHROME_COLOR_ACCENT,
   'tab.inactiveForeground'                    : '#fff',
   'tab.unfocusedActiveBackground'             : CHROME_COLOR,
   'tab.unfocusedActiveBorder'                 : CHROME_COLOR,
   'tab.unfocusedActiveForeground'             : '#aa769b',
   'widget.shadow'                             : '#8382aebb',
 }
-
+ 
 const CommunicationBreakdown = [
   '#b66ae4',
   '#480032',
