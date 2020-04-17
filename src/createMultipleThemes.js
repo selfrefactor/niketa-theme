@@ -8,7 +8,7 @@ const { resolve } = require('path')
 const CHROME_COLOR = '#c3c7cb'
 const BACK_COLOR = '#F3F3F3'
 const DARK = '#083358'
-const BORDER = '#B1365B'
+const BORDER = '#76608a'
 
 const listColors = {
   // in change of themes
