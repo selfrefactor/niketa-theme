@@ -7,7 +7,7 @@ const { resolve } = require('path')
 
 const CHROME_BRIGHTER = '#d1d1d1'
 const CHROME_COLOR = '#c3c7cb'
-const CHROME_COLOR_ACCENT = '#adb3bc'
+const CHROME_COLOR_ACCENT = '#b0b6bf'
 const BACK_COLOR = '#F3F3F3'
 const DARK = '#083358'
 const BORDER = '#76608a'
@@ -15,7 +15,7 @@ const WARNING = '#d13438'
 const SOFT_WARNING = '#744da9'
 const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
-
+ 
 const listColors = {
   // in change of themes
   'quickInput.background'            : CHROME_COLOR,
@@ -114,8 +114,9 @@ const fromMissingColors = {
   'listFilterWidget.background'              : CHROME_COLOR,
   'listFilterWidget.noMatchesOutline'        : WARNING,
   'listFilterWidget.outline'                 : SOFT_WARNING,
-  "inputValidation.infoBackground": CHROME_COLOR,
-  "inputValidation.warningBackground": CHROME_COLOR_ACCENT,
+  'inputValidation.infoBackground'           : CHROME_COLOR,
+  'inputValidation.warningBackground'        : CHROME_COLOR,
+  'editorGroupHeader.noTabsBackground'       : BACK_COLOR,
 }
 
 const chromeColors = {
