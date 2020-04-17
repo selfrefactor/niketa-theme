@@ -6,6 +6,7 @@ const { readJsonAnt } = require('./ants/readJson')
 const { resolve } = require('path')
 
 const CHROME_COLOR = '#c3c7cb'
+const CHROME_COLOR_ACCENT = '#adb3bc'
 const BACK_COLOR = '#F3F3F3'
 const DARK = '#083358'
 const BORDER = '#76608a'
@@ -14,7 +15,7 @@ const SOFT_WARNING = '#744da9'
 
 const listColors = {
   // in change of themes
-  "quickInput.background": CHROME_COLOR,
+  'quickInput.background'            : CHROME_COLOR,
   // in the circle of unsaved changes
   // in extensions preview
   'foreground'                       : '#24283b',
@@ -146,7 +147,7 @@ const chromeColors = {
   'tab.activeBackground'                      : BACK_COLOR,
   'tab.activeBorder'                          : '#35495f',
   'tab.activeForeground'                      : '#35495f',
-  'tab.border'                                : CHROME_COLOR,
+  'tab.border'                                : CHROME_COLOR_ACCENT,
   'tab.inactiveBackground'                    : CHROME_COLOR,
   'tab.inactiveForeground'                    : '#fff',
   'tab.unfocusedActiveBackground'             : CHROME_COLOR,
@@ -154,9 +155,7 @@ const chromeColors = {
   'tab.unfocusedActiveForeground'             : '#aa769b',
   'widget.shadow'                             : '#8382aebb',
 }
-/*
-  COLOR_0 is barely visible
-*/
+
 const CommunicationBreakdown = [
   '#b66ae4',
   '#480032',
@@ -174,15 +173,15 @@ const StrangeBrew = [ '#00a8cc', '#222d60', '#953b69', '#b24826', '#01676b' ]
 const SweatLeaf = [ '#2f586f', '#a83c56', '#0031df', '#d239a0', '#bb9132' ]
 
 const SETTINGS = [
-  { LedZeppelin },
-  { SweatLeaf },
-  { HelloSpaceboy },
   { CommunicationBreakdown },
-  { GlassOnion },
   { DancingDays },
   { FunkyDrummer },
+  { GlassOnion },
+  { HelloSpaceboy },
   { KozmicBlues },
+  { LedZeppelin },
   { StrangeBrew },
+  { SweatLeaf },
 ]
 const palette = readJsonAnt('palettes/palette.json')
 
