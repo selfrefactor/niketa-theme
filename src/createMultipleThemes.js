@@ -7,6 +7,8 @@ const { resolve } = require('path')
 
 const CHROME_COLOR = '#c3c7cb'
 const BACK_COLOR = '#F3F3F3'
+const DARK = '#083358'
+const BORDER = '#B1365B'
 
 const listColors = {
   // in change of themes
@@ -73,27 +75,42 @@ const chromeColors = {
   ...sidebarColors,
   ...suggestionsColors,
   ...listColors,
-  'editor.background'                         : BACK_COLOR,
-  'editor.foreground'                         : '#192112',
-  'editor.lineHighlightBorder'                : '#9c824a',
-  'editor.foldBackground'                     : '#fafafa',
-  'activityBar.background'                    : '#C4BE9D',
-  'badge.background'                          : '#e7e7e7',
-  'badge.foreground'                          : '#3f7063',
-  'diffEditor.insertedTextBackground'         : '#9c824a55',
-  'diffEditor.removedTextBackground'          : '#64B5F655',
-  'editor.findMatchBackground'                : '#aaff1144',
-  'editor.findMatchHighlightBackground'       : '#71aac333',
-  'editor.findRangeHighlightBackground'       : '#3f706355',
-  'editor.lineHighlightBackground'            : BACK_COLOR,
+  'editor.background'                    : BACK_COLOR,
+  'editor.foreground'                    : '#192112',
+  'editor.lineHighlightBorder'           : '#9c824a',
+  'editor.foldBackground'                : '#fafafa',
+  'activityBar.background'               : '#C4BE9D',
+  'badge.background'                     : '#e7e7e7',
+  'badge.foreground'                     : '#3f7063',
+  'diffEditor.insertedTextBackground'    : '#9c824a55',
+  'diffEditor.removedTextBackground'     : '#64B5F655',
+  'editor.findMatchBackground'           : '#aaff1144',
+  'editor.findMatchHighlightBackground'  : '#71aac333',
+  'editor.findRangeHighlightBackground'  : '#3f706355',
+  'editor.lineHighlightBackground'       : BACK_COLOR,
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'            : '#aa769b55',
-  'editor.wordHighlightStrongBackground'      : '#410a0b44',
-  'editorBracketMatch.background'             : '#87775750',
-  'editorBracketMatch.border'                 : BACK_COLOR,
-  'editorCursor.foreground'                   : '#544',
-  "terminal.background": BACK_COLOR,
+  'editor.wordHighlightBackground'       : '#aa769b55',
+  'editor.wordHighlightStrongBackground' : '#410a0b44',
+  'editorBracketMatch.background'        : '#87775750',
+  'editorBracketMatch.border'            : BACK_COLOR,
+  'editorCursor.foreground'              : '#544',
+  // Below are new includes from `missingColors.json`
+  // ============================================
+  'debugToolBar.background'     : BACK_COLOR,
+  'titleBar.activeBackground'   : BACK_COLOR,
+  'titleBar.activeForeground'   : DARK,
+  'titleBar.inactiveBackground' : CHROME_COLOR,
+  'titleBar.inactiveForeground' : BACK_COLOR,
+  'dropdown.listBackground'     : CHROME_COLOR,
+  "dropdown.background": CHROME_COLOR,
+  "dropdown.border": BORDER,
+  "dropdown.foreground": BACK_COLOR,
+  // Above are new includes from `missingColors.json`
+  // ============================================
+  'statusBar.noFolderBackground'              : BACK_COLOR,
+  'statusBar.debuggingBackground'             : BACK_COLOR,
+  'terminal.background'                       : BACK_COLOR,
   'editorGroup.emptyBackground'               : BACK_COLOR,
   'tab.hoverBackground'                       : '#64B5F655',
   'editorGroupHeader.tabsBackground'          : CHROME_COLOR,
