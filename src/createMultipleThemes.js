@@ -54,13 +54,13 @@ const sidebarColors = {
 }
 
 const menuColors = {
-  "menu.border": BORDER,
+  'menu.border'                 : BORDER,
   'menu.background'             : BACK_COLOR,
   'menu.foreground'             : DARK,
-  'menu.selectionBackground'    : `${SOFTER_ACCENT}66`,
+  'menu.selectionBackground'    : `${ SOFTER_ACCENT }66`,
   'menu.selectionForeground'    : DARK,
-  'menu.separatorBackground'    : `${DARK}88`,
-  'menubar.selectionBackground' : `${SOFTER_ACCENT}66`,
+  'menu.separatorBackground'    : `${ DARK }88`,
+  'menubar.selectionBackground' : `${ SOFTER_ACCENT }66`,
   'menubar.selectionBorder'     : BORDER,
   'menubar.selectionForeground' : DARK,
 }
@@ -114,6 +114,8 @@ const fromMissingColors = {
   'listFilterWidget.background'              : CHROME_COLOR,
   'listFilterWidget.noMatchesOutline'        : WARNING,
   'listFilterWidget.outline'                 : SOFT_WARNING,
+  "inputValidation.infoBackground": CHROME_COLOR,
+  "inputValidation.warningBackground": CHROME_COLOR_ACCENT,
 }
 
 const chromeColors = {
@@ -176,7 +178,7 @@ const chromeColors = {
   'tab.unfocusedActiveForeground'             : '#aa769b',
   'widget.shadow'                             : '#8382aebb',
 }
- 
+
 const CommunicationBreakdown = [
   '#b66ae4',
   '#480032',
