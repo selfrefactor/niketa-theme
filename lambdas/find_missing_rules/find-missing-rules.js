@@ -1,5 +1,6 @@
 import { outputJson, readJson } from 'fs-extra'
 import { filter, flatten, trim, uniq } from 'rambdax'
+
 import { readJsonAnt } from '../../src/ants/readJson'
 
 function isBadScope(scope){
@@ -74,7 +75,7 @@ export async function findMissingRules(label = 'lukin'){
   console.log(Object.keys(local.colors).length)
   console.log(Object.keys(foreign.colors).length)
   console.log(Object.keys(missingColors).length)
- 
+
   if (Object.keys(missingColors).length > 1){
     await outputJson(
       MISSING_COLORS_DARK,
