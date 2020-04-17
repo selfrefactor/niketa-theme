@@ -67,7 +67,7 @@ const selectionColors = {
   'editor.selectionBackground'          : `${ CHROME_COLOR }55`,
   'editor.selectionHighlightBackground' : `${ CHROME_COLOR }77`,
   'editor.inactiveSelectionBackground'  : '#aaab9c66',
-} 
+}
 
 const chromeColors = {
   ...missingColors,
