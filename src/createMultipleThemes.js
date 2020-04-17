@@ -38,6 +38,7 @@ const listColors = {
   'list.hoverForeground'             : '#e7e7e7',
   'list.hoverBackground'             : '#ad680066',
 }
+
 const sidebarColors = {
   'sideBar.background'              : CHROME_COLOR,
   // It means the color of files in explorer, not yet modified
@@ -101,6 +102,7 @@ const chromeColors = {
   'editorCursor.foreground'                   : '#544',
   // Below are new includes from `missingColors.json`
   // ============================================
+  'editorGroupHeader.tabsBorder'              : CHROME_COLOR_ACCENT,
   'editorGroup.border'                        : BORDER,
   'statusBar.noFolderBackground'              : BACK_COLOR,
   'statusBar.debuggingBackground'             : BACK_COLOR,
@@ -146,6 +148,7 @@ const chromeColors = {
   'statusBar.foreground'                      : '#35495f',
   'tab.activeBackground'                      : BACK_COLOR,
   'tab.activeBorder'                          : '#35495f',
+  'tab.activeBorderTop'                       : '#35495f',
   'tab.activeForeground'                      : '#35495f',
   'tab.border'                                : CHROME_COLOR_ACCENT,
   'tab.inactiveBackground'                    : CHROME_COLOR,
