@@ -67,7 +67,7 @@ const selectionColors = {
   'editor.selectionBackground'          : `${ CHROME_COLOR }55`,
   'editor.selectionHighlightBackground' : `${ CHROME_COLOR }77`,
   'editor.inactiveSelectionBackground'  : '#aaab9c66',
-}
+} 
 
 const chromeColors = {
   ...missingColors,
@@ -95,17 +95,24 @@ const chromeColors = {
   'editorBracketMatch.background'        : '#87775750',
   'editorBracketMatch.border'            : BACK_COLOR,
   'editorCursor.foreground'              : '#544',
+
   // Below are new includes from `missingColors.json`
   // ============================================
-  'debugToolBar.background'     : BACK_COLOR,
-  'titleBar.activeBackground'   : BACK_COLOR,
-  'titleBar.activeForeground'   : DARK,
-  'titleBar.inactiveBackground' : CHROME_COLOR,
-  'titleBar.inactiveForeground' : BACK_COLOR,
-  'dropdown.listBackground'     : CHROME_COLOR,
-  "dropdown.background": CHROME_COLOR,
-  "dropdown.border": BORDER,
-  "dropdown.foreground": BACK_COLOR,
+  'editorGroup.border'                        : BORDER,
+  'statusBar.noFolderBackground'              : BACK_COLOR,
+  'statusBar.debuggingBackground'             : BACK_COLOR,
+  'panel.border'                              : BORDER,
+  'panel.background'                          : BACK_COLOR,
+  'input.background'                          : '#35495f',
+  'debugToolBar.background'                   : BACK_COLOR,
+  'titleBar.activeBackground'                 : BACK_COLOR,
+  'titleBar.activeForeground'                 : DARK,
+  'titleBar.inactiveBackground'               : CHROME_COLOR,
+  'titleBar.inactiveForeground'               : BACK_COLOR,
+  'dropdown.listBackground'                   : CHROME_COLOR,
+  'dropdown.background'                       : CHROME_COLOR,
+  'dropdown.border'                           : BORDER,
+  'dropdown.foreground'                       : BACK_COLOR,
   // Above are new includes from `missingColors.json`
   // ============================================
   'statusBar.noFolderBackground'              : BACK_COLOR,
