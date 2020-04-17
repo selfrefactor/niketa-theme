@@ -14,6 +14,7 @@ const SOFT_WARNING = '#744da9'
 
 const listColors = {
   // in change of themes
+  "quickInput.background": CHROME_COLOR,
   // in the circle of unsaved changes
   // in extensions preview
   'foreground'                       : '#24283b',
