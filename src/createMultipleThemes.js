@@ -5,8 +5,7 @@ const { outputJSON } = require('fs-extra')
 const { readJsonAnt } = require('./ants/readJson')
 const { resolve } = require('path')
 
-// const CHROME_COLOR = '#cdd0d2'
-const CHROME_COLOR = '#9299aa'
+const CHROME_COLOR = '#c3c7cb'
 const BACK_COLOR = '#F3F3F3'
 
 const listColors = {
@@ -75,6 +74,7 @@ const chromeColors = {
   ...suggestionsColors,
   ...listColors,
   'editor.background'                         : BACK_COLOR,
+  'editor.foreground'                         : '#192112',
   'editor.lineHighlightBorder'                : '#9c824a',
   'editor.foldBackground'                     : '#fafafa',
   'activityBar.background'                    : '#C4BE9D',
@@ -93,7 +93,10 @@ const chromeColors = {
   'editorBracketMatch.background'             : '#87775750',
   'editorBracketMatch.border'                 : BACK_COLOR,
   'editorCursor.foreground'                   : '#544',
+  "editorGroup.emptyBackground": BACK_COLOR,
+  'tab.hoverBackground'                       : '#64B5F655',
   'editorGroupHeader.tabsBackground'          : CHROME_COLOR,
+  'editorGutter.background'                   : `${ CHROME_COLOR }99`,
   'editorLineNumber.foreground'               : '#2a3343a9',
   'editorLink.activeForeground'               : '#034694',
   'errorForeground'                           : '#B1365Bf3',
