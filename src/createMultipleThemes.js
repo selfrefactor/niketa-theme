@@ -12,6 +12,7 @@ const DARK = '#083358'
 const BORDER = '#76608a'
 const WARNING = '#d13438'
 const SOFT_WARNING = '#744da9'
+const ACCENT_BACKGROUND = '#ea5c0055'
 
 const listColors = {
   // in change of themes
@@ -37,7 +38,7 @@ const listColors = {
   // visible in autocomplete, in suggest, change of theme
   'list.hoverForeground'             : '#e7e7e7',
   'list.hoverBackground'             : '#ad680066',
-}
+} 
 
 const sidebarColors = {
   'sideBar.background'              : CHROME_COLOR,
@@ -49,7 +50,7 @@ const sidebarColors = {
   'sideBarSectionHeader.foreground' : '#2a3343',
   'sideBarTitle.foreground'         : '#30322e',
 }
-
+ 
 const suggestionsColors = {
   // in autocomplete box, the active line background
   'editorSuggestWidget.selectedBackground'  : '#2c3d5244',
@@ -74,8 +75,36 @@ const selectionColors = {
   'editor.inactiveSelectionBackground'  : '#aaab9c66',
 }
 
+const fromMissingColors = {
+    // when using `exx` snippet
+    "editor.snippetTabstopHighlightBackground": ACCENT_BACKGROUND,
+    'editorGroupHeader.tabsBorder'              : CHROME_COLOR_ACCENT,
+    'editorGroup.border'                        : BORDER,
+    'statusBar.noFolderBackground'              : BACK_COLOR,
+    'statusBar.debuggingBackground'             : BACK_COLOR,
+    'panel.border'                              : BORDER,
+    'panel.background'                          : BACK_COLOR,
+    'input.background'                          : CHROME_COLOR,
+    'input.foreground'                          : DARK,
+    'input.border'                              : BORDER,
+    'input.placeholderForeground'               : BACK_COLOR,
+    'debugToolBar.background'                   : BACK_COLOR,
+    'titleBar.activeBackground'                 : BACK_COLOR,
+    'titleBar.activeForeground'                 : DARK,
+    'titleBar.inactiveBackground'               : CHROME_COLOR,
+    'titleBar.inactiveForeground'               : BACK_COLOR,
+    'dropdown.listBackground'                   : CHROME_COLOR,
+    'dropdown.background'                       : CHROME_COLOR,
+    'dropdown.border'                           : BORDER,
+    'dropdown.foreground'                       : BACK_COLOR,
+    'listFilterWidget.background'               : CHROME_COLOR,
+    'listFilterWidget.noMatchesOutline'         : WARNING,
+    'listFilterWidget.outline'                  : SOFT_WARNING,
+}
+
 const chromeColors = {
   ...missingColors,
+  ...fromMissingColors,
   ...selectionColors,
   ...sidebarColors,
   ...suggestionsColors,
@@ -100,32 +129,6 @@ const chromeColors = {
   'editorBracketMatch.background'             : '#87775750',
   'editorBracketMatch.border'                 : BACK_COLOR,
   'editorCursor.foreground'                   : '#544',
-  // Below are new includes from `missingColors.json`
-  // ============================================
-  'editorGroupHeader.tabsBorder'              : CHROME_COLOR_ACCENT,
-  'editorGroup.border'                        : BORDER,
-  'statusBar.noFolderBackground'              : BACK_COLOR,
-  'statusBar.debuggingBackground'             : BACK_COLOR,
-  'panel.border'                              : BORDER,
-  'panel.background'                          : BACK_COLOR,
-  'input.background'                          : CHROME_COLOR,
-  'input.foreground'                          : DARK,
-  'input.border'                              : BORDER,
-  'input.placeholderForeground'               : BACK_COLOR,
-  'debugToolBar.background'                   : BACK_COLOR,
-  'titleBar.activeBackground'                 : BACK_COLOR,
-  'titleBar.activeForeground'                 : DARK,
-  'titleBar.inactiveBackground'               : CHROME_COLOR,
-  'titleBar.inactiveForeground'               : BACK_COLOR,
-  'dropdown.listBackground'                   : CHROME_COLOR,
-  'dropdown.background'                       : CHROME_COLOR,
-  'dropdown.border'                           : BORDER,
-  'dropdown.foreground'                       : BACK_COLOR,
-  'listFilterWidget.background'               : CHROME_COLOR,
-  'listFilterWidget.noMatchesOutline'         : WARNING,
-  'listFilterWidget.outline'                  : SOFT_WARNING,
-  // Above are new includes from `missingColors.json`
-  // ============================================
   'terminal.background'                       : BACK_COLOR,
   'editorGroup.emptyBackground'               : BACK_COLOR,
   'tab.hoverBackground'                       : '#64B5F655',
