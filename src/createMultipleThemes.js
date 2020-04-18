@@ -15,7 +15,7 @@ const WARNING = '#d13438'
 const SOFT_WARNING = '#744da9'
 const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
- 
+
 const listColors = {
   // in change of themes
   'quickInput.background'            : CHROME_COLOR,
@@ -90,6 +90,7 @@ const selectionColors = {
 }
 
 const fromMissingColors = {
+  'notifications.background'                 : '#cacaca',
   // when using `exx` snippet
   'editor.snippetTabstopHighlightBackground' : ACCENT_BACKGROUND,
   'editorGroupHeader.tabsBorder'             : CHROME_COLOR_ACCENT,
@@ -118,7 +119,7 @@ const fromMissingColors = {
   'inputValidation.warningBackground'        : CHROME_COLOR,
   'editorGroupHeader.noTabsBackground'       : BACK_COLOR,
 }
-
+ 
 const chromeColors = {
   ...missingColors,
   ...fromMissingColors,
