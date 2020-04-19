@@ -78,7 +78,7 @@ export async function findMissingRules(label = 'lukin'){
 
   if (Object.keys(missingColors).length > 1){
     await outputJson(
-      MISSING_COLORS_DARK,
+      MISSING_COLORS,
       {
         missingColors : {
           ...currentMissingColors.missingColors,

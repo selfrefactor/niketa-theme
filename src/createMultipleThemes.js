@@ -119,7 +119,7 @@ const fromMissingColors = {
   'inputValidation.warningBackground'        : CHROME_COLOR,
   'editorGroupHeader.noTabsBackground'       : BACK_COLOR,
 }
- 
+  
 const chromeColors = {
   ...missingColors,
   ...fromMissingColors,
