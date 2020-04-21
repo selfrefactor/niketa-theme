@@ -90,6 +90,9 @@ const selectionColors = {
 }
 
 const fromMissingColors = {
+  "statusBarItem.activeBackground": `${SOFTER_ACCENT}55`,
+  "statusBarItem.prominentBackground": `${SOFTER_ACCENT}55`,
+  "statusBarItem.prominentHoverBackground": CHROME_BRIGHTER,
   'notifications.background'                 : '#cacaca',
   // when using `exx` snippet
   'editor.snippetTabstopHighlightBackground' : ACCENT_BACKGROUND,
@@ -139,7 +142,7 @@ const chromeColors = {
   'diffEditor.removedTextBackground'          : '#64B5F655',
   'editor.findMatchBackground'                : '#aaff1144',
   'editor.findMatchHighlightBackground'       : '#71aac333',
-  'editor.findRangeHighlightBackground'       : '#3f706355',
+  'editor.findRangeHighlightBackground'       : '#3f706344',
   'editor.lineHighlightBackground'            : BACK_COLOR,
   // next two
   // When search by word is active or when double click on a word
