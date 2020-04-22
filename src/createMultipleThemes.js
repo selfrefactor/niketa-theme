@@ -102,7 +102,7 @@ const fromMissingColors = {
   'statusBar.debuggingBackground'            : BACK_COLOR,
   'panel.border'                             : BORDER,
   'panel.background'                         : BACK_COLOR,
-  'input.background'                         : CHROME_BRIGHTER,
+  'input.background'                         : CHROME_COLOR_ACCENT,
   'input.foreground'                         : DARK,
   'input.border'                             : BORDER,
   'input.placeholderForeground'              : `${ DARK }88`,
@@ -121,7 +121,7 @@ const fromMissingColors = {
   'inputValidation.infoBackground'           : CHROME_COLOR,
   'inputValidation.warningBackground'        : CHROME_COLOR,
   'editorGroupHeader.noTabsBackground'       : BACK_COLOR,
-}
+} 
   
 const chromeColors = {
   ...missingColors,
