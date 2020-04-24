@@ -5,6 +5,7 @@ const { outputJSON } = require('fs-extra')
 const { readJsonAnt } = require('./ants/readJson')
 const { resolve } = require('path')
 
+const INPUT_BACK = '#fafafa'
 const CHROME_BRIGHTER = '#d1d1d1'
 const CHROME_COLOR = '#c3c7cb'
 const CHROME_COLOR_ACCENT = '#b0b6bf'
@@ -18,7 +19,7 @@ const SOFTER_ACCENT = '#834962'
 
 const listColors = {
   // in change of themes
-  'quickInput.background'            : CHROME_COLOR,
+  'quickInput.background'            : INPUT_BACK,
   // in the circle of unsaved changes
   // in extensions preview
   'foreground'                       : '#24283b',
@@ -121,7 +122,7 @@ const fromMissingColors = {
   'statusBar.debuggingBackground'            : BACK_COLOR,
   'panel.border'                             : BORDER,
   'panel.background'                         : BACK_COLOR,
-  'input.background'                         : CHROME_COLOR_ACCENT,
+  'input.background'                         : INPUT_BACK,
   'input.foreground'                         : DARK,
   'input.border'                             : BORDER,
   'input.placeholderForeground'              : `${ DARK }88`,
