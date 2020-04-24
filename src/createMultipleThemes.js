@@ -87,6 +87,10 @@ const selectionColors = {
   'editor.selectionBackground'          : `${ CHROME_COLOR }55`,
   'editor.selectionHighlightBackground' : `${ CHROME_COLOR }77`,
   'editor.inactiveSelectionBackground'  : '#aaab9c66',
+  // next two
+  // When search by word is active or when double click on a word
+  'editor.wordHighlightBackground'            : `${WARNING}22`,
+  'editor.wordHighlightStrongBackground'      : ACCENT_BACKGROUND,
 }
 
 const peekView = {
@@ -160,16 +164,12 @@ const chromeColors = {
   'editor.findMatchHighlightBackground'       : '#71aac333',
   'editor.findRangeHighlightBackground'       : '#3f706344',
   'editor.lineHighlightBackground'            : BACK_COLOR,
-  // next two
-  // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'            : '#aa769b55',
-  'editor.wordHighlightStrongBackground'      : '#410a0b44',
   'editorBracketMatch.background'             : '#87775750',
   'editorBracketMatch.border'                 : BACK_COLOR,
   'editorCursor.foreground'                   : '#544',
   'terminal.background'                       : BACK_COLOR,
   'editorGroup.emptyBackground'               : BACK_COLOR,
-  'tab.hoverBackground'                       : '#64B5F655',
+  'tab.hoverBackground'                       : ACCENT_BACKGROUND,
   'editorGroupHeader.tabsBackground'          : CHROME_COLOR,
   'editorGutter.background'                   : `${ CHROME_COLOR }99`,
   'editorLineNumber.foreground'               : '#2a3343a9',
