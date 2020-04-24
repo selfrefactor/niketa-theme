@@ -67,7 +67,6 @@ const COLOR_2 = [
   'entity.name.module.js',
   'variable.language.this',
   'variable.language.this.js',
-  'entity.other.attribute-name.js',
   'keyword.control.import.js',
   'keyword.control.module.js',
   'meta.class-method.js',
@@ -122,6 +121,8 @@ const COLOR_3 = [
 
 const COLOR_4 = [
   ...ADDITIONAL_4,
+  'entity.other.attribute-name',
+  'entity.other.attribute-name.js',
   'comment',
   'comment.block.documentation',
   'comment.line.double-slash',
