@@ -89,10 +89,25 @@ const selectionColors = {
   'editor.inactiveSelectionBackground'  : '#aaab9c66',
 }
 
+const peekView = {
+  "peekView.border": BORDER,
+  "peekViewEditor.background": BACK_COLOR,
+  "peekViewEditor.matchHighlightBackground": "#3d59a155",
+  "peekViewResult.background": BACK_COLOR,
+  "peekViewResult.fileForeground": "#787c99",
+  "peekViewResult.lineForeground": "#a9b1d6",
+  "peekViewResult.matchHighlightBackground": `${WARNING}22`,
+  "peekViewResult.selectionBackground": "#3d59a122",
+  "peekViewResult.selectionForeground": DARK,
+  "peekViewTitle.background": BACK_COLOR,
+  "peekViewTitleDescription.foreground": "#787c99",
+  "peekViewTitleLabel.foreground": "#a9b1d6",
+}
+
 const fromMissingColors = {
-  "statusBarItem.activeBackground": `${SOFTER_ACCENT}55`,
-  "statusBarItem.prominentBackground": `${SOFTER_ACCENT}55`,
-  "statusBarItem.prominentHoverBackground": CHROME_BRIGHTER,
+  'statusBarItem.activeBackground'           : `${ SOFTER_ACCENT }55`,
+  'statusBarItem.prominentBackground'        : `${ SOFTER_ACCENT }55`,
+  'statusBarItem.prominentHoverBackground'   : CHROME_BRIGHTER,
   'notifications.background'                 : '#cacaca',
   // when using `exx` snippet
   'editor.snippetTabstopHighlightBackground' : ACCENT_BACKGROUND,
@@ -121,11 +136,12 @@ const fromMissingColors = {
   'inputValidation.infoBackground'           : CHROME_COLOR,
   'inputValidation.warningBackground'        : CHROME_COLOR,
   'editorGroupHeader.noTabsBackground'       : BACK_COLOR,
-} 
-  
+}
+
 const chromeColors = {
   ...missingColors,
   ...fromMissingColors,
+  ...peekView,
   ...menuColors,
   ...selectionColors,
   ...sidebarColors,
