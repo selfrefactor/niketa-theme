@@ -7,5 +7,5 @@ test('happy', async () => {
     command : 'yarn out',
     cwd,
     onLog   : () => {},
-  })
-}) 
+  })  
+})

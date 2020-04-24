@@ -92,6 +92,8 @@ const COLOR_2 = [
 
 const COLOR_3 = [
   ...ADDITIONAL_3,
+  'variable.other.readwrite',
+  'variable.other.readwrite.js',
   'constant.other.object.key.js',
   'entity.name.function.js',
   'entity.name.function.method',
@@ -149,8 +151,6 @@ const COLOR_4 = [
   'support.function.mutator.js',
   'tag.decorator.js',
   'variable.language',
-  'variable.other.readwrite',
-  'variable.other.readwrite.js',
 ]
 
 export const baseBase = {
