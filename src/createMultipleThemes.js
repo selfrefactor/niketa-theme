@@ -85,28 +85,28 @@ const suggestionsColors = {
   'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground'          : `${ CHROME_COLOR }55`,
-  'editor.selectionHighlightBackground' : `${ CHROME_COLOR }77`,
-  'editor.inactiveSelectionBackground'  : '#aaab9c66',
+  'editor.selectionBackground'           : `${ CHROME_COLOR }55`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }77`,
+  'editor.inactiveSelectionBackground'   : '#aaab9c66',
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'            : `${WARNING}22`,
-  'editor.wordHighlightStrongBackground'      : ACCENT_BACKGROUND,
+  'editor.wordHighlightBackground'       : `${ WARNING }22`,
+  'editor.wordHighlightStrongBackground' : ACCENT_BACKGROUND,
 }
-
+ 
 const peekView = {
-  "peekView.border": BORDER,
-  "peekViewEditor.background": BACK_COLOR,
-  "peekViewEditor.matchHighlightBackground": "#3d59a155",
-  "peekViewResult.background": BACK_COLOR,
-  "peekViewResult.fileForeground": "#787c99",
-  "peekViewResult.lineForeground": "#a9b1d6",
-  "peekViewResult.matchHighlightBackground": `${WARNING}22`,
-  "peekViewResult.selectionBackground": "#3d59a122",
-  "peekViewResult.selectionForeground": DARK,
-  "peekViewTitle.background": BACK_COLOR,
-  "peekViewTitleDescription.foreground": "#787c99",
-  "peekViewTitleLabel.foreground": "#a9b1d6",
+  'peekView.border'                         : BORDER,
+  'peekViewEditor.background'               : BACK_COLOR,
+  'peekViewEditor.matchHighlightBackground' : '#3d59a155',
+  'peekViewResult.background'               : BACK_COLOR,
+  'peekViewResult.fileForeground'           : '#787c99',
+  'peekViewResult.lineForeground'           : '#a9b1d6',
+  'peekViewResult.matchHighlightBackground' : `${ WARNING }22`,
+  'peekViewResult.selectionBackground'      : '#3d59a122',
+  'peekViewResult.selectionForeground'      : DARK,
+  'peekViewTitle.background'                : BACK_COLOR,
+  'peekViewTitleDescription.foreground'     : '#787c99',
+  'peekViewTitleLabel.foreground'           : '#a9b1d6',
 }
 
 const fromMissingColors = {
@@ -216,7 +216,7 @@ const KozmicBlues = [ '#a83c56', '#28305d', '#0068a8', '#d239a0', '#b66ae4' ]
 const LedZeppelin = [ '#0d8a81', '#00a8cc', '#a12b6d', '#d44578', '#3a0088' ]
 const StrangeBrew = [ '#00a8cc', '#222d60', '#953b69', '#b24826', '#01676b' ]
 const SweatLeaf = [ '#2f586f', '#a83c56', '#0031df', '#d239a0', '#bb9132' ]
- 
+
 const SETTINGS = [
   { CommunicationBreakdown },
   { DancingDays },
