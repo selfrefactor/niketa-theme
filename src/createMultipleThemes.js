@@ -1,11 +1,3 @@
-const {generateThemeData} = require('./bees/generateThemeData')
-const {mapToObject, headObject, shuffle} = require('rambdax')
-const {
-  missingColors,
-} = require('../lambdas/find_missing_rules/missingColors.json')
-const {outputJSON} = require('fs-extra')
-const {readJsonAnt} = require('./ants/readJson')
-const {resolve} = require('path')
 const {
   CommunicationBreakdown,
   DancingDays,
@@ -17,6 +9,12 @@ const {
   StrangeBrew,
   SweatLeaf,
 } = require('./assets/themes-colors.js')
+const { generateThemeData } = require('./bees/generateThemeData')
+const { mapToObject, headObject, shuffle } = require('rambdax')
+const { missingColors } = require('../lambdas/find_missing_rules/missingColors.json')
+const { outputJSON } = require('fs-extra')
+const { readJsonAnt } = require('./ants/readJson')
+const { resolve } = require('path')
 
 const INPUT_BACK = '#fafafa'
 const CHROME_BRIGHTER = '#d1d1d1'
@@ -32,128 +30,128 @@ const SOFTER_ACCENT = '#834962'
 
 const listColors = {
   // in change of themes
-  'quickInput.background': INPUT_BACK,
+  'quickInput.background'            : INPUT_BACK,
   // in the circle of unsaved changes
   // in extensions preview
-  foreground: '#24283b',
+  'foreground'                       : '#24283b',
   // on drag and drop of folders
-  'list.dropBackground': '#db82d6cc',
+  'list.dropBackground'              : '#db82d6cc',
   // when select theme, this is active theme background
-  'list.focusBackground': '#6d50a188',
-  'list.highlightForeground': '#4d0e0b',
-  'list.inactiveFocusBackground': '#885f66cc',
+  'list.focusBackground'             : '#6d50a188',
+  'list.highlightForeground'         : '#4d0e0b',
+  'list.inactiveFocusBackground'     : '#885f66cc',
   // when file is selected and then it turns inactive,
   // as code window became active
-  'list.inactiveSelectionBackground': '#eae3cd55',
-  'list.inactiveSelectionForeground': '#4d0e0b',
+  'list.inactiveSelectionBackground' : '#eae3cd55',
+  'list.inactiveSelectionForeground' : '#4d0e0b',
   // in the previous comment, this is when code window is not yet active
-  'list.activeSelectionBackground': '#d1343822',
+  'list.activeSelectionBackground'   : '#d1343822',
   // Right click on file in file explorer, this is foreground on hover
-  'list.activeSelectionForeground': '#2a3343',
+  'list.activeSelectionForeground'   : '#2a3343',
   // 'list.activeSelectionForeground'   : '#e7e7e7',
   // visible in autocomplete, in suggest, change of theme
-  'list.hoverForeground': '#e7e7e7',
-  'list.hoverBackground': '#ad680066',
+  'list.hoverForeground'             : '#e7e7e7',
+  'list.hoverBackground'             : '#ad680066',
 }
 
 const sidebarColors = {
-  'sideBar.background': CHROME_COLOR,
+  'sideBar.background'              : CHROME_COLOR,
   // It means the color of files in explorer, not yet modified
   // ============================================
-  'sideBar.foreground': '#85483d',
-  'sideBar.border': '#8382ae',
-  'sideBarSectionHeader.background': '#aebabe',
-  'sideBarSectionHeader.foreground': '#2a3343',
-  'sideBarTitle.foreground': '#30322e',
+  'sideBar.foreground'              : '#85483d',
+  'sideBar.border'                  : '#8382ae',
+  'sideBarSectionHeader.background' : '#aebabe',
+  'sideBarSectionHeader.foreground' : '#2a3343',
+  'sideBarTitle.foreground'         : '#30322e',
 }
 
 const menuColors = {
-  'menu.border': BORDER,
-  'menu.background': BACK_COLOR,
-  'menu.foreground': DARK,
-  'menu.selectionBackground': `${SOFTER_ACCENT}66`,
-  'menu.selectionForeground': DARK,
-  'menu.separatorBackground': `${DARK}88`,
-  'menubar.selectionBackground': `${SOFTER_ACCENT}66`,
-  'menubar.selectionBorder': BORDER,
-  'menubar.selectionForeground': DARK,
+  'menu.border'                 : BORDER,
+  'menu.background'             : BACK_COLOR,
+  'menu.foreground'             : DARK,
+  'menu.selectionBackground'    : `${ SOFTER_ACCENT }66`,
+  'menu.selectionForeground'    : DARK,
+  'menu.separatorBackground'    : `${ DARK }88`,
+  'menubar.selectionBackground' : `${ SOFTER_ACCENT }66`,
+  'menubar.selectionBorder'     : BORDER,
+  'menubar.selectionForeground' : DARK,
 }
 
 const suggestionsColors = {
   // in autocomplete box, the active line background
-  'editorSuggestWidget.selectedBackground': '#2c3d5244',
-  'editorSuggestWidget.background': '#d1d3d4',
-  'editorHoverWidget.background': '#d1d3d4',
+  'editorSuggestWidget.selectedBackground'  : '#2c3d5244',
+  'editorSuggestWidget.background'          : '#d1d3d4',
+  'editorHoverWidget.background'            : '#d1d3d4',
   // when search with ctrl+f, this is widget chrome color
-  'editorWidget.background': CHROME_COLOR,
+  'editorWidget.background'                 : CHROME_COLOR,
   // in autocomplete - the color of matched chars
   // i.e. if I write `co`, then suggest will be `const`
   // and the `co` will be in this color
-  'editorSuggestWidget.highlightForeground': '#820014',
+  'editorSuggestWidget.highlightForeground' : '#820014',
   // in the above example, this is the color of the rest
   // also most common foreground color in autocomplete and suggestion
-  'editorSuggestWidget.foreground': '#2a3343',
-  'editorSuggestWidget.border': '#d78d9f',
-  'editorHoverWidget.border': '#d78d9f',
-  'editorWidget.border': '#d78d9f',
+  'editorSuggestWidget.foreground'          : '#2a3343',
+  'editorSuggestWidget.border'              : '#d78d9f',
+  'editorHoverWidget.border'                : '#d78d9f',
+  'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground': `${CHROME_COLOR}55`,
-  'editor.selectionHighlightBackground': `${CHROME_COLOR}77`,
-  'editor.inactiveSelectionBackground': '#aaab9c66',
+  'editor.selectionBackground'           : `${ CHROME_COLOR }55`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }77`,
+  'editor.inactiveSelectionBackground'   : '#aaab9c66',
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground': `${WARNING}22`,
-  'editor.wordHighlightStrongBackground': ACCENT_BACKGROUND,
+  'editor.wordHighlightBackground'       : `${ WARNING }22`,
+  'editor.wordHighlightStrongBackground' : ACCENT_BACKGROUND,
 }
 
 const peekView = {
-  'peekView.border': BORDER,
-  'peekViewEditor.background': BACK_COLOR,
-  'peekViewEditor.matchHighlightBackground': '#3d59a155',
-  'peekViewResult.background': BACK_COLOR,
-  'peekViewResult.fileForeground': '#787c99',
-  'peekViewResult.lineForeground': '#a9b1d6',
-  'peekViewResult.matchHighlightBackground': `${WARNING}22`,
-  'peekViewResult.selectionBackground': '#3d59a122',
-  'peekViewResult.selectionForeground': DARK,
-  'peekViewTitle.background': BACK_COLOR,
-  'peekViewTitleDescription.foreground': '#787c99',
-  'peekViewTitleLabel.foreground': '#a9b1d6',
+  'peekView.border'                         : BORDER,
+  'peekViewEditor.background'               : BACK_COLOR,
+  'peekViewEditor.matchHighlightBackground' : '#3d59a155',
+  'peekViewResult.background'               : BACK_COLOR,
+  'peekViewResult.fileForeground'           : '#787c99',
+  'peekViewResult.lineForeground'           : '#a9b1d6',
+  'peekViewResult.matchHighlightBackground' : `${ WARNING }22`,
+  'peekViewResult.selectionBackground'      : '#3d59a122',
+  'peekViewResult.selectionForeground'      : DARK,
+  'peekViewTitle.background'                : BACK_COLOR,
+  'peekViewTitleDescription.foreground'     : '#787c99',
+  'peekViewTitleLabel.foreground'           : '#a9b1d6',
 }
 
 const fromMissingColors = {
-  'statusBarItem.activeBackground': `${SOFTER_ACCENT}55`,
-  'statusBarItem.prominentBackground': `${SOFTER_ACCENT}55`,
-  'statusBarItem.prominentHoverBackground': CHROME_BRIGHTER,
-  'notifications.background': '#cacaca',
+  'statusBarItem.activeBackground'           : `${ SOFTER_ACCENT }55`,
+  'statusBarItem.prominentBackground'        : `${ SOFTER_ACCENT }55`,
+  'statusBarItem.prominentHoverBackground'   : CHROME_BRIGHTER,
+  'notifications.background'                 : '#cacaca',
   // when using `exx` snippet
-  'editor.snippetTabstopHighlightBackground': ACCENT_BACKGROUND,
-  'editorGroupHeader.tabsBorder': CHROME_COLOR_ACCENT,
-  'editorGroup.border': BORDER,
-  'statusBar.noFolderBackground': BACK_COLOR,
-  'statusBar.debuggingBackground': BACK_COLOR,
-  'panel.border': BORDER,
-  'panel.background': BACK_COLOR,
-  'input.background': INPUT_BACK,
-  'input.foreground': DARK,
-  'input.border': BORDER,
-  'input.placeholderForeground': `${DARK}88`,
-  'debugToolBar.background': BACK_COLOR,
-  'titleBar.activeBackground': BACK_COLOR,
-  'titleBar.activeForeground': DARK,
-  'titleBar.inactiveBackground': CHROME_COLOR,
-  'titleBar.inactiveForeground': BACK_COLOR,
-  'dropdown.listBackground': CHROME_COLOR,
-  'dropdown.background': CHROME_COLOR,
-  'dropdown.border': BORDER,
-  'dropdown.foreground': BACK_COLOR,
-  'listFilterWidget.background': CHROME_COLOR,
-  'listFilterWidget.noMatchesOutline': WARNING,
-  'listFilterWidget.outline': SOFT_WARNING,
-  'inputValidation.infoBackground': CHROME_COLOR,
-  'inputValidation.warningBackground': CHROME_COLOR,
-  'editorGroupHeader.noTabsBackground': BACK_COLOR,
+  'editor.snippetTabstopHighlightBackground' : ACCENT_BACKGROUND,
+  'editorGroupHeader.tabsBorder'             : CHROME_COLOR_ACCENT,
+  'editorGroup.border'                       : BORDER,
+  'statusBar.noFolderBackground'             : BACK_COLOR,
+  'statusBar.debuggingBackground'            : BACK_COLOR,
+  'panel.border'                             : BORDER,
+  'panel.background'                         : BACK_COLOR,
+  'input.background'                         : INPUT_BACK,
+  'input.foreground'                         : DARK,
+  'input.border'                             : BORDER,
+  'input.placeholderForeground'              : `${ DARK }88`,
+  'debugToolBar.background'                  : BACK_COLOR,
+  'titleBar.activeBackground'                : BACK_COLOR,
+  'titleBar.activeForeground'                : DARK,
+  'titleBar.inactiveBackground'              : CHROME_COLOR,
+  'titleBar.inactiveForeground'              : BACK_COLOR,
+  'dropdown.listBackground'                  : CHROME_COLOR,
+  'dropdown.background'                      : CHROME_COLOR,
+  'dropdown.border'                          : BORDER,
+  'dropdown.foreground'                      : BACK_COLOR,
+  'listFilterWidget.background'              : CHROME_COLOR,
+  'listFilterWidget.noMatchesOutline'        : WARNING,
+  'listFilterWidget.outline'                 : SOFT_WARNING,
+  'inputValidation.infoBackground'           : CHROME_COLOR,
+  'inputValidation.warningBackground'        : CHROME_COLOR,
+  'editorGroupHeader.noTabsBackground'       : BACK_COLOR,
 }
 
 const chromeColors = {
@@ -165,109 +163,111 @@ const chromeColors = {
   ...sidebarColors,
   ...suggestionsColors,
   ...listColors,
-  'editor.background': BACK_COLOR,
-  'editor.foreground': '#192112',
-  'editor.lineHighlightBorder': '#9c824a',
-  'editor.foldBackground': '#fafafa',
-  'activityBar.background': '#C4BE9D',
-  'badge.background': '#e7e7e7',
-  'badge.foreground': '#3f7063',
-  'diffEditor.insertedTextBackground': '#9c824a55',
-  'diffEditor.removedTextBackground': '#64B5F655',
-  'editor.findMatchBackground': '#aaff1144',
-  'editor.findMatchHighlightBackground': '#71aac333',
-  'editor.findRangeHighlightBackground': '#3f706344',
-  'editor.lineHighlightBackground': BACK_COLOR,
-  'editorBracketMatch.background': '#87775750',
-  'editorBracketMatch.border': BACK_COLOR,
-  'editorCursor.foreground': '#544',
-  'terminal.background': BACK_COLOR,
-  'editorGroup.emptyBackground': BACK_COLOR,
-  'tab.hoverBackground': ACCENT_BACKGROUND,
-  'editorGroupHeader.tabsBackground': CHROME_COLOR,
-  'editorGutter.background': `${CHROME_COLOR}99`,
-  'editorLineNumber.foreground': '#2a3343a9',
-  'editorLink.activeForeground': '#034694',
-  errorForeground: '#B1365Bf3',
-  focusBorder: '#525e54',
-  'git.color.modified': '#4d0e0b',
-  'gitDecoration.modifiedResourceForeground': '#034694',
-  'gitDecoration.addedResourceForeground': '#53245b',
-  'gitDecoration.untrackedResourceForeground': '#aa769b',
-  'list.errorForeground': '#a50044',
-  'scrollbar.shadow': '#cf6f4b',
-  'scrollbarSlider.background': CHROME_COLOR,
-  'scrollbarSlider.hoverBackground': '#C4BE9D',
-  'selection.background': '#ebe6d9',
-  'statusBar.background': CHROME_COLOR,
-  'statusBar.foreground': '#35495f',
-  'tab.activeBackground': BACK_COLOR,
-  'tab.activeBorder': '#35495f',
-  'tab.activeBorderTop': '#35495f',
-  'tab.activeForeground': '#35495f',
-  'tab.border': CHROME_COLOR_ACCENT,
-  'tab.inactiveBackground': CHROME_COLOR_ACCENT,
-  'tab.inactiveForeground': '#fff',
-  'tab.unfocusedActiveBackground': CHROME_COLOR,
-  'tab.unfocusedActiveBorder': CHROME_COLOR,
-  'tab.unfocusedActiveForeground': '#aa769b',
-  'widget.shadow': '#8382aebb',
+  'editor.background'                         : BACK_COLOR,
+  'editor.foreground'                         : '#192112',
+  'editor.lineHighlightBorder'                : '#9c824a',
+  'editor.foldBackground'                     : '#fafafa',
+  'activityBar.background'                    : '#C4BE9D',
+  'badge.background'                          : '#e7e7e7',
+  'badge.foreground'                          : '#3f7063',
+  'diffEditor.insertedTextBackground'         : '#9c824a55',
+  'diffEditor.removedTextBackground'          : '#64B5F655',
+  'editor.findMatchBackground'                : '#aaff1144',
+  'editor.findMatchHighlightBackground'       : '#71aac333',
+  'editor.findRangeHighlightBackground'       : '#3f706344',
+  'editor.lineHighlightBackground'            : BACK_COLOR,
+  'editorBracketMatch.background'             : '#87775750',
+  'editorBracketMatch.border'                 : BACK_COLOR,
+  'editorCursor.foreground'                   : '#544',
+  'terminal.background'                       : BACK_COLOR,
+  'editorGroup.emptyBackground'               : BACK_COLOR,
+  'tab.hoverBackground'                       : ACCENT_BACKGROUND,
+  'editorGroupHeader.tabsBackground'          : CHROME_COLOR,
+  'editorGutter.background'                   : `${ CHROME_COLOR }99`,
+  'editorLineNumber.foreground'               : '#2a3343a9',
+  'editorLink.activeForeground'               : '#034694',
+  'errorForeground'                           : '#B1365Bf3',
+  'focusBorder'                               : '#525e54',
+  'git.color.modified'                        : '#4d0e0b',
+  'gitDecoration.modifiedResourceForeground'  : '#034694',
+  'gitDecoration.addedResourceForeground'     : '#53245b',
+  'gitDecoration.untrackedResourceForeground' : '#aa769b',
+  'list.errorForeground'                      : '#a50044',
+  'scrollbar.shadow'                          : '#cf6f4b',
+  'scrollbarSlider.background'                : CHROME_COLOR,
+  'scrollbarSlider.hoverBackground'           : '#C4BE9D',
+  'selection.background'                      : '#ebe6d9',
+  'statusBar.background'                      : CHROME_COLOR,
+  'statusBar.foreground'                      : '#35495f',
+  'tab.activeBackground'                      : BACK_COLOR,
+  'tab.activeBorder'                          : '#35495f',
+  'tab.activeBorderTop'                       : '#35495f',
+  'tab.activeForeground'                      : '#35495f',
+  'tab.border'                                : CHROME_COLOR_ACCENT,
+  'tab.inactiveBackground'                    : CHROME_COLOR_ACCENT,
+  'tab.inactiveForeground'                    : '#fff',
+  'tab.unfocusedActiveBackground'             : CHROME_COLOR,
+  'tab.unfocusedActiveBorder'                 : CHROME_COLOR,
+  'tab.unfocusedActiveForeground'             : '#aa769b',
+  'widget.shadow'                             : '#8382aebb',
 }
- 
+
 const SPIN_LABEL = false
 // const SPIN_LABEL = 'CommunicationBreakdown'
 
 const SETTINGS = [
-  {CommunicationBreakdown},
-  {DancingDays},
-  {FunkyDrummer},
-  {GlassOnion},
-  {HelloSpaceboy},
-  {KozmicBlues},
-  {LedZeppelin},
-  {StrangeBrew},
-  {SweatLeaf},
+  { CommunicationBreakdown },
+  { DancingDays },
+  { FunkyDrummer },
+  { GlassOnion },
+  { HelloSpaceboy },
+  { KozmicBlues },
+  { LedZeppelin },
+  { StrangeBrew },
+  { SweatLeaf },
 ].map(x => {
-  const {prop, value} = headObject(x)
-  if (SPIN_LABEL && prop === SPIN_LABEL) {
+  const { prop, value } = headObject(x)
+  if (SPIN_LABEL && prop === SPIN_LABEL){
     const spinned = shuffle(value)
-    return {[prop]: spinned}
+
+    return { [ prop ] : spinned }
   }
+
   return x
 })
 
 const palette = readJsonAnt('palettes/palette.json')
 
-function createColorsHash(colors) {
+function createColorsHash(colors){
   if (colors.length !== 5) throw 'colors.length !== 5'
 
-  return mapToObject((color, i) => ({[`COLOR_${i}`]: color}), colors)
+  return mapToObject((color, i) => ({ [ `COLOR_${ i }` ] : color }), colors)
 }
 
 const themesDirectory = resolve(__dirname, '../themes/')
 
-async function singleRun(themeSettings) {
-  const [[themeName, colors]] = Object.entries(themeSettings)
+async function singleRun(themeSettings){
+  const [ [ themeName, colors ] ] = Object.entries(themeSettings)
 
   const themeData = generateThemeData({
     palette,
-    chrome: chromeColors,
-    colors: createColorsHash(colors),
+    chrome : chromeColors,
+    colors : createColorsHash(colors),
   })
   themeData.name = themeName
-  await outputJSON(`${themesDirectory}/${themeName}.json`, themeData, {
-    spaces: 2,
-  })
+  await outputJSON(
+    `${ themesDirectory }/${ themeName }.json`, themeData, { spaces : 2 }
+  )
 }
 
-void (async function createThemes() {
+void (async function createThemes(){
   const index = Number(process.env.INDEX)
-  if (SETTINGS[index] === undefined) return console.log('!index')
-  const {prop} = headObject(SETTINGS[index])
+  if (SETTINGS[ index ] === undefined) return console.log('!index')
+  const { prop } = headObject(SETTINGS[ index ])
 
-  if (prop === SPIN_LABEL) {
-    await outputJSON(`${__dirname}/assets/spinned.json`, SETTINGS[index])
+  if (prop === SPIN_LABEL){
+    await outputJSON(`${ __dirname }/assets/spinned.json`, SETTINGS[ index ])
   }
 
-  await singleRun(SETTINGS[index])
+  await singleRun(SETTINGS[ index ])
 })()
