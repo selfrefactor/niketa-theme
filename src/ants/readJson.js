@@ -1,14 +1,14 @@
-const { readFileSync } = require('fs')
+const { readJson } = require('fs-extra')
 const { resolve: resolveMethod } = require('path')
 const BASE = resolveMethod(__dirname, '../../')
 
 const resolve = filePath => resolveMethod(BASE, filePath)
 
-function readJsonAnt(filePath){
+async function readJsonAnt(filePath){
   const resolvedPath = resolve(filePath)
-  const content = readFileSync(resolvedPath).toString()
+  const content = await readJson(resolvedPath)
 
-  return JSON.parse(content)
+  return content
 }
 
 exports.resolve = resolve
