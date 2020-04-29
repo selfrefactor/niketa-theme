@@ -67,14 +67,3 @@ async function createMultipleThemes(){
 }
 
 exports.createMultipleThemes = createMultipleThemes
-// void (async function createThemes(){
-//   const index = Number(process.env.INDEX)
-//   if (SETTINGS[ index ] === undefined) return console.log('!index')
-//   const { prop } = headObject(SETTINGS[ index ])
-
-//   if (SPIN_LABEL && prop === SPIN_LABEL){
-//     await outputJSON(`${ __dirname }/assets/spinned.json`, SETTINGS[ index ])
-//   }
-
-//   await singleRun(SETTINGS[ index ])
-// })()

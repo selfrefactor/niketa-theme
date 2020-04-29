@@ -105,6 +105,7 @@ const peekView = {
 }
 
 const fromMissingColors = {
+  "editorCodeLens.foreground": `${DARK}99`,
   'statusBarItem.activeBackground'           : `${ SOFTER_ACCENT }55`,
   'statusBarItem.prominentBackground'        : `${ SOFTER_ACCENT }55`,
   'statusBarItem.prominentHoverBackground'   : CHROME_BRIGHTER,
