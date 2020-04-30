@@ -1,10 +1,10 @@
 const { missingColors } = require('../../lambdas/find_missing_rules/missingColors.json')
 
+const BACK_COLOR = '#F3F3F3'
 const INPUT_BACK = '#fafafa'
 const CHROME_BRIGHTER = '#d1d1d1'
 const CHROME_COLOR = '#c3c7cb'
 const CHROME_COLOR_ACCENT = '#b0b6bf'
-const BACK_COLOR = '#F3F3F3'
 const DARK = '#083358'
 const BORDER = '#76608a'
 const WARNING = '#d13438'
@@ -105,7 +105,9 @@ const peekView = {
 }
 
 const fromMissingColors = {
-  "editorCodeLens.foreground": `${DARK}99`,
+  'peekViewEditorGutter.background'          : CHROME_COLOR_ACCENT,
+  'settings.textInputBackground'             : CHROME_COLOR,
+  'editorCodeLens.foreground'                : `${ DARK }99`,
   'statusBarItem.activeBackground'           : `${ SOFTER_ACCENT }55`,
   'statusBarItem.prominentBackground'        : `${ SOFTER_ACCENT }55`,
   'statusBarItem.prominentHoverBackground'   : CHROME_BRIGHTER,

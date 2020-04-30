@@ -11,16 +11,18 @@ const {
 } = require('./assets/themes-colors.js')
 const { chromeColors } = require('./assets/chrome-colors.js')
 const { createColorsHash } = require('./utils/create-colors-hash.js')
+const { find, headObject, shuffle, mapAsync } = require('rambdax')
 const { generateThemeData } = require('./bees/generateThemeData')
-const { headObject, shuffle, mapAsync } = require('rambdax')
 const { outputJSON } = require('fs-extra')
 const { readJsonAnt } = require('./ants/readJson')
 const { resolve } = require('path')
 
-const SPIN_LABEL = false
-// const SPIN_LABEL = 'CommunicationBreakdown'
+const FIRST_THEME = 'CommunicationBreakdown'
 
-const SETTINGS = [
+const SPIN_LABEL = false
+// const SPIN_LABEL = 'FunkyDrummer'
+
+const SETTINGS_ORIGIN = [
   { CommunicationBreakdown },
   { DancingDays },
   { FunkyDrummer },
@@ -30,10 +32,24 @@ const SETTINGS = [
   { LedZeppelin },
   { StrangeBrew },
   { SweatLeaf },
-].map(x => {
-  const { prop, value } = headObject(x)
-  if (SPIN_LABEL && prop === SPIN_LABEL){
-    const spinned = shuffle(value)
+]
+
+const SETTINGS = SETTINGS_ORIGIN.map(x => {
+  const { prop } = headObject(x)
+
+  if (prop === SPIN_LABEL) return x
+
+  if (SPIN_LABEL && prop === FIRST_THEME){
+    const found = find(y => {
+      const { prop: yProp } = headObject(y)
+
+      return yProp === SPIN_LABEL
+    })(SETTINGS_ORIGIN)
+    if (!found) return x
+
+    const { value: foundValue } = headObject(found)
+
+    const spinned = shuffle(foundValue)
 
     return { [ prop ] : spinned }
   }
