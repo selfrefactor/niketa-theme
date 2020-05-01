@@ -12,6 +12,8 @@ const [
 
 const COLOR_0 = [
   ...ADDITIONAL_0,
+  'variable.other.readwrite',
+  'variable.other.readwrite.js',
   'entity.name.method.js',
   'entity.name.tag.UNDERLINE',
   'keyword.operator.module.all.js',
@@ -92,8 +94,6 @@ const COLOR_2 = [
 
 const COLOR_3 = [
   ...ADDITIONAL_3,
-  'variable.other.readwrite',
-  'variable.other.readwrite.js',
   'constant.other.object.key.js',
   'entity.name.function.js',
   'entity.name.function.method',

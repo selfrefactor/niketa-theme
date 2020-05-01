@@ -74,7 +74,7 @@ async function singleRun(themeSettings){
   await outputJSON(
     `${ themesDirectory }/${ themeName }.json`, themeData, { spaces : 2 }
   )
-}
+} 
 
 async function createMultipleThemes(){
   await mapAsync(async x => {
