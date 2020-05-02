@@ -20,7 +20,7 @@ const { resolve } = require('path')
 const FIRST_THEME = 'CommunicationBreakdown'
 
 const SPIN_LABEL = false
-// const SPIN_LABEL = 'FunkyDrummer'
+// const SPIN_LABEL = 'HelloSpaceboy'
 
 const SETTINGS_ORIGIN = [
   { CommunicationBreakdown },
@@ -32,7 +32,7 @@ const SETTINGS_ORIGIN = [
   { LedZeppelin },
   { StrangeBrew },
   { SweatLeaf },
-]
+] 
 
 const SETTINGS = SETTINGS_ORIGIN.map(x => {
   const { prop } = headObject(x)
@@ -74,7 +74,7 @@ async function singleRun(themeSettings){
   await outputJSON(
     `${ themesDirectory }/${ themeName }.json`, themeData, { spaces : 2 }
   )
-} 
+}
 
 async function createMultipleThemes(){
   await mapAsync(async x => {

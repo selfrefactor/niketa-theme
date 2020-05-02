@@ -1,25 +1,21 @@
 import { outputJson } from 'fs-extra'
 import { resolve } from 'path'
 import { remove, replace } from 'rambdax'
+
 import * as basePalette from '../../palettes/base'
 
 const UNDERLINE = '.UNDERLINE'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
 
 async function save({ label, data }){
-  const output = resolve(
-    __dirname, 
-    `../../palettes/${ label }.json`
-  )
+  const output = resolve(__dirname, `../../palettes/${ label }.json`)
 
   await outputJson(
     output, data, { spaces : 2 }
   )
 
-  const darkThemePaletteLocation = resolve(
-    __dirname,
-    '../../../niketa-themes/packages/niketa_dark/src/palette.json'
-  )
+  const darkThemePaletteLocation = resolve(__dirname,
+    '../../../niketa-themes/packages/niketa_dark/src/palette.json')
   await outputJson(
     darkThemePaletteLocation, data, { spaces : 2 }
   )
