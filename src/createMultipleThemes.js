@@ -20,7 +20,7 @@ const { resolve } = require('path')
 const FIRST_THEME = 'CommunicationBreakdown'
 
 const SPIN_LABEL = false
-// const SPIN_LABEL = 'HelloSpaceboy'
+// const SPIN_LABEL = 'CommunicationBreakdown'
 
 const SETTINGS_ORIGIN = [
   { CommunicationBreakdown },
@@ -32,12 +32,10 @@ const SETTINGS_ORIGIN = [
   { LedZeppelin },
   { StrangeBrew },
   { SweatLeaf },
-] 
+]
 
 const SETTINGS = SETTINGS_ORIGIN.map(x => {
   const { prop } = headObject(x)
-
-  if (prop === SPIN_LABEL) return x
 
   if (SPIN_LABEL && prop === FIRST_THEME){
     const found = find(y => {
@@ -50,9 +48,11 @@ const SETTINGS = SETTINGS_ORIGIN.map(x => {
     const { value: foundValue } = headObject(found)
 
     const spinned = shuffle(foundValue)
+    outputJSON(`${ __dirname }/spinned.json`, spinned)
 
     return { [ prop ] : spinned }
   }
+  if (prop === SPIN_LABEL) return x
 
   return x
 })

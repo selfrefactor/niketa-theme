@@ -1,27 +1,27 @@
 exports.CommunicationBreakdown = [
-  '#38978D',
-  '#b66ae4',
+  '#089fbf',
   '#B1365B',
-  '#0068a8',
   '#480032',
+  '#089fbf',
+  '#b66ae4',
 ]
-exports.DancingDays = [ '#b13695', '#38978D', '#614ad3', '#083358', '#df5831' ]
+exports.DancingDays = [ '#b66ae4', '#1d74ed', '#0a0a0a', '#0b7c8f', '#e01114' ]
 exports.FunkyDrummer = [
-  '#b66ae4',
   '#480032',
-  '#0068a8',
   '#38978D',
   '#B1365B',
+  '#0068a8',
+  '#b66ae4',
 ]
-exports.GlassOnion = [ '#bb9132', '#20366b', '#2c91af', '#861D4F', '#E9630D' ]
+exports.GlassOnion = [ '#E9630D', '#20366b', '#861D4F', '#2c91af', '#bb9132' ]
 exports.HelloSpaceboy = [
-  '#480032',
-  '#b66ae4',
-  '#B1365B',
-  '#0068a8',
+  '#df5831',
   '#38978D',
+  '#480032',
+  '#0031df',
+  '#b13695',
 ]
-exports.KozmicBlues = [ '#480032', '#b66ae4', '#B1365B', '#0068a8', '#38978D' ]
-exports.LedZeppelin = [ '#0d8a81', '#00a8cc', '#a12b6d', '#d44578', '#3a0088' ]
-exports.StrangeBrew = [ '#00a8cc', '#222d60', '#953b69', '#b24826', '#01676b' ]
-exports.SweatLeaf = [ '#2f586f', '#a83c56', '#0031df', '#d239a0', '#bb9132' ]
+exports.KozmicBlues = [ '#0068a8', '#480032', '#B1365B', '#38978D', '#b66ae4' ]
+exports.LedZeppelin = [ '#a12b6d', '#00a8cc', '#3a0088', '#0d8a81', '#d44578' ]
+exports.StrangeBrew = [ '#222d60', '#01676b', '#953b69', '#00a8cc', '#b24826' ]
+exports.SweatLeaf = [ '#0031df', '#bb9132', '#2f586f', '#d239a0', '#a83c56' ]
