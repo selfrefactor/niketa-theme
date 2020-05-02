@@ -6,7 +6,7 @@
     "export": "jest lambdas/export_to_mono/exportToMono.spec.js",
     "test": "jest src/createMultipleThemes.spec.js"
   },
-  "version": "9.16.3",
+  "version": "9.16.4",
   "devDependencies": {
     "@types/fs-extra": "^8.1.0",
     "@types/jest": "^25.2.1",
@@ -55,7 +55,7 @@
         "uiTheme": "vs",
         "path": "./themes/FunkyDrummer.json"
       },
-      { 
+      {
         "label": "KozmicBlues",
         "uiTheme": "vs",
         "path": "./themes/KozmicBlues.json"
