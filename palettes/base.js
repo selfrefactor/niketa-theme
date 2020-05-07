@@ -37,6 +37,8 @@ const COLOR_0 = [
 
 const COLOR_1 = [
   ...ADDITIONAL_1,
+  'entity.other.attribute-name',
+  'entity.other.attribute-name.js',
   'constant.language.boolean',
   'constant.language.null.js',
   'constant.numeric',
@@ -123,8 +125,6 @@ const COLOR_4 = [
   ...ADDITIONAL_4,
   'variable.other.readwrite',
   'variable.other.readwrite.js',
-  'entity.other.attribute-name',
-  'entity.other.attribute-name.js',
   'comment',
   'comment.block.documentation',
   'comment.line.double-slash',
