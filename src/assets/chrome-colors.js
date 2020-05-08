@@ -195,7 +195,10 @@ exports.chromeColors = {
   'tab.inactiveBackground'                    : CHROME_COLOR_ACCENT,
   'tab.inactiveForeground'                    : '#fff',
   'tab.unfocusedActiveBackground'             : CHROME_COLOR,
-  'tab.unfocusedActiveBorder'                 : CHROME_COLOR,
   'tab.unfocusedActiveForeground'             : '#aa769b',
+  'tab.unfocusedActiveBorder'                 : CHROME_COLOR,
+  'tab.unfocusedInactiveBackground'           : '#ca769b',
+  'tab.hoverForeground'                       : '#034694',
+  'tab.unfocusedHoverForeground'              : '#3346a4',
   'widget.shadow'                             : '#8382aebb',
 }
