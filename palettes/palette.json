@@ -4,435 +4,22 @@
   "colors": {},
   "tokenColors": [
     {
-      "name": "support.class.ruby",
-      "scope": "support.class.ruby",
+      "name": "meta.module-reference",
+      "scope": "meta.module-reference",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "variable.other.property",
-      "scope": "variable.other.property",
+      "name": "meta.function-call.java",
+      "scope": "meta.function-call.java",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "support.constant.css",
-      "scope": "support.constant.css",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.language.rust",
-      "scope": "variable.language.rust",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.function.r",
-      "scope": "variable.function.r",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.type.namespace.scope-resolution.cpp",
-      "scope": "entity.name.type.namespace.scope-resolution.cpp",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "constant.other.reference.label.latex",
-      "scope": "constant.other.reference.label.latex",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.less.string",
-      "scope": "variable.less.string",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.type.swift",
-      "scope": "support.type.swift",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "keyword.type.cs",
-      "scope": "keyword.type.cs",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.block.ruby",
-      "scope": "variable.other.block.ruby",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "keyword.operator.logical",
-      "scope": "keyword.operator.logical",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "source.regexp",
-      "scope": "source.regexp",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "carriage-return",
-      "scope": "carriage-return",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "string.other.link.description.markdown",
-      "scope": "string.other.link.description.markdown",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.delimiter",
-      "scope": "meta.delimiter",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "markup.table",
-      "scope": "markup.table",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.delimiter.property.dot.viml",
-      "scope": "punctuation.delimiter.property.dot.viml",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.tag.sgml",
-      "scope": "meta.tag.sgml",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.other.attribute-name.pseudo-class.css",
-      "scope": "entity.other.attribute-name.pseudo-class.css",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "keyword.control.flow",
-      "scope": "keyword.control.flow",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "storage",
-      "scope": "storage",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.readwrite.instance.crystal",
-      "scope": "variable.other.readwrite.instance.crystal",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "constant.language.unit.haskell",
-      "scope": "constant.language.unit.haskell",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "*link*",
-      "scope": "*link*",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "source.ruby.embedded",
-      "scope": "source.ruby.embedded",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.object.access.cpp",
-      "scope": "variable.other.object.access.cpp",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "markup.raw",
-      "scope": "markup.raw",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.function.gleam",
-      "scope": "entity.name.function.gleam",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.declaration.data.idris",
-      "scope": "meta.declaration.data.idris",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.field",
-      "scope": "punctuation.definition.field",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "markup.deleted",
-      "scope": "markup.deleted",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.type.builtin.graphql",
-      "scope": "support.type.builtin.graphql",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "keyword.other",
-      "scope": "keyword.other",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.function.lua",
-      "scope": "entity.name.function.lua",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.type.property-name",
-      "scope": "support.type.property-name",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.attribute-selector.scss",
-      "scope": "meta.attribute-selector.scss",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.key-value.restructuredtext",
-      "scope": "punctuation.separator.key-value.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "keyword.other.template",
-      "scope": "keyword.other.template",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.object.property.cs",
-      "scope": "variable.other.object.property.cs",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "source.scss",
-      "scope": "source.scss",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.block",
-      "scope": "meta.block",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.package.go",
-      "scope": "entity.name.package.go",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "markup.underline.link.markdown",
-      "scope": "markup.underline.link.markdown",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support",
-      "scope": "support",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.function.lua",
-      "scope": "support.function.lua",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.special.shell",
-      "scope": "variable.other.special.shell",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.variable.magic.python",
-      "scope": "support.variable.magic.python",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.function.any-method.swift",
-      "scope": "support.function.any-method.swift",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.type.object.graphql",
-      "scope": "meta.type.object.graphql",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.assertion",
-      "scope": "meta.assertion",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "invalid.illegal.parenthesis.scheme",
-      "scope": "invalid.illegal.parenthesis.scheme",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "markup.changed.git_gutter",
-      "scope": "markup.changed.git_gutter",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.positional.shell",
-      "scope": "variable.other.positional.shell",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "constant.pathname.viml",
-      "scope": "constant.pathname.viml",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.method-call.java",
-      "scope": "meta.method-call.java",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.function.textit.latex",
-      "scope": "support.function.textit.latex",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.constant.ruby",
-      "scope": "punctuation.definition.constant.ruby",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "storage.type.format.python",
-      "scope": "storage.type.format.python",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "storage.modifier.package",
-      "scope": "storage.modifier.package",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.entity.css",
-      "scope": "punctuation.definition.entity.css",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "storage.type.haskell",
-      "scope": "storage.type.haskell",
+      "name": "keyword.control",
+      "scope": "keyword.control",
       "settings": {
         "foreground": "COLOR_0"
       }
@@ -445,197 +32,330 @@
       }
     },
     {
-      "name": "variable.other.readwrite.cs",
-      "scope": "variable.other.readwrite.cs",
+      "name": "variable.other.global.safer.php",
+      "scope": "variable.other.global.safer.php",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.italic.markdown",
-      "scope": "punctuation.definition.italic.markdown",
+      "name": "keyword.operator.logical",
+      "scope": "keyword.operator.logical",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "markup.other.url",
-      "scope": "markup.other.url",
+      "name": "source.postcss",
+      "scope": "source.postcss",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "*uri*",
-      "scope": "*uri*",
+      "name": "support.type",
+      "scope": "support.type",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "entity.name.tag.css",
-      "scope": "entity.name.tag.css",
+      "name": "punctuation.definition.scope.key-value.viml",
+      "scope": "punctuation.definition.scope.key-value.viml",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "support.class.latex",
-      "scope": "support.class.latex",
+      "name": "variable.interpolation",
+      "scope": "variable.interpolation",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "variable.other.constant.elixir",
-      "scope": "variable.other.constant.elixir",
+      "name": "entity.other.inherited-class.kotlin",
+      "scope": "entity.other.inherited-class.kotlin",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "markup.ignored",
-      "scope": "markup.ignored",
+      "name": "meta.declaration.exports.haskell",
+      "scope": "meta.declaration.exports.haskell",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "entity.name.function.preprocessor.c",
-      "scope": "entity.name.function.preprocessor.c",
+      "name": "brackethighlighter.unmatched",
+      "scope": "brackethighlighter.unmatched",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "string.embedded.end",
-      "scope": "string.embedded.end",
+      "name": "variable.function.r",
+      "scope": "variable.function.r",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "meta.property-list.css.sass.prop",
-      "scope": "meta.property-list.css.sass.prop",
+      "name": "source.css.scss",
+      "scope": "source.css.scss",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "markup.raw.block.fenced.markdown",
-      "scope": "markup.raw.block.fenced.markdown",
+      "name": "markup.bold.markdown",
+      "scope": "markup.bold.markdown",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "variable.scss",
-      "scope": "variable.scss",
+      "name": "punctuation.definition.variable.elixir",
+      "scope": "punctuation.definition.variable.elixir",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "meta.diff.header.from-file",
-      "scope": "meta.diff.header.from-file",
+      "name": "entity.name.function.haskell",
+      "scope": "entity.name.function.haskell",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.separator.pointer-access.c",
-      "scope": "punctuation.separator.pointer-access.c",
+      "name": "variable.other.readwrite.global.pre-defined.ruby",
+      "scope": "variable.other.readwrite.global.pre-defined.ruby",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "constant.other.symbol.elixir",
-      "scope": "constant.other.symbol.elixir",
+      "name": "constant.other.fsharp",
+      "scope": "constant.other.fsharp",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "meta.function.type-declaration.elm",
-      "scope": "meta.function.type-declaration.elm",
+      "name": "variable.graphql",
+      "scope": "variable.graphql",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "meta.function-call.crystal",
-      "scope": "meta.function-call.crystal",
+      "name": "string.other.link.description.title.markdown",
+      "scope": "string.other.link.description.title.markdown",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "meta.object-literal.key",
-      "scope": "meta.object-literal.key",
+      "name": "variable.other.anonymous.elixir",
+      "scope": "variable.other.anonymous.elixir",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "constant.asciidoc",
-      "scope": "constant.asciidoc",
+      "name": "markup.raw.block.markdown",
+      "scope": "markup.raw.block.markdown",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "support.module",
-      "scope": "support.module",
+      "name": "markup.heading.asciidoc",
+      "scope": "markup.heading.asciidoc",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "support.function.section.latex",
-      "scope": "support.function.section.latex",
+      "name": "meta.link.inline.markdown",
+      "scope": "meta.link.inline.markdown",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "support.function.node",
-      "scope": "support.function.node",
+      "name": "keyword.other.important.css",
+      "scope": "keyword.other.important.css",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.separator.method.ruby",
-      "scope": "punctuation.separator.method.ruby",
+      "name": "meta.embedded.block",
+      "scope": "meta.embedded.block",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "support.constant.core.rust",
-      "scope": "support.constant.core.rust",
+      "name": "support.class.component",
+      "scope": "support.class.component",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "entity.name.tag.yaml",
-      "scope": "entity.name.tag.yaml",
+      "name": "variable.other.lua",
+      "scope": "variable.other.lua",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "entity.name.section.latex",
-      "scope": "entity.name.section.latex",
+      "name": "source.idris",
+      "scope": "source.idris",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "meta.structure.dictionary.json",
-      "scope": "meta.structure.dictionary.json",
+      "name": "punctuation.separator.colon.viml",
+      "scope": "punctuation.separator.colon.viml",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "function.css",
+      "scope": "function.css",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.function.be.latex",
+      "scope": "support.function.be.latex",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.group",
+      "scope": "meta.group",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.language.makefile",
+      "scope": "variable.language.makefile",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "string.interpolated",
+      "scope": "string.interpolated",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "constant.other.citation.link.restructuredtext",
+      "scope": "constant.other.citation.link.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.separator.inheritance-clause.swift",
+      "scope": "punctuation.separator.inheritance-clause.swift",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.var.expr",
+      "scope": "meta.var.expr",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.declaration.data.idris",
+      "scope": "meta.declaration.data.idris",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "unit.scss",
+      "scope": "unit.scss",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "brackethighlighter.round",
+      "scope": "brackethighlighter.round",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "source.shell",
+      "scope": "source.shell",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.function.type-signature",
+      "scope": "meta.function.type-signature",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "storage.modifier.import",
+      "scope": "storage.modifier.import",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.constant.scss",
+      "scope": "support.constant.scss",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.type.property-name.scss",
+      "scope": "support.type.property-name.scss",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.method-call.java",
+      "scope": "meta.method-call.java",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.vector.clojure",
+      "scope": "meta.vector.clojure",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.begin",
+      "scope": "punctuation.definition.template-expression.begin",
       "settings": {
         "foreground": "COLOR_0"
       }
@@ -648,43 +368,8 @@
       }
     },
     {
-      "name": "punctuation.definition.variable.shell",
-      "scope": "punctuation.definition.variable.shell",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.method.identifier",
-      "scope": "meta.method.identifier",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.orther.namespace.use.php",
-      "scope": "support.orther.namespace.use.php",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.expression.parenthesized",
-      "scope": "meta.expression.parenthesized",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.tag",
-      "scope": "punctuation.definition.tag",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.readwrite.other.block",
-      "scope": "variable.readwrite.other.block",
+      "name": "entity.other.attribute-name.pseudo-element.css",
+      "scope": "entity.other.attribute-name.pseudo-element.css",
       "settings": {
         "foreground": "COLOR_0"
       }
@@ -697,155 +382,8 @@
       }
     },
     {
-      "name": "support.type.property-name.less",
-      "scope": "support.type.property-name.less",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.variable.php",
-      "scope": "punctuation.definition.variable.php",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.type.property-name.json.comments",
-      "scope": "support.type.property-name.json.comments",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.ruby",
-      "scope": "variable.other.ruby",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.variable.local",
-      "scope": "entity.name.variable.local",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.parameter.function",
-      "scope": "variable.parameter.function",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.object.flowtype",
-      "scope": "meta.object.flowtype",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.other.attribute-name.table.toml",
-      "scope": "entity.other.attribute-name.table.toml",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.property.java",
-      "scope": "variable.other.property.java",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.export.default",
-      "scope": "meta.export.default",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.block.sequence.item.yaml",
-      "scope": "punctuation.definition.block.sequence.item.yaml",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.language.ruby",
-      "scope": "variable.language.ruby",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.object.property",
-      "scope": "variable.object.property",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "variable.other.member.powershell",
-      "scope": "variable.other.member.powershell",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.module-function.erlang",
-      "scope": "punctuation.separator.module-function.erlang",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.type.property-name.media.css",
-      "scope": "support.type.property-name.media.css",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "keyword.other.unit",
-      "scope": "keyword.other.unit",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "meta.function-call",
-      "scope": "meta.function-call",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.type.instance",
-      "scope": "entity.name.type.instance",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.other.inherited-class.placeholder-selector.css.sass",
-      "scope": "entity.other.inherited-class.placeholder-selector.css.sass",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "constant.character.escape",
-      "scope": "constant.character.escape",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "support.type.vendored.property-name.css",
-      "scope": "support.type.vendored.property-name.css",
+      "name": "variable.other.readwrite.global.ruby",
+      "scope": "variable.other.readwrite.global.ruby",
       "settings": {
         "foreground": "COLOR_0"
       }
@@ -858,22 +396,484 @@
       }
     },
     {
-      "name": "markup.macro.block.general",
-      "scope": "markup.macro.block.general",
+      "name": "|",
+      "scope": "|",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "markup.bold",
-      "scope": "markup.bold",
+      "name": "source.cpp",
+      "scope": "source.cpp",
       "settings": {
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "entity.name.tag.restructuredtext",
-      "scope": "entity.name.tag.restructuredtext",
+      "name": "markup.deleted.git_gutter",
+      "scope": "markup.deleted.git_gutter",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "brackethighlighter.angle",
+      "scope": "brackethighlighter.angle",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "source.swift",
+      "scope": "source.swift",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.definition.variable.viml",
+      "scope": "punctuation.definition.variable.viml",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.inserted.git_gutter",
+      "scope": "markup.inserted.git_gutter",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.constant.attribute-name.asciidoc",
+      "scope": "support.constant.attribute-name.asciidoc",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "keyword.control.anchor.regexp",
+      "scope": "keyword.control.anchor.regexp",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.heading.blocktitle.asciidoc",
+      "scope": "markup.heading.blocktitle.asciidoc",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "entity.name.function.viml",
+      "scope": "entity.name.function.viml",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "entity.name.variable.local",
+      "scope": "entity.name.variable.local",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "entity.name.function.crystal",
+      "scope": "entity.name.function.crystal",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.other.block",
+      "scope": "variable.other.block",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.preprocessor.haskell",
+      "scope": "meta.preprocessor.haskell",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "entity.name.function.cs",
+      "scope": "entity.name.function.cs",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "constant.language.unit.haskell",
+      "scope": "constant.language.unit.haskell",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.separator.key-value.mapping.yaml",
+      "scope": "punctuation.separator.key-value.mapping.yaml",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.class",
+      "scope": "support.class",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.section.list.end.elixir",
+      "scope": "punctuation.section.list.end.elixir",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.function",
+      "scope": "variable.function",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.inline.raw.markdown",
+      "scope": "markup.inline.raw.markdown",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.changed.git_gutter",
+      "scope": "markup.changed.git_gutter",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.module.name",
+      "scope": "meta.module.name",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.function.builtin.go",
+      "scope": "support.function.builtin.go",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.other.object.property",
+      "scope": "variable.other.object.property",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "source.haskell",
+      "scope": "source.haskell",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.other.property.cpp",
+      "scope": "variable.other.property.cpp",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.class.latex",
+      "scope": "support.class.latex",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.heading.block-attribute.asciidoc",
+      "scope": "markup.heading.block-attribute.asciidoc",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "keyword.other.preprocessor.haskell",
+      "scope": "keyword.other.preprocessor.haskell",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "storage.type.core.rust",
+      "scope": "storage.type.core.rust",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.separator.namespace.access.cpp",
+      "scope": "punctuation.separator.namespace.access.cpp",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "sass.script.maps",
+      "scope": "sass.script.maps",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.language.swift",
+      "scope": "variable.language.swift",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.readwrite",
+      "scope": "variable.readwrite",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.css",
+      "scope": "variable.css",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.separator.pointer-access.c",
+      "scope": "punctuation.separator.pointer-access.c",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "unit.css",
+      "scope": "unit.css",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.italic.markdown",
+      "scope": "markup.italic.markdown",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.changed",
+      "scope": "markup.changed",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.function-call.generic.python",
+      "scope": "meta.function-call.generic.python",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.constant.misc.r",
+      "scope": "support.constant.misc.r",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "text.restructuredtext",
+      "scope": "text.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "entity",
+      "scope": "entity",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.structure.dictionary.json",
+      "scope": "meta.structure.dictionary.json",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.module.elixir",
+      "scope": "variable.other.readwrite.module.elixir",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.type.vendored.property-name.css",
+      "scope": "support.type.vendored.property-name.css",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.function.type-signature.idris",
+      "scope": "meta.function.type-signature.idris",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "source.less",
+      "scope": "source.less",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "constant.numeric.math.tex",
+      "scope": "constant.numeric.math.tex",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "invalid.illegal.parenthesis.scheme",
+      "scope": "invalid.illegal.parenthesis.scheme",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.scss.string",
+      "scope": "variable.scss.string",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.definition.inserted",
+      "scope": "punctuation.definition.inserted",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "source.fsharp",
+      "scope": "source.fsharp",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.raw",
+      "scope": "markup.raw",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "markup.fenced_code",
+      "scope": "markup.fenced_code",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.definition.blockquote.markdown",
+      "scope": "punctuation.definition.blockquote.markdown",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "unit.less",
+      "scope": "unit.less",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "keyword.other.platform.os.swift",
+      "scope": "keyword.other.platform.os.swift",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "keyword.operator.new",
+      "scope": "keyword.operator.new",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "function.support.builtin",
+      "scope": "function.support.builtin",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "support.variable.swift",
+      "scope": "support.variable.swift",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.other.crystal",
+      "scope": "variable.other.crystal",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.separator.pointer-access",
+      "scope": "punctuation.separator.pointer-access",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.parens.ellipses.elm",
+      "scope": "punctuation.parens.ellipses.elm",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "entity.name.function.clojure",
+      "scope": "entity.name.function.clojure",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "variable.other.special.shell",
+      "scope": "variable.other.special.shell",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.type.object.graphql",
+      "scope": "meta.type.object.graphql",
       "settings": {
         "foreground": "COLOR_0"
       }
@@ -1301,407 +1301,120 @@
       }
     },
     {
-      "name": "meta.group.braces.curly",
-      "scope": "meta.group.braces.curly",
+      "name": "punctuation.definition.raw.markdown",
+      "scope": "punctuation.definition.raw.markdown",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "meta.diff.header",
-      "scope": "meta.diff.header",
+      "name": "punctuation.separator.key-value",
+      "scope": "punctuation.separator.key-value",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "entity.name.function.member.cpp",
-      "scope": "entity.name.function.member.cpp",
+      "name": "support.constant.attribute.viml",
+      "scope": "support.constant.attribute.viml",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "entity.name.function.dart",
-      "scope": "entity.name.function.dart",
+      "name": "constant.numeric.less",
+      "scope": "constant.numeric.less",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "keyword.control.newline.tex",
-      "scope": "keyword.control.newline.tex",
+      "name": "entity.name.tag.restructuredtext",
+      "scope": "entity.name.tag.restructuredtext",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "punctuation.other.period.go",
-      "scope": "punctuation.other.period.go",
+      "name": "string.interpolated.makefile",
+      "scope": "string.interpolated.makefile",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "punctuation.separator.period.python",
-      "scope": "punctuation.separator.period.python",
+      "name": "punctuation.access.module.scss",
+      "scope": "punctuation.access.module.scss",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "variable.function.constructor",
-      "scope": "variable.function.constructor",
+      "name": "string.embedded.begin",
+      "scope": "string.embedded.begin",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "support.function.general.tex",
-      "scope": "support.function.general.tex",
+      "name": "entity.other.attribute-name.html",
+      "scope": "entity.other.attribute-name.html",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "entity.name.filename",
-      "scope": "entity.name.filename",
+      "name": "support.type.viml",
+      "scope": "support.type.viml",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "punctuation.accessor.dot.kotlin",
-      "scope": "punctuation.accessor.dot.kotlin",
+      "name": "punctuation.section.class.end",
+      "scope": "punctuation.section.class.end",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "meta.function.type-record.elm",
-      "scope": "meta.function.type-record.elm",
+      "name": "support.orther.namespace.use.php",
+      "scope": "support.orther.namespace.use.php",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "entity.name.type.class.module.erlang",
-      "scope": "entity.name.type.class.module.erlang",
+      "name": "entity.name.function.lua",
+      "scope": "entity.name.function.lua",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "meta.diff.header.to-file",
-      "scope": "meta.diff.header.to-file",
+      "name": "meta.function-call.swift",
+      "scope": "meta.function-call.swift",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "entity.name.function.crystal",
-      "scope": "entity.name.function.crystal",
+      "name": "markup.mark.asciidoc",
+      "scope": "markup.mark.asciidoc",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "support.class.crystal",
-      "scope": "support.class.crystal",
+      "name": "support.function.attribute.fsharp",
+      "scope": "support.function.attribute.fsharp",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "source.elixir",
-      "scope": "source.elixir",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "strong",
-      "scope": "strong",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "text.html.markdown",
-      "scope": "text.html.markdown",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "markup.heading",
-      "scope": "markup.heading",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.definition.tag.end.html",
-      "scope": "punctuation.definition.tag.end.html",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.definition.constant.elixir",
-      "scope": "punctuation.definition.constant.elixir",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "source.idris",
-      "scope": "source.idris",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.function.name",
-      "scope": "support.function.name",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "source.stylus",
-      "scope": "source.stylus",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.separator.colon.viml",
-      "scope": "punctuation.separator.colon.viml",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant.other.reference.link",
-      "scope": "constant.other.reference.link",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.name.function.preprocessor.cpp",
-      "scope": "entity.name.function.preprocessor.cpp",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "markup.inserted",
-      "scope": "markup.inserted",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "source.crystal",
-      "scope": "source.crystal",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.class.dart",
-      "scope": "support.class.dart",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.separator",
-      "scope": "punctuation.separator",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.variable.UnityEditor",
-      "scope": "support.variable.UnityEditor",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.type.interface",
-      "scope": "meta.type.interface",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.output",
-      "scope": "meta.output",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "markup.changed",
-      "scope": "markup.changed",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.name.type.module",
-      "scope": "entity.name.type.module",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.constant.variable.powershell",
-      "scope": "support.constant.variable.powershell",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "brackethighlighter.curly",
-      "scope": "brackethighlighter.curly",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant.language.symbol",
-      "scope": "constant.language.symbol",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.function.target.PHONY.makefile",
-      "scope": "support.function.target.PHONY.makefile",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.definition.tag.html",
-      "scope": "punctuation.definition.tag.html",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.constant.attribute-name.asciidoc",
-      "scope": "support.constant.attribute-name.asciidoc",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant",
-      "scope": "constant",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.scss.string",
-      "scope": "variable.scss.string",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "markdown.heading",
-      "scope": "markdown.heading",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "comment.punctuation.comma.sass",
-      "scope": "comment.punctuation.comma.sass",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "markup.heading.list.asciidoc",
-      "scope": "markup.heading.list.asciidoc",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.css.string",
-      "scope": "variable.css.string",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant.other.footnote.link",
-      "scope": "constant.other.footnote.link",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.name.type.class",
-      "scope": "entity.name.type.class",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.type.property-name.sass",
-      "scope": "support.type.property-name.sass",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "source.cpp",
-      "scope": "source.cpp",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.other.readwrite.global.ruby",
-      "scope": "variable.other.readwrite.global.ruby",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "storage.type.annotation.java",
-      "scope": "storage.type.annotation.java",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant.numeric.math.tex",
-      "scope": "constant.numeric.math.tex",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "function.scss",
-      "scope": "function.scss",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "keyword.control.layout.tex",
-      "scope": "keyword.control.layout.tex",
+      "name": "support",
+      "scope": "support",
       "settings": {
         "foreground": "COLOR_1"
       }
@@ -1714,113 +1427,8 @@
       }
     },
     {
-      "name": "variable.line-break.asciidoc",
-      "scope": "variable.line-break.asciidoc",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.constant.sass",
-      "scope": "support.constant.sass",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.sass",
-      "scope": "variable.sass",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.name.function.viml",
-      "scope": "entity.name.function.viml",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.name.section",
-      "scope": "entity.name.section",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.var.expr",
-      "scope": "meta.var.expr",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "storage.type.annotation.kotlin",
-      "scope": "storage.type.annotation.kotlin",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.other.readwrite.global.pre-defined.ruby",
-      "scope": "variable.other.readwrite.global.pre-defined.ruby",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.name.variable",
-      "scope": "entity.name.variable",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "string.other.link.title.restructuredtext",
-      "scope": "string.other.link.title.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.global.clojure",
-      "scope": "entity.global.clojure",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.other.namespace.php",
-      "scope": "support.other.namespace.php",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.other.property.cpp",
-      "scope": "variable.other.property.cpp",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.class",
-      "scope": "support.class",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "string.quoted.docstring",
-      "scope": "string.quoted.docstring",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.function.r",
-      "scope": "support.function.r",
+      "name": "string.interpolated.dollar.shell",
+      "scope": "string.interpolated.dollar.shell",
       "settings": {
         "foreground": "COLOR_1"
       }
@@ -1833,8 +1441,435 @@
       }
     },
     {
-      "name": "source.css.scss",
-      "scope": "source.css.scss",
+      "name": "entity.name",
+      "scope": "entity.name",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.numeric.sass",
+      "scope": "constant.numeric.sass",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.diff.header.to-file",
+      "scope": "meta.diff.header.to-file",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.italic.markdown",
+      "scope": "punctuation.definition.italic.markdown",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.deleted",
+      "scope": "punctuation.definition.deleted",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.numeric.module.dot",
+      "scope": "constant.numeric.module.dot",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.function.call.cpp",
+      "scope": "entity.name.function.call.cpp",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.bold",
+      "scope": "markup.bold",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "storage.type.cs",
+      "scope": "storage.type.cs",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.other.object.property.cs",
+      "scope": "variable.other.object.property.cs",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.variable.viml",
+      "scope": "support.variable.viml",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.function.powershell",
+      "scope": "support.function.powershell",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.pathname.viml",
+      "scope": "constant.pathname.viml",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.variable.option.viml",
+      "scope": "support.variable.option.viml",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "keyword.other.substitution",
+      "scope": "keyword.other.substitution",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.other.url.asciidoc",
+      "scope": "markup.other.url.asciidoc",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "emphasis",
+      "scope": "emphasis",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.class.kotlin",
+      "scope": "support.class.kotlin",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.asciidoc",
+      "scope": "constant.asciidoc",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "strong",
+      "scope": "strong",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "source.dart",
+      "scope": "source.dart",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "string.other.link.description.markdown",
+      "scope": "string.other.link.description.markdown",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.scriptblock",
+      "scope": "meta.scriptblock",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.normal.markdown",
+      "scope": "punctuation.definition.normal.markdown",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.table.delimiter.asciidoc",
+      "scope": "markup.table.delimiter.asciidoc",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.function.macro.rust",
+      "scope": "entity.name.function.macro.rust",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.tag",
+      "scope": "meta.tag",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.diff.range",
+      "scope": "meta.diff.range",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.scope-resolution",
+      "scope": "entity.name.scope-resolution",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.delimiter.property.dot.viml",
+      "scope": "punctuation.delimiter.property.dot.viml",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.export.default",
+      "scope": "meta.export.default",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.macro.inline.passthrough.asciidoc",
+      "scope": "markup.macro.inline.passthrough.asciidoc",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "keyword.control.newline.tex",
+      "scope": "keyword.control.newline.tex",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.other.block.ruby",
+      "scope": "variable.other.block.ruby",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "keyword.other.base",
+      "scope": "keyword.other.base",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.other.swift",
+      "scope": "variable.other.swift",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "string.detected-link",
+      "scope": "string.detected-link",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.other.attribute-name.table.toml",
+      "scope": "entity.other.attribute-name.table.toml",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.entity.css",
+      "scope": "punctuation.definition.entity.css",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.other.constant",
+      "scope": "variable.other.constant",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "storage.modifier.scope.viml",
+      "scope": "storage.modifier.scope.viml",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.variable.php",
+      "scope": "punctuation.definition.variable.php",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "keyword.operator.constructor",
+      "scope": "keyword.operator.constructor",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.type.fsharp",
+      "scope": "entity.name.type.fsharp",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.separator.method.ruby",
+      "scope": "punctuation.separator.method.ruby",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.underline.link.markdown",
+      "scope": "markup.underline.link.markdown",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.object.flowtype",
+      "scope": "meta.object.flowtype",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.constant.ext.php",
+      "scope": "support.constant.ext.php",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.separator.module-function.erlang",
+      "scope": "punctuation.separator.module-function.erlang",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.language.base",
+      "scope": "variable.language.base",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.section.markdown",
+      "scope": "entity.name.section.markdown",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.separator.clause-head-body.erlang",
+      "scope": "punctuation.separator.clause-head-body.erlang",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "keyword.type.cs",
+      "scope": "keyword.type.cs",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.code",
+      "scope": "markup.code",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "invalid.unimplemented",
+      "scope": "invalid.unimplemented",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end",
+      "scope": "punctuation.definition.template-expression.end",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.other.reference.link.markdown",
+      "scope": "constant.other.reference.link.markdown",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "storage.type.powershell",
+      "scope": "storage.type.powershell",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.module",
+      "scope": "entity.name.module",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.type.sys-types",
+      "scope": "support.type.sys-types",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.separator.period.python",
+      "scope": "punctuation.separator.period.python",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.parameter.named.idris",
+      "scope": "meta.parameter.named.idris",
       "settings": {
         "foreground": "COLOR_1"
       }
@@ -1847,8 +1882,162 @@
       }
     },
     {
+      "name": "source.ocaml",
+      "scope": "source.ocaml",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.other.php",
+      "scope": "constant.other.php",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.expression.parenthesized",
+      "scope": "meta.expression.parenthesized",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
       "name": "string.quoted",
       "scope": "string.quoted",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "source",
+      "scope": "source",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.raw.restructuredtext",
+      "scope": "markup.raw.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.property-list.css.sass.prop",
+      "scope": "meta.property-list.css.sass.prop",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "function.less",
+      "scope": "function.less",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.object.constant",
+      "scope": "variable.object.constant",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "keyword.operator.negation.regexp",
+      "scope": "keyword.operator.negation.regexp",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.function.swift",
+      "scope": "support.function.swift",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag",
+      "scope": "punctuation.definition.tag",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.highlight.asciidoc",
+      "scope": "markup.highlight.asciidoc",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.language.unit.fsharp",
+      "scope": "constant.language.unit.fsharp",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.instance.crystal",
+      "scope": "variable.other.readwrite.instance.crystal",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.function.construct.php",
+      "scope": "support.function.construct.php",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta",
+      "scope": "meta",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "source.powershell",
+      "scope": "source.powershell",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "support.function.any-method.swift",
+      "scope": "support.function.any-method.swift",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.other.database-name.sql",
+      "scope": "constant.other.database-name.sql",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "storage.modifier.swift",
+      "scope": "storage.modifier.swift",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "constant.other.placeholder.c",
+      "scope": "constant.other.placeholder.c",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.macro.block.general",
+      "scope": "markup.macro.block.general",
       "settings": {
         "foreground": "COLOR_1"
       }
@@ -1868,295 +2057,71 @@
       }
     },
     {
-      "name": "support.variable",
-      "scope": "support.variable",
+      "name": "meta.function.definition.parameters.c",
+      "scope": "meta.function.definition.parameters.c",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "markup.list.numbered",
-      "scope": "markup.list.numbered",
+      "name": "meta.block",
+      "scope": "meta.block",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "source.graphql",
-      "scope": "source.graphql",
+      "name": "storage.type.haskell",
+      "scope": "storage.type.haskell",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "constant.numeric.less",
-      "scope": "constant.numeric.less",
+      "name": "meta.function-call.erlang",
+      "scope": "meta.function-call.erlang",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "meta.structure.dictionary.value.json",
-      "scope": "meta.structure.dictionary.value.json",
+      "name": "punctuation.separator.java",
+      "scope": "punctuation.separator.java",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "support.type.viml",
-      "scope": "support.type.viml",
+      "name": "support.function.r",
+      "scope": "support.function.r",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "meta.embedded.block",
-      "scope": "meta.embedded.block",
+      "name": "meta.generic-where-clause.swift",
+      "scope": "meta.generic-where-clause.swift",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "markup.raw.block",
-      "scope": "markup.raw.block",
+      "name": "entity.name.function.gleam",
+      "scope": "entity.name.function.gleam",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "variable.readwrite",
-      "scope": "variable.readwrite",
+      "name": "support.constant.variable.powershell",
+      "scope": "support.constant.variable.powershell",
       "settings": {
         "foreground": "COLOR_1"
       }
     },
     {
-      "name": "meta.group",
-      "scope": "meta.group",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.function-call.arguments.python",
-      "scope": "meta.function-call.arguments.python",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.function-call.c",
-      "scope": "meta.function-call.c",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "markup.underline.substitution.restructuredtext",
-      "scope": "markup.underline.substitution.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "storage.modifier.swift",
-      "scope": "storage.modifier.swift",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.template.expression",
-      "scope": "meta.template.expression",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.other.readwrite.instance.ruby",
-      "scope": "variable.other.readwrite.instance.ruby",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "markup.link",
-      "scope": "markup.link",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "string.embedded",
-      "scope": "string.embedded",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.parameter",
-      "scope": "meta.parameter",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.metadata.simple.clojure",
-      "scope": "meta.metadata.simple.clojure",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.section.regexp.begin.elixir",
-      "scope": "punctuation.section.regexp.begin.elixir",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "keyword.other.important.css",
-      "scope": "keyword.other.important.css",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.object.constant",
-      "scope": "variable.object.constant",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.separator.inheritance-clause.swift",
-      "scope": "punctuation.separator.inheritance-clause.swift",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant.other.general.math.tex",
-      "scope": "constant.other.general.math.tex",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "markup.table.cell.delimiter.asciidoc",
-      "scope": "markup.table.cell.delimiter.asciidoc",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.definition.blockquote.markdown",
-      "scope": "punctuation.definition.blockquote.markdown",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "keyword.control.preamble.latex",
-      "scope": "keyword.control.preamble.latex",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.function.magic.python",
-      "scope": "support.function.magic.python",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.language.self.crystal",
-      "scope": "variable.language.self.crystal",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "source.viml",
-      "scope": "source.viml",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant.other.color",
-      "scope": "constant.other.color",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "text.html.basic",
-      "scope": "text.html.basic",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.class.kotlin",
-      "scope": "support.class.kotlin",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.separator.pointer-access",
-      "scope": "punctuation.separator.pointer-access",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta",
-      "scope": "meta",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant.language.lua",
-      "scope": "constant.language.lua",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.function.attribute.fsharp",
-      "scope": "support.function.attribute.fsharp",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.name.type.fsharp",
-      "scope": "entity.name.type.fsharp",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "source.shell",
-      "scope": "source.shell",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "constant.numeric.scss",
-      "scope": "constant.numeric.scss",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "meta.scriptblock",
-      "scope": "meta.scriptblock",
+      "name": "punctuation.definition.asciidoc",
+      "scope": "punctuation.definition.asciidoc",
       "settings": {
         "foreground": "COLOR_1"
       }
@@ -2169,8 +2134,43 @@
       }
     },
     {
-      "name": "markup.raw.inner.restructuredtext",
-      "scope": "markup.raw.inner.restructuredtext",
+      "name": "entity.name.type.swift",
+      "scope": "entity.name.type.swift",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "keyword.control.preamble.latex",
+      "scope": "keyword.control.preamble.latex",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "markup.deleted",
+      "scope": "markup.deleted",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.structure.tuple.erlang",
+      "scope": "meta.structure.tuple.erlang",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "meta.attribute.rust",
+      "scope": "meta.attribute.rust",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "comment.punctuation.comma.sass",
+      "scope": "comment.punctuation.comma.sass",
       "settings": {
         "foreground": "COLOR_1"
       }
@@ -2641,799 +2641,8 @@
       }
     },
     {
-      "name": "keyword.other.base",
-      "scope": "keyword.other.base",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.declaration.procedure.scheme",
-      "scope": "meta.declaration.procedure.scheme",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "brackethighlighter.quote",
-      "scope": "brackethighlighter.quote",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "message.error",
-      "scope": "message.error",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.name.function.macro.erlang",
-      "scope": "entity.name.function.macro.erlang",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.parameter.named.idris",
-      "scope": "meta.parameter.named.idris",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.function.swift",
-      "scope": "support.function.swift",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.other.object.property",
-      "scope": "variable.other.object.property",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "interpolated.simple.source",
-      "scope": "interpolated.simple.source",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.variable.environment.viml",
-      "scope": "support.variable.environment.viml",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.numeric.css",
-      "scope": "constant.numeric.css",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "keyword.operator.other.elixir",
-      "scope": "keyword.operator.other.elixir",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.other.swift",
-      "scope": "variable.other.swift",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.constant.attribute.viml",
-      "scope": "support.constant.attribute.viml",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "source",
-      "scope": "source",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.heading.blocktitle.asciidoc",
-      "scope": "markup.heading.blocktitle.asciidoc",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "unit.css",
-      "scope": "unit.css",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.tag.begin.html",
-      "scope": "punctuation.definition.tag.begin.html",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace",
-      "scope": "meta.brace",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.inline.raw.markdown",
-      "scope": "markup.inline.raw.markdown",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "keyword.control.anchor.regexp",
-      "scope": "keyword.control.anchor.regexp",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.other",
-      "scope": "variable.other",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.constant.scss",
-      "scope": "support.constant.scss",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.character.numeric.regexp",
-      "scope": "constant.character.numeric.regexp",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.function.definition.elixir",
-      "scope": "meta.function.definition.elixir",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.name.function-call",
-      "scope": "entity.name.function-call",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.declaration.module.idris",
-      "scope": "meta.declaration.module.idris",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.character.module.name",
-      "scope": "constant.character.module.name",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.constant.misc.r",
-      "scope": "support.constant.misc.r",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "string.interpolated.makefile",
-      "scope": "string.interpolated.makefile",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.list",
-      "scope": "markup.list",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.generic-where-clause.swift",
-      "scope": "meta.generic-where-clause.swift",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.section.class.end",
-      "scope": "punctuation.section.class.end",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "function.sass",
-      "scope": "function.sass",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.other.variable",
-      "scope": "support.other.variable",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.other.footnote.link.restructuredtext",
-      "scope": "constant.other.footnote.link.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.separator.key-value",
-      "scope": "punctuation.separator.key-value",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.function.go",
-      "scope": "support.function.go",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.raw.inline.markdown",
-      "scope": "markup.raw.inline.markdown",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "storage.identifier",
-      "scope": "storage.identifier",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.other.readwrite.powershell",
-      "scope": "variable.other.readwrite.powershell",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.property-value",
-      "scope": "meta.property-value",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.class.math.latex",
-      "scope": "support.class.math.latex",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.name.function.haskell",
-      "scope": "entity.name.function.haskell",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end",
-      "scope": "punctuation.definition.template-expression.end",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.other.command.restructuredtext",
-      "scope": "markup.other.command.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.accessor.cs",
-      "scope": "punctuation.accessor.cs",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "source.dart",
-      "scope": "source.dart",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.language.unit.fsharp",
-      "scope": "constant.language.unit.fsharp",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "sass.script.maps",
-      "scope": "sass.script.maps",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.directive.restructuredtext",
-      "scope": "support.directive.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.parens.ellipses.elm",
-      "scope": "punctuation.parens.ellipses.elm",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.other.symbol",
-      "scope": "constant.other.symbol",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.raw.markdown",
-      "scope": "punctuation.definition.raw.markdown",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.function.type-signature.idris",
-      "scope": "meta.function.type-signature.idris",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.function-call.swift",
-      "scope": "meta.function-call.swift",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.other.inherited-class.kotlin",
-      "scope": "entity.other.inherited-class.kotlin",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "token.debug-token",
-      "scope": "token.debug-token",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "invalid.illegal",
-      "scope": "invalid.illegal",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "keyword.other.this",
-      "scope": "keyword.other.this",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "source.reason",
-      "scope": "source.reason",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.module-reference",
-      "scope": "meta.module-reference",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "unit.less",
-      "scope": "unit.less",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.raw.restructuredtext",
-      "scope": "markup.raw.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.list.bullet.asciidoc",
-      "scope": "markup.list.bullet.asciidoc",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "namespace.open.fsharp",
-      "scope": "namespace.open.fsharp",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.escape",
-      "scope": "constant.escape",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.other.placeholder.c",
-      "scope": "constant.other.placeholder.c",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.variable.swift",
-      "scope": "support.variable.swift",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.asciidoc",
-      "scope": "punctuation.definition.asciidoc",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "invalid.deprecated",
-      "scope": "invalid.deprecated",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "invalid.broken",
-      "scope": "invalid.broken",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.heading.asciidoc",
-      "scope": "markup.heading.asciidoc",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.function.textbf.latex",
-      "scope": "support.function.textbf.latex",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.other.attribute-name.html",
-      "scope": "entity.other.attribute-name.html",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "invalid.unimplemented",
-      "scope": "invalid.unimplemented",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.name.type.swift",
-      "scope": "entity.name.type.swift",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "function.support.builtin",
-      "scope": "function.support.builtin",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.class.component",
-      "scope": "support.class.component",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.substitution.attribute-reference.asciidoc",
-      "scope": "markup.substitution.attribute-reference.asciidoc",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.preprocessor.haskell",
-      "scope": "meta.preprocessor.haskell",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.other.object",
-      "scope": "variable.other.object",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.underline",
-      "scope": "markup.underline",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.separator.namespace.access.cpp",
-      "scope": "punctuation.separator.namespace.access.cpp",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.language.elixir",
-      "scope": "variable.language.elixir",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.type.sys-types",
-      "scope": "support.type.sys-types",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "storage.modifier.import.java",
-      "scope": "storage.modifier.import.java",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.colon.graphql",
-      "scope": "punctuation.colon.graphql",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "string.quoted.docstring.multi",
-      "scope": "string.quoted.docstring.multi",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.inserted.git_gutter",
-      "scope": "markup.inserted.git_gutter",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.name.type.class.kotlin",
-      "scope": "entity.name.type.class.kotlin",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.other.placeholder",
-      "scope": "constant.other.placeholder",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.character.format.placeholder.other.python",
-      "scope": "constant.character.format.placeholder.other.python",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.fenced_code",
-      "scope": "markup.fenced_code",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.function.powershell",
-      "scope": "support.function.powershell",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.type.property-name.scss",
-      "scope": "support.type.property-name.scss",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "markup.heading.marker.asciidoc",
-      "scope": "markup.heading.marker.asciidoc",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.other.key",
-      "scope": "constant.other.key",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.function-call.erlang",
-      "scope": "meta.function-call.erlang",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.separator.dictionary.key-value.json",
-      "scope": "punctuation.separator.dictionary.key-value.json",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.begin",
-      "scope": "punctuation.definition.template-expression.begin",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.sass.string",
-      "scope": "variable.sass.string",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.name.module",
-      "scope": "entity.name.module",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "entity.name.function.guard.erlang",
-      "scope": "entity.name.function.guard.erlang",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.variable.viml",
-      "scope": "punctuation.definition.variable.viml",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "source.less",
-      "scope": "source.less",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "storage.modifier.attribute.swift",
-      "scope": "storage.modifier.attribute.swift",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "*url*",
-      "scope": "*url*",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "token.error-token",
-      "scope": "token.error-token",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "constant.character.css.sass",
-      "scope": "constant.character.css.sass",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "support.type.property-name.css",
-      "scope": "support.type.property-name.css",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.less",
-      "scope": "variable.less",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.separator.method.elixir",
-      "scope": "punctuation.separator.method.elixir",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.other.crystal",
-      "scope": "variable.other.crystal",
+      "name": "variable.parameter.function.swift",
+      "scope": "variable.parameter.function.swift",
       "settings": {
         "foreground": "COLOR_2"
       }
@@ -3446,50 +2655,575 @@
       }
     },
     {
-      "name": "markup.inline",
-      "scope": "markup.inline",
+      "name": "entity.name.type.namespace.scope-resolution.cpp",
+      "scope": "entity.name.type.namespace.scope-resolution.cpp",
       "settings": {
         "foreground": "COLOR_2"
       }
     },
     {
-      "name": "meta.property-list",
-      "scope": "meta.property-list",
+      "name": "constant.other.symbol.elixir",
+      "scope": "constant.other.symbol.elixir",
       "settings": {
         "foreground": "COLOR_2"
       }
     },
     {
-      "name": "punctuation.definition.heading.markdown",
-      "scope": "punctuation.definition.heading.markdown",
+      "name": "entity.name.function.dart",
+      "scope": "entity.name.function.dart",
       "settings": {
         "foreground": "COLOR_2"
       }
     },
     {
-      "name": "meta.import.haskell",
-      "scope": "meta.import.haskell",
+      "name": "support.variable.environment.viml",
+      "scope": "support.variable.environment.viml",
       "settings": {
         "foreground": "COLOR_2"
       }
     },
     {
-      "name": "support.type",
-      "scope": "support.type",
+      "name": "invalid.illegal",
+      "scope": "invalid.illegal",
       "settings": {
         "foreground": "COLOR_2"
       }
     },
     {
-      "name": "storage.modifier.import",
-      "scope": "storage.modifier.import",
+      "name": "brackethighlighter.tag",
+      "scope": "brackethighlighter.tag",
       "settings": {
         "foreground": "COLOR_2"
       }
     },
     {
-      "name": "source.powershell",
-      "scope": "source.powershell",
+      "name": "markup.heading.setext",
+      "scope": "markup.heading.setext",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.object-literal.key",
+      "scope": "meta.object-literal.key",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.inheritance.php",
+      "scope": "punctuation.separator.inheritance.php",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "keyword.other.unit",
+      "scope": "keyword.other.unit",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.type.property-name.less",
+      "scope": "support.type.property-name.less",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.package.kotlin",
+      "scope": "entity.name.package.kotlin",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.language.ruby",
+      "scope": "variable.language.ruby",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.property-value",
+      "scope": "meta.property-value",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.language.dart",
+      "scope": "variable.language.dart",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "namespace.open.fsharp",
+      "scope": "namespace.open.fsharp",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.function.erlang",
+      "scope": "entity.name.function.erlang",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.less",
+      "scope": "variable.less",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.type.elm",
+      "scope": "variable.type.elm",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.ignored",
+      "scope": "markup.ignored",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.makefile",
+      "scope": "variable.other.makefile",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.bracket.shell",
+      "scope": "variable.other.bracket.shell",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.other.reference.label.latex",
+      "scope": "constant.other.reference.label.latex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "text.html.basic",
+      "scope": "text.html.basic",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.function.parameters",
+      "scope": "meta.function.parameters",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.function.swift",
+      "scope": "entity.name.function.swift",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.function.textit.latex",
+      "scope": "support.function.textit.latex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.class.ruby",
+      "scope": "support.class.ruby",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "function.scss",
+      "scope": "function.scss",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.group.braces.curly",
+      "scope": "meta.group.braces.curly",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.section.embedded",
+      "scope": "punctuation.section.embedded",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.list",
+      "scope": "markup.list",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.character.asciidoc",
+      "scope": "constant.character.asciidoc",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "storage.type.annotation.java",
+      "scope": "storage.type.annotation.java",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.constant",
+      "scope": "entity.name.constant",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.function-call.cpp",
+      "scope": "meta.function-call.cpp",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.function.magic.python",
+      "scope": "support.function.magic.python",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.type.class.module.erlang",
+      "scope": "entity.name.type.class.module.erlang",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.other.placeholder.go",
+      "scope": "constant.other.placeholder.go",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.css.string",
+      "scope": "variable.css.string",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.type.property-name.json.comments",
+      "scope": "support.type.property-name.json.comments",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.access.cpp",
+      "scope": "variable.other.object.access.cpp",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.variable.powershell",
+      "scope": "punctuation.definition.variable.powershell",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.comment",
+      "scope": "punctuation.definition.comment",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.constant.core.rust",
+      "scope": "support.constant.core.rust",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "keyword.other",
+      "scope": "keyword.other",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.instance.ruby",
+      "scope": "variable.other.readwrite.instance.ruby",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.other.namespace.php",
+      "scope": "support.other.namespace.php",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.keyValuePair.toml",
+      "scope": "punctuation.definition.keyValuePair.toml",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "message.error",
+      "scope": "message.error",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.other.attribute-name.class",
+      "scope": "entity.other.attribute-name.class",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.function.node",
+      "scope": "support.function.node",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.dot.kotlin",
+      "scope": "punctuation.accessor.dot.kotlin",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.namespace.ruby",
+      "scope": "punctuation.separator.namespace.ruby",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "unit.sass",
+      "scope": "unit.sass",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "string.embedded.end",
+      "scope": "string.embedded.end",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.entity",
+      "scope": "punctuation.definition.entity",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.other.reference.link",
+      "scope": "constant.other.reference.link",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.namespace",
+      "scope": "entity.name.namespace",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "parameter.variable.function.elixir",
+      "scope": "parameter.variable.function.elixir",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.property-name",
+      "scope": "meta.property-name",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.readwrite.other.block",
+      "scope": "variable.readwrite.other.block",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.function.type-declaration.elm",
+      "scope": "meta.function.type-declaration.elm",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.record.field.accessor.elm",
+      "scope": "entity.name.record.field.accessor.elm",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "keyword.operator.quantifier.regexp",
+      "scope": "keyword.operator.quantifier.regexp",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.type.builtin.graphql",
+      "scope": "support.type.builtin.graphql",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.function.java",
+      "scope": "entity.name.function.java",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.function.url.latex",
+      "scope": "support.function.url.latex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.type.class",
+      "scope": "entity.name.type.class",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.template.expression",
+      "scope": "meta.template.expression",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.other.symbol",
+      "scope": "constant.other.symbol",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.separator.markdown",
+      "scope": "meta.separator.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "storage.modifier.attribute.swift",
+      "scope": "storage.modifier.attribute.swift",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.type.flowtype",
+      "scope": "punctuation.type.flowtype",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "string.comment",
+      "scope": "string.comment",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.language.symbol",
+      "scope": "constant.language.symbol",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.language.elixir",
+      "scope": "variable.language.elixir",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.tag.attributes",
+      "scope": "meta.tag.attributes",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "source.regexp",
+      "scope": "source.regexp",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.underline.substitution.restructuredtext",
+      "scope": "markup.underline.substitution.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "token.debug-token",
+      "scope": "token.debug-token",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.function.embedded.latex",
+      "scope": "meta.function.embedded.latex",
       "settings": {
         "foreground": "COLOR_2"
       }
@@ -3502,15 +3236,281 @@
       }
     },
     {
-      "name": "storage.type.core.rust",
-      "scope": "storage.type.core.rust",
+      "name": "variable.other.property",
+      "scope": "variable.other.property",
       "settings": {
         "foreground": "COLOR_2"
       }
     },
     {
-      "name": "punctuation.section.list.end.elixir",
-      "scope": "punctuation.section.list.end.elixir",
+      "name": "punctuation.section.regexp.end.elixir",
+      "scope": "punctuation.section.regexp.end.elixir",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "*url*",
+      "scope": "*url*",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.sass",
+      "scope": "variable.sass",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.list_item.markdown",
+      "scope": "punctuation.definition.list_item.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.bold.markdown",
+      "scope": "punctuation.definition.bold.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "brackethighlighter.curly",
+      "scope": "brackethighlighter.curly",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "entity.name.type.instance",
+      "scope": "entity.name.type.instance",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "source.scss",
+      "scope": "source.scss",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.block.crystal",
+      "scope": "variable.other.block.crystal",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.heading.list.asciidoc",
+      "scope": "markup.heading.list.asciidoc",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.constant.sass",
+      "scope": "support.constant.sass",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.dot.dart",
+      "scope": "punctuation.dot.dart",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.key-value.restructuredtext",
+      "scope": "punctuation.separator.key-value.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.other.general.math.tex",
+      "scope": "constant.other.general.math.tex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "storage.control.clojure",
+      "scope": "storage.control.clojure",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.constant.css",
+      "scope": "support.constant.css",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.import",
+      "scope": "meta.import",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.cs",
+      "scope": "punctuation.accessor.cs",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.type.interface",
+      "scope": "meta.type.interface",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.generic-parameter-constraint.swift",
+      "scope": "punctuation.separator.generic-parameter-constraint.swift",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "keyword.control.layout.tex",
+      "scope": "keyword.control.layout.tex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition",
+      "scope": "punctuation.definition",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "constant.character.module.name",
+      "scope": "constant.character.module.name",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.function.constructor",
+      "scope": "variable.function.constructor",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.argument-label.swift",
+      "scope": "punctuation.separator.argument-label.swift",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.group.capture.regexp",
+      "scope": "punctuation.definition.group.capture.regexp",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "source.crystal",
+      "scope": "source.crystal",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.php",
+      "scope": "variable.other.php",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.fenced.markdown",
+      "scope": "punctuation.definition.fenced.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.function.general.tex",
+      "scope": "support.function.general.tex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.declaration.module.idris",
+      "scope": "meta.declaration.module.idris",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "meta.assertion",
+      "scope": "meta.assertion",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.class.stdplugin.viml",
+      "scope": "support.class.stdplugin.viml",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.untracked",
+      "scope": "markup.untracked",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "*link*",
+      "scope": "*link*",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.quote.markdown",
+      "scope": "markup.quote.markdown",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.other.period.go",
+      "scope": "punctuation.other.period.go",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.method.elixir",
+      "scope": "punctuation.separator.method.elixir",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "markup.table.cell.delimiter.asciidoc",
+      "scope": "markup.table.cell.delimiter.asciidoc",
       "settings": {
         "foreground": "COLOR_2"
       }
@@ -4069,85 +4069,22 @@
       }
     },
     {
-      "name": "string.other.link.title.markdown",
-      "scope": "string.other.link.title.markdown",
+      "name": "punctuation.definition.tag.begin.html",
+      "scope": "punctuation.definition.tag.begin.html",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "variable.other.block.crystal",
-      "scope": "variable.other.block.crystal",
+      "name": "entity.name.section",
+      "scope": "entity.name.section",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "variable.other.constant",
-      "scope": "variable.other.constant",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.other.url.asciidoc",
-      "scope": "markup.other.url.asciidoc",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "string.quoted.double.json",
-      "scope": "string.quoted.double.json",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.inline.raw.string.markdown",
-      "scope": "markup.inline.raw.string.markdown",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "support.function.construct.php",
-      "scope": "support.function.construct.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "support.function.url.latex",
-      "scope": "support.function.url.latex",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.tag.reference",
-      "scope": "entity.name.tag.reference",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "support.variable.UnityEngine",
-      "scope": "support.variable.UnityEngine",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.operator.negation.regexp",
-      "scope": "keyword.operator.negation.regexp",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation",
-      "scope": "punctuation",
+      "name": "constant.numeric.scss",
+      "scope": "constant.numeric.scss",
       "settings": {
         "foreground": "COLOR_3"
       }
@@ -4160,323 +4097,15 @@
       }
     },
     {
-      "name": "variable.other.global.safer.php",
-      "scope": "variable.other.global.safer.php",
+      "name": "string.regexp",
+      "scope": "string.regexp",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "variable.other.readwrite.module.elixir",
-      "scope": "variable.other.readwrite.module.elixir",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.separator.argument-label.swift",
-      "scope": "punctuation.separator.argument-label.swift",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.function.parameters.php",
-      "scope": "meta.function.parameters.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.type.flowtype",
-      "scope": "punctuation.type.flowtype",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.package.kotlin",
-      "scope": "entity.name.package.kotlin",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.separator.key-value.mapping.yaml",
-      "scope": "punctuation.separator.key-value.mapping.yaml",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.admonition",
-      "scope": "markup.admonition",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.function.c",
-      "scope": "entity.name.function.c",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.css",
-      "scope": "variable.css",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.filename.find-in-files",
-      "scope": "entity.name.filename.find-in-files",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.heading.setext",
-      "scope": "markup.heading.setext",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "string.regexp.character-class",
-      "scope": "string.regexp.character-class",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "constant.type-constructor.elm",
-      "scope": "constant.type-constructor.elm",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.function.call.cpp",
-      "scope": "entity.name.function.call.cpp",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "support.dictionary.json",
-      "scope": "support.dictionary.json",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.record.field.accessor.elm",
-      "scope": "entity.name.record.field.accessor.elm",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.separator.generic-parameter-constraint.swift",
-      "scope": "punctuation.separator.generic-parameter-constraint.swift",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.bold.markdown",
-      "scope": "punctuation.definition.bold.markdown",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "storage.type.powershell",
-      "scope": "storage.type.powershell",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity",
-      "scope": "entity",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.function-call.python",
-      "scope": "meta.function-call.python",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "string.other.link",
-      "scope": "string.other.link",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.parameter.url.css",
-      "scope": "variable.parameter.url.css",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.lua",
-      "scope": "variable.other.lua",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.link.reference.def",
-      "scope": "meta.link.reference.def",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.control",
-      "scope": "keyword.control",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "constant.other.gleam",
-      "scope": "constant.other.gleam",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.alias",
-      "scope": "variable.other.alias",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.group.capture.regexp",
-      "scope": "punctuation.definition.group.capture.regexp",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.function-call.cpp",
-      "scope": "meta.function-call.cpp",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "function.css",
-      "scope": "function.css",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.keyValuePair.toml",
-      "scope": "punctuation.definition.keyValuePair.toml",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.group.braces.round.function.arguments",
-      "scope": "meta.group.braces.round.function.arguments",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.block",
-      "scope": "variable.other.block",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.function.rust",
-      "scope": "entity.name.function.rust",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.raw.block.markdown",
-      "scope": "markup.raw.block.markdown",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.type.elm",
-      "scope": "variable.type.elm",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "source.rust",
-      "scope": "source.rust",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.changed",
-      "scope": "punctuation.definition.changed",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.makefile",
-      "scope": "variable.other.makefile",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.table.delimiter.asciidoc",
-      "scope": "markup.table.delimiter.asciidoc",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.mark.asciidoc",
-      "scope": "markup.mark.asciidoc",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.other.special-method",
-      "scope": "keyword.other.special-method",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.method-call",
-      "scope": "meta.method-call",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.type.rust",
-      "scope": "entity.name.type.rust",
+      "name": "meta.brace",
+      "scope": "meta.brace",
       "settings": {
         "foreground": "COLOR_3"
       }
@@ -4489,302 +4118,29 @@
       }
     },
     {
-      "name": "string.interpolated",
-      "scope": "string.interpolated",
+      "name": "brackethighlighter.quote",
+      "scope": "brackethighlighter.quote",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "markup.italic.quotes.asciidoc",
-      "scope": "markup.italic.quotes.asciidoc",
+      "name": "source.graphql",
+      "scope": "source.graphql",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "punctuation.definition.fenced.markdown",
-      "scope": "punctuation.definition.fenced.markdown",
+      "name": "variable.other.alias",
+      "scope": "variable.other.alias",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "meta.use.php",
-      "scope": "meta.use.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.other.preprocessor.haskell",
-      "scope": "keyword.other.preprocessor.haskell",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.function-call.php",
-      "scope": "meta.function-call.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.operator",
-      "scope": "keyword.operator",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.fenced_code.block.markdown",
-      "scope": "markup.fenced_code.block.markdown",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.section.list.begin.elixir",
-      "scope": "punctuation.section.list.begin.elixir",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.operator.list.shell",
-      "scope": "keyword.operator.list.shell",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "string.detected-link",
-      "scope": "string.detected-link",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.operator.or.regexp",
-      "scope": "keyword.operator.or.regexp",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "string.comment",
-      "scope": "string.comment",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.function.java",
-      "scope": "entity.name.function.java",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "source.sass",
-      "scope": "source.sass",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.tag.class",
-      "scope": "entity.name.tag.class",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.scope.key-value.viml",
-      "scope": "punctuation.definition.scope.key-value.viml",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "brackethighlighter.round",
-      "scope": "brackethighlighter.round",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.language.closure-parameter.swift",
-      "scope": "variable.language.closure-parameter.swift",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.function.ctor",
-      "scope": "entity.name.function.ctor",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "support.function.be.latex",
-      "scope": "support.function.be.latex",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.structure.tuple.erlang",
-      "scope": "meta.structure.tuple.erlang",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "string.other.link.description.title.markdown",
-      "scope": "string.other.link.description.title.markdown",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.scope-resolution",
-      "scope": "entity.name.scope-resolution",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "support.constant.ext.php",
-      "scope": "support.constant.ext.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.class.kotlin",
-      "scope": "entity.name.class.kotlin",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.property-name",
-      "scope": "meta.property-name",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.tag.id",
-      "scope": "entity.name.tag.id",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.separator.inheritance.php",
-      "scope": "punctuation.separator.inheritance.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "support.class.stdplugin.viml",
-      "scope": "support.class.stdplugin.viml",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.php",
-      "scope": "variable.other.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "source.postcss",
-      "scope": "source.postcss",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.language.dart",
-      "scope": "variable.language.dart",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.readwrite.class.crystal",
-      "scope": "variable.other.readwrite.class.crystal",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.tag",
-      "scope": "meta.tag",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.italic.markdown",
-      "scope": "markup.italic.markdown",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.separator.clause-head-body.erlang",
-      "scope": "punctuation.separator.clause-head-body.erlang",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "string.unquoted",
-      "scope": "string.unquoted",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "constant.other.citation.link.restructuredtext",
-      "scope": "constant.other.citation.link.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.inserted",
-      "scope": "punctuation.definition.inserted",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.other.back-reference.regexp",
-      "scope": "keyword.other.back-reference.regexp",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "markup.untracked",
-      "scope": "markup.untracked",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.name.function.macro.rust",
-      "scope": "entity.name.function.macro.rust",
+      "name": "storage.modifier.package",
+      "scope": "storage.modifier.package",
       "settings": {
         "foreground": "COLOR_3"
       }
@@ -4797,50 +4153,36 @@
       }
     },
     {
-      "name": "entity.name.function.target.makefile",
-      "scope": "entity.name.function.target.makefile",
+      "name": "markup.heading.marker.asciidoc",
+      "scope": "markup.heading.marker.asciidoc",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "support.type.object",
-      "scope": "support.type.object",
+      "name": "constant.other.gleam",
+      "scope": "constant.other.gleam",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "brackethighlighter.angle",
-      "scope": "brackethighlighter.angle",
+      "name": "support.type.property-name",
+      "scope": "support.type.property-name",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "storage.type.elm",
-      "scope": "storage.type.elm",
+      "name": "storage.type.annotation.kotlin",
+      "scope": "storage.type.annotation.kotlin",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "constant.numeric.module.dot",
-      "scope": "constant.numeric.module.dot",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "source.python",
-      "scope": "source.python",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.other.important.scss",
-      "scope": "keyword.other.important.scss",
+      "name": "entity.name.function.c",
+      "scope": "entity.name.function.c",
       "settings": {
         "foreground": "COLOR_3"
       }
@@ -4853,50 +4195,36 @@
       }
     },
     {
-      "name": "meta.link.inline.markdown",
-      "scope": "meta.link.inline.markdown",
+      "name": "entity.other.attribute-name.pseudo-class.css",
+      "scope": "entity.other.attribute-name.pseudo-class.css",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "variable.parameter.function.swift",
-      "scope": "variable.parameter.function.swift",
+      "name": "support.function.name",
+      "scope": "support.function.name",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "markup.highlight.asciidoc",
-      "scope": "markup.highlight.asciidoc",
+      "name": "support.variable",
+      "scope": "support.variable",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "variable.language.base",
-      "scope": "variable.language.base",
+      "name": "variable.other.class",
+      "scope": "variable.other.class",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "source.swift",
-      "scope": "source.swift",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.other.substitution",
-      "scope": "keyword.other.substitution",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "entity.other.inherited-class.haskell",
-      "scope": "entity.other.inherited-class.haskell",
+      "name": "constant",
+      "scope": "constant",
       "settings": {
         "foreground": "COLOR_3"
       }
@@ -4909,36 +4237,708 @@
       }
     },
     {
-      "name": "text.restructuredtext",
-      "scope": "text.restructuredtext",
+      "name": "string.embedded",
+      "scope": "string.embedded",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "parameter.variable.function.elixir",
-      "scope": "parameter.variable.function.elixir",
+      "name": "text.html.markdown",
+      "scope": "text.html.markdown",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "support.function.builtin.go",
-      "scope": "support.function.builtin.go",
+      "name": "markup.admonition",
+      "scope": "markup.admonition",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "keyword.symbol",
-      "scope": "keyword.symbol",
+      "name": "support.function.target.PHONY.makefile",
+      "scope": "support.function.target.PHONY.makefile",
       "settings": {
         "foreground": "COLOR_3"
       }
     },
     {
-      "name": "string",
-      "scope": "string",
+      "name": "punctuation.definition.constant.elixir",
+      "scope": "punctuation.definition.constant.elixir",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.scss",
+      "scope": "variable.scss",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.type.module",
+      "scope": "entity.name.type.module",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "string.regexp.character-class",
+      "scope": "string.regexp.character-class",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.separator.dictionary.key-value.json",
+      "scope": "punctuation.separator.dictionary.key-value.json",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.function.method.with-arguments.ruby",
+      "scope": "meta.function.method.with-arguments.ruby",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.class.kotlin",
+      "scope": "entity.name.class.kotlin",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.dictionary.json",
+      "scope": "support.dictionary.json",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.ruby",
+      "scope": "variable.other.ruby",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.separator.method.crystal",
+      "scope": "punctuation.separator.method.crystal",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.function.type-declaration.haskell",
+      "scope": "meta.function.type-declaration.haskell",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.list.bullet.asciidoc",
+      "scope": "markup.list.bullet.asciidoc",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.other.url",
+      "scope": "markup.other.url",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "keyword.other.special-method",
+      "scope": "keyword.other.special-method",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.other.module.idris",
+      "scope": "support.other.module.idris",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.role.restructuredtext",
+      "scope": "entity.name.role.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.function.asciidoc",
+      "scope": "entity.name.function.asciidoc",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.diff",
+      "scope": "meta.diff",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.line-break.asciidoc",
+      "scope": "variable.line-break.asciidoc",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.definition.heading.markdown",
+      "scope": "punctuation.definition.heading.markdown",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.type.property-name.sass",
+      "scope": "support.type.property-name.sass",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.function-call.arguments.python",
+      "scope": "meta.function-call.arguments.python",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.other.inherited-class.haskell",
+      "scope": "entity.other.inherited-class.haskell",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.raw.inner.restructuredtext",
+      "scope": "markup.raw.inner.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.filename.find-in-files",
+      "scope": "entity.name.filename.find-in-files",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.raw.block.fenced.markdown",
+      "scope": "markup.raw.block.fenced.markdown",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.other.footnote.link",
+      "scope": "constant.other.footnote.link",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.language.lua",
+      "scope": "constant.language.lua",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "carriage-return",
+      "scope": "carriage-return",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.inline.raw.string.markdown",
+      "scope": "markup.inline.raw.string.markdown",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.definition.block.sequence.item.yaml",
+      "scope": "punctuation.definition.block.sequence.item.yaml",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.member.powershell",
+      "scope": "variable.other.member.powershell",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.module",
+      "scope": "support.module",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.section.fsharp",
+      "scope": "entity.name.section.fsharp",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "source.viml",
+      "scope": "source.viml",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.section.latex",
+      "scope": "entity.name.section.latex",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "invalid.deprecated",
+      "scope": "invalid.deprecated",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.filename",
+      "scope": "entity.name.filename",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.separator",
+      "scope": "punctuation.separator",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.use.php",
+      "scope": "meta.use.php",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.section.list.begin.elixir",
+      "scope": "punctuation.section.list.begin.elixir",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "storage.type.format.python",
+      "scope": "storage.type.format.python",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.erlang",
+      "scope": "variable.other.erlang",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.substitution.attribute-reference.asciidoc",
+      "scope": "markup.substitution.attribute-reference.asciidoc",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.parameter.function",
+      "scope": "variable.parameter.function",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.definition.field",
+      "scope": "punctuation.definition.field",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.variable.magic.python",
+      "scope": "support.variable.magic.python",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "storage",
+      "scope": "storage",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.function.target.makefile",
+      "scope": "entity.name.function.target.makefile",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.function.preprocessor.cpp",
+      "scope": "entity.name.function.preprocessor.cpp",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.escape",
+      "scope": "constant.escape",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.function.parameters.php",
+      "scope": "meta.function.parameters.php",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.list.numbered",
+      "scope": "markup.list.numbered",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.function.guard.erlang",
+      "scope": "entity.name.function.guard.erlang",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "keyword.other.important.scss",
+      "scope": "keyword.other.important.scss",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.other.table-name.sql",
+      "scope": "constant.other.table-name.sql",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "storage.type.java",
+      "scope": "storage.type.java",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.less.string",
+      "scope": "variable.less.string",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "storage.modifier",
+      "scope": "storage.modifier",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.class.math.latex",
+      "scope": "support.class.math.latex",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.section.regexp.begin.elixir",
+      "scope": "punctuation.section.regexp.begin.elixir",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.tag.css",
+      "scope": "entity.name.tag.css",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.type.property-name.css",
+      "scope": "support.type.property-name.css",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.function.lua",
+      "scope": "meta.function.lua",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "string.other.link.title.markdown",
+      "scope": "string.other.link.title.markdown",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.output",
+      "scope": "meta.output",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.object",
+      "scope": "variable.other.object",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.type.property-name.media.css",
+      "scope": "support.type.property-name.media.css",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "keyword.other.back-reference.regexp",
+      "scope": "keyword.other.back-reference.regexp",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.function-call.c",
+      "scope": "meta.function-call.c",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "constant.other.key",
+      "scope": "constant.other.key",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "punctuation.definition.constant.ruby",
+      "scope": "punctuation.definition.constant.ruby",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.directive.erlang",
+      "scope": "meta.directive.erlang",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "source.stylus",
+      "scope": "source.stylus",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markdown.heading",
+      "scope": "markdown.heading",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.declaration.module",
+      "scope": "meta.declaration.module",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.attribute-selector.scss",
+      "scope": "meta.attribute-selector.scss",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.separator",
+      "scope": "meta.separator",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.function.textbf.latex",
+      "scope": "support.function.textbf.latex",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.class.crystal",
+      "scope": "support.class.crystal",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.function.definition.elixir",
+      "scope": "meta.function.definition.elixir",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "source.python",
+      "scope": "source.python",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "source.rust",
+      "scope": "source.rust",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.link",
+      "scope": "markup.link",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "keyword.control.flow",
+      "scope": "keyword.control.flow",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.function.member.cpp",
+      "scope": "entity.name.function.member.cpp",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.sass.string",
+      "scope": "variable.sass.string",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "keyword.other.template",
+      "scope": "keyword.other.template",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "markup.italic.quotes.asciidoc",
+      "scope": "markup.italic.quotes.asciidoc",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "entity.name.type.rust",
+      "scope": "entity.name.type.rust",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.object.property",
+      "scope": "variable.object.property",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "text.asciidoc",
+      "scope": "text.asciidoc",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.type.object",
+      "scope": "support.type.object",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "meta.hashtable.assignment",
+      "scope": "meta.hashtable.assignment",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.cs",
+      "scope": "variable.other.readwrite.cs",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "interpolated.simple.source",
+      "scope": "interpolated.simple.source",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "support.constant.property-value",
+      "scope": "support.constant.property-value",
       "settings": {
         "foreground": "COLOR_3"
       }
@@ -5483,13 +5483,6 @@
       }
     },
     {
-      "name": "support.type.property-name.json",
-      "scope": "support.type.property-name.json",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
       "name": "variable.object.property.js",
       "scope": "variable.object.property.js",
       "settings": {
@@ -5574,496 +5567,6 @@
       }
     },
     {
-      "name": "meta.function.method.with-arguments.ruby",
-      "scope": "meta.function.method.with-arguments.ruby",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.section.embedded",
-      "scope": "punctuation.section.embedded",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.access.module.scss",
-      "scope": "punctuation.access.module.scss",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "unit.scss",
-      "scope": "unit.scss",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition",
-      "scope": "punctuation.definition",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "markup.heading.block-attribute.asciidoc",
-      "scope": "markup.heading.block-attribute.asciidoc",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.separator.method.crystal",
-      "scope": "punctuation.separator.method.crystal",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "string.regexp.arbitrary-repitition",
-      "scope": "string.regexp.arbitrary-repitition",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.function.definition.parameters.c",
-      "scope": "meta.function.definition.parameters.c",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.other.anonymous.elixir",
-      "scope": "variable.other.anonymous.elixir",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "keyword.other.platform.os.swift",
-      "scope": "keyword.other.platform.os.swift",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.language.kotlin",
-      "scope": "variable.language.kotlin",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "keyword.key.toml",
-      "scope": "keyword.key.toml",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.other.bracket.shell",
-      "scope": "variable.other.bracket.shell",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.variable.powershell",
-      "scope": "punctuation.definition.variable.powershell",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.other.attribute-name.class",
-      "scope": "entity.other.attribute-name.class",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "storage.class.std.rust",
-      "scope": "storage.class.std.rust",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.diff.range",
-      "scope": "meta.diff.range",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.entity",
-      "scope": "punctuation.definition.entity",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.other.attribute-name.pseudo-element.css",
-      "scope": "entity.other.attribute-name.pseudo-element.css",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.function-call.java",
-      "scope": "meta.function-call.java",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.language.fenced.markdown",
-      "scope": "variable.language.fenced.markdown",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.separator.namespace.ruby",
-      "scope": "punctuation.separator.namespace.ruby",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "markup.bold.markdown",
-      "scope": "markup.bold.markdown",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.separator",
-      "scope": "meta.separator",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.language.swift",
-      "scope": "variable.language.swift",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.section.regexp.end.elixir",
-      "scope": "punctuation.section.regexp.end.elixir",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "storage.control.clojure",
-      "scope": "storage.control.clojure",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.declaration.exports.haskell",
-      "scope": "meta.declaration.exports.haskell",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.language.makefile",
-      "scope": "variable.language.makefile",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "string.regexp",
-      "scope": "string.regexp",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.normal.markdown",
-      "scope": "punctuation.definition.normal.markdown",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "markup.deleted.git_gutter",
-      "scope": "markup.deleted.git_gutter",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "constant.keyword.clojure",
-      "scope": "constant.keyword.clojure",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.separator.markdown",
-      "scope": "meta.separator.markdown",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.function.lua",
-      "scope": "meta.function.lua",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "unit.sass",
-      "scope": "unit.sass",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.import",
-      "scope": "meta.import",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "string.interpolated.dollar.shell",
-      "scope": "string.interpolated.dollar.shell",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.list_item.markdown",
-      "scope": "punctuation.definition.list_item.markdown",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "emphasis",
-      "scope": "emphasis",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.tag.attributes",
-      "scope": "meta.tag.attributes",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "constant.other.fsharp",
-      "scope": "constant.other.fsharp",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name",
-      "scope": "entity.name",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "function.support.core",
-      "scope": "function.support.core",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "markup.quote.markdown",
-      "scope": "markup.quote.markdown",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.definition.type.extension.swift",
-      "scope": "meta.definition.type.extension.swift",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.graphql",
-      "scope": "variable.graphql",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.hashtable.assignment",
-      "scope": "meta.hashtable.assignment",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.section.fsharp",
-      "scope": "entity.name.section.fsharp",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "markup.macro.inline.passthrough.asciidoc",
-      "scope": "markup.macro.inline.passthrough.asciidoc",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.variable.elixir",
-      "scope": "punctuation.definition.variable.elixir",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.instance.constructor",
-      "scope": "meta.instance.constructor",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "keyword.operator.quantifier.regexp",
-      "scope": "keyword.operator.quantifier.regexp",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "source.scheme",
-      "scope": "source.scheme",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "keyword.operator.new",
-      "scope": "keyword.operator.new",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.attribute.rust",
-      "scope": "meta.attribute.rust",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "constant.other.reference.link.markdown",
-      "scope": "constant.other.reference.link.markdown",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.function.type-declaration.haskell",
-      "scope": "meta.function.type-declaration.haskell",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "keyword.operator.constructor",
-      "scope": "keyword.operator.constructor",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "support.variable.option.viml",
-      "scope": "support.variable.option.viml",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.role.restructuredtext",
-      "scope": "entity.name.role.restructuredtext",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.hashtable",
-      "scope": "meta.hashtable",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "markup.admonition.asciidoc",
-      "scope": "markup.admonition.asciidoc",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "text.asciidoc",
-      "scope": "text.asciidoc",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "constant.other.placeholder.go",
-      "scope": "constant.other.placeholder.go",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.comment",
-      "scope": "punctuation.definition.comment",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "brackethighlighter.tag",
-      "scope": "brackethighlighter.tag",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.function.swift",
-      "scope": "entity.name.function.swift",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "constant.character.asciidoc",
-      "scope": "constant.character.asciidoc",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
       "name": "punctuation.definition.template-expression",
       "scope": "punctuation.definition.template-expression",
       "settings": {
@@ -6071,351 +5574,29 @@
       }
     },
     {
-      "name": "meta.module.name",
-      "scope": "meta.module.name",
+      "name": "entity.other.inherited-class.placeholder-selector.css.sass",
+      "scope": "entity.other.inherited-class.placeholder-selector.css.sass",
       "settings": {
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "constant.other.database-name.sql",
-      "scope": "constant.other.database-name.sql",
+      "name": "support.variable.UnityEditor",
+      "scope": "support.variable.UnityEditor",
       "settings": {
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "meta.function.embedded.latex",
-      "scope": "meta.function.embedded.latex",
+      "name": "support.function.go",
+      "scope": "support.function.go",
       "settings": {
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "entity.name.constant",
-      "scope": "entity.name.constant",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "support.constant.property-value",
-      "scope": "support.constant.property-value",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.interpolation",
-      "scope": "variable.interpolation",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.function.erlang",
-      "scope": "entity.name.function.erlang",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.function.asciidoc",
-      "scope": "entity.name.function.asciidoc",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.variables.graphql",
-      "scope": "meta.variables.graphql",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "storage.type.cs",
-      "scope": "storage.type.cs",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.other.class",
-      "scope": "variable.other.class",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.namespace",
-      "scope": "entity.name.namespace",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "storage.modifier.scope.viml",
-      "scope": "storage.modifier.scope.viml",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.deleted",
-      "scope": "punctuation.definition.deleted",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "source.yaml",
-      "scope": "source.yaml",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.function.clojure",
-      "scope": "entity.name.function.clojure",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.function.cs",
-      "scope": "entity.name.function.cs",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.directive.erlang",
-      "scope": "meta.directive.erlang",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.function.parameters",
-      "scope": "meta.function.parameters",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "|",
-      "scope": "|",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.separator.period.java",
-      "scope": "punctuation.separator.period.java",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.function",
-      "scope": "variable.function",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "token.info-token",
-      "scope": "token.info-token",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "support.variable.viml",
-      "scope": "support.variable.viml",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "markup.meta.attribute-list.asciidoc",
-      "scope": "markup.meta.attribute-list.asciidoc",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.dot.dart",
-      "scope": "punctuation.dot.dart",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.other.erlang",
-      "scope": "variable.other.erlang",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "storage.modifier",
-      "scope": "storage.modifier",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.function.ctor.idris",
-      "scope": "entity.name.function.ctor.idris",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "constant.numeric.sass",
-      "scope": "constant.numeric.sass",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.section.markdown",
-      "scope": "entity.name.section.markdown",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "source.fsharp",
-      "scope": "source.fsharp",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.declaration.module",
-      "scope": "meta.declaration.module",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "source.ocaml",
-      "scope": "source.ocaml",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "keyword.control.at-rule",
-      "scope": "keyword.control.at-rule",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "string.embedded.begin",
-      "scope": "string.embedded.begin",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "support.other.module.idris",
-      "scope": "support.other.module.idris",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.function-call.generic.python",
-      "scope": "meta.function-call.generic.python",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "function.less",
-      "scope": "function.less",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.function.type-signature",
-      "scope": "meta.function.type-signature",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "storage.type.java",
-      "scope": "storage.type.java",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.vector.clojure",
-      "scope": "meta.vector.clojure",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "variable.language.special.self.python",
-      "scope": "variable.language.special.self.python",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "markup.code",
-      "scope": "markup.code",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.separator.java",
-      "scope": "punctuation.separator.java",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "constant.other.table-name.sql",
-      "scope": "constant.other.table-name.sql",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.diff",
-      "scope": "meta.diff",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "constant.other.php",
-      "scope": "constant.other.php",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "source.elm",
-      "scope": "source.elm",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "entity.name.variable.parameter.cs",
-      "scope": "entity.name.variable.parameter.cs",
+      "name": "meta.function.type-record.elm",
+      "scope": "meta.function.type-record.elm",
       "settings": {
         "foreground": "COLOR_4"
       }
@@ -6428,15 +5609,834 @@
       }
     },
     {
-      "name": "source.haskell",
-      "scope": "source.haskell",
+      "name": "meta.property-list",
+      "scope": "meta.property-list",
       "settings": {
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "brackethighlighter.unmatched",
-      "scope": "brackethighlighter.unmatched",
+      "name": "meta.function-call.python",
+      "scope": "meta.function-call.python",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.package.go",
+      "scope": "entity.name.package.go",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.operator.list.shell",
+      "scope": "keyword.operator.list.shell",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function.ctor.idris",
+      "scope": "entity.name.function.ctor.idris",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "token.info-token",
+      "scope": "token.info-token",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.other.link.title.restructuredtext",
+      "scope": "string.other.link.title.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.variables.graphql",
+      "scope": "meta.variables.graphql",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.function-call.php",
+      "scope": "meta.function-call.php",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function.macro.erlang",
+      "scope": "entity.name.function.macro.erlang",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.hashtable",
+      "scope": "meta.hashtable",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "token.error-token",
+      "scope": "token.error-token",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.separator.period.java",
+      "scope": "punctuation.separator.period.java",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.tag.sgml",
+      "scope": "meta.tag.sgml",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "source.elixir",
+      "scope": "source.elixir",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.type.swift",
+      "scope": "support.type.swift",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.fenced_code.block.markdown",
+      "scope": "markup.fenced_code.block.markdown",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.language.rust",
+      "scope": "variable.language.rust",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.other.command.restructuredtext",
+      "scope": "markup.other.command.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "source.reason",
+      "scope": "source.reason",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.function.section.latex",
+      "scope": "support.function.section.latex",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "storage.class.std.rust",
+      "scope": "storage.class.std.rust",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.quoted.double.json",
+      "scope": "string.quoted.double.json",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.unquoted",
+      "scope": "string.unquoted",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.diff.header",
+      "scope": "meta.diff.header",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.global.clojure",
+      "scope": "entity.global.clojure",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.positional.shell",
+      "scope": "variable.other.positional.shell",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.tag.reference",
+      "scope": "entity.name.tag.reference",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.class.dart",
+      "scope": "support.class.dart",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.language.kotlin",
+      "scope": "variable.language.kotlin",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.inserted",
+      "scope": "markup.inserted",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.tag.class",
+      "scope": "entity.name.tag.class",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.delimiter",
+      "scope": "meta.delimiter",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.key.toml",
+      "scope": "keyword.key.toml",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.variable",
+      "scope": "entity.name.variable",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.tag.yaml",
+      "scope": "entity.name.tag.yaml",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.other.color",
+      "scope": "constant.other.color",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.definition.type.extension.swift",
+      "scope": "meta.definition.type.extension.swift",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string",
+      "scope": "string",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.colon.graphql",
+      "scope": "punctuation.colon.graphql",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "source.ruby.embedded",
+      "scope": "source.ruby.embedded",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.heading",
+      "scope": "markup.heading",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function.preprocessor.c",
+      "scope": "entity.name.function.preprocessor.c",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.tag.id",
+      "scope": "entity.name.tag.id",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.language.special.self.python",
+      "scope": "variable.language.special.self.python",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.operator",
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.numeric.css",
+      "scope": "constant.numeric.css",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.control.at-rule",
+      "scope": "keyword.control.at-rule",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.changed",
+      "scope": "punctuation.definition.changed",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.powershell",
+      "scope": "variable.other.readwrite.powershell",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "source.elm",
+      "scope": "source.elm",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.function-call",
+      "scope": "meta.function-call",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.directive.restructuredtext",
+      "scope": "support.directive.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.admonition.asciidoc",
+      "scope": "markup.admonition.asciidoc",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "function.support.core",
+      "scope": "function.support.core",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function-call",
+      "scope": "entity.name.function-call",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "storage.modifier.import.java",
+      "scope": "storage.modifier.import.java",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "function.sass",
+      "scope": "function.sass",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.method.identifier",
+      "scope": "meta.method.identifier",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.diff.header.from-file",
+      "scope": "meta.diff.header.from-file",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.end.html",
+      "scope": "punctuation.definition.tag.end.html",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.type-constructor.elm",
+      "scope": "constant.type-constructor.elm",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.variable.UnityEngine",
+      "scope": "support.variable.UnityEngine",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.inline",
+      "scope": "markup.inline",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "source.yaml",
+      "scope": "source.yaml",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.language.closure-parameter.swift",
+      "scope": "variable.language.closure-parameter.swift",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.symbol",
+      "scope": "keyword.symbol",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.operator.other.elixir",
+      "scope": "keyword.operator.other.elixir",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.parameter.url.css",
+      "scope": "variable.parameter.url.css",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "storage.identifier",
+      "scope": "storage.identifier",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.function.lua",
+      "scope": "support.function.lua",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.quoted.docstring",
+      "scope": "string.quoted.docstring",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.character.css.sass",
+      "scope": "constant.character.css.sass",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.character.numeric.regexp",
+      "scope": "constant.character.numeric.regexp",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.variable.parameter.cs",
+      "scope": "entity.name.variable.parameter.cs",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "invalid.broken",
+      "scope": "invalid.broken",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "source.scheme",
+      "scope": "source.scheme",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.character.format.placeholder.other.python",
+      "scope": "constant.character.format.placeholder.other.python",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.other.link",
+      "scope": "string.other.link",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.other.this",
+      "scope": "keyword.other.this",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.html",
+      "scope": "punctuation.definition.tag.html",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.language.fenced.markdown",
+      "scope": "variable.language.fenced.markdown",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.character.escape",
+      "scope": "constant.character.escape",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.readwrite.class.crystal",
+      "scope": "variable.other.readwrite.class.crystal",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.method-call",
+      "scope": "meta.method-call",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "storage.type.elm",
+      "scope": "storage.type.elm",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.group.braces.round.function.arguments",
+      "scope": "meta.group.braces.round.function.arguments",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.constant.elixir",
+      "scope": "variable.other.constant.elixir",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.other.footnote.link.restructuredtext",
+      "scope": "constant.other.footnote.link.restructuredtext",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.other.variable",
+      "scope": "support.other.variable",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.parameter",
+      "scope": "meta.parameter",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.language.self.crystal",
+      "scope": "variable.language.self.crystal",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.quoted.docstring.multi",
+      "scope": "string.quoted.docstring.multi",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.metadata.simple.clojure",
+      "scope": "meta.metadata.simple.clojure",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.raw.block",
+      "scope": "markup.raw.block",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.meta.attribute-list.asciidoc",
+      "scope": "markup.meta.attribute-list.asciidoc",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.table",
+      "scope": "markup.table",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "*uri*",
+      "scope": "*uri*",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "string.regexp.arbitrary-repitition",
+      "scope": "string.regexp.arbitrary-repitition",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.raw.inline.markdown",
+      "scope": "markup.raw.inline.markdown",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.keyword.clojure",
+      "scope": "constant.keyword.clojure",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.link.reference.def",
+      "scope": "meta.link.reference.def",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.structure.dictionary.value.json",
+      "scope": "meta.structure.dictionary.value.json",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.function-call.crystal",
+      "scope": "meta.function-call.crystal",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.variable.shell",
+      "scope": "punctuation.definition.variable.shell",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.declaration.procedure.scheme",
+      "scope": "meta.declaration.procedure.scheme",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other",
+      "scope": "variable.other",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.instance.constructor",
+      "scope": "meta.instance.constructor",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "source.sass",
+      "scope": "source.sass",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function.ctor",
+      "scope": "entity.name.function.ctor",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.operator.or.regexp",
+      "scope": "keyword.operator.or.regexp",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function.rust",
+      "scope": "entity.name.function.rust",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "variable.other.property.java",
+      "scope": "variable.other.property.java",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "markup.underline",
+      "scope": "markup.underline",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.type.class.kotlin",
+      "scope": "entity.name.type.class.kotlin",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.import.haskell",
+      "scope": "meta.import.haskell",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation",
+      "scope": "punctuation",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "constant.other.placeholder",
+      "scope": "constant.other.placeholder",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "support.type.property-name.json",
+      "scope": "support.type.property-name.json",
       "settings": {
         "foreground": "COLOR_4"
       }

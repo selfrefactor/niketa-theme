@@ -115,7 +115,6 @@ const COLOR_3 = [
   'variable.other.object.property.js',
   'string.template',
   'string.unquoted.label.js',
-  'support.type.property-name.json',
   'variable.object.property.js',
   'variable.other.class.js',
   'variable.other.property.js',
@@ -123,6 +122,7 @@ const COLOR_3 = [
 
 const COLOR_4 = [
   ...ADDITIONAL_4,
+  'support.type.property-name.json',
   'variable.other.readwrite',
   'variable.other.readwrite.js',
   'comment',
