@@ -65,6 +65,7 @@ const COLOR_1 = [
 
 const COLOR_2 = [
   ...ADDITIONAL_2,
+  "string.quoted.double.json",
   'entity.name.class.js',
   'entity.name.module.js',
   'variable.language.this',
