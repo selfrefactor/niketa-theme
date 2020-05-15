@@ -1,10 +1,11 @@
 import { outputJson } from 'fs-extra'
 import { resolve } from 'path'
-import { remove, replace } from 'rambdax'
+import { maybe, remove, replace } from 'rambdax'
 
 import * as basePalette from '../../palettes/base'
 
 const UNDERLINE = '.UNDERLINE'
+const ITALIC = '.ITALIC'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
 
 async function save({ label, data }){
@@ -21,12 +22,12 @@ async function save({ label, data }){
   )
 }
 
-function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
+function pushToTokenColors({ syntaxInstance, fontStyle, tokenColors, color }){
   const tokenColor = {
     name     : syntaxInstance,
     scope    : syntaxInstance,
     settings : {
-      ...underline,
+      ...fontStyle,
       foreground : color,
     },
   }
@@ -41,7 +42,7 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
         name     : `${ plainSyntaxInstance }${ extension }`,
         scope    : `${ plainSyntaxInstance }${ extension }`,
         settings : {
-          ...underline,
+          ...fontStyle,
           foreground : color,
         },
       }
@@ -54,7 +55,7 @@ function pushToTokenColors({ syntaxInstance, underline, tokenColors, color }){
     )
     pushToTokenColors({
       syntaxInstance : endSyntaxInstance,
-      underline,
+      fontStyle,
       tokenColors,
       color,
     })
@@ -67,15 +68,16 @@ export function generatePalette(label){
 
   Object.entries(baseData).forEach(([ color, syntaxInstances ]) => {
     syntaxInstances.forEach(syntaxInstanceRaw => {
-      const syntaxInstance = remove(UNDERLINE, syntaxInstanceRaw)
-
-      const underline = syntaxInstanceRaw.endsWith(UNDERLINE) ?
-        { fontStyle : 'underline' } :
-        {}
+      const syntaxInstance = remove([ UNDERLINE, ITALIC ], syntaxInstanceRaw)
+      const fontStyle = maybe(
+        syntaxInstanceRaw.endsWith(UNDERLINE),
+        { fontStyle : 'underline' },
+        syntaxInstanceRaw.endsWith(ITALIC) ? { fontStyle : 'italic' } : {}
+      )
 
       pushToTokenColors({
         syntaxInstance,
-        underline,
+        fontStyle,
         color,
         tokenColors,
       })
