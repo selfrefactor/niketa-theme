@@ -60,7 +60,7 @@ function pushToTokenColors({ syntaxInstance, fontStyle, tokenColors, color }){
       color,
     })
   }
-}   
+}
 
 export function generatePalette(label){
   const { baseBase, baseData } = basePalette
