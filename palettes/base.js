@@ -89,7 +89,7 @@ const COLOR_2 = [
 const COLOR_3 = [
   ...ADDITIONAL_3,
   'constant.other.object.key.js',
-  'entity.name.function.js.ITALIC',
+  'entity.name.function.js',
   'entity.name.function.method',
   'entity.name.tag.js',
   'entity.other.ng-binding-name.property.html',
@@ -150,8 +150,8 @@ const COLOR_4 = [
   'support.function.mutator.js',
   'tag.decorator.js',
   'variable.language',
-  'variable.other.readwrite',
-  'variable.other.readwrite.js',
+  'variable.other.readwrite.ITALIC',
+  'variable.other.readwrite.js.ITALIC',
 ]
 
 export const baseBase = {
