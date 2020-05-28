@@ -32,7 +32,7 @@ const SETTINGS_ORIGIN = [
   { LedZeppelin },
   { StrangeBrew },
   { SweatLeaf },
-]
+] 
 
 const SETTINGS = SETTINGS_ORIGIN.map(x => {
   const { prop } = headObject(x)
