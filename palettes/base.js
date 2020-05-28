@@ -150,8 +150,8 @@ const COLOR_4 = [
   'support.function.mutator.js',
   'tag.decorator.js',
   'variable.language',
-  'variable.other.readwrite.ITALIC',
-  'variable.other.readwrite.js.ITALIC',
+  'variable.other.readwrite',
+  'variable.other.readwrite.js',
 ]
 
 export const baseBase = {

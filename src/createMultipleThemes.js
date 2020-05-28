@@ -33,7 +33,7 @@ const SETTINGS_ORIGIN = [
   { StrangeBrew },
   { SweatLeaf },
 ]
- 
+
 const SETTINGS = SETTINGS_ORIGIN.map(x => {
   const { prop } = headObject(x)
 
@@ -56,7 +56,7 @@ const SETTINGS = SETTINGS_ORIGIN.map(x => {
 
   return x
 })
-
+ 
 async function singleRun(themeSettings){
   const themesDirectory = resolve(__dirname, '../themes/')
   const [ [ themeName, colors ] ] = Object.entries(themeSettings)
