@@ -89,7 +89,7 @@ const COLOR_2 = [
 const COLOR_3 = [
   ...ADDITIONAL_3,
   'constant.other.object.key.js',
-  'entity.name.function.js',
+  'entity.name.function.js.ITALIC',
   'entity.name.function.method',
   'entity.name.tag.js',
   'entity.other.ng-binding-name.property.html',
