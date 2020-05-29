@@ -57,6 +57,8 @@ const COLOR_1 = [
   'support.type.primitive.js',
   'support.variable.property.js',
   'variable',
+  'variable.other.readwrite',
+  'variable.other.readwrite.js',
   'variable.other.readwrite.alias.js',
   'variable.other.readwrite.decorator.js',
 ]
@@ -149,9 +151,7 @@ const COLOR_4 = [
   'support.constant',
   'support.function.mutator.js',
   'tag.decorator.js',
-  'variable.language',
-  'variable.other.readwrite',
-  'variable.other.readwrite.js',
+  'variable.language'
 ]
 
 export const baseBase = {

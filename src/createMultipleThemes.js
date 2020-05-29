@@ -55,8 +55,8 @@ const SETTINGS = SETTINGS_ORIGIN.map(x => {
   if (prop === SPIN_LABEL) return x
 
   return x
-})
- 
+}) 
+
 async function singleRun(themeSettings){
   const themesDirectory = resolve(__dirname, '../themes/')
   const [ [ themeName, colors ] ] = Object.entries(themeSettings)
