@@ -105,6 +105,7 @@ const peekView = {
 }
 
 const fromMissingColors = {
+  'editor.stackFrameHighlightBackground'     : '#ffffff',
   'textCodeBlock.background'                 : `${ SOFTER_ACCENT }22`,
   'peekViewEditorGutter.background'          : CHROME_COLOR_ACCENT,
   'settings.textInputBackground'             : CHROME_COLOR,
