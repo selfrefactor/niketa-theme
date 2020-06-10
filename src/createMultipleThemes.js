@@ -44,7 +44,7 @@ const SETTINGS = SETTINGS_ORIGIN.map(x => {
       return yProp === SPIN_LABEL
     })(SETTINGS_ORIGIN)
     if (!found) return x
-
+ 
     const { value: foundValue } = headObject(found)
 
     const spinned = shuffle(foundValue)
@@ -55,7 +55,7 @@ const SETTINGS = SETTINGS_ORIGIN.map(x => {
   if (prop === SPIN_LABEL) return x
 
   return x
-})
+}) 
 
 async function singleRun(themeSettings){
   const themesDirectory = resolve(__dirname, '../themes/')

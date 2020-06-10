@@ -202,4 +202,5 @@ exports.chromeColors = {
   'tab.hoverForeground'                       : '#034694',
   'tab.unfocusedHoverForeground'              : '#3346a4',
   'widget.shadow'                             : '#8382aebb',
+  'inputOption.activeForeground'              : '#323863'
 }
