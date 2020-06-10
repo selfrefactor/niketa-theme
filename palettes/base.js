@@ -44,8 +44,6 @@ const COLOR_1 = [
   'entity.name.tag.class.js',
   'entity.name.type.UNDERLINE',
   'entity.name.type.js',
-  'entity.other.attribute-name',
-  'entity.other.attribute-name.js',
   'expression.ng',
   'keyword',
   'markup.heading.markdown',
@@ -65,6 +63,8 @@ const COLOR_1 = [
 
 const COLOR_2 = [
   ...ADDITIONAL_2,
+  'entity.other.attribute-name',
+  'entity.other.attribute-name.js',
   'entity.name.class.js',
   'entity.name.module.js',
   'keyword.control.import.js',
