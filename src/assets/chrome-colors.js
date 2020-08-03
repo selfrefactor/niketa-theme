@@ -143,9 +143,18 @@ const fromMissingColors = {
   'editorGroupHeader.noTabsBackground'       : BACK_COLOR,
 }
 
+const breadcrumbs = {
+  'breadcrumb.background'                : '#fdfdfd',
+  'breadcrumbPicker.background'          : '#f1f1f1',
+  'breadcrumb.activeSelectionForeground' : '#b53389',
+  'breadcrumb.focusForeground'           : '#df3163',
+  'breadcrumb.foreground'                : '#515670',
+}
+
 exports.chromeColors = {
   ...missingColors,
   ...fromMissingColors,
+  ...breadcrumbs,
   ...peekView,
   ...menuColors,
   ...selectionColors,
@@ -202,5 +211,5 @@ exports.chromeColors = {
   'tab.hoverForeground'                       : '#034694',
   'tab.unfocusedHoverForeground'              : '#3346a4',
   'widget.shadow'                             : '#8382aebb',
-  'inputOption.activeForeground'              : '#323863'
+  'inputOption.activeForeground'              : '#323863',
 }
