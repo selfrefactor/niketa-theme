@@ -6,7 +6,7 @@ const {
   HelloSpaceboy,
   KozmicBlues,
   LedZeppelin,
-  StrangeBrew,
+  StrangeBrew, 
   SweatLeaf,
 } = require('./assets/themes-colors.js')
 const { chromeColors } = require('./assets/chrome-colors.js')
