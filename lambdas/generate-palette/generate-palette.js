@@ -6,6 +6,7 @@ import * as basePalette from '../../palettes/base'
 
 const UNDERLINE = '.UNDERLINE'
 const ITALIC = '.ITALIC'
+const BOLD = '.BOLD'
 const extensions = [ '.jsx', '.ts', '.tsx' ]
 
 async function save({ label, data }){
@@ -68,11 +69,11 @@ export function generatePalette(label){
 
   Object.entries(baseData).forEach(([ color, syntaxInstances ]) => {
     syntaxInstances.forEach(syntaxInstanceRaw => {
-      const syntaxInstance = remove([ UNDERLINE, ITALIC ], syntaxInstanceRaw)
+      const syntaxInstance = remove([ UNDERLINE, ITALIC, BOLD ], syntaxInstanceRaw)
       const fontStyle = maybe(
         syntaxInstanceRaw.endsWith(UNDERLINE),
         { fontStyle : 'underline' },
-        syntaxInstanceRaw.endsWith(ITALIC) ? { fontStyle : 'italic' } : {}
+        syntaxInstanceRaw.endsWith(ITALIC) ? { fontStyle : 'italic' } : syntaxInstanceRaw.endsWith(BOLD) ? { fontStyle : 'bold' } : {}
       )
 
       pushToTokenColors({
@@ -93,4 +94,4 @@ export function generatePalette(label){
     label,
     data : themeBase,
   })
-}
+} 
