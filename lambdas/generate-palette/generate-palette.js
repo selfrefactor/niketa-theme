@@ -69,11 +69,16 @@ export function generatePalette(label){
 
   Object.entries(baseData).forEach(([ color, syntaxInstances ]) => {
     syntaxInstances.forEach(syntaxInstanceRaw => {
-      const syntaxInstance = remove([ UNDERLINE, ITALIC, BOLD ], syntaxInstanceRaw)
+      const syntaxInstance = remove([ UNDERLINE, ITALIC, BOLD ],
+        syntaxInstanceRaw)
       const fontStyle = maybe(
         syntaxInstanceRaw.endsWith(UNDERLINE),
         { fontStyle : 'underline' },
-        syntaxInstanceRaw.endsWith(ITALIC) ? { fontStyle : 'italic' } : syntaxInstanceRaw.endsWith(BOLD) ? { fontStyle : 'bold' } : {}
+        syntaxInstanceRaw.endsWith(ITALIC) ?
+          { fontStyle : 'italic' } :
+          syntaxInstanceRaw.endsWith(BOLD) ?
+            { fontStyle : 'bold' } :
+            {}
       )
 
       pushToTokenColors({
@@ -94,4 +99,4 @@ export function generatePalette(label){
     label,
     data : themeBase,
   })
-} 
+}
