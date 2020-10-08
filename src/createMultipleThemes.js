@@ -6,7 +6,7 @@ const {
   HelloSpaceboy,
   KozmicBlues,
   LedZeppelin,
-  StrangeBrew, 
+  StrangeBrew,
   SweatLeaf,
 } = require('./assets/themes-colors.js')
 const { chromeColors } = require('./assets/chrome-colors.js')
@@ -56,7 +56,7 @@ const SETTINGS = SETTINGS_ORIGIN.map(x => {
 
   return x
 })
- 
+
 async function singleRun(themeSettings){
   const themesDirectory = resolve(__dirname, '../themes/')
   const [ [ themeName, colors ] ] = Object.entries(themeSettings)
