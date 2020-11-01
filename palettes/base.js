@@ -12,6 +12,7 @@ const [
 
 const COLOR_0 = [
   ...ADDITIONAL_0,
+  'storage.type.function.js',
   'entity.name.method.js',
   'entity.name.tag.UNDERLINE',
   'keyword.operator.module.all.js',
@@ -77,7 +78,6 @@ const COLOR_2 = [
   'punctuation.definition.block.js',
   'source.css',
   'source.json',
-  'storage.type.function.js',
   'support.class.promise.js',
   'support.function.BOLD',
   'support.function.console.js',

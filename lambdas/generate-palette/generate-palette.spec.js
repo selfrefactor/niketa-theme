@@ -1,4 +1,4 @@
-import { generatePalette } from './generate-palette.js'
+import { generatePalette } from './generate-palette'
 
 test('happy', () => {
   generatePalette('palette')
