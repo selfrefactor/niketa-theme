@@ -57,10 +57,6 @@ const COLOR_1 = [
   'support.variable.property.js',
   'support.variable.BOLD',
   'variable.BOLD',
-  'variable.other.readwrite',
-  'variable.other.readwrite.js',
-  'variable.other.readwrite.alias.js',
-  'variable.other.readwrite.decorator.js',
 ]
 
 const COLOR_2 = [
@@ -86,8 +82,15 @@ const COLOR_2 = [
   'variable.language.prototype.js',
   'variable.language.this',
   'variable.language.this.js',
+  'variable.other.class.js',
+  'variable.other.object.property.js',
+  'variable.other.property.js',
   'variable.other.constant.js',
   'variable.other.object.js',
+  'variable.other.readwrite',
+  'variable.other.readwrite.js',
+  'variable.other.readwrite.alias.js',
+  'variable.other.readwrite.decorator.js',
 ]
 
 const COLOR_3 = [
@@ -113,9 +116,6 @@ const COLOR_3 = [
   'punctuation.quasi.element.end.js',
   'support.type.property-name.json',
   'variable.object.property.js',
-  'variable.other.class.js',
-  'variable.other.object.property.js',
-  'variable.other.property.js',
 ]
 
 const COLOR_4 = [
