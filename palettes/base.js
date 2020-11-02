@@ -12,6 +12,7 @@ const [
 
 const COLOR_0 = [
   ...ADDITIONAL_0,
+  'keyword.control.import.js',
   'storage.type.function.js',
   'entity.name.method.js',
   'entity.name.tag.UNDERLINE',
@@ -66,7 +67,6 @@ const COLOR_2 = [
   'entity.name.class.js',
   'entity.name.module.js',
   'string.quoted.single.js.ITALIC',
-  'keyword.control.import.js',
   'keyword.control.module.js',
   'meta.class-method.js',
   'meta.import.js',
