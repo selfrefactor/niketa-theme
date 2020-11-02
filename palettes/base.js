@@ -95,6 +95,7 @@ const COLOR_2 = [
 
 const COLOR_3 = [
   ...ADDITIONAL_3,
+  'support.class.component',
   'constant.other.object.key.js',
   'entity.name.function.js',
   'entity.name.function.method',

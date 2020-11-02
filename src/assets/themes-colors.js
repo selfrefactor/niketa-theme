@@ -12,9 +12,9 @@ exports.DancingDays = [
   PURPLE,
   '#1d74ed',
   '#0a0a0a',
-  // '#0b7c8f',
   '#008f00',
   '#e01114',
+  // '#0b7c8f',
 ]
 
 exports.FunkyDrummer = [
@@ -46,8 +46,8 @@ exports.KozmicBlues = [
   '#480032',
   '#d70a53',
   '#953b69',
-  // '#00C14E',
   PURPLE,
+  // '#00C14E',
 ]
 
 exports.LedZeppelin = [ '#3a0088', '#00a8cc', '#a12b6d', '#0d8a81', '#D58FDB' ]
@@ -55,10 +55,10 @@ exports.LedZeppelin = [ '#3a0088', '#00a8cc', '#a12b6d', '#0d8a81', '#D58FDB' ]
 exports.StrangeBrew = [
   '#222d60',
   '#01676b',
-  // '#953b69',
   '#fb607f',
   '#00a8cc',
   DARK_YELLOW,
+  // '#953b69',
 ]
 
 exports.SweatLeaf = [
@@ -66,6 +66,6 @@ exports.SweatLeaf = [
   DARK_YELLOW,
   '#2f586f',
   '#FF3EBF',
-  // '#d239a0',
   '#a83c56',
+  // '#d239a0',
 ]
