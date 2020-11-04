@@ -14,7 +14,7 @@ const COLOR_0 = [
   ...ADDITIONAL_0,
   'keyword.control.import.js',
   'storage.type.function.js',
-  'entity.name.method.js',
+  'entity.name.method.js.ITALIC',
   'entity.name.tag.UNDERLINE',
   'keyword.operator.module.all.js',
   'markup',
@@ -25,8 +25,8 @@ const COLOR_0 = [
   'punctuation.separator.key-value.js',
   'source.go',
   'source.js',
-  'storage.modifier.js',
-  'storage.type',
+  'storage.modifier.js.ITALIC',
+  'storage.type.ITALIC',
   'support.class.console.js',
   'support.function.dom.js',
   'support.variable.property.js',
@@ -63,8 +63,8 @@ const COLOR_1 = [
 
 const COLOR_2 = [
   ...ADDITIONAL_2,
-  'entity.other.attribute-name',
-  'entity.other.attribute-name.js',
+  'entity.other.attribute-name.ITALIC',
+  'entity.other.attribute-name.js.ITALIC',
   'entity.name.class.js',
   'entity.name.module.js',
   'string.quoted.single.js.ITALIC',
@@ -81,8 +81,8 @@ const COLOR_2 = [
   'support.type.object.console.js',
   'support.type.object.module.js',
   'variable.language.prototype.js',
-  'variable.language.this',
-  'variable.language.this.js',
+  'variable.language.this.ITALIC',
+  'variable.language.this.js.ITALIC',
   'variable.other.class.js',
   'variable.other.property.js',
   'variable.other.constant.js',
@@ -95,6 +95,8 @@ const COLOR_2 = [
 
 const COLOR_3 = [
   ...ADDITIONAL_3,
+  'text.html.basic.ITALIC',
+  'keyword.operator.new.ITALIC',
   'support.class.component',
   'constant.other.object.key.js',
   'entity.name.function.js',
@@ -117,13 +119,15 @@ const COLOR_3 = [
   'punctuation.quasi.element.end.js',
   'support.type.property-name.json',
   'variable.object.property.js',
+  'emphasis.ITALIC',
+  'markup.italic.ITALIC',
 ]
 
 const COLOR_4 = [
   ...ADDITIONAL_4,
-  'comment',
-  'comment.block.documentation',
-  'comment.line.double-slash',
+  'comment.ITALIC',
+  'comment.block.documentation.ITALIC',
+  'comment.line.double-slash.ITALIC',
   'constant.BOLD',
   'constant.character.BOLD',
   'constant.language.BOLD',
@@ -133,7 +137,6 @@ const COLOR_4 = [
   'entity.other.ng-binding-name.outputReplEvent.html',
   'invalid.UNDERLINE',
   'keyword.operator.decorator.js',
-  'markup',
   'meta.function.js',
   'meta.object-literal.key.js',
   'meta.template.expression.js',
@@ -156,7 +159,7 @@ const COLOR_4 = [
   'support.constant',
   'support.function.mutator.js',
   'tag.decorator.js',
-  'variable.language',
+  'variable.language.ITALIC',
 ]
 
 export const baseBase = {
