@@ -1,6 +1,6 @@
 import { shuffle, splitEvery } from 'rambdax'
 
-import { missingScopes } from '../lambdas/find_missing_rules/missingScopes.json'
+import { missingScopes } from '../lambdas/find_missing_rules/missingScopes'
 
 const [
   ADDITIONAL_0,
@@ -34,6 +34,7 @@ const COLOR_0 = [
   'variable.import.parameter.js',
   'variable.language.constructor.UNDERLINE',
   'variable.parameter',
+  'variable.other.object.property.js',
 ]
 
 const COLOR_1 = [
@@ -83,7 +84,6 @@ const COLOR_2 = [
   'variable.language.this',
   'variable.language.this.js',
   'variable.other.class.js',
-  'variable.other.object.property.js',
   'variable.other.property.js',
   'variable.other.constant.js',
   'variable.other.object.js',
@@ -156,7 +156,7 @@ const COLOR_4 = [
   'support.constant',
   'support.function.mutator.js',
   'tag.decorator.js',
-  'variable.language'
+  'variable.language',
 ]
 
 export const baseBase = {
