@@ -10,6 +10,9 @@ const [
   ADDITIONAL_4,
 ] = splitEvery(Math.ceil(missingScopes.length / 5), shuffle(missingScopes))
 
+function buildColors(){}
+
+
 const COLOR_0 = [
   ...ADDITIONAL_0,
   'keyword.control.import.js',
@@ -33,12 +36,12 @@ const COLOR_0 = [
   'text.html.derivative',
   'variable.import.parameter.js',
   'variable.language.constructor.UNDERLINE',
-  'variable.parameter',
   'variable.other.object.property.js',
 ]
 
 const COLOR_1 = [
   ...ADDITIONAL_1,
+  'variable.parameter.ITALIC',
   'constant.language.boolean.BOLD',
   'constant.language.null.js',
   'constant.numeric.BOLD',
@@ -46,9 +49,9 @@ const COLOR_1 = [
   'entity.name.function.UNDERLINE',
   'entity.name.tag.class.js.BOLD',
   'entity.name.type.UNDERLINE',
-  'entity.name.type.js',
-  'expression.ng',
-  'keyword',
+  'entity.name.type.js.BOLD',
+  'expression.ng.ITALIC',
+  'keyword.ITALIC',
   'markup.heading.markdown',
   'meta.brace.round.js',
   'meta.definition.property.js',
@@ -68,7 +71,7 @@ const COLOR_2 = [
   'entity.name.class.js',
   'entity.name.module.js',
   'string.quoted.single.js.ITALIC',
-  'keyword.control.module.js',
+  'keyword.control.module.js.BOLD',
   'meta.class-method.js',
   'meta.import.js',
   'meta.paragraph.markdown',
@@ -80,11 +83,10 @@ const COLOR_2 = [
   'support.function.console.js',
   'support.type.object.console.js',
   'support.type.object.module.js',
-  'variable.language.prototype.js',
+  'variable.language.prototype.js.ITALIC',
   'variable.language.this.ITALIC',
   'variable.language.this.js.ITALIC',
   'variable.other.class.js',
-  'variable.other.property.js',
   'variable.other.constant.js',
   'variable.other.object.js',
   'variable.other.readwrite',
@@ -104,7 +106,7 @@ const COLOR_3 = [
   'entity.name.tag.js',
   'entity.other.ng-binding-name.property.html',
   'keyword.control.default.js',
-  'keyword.control.export.js',
+  'keyword.control.export.js.ITALIC',
   'keyword.control.from.js',
   'keyword.operator.accessor',
   'keyword.operator.BOLD',
@@ -125,6 +127,7 @@ const COLOR_3 = [
 
 const COLOR_4 = [
   ...ADDITIONAL_4,
+  'variable.other.property.js',
   'comment.ITALIC',
   'comment.block.documentation.ITALIC',
   'comment.line.double-slash.ITALIC',
