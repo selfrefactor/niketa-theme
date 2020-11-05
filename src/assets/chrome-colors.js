@@ -153,7 +153,17 @@ const breadcrumbs = {
   'breadcrumb.foreground'                : '#515670',
 }
 
+const dropBackground = '#b5338977'
+
+const dropBackgrounds = {
+  "editorGroup.dropBackground": dropBackground,
+  "sideBar.dropBackground": dropBackground,
+  "activityBar.dropBackground": dropBackground,
+  "panel.dropBackground": dropBackground,
+}
+
 exports.chromeColors = {
+  ...dropBackgrounds,
   ...missingColors,
   ...fromMissingColors,
   ...breadcrumbs,
