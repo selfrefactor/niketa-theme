@@ -36,7 +36,6 @@ const COLOR_0 = [
   'text.html.derivative',
   'variable.import.parameter.js',
   'variable.language.constructor.UNDERLINE',
-  'variable.other.object.property.js',
 ]
 
 const COLOR_1 = [
@@ -88,6 +87,8 @@ const COLOR_2 = [
   'variable.language.this.js.ITALIC',
   'variable.other.class.js',
   'variable.other.constant.js',
+  'variable.other.object.property.js',
+  'variable.other.property.js',
   'variable.other.object.js',
   'variable.other.readwrite',
   'variable.other.readwrite.js',
@@ -127,7 +128,6 @@ const COLOR_3 = [
 
 const COLOR_4 = [
   ...ADDITIONAL_4,
-  'variable.other.property.js',
   'comment.ITALIC',
   'comment.block.documentation.ITALIC',
   'comment.line.double-slash.ITALIC',
