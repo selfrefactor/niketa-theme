@@ -162,7 +162,17 @@ const dropBackgrounds = {
   "panel.dropBackground": dropBackground,
 }
 
+const possibleErrors={
+  "editorIndentGuide.activeBackground": "#363b54",
+  "editorPane.background": "#363b54",
+  "notificationCenterHeader.background": "#101014",
+  "activityBarBadge.foreground": "#141414",
+  // when press f8 and you have code problem
+  "editorMarkerNavigation.background": "#e7e7e7",
+}
+
 exports.chromeColors = {
+  ...possibleErrors,
   ...dropBackgrounds,
   ...missingColors,
   ...fromMissingColors,
