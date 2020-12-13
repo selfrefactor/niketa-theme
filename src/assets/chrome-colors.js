@@ -171,7 +171,12 @@ const possibleErrors={
   "editorMarkerNavigation.background": "#e7e7e7",
 }
 
+const newColors = {
+  'sash.hoverBorder': '#387b54'
+}
+
 exports.chromeColors = {
+  ...newColors,
   ...possibleErrors,
   ...dropBackgrounds,
   ...missingColors,
