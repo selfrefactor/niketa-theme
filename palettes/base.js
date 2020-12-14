@@ -1,4 +1,4 @@
-import { shuffle, splitEvery } from 'rambdax'
+import { defaultTo, splitEvery } from 'rambdax'
 
 import { missingScopes } from '../lambdas/find_missing_rules/missingScopes'
 
@@ -8,13 +8,65 @@ const [
   ADDITIONAL_2,
   ADDITIONAL_3,
   ADDITIONAL_4,
-] = splitEvery(Math.ceil(missingScopes.length / 5), shuffle(missingScopes))
+] = splitEvery(Math.ceil(missingScopes.length / 5), missingScopes)
 
-function buildColors(){}
+const VARIABLES = {
+  '0': [
+    'variable.import.parameter.js',
+    'variable.language.constructor.UNDERLINE',
+  ],
+  '1': [
+    'variable.BOLD',
+    'variable.parameter.ITALIC',
+  ],
+  '2': [
+    'variable.language.prototype.js.ITALIC',
+    'variable.language.this.ITALIC',
+    'variable.language.this.js.ITALIC',
+    'variable.other.class.js',
+    'variable.other.constant.js',
+    'variable.other.object.property.js',
+    'variable.other.property.js',
+    'variable.other.object.js',
+    'variable.other.readwrite',
+    'variable.other.readwrite.js',
+    'variable.other.readwrite.alias.js',
+    'variable.other.readwrite.decorator.js',
+  ],
+  '3':[
+    'variable.object.property.js',
+  ],
+  '4':[
+  'variable.language.ITALIC',
+  ]
+}
+
+const FOO = {
+  '0': [
+  ],
+  '1': [
+  ],
+  '2': [
+  ],
+  '3':[
+  ],
+  '4':[
+  ]
+}
+
+function buildColors(modeInput){
+  const mode = String(modeInput)
+  const variables = defaultTo([], VARIABLES[mode])
+
+  return [
+    ...variables
+  ]
+}
 
 
 const COLOR_0 = [
   ...ADDITIONAL_0,
+  ...(buildColors(0)),
   'keyword.control.import.js',
   'storage.type.function.js',
   'entity.name.method.js.ITALIC',
@@ -34,13 +86,11 @@ const COLOR_0 = [
   'support.function.dom.js',
   'support.variable.property.js',
   'text.html.derivative',
-  'variable.import.parameter.js',
-  'variable.language.constructor.UNDERLINE',
 ]
-
+console.log({COLOR_0})
 const COLOR_1 = [
   ...ADDITIONAL_1,
-  'variable.parameter.ITALIC',
+  ...(buildColors(1)),
   'constant.language.boolean.BOLD',
   'constant.language.null.js',
   'constant.numeric.BOLD',
@@ -60,11 +110,11 @@ const COLOR_1 = [
   'support.type.primitive.js',
   'support.variable.property.js',
   'support.variable.BOLD',
-  'variable.BOLD',
 ]
 
 const COLOR_2 = [
   ...ADDITIONAL_2,
+  ...(buildColors(2)),
   'entity.other.attribute-name.ITALIC',
   'entity.other.attribute-name.js.ITALIC',
   'entity.name.class.js',
@@ -82,22 +132,11 @@ const COLOR_2 = [
   'support.function.console.js',
   'support.type.object.console.js',
   'support.type.object.module.js',
-  'variable.language.prototype.js.ITALIC',
-  'variable.language.this.ITALIC',
-  'variable.language.this.js.ITALIC',
-  'variable.other.class.js',
-  'variable.other.constant.js',
-  'variable.other.object.property.js',
-  'variable.other.property.js',
-  'variable.other.object.js',
-  'variable.other.readwrite',
-  'variable.other.readwrite.js',
-  'variable.other.readwrite.alias.js',
-  'variable.other.readwrite.decorator.js',
 ]
 
 const COLOR_3 = [
   ...ADDITIONAL_3,
+  ...(buildColors(3)),
   'text.html.basic.ITALIC',
   'keyword.operator.new.ITALIC',
   'support.class.component',
@@ -121,13 +160,13 @@ const COLOR_3 = [
   'punctuation.quasi.element.begin.js',
   'punctuation.quasi.element.end.js',
   'support.type.property-name.json',
-  'variable.object.property.js',
   'emphasis.ITALIC',
   'markup.italic.ITALIC',
 ]
 
 const COLOR_4 = [
   ...ADDITIONAL_4,
+  ...(buildColors(4)),
   'comment.ITALIC',
   'comment.block.documentation.ITALIC',
   'comment.line.double-slash.ITALIC',
@@ -162,7 +201,6 @@ const COLOR_4 = [
   'support.constant',
   'support.function.mutator.js',
   'tag.decorator.js',
-  'variable.language.ITALIC',
 ]
 
 export const baseBase = {
