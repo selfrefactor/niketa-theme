@@ -65,18 +65,24 @@ const KEYWORDS = {
   ]
 }
 
-const PUNCTUATIONS = {
-  '0': [
-  ],
-  '1': [
-  ],
-  '2': [
-  ],
-  '3':[
-  ],
-  '4':[
-  ]
-}
+const PUNCTUATIONS = [
+  'punctuation.definition.parameters.begin.js',
+  'punctuation.definition.parameters.end.js',
+  'punctuation.quasi.element.begin.js',
+  'punctuation.quasi.element.end.js',
+  'punctuation.definition.tag.js',
+  'punctuation.accessor.js',
+  'punctuation.separator.comma.js',
+  'punctuation.separator.key-value.js',
+  'punctuation.definition.block.js',
+  'punctuation.accessor.js',
+  'punctuation.definition.string',
+  'punctuation.definition.string.begin',
+  'punctuation.definition.string.end',
+  'punctuation.definition.template-expression.begin.js',
+  'punctuation.definition.template-expression.end.js',
+  'punctuation.separator.parameter.js',
+]
 
 const FOO = {
   '0': [
@@ -102,7 +108,6 @@ function buildColors(modeInput){
   ]
 }
 
-
 const COLOR_0 = [
   ...ADDITIONAL_0,
   ...(buildColors(0)),
@@ -111,9 +116,6 @@ const COLOR_0 = [
   'markup',
   'meta.function.arrow',
   'meta.var.expr.js',
-  'punctuation.accessor.js',
-  'punctuation.separator.comma.js',
-  'punctuation.separator.key-value.js',
   'source.go',
   'source.js',
   'storage.modifier.js.ITALIC',
@@ -142,7 +144,6 @@ const COLOR_1 = [
   'meta.definition.property.js',
   'meta.method-call.with-arguments.js',
   'meta.tag.attributes.js',
-  'punctuation.definition.tag.js',
   'support.type.primitive.js',
   'support.variable.property.js',
   'support.variable.BOLD',
@@ -150,6 +151,7 @@ const COLOR_1 = [
 
 const COLOR_2 = [
   ...ADDITIONAL_2,
+  ...PUNCTUATIONS,
   ...(buildColors(2)),
   'entity.name.class.js',
   'entity.name.module.js',
@@ -158,7 +160,6 @@ const COLOR_2 = [
   'meta.class-method.js',
   'meta.import.js',
   'meta.paragraph.markdown',
-  'punctuation.definition.block.js',
   'source.css',
   'source.json',
   'string.quoted.single.js.ITALIC',
@@ -184,10 +185,6 @@ const COLOR_3 = [
   'meta.function.parameters.js',
   'meta.parameters.js',
   'meta.tag.js',
-  'punctuation.definition.parameters.begin.js',
-  'punctuation.definition.parameters.end.js',
-  'punctuation.quasi.element.begin.js',
-  'punctuation.quasi.element.end.js',
   'support.class.component',
   'support.type.property-name.json',
   'text.html.basic.ITALIC',
@@ -209,14 +206,7 @@ const COLOR_4 = [
   'invalid.UNDERLINE',
   'meta.function.js',
   'meta.object-literal.key.js',
-  'meta.template.expression.js',
-  'punctuation.accessor.js',
-  'punctuation.definition.string',
-  'punctuation.definition.string.begin',
-  'punctuation.definition.string.end',
-  'punctuation.definition.template-expression.begin.js',
-  'punctuation.definition.template-expression.end.js',
-  'punctuation.separator.parameter.js',
+  'meta.template.expression.js',  
   'storage.modifier.async.js',
   'string.quoted.double.html.ITALIC',
   'string.quoted.double.json.ITALIC',

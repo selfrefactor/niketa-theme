@@ -1053,90 +1053,6 @@
       }
     },
     {
-      "name": "punctuation.accessor.js",
-      "scope": "punctuation.accessor.js",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.jsx",
-      "scope": "punctuation.accessor.jsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.ts",
-      "scope": "punctuation.accessor.ts",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.tsx",
-      "scope": "punctuation.accessor.tsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.comma.js",
-      "scope": "punctuation.separator.comma.js",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.comma.jsx",
-      "scope": "punctuation.separator.comma.jsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.comma.ts",
-      "scope": "punctuation.separator.comma.ts",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.comma.tsx",
-      "scope": "punctuation.separator.comma.tsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.key-value.js",
-      "scope": "punctuation.separator.key-value.js",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.key-value.jsx",
-      "scope": "punctuation.separator.key-value.jsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.key-value.ts",
-      "scope": "punctuation.separator.key-value.ts",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.separator.key-value.tsx",
-      "scope": "punctuation.separator.key-value.tsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
       "name": "source.go",
       "scope": "source.go",
       "settings": {
@@ -2489,34 +2405,6 @@
       }
     },
     {
-      "name": "punctuation.definition.tag.js",
-      "scope": "punctuation.definition.tag.js",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.definition.tag.jsx",
-      "scope": "punctuation.definition.tag.jsx",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.definition.tag.ts",
-      "scope": "punctuation.definition.tag.ts",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "punctuation.definition.tag.tsx",
-      "scope": "punctuation.definition.tag.tsx",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
       "name": "support.type.primitive.js",
       "scope": "support.type.primitive.js",
       "settings": {
@@ -3456,6 +3344,475 @@
       }
     },
     {
+      "name": "punctuation.definition.parameters.begin.js",
+      "scope": "punctuation.definition.parameters.begin.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.begin.jsx",
+      "scope": "punctuation.definition.parameters.begin.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.begin.ts",
+      "scope": "punctuation.definition.parameters.begin.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.begin.tsx",
+      "scope": "punctuation.definition.parameters.begin.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.end.js",
+      "scope": "punctuation.definition.parameters.end.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.end.jsx",
+      "scope": "punctuation.definition.parameters.end.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.end.ts",
+      "scope": "punctuation.definition.parameters.end.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.end.tsx",
+      "scope": "punctuation.definition.parameters.end.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.end.js",
+      "scope": "punctuation.definition.parameters.end.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.end.jsx",
+      "scope": "punctuation.definition.parameters.end.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.end.ts",
+      "scope": "punctuation.definition.parameters.end.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters.end.tsx",
+      "scope": "punctuation.definition.parameters.end.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.begin.js",
+      "scope": "punctuation.quasi.element.begin.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.begin.jsx",
+      "scope": "punctuation.quasi.element.begin.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.begin.ts",
+      "scope": "punctuation.quasi.element.begin.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.begin.tsx",
+      "scope": "punctuation.quasi.element.begin.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.end.js",
+      "scope": "punctuation.quasi.element.end.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.end.jsx",
+      "scope": "punctuation.quasi.element.end.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.end.ts",
+      "scope": "punctuation.quasi.element.end.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.end.tsx",
+      "scope": "punctuation.quasi.element.end.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.end.js",
+      "scope": "punctuation.quasi.element.end.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.end.jsx",
+      "scope": "punctuation.quasi.element.end.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.end.ts",
+      "scope": "punctuation.quasi.element.end.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.quasi.element.end.tsx",
+      "scope": "punctuation.quasi.element.end.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.js",
+      "scope": "punctuation.definition.tag.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.jsx",
+      "scope": "punctuation.definition.tag.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.ts",
+      "scope": "punctuation.definition.tag.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.tsx",
+      "scope": "punctuation.definition.tag.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.js",
+      "scope": "punctuation.accessor.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.jsx",
+      "scope": "punctuation.accessor.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.ts",
+      "scope": "punctuation.accessor.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.tsx",
+      "scope": "punctuation.accessor.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.comma.js",
+      "scope": "punctuation.separator.comma.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.comma.jsx",
+      "scope": "punctuation.separator.comma.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.comma.ts",
+      "scope": "punctuation.separator.comma.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.comma.tsx",
+      "scope": "punctuation.separator.comma.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.key-value.js",
+      "scope": "punctuation.separator.key-value.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.key-value.jsx",
+      "scope": "punctuation.separator.key-value.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.key-value.ts",
+      "scope": "punctuation.separator.key-value.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.key-value.tsx",
+      "scope": "punctuation.separator.key-value.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.block.js",
+      "scope": "punctuation.definition.block.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.block.jsx",
+      "scope": "punctuation.definition.block.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.block.ts",
+      "scope": "punctuation.definition.block.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.block.tsx",
+      "scope": "punctuation.definition.block.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.js",
+      "scope": "punctuation.accessor.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.jsx",
+      "scope": "punctuation.accessor.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.ts",
+      "scope": "punctuation.accessor.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.accessor.tsx",
+      "scope": "punctuation.accessor.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.string",
+      "scope": "punctuation.definition.string",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.string.begin",
+      "scope": "punctuation.definition.string.begin",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.string.end",
+      "scope": "punctuation.definition.string.end",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.begin.js",
+      "scope": "punctuation.definition.template-expression.begin.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.begin.jsx",
+      "scope": "punctuation.definition.template-expression.begin.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.begin.ts",
+      "scope": "punctuation.definition.template-expression.begin.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.begin.tsx",
+      "scope": "punctuation.definition.template-expression.begin.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end.js",
+      "scope": "punctuation.definition.template-expression.end.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end.jsx",
+      "scope": "punctuation.definition.template-expression.end.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end.ts",
+      "scope": "punctuation.definition.template-expression.end.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end.tsx",
+      "scope": "punctuation.definition.template-expression.end.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end.js",
+      "scope": "punctuation.definition.template-expression.end.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end.jsx",
+      "scope": "punctuation.definition.template-expression.end.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end.ts",
+      "scope": "punctuation.definition.template-expression.end.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.definition.template-expression.end.tsx",
+      "scope": "punctuation.definition.template-expression.end.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.parameter.js",
+      "scope": "punctuation.separator.parameter.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.parameter.jsx",
+      "scope": "punctuation.separator.parameter.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.parameter.ts",
+      "scope": "punctuation.separator.parameter.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "punctuation.separator.parameter.tsx",
+      "scope": "punctuation.separator.parameter.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
       "name": "variable.language.prototype.js",
       "scope": "variable.language.prototype.js",
       "settings": {
@@ -3945,34 +4302,6 @@
     {
       "name": "meta.paragraph.markdown",
       "scope": "meta.paragraph.markdown",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.block.js",
-      "scope": "punctuation.definition.block.js",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.block.jsx",
-      "scope": "punctuation.definition.block.jsx",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.block.ts",
-      "scope": "punctuation.definition.block.ts",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "punctuation.definition.block.tsx",
-      "scope": "punctuation.definition.block.tsx",
       "settings": {
         "foreground": "COLOR_2"
       }
@@ -5391,174 +5720,6 @@
       }
     },
     {
-      "name": "punctuation.definition.parameters.begin.js",
-      "scope": "punctuation.definition.parameters.begin.js",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.begin.jsx",
-      "scope": "punctuation.definition.parameters.begin.jsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.begin.ts",
-      "scope": "punctuation.definition.parameters.begin.ts",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.begin.tsx",
-      "scope": "punctuation.definition.parameters.begin.tsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.end.js",
-      "scope": "punctuation.definition.parameters.end.js",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.end.jsx",
-      "scope": "punctuation.definition.parameters.end.jsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.end.ts",
-      "scope": "punctuation.definition.parameters.end.ts",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.end.tsx",
-      "scope": "punctuation.definition.parameters.end.tsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.end.js",
-      "scope": "punctuation.definition.parameters.end.js",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.end.jsx",
-      "scope": "punctuation.definition.parameters.end.jsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.end.ts",
-      "scope": "punctuation.definition.parameters.end.ts",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.definition.parameters.end.tsx",
-      "scope": "punctuation.definition.parameters.end.tsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.begin.js",
-      "scope": "punctuation.quasi.element.begin.js",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.begin.jsx",
-      "scope": "punctuation.quasi.element.begin.jsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.begin.ts",
-      "scope": "punctuation.quasi.element.begin.ts",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.begin.tsx",
-      "scope": "punctuation.quasi.element.begin.tsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.end.js",
-      "scope": "punctuation.quasi.element.end.js",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.end.jsx",
-      "scope": "punctuation.quasi.element.end.jsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.end.ts",
-      "scope": "punctuation.quasi.element.end.ts",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.end.tsx",
-      "scope": "punctuation.quasi.element.end.tsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.end.js",
-      "scope": "punctuation.quasi.element.end.js",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.end.jsx",
-      "scope": "punctuation.quasi.element.end.jsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.end.ts",
-      "scope": "punctuation.quasi.element.end.ts",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "punctuation.quasi.element.end.tsx",
-      "scope": "punctuation.quasi.element.end.tsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
       "name": "support.class.component",
       "scope": "support.class.component",
       "settings": {
@@ -6643,167 +6804,6 @@
     {
       "name": "meta.template.expression.tsx",
       "scope": "meta.template.expression.tsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.accessor.js",
-      "scope": "punctuation.accessor.js",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.accessor.jsx",
-      "scope": "punctuation.accessor.jsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.accessor.ts",
-      "scope": "punctuation.accessor.ts",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.accessor.tsx",
-      "scope": "punctuation.accessor.tsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.string",
-      "scope": "punctuation.definition.string",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.string.begin",
-      "scope": "punctuation.definition.string.begin",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.string.end",
-      "scope": "punctuation.definition.string.end",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.begin.js",
-      "scope": "punctuation.definition.template-expression.begin.js",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.begin.jsx",
-      "scope": "punctuation.definition.template-expression.begin.jsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.begin.ts",
-      "scope": "punctuation.definition.template-expression.begin.ts",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.begin.tsx",
-      "scope": "punctuation.definition.template-expression.begin.tsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end.js",
-      "scope": "punctuation.definition.template-expression.end.js",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end.jsx",
-      "scope": "punctuation.definition.template-expression.end.jsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end.ts",
-      "scope": "punctuation.definition.template-expression.end.ts",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end.tsx",
-      "scope": "punctuation.definition.template-expression.end.tsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end.js",
-      "scope": "punctuation.definition.template-expression.end.js",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end.jsx",
-      "scope": "punctuation.definition.template-expression.end.jsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end.ts",
-      "scope": "punctuation.definition.template-expression.end.ts",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.definition.template-expression.end.tsx",
-      "scope": "punctuation.definition.template-expression.end.tsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.separator.parameter.js",
-      "scope": "punctuation.separator.parameter.js",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.separator.parameter.jsx",
-      "scope": "punctuation.separator.parameter.jsx",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.separator.parameter.ts",
-      "scope": "punctuation.separator.parameter.ts",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "punctuation.separator.parameter.tsx",
-      "scope": "punctuation.separator.parameter.tsx",
       "settings": {
         "foreground": "COLOR_4"
       }
