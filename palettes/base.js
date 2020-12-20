@@ -65,27 +65,167 @@ const KEYWORDS = {
   ]
 }
 
-const PUNCTUATIONS = [
-  'punctuation.definition.parameters.begin.js',
-  'punctuation.definition.parameters.end.js',
-  'punctuation.quasi.element.begin.js',
-  'punctuation.quasi.element.end.js',
-  'punctuation.definition.tag.js',
-  'punctuation.accessor.js',
-  'punctuation.separator.comma.js',
-  'punctuation.separator.key-value.js',
-  'punctuation.definition.block.js',
-  'punctuation.accessor.js',
-  'punctuation.definition.string',
-  'punctuation.definition.string.begin',
-  'punctuation.definition.string.end',
-  'punctuation.definition.template-expression.begin.js',
-  'punctuation.definition.template-expression.end.js',
-  'punctuation.separator.parameter.js',
-]
-
-const FOO = {
+const PUNCTUATIONS = {
   '0': [
+  ],
+  '1': [
+    'punctuation.definition.template-expression.begin.js',
+    'punctuation.definition.template-expression.end.js',
+  ],
+  '2': [
+    'punctuation.definition.parameters.begin.js',
+    'punctuation.definition.parameters.end.js',
+    'punctuation.quasi.element.begin.js',
+    'punctuation.quasi.element.end.js',
+    'punctuation.definition.tag.js',
+    'punctuation.accessor.js',
+    'punctuation.separator.comma.js',
+    'punctuation.separator.key-value.js',
+    'punctuation.definition.block.js',
+    'punctuation.accessor.js',
+    'punctuation.definition.string',
+    'punctuation.definition.string.begin',
+    'punctuation.definition.string.end',
+    'punctuation.separator.parameter.js',
+  ],
+  '3':[
+  ],
+  '4':[
+  ]
+}
+const CONSTANTS = {
+  '0': [
+  ],
+  '1': [
+    'constant.language.boolean.BOLD',
+    'constant.language.null.js',
+    'constant.numeric.BOLD',
+  ],
+  '2': [
+  ],
+  '3':[
+  'constant.other.object.key.js',
+  ],
+  '4':[
+    'constant.BOLD',
+    'constant.character.BOLD',
+    'constant.language.BOLD',
+    'constant.other.BOLD',
+  ]
+}
+const ENTITIES = {
+  '0': [
+    'entity.name.method.js.ITALIC',
+    'entity.name.tag.UNDERLINE',
+  ],
+  '1': [
+    'entity.name.class.UNDERLINE',
+    'entity.name.function.UNDERLINE',
+    'entity.name.tag.class.js.BOLD',
+    'entity.name.type.UNDERLINE',
+    'entity.name.type.js.BOLD',
+  ],
+  '2': [
+    'entity.name.class.js',
+    'entity.name.module.js',
+    'entity.other.attribute-name.ITALIC',
+    'entity.other.attribute-name.js.ITALIC',
+  ],
+  '3':[
+    'entity.name.function.js',
+    'entity.name.function.method',
+    'entity.name.tag.js',
+    'entity.other.ng-binding-name.property.html',
+  ],
+  '4':[
+    'entity.name.variable.BOLD',
+    'entity.other.inherited-class',
+    'entity.other.ng-binding-name.outputReplEvent.html',
+  ]
+}
+const STRINGS = {
+  '0': [
+  ],
+  '1': [
+    'string.quoted.single.js.ITALIC',
+  ],
+  '2': [
+  ],
+  '3':[
+  ],
+  '4':[
+    'string.quoted.double.html.ITALIC',
+    'string.quoted.double.json.ITALIC',
+    'string.quoted.single.json.ITALIC',
+    'string.template.ITALIC',
+    'string.template.js.ITALIC',
+    'string.unquoted.js.ITALIC',
+    'string.unquoted.label.js.ITALIC',
+  ]
+}
+const SUPPORTS = {
+  '0': [
+    'support.class.console.js',
+    'support.function.dom.js',
+    'support.variable.property.js',
+  ],
+  '1': [
+  ],
+  '2': [
+    'support.class.promise.js',
+    'support.function.BOLD',
+    'support.function.console.js',
+    'support.type.object.console.js',
+    'support.type.object.module.js',
+  ],
+  '3':[
+    'support.class.component',
+    'support.type.property-name.json',
+  ],
+  '4':[
+    'support.type.primitive.js',
+    'support.variable.property.js',
+    'support.variable.BOLD',
+    'support.class.builtin.js',
+    'support.constant',
+    'support.function.mutator.js',
+  ]
+}
+const METAS = {
+  '0': [
+    'meta.function.arrow',
+    'meta.var.expr.js',
+  ],
+  '1': [
+    'meta.brace.round.js',
+    'meta.definition.property.js',
+    'meta.method-call.with-arguments.js',
+    'meta.tag.attributes.js',
+  ],
+  '2': [
+    'meta.class-method.js',
+    'meta.import.js',
+    'meta.paragraph.markdown',
+  ],
+  '3':[
+    'meta.brace.square.js',
+    'meta.function.parameters.js',
+    'meta.parameters.js',
+    'meta.tag.js',
+  ],
+  '4':[
+    'meta.function.js',
+    'meta.object-literal.key.js',
+    'meta.template.expression.js',  
+
+  ]
+}
+
+const STORAGES = {
+  '0': [
+    'storage.modifier.js.ITALIC',
+    'storage.type.ITALIC',
+    'storage.type.function.js',
   ],
   '1': [
   ],
@@ -94,6 +234,7 @@ const FOO = {
   '3':[
   ],
   '4':[
+  'storage.modifier.async.js',
   ]
 }
 
@@ -101,92 +242,56 @@ function buildColors(modeInput){
   const mode = String(modeInput)
   const variables = defaultTo([], VARIABLES[mode])
   const keywords = defaultTo([], KEYWORDS[mode])
+  const storages = defaultTo([], STORAGES[mode])
+  const metas = defaultTo([], METAS[mode])
+  const supports = defaultTo([], SUPPORTS[mode])
+  const strings = defaultTo([], STRINGS[mode])
+  const entities = defaultTo([], ENTITIES[mode])
+  const constants = defaultTo([], CONSTANTS[mode])
+  const punctuations = defaultTo([], PUNCTUATIONS[mode])
 
   return [
-    ...variables,
+    ...constants,
+    ...entities,
     ...keywords,
+    ...metas,
+    ...punctuations,
+    ...storages,
+    ...strings,
+    ...supports,
+    ...variables,
   ]
 }
 
 const COLOR_0 = [
   ...ADDITIONAL_0,
   ...(buildColors(0)),
-  'entity.name.method.js.ITALIC',
-  'entity.name.tag.UNDERLINE',
   'markup',
-  'meta.function.arrow',
-  'meta.var.expr.js',
   'source.go',
   'source.js',
-  'storage.modifier.js.ITALIC',
-  'storage.type.ITALIC',
-  'storage.type.function.js',
-  'support.class.console.js',
-  'support.function.dom.js',
-  'support.variable.property.js',
   'text.html.derivative',
 ]
 
 const COLOR_1 = [
   ...ADDITIONAL_1,
   ...(buildColors(1)),
-  'constant.language.boolean.BOLD',
-  'constant.language.null.js',
-  'constant.numeric.BOLD',
-  'entity.name.class.UNDERLINE',
-  'entity.name.function.UNDERLINE',
-  'entity.name.tag.class.js.BOLD',
-  'entity.name.type.UNDERLINE',
-  'entity.name.type.js.BOLD',
   'expression.ng.ITALIC',
   'markup.heading.markdown',
-  'meta.brace.round.js',
-  'meta.definition.property.js',
-  'meta.method-call.with-arguments.js',
-  'meta.tag.attributes.js',
-  'support.type.primitive.js',
-  'support.variable.property.js',
-  'support.variable.BOLD',
 ]
 
 const COLOR_2 = [
   ...ADDITIONAL_2,
-  ...PUNCTUATIONS,
   ...(buildColors(2)),
-  'entity.name.class.js',
-  'entity.name.module.js',
-  'entity.other.attribute-name.ITALIC',
-  'entity.other.attribute-name.js.ITALIC',
-  'meta.class-method.js',
-  'meta.import.js',
-  'meta.paragraph.markdown',
   'source.css',
   'source.json',
-  'string.quoted.single.js.ITALIC',
-  'support.class.promise.js',
-  'support.function.BOLD',
-  'support.function.console.js',
-  'support.type.object.console.js',
-  'support.type.object.module.js',
 ]
 
 const COLOR_3 = [
   ...ADDITIONAL_3,
   ...(buildColors(3)),
-  'constant.other.object.key.js',
   'emphasis.ITALIC',
-  'entity.name.function.js',
-  'entity.name.function.method',
-  'entity.name.tag.js',
-  'entity.other.ng-binding-name.property.html',
   'markup.italic.ITALIC',
   'markup.quote',
-  'meta.brace.square.js',
-  'meta.function.parameters.js',
-  'meta.parameters.js',
-  'meta.tag.js',
-  'support.class.component',
-  'support.type.property-name.json',
   'text.html.basic.ITALIC',
 ]
 
@@ -196,28 +301,7 @@ const COLOR_4 = [
   'comment.ITALIC',
   'comment.block.documentation.ITALIC',
   'comment.line.double-slash.ITALIC',
-  'constant.BOLD',
-  'constant.character.BOLD',
-  'constant.language.BOLD',
-  'constant.other.BOLD',
-  'entity.name.variable.BOLD',
-  'entity.other.inherited-class',
-  'entity.other.ng-binding-name.outputReplEvent.html',
   'invalid.UNDERLINE',
-  'meta.function.js',
-  'meta.object-literal.key.js',
-  'meta.template.expression.js',  
-  'storage.modifier.async.js',
-  'string.quoted.double.html.ITALIC',
-  'string.quoted.double.json.ITALIC',
-  'string.quoted.single.json.ITALIC',
-  'string.template.ITALIC',
-  'string.template.js.ITALIC',
-  'string.unquoted.js.ITALIC',
-  'string.unquoted.label.js.ITALIC',
-  'support.class.builtin.js',
-  'support.constant',
-  'support.function.mutator.js',
   'tag.decorator.js',
 ]
 
