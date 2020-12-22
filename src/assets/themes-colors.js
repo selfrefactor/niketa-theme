@@ -1,4 +1,10 @@
-const PURPLE = '#b66ae4'
+/*
+  Purple
+  #b66ae4
+
+*/
+
+const PURPLE = '#a963db'
 const DARK_YELLOW = '#bb9132'
 
 /*

@@ -2,7 +2,7 @@ import { generateColors } from './generateColors'
 
 test('happy', () => {
   generateColors({
-    input  : [ '#D58FDB', '#0031df' ],
+    input  : [ '#b66ae4', '#191970' ],
     levels : 40,
   })
 })
