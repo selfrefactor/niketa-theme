@@ -97,11 +97,11 @@ const CONSTANTS = {
   '0': [
   ],
   '1': [
+  ],
+  '2': [
     'constant.language.boolean.BOLD',
     'constant.language.null.js',
     'constant.numeric.BOLD',
-  ],
-  '2': [
   ],
   '3':[
   'constant.other.object.key.js',
