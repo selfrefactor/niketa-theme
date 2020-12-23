@@ -172,7 +172,8 @@ const possibleErrors={
 }
 
 const newColors = {
-  'sash.hoverBorder': '#387b54'
+  'sash.hoverBorder': '#387b54',
+  'editorUnnecessaryCode.border': SOFT_WARNING
 }
 
 exports.chromeColors = {
