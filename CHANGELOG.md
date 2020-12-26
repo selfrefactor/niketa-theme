@@ -1,8 +1,10 @@
 # Changelog
 
-## WIP 9.19.0
+## 9.19.0
 
-Update screens
+- Update screens
+
+- Change one color in FunkyDrummer and  StrangeBrew themes
 
 ## 9.18.0
 
