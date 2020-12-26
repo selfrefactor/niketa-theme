@@ -1,13 +1,19 @@
 /*
-  Purple
+  Previous Purple
   #b66ae4
 
 */
 
 /*
+  Suggestions
+
   #953b69
+  #00D364
   #0b7c8f
   #d239a0
+  #00AEE8
+  #FF3399
+  #FFAA00
 */
 
 const PURPLE = '#a963db'
