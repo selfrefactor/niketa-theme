@@ -12,6 +12,8 @@ const [
 
 const VARIABLES = {
   '0': [
+    'variable.language.this.ITALIC',
+    'variable.language.this.js.ITALIC',
     'variable.import.parameter.js',
     'variable.language.constructor.UNDERLINE',
   ],
@@ -21,8 +23,6 @@ const VARIABLES = {
   ],
   '2': [
     'variable.language.prototype.js.ITALIC',
-    'variable.language.this.ITALIC',
-    'variable.language.this.js.ITALIC',
     'variable.other.class.js',
     'variable.other.constant.js',
     'variable.other.object.property.js',
@@ -67,25 +67,25 @@ const KEYWORDS = {
 
 const PUNCTUATIONS = {
   '0': [
+    'punctuation.definition.block.js',
+    'punctuation.definition.parameters.begin.js',
+    'punctuation.definition.parameters.end.js',
+    'punctuation.definition.tag.js',
+    'punctuation.definition.string',
+    'punctuation.definition.string.begin',
+    'punctuation.definition.string.end',
   ],
   '1': [
     'punctuation.definition.template-expression.begin.js',
     'punctuation.definition.template-expression.end.js',
   ],
   '2': [
-    'punctuation.definition.parameters.begin.js',
-    'punctuation.definition.parameters.end.js',
     'punctuation.quasi.element.begin.js',
     'punctuation.quasi.element.end.js',
-    'punctuation.definition.tag.js',
     'punctuation.accessor.js',
     'punctuation.separator.comma.js',
     'punctuation.separator.key-value.js',
-    'punctuation.definition.block.js',
     'punctuation.accessor.js',
-    'punctuation.definition.string',
-    'punctuation.definition.string.begin',
-    'punctuation.definition.string.end',
     'punctuation.separator.parameter.js',
   ],
   '3':[
@@ -170,6 +170,7 @@ const SUPPORTS = {
     'support.variable.property.js',
   ],
   '1': [
+    'support.type.property-name.json',
   ],
   '2': [
     'support.class.promise.js',
@@ -180,7 +181,6 @@ const SUPPORTS = {
   ],
   '3':[
     'support.class.component',
-    'support.type.property-name.json',
   ],
   '4':[
     'support.type.primitive.js',

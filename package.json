@@ -1,10 +1,11 @@
 {
   "name": "niketa-theme",
   "scripts": {
+    "palette": "jest lambdas/generate-palette/generate-palette.spec.js",
     "bump": "maided bump",
     "dev": "jest lambdas/export_to_mono/exportToMono.spec.js --watch",
     "export": "jest lambdas/export_to_mono/exportToMono.spec.js",
-    "test": "jest src/createMultipleThemes.spec.js"
+    "out": "jest src/createMultipleThemes.spec.js"
   },
   "version": "9.19.0",
   "devDependencies": {

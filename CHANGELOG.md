@@ -1,5 +1,9 @@
 # Changelog
 
+## WIP 9.20.0
+
+- Change color group of `punctuation.definition`
+
 ## 9.19.0
 
 - Update screens
