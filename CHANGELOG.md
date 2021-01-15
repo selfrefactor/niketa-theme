@@ -1,8 +1,12 @@
 # Changelog
 
-## WIP 9.20.0
+## 9.20.0
+
+- Change colors of all themes with exception of `HelloSpaceboy`, `StrangeBrew` and `SweatLeaf`
 
 - Change color group of `punctuation.definition`
+
+- Make the background a little bit brighter
 
 ## 9.19.0
 

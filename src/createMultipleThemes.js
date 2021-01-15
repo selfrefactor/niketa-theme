@@ -20,7 +20,7 @@ const { resolve } = require('path')
 const FIRST_THEME = 'CommunicationBreakdown'
 
 const SPIN_LABEL = false
-// const SPIN_LABEL = 'FunkyDrummer'
+// const SPIN_LABEL = 'DancingDays'
 
 const SETTINGS_ORIGIN = [
   { CommunicationBreakdown },
