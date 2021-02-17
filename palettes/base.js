@@ -93,6 +93,7 @@ const PUNCTUATIONS = {
   '4':[
   ]
 }
+
 const CONSTANTS = {
   '0': [
   ],
@@ -113,6 +114,48 @@ const CONSTANTS = {
     'constant.other.BOLD',
   ]
 }
+const CSS = {
+  '0': [
+    "source.sass",
+    "source.scss",
+    "source.less",
+    "source.stylus",
+    "source.postcss",
+    "support.type.property-name.css",
+    "support.type.property-name.scss",
+    "support.type.property-name.less",
+    "support.type.property-name.sass",
+  ],
+  '1': [
+    "variable.css",
+    "variable.scss",
+    "variable.less",
+    "variable.sass",
+  ],
+  '2': [
+    "variable.css.string",
+    "variable.scss.string",
+    "variable.less.string",
+    "variable.sass.string",
+  ],
+  '3':[
+    "unit.css",
+    "unit.scss",
+    "unit.less",
+    "unit.sass",
+  ],
+  '4':[
+    "constant.numeric.css",
+    "constant.numeric.scss",
+    "constant.numeric.less",
+    "constant.numeric.sass",
+    "function.css",
+    "function.scss",
+    "function.less",
+    "function.sass",
+  ]
+}
+
 const ENTITIES = {
   '0': [
     'entity.name.method.js.ITALIC',
@@ -138,11 +181,13 @@ const ENTITIES = {
     'entity.other.ng-binding-name.property.html',
   ],
   '4':[
+    'entity.name.tag.css',
     'entity.name.variable.BOLD',
     'entity.other.inherited-class',
     'entity.other.ng-binding-name.outputReplEvent.html',
   ]
 }
+
 const STRINGS = {
   '0': [
   ],
@@ -163,6 +208,7 @@ const STRINGS = {
     'string.unquoted.label.js.ITALIC',
   ]
 }
+
 const SUPPORTS = {
   '0': [
     'support.class.console.js',
@@ -180,6 +226,7 @@ const SUPPORTS = {
     'support.type.object.module.js',
   ],
   '3':[
+    'support.type.property-name.css',
     'support.class.component',
   ],
   '4':[
@@ -191,6 +238,7 @@ const SUPPORTS = {
     'support.function.mutator.js',
   ]
 }
+
 const METAS = {
   '0': [
     'meta.function.arrow',
@@ -249,8 +297,10 @@ function buildColors(modeInput){
   const entities = defaultTo([], ENTITIES[mode])
   const constants = defaultTo([], CONSTANTS[mode])
   const punctuations = defaultTo([], PUNCTUATIONS[mode])
+  const css = defaultTo([], CSS[mode])
 
   return [
+    ...css,
     ...constants,
     ...entities,
     ...keywords,

@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.21.0
+
+Fix missing grouping of CSS related attributes.
+
 ## 9.20.0
 
 - Change colors of all themes with exception of `HelloSpaceboy`, `StrangeBrew` and `SweatLeaf`
