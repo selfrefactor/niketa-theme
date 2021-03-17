@@ -2319,13 +2319,19 @@
       "name": "entity.name.class",
       "scope": "entity.name.class",
       "settings": {
-        "fontStyle": "underline",
         "foreground": "COLOR_1"
       }
     },
     {
       "name": "entity.name.function",
       "scope": "entity.name.function",
+      "settings": {
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "entity.name.type",
+      "scope": "entity.name.type",
       "settings": {
         "fontStyle": "underline",
         "foreground": "COLOR_1"
@@ -2360,14 +2366,6 @@
       "scope": "entity.name.tag.class.tsx",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "entity.name.type",
-      "scope": "entity.name.type",
-      "settings": {
-        "fontStyle": "underline",
         "foreground": "COLOR_1"
       }
     },
@@ -7009,7 +7007,6 @@
       "name": "invalid",
       "scope": "invalid",
       "settings": {
-        "fontStyle": "underline",
         "foreground": "COLOR_4"
       }
     },

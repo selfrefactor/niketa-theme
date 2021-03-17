@@ -2633,13 +2633,19 @@
       "name": "entity.name.class",
       "scope": "entity.name.class",
       "settings": {
-        "fontStyle": "underline",
         "foreground": "#FF3EBF"
       }
     },
     {
       "name": "entity.name.function",
       "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#FF3EBF"
+      }
+    },
+    {
+      "name": "entity.name.type",
+      "scope": "entity.name.type",
       "settings": {
         "fontStyle": "underline",
         "foreground": "#FF3EBF"
@@ -2674,14 +2680,6 @@
       "scope": "entity.name.tag.class.tsx",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#FF3EBF"
-      }
-    },
-    {
-      "name": "entity.name.type",
-      "scope": "entity.name.type",
-      "settings": {
-        "fontStyle": "underline",
         "foreground": "#FF3EBF"
       }
     },
@@ -7323,7 +7321,6 @@
       "name": "invalid",
       "scope": "invalid",
       "settings": {
-        "fontStyle": "underline",
         "foreground": "#FF3EBF"
       }
     },

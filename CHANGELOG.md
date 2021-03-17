@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.22.0
+
+Reduce underline types
+
 ## 9.21.0
 
 Fix missing grouping of CSS related attributes.

@@ -162,10 +162,10 @@ const ENTITIES = {
     'entity.name.tag.UNDERLINE',
   ],
   '1': [
-    'entity.name.class.UNDERLINE',
-    'entity.name.function.UNDERLINE',
-    'entity.name.tag.class.js.BOLD',
+    'entity.name.class',
+    'entity.name.function',
     'entity.name.type.UNDERLINE',
+    'entity.name.tag.class.js.BOLD',
     'entity.name.type.js.BOLD',
   ],
   '2': [
@@ -351,7 +351,7 @@ const COLOR_4 = [
   'comment.ITALIC',
   'comment.block.documentation.ITALIC',
   'comment.line.double-slash.ITALIC',
-  'invalid.UNDERLINE',
+  'invalid',
   'tag.decorator.js',
 ]
 
