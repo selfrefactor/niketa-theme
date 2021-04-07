@@ -257,7 +257,7 @@ const METAS = {
   ],
   '3':[
     'meta.brace.square.js',
-    'meta.function.parameters.js',
+    'meta.function.parameters.js.UNDERLINE',
     'meta.parameters.js',
     'meta.tag.js',
   ],
