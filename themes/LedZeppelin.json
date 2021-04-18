@@ -1313,6 +1313,7 @@
       "name": "meta.var.expr.js",
       "scope": "meta.var.expr.js",
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#3a0088"
       }
     },
@@ -1320,6 +1321,7 @@
       "name": "meta.var.expr.jsx",
       "scope": "meta.var.expr.jsx",
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#3a0088"
       }
     },
@@ -1327,6 +1329,7 @@
       "name": "meta.var.expr.ts",
       "scope": "meta.var.expr.ts",
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#3a0088"
       }
     },
@@ -1334,6 +1337,7 @@
       "name": "meta.var.expr.tsx",
       "scope": "meta.var.expr.tsx",
       "settings": {
+        "fontStyle": "bold",
         "foreground": "#3a0088"
       }
     },
@@ -1654,7 +1658,7 @@
       "name": "variable.language.this",
       "scope": "variable.language.this",
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "underline",
         "foreground": "#3a0088"
       }
     },
@@ -1662,7 +1666,7 @@
       "name": "variable.language.this.js",
       "scope": "variable.language.this.js",
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "underline",
         "foreground": "#3a0088"
       }
     },
@@ -1670,7 +1674,7 @@
       "name": "variable.language.this.jsx",
       "scope": "variable.language.this.jsx",
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "underline",
         "foreground": "#3a0088"
       }
     },
@@ -1678,7 +1682,7 @@
       "name": "variable.language.this.ts",
       "scope": "variable.language.this.ts",
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "underline",
         "foreground": "#3a0088"
       }
     },
@@ -1686,7 +1690,7 @@
       "name": "variable.language.this.tsx",
       "scope": "variable.language.this.tsx",
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "underline",
         "foreground": "#3a0088"
       }
     },
@@ -1694,6 +1698,7 @@
       "name": "variable.import.parameter.js",
       "scope": "variable.import.parameter.js",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#3a0088"
       }
     },
@@ -1701,6 +1706,7 @@
       "name": "variable.import.parameter.jsx",
       "scope": "variable.import.parameter.jsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#3a0088"
       }
     },
@@ -1708,6 +1714,7 @@
       "name": "variable.import.parameter.ts",
       "scope": "variable.import.parameter.ts",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#3a0088"
       }
     },
@@ -1715,6 +1722,7 @@
       "name": "variable.import.parameter.tsx",
       "scope": "variable.import.parameter.tsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#3a0088"
       }
     },
@@ -3855,6 +3863,7 @@
       "name": "constant.language.null.js",
       "scope": "constant.language.null.js",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#bb9132"
       }
     },
@@ -3862,6 +3871,7 @@
       "name": "constant.language.null.jsx",
       "scope": "constant.language.null.jsx",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#bb9132"
       }
     },
@@ -3869,6 +3879,7 @@
       "name": "constant.language.null.ts",
       "scope": "constant.language.null.ts",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#bb9132"
       }
     },
@@ -3876,6 +3887,7 @@
       "name": "constant.language.null.tsx",
       "scope": "constant.language.null.tsx",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#bb9132"
       }
     },
@@ -4514,6 +4526,7 @@
       "name": "variable.other.object.property.js",
       "scope": "variable.other.object.property.js",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#bb9132"
       }
     },
@@ -4521,6 +4534,7 @@
       "name": "variable.other.object.property.jsx",
       "scope": "variable.other.object.property.jsx",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#bb9132"
       }
     },
@@ -4528,6 +4542,7 @@
       "name": "variable.other.object.property.ts",
       "scope": "variable.other.object.property.ts",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#bb9132"
       }
     },
@@ -4535,6 +4550,7 @@
       "name": "variable.other.object.property.tsx",
       "scope": "variable.other.object.property.tsx",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#bb9132"
       }
     },
@@ -5655,6 +5671,7 @@
       "name": "keyword.control.default.js",
       "scope": "keyword.control.default.js",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#3eb2b1"
       }
     },
@@ -5662,6 +5679,7 @@
       "name": "keyword.control.default.jsx",
       "scope": "keyword.control.default.jsx",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#3eb2b1"
       }
     },
@@ -5669,6 +5687,7 @@
       "name": "keyword.control.default.ts",
       "scope": "keyword.control.default.ts",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#3eb2b1"
       }
     },
@@ -5676,6 +5695,7 @@
       "name": "keyword.control.default.tsx",
       "scope": "keyword.control.default.tsx",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#3eb2b1"
       }
     },
@@ -5892,6 +5912,7 @@
       "name": "variable.object.property.js",
       "scope": "variable.object.property.js",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#3eb2b1"
       }
     },
@@ -5899,6 +5920,7 @@
       "name": "variable.object.property.jsx",
       "scope": "variable.object.property.jsx",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#3eb2b1"
       }
     },
@@ -5906,6 +5928,7 @@
       "name": "variable.object.property.ts",
       "scope": "variable.object.property.ts",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#3eb2b1"
       }
     },
@@ -5913,6 +5936,7 @@
       "name": "variable.object.property.tsx",
       "scope": "variable.object.property.tsx",
       "settings": {
+        "fontStyle": "underline",
         "foreground": "#3eb2b1"
       }
     },
