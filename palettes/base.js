@@ -17,8 +17,9 @@ const VARIABLES = {
     'variable.import.parameter.js.ITALIC',
     'variable.language.constructor.UNDERLINE',
   ],
-  1: ['variable.BOLD', 'variable.parameter.ITALIC'],
+  1: [],
   2: [
+    'variable.BOLD', 'variable.parameter.ITALIC',
     'variable.language.prototype.js.ITALIC',
     'variable.other.class.js',
     'variable.other.constant.js',
@@ -35,8 +36,8 @@ const VARIABLES = {
 }
 
 const KEYWORDS = {
-  0: ['keyword.control.import.js', 'keyword.operator.module.all.js'],
-  1: ['keyword.ITALIC'],
+  0: ['keyword.control.import.js', 'keyword.operator.module.all.js', 'keyword.ITALIC'],
+  1: [],
   2: ['keyword.control.module.js.BOLD'],
   3: [
     'keyword.control.default.js.UNDERLINE',
@@ -221,11 +222,12 @@ const STORAGES = {
     'storage.modifier.js.ITALIC',
     'storage.type.ITALIC',
     'storage.type.function.js',
+    'storage.modifier.async.js'
   ],
   1: [],
   2: [],
   3: [],
-  4: ['storage.modifier.async.js'],
+  4: [],
 }
 
 function buildColors(modeInput) {
