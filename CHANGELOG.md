@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.23.0
+
+Change pallete colors for `const`-like fragments
+
 ## 9.22.0
 
 Reduce underline types

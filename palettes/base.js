@@ -219,12 +219,13 @@ const METAS = {
 
 const STORAGES = {
   0: [
+  ],
+  1: [
     'storage.modifier.js.ITALIC',
     'storage.type.ITALIC',
     'storage.type.function.js',
     'storage.modifier.async.js'
   ],
-  1: [],
   2: [],
   3: [],
   4: [],
