@@ -11,43 +11,54 @@ const [
 ] = splitEvery(Math.ceil(missingScopes.length / 5), missingScopes)
 
 const VARIABLES = {
-  0: [
+  0: [],
+  1: [
+    'variable.other.property.js.BOLD',
+  ],
+  2: [
+    'variable.BOLD',
+    'variable.import.parameter.js.ITALIC',
+    'variable.language.ITALIC',
+    'variable.language.constructor.UNDERLINE',
+    'variable.language.prototype.js.ITALIC',
     'variable.language.this.UNDERLINE',
     'variable.language.this.js.UNDERLINE',
-    'variable.import.parameter.js.ITALIC',
-    'variable.language.constructor.UNDERLINE',
-  ],
-  1: [],
-  2: [
-    'variable.BOLD', 'variable.parameter.ITALIC',
-    'variable.language.prototype.js.ITALIC',
+    'variable.object.property.js.UNDERLINE',
+    'variable.parameter.ITALIC',
     'variable.other.class.js',
     'variable.other.constant.js',
-    'variable.other.object.property.js.UNDERLINE',
-    'variable.other.property.js',
-    'variable.other.object.js',
     'variable.other.readwrite',
-    'variable.other.readwrite.js',
     'variable.other.readwrite.alias.js',
     'variable.other.readwrite.decorator.js',
+    'variable.other.readwrite.js',
   ],
-  3: ['variable.object.property.js.UNDERLINE'],
-  4: ['variable.language.ITALIC'],
+  3: [
+    'variable.other.object.js',
+    'variable.other.object.property.js.UNDERLINE',
+  ],
+  4: [],
 }
 
 const KEYWORDS = {
-  0: ['keyword.control.import.js', 'keyword.operator.module.all.js', 'keyword.ITALIC'],
+  0: [],
   1: [],
-  2: ['keyword.control.module.js.BOLD'],
+  2: [],
   3: [
-    'keyword.control.default.js.UNDERLINE',
+    'keyword.control.module.js.BOLD',
+    'keyword.control.import.js.ITALIC',
     'keyword.control.export.js.ITALIC',
+    'keyword.operator.module.all.js',
+    'keyword.ITALIC',
+    'keyword.control.flow.ITALIC',
+    'keyword.control.ITALIC',
+    'keyword.control.default.js.UNDERLINE',
     'keyword.control.from.js',
     'keyword.operator.BOLD',
     'keyword.operator.accessor',
     'keyword.operator.new.ITALIC',
+    'keyword.operator.decorator.js',
   ],
-  4: ['keyword.operator.decorator.js'],
+  4: [],
 }
 
 const PUNCTUATIONS = {
@@ -80,13 +91,13 @@ const PUNCTUATIONS = {
 const CONSTANTS = {
   0: [],
   1: [],
-  2: [
-    'constant.language.boolean.BOLD',
-    'constant.language.null.js.UNDERLINE',
-    'constant.numeric.BOLD',
-  ],
-  3: ['constant.other.object.key.js'],
+  2: [],
+  3: [],
   4: [
+    'constant.other.object.key.js',
+    'constant.language.boolean',
+    'constant.language.null.js',
+    'constant.numeric.BOLD',
     'constant.BOLD',
     'constant.character.BOLD',
     'constant.language.BOLD',
@@ -126,26 +137,25 @@ const CSS = {
 }
 
 const ENTITIES = {
-  0: ['entity.name.method.js.ITALIC', 'entity.name.tag.UNDERLINE'],
-  1: [
+  0: [
+    'entity.name.method.js.ITALIC',
+    'entity.name.tag.UNDERLINE',
     'entity.name.class',
     'entity.name.function',
+    'entity.name.function.js',
+    'entity.name.function.method',
     'entity.name.type.UNDERLINE',
     'entity.name.tag.class.js.BOLD',
     'entity.name.type.js.BOLD',
   ],
+  1: ['entity.name.type.interface', 'entity.name.type'],
   2: [
     'entity.name.class.js',
     'entity.name.module.js',
     'entity.other.attribute-name.ITALIC',
     'entity.other.attribute-name.js.ITALIC',
   ],
-  3: [
-    'entity.name.function.js',
-    'entity.name.function.method',
-    'entity.name.tag.js',
-    'entity.other.ng-binding-name.property.html',
-  ],
+  3: ['entity.name.tag.js', 'entity.other.ng-binding-name.property.html'],
   4: [
     'entity.name.tag.css',
     'entity.name.variable.BOLD',
@@ -218,13 +228,12 @@ const METAS = {
 }
 
 const STORAGES = {
-  0: [
-  ],
+  0: [],
   1: [
     'storage.modifier.js.ITALIC',
     'storage.type.ITALIC',
     'storage.type.function.js',
-    'storage.modifier.async.js'
+    'storage.modifier.async.js',
   ],
   2: [],
   3: [],
