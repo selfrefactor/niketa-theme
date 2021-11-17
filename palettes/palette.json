@@ -1374,34 +1374,6 @@
       }
     },
     {
-      "name": "entity.name.function.js",
-      "scope": "entity.name.function.js",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.function.jsx",
-      "scope": "entity.name.function.jsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.function.ts",
-      "scope": "entity.name.function.ts",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "entity.name.function.tsx",
-      "scope": "entity.name.function.tsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
       "name": "entity.name.function.method",
       "scope": "entity.name.function.method",
       "settings": {
@@ -1520,163 +1492,162 @@
       }
     },
     {
-      "name": "punctuation.definition.block.js",
-      "scope": "punctuation.definition.block.js",
+      "name": "string.quoted.single.js",
+      "scope": "string.quoted.single.js",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.block.jsx",
-      "scope": "punctuation.definition.block.jsx",
+      "name": "string.quoted.single.jsx",
+      "scope": "string.quoted.single.jsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.block.ts",
-      "scope": "punctuation.definition.block.ts",
+      "name": "string.quoted.single.ts",
+      "scope": "string.quoted.single.ts",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.block.tsx",
-      "scope": "punctuation.definition.block.tsx",
+      "name": "string.quoted.single.tsx",
+      "scope": "string.quoted.single.tsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.begin.js",
-      "scope": "punctuation.definition.parameters.begin.js",
+      "name": "string.quoted.double.html",
+      "scope": "string.quoted.double.html",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.begin.jsx",
-      "scope": "punctuation.definition.parameters.begin.jsx",
+      "name": "string.quoted.double.json",
+      "scope": "string.quoted.double.json",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.begin.ts",
-      "scope": "punctuation.definition.parameters.begin.ts",
+      "name": "string.quoted.single.json",
+      "scope": "string.quoted.single.json",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.begin.tsx",
-      "scope": "punctuation.definition.parameters.begin.tsx",
+      "name": "string.template",
+      "scope": "string.template",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.end.js",
-      "scope": "punctuation.definition.parameters.end.js",
+      "name": "string.template.js",
+      "scope": "string.template.js",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.end.jsx",
-      "scope": "punctuation.definition.parameters.end.jsx",
+      "name": "string.template.jsx",
+      "scope": "string.template.jsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.end.ts",
-      "scope": "punctuation.definition.parameters.end.ts",
+      "name": "string.template.ts",
+      "scope": "string.template.ts",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.end.tsx",
-      "scope": "punctuation.definition.parameters.end.tsx",
+      "name": "string.template.tsx",
+      "scope": "string.template.tsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.end.js",
-      "scope": "punctuation.definition.parameters.end.js",
+      "name": "string.unquoted.js",
+      "scope": "string.unquoted.js",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.end.jsx",
-      "scope": "punctuation.definition.parameters.end.jsx",
+      "name": "string.unquoted.jsx",
+      "scope": "string.unquoted.jsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.end.ts",
-      "scope": "punctuation.definition.parameters.end.ts",
+      "name": "string.unquoted.ts",
+      "scope": "string.unquoted.ts",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.parameters.end.tsx",
-      "scope": "punctuation.definition.parameters.end.tsx",
+      "name": "string.unquoted.tsx",
+      "scope": "string.unquoted.tsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.tag.js",
-      "scope": "punctuation.definition.tag.js",
+      "name": "string.unquoted.label.js",
+      "scope": "string.unquoted.label.js",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.tag.jsx",
-      "scope": "punctuation.definition.tag.jsx",
+      "name": "string.unquoted.label.jsx",
+      "scope": "string.unquoted.label.jsx",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.tag.ts",
-      "scope": "punctuation.definition.tag.ts",
+      "name": "string.unquoted.label.ts",
+      "scope": "string.unquoted.label.ts",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
     {
-      "name": "punctuation.definition.tag.tsx",
-      "scope": "punctuation.definition.tag.tsx",
+      "name": "string.unquoted.label.tsx",
+      "scope": "string.unquoted.label.tsx",
       "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.string",
-      "scope": "punctuation.definition.string",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.string.begin",
-      "scope": "punctuation.definition.string.begin",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.definition.string.end",
-      "scope": "punctuation.definition.string.end",
-      "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_0"
       }
     },
@@ -3397,38 +3368,6 @@
       "name": "storage.modifier.async.tsx",
       "scope": "storage.modifier.async.tsx",
       "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "string.quoted.single.js",
-      "scope": "string.quoted.single.js",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "string.quoted.single.jsx",
-      "scope": "string.quoted.single.jsx",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "string.quoted.single.ts",
-      "scope": "string.quoted.single.ts",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "string.quoted.single.tsx",
-      "scope": "string.quoted.single.tsx",
-      "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_1"
       }
     },
@@ -8797,6 +8736,38 @@
       }
     },
     {
+      "name": "entity.name.function.js",
+      "scope": "entity.name.function.js",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function.jsx",
+      "scope": "entity.name.function.jsx",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function.ts",
+      "scope": "entity.name.function.ts",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "entity.name.function.tsx",
+      "scope": "entity.name.function.tsx",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "COLOR_4"
+      }
+    },
+    {
       "name": "entity.name.tag.css",
       "scope": "entity.name.tag.css",
       "settings": {
@@ -8910,130 +8881,163 @@
       }
     },
     {
-      "name": "string.quoted.double.html",
-      "scope": "string.quoted.double.html",
+      "name": "punctuation.definition.parameters.begin.js",
+      "scope": "punctuation.definition.parameters.begin.js",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.quoted.double.json",
-      "scope": "string.quoted.double.json",
+      "name": "punctuation.definition.parameters.begin.jsx",
+      "scope": "punctuation.definition.parameters.begin.jsx",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.quoted.single.json",
-      "scope": "string.quoted.single.json",
+      "name": "punctuation.definition.parameters.begin.ts",
+      "scope": "punctuation.definition.parameters.begin.ts",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.template",
-      "scope": "string.template",
+      "name": "punctuation.definition.parameters.begin.tsx",
+      "scope": "punctuation.definition.parameters.begin.tsx",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.template.js",
-      "scope": "string.template.js",
+      "name": "punctuation.definition.parameters.end.js",
+      "scope": "punctuation.definition.parameters.end.js",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.template.jsx",
-      "scope": "string.template.jsx",
+      "name": "punctuation.definition.parameters.end.jsx",
+      "scope": "punctuation.definition.parameters.end.jsx",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.template.ts",
-      "scope": "string.template.ts",
+      "name": "punctuation.definition.parameters.end.ts",
+      "scope": "punctuation.definition.parameters.end.ts",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.template.tsx",
-      "scope": "string.template.tsx",
+      "name": "punctuation.definition.parameters.end.tsx",
+      "scope": "punctuation.definition.parameters.end.tsx",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.unquoted.js",
-      "scope": "string.unquoted.js",
+      "name": "punctuation.definition.parameters.end.js",
+      "scope": "punctuation.definition.parameters.end.js",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.unquoted.jsx",
-      "scope": "string.unquoted.jsx",
+      "name": "punctuation.definition.parameters.end.jsx",
+      "scope": "punctuation.definition.parameters.end.jsx",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.unquoted.ts",
-      "scope": "string.unquoted.ts",
+      "name": "punctuation.definition.parameters.end.ts",
+      "scope": "punctuation.definition.parameters.end.ts",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.unquoted.tsx",
-      "scope": "string.unquoted.tsx",
+      "name": "punctuation.definition.parameters.end.tsx",
+      "scope": "punctuation.definition.parameters.end.tsx",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.unquoted.label.js",
-      "scope": "string.unquoted.label.js",
+      "name": "punctuation.definition.block.js",
+      "scope": "punctuation.definition.block.js",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.unquoted.label.jsx",
-      "scope": "string.unquoted.label.jsx",
+      "name": "punctuation.definition.block.jsx",
+      "scope": "punctuation.definition.block.jsx",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.unquoted.label.ts",
-      "scope": "string.unquoted.label.ts",
+      "name": "punctuation.definition.block.ts",
+      "scope": "punctuation.definition.block.ts",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_4"
       }
     },
     {
-      "name": "string.unquoted.label.tsx",
-      "scope": "string.unquoted.label.tsx",
+      "name": "punctuation.definition.block.tsx",
+      "scope": "punctuation.definition.block.tsx",
       "settings": {
-        "fontStyle": "italic",
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.js",
+      "scope": "punctuation.definition.tag.js",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.jsx",
+      "scope": "punctuation.definition.tag.jsx",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.ts",
+      "scope": "punctuation.definition.tag.ts",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.tag.tsx",
+      "scope": "punctuation.definition.tag.tsx",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.string",
+      "scope": "punctuation.definition.string",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.string.begin",
+      "scope": "punctuation.definition.string.begin",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "punctuation.definition.string.end",
+      "scope": "punctuation.definition.string.end",
+      "settings": {
         "foreground": "COLOR_4"
       }
     },

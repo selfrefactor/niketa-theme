@@ -2,7 +2,7 @@
 
 ## 9.23.0
 
-Change pallete colors for `const`-like fragments
+Change pallete colors distributions
 
 ## 9.22.0
 

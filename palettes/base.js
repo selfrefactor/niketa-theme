@@ -12,9 +12,7 @@ const [
 
 const VARIABLES = {
   0: [],
-  1: [
-    'variable.other.property.js.BOLD',
-  ],
+  1: ['variable.other.property.js.BOLD'],
   2: [
     'variable.BOLD',
     'variable.import.parameter.js.ITALIC',
@@ -62,15 +60,7 @@ const KEYWORDS = {
 }
 
 const PUNCTUATIONS = {
-  0: [
-    'punctuation.definition.block.js',
-    'punctuation.definition.parameters.begin.js',
-    'punctuation.definition.parameters.end.js',
-    'punctuation.definition.tag.js',
-    'punctuation.definition.string',
-    'punctuation.definition.string.begin',
-    'punctuation.definition.string.end',
-  ],
+  0: [],
   1: [
     'punctuation.definition.template-expression.begin.js',
     'punctuation.definition.template-expression.end.js',
@@ -85,7 +75,15 @@ const PUNCTUATIONS = {
     'punctuation.separator.parameter.js',
   ],
   3: [],
-  4: [],
+  4: [
+    'punctuation.definition.parameters.begin.js',
+    'punctuation.definition.parameters.end.js',
+    'punctuation.definition.block.js',
+    'punctuation.definition.tag.js',
+    'punctuation.definition.string',
+    'punctuation.definition.string.begin',
+    'punctuation.definition.string.end',
+  ],
 }
 
 const CONSTANTS = {
@@ -142,7 +140,6 @@ const ENTITIES = {
     'entity.name.tag.UNDERLINE',
     'entity.name.class',
     'entity.name.function',
-    'entity.name.function.js',
     'entity.name.function.method',
     'entity.name.type.UNDERLINE',
     'entity.name.tag.class.js.BOLD',
@@ -157,6 +154,7 @@ const ENTITIES = {
   ],
   3: ['entity.name.tag.js', 'entity.other.ng-binding-name.property.html'],
   4: [
+    'entity.name.function.js.BOLD',
     'entity.name.tag.css',
     'entity.name.variable.BOLD',
     'entity.other.inherited-class',
@@ -165,11 +163,8 @@ const ENTITIES = {
 }
 
 const STRINGS = {
-  0: [],
-  1: ['string.quoted.single.js.ITALIC'],
-  2: [],
-  3: [],
-  4: [
+  0: [
+    'string.quoted.single.js.ITALIC',
     'string.quoted.double.html.ITALIC',
     'string.quoted.double.json.ITALIC',
     'string.quoted.single.json.ITALIC',
@@ -178,6 +173,10 @@ const STRINGS = {
     'string.unquoted.js.ITALIC',
     'string.unquoted.label.js.ITALIC',
   ],
+  2: [],
+  1: [],
+  3: [],
+  4: [],
 }
 
 const SUPPORTS = {
