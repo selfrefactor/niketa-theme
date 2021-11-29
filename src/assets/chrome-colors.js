@@ -13,6 +13,7 @@ const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
 const listColors = {
+  'quickInput.list.focusBackground': '#555',
   // in change of themes
   'quickInput.background'            : INPUT_BACK,
   // in the circle of unsaved changes

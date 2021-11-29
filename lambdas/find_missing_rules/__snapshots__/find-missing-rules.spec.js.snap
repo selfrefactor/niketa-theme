@@ -1,3 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`happy 1`] = `Array []`;
+exports[`happy 1`] = `
+Array [
+  "entity.name.type.class.js",
+  "keyword.operator.new.js",
+  "meta.class.js",
+  "storage.type.js",
+  "storage.type.property.js",
+  "storage.type.function.arrow.js",
+]
+`;

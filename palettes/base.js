@@ -230,11 +230,13 @@ const STORAGES = {
   0: [],
   1: [
     'storage.modifier.js.ITALIC',
-    'storage.type.ITALIC',
     'storage.type.function.js',
     'storage.modifier.async.js',
   ],
-  2: [],
+  2: [
+    'storage.type.ITALIC',
+    'storage.type.interface.js.ITALIC',
+  ],
   3: [],
   4: [],
 }

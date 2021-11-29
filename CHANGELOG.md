@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.25.0
+
+Import missing scopes from `cyan dark` theme
+
 ## 9.23.0
 
 Change pallete colors distributions
