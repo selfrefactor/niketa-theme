@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.26.0
+
+Darken the background
+
 ## 9.25.0
 
 Import missing scopes from `cyan dark` theme
