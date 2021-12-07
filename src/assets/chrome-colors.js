@@ -23,7 +23,7 @@ const listColors = {
   'list.dropBackground'              : '#db82d688',
   // when select theme, this is active theme background
   'list.focusBackground'             : '#6d50a188',
-  'list.highlightForeground'         : '#4d0e0b',
+  'list.highlightForeground'         : '#4d0e0b44',
   'list.inactiveFocusBackground'     : '#885f66cc',
   // when file is selected and then it turns inactive,
   // as code window became active
