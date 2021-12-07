@@ -56,7 +56,7 @@ const menuColors = {
   'menu.foreground'             : DARK,
   'menu.selectionBackground'    : `${ SOFTER_ACCENT }66`,
   'menu.selectionForeground'    : DARK,
-  'menu.separatorBackground'    : `${ DARK }88`,
+  'menu.separatorBackground'    : `${ DARK }55`,
   'menubar.selectionBackground' : `${ SOFTER_ACCENT }66`,
   'menubar.selectionBorder'     : BORDER,
   'menubar.selectionForeground' : DARK,
@@ -165,8 +165,8 @@ const dropBackgrounds = {
 
 const possibleErrors={
   "editorIndentGuide.activeBackground": "#363b54",
-  "editorPane.background": "#363b54",
-  "notificationCenterHeader.background": "#101014",
+  "editorPane.background": "#363b5477",
+  "notificationCenterHeader.background": "#10101477",
   "activityBarBadge.foreground": "#141414",
   // when press f8 and you have code problem
   "editorMarkerNavigation.background": "#e7e7e7",
