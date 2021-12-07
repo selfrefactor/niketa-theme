@@ -13,7 +13,7 @@ const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
 const listColors = {
-  'quickInput.list.focusBackground': '#555',
+  'quickInput.list.focusBackground': '#5554',
   // in change of themes
   'quickInput.background'            : INPUT_BACK,
   // in the circle of unsaved changes
@@ -27,7 +27,7 @@ const listColors = {
   'list.inactiveFocusBackground'     : '#885f66cc',
   // when file is selected and then it turns inactive,
   // as code window became active
-  'list.inactiveSelectionBackground' : '#eae3cd55',
+  'list.inactiveSelectionBackground' : '#eae3cd99',
   'list.inactiveSelectionForeground' : '#4d0e0b',
   // in the previous comment, this is when code window is not yet active
   'list.activeSelectionBackground'   : '#d1343822',
