@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.27.0
+
+Import list colors from other theme
+
 ## 9.26.0
 
 Darken the background

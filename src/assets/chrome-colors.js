@@ -13,6 +13,23 @@ const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
 const listColors = {
+  // imported from easy light theme
+  "list.activeSelectionBackground": "#b1b1b167",
+  "list.activeSelectionForeground": "#4e4e4e",
+  "list.dropBackground": "#b1b1b11e",
+  "list.errorForeground": "#bb1000",
+  "list.filterMatchBorder": "#fff",
+  "list.filterMatchBackground": "#fff",
+  "list.focusBackground": "#0065FF33",
+  "list.focusForeground": "#4e4e4e",
+  "list.highlightForeground": "#4283F5",
+  "list.hoverBackground": "#b1b1b13a",
+  "list.hoverForeground": "#4e4e4e",
+  "list.inactiveFocusBackground": "#b1b1b133",
+  "list.inactiveSelectionBackground": "#b1b1b11e",
+  "list.inactiveSelectionForeground": "#4e4e4e",
+  "list.invalidItemForeground": "#A9A9AA",
+  "list.warningForeground": "#ff854c",
   'quickInput.list.focusBackground': '#5554',
   // in change of themes
   'quickInput.background'            : INPUT_BACK,
@@ -20,23 +37,24 @@ const listColors = {
   // in extensions preview
   'foreground'                       : '#24283b',
   // on drag and drop of folders
-  'list.dropBackground'              : '#db82d688',
+  // 'list.dropBackground'              : '#db82d688',
   // when select theme, this is active theme background
-  'list.focusBackground'             : '#6d50a188',
-  'list.highlightForeground'         : '#4d0e0b44',
-  'list.inactiveFocusBackground'     : '#885f66cc',
+  "list.focusBackground": "#0065FF33",
+  // 'list.focusBackground'             : '#6d50a188',
+  // 'list.highlightForeground'         : '#4d0e0b44',
+  // 'list.inactiveFocusBackground'     : '#885f66cc',
   // when file is selected and then it turns inactive,
   // as code window became active
-  'list.inactiveSelectionBackground' : '#eae3cd99',
-  'list.inactiveSelectionForeground' : '#4d0e0b',
+  // 'list.inactiveSelectionBackground' : '#eae3cd99',
+  // 'list.inactiveSelectionForeground' : '#4d0e0b',
   // in the previous comment, this is when code window is not yet active
-  'list.activeSelectionBackground'   : '#d1343822',
+  // 'list.activeSelectionBackground'   : '#d1343822',
   // Right click on file in file explorer, this is foreground on hover
-  'list.activeSelectionForeground'   : '#2a3343',
+  // 'list.activeSelectionForeground'   : '#2a3343',
   // 'list.activeSelectionForeground'   : '#e7e7e7',
   // visible in autocomplete, in suggest, change of theme
-  'list.hoverForeground'             : '#e7e7e7',
-  'list.hoverBackground'             : '#ad680066',
+  // 'list.hoverForeground'             : '#e7e7e7',
+  // 'list.hoverBackground'             : '#ad680066',
 }
 
 const sidebarColors = {
@@ -219,7 +237,7 @@ exports.chromeColors = {
   'gitDecoration.modifiedResourceForeground'  : '#034694',
   'gitDecoration.addedResourceForeground'     : '#53245b',
   'gitDecoration.untrackedResourceForeground' : '#aa769b',
-  'list.errorForeground'                      : '#a50044',
+  // 'list.errorForeground'                      : '#a50044',
   'scrollbar.shadow'                          : '#cf6f4b',
   'scrollbarSlider.background'                : CHROME_COLOR,
   'scrollbarSlider.hoverBackground'           : '#C4BE9D',
