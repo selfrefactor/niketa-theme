@@ -3595,38 +3595,6 @@
       }
     },
     {
-      "name": "variable.other.property.js",
-      "scope": "variable.other.property.js",
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.other.property.jsx",
-      "scope": "variable.other.property.jsx",
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.other.property.ts",
-      "scope": "variable.other.property.ts",
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "variable.other.property.tsx",
-      "scope": "variable.other.property.tsx",
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "COLOR_1"
-      }
-    },
-    {
       "name": "expression.ng",
       "scope": "expression.ng",
       "settings": {
@@ -5578,6 +5546,38 @@
       }
     },
     {
+      "name": "variable.other.property.js",
+      "scope": "variable.other.property.js",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.property.jsx",
+      "scope": "variable.other.property.jsx",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.property.ts",
+      "scope": "variable.other.property.ts",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.property.tsx",
+      "scope": "variable.other.property.tsx",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "COLOR_2"
+      }
+    },
+    {
       "name": "variable",
       "scope": "variable",
       "settings": {
@@ -5889,6 +5889,66 @@
       "name": "variable.other.readwrite.tsx",
       "scope": "variable.other.readwrite.tsx",
       "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.js",
+      "scope": "variable.other.object.js",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.jsx",
+      "scope": "variable.other.object.jsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.ts",
+      "scope": "variable.other.object.ts",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.tsx",
+      "scope": "variable.other.object.tsx",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.property.js",
+      "scope": "variable.other.object.property.js",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.property.jsx",
+      "scope": "variable.other.object.property.jsx",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.property.ts",
+      "scope": "variable.other.object.property.ts",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "variable.other.object.property.tsx",
+      "scope": "variable.other.object.property.tsx",
+      "settings": {
+        "fontStyle": "underline",
         "foreground": "COLOR_2"
       }
     },
@@ -7716,66 +7776,6 @@
       "name": "support.class.component",
       "scope": "support.class.component",
       "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.object.js",
-      "scope": "variable.other.object.js",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.object.jsx",
-      "scope": "variable.other.object.jsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.object.ts",
-      "scope": "variable.other.object.ts",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.object.tsx",
-      "scope": "variable.other.object.tsx",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.object.property.js",
-      "scope": "variable.other.object.property.js",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.object.property.jsx",
-      "scope": "variable.other.object.property.jsx",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.object.property.ts",
-      "scope": "variable.other.object.property.ts",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "variable.other.object.property.tsx",
-      "scope": "variable.other.object.property.tsx",
-      "settings": {
-        "fontStyle": "underline",
         "foreground": "COLOR_3"
       }
     },

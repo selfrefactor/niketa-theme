@@ -12,8 +12,9 @@ const [
 
 const VARIABLES = {
   0: [],
-  1: ['variable.other.property.js.BOLD'],
+  1: [],
   2: [
+    'variable.other.property.js.BOLD',
     'variable.BOLD',
     'variable.import.parameter.js.ITALIC',
     'variable.language.ITALIC',
@@ -29,11 +30,10 @@ const VARIABLES = {
     'variable.other.readwrite.alias.js',
     'variable.other.readwrite.decorator.js',
     'variable.other.readwrite.js',
-  ],
-  3: [
     'variable.other.object.js',
     'variable.other.object.property.js.UNDERLINE',
   ],
+  3: [],
   4: [],
 }
 
@@ -233,10 +233,7 @@ const STORAGES = {
     'storage.type.function.js',
     'storage.modifier.async.js',
   ],
-  2: [
-    'storage.type.ITALIC',
-    'storage.type.interface.js.ITALIC',
-  ],
+  2: ['storage.type.ITALIC', 'storage.type.interface.js.ITALIC'],
   3: [],
   4: [],
 }
