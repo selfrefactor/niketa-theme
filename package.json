@@ -7,7 +7,7 @@
     "export": "jest lambdas/export_to_mono/exportToMono.spec.js&&run d",
     "out": "jest src/createMultipleThemes.spec.js"
   },
-  "version": "9.29.0",
+  "version": "9.30.0",
   "devDependencies": {
     "@types/fs-extra": "^8.1.0",
     "@types/jest": "^25.2.1",
