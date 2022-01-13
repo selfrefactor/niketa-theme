@@ -13,8 +13,7 @@ const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
 const listColors = {
-  // imported from easy light theme
-  "list.activeSelectionBackground": "#b1b1b167",
+  "list.activeSelectionBackground": "#6a6a6a",
   "list.activeSelectionForeground": "#4e4e4e",
   "list.dropBackground": "#b1b1b11e",
   "list.errorForeground": "#bb1000",
