@@ -13,7 +13,7 @@ const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
 const listColors = {
-  "list.activeSelectionBackground": "#6a6a6a",
+  "list.activeSelectionBackground": "#aaa",
   "list.activeSelectionForeground": "#4e4e4e",
   "list.dropBackground": "#b1b1b11e",
   "list.errorForeground": "#bb1000",
@@ -24,8 +24,8 @@ const listColors = {
   "list.highlightForeground": "#4283F5",
   "list.hoverBackground": "#b1b1b13a",
   "list.hoverForeground": "#4e4e4e",
-  "list.inactiveFocusBackground": "#b1b1b133",
-  "list.inactiveSelectionBackground": "#b1b1b11e",
+  "list.inactiveFocusBackground": "#11b1b155",
+  "list.inactiveSelectionBackground": "#b1b11155",
   "list.inactiveSelectionForeground": "#4e4e4e",
   "list.invalidItemForeground": "#A9A9AA",
   "list.warningForeground": "#ff854c",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.30.0
+
+Fix list background
+
 ## 9.27.0
 
 Import list colors from other theme
