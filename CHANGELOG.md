@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.32.0
+
+import missing colors from https://themes.vscode.one/ template
+
 ## 9.31.0
 
 Use major blue color - same as `niketa-dark`
