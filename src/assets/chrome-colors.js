@@ -13,12 +13,14 @@ const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
 const listColors = {
+  'foreground'                       : '#24283b',
   'list.activeSelectionBackground'   : '#aaa',
   'list.activeSelectionForeground'   : '#4e4e4e',
   'list.dropBackground'              : '#b1b1b11e',
   'list.errorForeground'             : '#bb1000',
-  'list.filterMatchBorder'           : '#fff',
   'list.filterMatchBackground'       : '#fff',
+  'list.filterMatchBorder'           : '#fff',
+  'list.focusBackground'             : '#0065FF33',
   'list.focusBackground'             : '#0065FF33',
   'list.focusForeground'             : '#4e4e4e',
   'list.highlightForeground'         : '#4283F5',
@@ -29,41 +31,17 @@ const listColors = {
   'list.inactiveSelectionForeground' : '#4e4e4e',
   'list.invalidItemForeground'       : '#A9A9AA',
   'list.warningForeground'           : '#ff854c',
-  'quickInput.list.focusBackground'  : '#5554',
-  // in change of themes
   'quickInput.background'            : INPUT_BACK,
-  // in the circle of unsaved changes
-  // in extensions preview
-  'foreground'                       : '#24283b',
-  // on drag and drop of folders
-  // 'list.dropBackground'              : '#db82d688',
-  // when select theme, this is active theme background
-  'list.focusBackground'             : '#0065FF33',
-  // 'list.focusBackground'             : '#6d50a188',
-  // 'list.highlightForeground'         : '#4d0e0b44',
-  // 'list.inactiveFocusBackground'     : '#885f66cc',
-  // when file is selected and then it turns inactive,
-  // as code window became active
-  // 'list.inactiveSelectionBackground' : '#eae3cd99',
-  // 'list.inactiveSelectionForeground' : '#4d0e0b',
-  // in the previous comment, this is when code window is not yet active
-  // 'list.activeSelectionBackground'   : '#d1343822',
-  // Right click on file in file explorer, this is foreground on hover
-  // 'list.activeSelectionForeground'   : '#2a3343',
-  // 'list.activeSelectionForeground'   : '#e7e7e7',
-  // visible in autocomplete, in suggest, change of theme
-  // 'list.hoverForeground'             : '#e7e7e7',
-  // 'list.hoverBackground'             : '#ad680066',
+  'quickInput.list.focusBackground'  : '#5554',
 }
 
 const sidebarColors = {
   'sideBar.background'              : CHROME_COLOR,
-  // It means the color of files in explorer, not yet modified
-  // ============================================
   'sideBar.foreground'              : '#85483d',
   'sideBar.border'                  : '#8382ae',
   'sideBarSectionHeader.background' : '#aebabe',
   'sideBarSectionHeader.foreground' : '#2a3343',
+  "sideBarSectionHeader.border":    "#616161ca",
   'sideBarTitle.foreground'         : '#30322e',
 }
 
@@ -123,6 +101,7 @@ const peekView = {
 }
 
 const fromMissingColors = {
+  "tree.indentGuidesStroke": "#ffffff20",
   'welcomePage.buttonHoverBackground'        : '#918415',
   'welcomePage.buttonBackground'             : '#918455',
   'editor.stackFrameHighlightBackground'     : '#ffffff',
@@ -133,7 +112,6 @@ const fromMissingColors = {
   'statusBarItem.activeBackground'           : `${ SOFTER_ACCENT }55`,
   'statusBarItem.prominentBackground'        : `${ SOFTER_ACCENT }55`,
   'statusBarItem.prominentHoverBackground'   : CHROME_BRIGHTER,
-  'notifications.background'                 : '#cacaca',
   // when using `exx` snippet
   'editor.snippetTabstopHighlightBackground' : ACCENT_BACKGROUND,
   'editorGroupHeader.tabsBorder'             : CHROME_COLOR_ACCENT,
@@ -189,10 +167,18 @@ const possibleErrors = {
   'editorMarkerNavigation.background'   : '#e7e7e7',
 }
 
-// after big add
 const newColors = {
   'sash.hoverBorder'             : '#387b54',
   'editorUnnecessaryCode.border' : SOFT_WARNING,
+}
+const notifications = {
+  "notifications.foreground": "#53245b",
+  "notifications.border": "#696c77",
+  "notificationToast.border": "#771c1c",
+  "notificationCenter.border": "#771c1c",
+  'notifications.background': '#cacaca',
+//   notificationCenterHeader.foreground
+// #ad4848
 }
 const gitColors = {
   'gitDecoration.addedResourceForeground'       : '#53245b',
@@ -202,6 +188,8 @@ const gitColors = {
   'gitDecoration.modifiedResourceForeground'    : '#034694',
   'gitDecoration.submoduleResourceForeground'   : '#8af899',
   'gitDecoration.untrackedResourceForeground'   : '#aa769b',
+  'gitDecoration.stageDeletedResourceForeground'   : '#aa769b',
+  'gitDecoration.stageModifiedResourceForeground'   : '#aa769b',
 }
 
 exports.chromeColors = {
