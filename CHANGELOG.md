@@ -2,7 +2,7 @@
 
 ## 9.31.0
 
-Use major blue color - same as `niketa dark`
+Use major blue color - same as `niketa-dark`
 
 ## 9.30.0
 

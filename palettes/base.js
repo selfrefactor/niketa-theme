@@ -59,6 +59,39 @@ const KEYWORDS = {
   4: [],
 }
 
+const GIT = {
+  0: [
+    'git.addedResource'
+  ],
+  1: [
+
+  ],
+  2: [
+
+  ],
+  3: [
+  ],
+  4: [
+    
+  ],
+}
+const GITx = {
+  0: [
+
+  ],
+  1: [
+
+  ],
+  2: [
+
+  ],
+  3: [
+  ],
+  4: [
+
+  ],
+}
+
 const PUNCTUATIONS = {
   0: [],
   1: [
