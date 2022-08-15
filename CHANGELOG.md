@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.34.0
+
+Change border color
+
 ## 9.32.0
 
 import missing colors from https://themes.vscode.one/ template

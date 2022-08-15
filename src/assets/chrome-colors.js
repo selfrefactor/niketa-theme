@@ -6,7 +6,8 @@ const CHROME_BRIGHTER = '#d1d1d1'
 const CHROME_COLOR = '#c3c7cb'
 const CHROME_COLOR_ACCENT = '#b0b6bf'
 const DARK = '#083358'
-const BORDER = '#76608a'
+const BORDER = '#433'
+// const BORDER = '#76608a'
 const WARNING = '#d13438'
 const SOFT_WARNING = '#744da9'
 const ACCENT_BACKGROUND = '#ea5c0055'
@@ -220,7 +221,8 @@ exports.chromeColors = {
   'editor.findRangeHighlightBackground' : '#3f706344',
   'editor.lineHighlightBackground'      : BACK_COLOR,
   'editorBracketMatch.background'       : '#87775750',
-  'editorBracketMatch.border'           : BACK_COLOR,
+  'editorBracketMatch.border'           : `#1aa`,
+  // 'editorBracketMatch.border'           : BACK_COLOR,
   'editorCursor.foreground'             : '#544',
   'terminal.background'                 : BACK_COLOR,
   'editorGroup.emptyBackground'         : BACK_COLOR,
@@ -229,8 +231,8 @@ exports.chromeColors = {
   'editorGutter.background'             : `${ CHROME_COLOR }99`,
   'editorLineNumber.foreground'         : '#2a3343a9',
   'editorLink.activeForeground'         : '#034694',
-  'errorForeground'                     : '#B1365Bf3',
-  'focusBorder'                         : '#525e54',
+  'errorForeground'                     : '#B1365B',
+  'focusBorder'                         : '#323e34',
   'git.color.modified'                  : '#4d0e0b',
   // 'list.errorForeground'                      : '#a50044',
   'scrollbar.shadow'                    : '#cf6f4b',
@@ -248,11 +250,11 @@ exports.chromeColors = {
   'tab.inactiveForeground'              : '#fff',
   'tab.unfocusedActiveBackground'       : BACK_COLOR,
   'tab.unfocusedActiveForeground'       : '#35495f',
-  'tab.unfocusedActiveBorder'           : '#35495fca',
+  'tab.unfocusedActiveBorder'           : '#35495f',
   'tab.unfocusedInactiveForeground'     : '#555',
   'tab.unfocusedInactiveBackground'     : '#bbb',
   'tab.hoverForeground'                 : '#034694',
   'tab.unfocusedHoverForeground'        : '#3346a4',
-  'widget.shadow'                       : '#8382aebb',
+  'widget.shadow'                       : '#8382ae',
   'inputOption.activeForeground'        : '#323863',
 }
