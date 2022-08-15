@@ -102,7 +102,9 @@ const peekView = {
 }
 
 const fromMissingColors = {
-  "tree.indentGuidesStroke": "#ffffff20",
+  'tree.tableColumnsBorder'             : '#12f8f2',
+  'tree.indentGuidesStroke'             : '#f1f',
+  'tree.tableOddRowsBackground'         : '#555',
   'welcomePage.buttonHoverBackground'        : '#918415',
   'welcomePage.buttonBackground'             : '#918455',
   'editor.stackFrameHighlightBackground'     : '#ffffff',

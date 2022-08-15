@@ -1,8 +1,10 @@
 # Changelog
 
-## 9.34.0
+## 9.35.0
 
-Change border color
+Change tree colors
+
+Change border colors
 
 ## 9.32.0
 
