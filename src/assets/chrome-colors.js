@@ -22,11 +22,10 @@ const listColors = {
   'list.filterMatchBackground'       : '#fff',
   'list.filterMatchBorder'           : '#fff',
   'list.focusBackground'             : '#0065FF33',
-  'list.focusBackground'             : '#0065FF33',
   'list.focusForeground'             : '#4e4e4e',
   'list.highlightForeground'         : '#4283F5',
-  'list.hoverBackground'             : '#b1b1b13a',
-  'list.hoverForeground'             : '#4e4e4e',
+  'list.hoverBackground'             : '#4332',
+  // 'list.hoverForeground'             : '#4e4e4e', // no need
   'list.inactiveFocusBackground'     : '#11b1b155',
   'list.inactiveSelectionBackground' : '#b1b11155',
   'list.inactiveSelectionForeground' : '#4e4e4e',

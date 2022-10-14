@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.37.0
+
+Fix list hover colors
+
 ## 9.35.0
 
 Change tree colors
