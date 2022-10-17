@@ -1,5 +1,11 @@
 # Changelog
 
+## 9.38.0
+
+Fix scroll bar color - 'editorOverviewRuler.background'
+
+Decrease selection text opacity
+
 ## 9.37.0
 
 Fix list hover colors

@@ -41,7 +41,7 @@ const sidebarColors = {
   'sideBar.border'                  : '#8382ae',
   'sideBarSectionHeader.background' : '#aebabe',
   'sideBarSectionHeader.foreground' : '#2a3343',
-  "sideBarSectionHeader.border":    "#616161ca",
+  'sideBarSectionHeader.border'     : '#616161ca',
   'sideBarTitle.foreground'         : '#30322e',
 }
 
@@ -76,8 +76,8 @@ const suggestionsColors = {
   'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground'           : `${ CHROME_COLOR }55`,
-  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }77`,
+  'editor.selectionBackground'           : `${ CHROME_COLOR }77`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }99`,
   'editor.inactiveSelectionBackground'   : '#aaab9c66',
   // next two
   // When search by word is active or when double click on a word
@@ -101,9 +101,9 @@ const peekView = {
 }
 
 const fromMissingColors = {
-  'tree.tableColumnsBorder'             : '#12f8f2',
-  'tree.indentGuidesStroke'             : '#f1f',
-  'tree.tableOddRowsBackground'         : '#55555577',
+  'tree.tableColumnsBorder'                  : '#12f8f2',
+  'tree.indentGuidesStroke'                  : '#f1f',
+  'tree.tableOddRowsBackground'              : '#55555577',
   'welcomePage.buttonHoverBackground'        : '#918415',
   'welcomePage.buttonBackground'             : '#918455',
   'editor.stackFrameHighlightBackground'     : '#ffffff',
@@ -174,26 +174,27 @@ const newColors = {
   'editorUnnecessaryCode.border' : SOFT_WARNING,
 }
 const notifications = {
-  "notifications.foreground": "#53245b",
-  "notifications.border": "#696c77",
-  "notificationToast.border": "#771c1c",
-  "notificationCenter.border": "#771c1c",
-  'notifications.background': '#cacaca',
-//   notificationCenterHeader.foreground
-// #ad4848
+  'notifications.foreground'  : '#53245b',
+  'notifications.border'      : '#696c77',
+  'notificationToast.border'  : '#771c1c',
+  'notificationCenter.border' : '#771c1c',
+  'notifications.background'  : '#cacaca',
+  //   notificationCenterHeader.foreground
+  // #ad4848
 }
 const gitColors = {
-  'gitDecoration.addedResourceForeground'       : '#53245b',
-  'gitDecoration.conflictingResourceForeground' : '#bb7a61',
-  'gitDecoration.deletedResourceForeground'     : '#914c54',
-  'gitDecoration.ignoredResourceForeground'     : '#515670',
-  'gitDecoration.modifiedResourceForeground'    : '#034694',
-  'gitDecoration.submoduleResourceForeground'   : '#8af899',
-  'gitDecoration.untrackedResourceForeground'   : '#aa769b',
-  'gitDecoration.stageDeletedResourceForeground'   : '#aa769b',
-  'gitDecoration.stageModifiedResourceForeground'   : '#aa769b',
+  'gitDecoration.addedResourceForeground'         : '#53245b',
+  'gitDecoration.conflictingResourceForeground'   : '#bb7a61',
+  'gitDecoration.deletedResourceForeground'       : '#914c54',
+  'gitDecoration.ignoredResourceForeground'       : '#515670',
+  'gitDecoration.modifiedResourceForeground'      : '#034694',
+  'gitDecoration.submoduleResourceForeground'     : '#8af899',
+  'gitDecoration.untrackedResourceForeground'     : '#aa769b',
+  'gitDecoration.stageDeletedResourceForeground'  : '#aa769b',
+  'gitDecoration.stageModifiedResourceForeground' : '#aa769b',
 }
 
+exports.chromeColorszx = {}
 exports.chromeColors = {
   ...newColors,
   ...gitColors,
@@ -208,6 +209,7 @@ exports.chromeColors = {
   ...sidebarColors,
   ...suggestionsColors,
   ...listColors,
+  'editorOverviewRuler.background'      : '#eaeaea',  // color of scroll bar
   'editor.background'                   : BACK_COLOR,
   'editor.foreground'                   : '#192112',
   'editor.lineHighlightBorder'          : '#9c824a',
@@ -222,7 +224,7 @@ exports.chromeColors = {
   'editor.findRangeHighlightBackground' : '#3f706344',
   'editor.lineHighlightBackground'      : BACK_COLOR,
   'editorBracketMatch.background'       : '#87775750',
-  'editorBracketMatch.border'           : `#1aa`,
+  'editorBracketMatch.border'           : '#1aa',
   // 'editorBracketMatch.border'           : BACK_COLOR,
   'editorCursor.foreground'             : '#544',
   'terminal.background'                 : BACK_COLOR,
