@@ -194,9 +194,32 @@ const gitColors = {
   'gitDecoration.stageModifiedResourceForeground' : '#aa769b',
 }
 
-exports.chromeColorszx = {}
+/**
+ * scrollbar colors of edited content
+ */
+const editorRuler = {
+  "editorOverviewRuler.addedForeground": "#47ffa0",
+  "editorOverviewRuler.border": "#ff000040",
+  "editorOverviewRuler.bracketMatchForeground": "#40C4FF40",
+  "editorOverviewRuler.commonContentForeground": "#474e6c",
+  "editorOverviewRuler.currentContentForeground": "#535664",
+  "editorOverviewRuler.deletedForeground": "#E040FBa0",
+  "editorOverviewRuler.errorForeground": "#FF5252",
+  "editorOverviewRuler.findMatchForeground": "#a9b1d6a4",
+  "editorOverviewRuler.incomingContentForeground": "#859900a0",
+  "editorOverviewRuler.infoForeground": "#FFFF00a0",
+  "editorOverviewRuler.modifiedForeground": "#40C4FFa0",
+  "editorOverviewRuler.rangeHighlightForeground": "#a9b1d644",
+  "editorOverviewRuler.selectionHighlightForeground": "#a9b1d622",
+  "editorOverviewRuler.warningForeground": "#FFAB40",
+  "editorOverviewRuler.wordHighlightForeground": "#bb9af755",
+  "editorOverviewRuler.wordHighlightStrongForeground": "#bb9af766",
+}
+
+exports.chromeColorsxx = {}
 exports.chromeColors = {
   ...newColors,
+  ...editorRuler,
   ...gitColors,
   ...possibleErrors,
   ...dropBackgrounds,

@@ -1,5 +1,11 @@
 # Changelog
 
+## 9.39.0
+
+Fix git decorations in scroll bar
+
+Remove opacity of several missing colors
+
 ## 9.38.0
 
 Fix scroll bar color - 'editorOverviewRuler.background'

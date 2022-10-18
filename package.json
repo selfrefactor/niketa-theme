@@ -9,21 +9,21 @@
   },
   "version": "9.38.0",
   "devDependencies": {
-    "@types/fs-extra": "^8.1.0",
-    "@types/jest": "^25.2.1",
-    "babel-cli": "^7.0.0-beta.3",
-    "babel-preset-env": "^7.0.0-beta.3",
-    "color": "^3.1.2",
-    "fs-extra": "^8.1.0",
-    "get-contrast-ratio": "^0.2.1",
-    "helpers-fn": "^0.1.1",
-    "hexsorter": "^1.5.0",
-    "jest": "^24.8.0",
-    "maided": "^0.1.3",
-    "package-storage": "^1.0.0",
-    "rambdax": "^2.11.0",
-    "rgb-hex": "^3.0.0",
-    "string-fn": "^2.9.0"
+    "@types/fs-extra": "8.1.0",
+    "@types/jest": "25.2.1",
+    "babel-cli": "7.0.0-beta.3",
+    "babel-preset-env": "7.0.0-beta.3",
+    "color": "3.1.2",
+    "fs-extra": "8.1.0",
+    "get-contrast-ratio": "0.2.1",
+    "helpers-fn": "0.1.1",
+    "hexsorter": "1.5.0",
+    "jest": "24.8.0",
+    "maided": "0.1.3",
+    "package-storage": "1.0.0",
+    "rambdax": "2.11.0",
+    "rgb-hex": "3.0.0",
+    "string-fn": "2.9.0"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   "description": "Collection of 9 light themes with same background",
   "publisher": "selfrefactor",
   "engines": {
-    "vscode": "^1.27.0"
+    "vscode": "1.27.0"
   },
   "categories": [
     "Themes"
