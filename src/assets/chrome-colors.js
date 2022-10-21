@@ -76,8 +76,8 @@ const suggestionsColors = {
   'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground'           : `${ CHROME_COLOR }77`,
-  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }99`,
+  'editor.selectionBackground'           : `${ CHROME_COLOR }55`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }77`,
   'editor.inactiveSelectionBackground'   : '#aaab9c66',
   // next two
   // When search by word is active or when double click on a word
