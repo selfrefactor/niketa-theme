@@ -59,39 +59,6 @@ const KEYWORDS = {
   4: [],
 }
 
-const GIT = {
-  0: [
-    'git.addedResource'
-  ],
-  1: [
-
-  ],
-  2: [
-
-  ],
-  3: [
-  ],
-  4: [
-    
-  ],
-}
-const GITx = {
-  0: [
-
-  ],
-  1: [
-
-  ],
-  2: [
-
-  ],
-  3: [
-  ],
-  4: [
-
-  ],
-}
-
 const PUNCTUATIONS = {
   0: [],
   1: [
@@ -187,7 +154,6 @@ const ENTITIES = {
   ],
   3: ['entity.name.tag.js', 'entity.other.ng-binding-name.property.html'],
   4: [
-    'entity.name.function.js.BOLD',
     'entity.name.tag.css',
     'entity.name.variable.BOLD',
     'entity.other.inherited-class',
