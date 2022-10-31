@@ -2,7 +2,7 @@ const { missingColors } = require('../../lambdas/find_missing_rules/missingColor
 
 const BACK_COLOR = '#F5F5F5'
 const INPUT_BACK = '#fafafa'
-const CHROME_BRIGHTER = '#d1d1d1'
+const CHROME_BRIGHTER = '#e1e1e1'
 const CHROME_COLOR = '#c3c7cb'
 const CHROME_COLOR_ACCENT = '#b0b6bf'
 const DARK = '#083358'
@@ -235,7 +235,8 @@ exports.chromeColors = {
   'editorOverviewRuler.background'      : '#eaeaea',  // color of scroll bar
   'editor.background'                   : BACK_COLOR,
   'editor.foreground'                   : '#192112',
-  'editor.lineHighlightBorder'          : '#9c824a',
+  'editor.lineHighlightBorder'          : '#e1e1e1',
+  'editor.lineHighlightBackground'      : '#e1e1e1',
   'editor.foldBackground'               : '#fafafa',
   'activityBar.background'              : '#C4BE9D',
   'badge.background'                    : '#e7e7e7',
@@ -245,7 +246,6 @@ exports.chromeColors = {
   'editor.findMatchBackground'          : '#aaff1144',
   'editor.findMatchHighlightBackground' : '#71aac333',
   'editor.findRangeHighlightBackground' : '#3f706344',
-  'editor.lineHighlightBackground'      : BACK_COLOR,
   'editorBracketMatch.background'       : '#87775750',
   'editorBracketMatch.border'           : '#1aa',
   // 'editorBracketMatch.border'           : BACK_COLOR,
