@@ -1,8 +1,6 @@
 const PURPLE = '#a963db'
 const DARK_YELLOW = '#C27D40'
-// const DARK_YELLOW = '#bb9132'
 const BLUE = `#12a8c2`
-const oldBlues = [`#1d74ed`, `#0068a8`, '#1192e8', '#0031df']
 
 exports.CommunicationBreakdown = [
   '#F25F25',
@@ -14,8 +12,6 @@ exports.CommunicationBreakdown = [
 
 exports.DancingDays = ['#0a0a0a', '#f50141', '#cf7b60', BLUE, PURPLE]
 exports.FunkyDrummer = [`#6E8DD5`, '#3EA57B', '#0a0a0a', DARK_YELLOW, '#CA7081']
-// exports.FunkyDrummer = [BLUE, '#00bf4c', '#0a0a0a', DARK_YELLOW, '#D53F8C']
-
 exports.GlassOnion = ['#00D364', BLUE, '#000000', '#953b69', '#FF3EBF']
 exports.HelloSpaceboy = ['#df5831', '#38978D', '#692340', BLUE, '#b13695']
 exports.KozmicBlues = ['#3dcbc9', PURPLE, '#218d54', '#d70a53', '#000000']

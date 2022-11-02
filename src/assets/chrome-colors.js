@@ -198,27 +198,37 @@ const gitColors = {
  * scrollbar colors of edited content
  */
 const editorRuler = {
-  "editorOverviewRuler.addedForeground": "#47ffa0",
-  "editorOverviewRuler.border": "#ff000040",
-  "editorOverviewRuler.bracketMatchForeground": "#40C4FF40",
-  "editorOverviewRuler.commonContentForeground": "#474e6c",
-  "editorOverviewRuler.currentContentForeground": "#535664",
-  "editorOverviewRuler.deletedForeground": "#E040FBa0",
-  "editorOverviewRuler.errorForeground": "#FF5252",
-  "editorOverviewRuler.findMatchForeground": "#a9b1d6a4",
-  "editorOverviewRuler.incomingContentForeground": "#859900a0",
-  "editorOverviewRuler.infoForeground": "#FFFF00a0",
-  "editorOverviewRuler.modifiedForeground": "#40C4FFa0",
-  "editorOverviewRuler.rangeHighlightForeground": "#a9b1d644",
-  "editorOverviewRuler.selectionHighlightForeground": "#a9b1d622",
-  "editorOverviewRuler.warningForeground": "#FFAB40",
-  "editorOverviewRuler.wordHighlightForeground": "#bb9af755",
-  "editorOverviewRuler.wordHighlightStrongForeground": "#bb9af766",
+  'editorOverviewRuler.addedForeground'               : '#47ffa0',
+  'editorOverviewRuler.border'                        : '#ff000040',
+  'editorOverviewRuler.bracketMatchForeground'        : '#40C4FF40',
+  'editorOverviewRuler.commonContentForeground'       : '#474e6c',
+  'editorOverviewRuler.currentContentForeground'      : '#535664',
+  'editorOverviewRuler.deletedForeground'             : '#E040FBa0',
+  'editorOverviewRuler.errorForeground'               : '#FF5252',
+  'editorOverviewRuler.findMatchForeground'           : '#a9b1d6a4',
+  'editorOverviewRuler.incomingContentForeground'     : '#859900a0',
+  'editorOverviewRuler.infoForeground'                : '#FFFF00a0',
+  'editorOverviewRuler.modifiedForeground'            : '#40C4FFa0',
+  'editorOverviewRuler.rangeHighlightForeground'      : '#a9b1d644',
+  'editorOverviewRuler.selectionHighlightForeground'  : '#a9b1d622',
+  'editorOverviewRuler.warningForeground'             : '#FFAB40',
+  'editorOverviewRuler.wordHighlightForeground'       : '#bb9af755',
+  'editorOverviewRuler.wordHighlightStrongForeground' : '#bb9af766',
 }
-
+const bracketColors = {
+  'editorBracketMatch.background'      : '#1fffff44',
+  'editorBracketMatch.border'          : BACK_COLOR,
+  'editorBracketHighlight.foreground1' : '#e477e4',
+  'editorBracketHighlight.foreground2' : '#FFAB40',
+  'editorBracketHighlight.foreground3' : '#40C4FF',
+  'editorBracketHighlight.foreground4' : '#474e6c',
+  'editorBracketHighlight.foreground5' : '#914c54',
+  'editorBracketHighlight.foreground6' : '#bb9af7',
+}
 exports.chromeColorsxx = {}
 exports.chromeColors = {
   ...newColors,
+  ...bracketColors,
   ...editorRuler,
   ...gitColors,
   ...possibleErrors,
@@ -232,7 +242,7 @@ exports.chromeColors = {
   ...sidebarColors,
   ...suggestionsColors,
   ...listColors,
-  'editorOverviewRuler.background'      : '#eaeaea',  // color of scroll bar
+  'editorOverviewRuler.background'      : '#eaeaea', // color of scroll bar
   'editor.background'                   : BACK_COLOR,
   'editor.foreground'                   : '#192112',
   'editor.lineHighlightBorder'          : '#e1e1e1',
@@ -246,9 +256,6 @@ exports.chromeColors = {
   'editor.findMatchBackground'          : '#aaff1144',
   'editor.findMatchHighlightBackground' : '#71aac333',
   'editor.findRangeHighlightBackground' : '#3f706344',
-  'editorBracketMatch.background'       : '#87775750',
-  'editorBracketMatch.border'           : '#1aa',
-  // 'editorBracketMatch.border'           : BACK_COLOR,
   'editorCursor.foreground'             : '#544',
   'terminal.background'                 : BACK_COLOR,
   'editorGroup.emptyBackground'         : BACK_COLOR,
