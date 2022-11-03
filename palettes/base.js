@@ -1,6 +1,6 @@
-import {defaultTo, splitEvery} from 'rambdax'
+import { defaultTo, splitEvery } from 'rambdax'
 
-import {missingScopes} from '../lambdas/find_missing_rules/missingScopes'
+import { missingScopes } from '../lambdas/find_missing_rules/missingScopes'
 
 const [
   ADDITIONAL_0,
@@ -11,9 +11,9 @@ const [
 ] = splitEvery(Math.ceil(missingScopes.length / 5), missingScopes)
 
 const VARIABLES = {
-  0: [],
-  1: [],
-  2: [
+  0 : [],
+  1 : [],
+  2 : [
     'variable.other.property.js.BOLD',
     'variable.BOLD',
     'variable.import.parameter.js.ITALIC',
@@ -26,6 +26,7 @@ const VARIABLES = {
     'variable.parameter.ITALIC',
     'variable.other.class.js',
     'variable.other.constant.js',
+    'variable.other.constant.object.js',
     'variable.other.readwrite',
     'variable.other.readwrite.alias.js',
     'variable.other.readwrite.decorator.js',
@@ -33,15 +34,15 @@ const VARIABLES = {
     'variable.other.object.js',
     'variable.other.object.property.js.UNDERLINE',
   ],
-  3: [],
-  4: [],
+  3 : [],
+  4 : [],
 }
 
 const KEYWORDS = {
-  0: [],
-  1: [],
-  2: [],
-  3: [
+  0 : [],
+  1 : [],
+  2 : [],
+  3 : [
     'keyword.control.module.js.BOLD',
     'keyword.control.import.js.ITALIC',
     'keyword.control.export.js.ITALIC',
@@ -56,16 +57,11 @@ const KEYWORDS = {
     'keyword.operator.new.ITALIC',
     'keyword.operator.decorator.js',
   ],
-  4: [],
+  4 : [],
 }
 
 const PUNCTUATIONS = {
-  0: [],
-  1: [
-    'punctuation.definition.template-expression.begin.js',
-    'punctuation.definition.template-expression.end.js',
-  ],
-  2: [
+  0 : [
     'punctuation.quasi.element.begin.js',
     'punctuation.quasi.element.end.js',
     'punctuation.accessor.js',
@@ -74,8 +70,9 @@ const PUNCTUATIONS = {
     'punctuation.accessor.js',
     'punctuation.separator.parameter.js',
   ],
-  3: [],
-  4: [
+  1 : [
+    'punctuation.definition.template-expression.begin.js',
+    'punctuation.definition.template-expression.end.js',
     'punctuation.definition.parameters.begin.js',
     'punctuation.definition.parameters.end.js',
     'punctuation.definition.block.js',
@@ -84,14 +81,17 @@ const PUNCTUATIONS = {
     'punctuation.definition.string.begin',
     'punctuation.definition.string.end',
   ],
+  2 : [],
+  3 : [],
+  4 : [],
 }
 
 const CONSTANTS = {
-  0: [],
-  1: [],
-  2: [],
-  3: [],
-  4: [
+  0 : [],
+  1 : [],
+  2 : [],
+  3 : [],
+  4 : [
     'constant.other.object.key.js',
     'constant.language.boolean',
     'constant.language.null.js',
@@ -103,7 +103,7 @@ const CONSTANTS = {
   ],
 }
 const CSS = {
-  0: [
+  0 : [
     'source.sass',
     'source.scss',
     'source.less',
@@ -114,15 +114,15 @@ const CSS = {
     'support.type.property-name.less',
     'support.type.property-name.sass',
   ],
-  1: ['variable.css', 'variable.scss', 'variable.less', 'variable.sass'],
-  2: [
+  1 : [ 'variable.css', 'variable.scss', 'variable.less', 'variable.sass' ],
+  2 : [
     'variable.css.string',
     'variable.scss.string',
     'variable.less.string',
     'variable.sass.string',
   ],
-  3: ['unit.css', 'unit.scss', 'unit.less', 'unit.sass'],
-  4: [
+  3 : [ 'unit.css', 'unit.scss', 'unit.less', 'unit.sass' ],
+  4 : [
     'constant.numeric.css',
     'constant.numeric.scss',
     'constant.numeric.less',
@@ -135,7 +135,7 @@ const CSS = {
 }
 
 const ENTITIES = {
-  0: [
+  0 : [
     'entity.name.method.js.ITALIC',
     'entity.name.tag.UNDERLINE',
     'entity.name.class',
@@ -145,15 +145,17 @@ const ENTITIES = {
     'entity.name.tag.class.js.BOLD',
     'entity.name.type.js.BOLD',
   ],
-  1: ['entity.name.type.interface', 'entity.name.type'],
-  2: [
+  1 : [],
+  2 : [
     'entity.name.class.js',
     'entity.name.module.js',
     'entity.other.attribute-name.ITALIC',
     'entity.other.attribute-name.js.ITALIC',
   ],
-  3: ['entity.name.tag.js', 'entity.other.ng-binding-name.property.html'],
-  4: [
+  3 : [ 'entity.name.tag.js', 'entity.other.ng-binding-name.property.html' ],
+  4 : [
+    'entity.name.type.interface',
+    'entity.name.type',
     'entity.name.tag.css',
     'entity.name.variable.BOLD',
     'entity.other.inherited-class',
@@ -162,7 +164,7 @@ const ENTITIES = {
 }
 
 const STRINGS = {
-  0: [
+  0 : [
     'string.quoted.single.js.ITALIC',
     'string.quoted.double.html.ITALIC',
     'string.quoted.double.json.ITALIC',
@@ -172,28 +174,28 @@ const STRINGS = {
     'string.unquoted.js.ITALIC',
     'string.unquoted.label.js.ITALIC',
   ],
-  2: [],
-  1: [],
-  3: [],
-  4: [],
+  2 : [],
+  1 : [],
+  3 : [],
+  4 : [],
 }
 
 const SUPPORTS = {
-  0: [
+  0 : [
     'support.class.console.js',
     'support.function.dom.js',
     'support.variable.property.js',
   ],
-  1: ['support.type.property-name.json'],
-  2: [
+  1 : [ 'support.type.property-name.json' ],
+  2 : [
     'support.class.promise.js',
     'support.function.BOLD',
     'support.function.console.js',
     'support.type.object.console.js',
     'support.type.object.module.js',
   ],
-  3: ['support.type.property-name.css', 'support.class.component'],
-  4: [
+  3 : [ 'support.type.property-name.css', 'support.class.component' ],
+  4 : [
     'support.type.primitive.js',
     'support.variable.property.js',
     'support.variable.BOLD',
@@ -204,21 +206,21 @@ const SUPPORTS = {
 }
 
 const METAS = {
-  0: ['meta.function.arrow', 'meta.var.expr.js.BOLD'],
-  1: [
+  0 : [ 'meta.function.arrow', 'meta.var.expr.js.BOLD' ],
+  1 : [
     'meta.brace.round.js',
     'meta.definition.property.js',
     'meta.method-call.with-arguments.js',
     'meta.tag.attributes.js',
   ],
-  2: ['meta.class-method.js', 'meta.import.js', 'meta.paragraph.markdown'],
-  3: [
+  2 : [ 'meta.class-method.js', 'meta.import.js', 'meta.paragraph.markdown' ],
+  3 : [
     'meta.brace.square.js',
     'meta.function.parameters.js',
     'meta.parameters.js',
     'meta.tag.js',
   ],
-  4: [
+  4 : [
     'meta.function.js',
     'meta.object-literal.key.js',
     'meta.template.expression.js',
@@ -226,29 +228,29 @@ const METAS = {
 }
 
 const STORAGES = {
-  0: [],
-  1: [
+  0 : [],
+  1 : [
     'storage.modifier.js.ITALIC',
     'storage.type.function.js',
     'storage.modifier.async.js',
   ],
-  2: ['storage.type.ITALIC', 'storage.type.interface.js.ITALIC'],
-  3: [],
-  4: [],
+  2 : [ 'storage.type.ITALIC', 'storage.type.interface.js.ITALIC' ],
+  3 : [],
+  4 : [],
 }
 
-function buildColors(modeInput) {
+function buildColors(modeInput){
   const mode = String(modeInput)
-  const variables = defaultTo([], VARIABLES[mode])
-  const keywords = defaultTo([], KEYWORDS[mode])
-  const storages = defaultTo([], STORAGES[mode])
-  const metas = defaultTo([], METAS[mode])
-  const supports = defaultTo([], SUPPORTS[mode])
-  const strings = defaultTo([], STRINGS[mode])
-  const entities = defaultTo([], ENTITIES[mode])
-  const constants = defaultTo([], CONSTANTS[mode])
-  const punctuations = defaultTo([], PUNCTUATIONS[mode])
-  const css = defaultTo([], CSS[mode])
+  const variables = defaultTo([], VARIABLES[ mode ])
+  const keywords = defaultTo([], KEYWORDS[ mode ])
+  const storages = defaultTo([], STORAGES[ mode ])
+  const metas = defaultTo([], METAS[ mode ])
+  const supports = defaultTo([], SUPPORTS[ mode ])
+  const strings = defaultTo([], STRINGS[ mode ])
+  const entities = defaultTo([], ENTITIES[ mode ])
+  const constants = defaultTo([], CONSTANTS[ mode ])
+  const punctuations = defaultTo([], PUNCTUATIONS[ mode ])
+  const css = defaultTo([], CSS[ mode ])
 
   return [
     ...css,
@@ -307,9 +309,9 @@ const COLOR_4 = [
 ]
 
 export const baseBase = {
-  name: '_Palette',
-  type: 'light',
-  colors: {},
+  name   : '_Palette',
+  type   : 'light',
+  colors : {},
 }
 
 export const baseData = {

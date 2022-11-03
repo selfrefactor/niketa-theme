@@ -1,5 +1,11 @@
 # Changelog
 
+## 9.51.0
+
+Change colors of constants and punctuations
+
+new colors
+
 ## 9.39.0
 
 Fix git decorations in scroll bar
