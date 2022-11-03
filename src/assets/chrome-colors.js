@@ -225,9 +225,18 @@ const bracketColors = {
   'editorBracketHighlight.foreground5' : '#914c54',
   'editorBracketHighlight.foreground6' : '#bb9af7',
 }
+const tabColors = {
+  'tab.activeBackground'                : BACK_COLOR,
+  'tab.activeBorder'                    : BACK_COLOR,
+  'tab.activeForeground'                : '#000',
+  'tab.border'                          : CHROME_COLOR_ACCENT,
+  'tab.inactiveBackground'              : `${CHROME_COLOR_ACCENT}55`,
+  'tab.inactiveForeground'              : '#444444cc',
+}
 exports.chromeColorsxx = {}
 exports.chromeColors = {
   ...newColors,
+  ...tabColors,
   ...bracketColors,
   ...editorRuler,
   ...gitColors,
@@ -242,6 +251,7 @@ exports.chromeColors = {
   ...sidebarColors,
   ...suggestionsColors,
   ...listColors,
+  ...notifications,
   'editorOverviewRuler.background'      : '#eaeaea', // color of scroll bar
   'editor.background'                   : BACK_COLOR,
   'editor.foreground'                   : '#192112',
@@ -274,20 +284,6 @@ exports.chromeColors = {
   'selection.background'                : '#ebe6d9',
   'statusBar.background'                : CHROME_COLOR,
   'statusBar.foreground'                : '#35495f',
-  'tab.activeBackground'                : BACK_COLOR,
-  'tab.activeBorder'                    : '#35495f',
-  'tab.activeBorderTop'                 : '#35495f',
-  'tab.activeForeground'                : '#35495f',
-  'tab.border'                          : CHROME_COLOR_ACCENT,
-  'tab.inactiveBackground'              : CHROME_COLOR_ACCENT,
-  'tab.inactiveForeground'              : '#fff',
-  'tab.unfocusedActiveBackground'       : BACK_COLOR,
-  'tab.unfocusedActiveForeground'       : '#35495f',
-  'tab.unfocusedActiveBorder'           : '#35495f',
-  'tab.unfocusedInactiveForeground'     : '#555',
-  'tab.unfocusedInactiveBackground'     : '#bbb',
-  'tab.hoverForeground'                 : '#034694',
-  'tab.unfocusedHoverForeground'        : '#3346a4',
   'widget.shadow'                       : '#8382ae',
   'inputOption.activeForeground'        : '#323863',
 }
