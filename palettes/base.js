@@ -206,20 +206,25 @@ const SUPPORTS = {
 }
 
 const METAS = {
-  0 : [ 'meta.function.arrow', 'meta.var.expr.js.BOLD' ],
+  0 : [],
   1 : [
-    'meta.brace.round.js',
+    'meta.function.arrow',
+    'meta.var.expr.js.BOLD',
     'meta.definition.property.js',
     'meta.method-call.with-arguments.js',
-    'meta.tag.attributes.js',
   ],
-  2 : [ 'meta.class-method.js', 'meta.import.js', 'meta.paragraph.markdown' ],
-  3 : [
+  2 : [
+    'meta.brace.round.js',
     'meta.brace.square.js',
+    'meta.class-method.js',
+    'meta.import.js',
     'meta.function.parameters.js',
     'meta.parameters.js',
+    'meta.tag.attributes.js',
     'meta.tag.js',
+    'meta.paragraph.markdown',
   ],
+  3 : [],
   4 : [
     'meta.function.js',
     'meta.object-literal.key.js',
