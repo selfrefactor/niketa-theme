@@ -3903,6 +3903,46 @@
       }
     },
     {
+      "name": "storage.type",
+      "scope": "storage.type",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "storage.type.interface.js",
+      "scope": "storage.type.interface.js",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "storage.type.interface.jsx",
+      "scope": "storage.type.interface.jsx",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "storage.type.interface.ts",
+      "scope": "storage.type.interface.ts",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "COLOR_1"
+      }
+    },
+    {
+      "name": "storage.type.interface.tsx",
+      "scope": "storage.type.interface.tsx",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "COLOR_1"
+      }
+    },
+    {
       "name": "support.type.property-name.json",
       "scope": "support.type.property-name.json",
       "settings": {
@@ -5645,46 +5685,6 @@
       }
     },
     {
-      "name": "storage.type",
-      "scope": "storage.type",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "storage.type.interface.js",
-      "scope": "storage.type.interface.js",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "storage.type.interface.jsx",
-      "scope": "storage.type.interface.jsx",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "storage.type.interface.ts",
-      "scope": "storage.type.interface.ts",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "storage.type.interface.tsx",
-      "scope": "storage.type.interface.tsx",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "COLOR_2"
-      }
-    },
-    {
       "name": "support.class.promise.js",
       "scope": "support.class.promise.js",
       "settings": {
@@ -5993,14 +5993,6 @@
       "scope": "variable.object.property.tsx",
       "settings": {
         "fontStyle": "underline",
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "variable.parameter",
-      "scope": "variable.parameter",
-      "settings": {
-        "fontStyle": "italic",
         "foreground": "COLOR_2"
       }
     },
@@ -7951,6 +7943,14 @@
       "name": "support.class.component",
       "scope": "support.class.component",
       "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "variable.parameter",
+      "scope": "variable.parameter",
+      "settings": {
+        "fontStyle": "italic",
         "foreground": "COLOR_3"
       }
     },

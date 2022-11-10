@@ -23,7 +23,6 @@ const VARIABLES = {
     'variable.language.this.UNDERLINE',
     'variable.language.this.js.UNDERLINE',
     'variable.object.property.js.UNDERLINE',
-    'variable.parameter.ITALIC',
     'variable.other.class.js',
     'variable.other.constant.js',
     'variable.other.constant.object.js',
@@ -34,8 +33,11 @@ const VARIABLES = {
     'variable.other.object.js',
     'variable.other.object.property.js.UNDERLINE',
   ],
-  3 : [],
-  4 : [],
+  3 : [
+    'variable.parameter.ITALIC',
+  ],
+  4 : [
+  ],
 }
 
 const KEYWORDS = {
@@ -238,8 +240,9 @@ const STORAGES = {
     'storage.modifier.js.ITALIC',
     'storage.type.function.js',
     'storage.modifier.async.js',
+    'storage.type.ITALIC', 'storage.type.interface.js.ITALIC'
   ],
-  2 : [ 'storage.type.ITALIC', 'storage.type.interface.js.ITALIC' ],
+  2 : [  ],
   3 : [],
   4 : [],
 }
