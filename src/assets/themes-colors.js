@@ -1,7 +1,8 @@
 const PURPLE = '#a963db'
 const DARK_YELLOW = '#C27D40'
 const BLUE = `#12a8c2`
-exports.PUNCTUATION_COLOR = '#0f0'
+// exports.PUNCTUATION_COLOR = '#f0f'
+exports.PUNCTUATION_COLOR = '#00f'
 // first two colors are used in punctuation so they should be strong colors
 exports.CommunicationBreakdown = [
   PURPLE,
