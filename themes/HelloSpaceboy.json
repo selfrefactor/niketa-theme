@@ -1859,6 +1859,21 @@
       }
     },
     {
+      "name": "entity.name.type.interface",
+      "scope": "entity.name.type.interface",
+      "settings": {
+        "foreground": "#df5831"
+      }
+    },
+    {
+      "name": "entity.name.variable",
+      "scope": "entity.name.variable",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#df5831"
+      }
+    },
+    {
       "name": "entity.name.tag.class.js",
       "scope": "entity.name.tag.class.js",
       "settings": {
@@ -9840,31 +9855,9 @@
       }
     },
     {
-      "name": "entity.name.type.interface",
-      "scope": "entity.name.type.interface",
-      "settings": {
-        "foreground": "#b13695"
-      }
-    },
-    {
-      "name": "entity.name.type",
-      "scope": "entity.name.type",
-      "settings": {
-        "foreground": "#b13695"
-      }
-    },
-    {
       "name": "entity.name.tag.css",
       "scope": "entity.name.tag.css",
       "settings": {
-        "foreground": "#b13695"
-      }
-    },
-    {
-      "name": "entity.name.variable",
-      "scope": "entity.name.variable",
-      "settings": {
-        "fontStyle": "bold",
         "foreground": "#b13695"
       }
     },
