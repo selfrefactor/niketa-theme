@@ -165,7 +165,8 @@ const ENTITIES = {
 }
 
 const STRINGS = {
-  0 : [
+  0 : [],
+  1 : [
     'string.quoted.single.js.ITALIC',
     'string.quoted.double.html.ITALIC',
     'string.quoted.double.json.ITALIC',
@@ -176,7 +177,6 @@ const STRINGS = {
     'string.unquoted.label.js.ITALIC',
   ],
   2 : [],
-  1 : [],
   3 : [],
   4 : [],
 }
