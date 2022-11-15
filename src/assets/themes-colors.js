@@ -1,7 +1,7 @@
 const PURPLE = '#551bb3'
 const DARK_YELLOW = '#C27D40'
 const BLUE = `#276bb4`
-exports.PUNCTUATION_COLOR = '#00ffab'
+exports.PUNCTUATION_COLOR = '#99cea0'
 
 exports.CommunicationBreakdown = [
   PURPLE,
@@ -14,7 +14,7 @@ exports.CommunicationBreakdown = [
 exports.DancingDays = ['#FF7B00', '#881dc7', '#7A7A7A', `#4D9375`, `#cd526c`]
 exports.FunkyDrummer = [`#404467`, '#2a814d', '#0a0a0a', DARK_YELLOW, '#CA7081']
 exports.GlassOnion = ['#f78058', BLUE, '#360745', '#953b69', '#ae0c3e']
-exports.HelloSpaceboy = ['#d53d0c', '#38978D', '#3b0032', BLUE, '#d12771']
+exports.HelloSpaceboy = ['#77ab56', '#38978D', '#3b0032', BLUE, '#d12771']
 exports.KozmicBlues = ['#218d54', PURPLE, '#3dcbc9', '#7d144c', '#000000']
 exports.LedZeppelin = ['#3a0088', '#d239a0', '#bb9132', '#3eb2b1', '#480656']
 exports.StrangeBrew = [
