@@ -1,7 +1,7 @@
 const PURPLE = '#551bb3'
 const DARK_YELLOW = '#C27D40'
 const BLUE = `#276bb4`
-exports.PUNCTUATION_COLOR = '#99cea0'
+exports.PUNCTUATION_COLOR = '#009944'
 
 exports.CommunicationBreakdown = [
   PURPLE,
