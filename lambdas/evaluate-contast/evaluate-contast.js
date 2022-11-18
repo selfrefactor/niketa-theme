@@ -1,22 +1,14 @@
-import { readdirSync } from 'fs'
-import { copySync } from 'fs-extra'
-import { resolve } from 'path'
-import { sort } from 'rambdax'
-import { dotCase } from 'string-fn'
-
-import { themesNames } from '../../src/constants'
+import { colorContrastRatioCalculator } from '@mdhnpm/color-contrast-ratio-calculator'
+import { map } from 'rambdax'
+import { BACK_COLOR } from '../../src/assets/chrome-colors'
+import { allThemes } from '../../src/assets/themes-colors'
 
 export function evaluateContrast(){
-  const sortFn = (a, b) => a > b ? 1 : -1
-  const destinationBase = resolve(__dirname, '../../files')
-  const screens = readdirSync(`${ __dirname }/raw_screens`)
-  const sortedScreens = sort(sortFn, screens)
-  const screensSources = sortedScreens.map(x => `${ __dirname }/raw_screens/${ x }`)
-
-  const screenDestinations = themesNames.map(x => `${ destinationBase }/${ dotCase(x) }.png`)
-  screensSources.forEach((screenPath, i) => {
-    console.log(i, screenPath)
-
-    copySync(screenPath, screenDestinations[ i ])
-  })
+  let result = map((currentTheme) => {
+    return map(color => {
+      const score = colorContrastRatioCalculator(color, BACK_COLOR)
+      return `${ color } - ${ score }`
+    }, currentTheme)
+  }, allThemes)
+  console.log(result, `result`)
 }

@@ -293,3 +293,5 @@ exports.chromeColors = {
   'widget.shadow'                       : '#8382ae',
   'inputOption.activeForeground'        : '#323863',
 }
+
+exports.BACK_COLOR = BACK_COLOR

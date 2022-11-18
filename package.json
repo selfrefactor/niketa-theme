@@ -5,7 +5,8 @@
     "bump": "maided bump",
     "dev": "jest lambdas/export_to_mono/exportToMono.spec.js --watch",
     "export": "jest lambdas/export_to_mono/exportToMono.spec.js&&run d",
-    "out": "jest src/createMultipleThemes.spec.js"
+    "out": "jest src/createMultipleThemes.spec.js",
+    "contrast":"jest lambdas/evaluate-contast/evaluate-contast.spec.js"
   },
   "version": "9.64.0",
   "devDependencies": {
