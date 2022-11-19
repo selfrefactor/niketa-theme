@@ -6218,158 +6218,6 @@
       }
     },
     {
-      "name": "variable.import.parameter.js",
-      "scope": "variable.import.parameter.js",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.import.parameter.jsx",
-      "scope": "variable.import.parameter.jsx",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.import.parameter.ts",
-      "scope": "variable.import.parameter.ts",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.import.parameter.tsx",
-      "scope": "variable.import.parameter.tsx",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language",
-      "scope": "variable.language",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.constructor",
-      "scope": "variable.language.constructor",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.prototype.js",
-      "scope": "variable.language.prototype.js",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.prototype.jsx",
-      "scope": "variable.language.prototype.jsx",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.prototype.ts",
-      "scope": "variable.language.prototype.ts",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.prototype.tsx",
-      "scope": "variable.language.prototype.tsx",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.this",
-      "scope": "variable.language.this",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.this.js",
-      "scope": "variable.language.this.js",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.this.jsx",
-      "scope": "variable.language.this.jsx",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.this.ts",
-      "scope": "variable.language.this.ts",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.language.this.tsx",
-      "scope": "variable.language.this.tsx",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.object.property.js",
-      "scope": "variable.object.property.js",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.object.property.jsx",
-      "scope": "variable.object.property.jsx",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.object.property.ts",
-      "scope": "variable.object.property.ts",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
-      "name": "variable.object.property.tsx",
-      "scope": "variable.object.property.tsx",
-      "settings": {
-        "fontStyle": "underline",
-        "foreground": "#C27D40"
-      }
-    },
-    {
       "name": "variable.other.class.js",
       "scope": "variable.other.class.js",
       "settings": {
@@ -6601,6 +6449,38 @@
       "scope": "variable.other.object.property.tsx",
       "settings": {
         "fontStyle": "underline",
+        "foreground": "#C27D40"
+      }
+    },
+    {
+      "name": "variable.import.parameter.js",
+      "scope": "variable.import.parameter.js",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#C27D40"
+      }
+    },
+    {
+      "name": "variable.import.parameter.jsx",
+      "scope": "variable.import.parameter.jsx",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#C27D40"
+      }
+    },
+    {
+      "name": "variable.import.parameter.ts",
+      "scope": "variable.import.parameter.ts",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#C27D40"
+      }
+    },
+    {
+      "name": "variable.import.parameter.tsx",
+      "scope": "variable.import.parameter.tsx",
+      "settings": {
+        "fontStyle": "italic",
         "foreground": "#C27D40"
       }
     },
@@ -10083,6 +9963,126 @@
       "name": "support.function.mutator.tsx",
       "scope": "support.function.mutator.tsx",
       "settings": {
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language",
+      "scope": "variable.language",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.constructor",
+      "scope": "variable.language.constructor",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.prototype.js",
+      "scope": "variable.language.prototype.js",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.prototype.jsx",
+      "scope": "variable.language.prototype.jsx",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.prototype.ts",
+      "scope": "variable.language.prototype.ts",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.prototype.tsx",
+      "scope": "variable.language.prototype.tsx",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.this",
+      "scope": "variable.language.this",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.this.js",
+      "scope": "variable.language.this.js",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.this.jsx",
+      "scope": "variable.language.this.jsx",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.this.ts",
+      "scope": "variable.language.this.ts",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.language.this.tsx",
+      "scope": "variable.language.this.tsx",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.object.property.js",
+      "scope": "variable.object.property.js",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.object.property.jsx",
+      "scope": "variable.object.property.jsx",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.object.property.ts",
+      "scope": "variable.object.property.ts",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#85005b"
+      }
+    },
+    {
+      "name": "variable.object.property.tsx",
+      "scope": "variable.object.property.tsx",
+      "settings": {
+        "fontStyle": "underline",
         "foreground": "#85005b"
       }
     },

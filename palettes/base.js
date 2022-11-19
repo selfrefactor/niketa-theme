@@ -16,13 +16,6 @@ const VARIABLES = {
   2 : [
     'variable.other.property.js.BOLD',
     'variable.BOLD',
-    'variable.import.parameter.js.ITALIC',
-    'variable.language.ITALIC',
-    'variable.language.constructor.UNDERLINE',
-    'variable.language.prototype.js.ITALIC',
-    'variable.language.this.UNDERLINE',
-    'variable.language.this.js.UNDERLINE',
-    'variable.object.property.js.UNDERLINE',
     'variable.other.class.js',
     'variable.other.constant.js',
     'variable.other.constant.object.js',
@@ -32,11 +25,18 @@ const VARIABLES = {
     'variable.other.readwrite.js',
     'variable.other.object.js',
     'variable.other.object.property.js.UNDERLINE',
+    'variable.import.parameter.js.ITALIC',
   ],
   3 : [
     'variable.parameter.ITALIC',
   ],
   4 : [
+    'variable.language.ITALIC',
+    'variable.language.constructor.UNDERLINE',
+    'variable.language.prototype.js.ITALIC',
+    'variable.language.this.UNDERLINE',
+    'variable.language.this.js.UNDERLINE',
+    'variable.object.property.js.UNDERLINE',
   ],
 }
 
