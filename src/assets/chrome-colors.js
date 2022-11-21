@@ -285,7 +285,7 @@ exports.chromeColors = {
   'git.color.modified'                  : '#4d0e0b',
   // 'list.errorForeground'                      : '#a50044',
   'scrollbar.shadow'                    : '#cf6f4b',
-  'scrollbarSlider.background'          : CHROME_COLOR,
+  'scrollbarSlider.background'          : `${CHROME_COLOR}bb`,
   'scrollbarSlider.hoverBackground'     : '#C4BE9D',
   'selection.background'                : '#ebe6d9',
   'statusBar.background'                : CHROME_COLOR,
