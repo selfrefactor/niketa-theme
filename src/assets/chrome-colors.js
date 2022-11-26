@@ -15,7 +15,7 @@ const SOFTER_ACCENT = '#834962'
 
 const listColors = {
   'foreground'                       : '#24283b',
-  'list.activeSelectionBackground'   : '#aaa',
+  'list.activeSelectionBackground'   : '#aaaa',
   'list.activeSelectionForeground'   : '#4e4e4e',
   'list.dropBackground'              : '#b1b1b11e',
   'list.errorForeground'             : '#bb1000',
