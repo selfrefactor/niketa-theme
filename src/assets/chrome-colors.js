@@ -81,8 +81,8 @@ const selectionColors = {
   'editor.inactiveSelectionBackground'   : '#aaab9c33',
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'       : `${ WARNING }22`,
-  'editor.wordHighlightStrongBackground' : `${ACCENT_BACKGROUND}44`,
+  'editor.wordHighlightBackground'       : `#4a42`,
+  'editor.wordHighlightStrongBackground' : `#4a44`,
 }
 
 const peekView = {
@@ -179,8 +179,6 @@ const notifications = {
   'notificationToast.border'  : '#771c1c',
   'notificationCenter.border' : '#771c1c',
   'notifications.background'  : '#cacaca',
-  //   notificationCenterHeader.foreground
-  // #ad4848
 }
 const gitColors = {
   'gitDecoration.addedResourceForeground'         : '#53245b',
@@ -224,22 +222,15 @@ const bracketColors = {
   'editorBracketHighlight.foreground4' : '#ff3800',
   'editorBracketHighlight.foreground5' : '#2243b6',
   'editorBracketHighlight.foreground6' : '#c9a0ff',
-  // 'editorBracketHighlight.foreground1' : '#e477e4',
-  // 'editorBracketHighlight.foreground2' : '#FFAB40',
-  // 'editorBracketHighlight.foreground3' : '#40C4FF',
-  // 'editorBracketHighlight.foreground4' : '#474e6c',
-  // 'editorBracketHighlight.foreground5' : '#914c54',
-  // 'editorBracketHighlight.foreground6' : '#bb9af7',
 }
 const tabColors = {
-  'tab.activeBackground'                : BACK_COLOR,
-  'tab.activeBorder'                    : BACK_COLOR,
-  'tab.activeForeground'                : '#000',
-  'tab.border'                          : CHROME_COLOR_ACCENT,
-  'tab.inactiveBackground'              : `${CHROME_COLOR_ACCENT}55`,
-  'tab.inactiveForeground'              : '#444444cc',
+  'tab.activeBackground'   : BACK_COLOR,
+  'tab.activeBorder'       : BACK_COLOR,
+  'tab.activeForeground'   : '#000',
+  'tab.border'             : CHROME_COLOR_ACCENT,
+  'tab.inactiveBackground' : `${ CHROME_COLOR_ACCENT }55`,
+  'tab.inactiveForeground' : '#444444cc',
 }
-exports.chromeColorsxx = {}
 exports.chromeColors = {
   ...newColors,
   ...tabColors,
@@ -285,9 +276,9 @@ exports.chromeColors = {
   'git.color.modified'                  : '#4d0e0b',
   // 'list.errorForeground'                      : '#a50044',
   'scrollbar.shadow'                    : '#cf6f4b',
-  'scrollbarSlider.background'          : `${CHROME_COLOR}bb`,
+  'scrollbarSlider.background'          : `${ CHROME_COLOR }bb`,
   'scrollbarSlider.hoverBackground'     : '#C4BE9D',
-  'selection.background'                : '#ebe6d9',
+  'selection.background'                : '#aba6a988',
   'statusBar.background'                : CHROME_COLOR,
   'statusBar.foreground'                : '#35495f',
   'widget.shadow'                       : '#8382ae',
