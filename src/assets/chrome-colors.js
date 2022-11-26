@@ -76,13 +76,13 @@ const suggestionsColors = {
   'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground'           : `${ CHROME_COLOR }55`,
-  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }77`,
-  'editor.inactiveSelectionBackground'   : '#aaab9c66',
+  'editor.selectionBackground'           : `${ CHROME_COLOR }22`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }44`,
+  'editor.inactiveSelectionBackground'   : '#aaab9c33',
   // next two
   // When search by word is active or when double click on a word
   'editor.wordHighlightBackground'       : `${ WARNING }22`,
-  'editor.wordHighlightStrongBackground' : ACCENT_BACKGROUND,
+  'editor.wordHighlightStrongBackground' : `${ACCENT_BACKGROUND}44`,
 }
 
 const peekView = {
@@ -93,7 +93,7 @@ const peekView = {
   'peekViewResult.fileForeground'           : '#787c99',
   'peekViewResult.lineForeground'           : '#a9b1d6',
   'peekViewResult.matchHighlightBackground' : `${ WARNING }22`,
-  'peekViewResult.selectionBackground'      : '#3d59a122',
+  'peekViewResult.selectionBackground'      : '#3da9a122',
   'peekViewResult.selectionForeground'      : DARK,
   'peekViewTitle.background'                : BACK_COLOR,
   'peekViewTitleDescription.foreground'     : '#787c99',
