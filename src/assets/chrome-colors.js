@@ -76,13 +76,13 @@ const suggestionsColors = {
   'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground'           : `${ CHROME_COLOR }22`,
-  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }44`,
-  'editor.inactiveSelectionBackground'   : '#aaab9c33',
+  'editor.selectionBackground'           : `${ CHROME_COLOR }44`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }55`,
+  'editor.inactiveSelectionBackground'   : '#aaab9c44',
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'       : `#4a42`,
-  'editor.wordHighlightStrongBackground' : `#4a44`,
+  'editor.wordHighlightBackground'       : `#4a55`,
+  'editor.wordHighlightStrongBackground' : `#4a66`,
 }
 
 const peekView = {
