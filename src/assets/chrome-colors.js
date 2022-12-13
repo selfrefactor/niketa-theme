@@ -26,8 +26,8 @@ const listColors = {
   'list.highlightForeground'         : '#4283F5',
   'list.hoverBackground'             : '#4332',
   // 'list.hoverForeground'             : '#4e4e4e', // no need
-  'list.inactiveFocusBackground'     : '#11b1b155',
-  'list.inactiveSelectionBackground' : '#b1b11155',
+  'list.inactiveFocusBackground'     : '#11b1b1',
+  'list.inactiveSelectionBackground' : '#b1b111',
   'list.inactiveSelectionForeground' : '#4e4e4e',
   'list.invalidItemForeground'       : '#a9696A',
   'list.warningForeground'           : '#ff854c',
@@ -78,7 +78,7 @@ const suggestionsColors = {
 const selectionColors = {
   'editor.selectionBackground'           : `${ CHROME_COLOR }44`,
   'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }55`,
-  'editor.inactiveSelectionBackground'   : '#aaab9c44',
+  'editor.inactiveSelectionBackground'   : '#aaab9c',
   // next two
   // When search by word is active or when double click on a word
   'editor.wordHighlightBackground'       : `#4a55`,
@@ -130,7 +130,7 @@ const fromMissingColors = {
   'titleBar.activeBackground'                : BACK_COLOR,
   'titleBar.activeForeground'                : DARK,
   'titleBar.inactiveBackground'              : CHROME_COLOR,
-  'titleBar.inactiveForeground'              : BACK_COLOR,
+  'titleBar.inactiveForeground'              : '#355',
   'dropdown.listBackground'                  : CHROME_COLOR,
   'dropdown.background'                      : CHROME_COLOR,
   'dropdown.border'                          : BORDER,
@@ -228,8 +228,8 @@ const tabColors = {
   'tab.activeBorder'       : BACK_COLOR,
   'tab.activeForeground'   : '#000',
   'tab.border'             : CHROME_COLOR_ACCENT,
-  'tab.inactiveBackground' : `${ CHROME_COLOR_ACCENT }55`,
-  'tab.inactiveForeground' : '#444444cc',
+  'tab.inactiveBackground' : `${ CHROME_COLOR_ACCENT }fa`,
+  'tab.inactiveForeground' : '#444',
 }
 exports.chromeColors = {
   ...newColors,
