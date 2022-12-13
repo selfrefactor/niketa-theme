@@ -29,10 +29,10 @@ const listColors = {
   'list.inactiveFocusBackground'     : '#11b1b155',
   'list.inactiveSelectionBackground' : '#b1b11155',
   'list.inactiveSelectionForeground' : '#4e4e4e',
-  'list.invalidItemForeground'       : '#A9A9AA',
+  'list.invalidItemForeground'       : '#a9696A',
   'list.warningForeground'           : '#ff854c',
   'quickInput.background'            : INPUT_BACK,
-  'quickInput.list.focusBackground'  : '#5554',
+  'quickInput.list.focusBackground'  : '#555',
 }
 
 const sidebarColors = {
