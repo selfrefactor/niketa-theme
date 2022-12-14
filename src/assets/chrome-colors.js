@@ -19,19 +19,19 @@ const listColors = {
   'list.activeSelectionForeground'   : '#4e4e4e',
   'list.dropBackground'              : '#b1b1b11e',
   'list.errorForeground'             : '#bb1000',
-  'list.filterMatchBackground'       : '#fff',
+  'list.filterMatchBackground'       : '#e0e0e0ee',
   'list.filterMatchBorder'           : '#fff',
   'list.focusBackground'             : '#0065FF33',
   'list.focusForeground'             : '#4e4e4e',
   'list.highlightForeground'         : '#4283F5',
   'list.hoverBackground'             : '#4332',
   // 'list.hoverForeground'             : '#4e4e4e', // no need
-  'list.inactiveFocusBackground'     : '#11b1b1',
-  'list.inactiveSelectionBackground' : '#b1b111',
+  'list.inactiveFocusBackground'     : '#11b1b1aa',
+  'list.inactiveSelectionBackground' : '#b1b111aa',
   'list.inactiveSelectionForeground' : '#4e4e4e',
   'list.invalidItemForeground'       : '#a9696A',
   'list.warningForeground'           : '#ff854c',
-  'quickInput.background'            : INPUT_BACK,
+  'quickInput.background'            : `${INPUT_BACK}aa`,
   'quickInput.list.focusBackground'  : '#555',
 }
 
@@ -39,7 +39,7 @@ const sidebarColors = {
   'sideBar.background'              : CHROME_COLOR,
   'sideBar.foreground'              : '#85483d',
   'sideBar.border'                  : '#8382ae',
-  'sideBarSectionHeader.background' : '#aebabe',
+  'sideBarSectionHeader.background' : '#aebabeaa',
   'sideBarSectionHeader.foreground' : '#2a3343',
   'sideBarSectionHeader.border'     : '#616161ca',
   'sideBarTitle.foreground'         : '#30322e',
@@ -60,8 +60,8 @@ const menuColors = {
 const suggestionsColors = {
   // in autocomplete box, the active line background
   'editorSuggestWidget.selectedBackground'  : '#2c3d5244',
-  'editorSuggestWidget.background'          : '#d1d3d4',
-  'editorHoverWidget.background'            : '#d1d3d4',
+  'editorSuggestWidget.background'          : '#d1d3d4aa',
+  'editorHoverWidget.background'            : '#d1a3d4aa',
   // when search with ctrl+f, this is widget chrome color
   'editorWidget.background'                 : CHROME_COLOR,
   // in autocomplete - the color of matched chars
@@ -78,7 +78,7 @@ const suggestionsColors = {
 const selectionColors = {
   'editor.selectionBackground'           : `${ CHROME_COLOR }44`,
   'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }55`,
-  'editor.inactiveSelectionBackground'   : '#aaab9c',
+  'editor.inactiveSelectionBackground'   : '#aaab9caa',
   // next two
   // When search by word is active or when double click on a word
   'editor.wordHighlightBackground'       : `#4a55`,
@@ -87,9 +87,9 @@ const selectionColors = {
 
 const peekView = {
   'peekView.border'                         : BORDER,
-  'peekViewEditor.background'               : BACK_COLOR,
+  'peekViewEditor.background'               : `${BACK_COLOR}aa`,
   'peekViewEditor.matchHighlightBackground' : '#3d59a155',
-  'peekViewResult.background'               : BACK_COLOR,
+  'peekViewResult.background'               : `${BACK_COLOR}99`,
   'peekViewResult.fileForeground'           : '#787c99',
   'peekViewResult.lineForeground'           : '#a9b1d6',
   'peekViewResult.matchHighlightBackground' : `${ WARNING }22`,
@@ -122,7 +122,7 @@ const fromMissingColors = {
   'statusBar.debuggingBackground'            : BACK_COLOR,
   'panel.border'                             : BORDER,
   'panel.background'                         : BACK_COLOR,
-  'input.background'                         : INPUT_BACK,
+  'input.background'                         : `${INPUT_BACK}aa`,
   'input.foreground'                         : DARK,
   'input.border'                             : BORDER,
   'input.placeholderForeground'              : `${ DARK }88`,
@@ -130,7 +130,7 @@ const fromMissingColors = {
   'titleBar.activeBackground'                : BACK_COLOR,
   'titleBar.activeForeground'                : DARK,
   'titleBar.inactiveBackground'              : CHROME_COLOR,
-  'titleBar.inactiveForeground'              : '#355',
+  'titleBar.inactiveForeground'              : '#fafafa',
   'dropdown.listBackground'                  : CHROME_COLOR,
   'dropdown.background'                      : CHROME_COLOR,
   'dropdown.border'                          : BORDER,
