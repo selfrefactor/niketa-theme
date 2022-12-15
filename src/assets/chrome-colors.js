@@ -228,8 +228,8 @@ const tabColors = {
   'tab.activeBorder'       : BACK_COLOR,
   'tab.activeForeground'   : '#000',
   'tab.border'             : CHROME_COLOR_ACCENT,
-  'tab.inactiveBackground' : `${ CHROME_COLOR_ACCENT }fa`,
-  'tab.inactiveForeground' : '#444',
+  'tab.inactiveBackground' : `#777`,
+  'tab.inactiveForeground' : '#ddd',
 }
 exports.chromeColors = {
   ...newColors,
