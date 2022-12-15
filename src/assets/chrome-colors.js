@@ -24,15 +24,15 @@ const listColors = {
   'list.focusBackground'             : '#0065FF33',
   'list.focusForeground'             : '#4e4e4e',
   'list.highlightForeground'         : '#4283F5',
-  'list.hoverBackground'             : '#4332',
-  // 'list.hoverForeground'             : '#4e4e4e', // no need
+  'list.hoverBackground'             : '#7797',
+  'list.hoverForeground'             : '#fff',
   'list.inactiveFocusBackground'     : '#11b1b155',
   'list.inactiveSelectionBackground' : '#b1b11155',
   'list.inactiveSelectionForeground' : '#4e4e4e',
   'list.invalidItemForeground'       : '#a9696A',
   'list.warningForeground'           : '#ff854c',
-  'quickInput.background'            : INPUT_BACK,
-  'quickInput.list.focusBackground'  : '#555',
+  'quickInput.background'            :  '#f5f5f5',
+  'quickInput.list.focusBackground'  : '#5554',
 }
 
 const sidebarColors = {
