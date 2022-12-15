@@ -19,21 +19,22 @@ const listColors = {
   'list.activeSelectionForeground'   : '#4e4e4e',
   'list.dropBackground'              : '#b1b1b11e',
   'list.errorForeground'             : '#bb1000',
-  'list.filterMatchBackground'       : '#e0e0e0ee',
+  'list.filterMatchBackground'       : '#fff',
   'list.filterMatchBorder'           : '#fff',
   'list.focusBackground'             : '#0065FF33',
   'list.focusForeground'             : '#4e4e4e',
   'list.highlightForeground'         : '#4283F5',
   'list.hoverBackground'             : '#4332',
   // 'list.hoverForeground'             : '#4e4e4e', // no need
-  'list.inactiveFocusBackground'     : '#11b1b1aa',
-  'list.inactiveSelectionBackground' : '#b1b111aa',
+  'list.inactiveFocusBackground'     : '#11b1b155',
+  'list.inactiveSelectionBackground' : '#b1b11155',
   'list.inactiveSelectionForeground' : '#4e4e4e',
-  'list.invalidItemForeground'       : '#a9696A',
+  'list.invalidItemForeground'       : '#A9A9AA',
   'list.warningForeground'           : '#ff854c',
-  'quickInput.background'            : `${INPUT_BACK}aa`,
-  'quickInput.list.focusBackground'  : '#555',
+  'quickInput.background'            : INPUT_BACK,
+  'quickInput.list.focusBackground'  : '#5554',
 }
+
 
 const sidebarColors = {
   'sideBar.background'              : CHROME_COLOR,
