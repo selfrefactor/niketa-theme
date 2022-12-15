@@ -29,18 +29,17 @@ const listColors = {
   'list.inactiveFocusBackground'     : '#11b1b155',
   'list.inactiveSelectionBackground' : '#b1b11155',
   'list.inactiveSelectionForeground' : '#4e4e4e',
-  'list.invalidItemForeground'       : '#A9A9AA',
+  'list.invalidItemForeground'       : '#a9696A',
   'list.warningForeground'           : '#ff854c',
   'quickInput.background'            : INPUT_BACK,
-  'quickInput.list.focusBackground'  : '#5554',
+  'quickInput.list.focusBackground'  : '#555',
 }
-
 
 const sidebarColors = {
   'sideBar.background'              : CHROME_COLOR,
   'sideBar.foreground'              : '#85483d',
   'sideBar.border'                  : '#8382ae',
-  'sideBarSectionHeader.background' : '#aebabeaa',
+  'sideBarSectionHeader.background' : '#aebabe',
   'sideBarSectionHeader.foreground' : '#2a3343',
   'sideBarSectionHeader.border'     : '#616161ca',
   'sideBarTitle.foreground'         : '#30322e',
@@ -61,8 +60,8 @@ const menuColors = {
 const suggestionsColors = {
   // in autocomplete box, the active line background
   'editorSuggestWidget.selectedBackground'  : '#2c3d5244',
-  'editorSuggestWidget.background'          : '#d1d3d4aa',
-  'editorHoverWidget.background'            : '#d1a3d4aa',
+  'editorSuggestWidget.background'          : '#d1d3d4',
+  'editorHoverWidget.background'            : '#d9d1d9',
   // when search with ctrl+f, this is widget chrome color
   'editorWidget.background'                 : CHROME_COLOR,
   // in autocomplete - the color of matched chars
@@ -79,7 +78,7 @@ const suggestionsColors = {
 const selectionColors = {
   'editor.selectionBackground'           : `${ CHROME_COLOR }44`,
   'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }55`,
-  'editor.inactiveSelectionBackground'   : '#aaab9caa',
+  'editor.inactiveSelectionBackground'   : '#aaab9c44',
   // next two
   // When search by word is active or when double click on a word
   'editor.wordHighlightBackground'       : `#4a55`,
@@ -88,9 +87,9 @@ const selectionColors = {
 
 const peekView = {
   'peekView.border'                         : BORDER,
-  'peekViewEditor.background'               : `${BACK_COLOR}aa`,
+  'peekViewEditor.background'               : BACK_COLOR,
   'peekViewEditor.matchHighlightBackground' : '#3d59a155',
-  'peekViewResult.background'               : `${BACK_COLOR}99`,
+  'peekViewResult.background'               : BACK_COLOR,
   'peekViewResult.fileForeground'           : '#787c99',
   'peekViewResult.lineForeground'           : '#a9b1d6',
   'peekViewResult.matchHighlightBackground' : `${ WARNING }22`,
@@ -123,7 +122,7 @@ const fromMissingColors = {
   'statusBar.debuggingBackground'            : BACK_COLOR,
   'panel.border'                             : BORDER,
   'panel.background'                         : BACK_COLOR,
-  'input.background'                         : `${INPUT_BACK}aa`,
+  'input.background'                         : INPUT_BACK,
   'input.foreground'                         : DARK,
   'input.border'                             : BORDER,
   'input.placeholderForeground'              : `${ DARK }88`,
@@ -131,7 +130,7 @@ const fromMissingColors = {
   'titleBar.activeBackground'                : BACK_COLOR,
   'titleBar.activeForeground'                : DARK,
   'titleBar.inactiveBackground'              : CHROME_COLOR,
-  'titleBar.inactiveForeground'              : '#fafafa',
+  'titleBar.inactiveForeground'              : BACK_COLOR,
   'dropdown.listBackground'                  : CHROME_COLOR,
   'dropdown.background'                      : CHROME_COLOR,
   'dropdown.border'                          : BORDER,
