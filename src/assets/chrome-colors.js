@@ -31,7 +31,7 @@ const listColors = {
   'list.inactiveSelectionForeground' : '#4e4e4e',
   'list.invalidItemForeground'       : '#a9696A',
   'list.warningForeground'           : '#ff854c',
-  'quickInput.background'            :  '#f5f5f5',
+  'quickInput.background'            : '#f5f5f5',
   'quickInput.list.focusBackground'  : '#5554',
 }
 
@@ -79,10 +79,11 @@ const selectionColors = {
   'editor.selectionBackground'           : `${ CHROME_COLOR }44`,
   'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }55`,
   'editor.inactiveSelectionBackground'   : '#aaab9c44',
+  'terminal.selectionBackground'         : '#515c7e22',
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'       : `#4a55`,
-  'editor.wordHighlightStrongBackground' : `#4a66`,
+  'editor.wordHighlightBackground'       : '#4a55',
+  'editor.wordHighlightStrongBackground' : '#4a66',
 }
 
 const peekView = {
@@ -228,7 +229,7 @@ const tabColors = {
   'tab.activeBorder'       : BACK_COLOR,
   'tab.activeForeground'   : '#000',
   'tab.border'             : CHROME_COLOR_ACCENT,
-  'tab.inactiveBackground' : `#777`,
+  'tab.inactiveBackground' : '#777',
   'tab.inactiveForeground' : '#ddd',
 }
 exports.chromeColors = {
