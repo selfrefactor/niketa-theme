@@ -10,6 +10,10 @@ const [
   ADDITIONAL_4,
 ] = splitEvery(Math.ceil(missingScopes.length / 5), missingScopes)
 
+
+/**
+ * `.UNDERLINE` is supported  but not used
+ */
 const VARIABLES = {
   0 : [],
   1 : [],
@@ -24,7 +28,7 @@ const VARIABLES = {
     'variable.other.readwrite.decorator.js',
     'variable.other.readwrite.js',
     'variable.other.object.js',
-    'variable.other.object.property.js.UNDERLINE',
+    'variable.other.object.property.js',
     'variable.import.parameter.js.ITALIC',
   ],
   3 : [
@@ -32,11 +36,11 @@ const VARIABLES = {
   ],
   4 : [
     'variable.language.ITALIC',
-    'variable.language.constructor.UNDERLINE',
+    'variable.language.constructor',
     'variable.language.prototype.js.ITALIC',
-    'variable.language.this.UNDERLINE',
-    'variable.language.this.js.UNDERLINE',
-    'variable.object.property.js.UNDERLINE',
+    'variable.language.this',
+    'variable.language.this.js',
+    'variable.object.property.js',
   ],
 }
 
@@ -52,7 +56,7 @@ const KEYWORDS = {
     'keyword.ITALIC',
     'keyword.control.flow.ITALIC',
     'keyword.control.ITALIC',
-    'keyword.control.default.js.UNDERLINE',
+    'keyword.control.default.js',
     'keyword.control.from.js',
     'keyword.operator.BOLD',
     'keyword.operator.accessor',
@@ -139,11 +143,11 @@ const CSS = {
 const ENTITIES = {
   0 : [
     'entity.name.method.js.ITALIC',
-    'entity.name.tag.UNDERLINE',
+    'entity.name.tag',
     'entity.name.class',
     'entity.name.function',
     'entity.name.function.method',
-    'entity.name.type.UNDERLINE',
+    'entity.name.type',
     'entity.name.type.interface',
     'entity.name.variable.BOLD',
     'entity.name.tag.class.js.BOLD',

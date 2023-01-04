@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.84.0
+
+Remove underline
+
 ## 9.51.0
 
 Change colors of constants and punctuations
