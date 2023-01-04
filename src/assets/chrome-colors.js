@@ -250,6 +250,9 @@ exports.chromeColors = {
   ...suggestionsColors,
   ...listColors,
   ...notifications,
+  'editorError.background'              : '#B73A3422',
+  'editorError.border'                  : '#ffffff44',
+  'editorError.foreground'              : '#111',
   'editorOverviewRuler.background'      : '#eaeaea', // color of scroll bar
   'editor.background'                   : BACK_COLOR,
   'editor.foreground'                   : '#192112',
