@@ -232,6 +232,12 @@ const tabColors = {
   'tab.inactiveBackground' : '#777',
   'tab.inactiveForeground' : '#ddd',
 }
+
+const otherColors = {
+  "terminalCursor.foreground": "#000",
+  "descriptionForeground": "#528ff0"
+}
+
 exports.chromeColors = {
   ...newColors,
   ...tabColors,
@@ -250,6 +256,7 @@ exports.chromeColors = {
   ...suggestionsColors,
   ...listColors,
   ...notifications,
+  ...otherColors,
   'editorError.background'              : '#B73A3422',
   'editorError.border'                  : '#ffffff44',
   'editorError.foreground'              : '#111',
