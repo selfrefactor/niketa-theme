@@ -18,7 +18,7 @@ const listColors = {
   'list.activeSelectionBackground'   : '#aaaa',
   'list.activeSelectionForeground'   : '#4e4e4e',
   'list.dropBackground'              : '#b1b1b11e',
-  'list.errorForeground'             : '#bb1000',
+  'list.errorForeground'             : '#bb1000aa',
   'list.filterMatchBackground'       : '#fff',
   'list.filterMatchBorder'           : '#fff',
   'list.focusBackground'             : '#0065FF33',
@@ -76,8 +76,8 @@ const suggestionsColors = {
   'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground'           : `${ CHROME_COLOR }22`,
-  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }33`,
+  'editor.selectionBackground'           : `${ CHROME_COLOR }11`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }22`,
   'editor.inactiveSelectionBackground'   : '#aaab9c22',
   'terminal.selectionBackground'         : '#515c7e11',
   // next two
@@ -282,7 +282,7 @@ exports.chromeColors = {
   'editorGutter.background'             : `${ CHROME_COLOR }99`,
   'editorLineNumber.foreground'         : '#2a3343a9',
   'editorLink.activeForeground'         : '#034694',
-  'errorForeground'                     : '#B1365B',
+  'errorForeground'                     : '#B1365Baa',
   'focusBorder'                         : '#323e34',
   'git.color.modified'                  : '#4d0e0b',
   // 'list.errorForeground'                      : '#a50044',
