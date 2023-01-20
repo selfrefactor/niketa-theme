@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.0.0
+
+Use common transparency. Fix missing transparency for git foreground colors.
+
 ## 9.84.0
 
 Remove underline

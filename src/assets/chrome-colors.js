@@ -13,6 +13,8 @@ const SOFT_WARNING = '#744da9'
 const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
+const TRANSPARENCY = '33'
+
 const listColors = {
   'foreground'                       : '#24283b',
   'list.activeSelectionBackground'   : '#aaaa',
@@ -26,11 +28,11 @@ const listColors = {
   'list.highlightForeground'         : '#4283F5',
   'list.hoverBackground'             : '#7797',
   'list.hoverForeground'             : '#fff',
-  'list.inactiveFocusBackground'     : '#11b1b155',
-  'list.inactiveSelectionBackground' : '#b1b11155',
-  'list.inactiveSelectionForeground' : '#4e4e4e',
-  'list.invalidItemForeground'       : '#a9696A',
-  'list.warningForeground'           : '#ff854c',
+  'list.inactiveFocusBackground'     : `#11b1b1${ TRANSPARENCY }`,
+  'list.inactiveSelectionBackground' : `#b1b111${ TRANSPARENCY }`,
+  'list.inactiveSelectionForeground' : `#4e4e4e${ TRANSPARENCY }`,
+  'list.invalidItemForeground'       : `#a9696A${ TRANSPARENCY }`,
+  'list.warningForeground'           : `#ff854c${ TRANSPARENCY }`,
   'quickInput.background'            : '#f5f5f5',
   'quickInput.list.focusBackground'  : '#5554',
 }
@@ -59,7 +61,7 @@ const menuColors = {
 
 const suggestionsColors = {
   // in autocomplete box, the active line background
-  'editorSuggestWidget.selectedBackground'  : '#2c3d5244',
+  'editorSuggestWidget.selectedBackground'  : `#2c3d52${ TRANSPARENCY }`,
   'editorSuggestWidget.background'          : '#d1d3d4',
   'editorHoverWidget.background'            : '#d9d1d9',
   // when search with ctrl+f, this is widget chrome color
@@ -186,7 +188,8 @@ const gitColors = {
   'gitDecoration.conflictingResourceForeground'   : '#bb7a61',
   'gitDecoration.deletedResourceForeground'       : '#914c54',
   'gitDecoration.ignoredResourceForeground'       : '#515670',
-  'gitDecoration.modifiedResourceForeground'      : '#034694',
+  // this dark is conflicting with dark background of inactive tabs
+  'gitDecoration.modifiedResourceForeground'      : '#03469455',
   'gitDecoration.submoduleResourceForeground'     : '#8af899',
   'gitDecoration.untrackedResourceForeground'     : '#aa769b',
   'gitDecoration.stageDeletedResourceForeground'  : '#aa769b',
