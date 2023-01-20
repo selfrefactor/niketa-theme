@@ -1,6 +1,7 @@
 # Changelog
 
-## 10.0.0
+## 10.0.0?
+## 9.85.0?
 
 Use common transparency. Fix missing transparency for git foreground colors.
 
