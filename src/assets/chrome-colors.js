@@ -231,7 +231,7 @@ const tabColors = {
   'tab.activeBackground'   : BACK_COLOR,
   'tab.activeBorder'       : BACK_COLOR,
   'tab.activeForeground'   : '#000',
-  'tab.border'             : CHROME_COLOR_ACCENT,
+  'tab.border'             : `${CHROME_COLOR_ACCENT}${TRANSPARENCY}`,
   'tab.inactiveBackground' : '#aaa',
   'tab.inactiveForeground' : '#eee',
 }
