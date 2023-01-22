@@ -189,11 +189,11 @@ const gitColors = {
   'gitDecoration.deletedResourceForeground'       : '#914c54',
   'gitDecoration.ignoredResourceForeground'       : '#515670',
   // this dark is conflicting with dark background of inactive tabs
-  'gitDecoration.modifiedResourceForeground'      : '#03469455',
-  'gitDecoration.submoduleResourceForeground'     : '#8af899',
-  'gitDecoration.untrackedResourceForeground'     : '#aa769b',
-  'gitDecoration.stageDeletedResourceForeground'  : '#aa769b',
-  'gitDecoration.stageModifiedResourceForeground' : '#aa769b',
+  'gitDecoration.modifiedResourceForeground'      : `#111184${TRANSPARENCY}`,
+  'gitDecoration.submoduleResourceForeground'      : `#114411${TRANSPARENCY}`,
+  'gitDecoration.untrackedResourceForeground'      : `#611114${TRANSPARENCY}`,
+  'gitDecoration.stageDeletedResourceForeground'      : `#414114${TRANSPARENCY}`,
+  'gitDecoration.stageModifiedResourceForeground'      : `#411134${TRANSPARENCY}`,
 }
 
 /**
@@ -232,7 +232,7 @@ const tabColors = {
   'tab.activeBorder'       : BACK_COLOR,
   'tab.activeForeground'   : '#000',
   'tab.border'             : `${CHROME_COLOR_ACCENT}${TRANSPARENCY}`,
-  'tab.inactiveBackground' : '#aaa',
+  'tab.inactiveBackground' : '#bbb',
   'tab.inactiveForeground' : '#eee',
 }
 
