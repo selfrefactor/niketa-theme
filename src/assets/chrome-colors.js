@@ -14,6 +14,7 @@ const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
 const TRANSPARENCY = '33'
+const STRONG_TRANSPARENCY = '44'
 
 const listColors = {
   'foreground'                       : '#24283b',
@@ -78,14 +79,14 @@ const suggestionsColors = {
   'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground'           : `${ CHROME_COLOR }11`,
-  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }22`,
-  'editor.inactiveSelectionBackground'   : '#aaab9c22',
-  'terminal.selectionBackground'         : '#515c7e11',
+  'editor.selectionBackground'           : `${ CHROME_COLOR }${TRANSPARENCY}`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }${STRONG_TRANSPARENCY}`,
+  'editor.inactiveSelectionBackground'   : `#aaab9c${TRANSPARENCY}`,
+  'terminal.selectionBackground'         : `#515c7e${TRANSPARENCY}`,
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'       : '#4aa2',
-  'editor.wordHighlightStrongBackground' : '#4aa3',
+  'editor.wordHighlightBackground'       : `#44aaaa${TRANSPARENCY}`,
+  'editor.wordHighlightStrongBackground'       : `#44aaaa${STRONG_TRANSPARENCY}`,
 }
 
 const peekView = {
