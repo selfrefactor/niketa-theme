@@ -2,9 +2,9 @@ const { missingColors } = require('../../lambdas/find_missing_rules/missingColor
 
 const BACK_COLOR = '#F5F5F5'
 const INPUT_BACK = '#fafafa'
-const CHROME_BRIGHTER = '#e1e1e1'
-const CHROME_COLOR = '#d1d1d1'
-const CHROME_COLOR_ACCENT = '#c1c1c1'
+const CHROME_BRIGHTER = '#eeeeee'
+const CHROME_COLOR = '#e1e1e1'
+const CHROME_COLOR_ACCENT = '#d1d1d1'
 const DARK = '#111'
 const BORDER = '#333'
 const WARNING = '#d13438'
@@ -80,14 +80,14 @@ const suggestionsColors = {
   'editorWidget.border'                     : '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground'           : `${ CHROME_COLOR }${STRONG_TRANSPARENCY}`,
-  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }${STRONGEST_TRANSPARENCY}`,
-  'editor.inactiveSelectionBackground'   : `#aaab9c${STRONG_TRANSPARENCY}`,
-  'terminal.selectionBackground'         : `#515c7e${STRONG_TRANSPARENCY}`,
+  'editor.selectionBackground'           : `${ CHROME_COLOR }${ STRONG_TRANSPARENCY }`,
+  'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }${ STRONGEST_TRANSPARENCY }`,
+  'editor.inactiveSelectionBackground'   : `#aaab9c${ STRONG_TRANSPARENCY }`,
+  'terminal.selectionBackground'         : `#515c7e${ STRONG_TRANSPARENCY }`,
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'       : `#44aaaa${TRANSPARENCY}`,
-  'editor.wordHighlightStrongBackground'       : `#44aaaa${STRONG_TRANSPARENCY}`,
+  'editor.wordHighlightBackground'       : `#44aaaa${ TRANSPARENCY }`,
+  'editor.wordHighlightStrongBackground' : `#44aaaa${ STRONG_TRANSPARENCY }`,
 }
 
 const peekView = {
@@ -112,12 +112,12 @@ const fromMissingColors = {
   'welcomePage.buttonHoverBackground'        : '#918415',
   'welcomePage.buttonBackground'             : '#918455',
   'editor.stackFrameHighlightBackground'     : '#ffffff',
-  'textCodeBlock.background'                 : `${ SOFTER_ACCENT }${TRANSPARENCY}`,
+  'textCodeBlock.background'                 : `${ SOFTER_ACCENT }${ TRANSPARENCY }`,
   'peekViewEditorGutter.background'          : CHROME_COLOR_ACCENT,
   'settings.textInputBackground'             : CHROME_COLOR,
   'editorCodeLens.foreground'                : `${ DARK }99`,
-  'statusBarItem.activeBackground'           : `${ SOFTER_ACCENT }${STRONG_TRANSPARENCY}`,
-  'statusBarItem.prominentBackground'        : `${ SOFTER_ACCENT }${STRONG_TRANSPARENCY}`,
+  'statusBarItem.activeBackground'           : `${ SOFTER_ACCENT }${ STRONG_TRANSPARENCY }`,
+  'statusBarItem.prominentBackground'        : `${ SOFTER_ACCENT }${ STRONG_TRANSPARENCY }`,
   'statusBarItem.prominentHoverBackground'   : CHROME_BRIGHTER,
   // when using `exx` snippet
   'editor.snippetTabstopHighlightBackground' : ACCENT_BACKGROUND,
@@ -130,7 +130,7 @@ const fromMissingColors = {
   'input.background'                         : INPUT_BACK,
   'input.foreground'                         : DARK,
   'input.border'                             : BORDER,
-  'input.placeholderForeground'              : `${ DARK }${STRONGEST_TRANSPARENCY}`,
+  'input.placeholderForeground'              : `${ DARK }${ STRONGEST_TRANSPARENCY }`,
   'debugToolBar.background'                  : BACK_COLOR,
   'titleBar.activeBackground'                : BACK_COLOR,
   'titleBar.activeForeground'                : DARK,
@@ -156,7 +156,7 @@ const breadcrumbs = {
   'breadcrumb.foreground'                : '#515670',
 }
 
-const dropBackground = `#b53389${STRONG_TRANSPARENCY}`
+const dropBackground = `#b53389${ STRONG_TRANSPARENCY }`
 
 const dropBackgrounds = {
   'editorGroup.dropBackground' : dropBackground,
@@ -191,11 +191,11 @@ const gitColors = {
   'gitDecoration.deletedResourceForeground'       : '#914c54',
   'gitDecoration.ignoredResourceForeground'       : '#515670',
   // this dark is conflicting with dark background of inactive tabs
-  'gitDecoration.modifiedResourceForeground'      : `#000070${LIMITED_TRANSPARENCY}`,
-  'gitDecoration.submoduleResourceForeground'      : `#004000${LIMITED_TRANSPARENCY}`,
-  'gitDecoration.untrackedResourceForeground'      : `#400040${LIMITED_TRANSPARENCY}`,
-  'gitDecoration.stageDeletedResourceForeground'      : `#404000${LIMITED_TRANSPARENCY}`,
-  'gitDecoration.stageModifiedResourceForeground'      : `#404000${LIMITED_TRANSPARENCY}`,
+  'gitDecoration.modifiedResourceForeground'      : `#000070${ LIMITED_TRANSPARENCY }`,
+  'gitDecoration.submoduleResourceForeground'     : `#004000${ LIMITED_TRANSPARENCY }`,
+  'gitDecoration.untrackedResourceForeground'     : `#400040${ LIMITED_TRANSPARENCY }`,
+  'gitDecoration.stageDeletedResourceForeground'  : `#404000${ LIMITED_TRANSPARENCY }`,
+  'gitDecoration.stageModifiedResourceForeground' : `#404000${ LIMITED_TRANSPARENCY }`,
 }
 
 /**
@@ -233,14 +233,14 @@ const tabColors = {
   'tab.activeBackground'   : BACK_COLOR,
   'tab.activeBorder'       : BACK_COLOR,
   'tab.activeForeground'   : '#000',
-  'tab.border'             : `${CHROME_COLOR_ACCENT}${TRANSPARENCY}`,
-  'tab.inactiveBackground' : '#bbb',
-  'tab.inactiveForeground' : '#eee',
+  'tab.border'             : `${ CHROME_COLOR_ACCENT }${ TRANSPARENCY }`,
+  'tab.inactiveBackground' : '#eee',
+  'tab.inactiveForeground' : `#333${ TRANSPARENCY }`,
 }
 
 const otherColors = {
-  "terminalCursor.foreground": "#000",
-  "descriptionForeground": "#528ff0"
+  'terminalCursor.foreground' : '#000',
+  'descriptionForeground'     : '#528ff0',
 }
 
 exports.chromeColors = {
