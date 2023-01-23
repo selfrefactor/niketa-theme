@@ -5,7 +5,7 @@ const INPUT_BACK = '#fafafa'
 const CHROME_BRIGHTER = '#eeeeee'
 const CHROME_COLOR = '#e1e1e1'
 const CHROME_COLOR_ACCENT = '#d1d1d1'
-const DARK = '#111'
+const DARK = '#000'
 const BORDER = '#333'
 const WARNING = '#d13438'
 const SOFT_WARNING = '#744da9'
@@ -15,38 +15,37 @@ const SOFTER_ACCENT = '#834962'
 const TRANSPARENCY = '33'
 const STRONG_TRANSPARENCY = '55'
 const STRONGEST_TRANSPARENCY = '77'
-const LIMITED_TRANSPARENCY = 'dd'
 
 const listColors = {
-  'foreground'                       : '#24283b',
+  'foreground'                       : '#000',
   'list.activeSelectionBackground'   : '#aaaa',
   'list.activeSelectionForeground'   : '#4e4e4e',
-  'list.dropBackground'              : '#b1b1b11e',
-  'list.errorForeground'             : '#bb1000aa',
+  'list.dropBackground'              : '#b1b1b1',
+  'list.errorForeground'             : '#bb1000',
   'list.filterMatchBackground'       : '#fff',
   'list.filterMatchBorder'           : '#fff',
   'list.focusBackground'             : '#0065FF33',
   'list.focusForeground'             : '#4e4e4e',
-  'list.highlightForeground'         : '#4283F5',
-  'list.hoverBackground'             : '#7797',
-  'list.hoverForeground'             : '#fff',
-  'list.inactiveFocusBackground'     : `#11b1b1${ TRANSPARENCY }`,
-  'list.inactiveSelectionBackground' : `#b1b111${ TRANSPARENCY }`,
-  'list.inactiveSelectionForeground' : `#4e4e4e${ TRANSPARENCY }`,
-  'list.invalidItemForeground'       : `#a9696A${ TRANSPARENCY }`,
-  'list.warningForeground'           : `#ff854c${ TRANSPARENCY }`,
-  'quickInput.background'            : '#f5f5f5',
-  'quickInput.list.focusBackground'  : '#5554',
+  'list.highlightForeground'         : '#00f',
+  'list.hoverBackground'             : CHROME_COLOR,
+  'list.hoverForeground'             : '#000',
+  'list.inactiveFocusBackground'     : `#11b1b1`,
+  'list.inactiveSelectionBackground' : `#b1b111`,
+  'list.inactiveSelectionForeground' : `#333`,
+  'list.invalidItemForeground'       : `#a9696A`,
+  'list.warningForeground'           : `#ff854c`,
+  'quickInput.background'            : '#fff',
+  'quickInput.list.focusBackground'  : '#c3c3c3',
 }
 
 const sidebarColors = {
   'sideBar.background'              : CHROME_COLOR,
-  'sideBar.foreground'              : '#85483d',
+  'sideBar.foreground'              : '#333',
   'sideBar.border'                  : '#8382ae',
   'sideBarSectionHeader.background' : '#aebabe',
-  'sideBarSectionHeader.foreground' : '#2a3343',
+  'sideBarSectionHeader.foreground' : '#333',
   'sideBarSectionHeader.border'     : '#616161ca',
-  'sideBarTitle.foreground'         : '#30322e',
+  'sideBarTitle.foreground'         : '#333',
 }
 
 const menuColors = {
@@ -71,10 +70,10 @@ const suggestionsColors = {
   // in autocomplete - the color of matched chars
   // i.e. if I write `co`, then suggest will be `const`
   // and the `co` will be in this color
-  'editorSuggestWidget.highlightForeground' : '#820014',
+  'editorSuggestWidget.highlightForeground' : '#c00',
   // in the above example, this is the color of the rest
   // also most common foreground color in autocomplete and suggestion
-  'editorSuggestWidget.foreground'          : '#2a3343',
+  'editorSuggestWidget.foreground'          : '#000',
   'editorSuggestWidget.border'              : '#d78d9f',
   'editorHoverWidget.border'                : '#d78d9f',
   'editorWidget.border'                     : '#d78d9f',
@@ -95,8 +94,8 @@ const peekView = {
   'peekViewEditor.background'               : BACK_COLOR,
   'peekViewEditor.matchHighlightBackground' : '#3d59a122',
   'peekViewResult.background'               : BACK_COLOR,
-  'peekViewResult.fileForeground'           : '#787c99',
-  'peekViewResult.lineForeground'           : '#a9b1d6',
+  'peekViewResult.fileForeground'           : '#000',
+  'peekViewResult.lineForeground'           : '#333',
   'peekViewResult.matchHighlightBackground' : `${ WARNING }22`,
   'peekViewResult.selectionBackground'      : '#3da9a122',
   'peekViewResult.selectionForeground'      : DARK,
@@ -115,7 +114,7 @@ const fromMissingColors = {
   'textCodeBlock.background'                 : `${ SOFTER_ACCENT }${ TRANSPARENCY }`,
   'peekViewEditorGutter.background'          : CHROME_COLOR_ACCENT,
   'settings.textInputBackground'             : CHROME_COLOR,
-  'editorCodeLens.foreground'                : `${ DARK }99`,
+  'editorCodeLens.foreground'                : `${ DARK }${TRANSPARENCY}`,
   'statusBarItem.activeBackground'           : `${ SOFTER_ACCENT }${ STRONG_TRANSPARENCY }`,
   'statusBarItem.prominentBackground'        : `${ SOFTER_ACCENT }${ STRONG_TRANSPARENCY }`,
   'statusBarItem.prominentHoverBackground'   : CHROME_BRIGHTER,
@@ -169,7 +168,7 @@ const possibleErrors = {
   'editorIndentGuide.activeBackground'  : '#363b54',
   'editorPane.background'               : '#363b5477',
   'notificationCenterHeader.background' : '#10101477',
-  'activityBarBadge.foreground'         : '#141414',
+  'activityBarBadge.foreground'         : '#000',
   // when press f8 and you have code problem
   'editorMarkerNavigation.background'   : '#e7e7e7',
 }
@@ -179,23 +178,23 @@ const newColors = {
   'editorUnnecessaryCode.border' : SOFT_WARNING,
 }
 const notifications = {
-  'notifications.foreground'  : '#53245b',
+  'notifications.foreground'  : '#000',
   'notifications.border'      : '#696c77',
   'notificationToast.border'  : '#771c1c',
   'notificationCenter.border' : '#771c1c',
   'notifications.background'  : '#cacaca',
 }
 const gitColors = {
-  'gitDecoration.addedResourceForeground'         : '#53245b',
-  'gitDecoration.conflictingResourceForeground'   : '#bb7a61',
-  'gitDecoration.deletedResourceForeground'       : '#914c54',
-  'gitDecoration.ignoredResourceForeground'       : '#515670',
+  'gitDecoration.addedResourceForeground'         : '#000',
+  'gitDecoration.conflictingResourceForeground'   : '#400',
+  'gitDecoration.deletedResourceForeground'       : '#400',
+  'gitDecoration.ignoredResourceForeground'       : '#400',
   // this dark is conflicting with dark background of inactive tabs
-  'gitDecoration.modifiedResourceForeground'      : `#000070${ LIMITED_TRANSPARENCY }`,
-  'gitDecoration.submoduleResourceForeground'     : `#004000${ LIMITED_TRANSPARENCY }`,
-  'gitDecoration.untrackedResourceForeground'     : `#400040${ LIMITED_TRANSPARENCY }`,
-  'gitDecoration.stageDeletedResourceForeground'  : `#404000${ LIMITED_TRANSPARENCY }`,
-  'gitDecoration.stageModifiedResourceForeground' : `#404000${ LIMITED_TRANSPARENCY }`,
+  'gitDecoration.modifiedResourceForeground'      : `#000070`,
+  'gitDecoration.submoduleResourceForeground'     : `#004000`,
+  'gitDecoration.untrackedResourceForeground'     : `#400040`,
+  'gitDecoration.stageDeletedResourceForeground'  : `#404000`,
+  'gitDecoration.stageModifiedResourceForeground' : `#404000`,
 }
 
 /**
@@ -264,22 +263,22 @@ exports.chromeColors = {
   ...otherColors,
   'editorError.background'              : '#B73A3422',
   'editorError.border'                  : '#ffffff44',
-  'editorError.foreground'              : '#111',
+  'editorError.foreground'              : '#511',
   'editorOverviewRuler.background'      : '#eaeaea', // color of scroll bar
   'editor.background'                   : BACK_COLOR,
-  'editor.foreground'                   : '#192112',
+  'editor.foreground'                   : '#000',
   'editor.lineHighlightBorder'          : '#e1e1e1',
   'editor.lineHighlightBackground'      : '#e1e1e1',
   'editor.foldBackground'               : '#fafafa',
   'activityBar.background'              : '#C4BE9D',
   'badge.background'                    : '#e7e7e7',
-  'badge.foreground'                    : '#3f7063',
+  'badge.foreground'                    : '#070',
   'diffEditor.insertedTextBackground'   : '#9c824a55',
   'diffEditor.removedTextBackground'    : '#64B5F655',
   'editor.findMatchBackground'          : '#aaff1144',
   'editor.findMatchHighlightBackground' : '#71aac322',
   'editor.findRangeHighlightBackground' : '#3f706333',
-  'editorCursor.foreground'             : '#544',
+  'editorCursor.foreground'             : '#800',
   'terminal.background'                 : BACK_COLOR,
   'editorGroup.emptyBackground'         : BACK_COLOR,
   'tab.hoverBackground'                 : ACCENT_BACKGROUND,
@@ -287,10 +286,9 @@ exports.chromeColors = {
   'editorGutter.background'             : `${ CHROME_COLOR }99`,
   'editorLineNumber.foreground'         : '#2a3343a9',
   'editorLink.activeForeground'         : '#034694',
-  'errorForeground'                     : '#B1365Baa',
+  'errorForeground'                     : '#B13',
   'focusBorder'                         : '#323e34',
   'git.color.modified'                  : '#4d0e0b',
-  // 'list.errorForeground'                      : '#a50044',
   'scrollbar.shadow'                    : '#cf6f4b',
   'scrollbarSlider.background'          : `${ CHROME_COLOR }bb`,
   'scrollbarSlider.hoverBackground'     : '#C4BE9D',
