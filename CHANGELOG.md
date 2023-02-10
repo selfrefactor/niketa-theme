@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.15.0
+
+All punctuation colors are now the same
+
 ## 10.0.0
 
 Use common transparency. Fix missing transparency for git foreground colors.

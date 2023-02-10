@@ -30,7 +30,7 @@ const listColors = {
   'list.hoverBackground'             : CHROME_COLOR,
   'list.hoverForeground'             : DARK,
   'list.inactiveFocusBackground'     : `#11b1b1`,
-  'list.inactiveSelectionBackground' : `#b1b111`,
+  'list.inactiveSelectionBackground' : `#b1b111${TRANSPARENCY}`,
   'list.inactiveSelectionForeground' : `#333`,
   'list.invalidItemForeground'       : `#a9696A`,
   'list.warningForeground'           : `#ff854c`,

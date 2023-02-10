@@ -10,7 +10,6 @@ const [
   ADDITIONAL_4,
 ] = splitEvery(Math.ceil(missingScopes.length / 5), missingScopes)
 
-
 /**
  * `.UNDERLINE` is supported  but not used
  */
@@ -31,9 +30,7 @@ const VARIABLES = {
     'variable.other.object.property.js',
     'variable.import.parameter.js.ITALIC',
   ],
-  3 : [
-    'variable.parameter.ITALIC',
-  ],
+  3 : [ 'variable.parameter.ITALIC' ],
   4 : [
     'variable.language.ITALIC',
     'variable.language.constructor',
@@ -68,12 +65,20 @@ const KEYWORDS = {
 
 const PUNCTUATIONS = {
   0 : [
+    'function.brace',
+    'meta.brace',
+    'meta.brace.round',
+    'meta.brace.round.js',
+    'meta.brace.square',
+    'meta.brace.square.js',
+    'meta.group.braces.curly.js',
+    'meta.group.braces.round.function.arguments',
+    'punctuation.accessor.js',
+    'punctuation.accessor.js',
     'punctuation.quasi.element.begin.js',
     'punctuation.quasi.element.end.js',
-    'punctuation.accessor.js',
     'punctuation.separator.comma.js',
     'punctuation.separator.key-value.js',
-    'punctuation.accessor.js',
     'punctuation.separator.parameter.js',
   ],
   1 : [
@@ -219,8 +224,6 @@ const METAS = {
     'meta.method-call.with-arguments.js',
   ],
   2 : [
-    'meta.brace.round.js',
-    'meta.brace.square.js',
     'meta.class-method.js',
     'meta.import.js',
     'meta.function.parameters.js',
@@ -243,9 +246,10 @@ const STORAGES = {
     'storage.modifier.js.ITALIC',
     'storage.type.function.js',
     'storage.modifier.async.js',
-    'storage.type.ITALIC', 'storage.type.interface.js.ITALIC'
+    'storage.type.ITALIC',
+    'storage.type.interface.js.ITALIC',
   ],
-  2 : [  ],
+  2 : [],
   3 : [],
   4 : [],
 }

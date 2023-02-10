@@ -697,13 +697,6 @@
       }
     },
     {
-      "name": "meta.group.braces.curly",
-      "scope": "meta.group.braces.curly",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
       "name": "entity.name",
       "scope": "entity.name",
       "settings": {
@@ -1362,13 +1355,6 @@
       }
     },
     {
-      "name": "constant.other.fsharp",
-      "scope": "constant.other.fsharp",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
       "name": "source.sass",
       "scope": "source.sass",
       "settings": {
@@ -1578,6 +1564,181 @@
       }
     },
     {
+      "name": "function.brace",
+      "scope": "function.brace",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace",
+      "scope": "meta.brace",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.round",
+      "scope": "meta.brace.round",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.round.js",
+      "scope": "meta.brace.round.js",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.round.jsx",
+      "scope": "meta.brace.round.jsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.round.ts",
+      "scope": "meta.brace.round.ts",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.round.tsx",
+      "scope": "meta.brace.round.tsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.square",
+      "scope": "meta.brace.square",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.square.js",
+      "scope": "meta.brace.square.js",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.square.jsx",
+      "scope": "meta.brace.square.jsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.square.ts",
+      "scope": "meta.brace.square.ts",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.brace.square.tsx",
+      "scope": "meta.brace.square.tsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.group.braces.curly.js",
+      "scope": "meta.group.braces.curly.js",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.group.braces.curly.jsx",
+      "scope": "meta.group.braces.curly.jsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.group.braces.curly.ts",
+      "scope": "meta.group.braces.curly.ts",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.group.braces.curly.tsx",
+      "scope": "meta.group.braces.curly.tsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "meta.group.braces.round.function.arguments",
+      "scope": "meta.group.braces.round.function.arguments",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.accessor.js",
+      "scope": "punctuation.accessor.js",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.accessor.jsx",
+      "scope": "punctuation.accessor.jsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.accessor.ts",
+      "scope": "punctuation.accessor.ts",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.accessor.tsx",
+      "scope": "punctuation.accessor.tsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.accessor.js",
+      "scope": "punctuation.accessor.js",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.accessor.jsx",
+      "scope": "punctuation.accessor.jsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.accessor.ts",
+      "scope": "punctuation.accessor.ts",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "punctuation.accessor.tsx",
+      "scope": "punctuation.accessor.tsx",
+      "settings": {
+        "foreground": "COLOR_0"
+      }
+    },
+    {
       "name": "punctuation.quasi.element.begin.js",
       "scope": "punctuation.quasi.element.begin.js",
       "settings": {
@@ -1662,34 +1823,6 @@
       }
     },
     {
-      "name": "punctuation.accessor.js",
-      "scope": "punctuation.accessor.js",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.jsx",
-      "scope": "punctuation.accessor.jsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.ts",
-      "scope": "punctuation.accessor.ts",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.tsx",
-      "scope": "punctuation.accessor.tsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
       "name": "punctuation.separator.comma.js",
       "scope": "punctuation.separator.comma.js",
       "settings": {
@@ -1741,34 +1874,6 @@
     {
       "name": "punctuation.separator.key-value.tsx",
       "scope": "punctuation.separator.key-value.tsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.js",
-      "scope": "punctuation.accessor.js",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.jsx",
-      "scope": "punctuation.accessor.jsx",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.ts",
-      "scope": "punctuation.accessor.ts",
-      "settings": {
-        "foreground": "COLOR_0"
-      }
-    },
-    {
-      "name": "punctuation.accessor.tsx",
-      "scope": "punctuation.accessor.tsx",
       "settings": {
         "foreground": "COLOR_0"
       }
@@ -1932,6 +2037,13 @@
       "scope": "text.html.derivative",
       "settings": {
         "foreground": "COLOR_0"
+      }
+    },
+    {
+      "name": "constant.other.fsharp",
+      "scope": "constant.other.fsharp",
+      "settings": {
+        "foreground": "COLOR_1"
       }
     },
     {
@@ -3279,27 +3391,6 @@
       }
     },
     {
-      "name": "support.function.section.latex",
-      "scope": "support.function.section.latex",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.function.textbf.latex",
-      "scope": "support.function.textbf.latex",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
-      "name": "support.function.textit.latex",
-      "scope": "support.function.textit.latex",
-      "settings": {
-        "foreground": "COLOR_1"
-      }
-    },
-    {
       "name": "variable.css",
       "scope": "variable.css",
       "settings": {
@@ -3978,6 +4069,27 @@
       }
     },
     {
+      "name": "support.function.section.latex",
+      "scope": "support.function.section.latex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.function.textbf.latex",
+      "scope": "support.function.textbf.latex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "support.function.textit.latex",
+      "scope": "support.function.textit.latex",
+      "settings": {
+        "foreground": "COLOR_2"
+      }
+    },
+    {
       "name": "support.function.url.latex",
       "scope": "support.function.url.latex",
       "settings": {
@@ -4106,13 +4218,6 @@
     {
       "name": "markup.table.delimiter.asciidoc",
       "scope": "markup.table.delimiter.asciidoc",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace",
-      "scope": "meta.brace",
       "settings": {
         "foreground": "COLOR_2"
       }
@@ -4965,13 +5070,6 @@
       }
     },
     {
-      "name": "meta.group.braces.round.function.arguments",
-      "scope": "meta.group.braces.round.function.arguments",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
       "name": "meta.template.expression",
       "scope": "meta.template.expression",
       "settings": {
@@ -5322,27 +5420,6 @@
       }
     },
     {
-      "name": "brackethighlighter.tag",
-      "scope": "brackethighlighter.tag",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "brackethighlighter.curly",
-      "scope": "brackethighlighter.curly",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "brackethighlighter.round",
-      "scope": "brackethighlighter.round",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
       "name": "variable.css.string",
       "scope": "variable.css.string",
       "settings": {
@@ -5463,62 +5540,6 @@
       "scope": "entity.other.attribute-name.tsx",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace.round.js",
-      "scope": "meta.brace.round.js",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace.round.jsx",
-      "scope": "meta.brace.round.jsx",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace.round.ts",
-      "scope": "meta.brace.round.ts",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace.round.tsx",
-      "scope": "meta.brace.round.tsx",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace.square.js",
-      "scope": "meta.brace.square.js",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace.square.jsx",
-      "scope": "meta.brace.square.jsx",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace.square.ts",
-      "scope": "meta.brace.square.ts",
-      "settings": {
-        "foreground": "COLOR_2"
-      }
-    },
-    {
-      "name": "meta.brace.square.tsx",
-      "scope": "meta.brace.square.tsx",
-      "settings": {
         "foreground": "COLOR_2"
       }
     },
@@ -6132,6 +6153,27 @@
       "scope": "source.json",
       "settings": {
         "foreground": "COLOR_2"
+      }
+    },
+    {
+      "name": "brackethighlighter.tag",
+      "scope": "brackethighlighter.tag",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "brackethighlighter.curly",
+      "scope": "brackethighlighter.curly",
+      "settings": {
+        "foreground": "COLOR_3"
+      }
+    },
+    {
+      "name": "brackethighlighter.round",
+      "scope": "brackethighlighter.round",
+      "settings": {
+        "foreground": "COLOR_3"
       }
     },
     {
@@ -7465,41 +7507,6 @@
       }
     },
     {
-      "name": "meta.other.type.phpdoc.php",
-      "scope": "meta.other.type.phpdoc.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.other.type.php",
-      "scope": "keyword.other.type.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "keyword.other.array.phpdoc.php",
-      "scope": "keyword.other.array.phpdoc.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.function-call.object.php",
-      "scope": "meta.function-call.object.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
-      "name": "meta.function-call.static.php",
-      "scope": "meta.function-call.static.php",
-      "settings": {
-        "foreground": "COLOR_3"
-      }
-    },
-    {
       "name": "unit.css",
       "scope": "unit.css",
       "settings": {
@@ -7871,6 +7878,41 @@
       }
     },
     {
+      "name": "meta.other.type.phpdoc.php",
+      "scope": "meta.other.type.phpdoc.php",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.other.type.php",
+      "scope": "keyword.other.type.php",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "keyword.other.array.phpdoc.php",
+      "scope": "keyword.other.array.phpdoc.php",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.function-call.object.php",
+      "scope": "meta.function-call.object.php",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
+      "name": "meta.function-call.static.php",
+      "scope": "meta.function-call.static.php",
+      "settings": {
+        "foreground": "COLOR_4"
+      }
+    },
+    {
       "name": "punctuation.definition.parameters.begin.bracket.round.php",
       "scope": "punctuation.definition.parameters.begin.bracket.round.php",
       "settings": {
@@ -8111,13 +8153,6 @@
     {
       "name": "function.parameter",
       "scope": "function.parameter",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "function.brace",
-      "scope": "function.brace",
       "settings": {
         "foreground": "COLOR_4"
       }
@@ -8578,20 +8613,6 @@
       }
     },
     {
-      "name": "",
-      "scope": "",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.brace.square",
-      "scope": "meta.brace.square",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
       "name": "constant.language.symbol.elixir",
       "scope": "constant.language.symbol.elixir",
       "settings": {
@@ -8664,13 +8685,6 @@
     {
       "name": "meta.embedded.assembly",
       "scope": "meta.embedded.assembly",
-      "settings": {
-        "foreground": "COLOR_4"
-      }
-    },
-    {
-      "name": "meta.brace.round",
-      "scope": "meta.brace.round",
       "settings": {
         "foreground": "COLOR_4"
       }
