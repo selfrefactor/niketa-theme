@@ -1,6 +1,6 @@
 const { missingColors } = require('../../lambdas/find_missing_rules/missingColors.json')
 
-const BACK_COLOR = '#F5F5F5'
+const BACK_COLOR = '#fcfcfc'
 const INPUT_BACK = '#fff'
 const CHROME_BRIGHTER = '#eeeeee'
 const CHROME_COLOR = '#e1e1e1'
