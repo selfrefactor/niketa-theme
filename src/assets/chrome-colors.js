@@ -212,8 +212,8 @@ const editorRuler = {
   'editorOverviewRuler.incomingContentForeground'     : '#859900a0',
   'editorOverviewRuler.infoForeground'                : '#FFFF00a0',
   'editorOverviewRuler.modifiedForeground'            : '#40C4FFa0',
-  'editorOverviewRuler.rangeHighlightForeground'      : '#a9b1d644',
-  'editorOverviewRuler.selectionHighlightForeground'  : '#a9b1d622',
+  'editorOverviewRuler.rangeHighlightForeground'      : '#a9b1d688',
+  'editorOverviewRuler.selectionHighlightForeground'  : '#a9b1d644',
   'editorOverviewRuler.warningForeground'             : '#FFAB40',
   'editorOverviewRuler.wordHighlightForeground'       : '#bb9af755',
   'editorOverviewRuler.wordHighlightStrongForeground' : '#bb9af766',
@@ -264,7 +264,7 @@ exports.chromeColors = {
   'editorError.background'              : '#B73A3422',
   'editorError.border'                  : '#ffffff44',
   'editorError.foreground'              : '#511',
-  'editorOverviewRuler.background'      : '#eaeaea', // color of scroll bar
+  'editorOverviewRuler.background'      : '#aaa', // color of scroll bar
   'editor.background'                   : BACK_COLOR,
   'editor.foreground'                   : DARK,
   'editor.lineHighlightBorder'          : '#e1e1e1',
