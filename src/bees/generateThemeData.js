@@ -1,24 +1,5 @@
-const { changeColorAnt } = require('../ants/changeColor')
-const { map, mergeAll } = require('rambdax')
+const { map } = require('rambdax')
 const { PUNCTUATION_COLOR } = require('../assets/themes-colors')
-
-function createPaletteRule(
-  prop, colorBase, rate = 0.045
-){
-  const willReturn = {}
-  const modes = [ 'DARKEST', 'DARKER', 'LIGHTER', 'LIGHTEST', 'DARK', 'LIGHT' ]
-  modes.forEach(mode => {
-    const newColor = changeColorAnt(
-      colorBase, mode, rate
-    )
-
-    willReturn[ `${ prop }_${ mode }` ] = newColor
-  })
-
-  willReturn[ prop ] = colorBase
-
-  return willReturn
-}
 
 const PUNCTUATIONS = [
   'meta.group.braces.round.function.arguments',
@@ -32,19 +13,17 @@ const PUNCTUATIONS = [
 function isPunctuation(tokenColorName){
   if (tokenColorName.startsWith('punctuation.')) return true
   const found = PUNCTUATIONS.find(x => tokenColorName.startsWith(x))
-
   return Boolean(found)
 }
 
 function generateThemeData({ palette, chrome, colors }){
-  const translatedColors = mergeAll(map((color, prop) => createPaletteRule(prop, color))(colors))
   const newTokenColors = map(tokenColor => ({
     ...tokenColor,
     settings : {
       ...tokenColor.settings,
       foreground : isPunctuation(tokenColor.name) ?
         PUNCTUATION_COLOR :
-        translatedColors[ tokenColor.settings.foreground ],
+        colors[ tokenColor.settings.foreground ],
     },
   }))(palette.tokenColors)
   const newTheme = {
