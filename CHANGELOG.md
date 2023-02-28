@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.19.0
+
+Use imported chrome colors
+
 ## 10.15.0
 
 All punctuation colors are now the same

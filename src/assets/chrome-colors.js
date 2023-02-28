@@ -1,4 +1,5 @@
 const { missingColors } = require('../../lambdas/find_missing_rules/missingColors.json')
+const { colors: importedChromeColors } = require('../assets/chrome-themes/theme.json')
 
 const BACK_COLOR = '#fcfcfc'
 const INPUT_BACK = '#fff'
@@ -242,7 +243,7 @@ const otherColors = {
   'descriptionForeground'     : '#528ff0',
 }
 
-exports.chromeColors = {
+const niketaChromeColors = {
   ...newColors,
   ...tabColors,
   ...bracketColors,
@@ -298,5 +299,14 @@ exports.chromeColors = {
   'widget.shadow'                       : '#8382ae',
   'inputOption.activeForeground'        : '#323863',
 }
+
+let mixedChromeColors = {
+  ...niketaChromeColors,
+  ...importedChromeColors,
+}
+
+// exports.actualChromeColors = mixedChromeColors
+// exports.actualChromeColors = niketaChromeColors
+exports.chromeColors = importedChromeColors
 
 exports.BACK_COLOR = BACK_COLOR
