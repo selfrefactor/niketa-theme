@@ -13,9 +13,9 @@ const SOFT_WARNING = '#744da9'
 const ACCENT_BACKGROUND = '#ea5c0055'
 const SOFTER_ACCENT = '#834962'
 
-const TRANSPARENCY = '55'
-const STRONG_TRANSPARENCY = '77'
-const STRONGEST_TRANSPARENCY = '99'
+const TRANSPARENCY = '44'
+const STRONG_TRANSPARENCY = '55'
+const STRONGEST_TRANSPARENCY = '66'
 
 const listColors = {
   'foreground'                       : DARK,
@@ -82,8 +82,8 @@ const suggestionsColors = {
 const selectionColors = {
   'editor.selectionBackground'           : `${ CHROME_COLOR }${ STRONG_TRANSPARENCY }`,
   'editor.selectionHighlightBackground'  : `${ CHROME_COLOR }${ STRONGEST_TRANSPARENCY }`,
-  'editor.inactiveSelectionBackground'   : `#aaab9c${ STRONG_TRANSPARENCY }`,
-  'terminal.selectionBackground'         : `#515c7e${ STRONG_TRANSPARENCY }`,
+  'editor.inactiveSelectionBackground'   : `#cccccc${ STRONG_TRANSPARENCY }`,
+  'terminal.selectionBackground'         : `#cccccc${ STRONG_TRANSPARENCY }`,
   // next two
   // When search by word is active or when double click on a word
   'editor.wordHighlightBackground'       : `#44aaaa${ STRONG_TRANSPARENCY }`,
@@ -301,12 +301,13 @@ const niketaChromeColors = {
 }
 
 let mixedChromeColors = {
-  ...niketaChromeColors,
   ...importedChromeColors,
+  ...selectionColors,
+  ...notifications,
 }
 
-// exports.actualChromeColors = mixedChromeColors
+exports.actualChromeColors = mixedChromeColors
 // exports.actualChromeColors = niketaChromeColors
-exports.chromeColors = importedChromeColors
+// exports.chromeColors = importedChromeColors
 
 exports.BACK_COLOR = BACK_COLOR
