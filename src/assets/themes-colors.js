@@ -2,6 +2,7 @@ const PURPLE = '#774499'
 const DARK_YELLOW = '#C27D40'
 const BLUE = '#276bb4'
 exports.PUNCTUATION_COLOR = '#555'
+exports.SUBTLE_COLOR = '#555E'
 
 const allThemes = {
   CommunicationBreakdown : [

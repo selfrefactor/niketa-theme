@@ -306,7 +306,7 @@ let mixedChromeColors = {
   ...notifications,
 }
 
-exports.actualChromeColors = mixedChromeColors
+exports.chromeColors = mixedChromeColors
 // exports.actualChromeColors = niketaChromeColors
 // exports.chromeColors = importedChromeColors
 

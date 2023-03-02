@@ -317,6 +317,7 @@ const COLOR_4 = [
   ...ADDITIONAL_4,
   ...buildColors(4),
   'comment.ITALIC',
+  'comment.block',
   'comment.block.documentation.ITALIC',
   'comment.line.double-slash.ITALIC',
   'invalid',
