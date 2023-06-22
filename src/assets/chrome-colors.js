@@ -19,16 +19,16 @@ const STRONGEST_TRANSPARENCY = '66'
 
 const listColors = {
   'foreground'                       : DARK,
-  'list.activeSelectionBackground'   : '#aaaa',
+  'list.activeSelectionBackground'   : '#aaac',
   'list.activeSelectionForeground'   : '#4e4e4e',
-  'list.dropBackground'              : '#b1b1b1',
+  'list.dropBackground'              : '#b1b1b1dd',
   'list.errorForeground'             : '#bb1000',
   'list.filterMatchBackground'       : '#fff',
   'list.filterMatchBorder'           : '#fff',
   'list.focusBackground'             : '#0065FF33',
   'list.focusForeground'             : '#4e4e4e',
   'list.highlightForeground'         : '#00f',
-  'list.hoverBackground'             : CHROME_COLOR,
+  'list.hoverBackground'             : `${ CHROME_COLOR }aa`,
   'list.hoverForeground'             : DARK,
   'list.inactiveFocusBackground'     : `#11b1b1`,
   'list.inactiveSelectionBackground' : `#b1b111${TRANSPARENCY}`,
@@ -36,7 +36,7 @@ const listColors = {
   'list.invalidItemForeground'       : `#a9696A`,
   'list.warningForeground'           : `#ff854c`,
   'quickInput.background'            : '#fff',
-  'quickInput.list.focusBackground'  : '#c3c3c3',
+  'quickInput.list.focusBackground'  : '#c3c3c3cc',
 }
 
 const sidebarColors = {
@@ -304,6 +304,7 @@ let mixedChromeColors = {
   ...importedChromeColors,
   ...selectionColors,
   ...notifications,
+  ...listColors,
 }
 
 exports.chromeColors = mixedChromeColors
