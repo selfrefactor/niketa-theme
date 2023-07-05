@@ -1,7 +1,7 @@
 const { missingColors } = require('../../lambdas/find_missing_rules/missingColors.json')
 const { colors: importedChromeColors } = require('../assets/chrome-themes/theme.json')
 
-const BACK_COLOR = '#fcfcfc'
+const BACK_COLOR = '#f5f5f5'
 const INPUT_BACK = '#fff'
 const CHROME_BRIGHTER = '#eeeeee'
 const CHROME_COLOR = '#e1e1e1'
