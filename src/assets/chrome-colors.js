@@ -86,8 +86,8 @@ const selectionColors = {
   'terminal.selectionBackground'         : `#cccccc${ STRONG_TRANSPARENCY }`,
   // next two
   // When search by word is active or when double click on a word
-  'editor.wordHighlightBackground'       : `#44aaaa${ STRONG_TRANSPARENCY }`,
-  'editor.wordHighlightStrongBackground' : `#44aaaa${ STRONGEST_TRANSPARENCY }`,
+  'editor.wordHighlightBackground'       : `#aaffff${ STRONG_TRANSPARENCY }`,
+  'editor.wordHighlightStrongBackground' : `#aaffff${ STRONGEST_TRANSPARENCY }`,
 }
 
 const peekView = {
