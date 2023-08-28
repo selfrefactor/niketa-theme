@@ -306,6 +306,8 @@ let mixedChromeColors = {
   ...selectionColors,
   ...notifications,
   ...listColors,
+  // latest change end of august
+  ...niketaChromeColors,
 }
 
 exports.chromeColors = mixedChromeColors
