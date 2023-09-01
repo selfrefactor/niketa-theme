@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.29.0
+
+Test out merge with `subframe7536.theme-maple` theme
+
 ## 10.21.0
 
 Introduce subtle color
