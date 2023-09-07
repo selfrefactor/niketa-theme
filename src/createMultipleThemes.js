@@ -46,7 +46,7 @@ async function singleRun(themeSettings){
   const themesDirectory = resolve(__dirname, '../themes/')
   const [ [ themeName, colors ] ] = Object.entries(themeSettings)
   const palette = await readJsonAnt('palettes/palette.json')
-  const importedTheme = await fromImportedTheme()
+  const importedTheme = await fromImportedTheme(1,30)
   let filteredPalette = filterTokenColors(palette)
 
   let themeData = generateThemeData({
