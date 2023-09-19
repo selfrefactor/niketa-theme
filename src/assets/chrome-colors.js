@@ -239,75 +239,72 @@ const tabColors = {
   'tab.inactiveForeground' : `#333${ TRANSPARENCY }`,
 }
 
-const niketaChromeColors = {
-  ...newColors,
-  ...tabColors,
-  ...bracketColors,
-  // ...editorRuler,
-  ...gitColors,
-  ...possibleErrors,
-  // ...dropBackgrounds,
-  // ...missingColors,
-  // ...fromMissingColors,
-  ...breadcrumbs,
-  ...peekView,
-  ...menuColors,
-  ...selectionColors,
-  ...sidebarColors,
-  ...suggestionsColors,
-  // ...listColors,
-  ...notifications,
-  'editorError.background'              : '#B73A3422',
-  'editorError.border'                  : '#ffffff44',
-  'editorError.foreground'              : '#511',
-  'editorOverviewRuler.background'      : '#aaa', // color of scroll bar
-  'editor.background'                   : BACK_COLOR,
-  'editor.foreground'                   : DARK,
-  'editor.lineHighlightBorder'          : '#e1e1e1',
-  'editor.lineHighlightBackground'      : '#e1e1e1',
-  'editor.foldBackground'               : '#fafafa',
+let colors = {
   'activityBar.background'              : '#C4BE9D',
   'badge.background'                    : '#e7e7e7',
   'badge.foreground'                    : '#070',
-  'terminalCursor.foreground' : DARK,
   'descriptionForeground'     : '#528ff0',
   'diffEditor.insertedTextBackground'   : '#9c824a55',
   'diffEditor.removedTextBackground'    : '#64B5F655',
+  'editor.background'                   : BACK_COLOR,
   'editor.findMatchBackground'          : '#aaff1144',
   'editor.findMatchHighlightBackground' : '#71aac322',
   'editor.findRangeHighlightBackground' : '#3f706333',
+  'editor.foldBackground'               : '#fafafa',
+  'editor.foreground'                   : DARK,
+  'editor.lineHighlightBackground'      : '#e1e1e1',
+  'editor.lineHighlightBorder'          : '#e1e1e1',
   'editorCursor.foreground'             : '#800',
-  'terminal.background'                 : BACK_COLOR,
+  'editorError.background'              : '#B73A3422',
+  'editorError.border'                  : '#ffffff44',
+  'editorError.foreground'              : '#511',
   'editorGroup.emptyBackground'         : BACK_COLOR,
-  'tab.hoverBackground'                 : `#800000${ TRANSPARENCY }`,
   'editorGroupHeader.tabsBackground'    : CHROME_COLOR,
   'editorGutter.background'             : `${ CHROME_COLOR }99`,
   'editorLineNumber.foreground'         : '#2a3343a9',
   'editorLink.activeForeground'         : '#034694',
+  'editorOverviewRuler.background'      : '#aaa', // color of scroll bar
   'errorForeground'                     : '#B13',
   'focusBorder'                         : '#323e34',
   'git.color.modified'                  : '#4d0e0b',
+  'inputOption.activeForeground'        : '#323863',
   'scrollbar.shadow'                    : '#cf6f4b',
   'scrollbarSlider.background'          : `${ CHROME_COLOR }bb`,
   'scrollbarSlider.hoverBackground'     : '#C4BE9D',
   'selection.background'                : '#aba6a988',
   'statusBar.background'                : CHROME_COLOR,
   'statusBar.foreground'                : '#35495f',
+  'tab.hoverBackground'                 : `#aaaaaa${ TRANSPARENCY }`,
+  'terminal.background'                 : BACK_COLOR,
+  'terminalCursor.foreground' : DARK,
   'widget.shadow'                       : '#8382ae',
-  'inputOption.activeForeground'        : '#323863',
+}
+
+const niketaChromeColors = {
+  ...newColors,
+  ...tabColors,
+  ...bracketColors,
+  ...editorRuler,
+  ...gitColors,
+  ...possibleErrors,
+  ...dropBackgrounds,
+  ...fromMissingColors,
+  ...breadcrumbs,
+  ...peekView,
+  ...menuColors,
+  ...selectionColors,
+  ...sidebarColors,
+  ...suggestionsColors,
+  ...listColors,
+  ...notifications,
+  ...colors
 }
 
 let mixedChromeColors = {
-  ...importedChromeColors,
-  ...selectionColors,
-  ...notifications,
-  ...listColors,
-  // latest change end of august
+  // ...importedChromeColors,
   ...niketaChromeColors,
 }
 
 exports.chromeColors = mixedChromeColors
-// exports.actualChromeColors = niketaChromeColors
-// exports.chromeColors = importedChromeColors
 
 exports.BACK_COLOR = BACK_COLOR
