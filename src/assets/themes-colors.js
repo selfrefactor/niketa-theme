@@ -1,61 +1,87 @@
-// const PURPLE = '#774499'
-const PURPLE = '#6B2FBA'
-// const DARK_YELLOW = '#ff6369'
-// const DARK_YELLOW = '#C27D40'
-const DARK_YELLOW = '#aa9132'
 const BLUE = '#0081f1'
-// const BLUE = '#1b66ff'
-const DARK = '#433'
+const BLUE_ALT = '#0F54D6'
+const DARK_BLUE = '#3a0088'
+const BRICK = '#ae0c3e'
+const DARK = '#282828'
+// #480032
+const DARK_ALT = '#360745'
+const DARK_YELLOW = '#c07B00'
+const DARK_YELLOW_ALT = '#8C6C41'
+//'#38978D'
+const GREEN = '#0Da305'
+const GREEN_ALT = '#2a814d'
+// '#d12771'
+const PINK = '#d60257'
+const PURPLE = '#6B2FBA'
+const RED = '#F92672'
+//#953b69
+const RED_PURPLE = '#cd526c'
+const RED_PURPLE_ALT = '#CA7081'
+const TEAL = '#0093A1'
+const GREY = '#7A7A7A'
+const TEAL_ALT = '#089fbf'
 exports.PUNCTUATION_COLOR = '#555'
 exports.SUBTLE_COLOR = '#555E'
 
 const allThemes = {
   CommunicationBreakdown : [
-    // `#089fbf`,
-    '#0093A1',
-    '#480032',
-    '#F25F25',
-    '#d60257',
-    '#0F54D6',
-    // '#0081f1',
+    DARK_ALT,
+    TEAL,
+    PINK,
+    BLUE_ALT,
+    PINK,
   ],
   DancingDays : [
-    // '#c07B00',
-    '#8C6C41',
-    '#4D9375',
-    '#7A7A7A',
-    PURPLE,
-    '#cd526c',
-  ],
-  FunkyDrummer : [ '#404467', '#2a814d', '#0a0a0a', DARK_YELLOW, '#CA7081' ],
-  GlassOnion   : [
-    '#f17048',
+    DARK,
+    DARK_YELLOW_ALT,
     BLUE,
-    '#360745',
-    // '#953b69',
-    '#A44185',
-    '#ae0c3e',
+    DARK,
+    RED_PURPLE
+  ],
+  FunkyDrummer : [
+    RED_PURPLE_ALT,
+    GREEN_ALT, 
+     DARK, 
+     DARK_YELLOW, 
+     RED_PURPLE_ALT 
+    ],
+  GlassOnion   : [
+    BLUE,
+    BRICK,
+    DARK_ALT,
+    DARK_ALT,
+    BRICK,
   ],
   HelloSpaceboy : [
+    DARK,
     PURPLE,
-    '#383838',
-    // '#3b0032',
-    '#38978D',
-    BLUE,
-    '#d12771',
+    GREY,
+    GREEN_ALT,
+    PINK,
   ],
-  KozmicBlues : [ '#218d54', '#d12771', DARK_YELLOW, '#7d144c', DARK ],
+  KozmicBlues : [ 
+    DARK, PINK, TEAL, '#7d144c', DARK ],
   LedZeppelin : [
-    // '#3a0088',
-    // '#6B2FBA',
-    '#2F86D2',
+    TEAL,
+    BRICK,
+    DARK_BLUE,
     '#bd4b00',
-    '#aa9132',
-    '#5bb98c',
     '#480656',
   ],
-  StrangeBrew : [ '#222d60', '#01676b', '#fb607f', '#1b66ff', DARK_YELLOW ],
-  SweatLeaf   : [ DARK, '#2f586f', DARK_YELLOW, '#F92672', '#85005b' ],
+  StrangeBrew : [ 
+    DARK_ALT,
+    GREEN,
+    PINK,
+    BLUE, 
+    DARK_ALT,
+     ],
+  SweatLeaf   : [ 
+    TEAL_ALT, 
+    DARK, 
+    TEAL_ALT, 
+    RED,
+    DARK_YELLOW, 
+  ],
 }
 
 exports.allThemes = allThemes
