@@ -2,21 +2,23 @@ const BLUE = '#0081f1'
 const BLUE_ALT = '#0F54D6'
 const DARK_BLUE = '#3a0088'
 const BRICK = '#ae0c3e'
+const BRICK_LIGHT = '#CA7081'
 const DARK = '#282828'
 // #480032
 const DARK_ALT = '#360745'
-const DARK_YELLOW = '#c07B00'
+// #c07B00
+const DARK_YELLOW = '#DF8618'
 const DARK_YELLOW_ALT = '#8C6C41'
 //'#38978D'
 const GREEN = '#0Da305'
 const GREEN_ALT = '#2a814d'
 // '#d12771'
 const PINK = '#d60257'
-const PURPLE = '#6B2FBA'
-const RED = '#F92672'
 //#953b69
-const RED_PURPLE = '#cd526c'
-const RED_PURPLE_ALT = '#CA7081'
+// #cd526c 
+const PURPLE_RED = '#DC3EB7'
+const PURPLE_BLUE = '#6B2FBA'
+const RED = '#F92672'
 const TEAL = '#0093A1'
 const GREY = '#7A7A7A'
 const TEAL_ALT = '#089fbf'
@@ -36,14 +38,14 @@ const allThemes = {
     DARK_YELLOW_ALT,
     BLUE,
     DARK,
-    RED_PURPLE
+    PURPLE_RED
   ],
   FunkyDrummer : [
-    RED_PURPLE_ALT,
+    BRICK_LIGHT,
     GREEN_ALT, 
      DARK, 
      DARK_YELLOW, 
-     RED_PURPLE_ALT 
+     BRICK_LIGHT 
     ],
   GlassOnion   : [
     BLUE,
@@ -54,7 +56,7 @@ const allThemes = {
   ],
   HelloSpaceboy : [
     DARK,
-    PURPLE,
+    PURPLE_BLUE,
     GREY,
     GREEN_ALT,
     PINK,
