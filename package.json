@@ -1,18 +1,18 @@
 {
-  "name": "niketa-theme",
-  "scripts": {
-    "lint:all": "node scripts/lint/lint-all.js",
+	"name": "niketa-theme",
+	"scripts": {
+		"lint:all": "node scripts/lint/lint-all.js",
 		"lint:file": "node scripts/lint/lint.js",
 		"jest:file": "node scripts/run/jest.js",
-    "palette": "jest lambdas/generate-palette/generate-palette.spec.js",
-    "bump": "maided bump",
-    "dev": "jest lambdas/export_to_mono/exportToMono.spec.js --watch",
-    "export": "jest lambdas/export_to_mono/exportToMono.spec.js&&run d",
-    "out": "jest src/createMultipleThemes.spec.js",
-    "x": "jest src/utils/foo.spec.js",
-    "contrast": "jest lambdas/evaluate-contast/evaluate-contast.spec.js"
-  },
-  "niketaScripts": [
+		"palette": "jest lambdas/generate-palette/generate-palette.spec.js",
+		"bump": "maided bump",
+		"dev": "jest lambdas/export_to_mono/exportToMono.spec.js --watch",
+		"export": "jest lambdas/export_to_mono/exportToMono.spec.js&&run d",
+		"out": "jest src/createMultipleThemes.spec.js",
+		"x": "jest src/utils/foo.spec.js",
+		"contrast": "jest lambdas/evaluate-contast/evaluate-contast.spec.js"
+	},
+	"niketaScripts": [
 		{
 			"**/*.js": "yarn lint:file"
 		},
@@ -20,16 +20,16 @@
 			"**/*.js": "yarn jest:file"
 		}
 	],
-  "version": "10.39.0",
-  "devDependencies": {
-    "@biomejs/biome": "1.4.1",
+	"version": "10.39.0",
+	"devDependencies": {
+		"@biomejs/biome": "1.4.1",
 		"@stylistic/eslint-plugin": "1.5.1",
-    "@mdhnpm/color-contrast-ratio-calculator": "1.0.4",
-    "@types/fs-extra": "11.0.4",
-    "@types/jest": "25.2.1",
-    "babel-cli": "7.0.0-beta.3",
-    "babel-preset-env": "7.0.0-beta.3",
-    "eslint": "8.56.0",
+		"@mdhnpm/color-contrast-ratio-calculator": "1.0.4",
+		"@types/fs-extra": "11.0.4",
+		"@types/jest": "29.5.11",
+		"babel-cli": "6.26.0",
+		"babel-preset-env": "1.7.0",
+		"eslint": "8.56.0",
 		"eslint-plugin-babel": "5.3.1",
 		"eslint-plugin-jest": "27.6.0",
 		"eslint-plugin-node": "11.1.0",
@@ -37,113 +37,116 @@
 		"eslint-plugin-sonarjs": "0.23.0",
 		"eslint-plugin-unused-imports": "3.0.0",
 		"fs-extra": "11.2.0",
-    "prettier": "3.1.1",
-    "rambdax": "10.1.0",
+		"prettier": "3.1.1",
+		"rambdax": "10.1.0",
 		"rgb-hex": "4.1.0",
 		"string-fn": "3.1.0",
 		"jest": "29.7.0",
-    "get-contrast-ratio": "0.2.1",
-    "helpers-fn": "1.8.1",
-    "hexsorter": "1.5.0",
-    "maided": "0.1.3",
-    "package-storage": "1.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/selfrefactor/niketa-theme.git"
-  },
-  "license": "MIT",
-  "displayName": "Niketa Theme Light",
-  "description": "Collection of 9 light themes with same background",
-  "publisher": "selfrefactor",
-  "engines": {
-    "vscode": "^1.40.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "bugs": {
-    "url": "https://github.com/selfrefactor/niketa-theme/issues"
-  },
-  "icon": "niketa.png",
-  "standaloneVersion": "0.20.0",
-  "contributes": {
-    "themes": [
-      {
-        "label": "CommunicationBreakdown",
-        "uiTheme": "vs",
-        "path": "./themes/CommunicationBreakdown.json"
-      },
-      {
-        "label": "FunkyDrummer",
-        "uiTheme": "vs",
-        "path": "./themes/FunkyDrummer.json"
-      },
-      {
-        "label": "KozmicBlues",
-        "uiTheme": "vs",
-        "path": "./themes/KozmicBlues.json"
-      },
-      {
-        "label": "GlassOnion",
-        "uiTheme": "vs",
-        "path": "./themes/GlassOnion.json"
-      },
-      {
-        "label": "HelloSpaceboy",
-        "uiTheme": "vs",
-        "path": "./themes/HelloSpaceboy.json"
-      },
-      {
-        "label": "StrangeBrew",
-        "uiTheme": "vs",
-        "path": "./themes/StrangeBrew.json"
-      },
-      {
-        "label": "SweatLeaf",
-        "uiTheme": "vs",
-        "path": "./themes/SweatLeaf.json"
-      },
-      {
-        "label": "LedZeppelin",
-        "uiTheme": "vs",
-        "path": "./themes/LedZeppelin.json"
-      },
-      {
-        "label": "DancingDays",
-        "uiTheme": "vs",
-        "path": "./themes/DancingDays.json"
-      }
-    ]
-  },
-  "badges": [
-    {
-      "url": "https://vsmarketplacebadges.dev/installs-short/selfrefactor.Niketa-theme.img",
-      "href": "https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme",
-      "description": "installs"
-    },
-    {
-      "url": "https://vsmarketplacebadges.dev/downloads-short/selfrefactor.Niketa-theme.img",
-      "href": "https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme",
-      "description": "Downloads badge"
-    },
-    {
-      "url": "https://vsmarketplacebadges.dev/trending-weekly/selfrefactor.Niketa-theme.img",
-      "href": "https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme",
-      "description": "Trending weekly"
-    },
-    {
-      "url": "https://vsmarketplacebadges.dev/trending-monthly/selfrefactor.Niketa-theme.img",
-      "href": "https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme",
-      "description": "Trending monthly"
-    }
-  ],
-  "keywords": [
-    "theme",
-    "color-theme",
-    "light",
-    "collection",
-    "themes",
-    "bundle"
-  ]
+		"get-contrast-ratio": "0.2.1",
+		"helpers-fn": "1.8.1",
+		"hexsorter": "1.5.0",
+		"maided": "0.1.3",
+		"package-storage": "1.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/selfrefactor/niketa-theme.git"
+	},
+	"license": "MIT",
+	"displayName": "Niketa Theme Light",
+	"description": "Collection of 9 light themes with same background",
+	"publisher": "selfrefactor",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"bugs": {
+		"url": "https://github.com/selfrefactor/niketa-theme/issues"
+	},
+	"icon": "niketa.png",
+	"standaloneVersion": "0.20.0",
+	"contributes": {
+		"themes": [
+			{
+				"label": "CommunicationBreakdown",
+				"uiTheme": "vs",
+				"path": "./themes/CommunicationBreakdown.json"
+			},
+			{
+				"label": "FunkyDrummer",
+				"uiTheme": "vs",
+				"path": "./themes/FunkyDrummer.json"
+			},
+			{
+				"label": "KozmicBlues",
+				"uiTheme": "vs",
+				"path": "./themes/KozmicBlues.json"
+			},
+			{
+				"label": "GlassOnion",
+				"uiTheme": "vs",
+				"path": "./themes/GlassOnion.json"
+			},
+			{
+				"label": "HelloSpaceboy",
+				"uiTheme": "vs",
+				"path": "./themes/HelloSpaceboy.json"
+			},
+			{
+				"label": "StrangeBrew",
+				"uiTheme": "vs",
+				"path": "./themes/StrangeBrew.json"
+			},
+			{
+				"label": "SweatLeaf",
+				"uiTheme": "vs",
+				"path": "./themes/SweatLeaf.json"
+			},
+			{
+				"label": "LedZeppelin",
+				"uiTheme": "vs",
+				"path": "./themes/LedZeppelin.json"
+			},
+			{
+				"label": "DancingDays",
+				"uiTheme": "vs",
+				"path": "./themes/DancingDays.json"
+			}
+		]
+	},
+	"badges": [
+		{
+			"url": "https://vsmarketplacebadges.dev/installs-short/selfrefactor.Niketa-theme.img",
+			"href": "https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme",
+			"description": "installs"
+		},
+		{
+			"url": "https://vsmarketplacebadges.dev/downloads-short/selfrefactor.Niketa-theme.img",
+			"href": "https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme",
+			"description": "Downloads badge"
+		},
+		{
+			"url": "https://vsmarketplacebadges.dev/trending-weekly/selfrefactor.Niketa-theme.img",
+			"href": "https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme",
+			"description": "Trending weekly"
+		},
+		{
+			"url": "https://vsmarketplacebadges.dev/trending-monthly/selfrefactor.Niketa-theme.img",
+			"href": "https://marketplace.visualstudio.com/items?itemName=selfrefactor.Niketa-theme",
+			"description": "Trending monthly"
+		}
+	],
+	"keywords": [
+		"theme",
+		"color-theme",
+		"light",
+		"collection",
+		"themes",
+		"bundle"
+	],
+	"dependencies": {
+		
+	}
 }

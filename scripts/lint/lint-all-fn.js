@@ -4,7 +4,7 @@ const { scanFolder } = require('helpers-fn')
 const { writeFileSync } = require('fs-extra')
 const { OUTPUT_LINT_ALL_FILE } = require('../constants.js')
 
-let filterFn = (filePath) => filePath.endsWith('.js')
+const filterFn = filePath => filePath.endsWith('.js')
 
 async function lintFolder(folder) {
   console.log(`Linting ${folder}`)
@@ -13,7 +13,7 @@ async function lintFolder(folder) {
     folder,
   })
   const result = await mapAsync(async (filePath) => {
-    let lintResult = await lintFn(filePath)
+    const lintResult = await lintFn(filePath)
     if (lintResult === 'OK') return ''
 
     return `

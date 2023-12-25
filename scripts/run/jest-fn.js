@@ -2,14 +2,14 @@ const { check, exec, JEST, OUTPUT_JEST_FILE } = require('../constants')
 const { readFileSync } = require('fs')
 
 async function runJestWithFile(filePath) {
-  let label = `${filePath} - jest`
+  const label = `${filePath} - jest`
   const command = `${JEST} ${filePath} > ${OUTPUT_JEST_FILE}`
   await exec(command)
   console.time(label)
-  let output = readFileSync(OUTPUT_JEST_FILE, 'utf8')
+  const output = readFileSync(OUTPUT_JEST_FILE, 'utf8')
   console.log(command)
   console.timeEnd(label)
-  if (output === '') {
+  if (!output) {
     console.log('JEST: OK')
     return
   }
