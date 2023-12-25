@@ -5,11 +5,8 @@
 		"lint:file": "node scripts/lint/lint.js",
 		"jest:file": "node scripts/run/jest.js",
 		"palette": "jest lambdas/generate-palette/generate-palette.spec.js",
-		"bump": "maided bump",
 		"dev": "jest lambdas/export_to_mono/exportToMono.spec.js --watch",
-		"export": "jest lambdas/export_to_mono/exportToMono.spec.js&&run d",
-		"out": "jest src/createMultipleThemes.spec.js",
-		"contrast": "jest lambdas/evaluate-contast/evaluate-contast.spec.js"
+		"out": "jest src/createMultipleThemes.spec.js"
 	},
 	"niketaScripts": [
 		{
