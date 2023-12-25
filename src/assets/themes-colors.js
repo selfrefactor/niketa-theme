@@ -2,7 +2,7 @@ const BLUE = '#0081f1'
 const BLUE_ALT = '#0F54D6'
 const DARK_BLUE = '#3a0088'
 const BRICK = '#ae0c3e'
-const BRICK_LIGHT = '#CA7081'
+const BRICK_LIGHT = '#CA7083'
 const DARK = '#282828'
 // #480032
 const DARK_ALT = '#360745'
