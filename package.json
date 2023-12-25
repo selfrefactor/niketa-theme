@@ -9,6 +9,7 @@
     "dev": "jest lambdas/export_to_mono/exportToMono.spec.js --watch",
     "export": "jest lambdas/export_to_mono/exportToMono.spec.js&&run d",
     "out": "jest src/createMultipleThemes.spec.js",
+    "x": "jest src/utils/foo.spec.js",
     "contrast": "jest lambdas/evaluate-contast/evaluate-contast.spec.js"
   },
   "niketaScripts": [
@@ -37,7 +38,7 @@
 		"eslint-plugin-unused-imports": "3.0.0",
 		"fs-extra": "11.2.0",
     "prettier": "3.1.1",
-    "rambdax": "2.11.0",
+    "rambdax": "10.1.0",
 		"rgb-hex": "4.1.0",
 		"string-fn": "3.1.0",
 		"jest": "29.7.0",
