@@ -20,7 +20,7 @@
 			"**/*.js": "yarn jest:file"
 		}
 	],
-	"version": "10.39.0",
+	"version": "10.40.0",
 	"devDependencies": {
 		"@biomejs/biome": "1.4.1",
 		"@stylistic/eslint-plugin": "1.5.1",
@@ -146,7 +146,5 @@
 		"themes",
 		"bundle"
 	],
-	"dependencies": {
-		
-	}
+	"dependencies": {}
 }
