@@ -4,19 +4,13 @@ const DARK_BLUE = '#3a0086'
 const BRICK = '#ae0c3e'
 const BRICK_LIGHT = '#CA7082'
 const DARK = '#282828'
-// #480032
 const DARK_ALT = '#360745'
-// #c07B00
 const DARK_YELLOW = '#DF8618'
 const DARK_YELLOW_ALT = '#8C6C41'
-//'#38978D'
 const GREEN = '#0Da305'
 const GREEN_ALT = '#2a814d'
-// '#d12771'
-const PINK = '#d60257'
-//#953b69
-// #cd526c 
 const PURPLE_RED = '#DC3EB7'
+const PINK = '#d60257'
 const PURPLE_BLUE = '#6B2FBA'
 const RED = '#F92672'
 const TEAL = '#0093A1'
@@ -36,7 +30,7 @@ const allThemes = {
   DancingDays : [
     DARK,
     DARK_YELLOW_ALT,
-    BLUE,
+    PURPLE_RED,
     DARK,
     PURPLE_RED
   ],
@@ -58,7 +52,7 @@ const allThemes = {
     DARK,
     PURPLE_BLUE,
     GREY,
-    GREEN_ALT,
+    GREEN,
     PINK,
   ],
   KozmicBlues : [ 
@@ -68,7 +62,7 @@ const allThemes = {
     BRICK,
     DARK_BLUE,
     '#bd4b00',
-    '#480656',
+    TEAL,
   ],
   StrangeBrew : [ 
     DARK_ALT,
