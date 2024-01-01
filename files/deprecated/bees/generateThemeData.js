@@ -1,5 +1,5 @@
 const { map } = require('rambdax')
-const { PUNCTUATION_COLOR, SUBTLE_COLOR } = require('../assets/themes-colors')
+const { PUNCTUATION_COLOR, SUBTLE_COLOR } = require('../../../src/assets/themes-colors')
 
 const PUNCTUATIONS = [
   'meta.group.braces.round.function.arguments',

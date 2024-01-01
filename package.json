@@ -1,5 +1,5 @@
 {
-	"name": "niketa-theme",
+	"name": "niketa-theme-light",
 	"scripts": {
 		"lint:all": "node scripts/lint/lint-all.js",
 		"lint:file": "node scripts/lint/lint.js",
@@ -27,8 +27,6 @@
 		"@mdhnpm/color-contrast-ratio-calculator": "1.0.4",
 		"@types/fs-extra": "11.0.4",
 		"@types/jest": "29.5.11",
-		"babel-cli": "6.26.0",
-		"babel-preset-env": "1.7.0",
 		"eslint": "8.56.0",
 		"eslint-plugin-babel": "5.3.1",
 		"eslint-plugin-jest": "27.6.0",
@@ -50,7 +48,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/selfrefactor/niketa-theme.git"
+		"url": "https://github.com/selfrefactor/niketa-theme-light.git"
 	},
 	"license": "MIT",
 	"displayName": "Niketa Theme Light",
@@ -63,7 +61,7 @@
 		"Themes"
 	],
 	"bugs": {
-		"url": "https://github.com/selfrefactor/niketa-theme/issues"
+		"url": "https://github.com/selfrefactor/niketa-theme-light/issues"
 	},
 	"icon": "niketa.png",
 	"standaloneVersion": "0.20.0",

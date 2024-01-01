@@ -1,4 +1,4 @@
-export const themesNames = [
+exports.themesNames = [
   'CommunicationBreakdown',
   'DancingDays',
   'FunkyDrummer',
