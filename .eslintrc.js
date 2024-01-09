@@ -1,4 +1,4 @@
-const { rules } = require('./scripts/lint/lint-rules');
+const { rules } = require('./scripts/tasks/lint/lint-rules');
 
 module.exports = {
   plugins: [

@@ -12,14 +12,6 @@
 		"x": "jest src/utils/foo.spec.js",
 		"contrast": "jest lambdas/evaluate-contast/evaluate-contast.spec.js"
 	},
-	"niketaScripts": [
-		{
-			"**/*.js": "yarn lint:file"
-		},
-		{
-			"**/*.js": "yarn jest:file"
-		}
-	],
 	"version": "10.40.0",
 	"devDependencies": {
 		"@biomejs/biome": "1.4.1",
