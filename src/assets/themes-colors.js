@@ -56,12 +56,18 @@ const allThemes = {
     PINK,
   ],
   KozmicBlues : [ 
-    DARK, PINK, TEAL, '#7d144c', DARK ],
+    DARK, PINK, 
+    TEAL, 
+    TEAL, 
+    // '#7d144c', 
+    DARK 
+  ],
   LedZeppelin : [
     TEAL,
     BRICK,
     DARK_BLUE,
-    '#bd4b00',
+    DARK_BLUE,
+    // '#bd4b00',
     TEAL,
   ],
   StrangeBrew : [ 

@@ -1,7 +1,7 @@
-const BACK_COLOR = '#fafafa'
+const BACK_COLOR = '#fbfbfb'
 const INPUT_BACK = '#fff'
-const CHROME_BRIGHTER = '#eeeeee'
-const CHROME_COLOR = '#e1e1e1'
+const CHROME_BRIGHTER = '#e7e7e7'
+const CHROME_COLOR = '#d7d7d7'
 const CHROME_COLOR_ACCENT = '#d1d1d1'
 const DARK = '#000'
 const BORDER = '#333'
@@ -297,11 +297,10 @@ const niketaChromeColors = {
   ...colors,
 }
 
-let mixedChromeColors = {
-  // ...importedChromeColors,
-  ...niketaChromeColors,
+exports.BACK_COLOR = BACK_COLOR
+
+function getChromeColors() {
+  return niketaChromeColors
 }
 
-exports.chromeColors = mixedChromeColors
-
-exports.BACK_COLOR = BACK_COLOR
+exports.getChromeColors = getChromeColors
