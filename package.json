@@ -6,19 +6,19 @@
 		"jest:file": "node scripts/tasks/run/jest.js",
 		"out": "node src/create-multiple-themes-spec.js"
 	},
-	"version": "10.40.0",
+	"version": "10.41.0",
 	"devDependencies": {
 		"@biomejs/biome": "1.8.3",
-    "@stylistic/eslint-plugin": "1.5.1",
+		"@stylistic/eslint-plugin": "1.5.1",
 		"@types/fs-extra": "11.0.4",
 		"@types/jest": "29.5.12",
-    "eslint": "8.56.0",
-    "eslint-plugin-babel": "5.3.1",
-    "eslint-plugin-jest": "27.6.0",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-perfectionist": "2.5.0",
-    "eslint-plugin-sonarjs": "0.23.0",
-    "eslint-plugin-unused-imports": "3.0.0",
+		"eslint": "8.56.0",
+		"eslint-plugin-babel": "5.3.1",
+		"eslint-plugin-jest": "27.6.0",
+		"eslint-plugin-node": "11.1.0",
+		"eslint-plugin-perfectionist": "2.5.0",
+		"eslint-plugin-sonarjs": "0.23.0",
+		"eslint-plugin-unused-imports": "3.0.0",
 		"fs-extra": "11.2.0",
 		"prettier": "3.3.3",
 		"rambdax": "11.1.1",
@@ -125,9 +125,7 @@
 		"themes",
 		"bundle"
 	],
-	"dependencies": {
-		
-	},
+	"dependencies": {},
 	"niketaScripts": {
 		"fileCommands": {
 			"**/*.js": "yarn lint:file"
