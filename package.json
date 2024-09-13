@@ -6,7 +6,7 @@
 		"jest:file": "node scripts/tasks/run/jest.js",
 		"out": "node src/create-multiple-themes-spec.js"
 	},
-	"version": "10.43.0",
+	"version": "10.44.0",
 	"depFn": [
 		"eslint"
 	],
@@ -128,9 +128,7 @@
 		"themes",
 		"bundle"
 	],
-	"dependencies": {
-		
-	},
+	"dependencies": {},
 	"niketaScripts": {
 		"fileCommands": {
 			"**/*.js": "yarn lint:file"
