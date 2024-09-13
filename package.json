@@ -1,5 +1,5 @@
 {
-	"name": "Niketa-theme",
+  "name": "niketa-theme",
 	"scripts": {
 		"lint:all": "node scripts/tasks/lint/lint-all.js",
 		"lint:file": "node scripts/tasks/lint/lint.js",
@@ -32,7 +32,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/selfrefactor/niketa-theme-light.git"
+		"url": "https://github.com/selfrefactor/niketa-theme.git"
 	},
 	"license": "MIT",
 	"displayName": "Niketa Themes Light",
@@ -45,7 +45,7 @@
 		"Themes"
 	],
 	"bugs": {
-		"url": "https://github.com/selfrefactor/niketa-theme-light/issues"
+		"url": "https://github.com/selfrefactor/niketa-theme/issues"
 	},
 	"icon": "niketa.png",
 	"contributes": {
