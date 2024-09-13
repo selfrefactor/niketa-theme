@@ -1,5 +1,6 @@
 {
   "name": "niketa-theme",
+  "displayName": "Niketa Theme Light",
   "scripts": {
     "lint:all": "node scripts/tasks/lint/lint-all.js",
     "lint:file": "node scripts/tasks/lint/lint.js",
@@ -35,7 +36,6 @@
     "url": "https://github.com/selfrefactor/niketa-theme.git"
   },
   "license": "MIT",
-  "displayName": "Niketa Themes Light",
   "description": "Collection of 9 light themes with same background",
   "publisher": "selfrefactor",
   "engines": {
