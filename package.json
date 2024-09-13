@@ -1,5 +1,5 @@
 {
-	"name": "niketa-theme-light",
+	"name": "Niketa-theme",
 	"scripts": {
 		"lint:all": "node scripts/tasks/lint/lint-all.js",
 		"lint:file": "node scripts/tasks/lint/lint.js",
@@ -48,7 +48,6 @@
 		"url": "https://github.com/selfrefactor/niketa-theme-light/issues"
 	},
 	"icon": "niketa.png",
-	"standaloneVersion": "0.20.0",
 	"contributes": {
 		"themes": [
 			{
