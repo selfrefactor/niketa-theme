@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.43.0
+
+Stronger selectionColors
+
 ## 10.29.0
 
 Test out merge with `subframe7536.theme-maple` theme

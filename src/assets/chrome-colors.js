@@ -4,11 +4,12 @@ const CHROME_BRIGHTER = '#e7e7e7'
 const CHROME_COLOR = '#d7d7d7'
 const CHROME_COLOR_ACCENT = '#d1d1d1'
 const DARK = '#000'
-const BORDER = '#333'
-const WARNING = '#d13438'
-const SOFT_WARNING = '#744da9'
-const ACCENT_BACKGROUND = '#ea5c0055'
-const SOFTER_ACCENT = '#834962'
+const BORDER = '#222'
+const WARNING = '#f13438'
+const SOFT_WARNING = '#644da9'
+const ACCENT_BACKGROUND = '#ea5c00aa'
+const SOFTER_ACCENT = '#634912'
+const SELECTION = '#a38942'
 
 const TRANSPARENCY = '44'
 const STRONG_TRANSPARENCY = '55'
@@ -16,8 +17,8 @@ const STRONGEST_TRANSPARENCY = '66'
 
 const listColors = {
   foreground: DARK,
-  'list.activeSelectionBackground': '#aaac',
-  'list.activeSelectionForeground': '#4e4e4e',
+  'list.activeSelectionBackground': '#811',
+  'list.activeSelectionForeground': '#fff',
   'list.dropBackground': '#b1b1b1dd',
   'list.errorForeground': '#bb1000',
   'list.filterMatchBackground': '#fff',
@@ -28,7 +29,7 @@ const listColors = {
   'list.hoverBackground': `${CHROME_COLOR}aa`,
   'list.hoverForeground': DARK,
   'list.inactiveFocusBackground': `#11b1b1`,
-  'list.inactiveSelectionBackground': `#b1b111${TRANSPARENCY}`,
+  'list.inactiveSelectionBackground': `#b1b111`,
   'list.inactiveSelectionForeground': `#333`,
   'list.invalidItemForeground': `#a9696A`,
   'list.warningForeground': `#ff854c`,
@@ -77,8 +78,8 @@ const suggestionsColors = {
   'editorWidget.border': '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground': `${CHROME_COLOR}${STRONG_TRANSPARENCY}`,
-  'editor.selectionHighlightBackground': `${CHROME_COLOR}${STRONGEST_TRANSPARENCY}`,
+  'editor.selectionBackground': `${SELECTION}${STRONG_TRANSPARENCY}`,
+  'editor.selectionHighlightBackground': `${SELECTION}${STRONGEST_TRANSPARENCY}`,
   'editor.inactiveSelectionBackground': `#cccccc${STRONG_TRANSPARENCY}`,
   'terminal.selectionBackground': `#cccccc${STRONG_TRANSPARENCY}`,
   // next two
@@ -96,7 +97,7 @@ const peekView = {
   'peekViewResult.fileForeground': DARK,
   'peekViewResult.lineForeground': '#333',
   'peekViewResult.matchHighlightBackground': `${WARNING}22`,
-  'peekViewResult.selectionBackground': '#3da9a122',
+  'peekViewResult.selectionBackground': '#3da9a199',
   'peekViewResult.selectionForeground': DARK,
   'peekViewTitle.background': BACK_COLOR,
   'peekViewTitleDescription.foreground': '#787c99',
