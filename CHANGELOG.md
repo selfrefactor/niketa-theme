@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.49.0
+
+add outputContainerBackgroundColor color
+
 ## 10.43.0
 
 Stronger selectionColors

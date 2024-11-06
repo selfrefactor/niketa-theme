@@ -174,7 +174,7 @@ const possibleErrors = {
 }
 
 const newColors = {
-	"notebook.outputContainerBackgroundColor": "#fafafa",
+	"notebook.outputContainerBackgroundColor": "#fff",
   'sash.hoverBorder': '#387b54',
   'editorUnnecessaryCode.border': SOFT_WARNING,
 }
