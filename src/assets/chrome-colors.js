@@ -9,7 +9,6 @@ const WARNING = '#f13438'
 const SOFT_WARNING = '#644da9'
 const ACCENT_BACKGROUND = '#ea5c00aa'
 const SOFTER_ACCENT = '#634912'
-const SELECTION = '#a38942'
 
 const TRANSPARENCY = '44'
 const STRONG_TRANSPARENCY = '55'
@@ -78,8 +77,11 @@ const suggestionsColors = {
   'editorWidget.border': '#d78d9f',
 }
 const selectionColors = {
-  'editor.selectionBackground': `${SELECTION}${STRONG_TRANSPARENCY}`,
-  'editor.selectionHighlightBackground': `${SELECTION}${STRONGEST_TRANSPARENCY}`,
+	'editor.findMatchBackground': '#abd7',
+  'editor.findMatchHighlightBackground': '#6788',
+  'editor.findRangeHighlightBackground': '#9a99',
+  'editor.selectionBackground': `#a3894277`,
+  'editor.selectionHighlightBackground': `#a38942aa`,
   'editor.inactiveSelectionBackground': `#cccccc${STRONG_TRANSPARENCY}`,
   'terminal.selectionBackground': `#cccccc${STRONG_TRANSPARENCY}`,
   // next two
@@ -246,9 +248,6 @@ let colors = {
   'diffEditor.insertedTextBackground': '#9c824a55',
   'diffEditor.removedTextBackground': '#64B5F655',
   'editor.background': BACK_COLOR,
-  'editor.findMatchBackground': '#ffd',
-  'editor.findMatchHighlightBackground': '#fdf',
-  'editor.findRangeHighlightBackground': '#dff',
   'editor.foldBackground': '#fafafa',
   'editor.foreground': DARK,
   'editor.lineHighlightBackground': '#e1e1e1',
