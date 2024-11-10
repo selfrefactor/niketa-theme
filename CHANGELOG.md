@@ -1,5 +1,9 @@
 # Changelog
 
+## Latest
+
+fix selections colors
+
 ## 10.49.0
 
 add outputContainerBackgroundColor color
