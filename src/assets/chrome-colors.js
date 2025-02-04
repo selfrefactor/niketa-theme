@@ -279,6 +279,9 @@ let colors = {
 }
 
 const niketaChromeColors = {
+	// ...selectionColors,
+	// ...suggestionsColors,
+	// ...listColors,
   ...newColors,
   ...tabColors,
   ...bracketColors,
@@ -290,10 +293,7 @@ const niketaChromeColors = {
   ...breadcrumbs,
   ...peekView,
   ...menuColors,
-  ...selectionColors,
   ...sidebarColors,
-  ...suggestionsColors,
-  ...listColors,
   ...notifications,
   ...colors,
 }

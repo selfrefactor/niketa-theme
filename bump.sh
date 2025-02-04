@@ -1,1 +1,1 @@
-run d && vsce publish minor
+run d && vsce publish minor && ovsx publish
