@@ -16,12 +16,13 @@ const STRONGEST_TRANSPARENCY = '66'
 
 const listColors = {
   foreground: DARK,
+	// next 2 cause issue when used with `alt+f` ref search
+  'list.filterMatchBackground': '#7773',
+  'list.filterMatchBorder': '#555',
   'list.activeSelectionBackground': '#811',
   'list.activeSelectionForeground': '#fff',
   'list.dropBackground': '#b1b1b1dd',
   'list.errorForeground': '#bb1000',
-  'list.filterMatchBackground': '#fff',
-  'list.filterMatchBorder': '#fff',
   'list.focusBackground': '#0065FF33',
   'list.focusForeground': '#4e4e4e',
   'list.highlightForeground': '#00f',
@@ -279,9 +280,9 @@ let colors = {
 }
 
 const niketaChromeColors = {
-	// ...selectionColors,
-	// ...suggestionsColors,
-	// ...listColors,
+	...selectionColors,
+	...suggestionsColors,
+	...listColors,
   ...newColors,
   ...tabColors,
   ...bracketColors,
