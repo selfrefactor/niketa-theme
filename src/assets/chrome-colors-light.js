@@ -79,8 +79,8 @@ const suggestionsColors = {
 }
 const selectionColors = {
 	'editor.findMatchBackground': '#cbc7',
-  'editor.findMatchHighlightBackground': '#9998',
-  'editor.findRangeHighlightBackground': '#9a99',
+  'editor.findMatchHighlightBackground': '#9993',
+  'editor.findRangeHighlightBackground': '#9994',
   'editor.selectionBackground': `#a3894277`,
   'editor.selectionHighlightBackground': `#a38942aa`,
   'editor.inactiveSelectionBackground': `#d1d1d1${STRONG_TRANSPARENCY}`,
