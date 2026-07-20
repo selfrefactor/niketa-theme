@@ -5,7 +5,7 @@
     "screenshots": "node src/e2e-screenshots/generate-screenshots.js",
     "screenshots:full": "yarn screenshots && node src/e2e-screenshots/populate-screens.js"
   },
-  "version": "10.66.0",
+  "version": "10.67.0",
   "depFn": [
     "eslint"
   ],
