@@ -37,12 +37,11 @@
 
 ![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/hello.spaceboy.png?raw=true)
 
-
 ### Kozmic Blues
 
-![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/kozmic.blues.png?raw=true)
-
 [As a standalone version](https://marketplace.visualstudio.com/items?itemName=selfrefactor.KozmicBlues)
+
+![VSCode theme screen](https://github.com/selfrefactor/niketa-theme/blob/master/files/kozmic.blues.png?raw=true)
 
 ### Led Zeppelin
 

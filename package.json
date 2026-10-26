@@ -3,7 +3,10 @@
   "displayName": "Niketa Theme Light",
   "scripts": {
     "screenshots": "node src/e2e-screenshots/generate-screenshots.js",
-    "screenshots:full": "yarn screenshots && node src/e2e-screenshots/populate-screens.js"
+    "screenshots:full": "yarn screenshots && node src/e2e-screenshots/populate-screens.js",
+    "screens:readme": "node src/e2e-screenshots/update-readme.js",
+    "screens": "yarn screenshots:full && yarn screens:readme",
+    "screens:check": "node src/e2e-screenshots/update-readme.js --check"
   },
   "version": "10.68.0",
   "depFn": [
