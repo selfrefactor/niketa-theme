@@ -1,4 +1,5 @@
 {
+  "$schema": "vscode://schemas/color-theme",
   "colors": {
     "activityBar.background": "#C4BE9D",
     "activityBar.dropBackground": "#b5338955",
@@ -12,7 +13,9 @@
     "breadcrumbPicker.background": "#f1f1f1",
     "debugToolBar.background": "#fbfbfb",
     "descriptionForeground": "#528ff0",
+    "diffEditor.insertedLineBackground": "#9c824a26",
     "diffEditor.insertedTextBackground": "#9c824a55",
+    "diffEditor.removedLineBackground": "#64B5F626",
     "diffEditor.removedTextBackground": "#64B5F655",
     "dropdown.background": "#d7d7d7",
     "dropdown.border": "#222",
@@ -54,7 +57,8 @@
     "editorGutter.background": "#d7d7d799",
     "editorHoverWidget.background": "#d9d1d9",
     "editorHoverWidget.border": "#d78d9f",
-    "editorIndentGuide.activeBackground": "#363b54",
+    "editorIndentGuide.activeBackground1": "#363b54",
+    "editorIndentGuide.background1": "#363b54",
     "editorLineNumber.foreground": "#2a3343a9",
     "editorLink.activeForeground": "#034694",
     "editorMarkerNavigation.background": "#e7e7e7",
@@ -2667,6 +2671,14 @@
       }
     },
     {
+      "name": "markup.strikethrough",
+      "scope": "markup.strikethrough",
+      "settings": {
+        "fontStyle": "strikethrough",
+        "foreground": "#7e6f9b"
+      }
+    },
+    {
       "name": "markup.table",
       "scope": "markup.table",
       "settings": {
@@ -4207,6 +4219,13 @@
     {
       "name": "string",
       "scope": "string",
+      "settings": {
+        "foreground": "#3eb489"
+      }
+    },
+    {
+      "name": "string variable",
+      "scope": "string variable",
       "settings": {
         "foreground": "#3eb489"
       }
